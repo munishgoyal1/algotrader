@@ -14,10 +14,21 @@ namespace SimpleTrader
 {
     class UpstoxProgram
     {
-        //static string userId = "126130";
-        static string userId = "220270";
+        private static Mutex mutex;
 
-        static Mutex mutex = new Mutex(false, userId);
+        static UpstoxProgram()
+        {
+            var filesPath = SystemUtils.GetStockFilesPath();
+            string credsFilePath = Path.Combine(filesPath, "creds.txt");
+            var credsLines = File.ReadAllLines(credsFilePath);
+
+            userId = credsLines[0];
+            apiKey = credsLines[1];
+            apiSecret = credsLines[2];
+            redirectUrl = credsLines[3];
+
+            mutex = new Mutex(false, userId);
+        }
 
         //Run logs - C:\StockRunFiles\TraderLogs\
         static double _pctLtpOfLastBuyPriceForAveraging = 0.99;
@@ -34,7 +45,10 @@ namespace SimpleTrader
         static bool _doSquareOffIfInsufficientLimitAtEOD = false;
         static DateTime _startTime = MarketUtils.GetTimeToday(9, 0);
         static DateTime _endTime = MarketUtils.GetTimeToday(15, 00);
-
+        private static string userId;
+        private static string apiKey;
+        private static string apiSecret;
+        private static string redirectUrl;
 
 
         [STAThread]
@@ -42,11 +56,7 @@ namespace SimpleTrader
         {
             BrokerErrorCode errCode = BrokerErrorCode.Unknown;
 
-            var filesPath = SystemUtils.GetStockFilesPath();
-            string credsFilePath = Path.Combine(filesPath, "Creds.txt");
-            var credsLines = File.ReadAllLines(credsFilePath);
-
-            var upstoxBroker = new MyUpstoxWrapper(credsLines[0], credsLines[1], credsLines[2]);
+            var upstoxBroker = new MyUpstoxWrapper(apiKey, apiSecret, redirectUrl);
             errCode = upstoxBroker.Login();
 
             // Check for Holiday today
