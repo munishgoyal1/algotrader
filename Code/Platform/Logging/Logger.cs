@@ -39,7 +39,7 @@ namespace StockTrader.Platform.Logging
         static object _traceSyncObj = new object();
         static string _user = "";
         static string _password = "";
-        static string _to = "";//, munish.goyal@credit-suisse.com";
+        static string _to = "";//, 
         static SmtpClient GmailSender = new SmtpClient("smtp.gmail.com", 587);
 
         public static void SendEmail(string subject, string body)

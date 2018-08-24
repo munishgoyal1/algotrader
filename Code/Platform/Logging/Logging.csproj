@@ -35,13 +35,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="agsXMPP">
-      <HintPath>..\agsXMPP.dll</HintPath>
+      <HintPath>..\..\3rdParty\agsXMPP.dll</HintPath>
     </Reference>
-    <Reference Include="agsXMPP.ui">
-      <HintPath>..\agsXMPP.ui.dll</HintPath>
+    <Reference Include="agsXMPP.ui, Version=1.0.3232.40225, Culture=neutral, PublicKeyToken=ff839b81f1debe86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3rdParty\agsXMPP.ui.dll</HintPath>
     </Reference>
     <Reference Include="EAGetMail40">
-      <HintPath>..\EAGetMail40.dll</HintPath>
+      <HintPath>..\..\3rdParty\EAGetMail40.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />

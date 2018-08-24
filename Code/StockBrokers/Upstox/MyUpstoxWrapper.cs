@@ -22,12 +22,12 @@ namespace StockTrader.Brokers.UpstoxBroker
         private Dictionary<string, EquityTradeBookRecord> mEquityTradeBook = new Dictionary<string, EquityTradeBookRecord>();
         private Dictionary<string, EquityOrderBookRecord> mEquityOrderBook = new Dictionary<string, EquityOrderBookRecord>();
 
-        public MyUpstoxWrapper()
+        public MyUpstoxWrapper(string apiKey, string apiSecret, string redirectUrl)
         {
-            upstox.Api_Key = "6wiVNUdhRw10R7FzCxNso6zvKFaUU4RjlYe2Ltc9";
-            upstox.Api_Secret = "okeb31eqi9";
-            upstox.Redirect_Url = "https://upstox.com";  // should be exactly same in API dashboard
-            //https://api.upstox.com/index/dialog/authorize?apiKey=6wiVNUdhRw10R7FzCxNso6zvKFaUU4RjlYe2Ltc9&redirect_uri=https://upstox.com&response_type=code
+            upstox.Api_Key = apiKey;
+            upstox.Api_Secret = apiSecret;
+            upstox.Redirect_Url = redirectUrl;//"https://upstox.com";  // should be exactly same in API dashboard
+            //https://api.upstox.com/index/dialog/authorize?apiKey={}&redirect_uri=https://upstox.com&response_type=code
         }
 
         public BrokerErrorCode Login()

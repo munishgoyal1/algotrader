@@ -41,7 +41,12 @@ namespace SimpleTrader
         static void Main(string[] args)
         {
             BrokerErrorCode errCode = BrokerErrorCode.Unknown;
-            var upstoxBroker = new MyUpstoxWrapper();
+
+            var filesPath = SystemUtils.GetStockFilesPath();
+            string credsFilePath = Path.Combine(filesPath, "Creds.txt");
+            var credsLines = File.ReadAllLines(credsFilePath);
+
+            var upstoxBroker = new MyUpstoxWrapper(credsLines[0], credsLines[1], credsLines[2]);
             errCode = upstoxBroker.Login();
 
             // Check for Holiday today
