@@ -1,0 +1,5091 @@
+
+<script language="javascript">
+	var SelectedTradingFolder;
+	
+</script>
+
+<script language="JavaScript" src="script/TradeBook.js"></script>
+<div class="popup">
+	<h2 class="buyStock">F & O - TRADE BOOK</h2>
+	<div class="text_size">
+		<div class="startSection1 security">
+			<form name="OrderBookForm" method="post" action="TradeBook.asp#main" ID="Form1">
+				<div name='message'><blink><MARQUEE DIRECTION="left" BEHAVIOR="SCROLL" SCROLLAMOUNT="3" SCROLLDELAY="3"><font face='Arial' size='2'><STRONG></STRONG></font></MARQUEE>
+					</blink></div>
+				<table width="100%" border="0">
+					<input type="hidden" name="ImportType"> <input type="hidden" name="FFO_ORDR_RFRNC" value="" ID="Hidden1">
+					<input type="hidden" name="descriptor" value="" ID="Hidden2"> <input type="hidden" name="FFO_EXER_TYP" value="" ID="Hidden3">
+					<input type="hidden" name="FFO_PASS" value="1" ID="Hidden4"> <input type="hidden" name="exlcsv" ID="Hidden6">
+					<tr>
+						<td align="right">
+							Account
+						</td>
+						<td align="center">
+							:</td>
+						<td align="left">8500501588
+							<input type="hidden" name="FFO_ACCOUNT" value="8500501588" ID="Hidden5">
+						</td>
+						<td align="right">Date From</td>
+						<td align="center">:</td>
+						<td align="left">
+							<input type="text" name="FFO_FRM_DT"  value="01/04/2008"  size="7" maxlength="10"  ID="Text1">
+						</td>
+						<td align="right">Date To
+						</td>
+						<td align="center">:</td>
+						<td align="left">
+							<input type="text" name="FFO_TO_DT"  value="06/04/2012"  size="7" maxlength="10"  ID="Text2">
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Stock Code</td>
+						<td align="center">:</td>
+						<td align="left">
+							<input type="text" name="FFO_UNDRLYNG" value="" size="5" ID="Text3">
+						</td>
+						<td align="right">Exchange</td>
+						<td align="center">:</td>
+						<td align="left">
+							<select name="FFO_XCHNG_CD" size="1" ID="Select1" class="IE6Select IE6SelectTicket">
+								<option value="NFO" selected>
+									NSE
+								</option>
+							</select>
+						</td>
+						<td align="right">Action</td>
+						<td align="center">:</td>
+						<td align="left">
+							<select name="FML_ORDR_ACTION" size="1" ID="Select2" class="IE6Select IE6SelectTicket">
+								<option value="A">
+									All</option>
+								<option value="B">
+									Buy</option>
+								<option value="S">
+									Sell</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Product</td>
+						<td align="center">:</td>
+						<td align="left" colspan="3">							
+							<input type=radio  checked name=FFO_PRDCT_TYP  value=F>FUTURES<input type=radio  name=FFO_PRDCT_TYP  value=P>FuturePLUS<input type=radio  name=FFO_PRDCT_TYP  value=O>OPTIONS							
+						</td>
+						<td align="left" colspan="3">
+							<input type="button" name="Submit" value=" View " onclick="return ValidateForm_FOAjax()"
+								class="button">
+						</td>
+						<td align="left" colspan="3">
+							<input type="button" name="ExportToExcel" value="Export To Excel" onclick="return exporttyp('exl')"
+								class="button">
+						</td>
+					</tr>
+				</table>
+				<table width="100%" class="projection">
+					<tr align="center" class="projectiontopbg">
+						<td align="center">Trade&nbsp;Date</td>
+						<td align="center">Contract Descriptor</td>
+						<td align="center">Action</td>
+						<td align="center">Qty</td>
+						<td align="center"><a href="#price">Price#</a></td>
+						<td align="center">Value</td>
+						<td align="center">Brokerage</td>
+						<td align="center">Order Ref.</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">18-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">263.95</td>
+						<td align="right">329,937.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909181200007614&Date=18-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=263.95&totval=329,937.50&m_brk=164.97&m_stt=56.09&m_TrnsServTax=7.26&m_StampDuty=6.60&m_SebiTurn=0.33&m_STax=16.98','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							252.23	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909181200007614','FUT-CAIIND-24-Sep-2009-S');">
+								200909181200007614
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">18-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">262.65</td>
+						<td align="right">328,312.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909181200006429&Date=18-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=262.65&totval=328,312.50&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.22&m_StampDuty=6.57&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.67	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909181200006429','FUT-CAIIND-24-Sep-2009-S');">
+								200909181200006429
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">18-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">263.90</td>
+						<td align="right">329,875.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909181200006217&Date=18-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=263.90&totval=329,875.00&m_brk=164.94&m_stt=56.08&m_TrnsServTax=7.26&m_StampDuty=6.60&m_SebiTurn=0.33&m_STax=16.98','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							252.19	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909181200006217','FUT-CAIIND-24-Sep-2009-S');">
+								200909181200006217
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">18-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">262.75</td>
+						<td align="right">328,437.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909181200006204&Date=18-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=262.75&totval=328,437.50&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.23&m_StampDuty=6.57&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.68	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909181200006204','FUT-CAIIND-24-Sep-2009-S');">
+								200909181200006204
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">263.50</td>
+						<td align="right">329,375.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909161300002540&Date=16-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=263.50&totval=329,375.00&m_brk=164.69&m_stt=55.99&m_TrnsServTax=7.25&m_StampDuty=6.59&m_SebiTurn=0.33&m_STax=16.96','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							251.81	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909161300002540','FUT-CAIIND-24-Sep-2009-S');">
+								200909161300002540
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">262.85</td>
+						<td align="right">328,562.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909161300002249&Date=16-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=262.85&totval=328,562.50&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.23&m_StampDuty=6.57&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.68	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909161300002249','FUT-CAIIND-24-Sep-2009-S');">
+								200909161300002249
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">263.60</td>
+						<td align="right">329,500.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909161300000630&Date=16-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=263.60&totval=329,500.00&m_brk=164.75&m_stt=56.02&m_TrnsServTax=7.25&m_StampDuty=6.59&m_SebiTurn=0.33&m_STax=16.97','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							251.91	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909161300000630','FUT-CAIIND-24-Sep-2009-S');">
+								200909161300000630
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">15-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">262.95</td>
+						<td align="right">328,687.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909151500008598&Date=15-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=262.95&totval=328,687.50&m_brk=164.34&m_stt=0.00&m_TrnsServTax=7.23&m_StampDuty=6.57&m_SebiTurn=0.33&m_STax=16.93','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							195.40	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909151500008598','FUT-CAIIND-24-Sep-2009-S');">
+								200909151500008598
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">15-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">263.35</td>
+						<td align="right">329,187.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909151500008245&Date=15-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=263.35&totval=329,187.50&m_brk=15.00&m_stt=55.96&m_TrnsServTax=7.24&m_StampDuty=6.58&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							86.66	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909151500008245','FUT-CAIIND-24-Sep-2009-S');">
+								200909151500008245
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">15-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">262.80</td>
+						<td align="right">328,500.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909151500006396&Date=15-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=262.80&totval=328,500.00&m_brk=164.25&m_stt=0.00&m_TrnsServTax=7.23&m_StampDuty=6.57&m_SebiTurn=0.33&m_STax=16.92','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							195.30	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909151500006396','FUT-CAIIND-24-Sep-2009-S');">
+								200909151500006396
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">15-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">260.80</td>
+						<td align="right">326,000.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909151300000645&Date=15-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=260.80&totval=326,000.00&m_brk=15.00&m_stt=55.42&m_TrnsServTax=7.17&m_StampDuty=6.52&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							85.99	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909151300000645','FUT-CAIIND-24-Sep-2009-S');">
+								200909151300000645
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">260.00</td>
+						<td align="right">325,000.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909141500014140&Date=14-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=260.00&totval=325,000.00&m_brk=162.50&m_stt=0.00&m_TrnsServTax=7.15&m_StampDuty=6.50&m_SebiTurn=0.33&m_STax=16.73','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							193.21	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909141500014140','FUT-CAIIND-24-Sep-2009-S');">
+								200909141500014140
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">260.50</td>
+						<td align="right">325,625.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909141500014032&Date=14-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=260.50&totval=325,625.00&m_brk=15.00&m_stt=55.36&m_TrnsServTax=7.16&m_StampDuty=6.51&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							85.91	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909141500014032','FUT-CAIIND-24-Sep-2009-S');">
+								200909141500014032
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">259.25</td>
+						<td align="right">324,062.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909141500009710&Date=14-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=259.25&totval=324,062.50&m_brk=162.03&m_stt=0.00&m_TrnsServTax=7.13&m_StampDuty=6.48&m_SebiTurn=0.32&m_STax=16.69','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							192.65	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909141500009710','FUT-CAIIND-24-Sep-2009-S');">
+								200909141500009710
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">259.10</td>
+						<td align="right">323,875.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909141500009489&Date=14-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=259.10&totval=323,875.00&m_brk=15.00&m_stt=55.06&m_TrnsServTax=7.13&m_StampDuty=6.48&m_SebiTurn=0.32&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							85.54	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909141500009489','FUT-CAIIND-24-Sep-2009-S');">
+								200909141500009489
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">258.85</td>
+						<td align="right">323,562.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909141500008664&Date=14-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=258.85&totval=323,562.50&m_brk=161.78&m_stt=0.00&m_TrnsServTax=7.12&m_StampDuty=6.47&m_SebiTurn=0.32&m_STax=16.66','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							192.35	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909141500008664','FUT-CAIIND-24-Sep-2009-S');">
+								200909141500008664
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">258.40</td>
+						<td align="right">323,000.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909141500008584&Date=14-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=258.40&totval=323,000.00&m_brk=15.00&m_stt=54.91&m_TrnsServTax=7.11&m_StampDuty=6.46&m_SebiTurn=0.32&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							85.35	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909141500008584','FUT-CAIIND-24-Sep-2009-S');">
+								200909141500008584
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">11-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">266.00</td>
+						<td align="right">332,500.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909111500006738&Date=11-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=266.00&totval=332,500.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.32&m_StampDuty=6.65&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.85	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909111500006738','FUT-CAIIND-24-Sep-2009-S');">
+								200909111500006738
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">11-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">266.55</td>
+						<td align="right">333,187.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909111500006380&Date=11-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=266.55&totval=333,187.50&m_brk=166.59&m_stt=56.64&m_TrnsServTax=7.33&m_StampDuty=6.66&m_SebiTurn=0.33&m_STax=17.16','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							254.71	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909111500006380','FUT-CAIIND-24-Sep-2009-S');">
+								200909111500006380
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">11-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">265.50</td>
+						<td align="right">331,875.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909111500006241&Date=11-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=265.50&totval=331,875.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.30&m_StampDuty=6.64&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.82	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909111500006241','FUT-CAIIND-24-Sep-2009-S');">
+								200909111500006241
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">11-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">266.90</td>
+						<td align="right">333,625.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909111300001270&Date=11-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=266.90&totval=333,625.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.34&m_StampDuty=6.67&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.89	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909111300001270','FUT-CAIIND-24-Sep-2009-S');">
+								200909111300001270
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">11-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">267.70</td>
+						<td align="right">334,625.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909111300001082&Date=11-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=267.70&totval=334,625.00&m_brk=167.31&m_stt=56.89&m_TrnsServTax=7.36&m_StampDuty=6.69&m_SebiTurn=0.33&m_STax=17.23','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							255.81	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909111300001082','FUT-CAIIND-24-Sep-2009-S');">
+								200909111300001082
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">11-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">265.35</td>
+						<td align="right">331,687.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909111300000615&Date=11-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=265.35&totval=331,687.50&m_brk=165.84&m_stt=56.39&m_TrnsServTax=7.30&m_StampDuty=6.63&m_SebiTurn=0.33&m_STax=17.07','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							253.56	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909111300000615','FUT-CAIIND-24-Sep-2009-S');">
+								200909111300000615
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">264.90</td>
+						<td align="right">331,125.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101500018473&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=264.90&totval=331,125.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.28&m_StampDuty=6.62&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.78	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101500018473','FUT-CAIIND-24-Sep-2009-S');">
+								200909101500018473
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">265.80</td>
+						<td align="right">332,250.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101500011147&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=265.80&totval=332,250.00&m_brk=166.13&m_stt=56.48&m_TrnsServTax=7.31&m_StampDuty=6.65&m_SebiTurn=0.33&m_STax=17.11','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							254.01	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101500011147','FUT-CAIIND-24-Sep-2009-S');">
+								200909101500011147
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">265.85</td>
+						<td align="right">332,312.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101500011112&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=265.85&totval=332,312.50&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.31&m_StampDuty=6.65&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.84	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101500011112','FUT-CAIIND-24-Sep-2009-S');">
+								200909101500011112
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">267.15</td>
+						<td align="right">333,937.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101500011044&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=267.15&totval=333,937.50&m_brk=166.97&m_stt=56.77&m_TrnsServTax=7.35&m_StampDuty=6.68&m_SebiTurn=0.33&m_STax=17.20','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							255.30	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101500011044','FUT-CAIIND-24-Sep-2009-S');">
+								200909101500011044
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">267.75</td>
+						<td align="right">334,687.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101500011011&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=267.75&totval=334,687.50&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.36&m_StampDuty=6.69&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.93	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101500011011','FUT-CAIIND-24-Sep-2009-S');">
+								200909101500011011
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">269.20</td>
+						<td align="right">336,500.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101500010003&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=269.20&totval=336,500.00&m_brk=168.25&m_stt=57.21&m_TrnsServTax=7.40&m_StampDuty=6.73&m_SebiTurn=0.34&m_STax=17.32','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							257.25	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101500010003','FUT-CAIIND-24-Sep-2009-S');">
+								200909101500010003
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">270.00</td>
+						<td align="right">337,500.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101500009971&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=270.00&totval=337,500.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.43&m_StampDuty=6.75&m_SebiTurn=0.34&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							31.07	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101500009971','FUT-CAIIND-24-Sep-2009-S');">
+								200909101500009971
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">271.00</td>
+						<td align="right">338,750.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101500009732&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=271.00&totval=338,750.00&m_brk=169.38&m_stt=57.59&m_TrnsServTax=7.45&m_StampDuty=6.78&m_SebiTurn=0.34&m_STax=17.45','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							258.99	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101500009732','FUT-CAIIND-24-Sep-2009-S');">
+								200909101500009732
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">271.30</td>
+						<td align="right">339,125.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101500009663&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=271.30&totval=339,125.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.46&m_StampDuty=6.78&m_SebiTurn=0.34&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							31.13	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101500009663','FUT-CAIIND-24-Sep-2009-S');">
+								200909101500009663
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">273.35</td>
+						<td align="right">341,687.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101500007338&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=273.35&totval=341,687.50&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.52&m_StampDuty=6.83&m_SebiTurn=0.34&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							31.24	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101500007338','FUT-CAIIND-24-Sep-2009-S');">
+								200909101500007338
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">273.15</td>
+						<td align="right">341,437.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101500007301&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=273.15&totval=341,437.50&m_brk=170.72&m_stt=58.04&m_TrnsServTax=7.51&m_StampDuty=6.83&m_SebiTurn=0.34&m_STax=17.57','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							261.01	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101500007301','FUT-CAIIND-24-Sep-2009-S');">
+								200909101500007301
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">10-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">274.65</td>
+						<td align="right">343,312.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909101300000595&Date=10-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=274.65&totval=343,312.50&m_brk=171.66&m_stt=58.36&m_TrnsServTax=7.55&m_StampDuty=6.87&m_SebiTurn=0.34&m_STax=17.68','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							262.46	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909101300000595','FUT-CAIIND-24-Sep-2009-S');">
+								200909101300000595
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">271.00</td>
+						<td align="right">338,750.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500016875&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=271.00&totval=338,750.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.45&m_StampDuty=6.78&m_SebiTurn=0.34&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							31.12	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500016875','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500016875
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">271.65</td>
+						<td align="right">339,562.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500016681&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=271.65&totval=339,562.50&m_brk=169.78&m_stt=57.73&m_TrnsServTax=7.47&m_StampDuty=6.79&m_SebiTurn=0.34&m_STax=17.48','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							259.59	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500016681','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500016681
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">270.90</td>
+						<td align="right">338,625.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500016489&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=270.90&totval=338,625.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.45&m_StampDuty=6.77&m_SebiTurn=0.34&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							31.11	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500016489','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500016489
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">271.55</td>
+						<td align="right">339,437.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500016282&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=271.55&totval=339,437.50&m_brk=169.72&m_stt=57.70&m_TrnsServTax=7.47&m_StampDuty=6.79&m_SebiTurn=0.34&m_STax=17.48','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							259.50	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500016282','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500016282
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">271.00</td>
+						<td align="right">338,750.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500015608&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=271.00&totval=338,750.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.45&m_StampDuty=6.78&m_SebiTurn=0.34&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							31.12	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500015608','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500015608
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">271.60</td>
+						<td align="right">339,500.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500015271&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=271.60&totval=339,500.00&m_brk=169.75&m_stt=57.72&m_TrnsServTax=7.47&m_StampDuty=6.79&m_SebiTurn=0.34&m_STax=17.48','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							259.55	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500015271','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500015271
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">271.00</td>
+						<td align="right">338,750.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500014909&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=271.00&totval=338,750.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.45&m_StampDuty=6.78&m_SebiTurn=0.34&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							31.12	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500014909','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500014909
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">272.00</td>
+						<td align="right">340,000.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500014399&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=272.00&totval=340,000.00&m_brk=170.00&m_stt=57.80&m_TrnsServTax=7.48&m_StampDuty=6.80&m_SebiTurn=0.34&m_STax=17.51','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							259.93	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500014399','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500014399
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">271.00</td>
+						<td align="right">338,750.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500012304&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=271.00&totval=338,750.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.45&m_StampDuty=6.78&m_SebiTurn=0.34&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							31.12	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500012304','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500012304
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">271.50</td>
+						<td align="right">339,375.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500012224&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=271.50&totval=339,375.00&m_brk=169.69&m_stt=57.69&m_TrnsServTax=7.47&m_StampDuty=6.79&m_SebiTurn=0.34&m_STax=17.48','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							259.46	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500012224','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500012224
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">270.90</td>
+						<td align="right">338,625.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500011930&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=270.90&totval=338,625.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.45&m_StampDuty=6.77&m_SebiTurn=0.34&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							31.11	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500011930','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500011930
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">271.90</td>
+						<td align="right">339,875.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500011318&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=271.90&totval=339,875.00&m_brk=169.94&m_stt=57.78&m_TrnsServTax=7.48&m_StampDuty=6.80&m_SebiTurn=0.34&m_STax=17.50','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							259.84	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500011318','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500011318
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">271.00</td>
+						<td align="right">338,750.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091500011024&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=271.00&totval=338,750.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.45&m_StampDuty=6.78&m_SebiTurn=0.34&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							31.12	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091500011024','FUT-CAIIND-24-Sep-2009-S');">
+								200909091500011024
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">271.00</td>
+						<td align="right">338,750.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909091300000677&Date=09-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=271.00&totval=338,750.00&m_brk=169.38&m_stt=57.59&m_TrnsServTax=7.45&m_StampDuty=6.78&m_SebiTurn=0.34&m_STax=17.45','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							258.99	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909091300000677','FUT-CAIIND-24-Sep-2009-S');">
+								200909091300000677
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">08-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">263.75</td>
+						<td align="right">329,687.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909081300001117&Date=08-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=263.75&totval=329,687.50&m_brk=164.84&m_stt=0.00&m_TrnsServTax=7.25&m_StampDuty=6.59&m_SebiTurn=0.33&m_STax=16.98','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							195.99	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909081300001117','FUT-CAIIND-24-Sep-2009-S');">
+								200909081300001117
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">08-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1250</td>
+						<td align="right">263.60</td>
+						<td align="right">329,500.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909081300000555&Date=08-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=S&QTY=1250&PRC=263.60&totval=329,500.00&m_brk=15.00&m_stt=56.02&m_TrnsServTax=7.25&m_StampDuty=6.59&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							86.74	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909081300000555','FUT-CAIIND-24-Sep-2009-S');">
+								200909081300000555
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Sep-2009</td>
+						<td align="left">
+							FUT-CAIIND-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1250</td>
+						<td align="right">262.40</td>
+						<td align="right">328,000.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909071200000621&Date=07-Sep-2009&Exc=NSE&ContDet=FUT-CAIIND-24-Sep-2009-S&Act=B&QTY=1250&PRC=262.40&totval=328,000.00&m_brk=164.00&m_stt=0.00&m_TrnsServTax=7.22&m_StampDuty=6.56&m_SebiTurn=0.33&m_STax=16.89','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							195.00	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909071200000621','FUT-CAIIND-24-Sep-2009-S');">
+								200909071200000621
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1300</td>
+						<td align="right">256.50</td>
+						<td align="right">333,450.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500019163&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=S&QTY=1300&PRC=256.50&totval=333,450.00&m_brk=166.73&m_stt=56.69&m_TrnsServTax=7.34&m_StampDuty=6.67&m_SebiTurn=0.33&m_STax=17.17','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							254.93	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500019163','FUT-INDREL-24-Sep-2009-S');">
+								200909041500019163
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1300</td>
+						<td align="right">255.75</td>
+						<td align="right">332,475.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500018846&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=B&QTY=1300&PRC=255.75&totval=332,475.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.31&m_StampDuty=6.65&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.84	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500018846','FUT-INDREL-24-Sep-2009-S');">
+								200909041500018846
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1300</td>
+						<td align="right">255.80</td>
+						<td align="right">332,540.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500017576&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=B&QTY=1300&PRC=255.80&totval=332,540.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.32&m_StampDuty=6.65&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.85	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500017576','FUT-INDREL-24-Sep-2009-S');">
+								200909041500017576
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1300</td>
+						<td align="right">255.85</td>
+						<td align="right">332,605.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500017408&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=S&QTY=1300&PRC=255.85&totval=332,605.00&m_brk=166.30&m_stt=56.54&m_TrnsServTax=7.32&m_StampDuty=6.65&m_SebiTurn=0.33&m_STax=17.13','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							254.27	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500017408','FUT-INDREL-24-Sep-2009-S');">
+								200909041500017408
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1300</td>
+						<td align="right">256.10</td>
+						<td align="right">332,930.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500017388&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=B&QTY=1300&PRC=256.10&totval=332,930.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.32&m_StampDuty=6.66&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.86	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500017388','FUT-INDREL-24-Sep-2009-S');">
+								200909041500017388
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1300</td>
+						<td align="right">257.25</td>
+						<td align="right">334,425.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500016856&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=S&QTY=1300&PRC=257.25&totval=334,425.00&m_brk=167.21&m_stt=56.85&m_TrnsServTax=7.36&m_StampDuty=6.69&m_SebiTurn=0.33&m_STax=17.22','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							255.66	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500016856','FUT-INDREL-24-Sep-2009-S');">
+								200909041500016856
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1300</td>
+						<td align="right">255.70</td>
+						<td align="right">332,410.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500016665&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=B&QTY=1300&PRC=255.70&totval=332,410.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.31&m_StampDuty=6.65&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.84	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500016665','FUT-INDREL-24-Sep-2009-S');">
+								200909041500016665
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1300</td>
+						<td align="right">256.40</td>
+						<td align="right">333,320.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500016637&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=B&QTY=1300&PRC=256.40&totval=333,320.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.33&m_StampDuty=6.67&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.88	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500016637','FUT-INDREL-24-Sep-2009-S');">
+								200909041500016637
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1300</td>
+						<td align="right">256.75</td>
+						<td align="right">333,775.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500016311&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=S&QTY=1300&PRC=256.75&totval=333,775.00&m_brk=166.89&m_stt=56.74&m_TrnsServTax=7.34&m_StampDuty=6.68&m_SebiTurn=0.33&m_STax=17.19','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							255.17	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500016311','FUT-INDREL-24-Sep-2009-S');">
+								200909041500016311
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1300</td>
+						<td align="right">254.75</td>
+						<td align="right">331,175.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500014705&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=S&QTY=1300&PRC=254.75&totval=331,175.00&m_brk=165.59&m_stt=56.30&m_TrnsServTax=7.29&m_StampDuty=6.62&m_SebiTurn=0.33&m_STax=17.05','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							253.18	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500014705','FUT-INDREL-24-Sep-2009-S');">
+								200909041500014705
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1300</td>
+						<td align="right">254.25</td>
+						<td align="right">330,525.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500014526&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=S&QTY=1300&PRC=254.25&totval=330,525.00&m_brk=165.26&m_stt=56.19&m_TrnsServTax=7.27&m_StampDuty=6.61&m_SebiTurn=0.33&m_STax=17.02','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							252.68	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500014526','FUT-INDREL-24-Sep-2009-S');">
+								200909041500014526
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1300</td>
+						<td align="right">253.35</td>
+						<td align="right">329,355.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500014370&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=B&QTY=1300&PRC=253.35&totval=329,355.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.25&m_StampDuty=6.59&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.72	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500014370','FUT-INDREL-24-Sep-2009-S');">
+								200909041500014370
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1300</td>
+						<td align="right">253.30</td>
+						<td align="right">329,290.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500014062&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=B&QTY=1300&PRC=253.30&totval=329,290.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.24&m_StampDuty=6.59&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.71	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500014062','FUT-INDREL-24-Sep-2009-S');">
+								200909041500014062
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1300</td>
+						<td align="right">253.50</td>
+						<td align="right">329,550.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500013773&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=S&QTY=1300&PRC=253.50&totval=329,550.00&m_brk=164.78&m_stt=56.02&m_TrnsServTax=7.25&m_StampDuty=6.59&m_SebiTurn=0.33&m_STax=16.97','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							251.94	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500013773','FUT-INDREL-24-Sep-2009-S');">
+								200909041500013773
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1300</td>
+						<td align="right">254.10</td>
+						<td align="right">330,330.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500013736&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=S&QTY=1300&PRC=254.10&totval=330,330.00&m_brk=165.17&m_stt=56.16&m_TrnsServTax=7.27&m_StampDuty=6.61&m_SebiTurn=0.33&m_STax=17.01','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							252.55	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500013736','FUT-INDREL-24-Sep-2009-S');">
+								200909041500013736
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1300</td>
+						<td align="right">253.70</td>
+						<td align="right">329,810.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500013601&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=B&QTY=1300&PRC=253.70&totval=329,810.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.26&m_StampDuty=6.60&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.74	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500013601','FUT-INDREL-24-Sep-2009-S');">
+								200909041500013601
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1300</td>
+						<td align="right">254.10</td>
+						<td align="right">330,330.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500013317&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=S&QTY=1300&PRC=254.10&totval=330,330.00&m_brk=165.17&m_stt=56.16&m_TrnsServTax=7.27&m_StampDuty=6.61&m_SebiTurn=0.33&m_STax=17.01','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							252.55	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500013317','FUT-INDREL-24-Sep-2009-S');">
+								200909041500013317
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1300</td>
+						<td align="right">253.75</td>
+						<td align="right">329,875.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500013157&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=B&QTY=1300&PRC=253.75&totval=329,875.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.26&m_StampDuty=6.60&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.74	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500013157','FUT-INDREL-24-Sep-2009-S');">
+								200909041500013157
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1300</td>
+						<td align="right">253.35</td>
+						<td align="right">329,355.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500012934&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=S&QTY=1300&PRC=253.35&totval=329,355.00&m_brk=164.68&m_stt=55.99&m_TrnsServTax=7.25&m_StampDuty=6.59&m_SebiTurn=0.33&m_STax=16.96','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							251.80	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500012934','FUT-INDREL-24-Sep-2009-S');">
+								200909041500012934
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1300</td>
+						<td align="right">254.60</td>
+						<td align="right">330,980.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500012889&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=S&QTY=1300&PRC=254.60&totval=330,980.00&m_brk=165.49&m_stt=56.27&m_TrnsServTax=7.28&m_StampDuty=6.62&m_SebiTurn=0.33&m_STax=17.05','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							253.04	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500012889','FUT-INDREL-24-Sep-2009-S');">
+								200909041500012889
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1300</td>
+						<td align="right">254.35</td>
+						<td align="right">330,655.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500012673&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=B&QTY=1300&PRC=254.35&totval=330,655.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.27&m_StampDuty=6.61&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.76	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500012673','FUT-INDREL-24-Sep-2009-S');">
+								200909041500012673
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">04-Sep-2009</td>
+						<td align="left">
+							FUT-INDREL-24-Sep-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1300</td>
+						<td align="right">251.90</td>
+						<td align="right">327,470.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200909041500011916&Date=04-Sep-2009&Exc=NSE&ContDet=FUT-INDREL-24-Sep-2009-S&Act=B&QTY=1300&PRC=251.90&totval=327,470.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=7.20&m_StampDuty=6.55&m_SebiTurn=0.33&m_STax=1.55','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							30.63	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200909041500011916','FUT-INDREL-24-Sep-2009-S');">
+								200909041500011916
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">20-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,705.00</td>
+						<td align="right">135,250.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902201600002476&Date=20-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=S&QTY=50&PRC=2,705.00&totval=135,250.00&m_brk=15.00&m_stt=22.99&m_TrnsServTax=2.71&m_StampDuty=2.71&m_SebiTurn=0.27&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							45.53	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902201600002476','FUT-NIFTY-26-Feb-2009-I');">
+								200902201600002476
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">20-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,705.50</td>
+						<td align="right">135,275.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902201600001310&Date=20-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=S&QTY=50&PRC=2,705.50&totval=135,275.00&m_brk=15.00&m_stt=23.00&m_TrnsServTax=2.71&m_StampDuty=2.71&m_SebiTurn=0.27&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							45.54	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902201600001310','FUT-NIFTY-26-Feb-2009-I');">
+								200902201600001310
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">20-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,740.00</td>
+						<td align="right">137,000.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902201600000252&Date=20-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=B&QTY=50&PRC=2,740.00&totval=137,000.00&m_brk=68.50&m_stt=0.00&m_TrnsServTax=2.74&m_StampDuty=2.74&m_SebiTurn=0.27&m_STax=8.47','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							82.72	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902201600000252','FUT-NIFTY-26-Feb-2009-I');">
+								200902201600000252
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">20-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,741.00</td>
+						<td align="right">137,050.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902201600000217&Date=20-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=B&QTY=50&PRC=2,741.00&totval=137,050.00&m_brk=68.53&m_stt=0.00&m_TrnsServTax=2.74&m_StampDuty=2.74&m_SebiTurn=0.27&m_STax=8.47','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							82.75	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902201600000217','FUT-NIFTY-26-Feb-2009-I');">
+								200902201600000217
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">19-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,784.25</td>
+						<td align="right">139,212.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902191600013031&Date=19-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=S&QTY=50&PRC=2,784.25&totval=139,212.50&m_brk=69.61&m_stt=23.67&m_TrnsServTax=2.78&m_StampDuty=2.78&m_SebiTurn=0.28&m_STax=8.60','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							107.72	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902191600013031','FUT-NIFTY-26-Feb-2009-I');">
+								200902191600013031
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">19-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,768.65</td>
+						<td align="right">138,432.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902191600006302&Date=19-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=S&QTY=50&PRC=2,768.65&totval=138,432.50&m_brk=69.22&m_stt=23.53&m_TrnsServTax=2.77&m_StampDuty=2.77&m_SebiTurn=0.28&m_STax=8.56','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							107.13	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902191600006302','FUT-NIFTY-26-Feb-2009-I');">
+								200902191600006302
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">17-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,753.20</td>
+						<td align="right">137,660.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902171500011631&Date=17-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=S&QTY=50&PRC=2,753.20&totval=137,660.00&m_brk=15.00&m_stt=23.40&m_TrnsServTax=2.75&m_StampDuty=2.75&m_SebiTurn=0.28&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							46.03	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902171500011631','FUT-NIFTY-26-Feb-2009-I');">
+								200902171500011631
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">17-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,754.45</td>
+						<td align="right">137,722.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902171500010874&Date=17-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=B&QTY=50&PRC=2,754.45&totval=137,722.50&m_brk=68.86&m_stt=0.00&m_TrnsServTax=2.75&m_StampDuty=2.75&m_SebiTurn=0.28&m_STax=8.51','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							83.15	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902171500010874','FUT-NIFTY-26-Feb-2009-I');">
+								200902171500010874
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">17-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,762.00</td>
+						<td align="right">138,100.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902171500008919&Date=17-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=S&QTY=50&PRC=2,762.00&totval=138,100.00&m_brk=15.00&m_stt=23.48&m_TrnsServTax=2.76&m_StampDuty=2.76&m_SebiTurn=0.28&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							46.13	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902171500008919','FUT-NIFTY-26-Feb-2009-I');">
+								200902171500008919
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">17-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,772.10</td>
+						<td align="right">138,605.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902171500006587&Date=17-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=B&QTY=50&PRC=2,772.10&totval=138,605.00&m_brk=69.30&m_stt=0.00&m_TrnsServTax=2.77&m_StampDuty=2.77&m_SebiTurn=0.28&m_STax=8.57','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							83.69	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902171500006587','FUT-NIFTY-26-Feb-2009-I');">
+								200902171500006587
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">17-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,786.00</td>
+						<td align="right">139,300.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902171500004468&Date=17-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=B&QTY=50&PRC=2,786.00&totval=139,300.00&m_brk=69.65&m_stt=0.00&m_TrnsServTax=2.79&m_StampDuty=2.79&m_SebiTurn=0.28&m_STax=8.61','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							84.12	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902171500004468','FUT-NIFTY-26-Feb-2009-I');">
+								200902171500004468
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">17-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,780.80</td>
+						<td align="right">139,040.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902171500003912&Date=17-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=S&QTY=50&PRC=2,780.80&totval=139,040.00&m_brk=15.00&m_stt=23.64&m_TrnsServTax=2.78&m_StampDuty=2.78&m_SebiTurn=0.28&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							46.33	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902171500003912','FUT-NIFTY-26-Feb-2009-I');">
+								200902171500003912
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,854.80</td>
+						<td align="right">142,740.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902161100010306&Date=16-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=B&QTY=50&PRC=2,854.80&totval=142,740.00&m_brk=71.37&m_stt=0.00&m_TrnsServTax=2.85&m_StampDuty=2.85&m_SebiTurn=0.28&m_STax=8.82','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							86.17	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902161100010306','FUT-NIFTY-26-Feb-2009-I');">
+								200902161100010306
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,852.00</td>
+						<td align="right">142,600.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902161100010271&Date=16-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=S&QTY=50&PRC=2,852.00&totval=142,600.00&m_brk=15.00&m_stt=24.24&m_TrnsServTax=2.85&m_StampDuty=2.85&m_SebiTurn=0.28&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							47.07	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902161100010271','FUT-NIFTY-26-Feb-2009-I');">
+								200902161100010271
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,841.35</td>
+						<td align="right">142,067.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902161100008055&Date=16-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=B&QTY=50&PRC=2,841.35&totval=142,067.50&m_brk=71.03&m_stt=0.00&m_TrnsServTax=2.84&m_StampDuty=2.84&m_SebiTurn=0.28&m_STax=8.77','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							85.76	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902161100008055','FUT-NIFTY-26-Feb-2009-I');">
+								200902161100008055
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,875.15</td>
+						<td align="right">143,757.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902161100007106&Date=16-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=S&QTY=50&PRC=2,875.15&totval=143,757.50&m_brk=15.00&m_stt=24.44&m_TrnsServTax=2.88&m_StampDuty=2.88&m_SebiTurn=0.28&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							47.33	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902161100007106','FUT-NIFTY-26-Feb-2009-I');">
+								200902161100007106
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,867.00</td>
+						<td align="right">143,350.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902161100006954&Date=16-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=B&QTY=50&PRC=2,867.00&totval=143,350.00&m_brk=71.68&m_stt=0.00&m_TrnsServTax=2.87&m_StampDuty=2.87&m_SebiTurn=0.28&m_STax=8.86','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							86.56	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902161100006954','FUT-NIFTY-26-Feb-2009-I');">
+								200902161100006954
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,894.05</td>
+						<td align="right">144,702.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902161100004330&Date=16-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=B&QTY=50&PRC=2,894.05&totval=144,702.50&m_brk=72.34&m_stt=0.00&m_TrnsServTax=2.89&m_StampDuty=2.89&m_SebiTurn=0.28&m_STax=8.94','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							87.34	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902161100004330','FUT-NIFTY-26-Feb-2009-I');">
+								200902161100004330
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,910.10</td>
+						<td align="right">145,505.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902161100004254&Date=16-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=S&QTY=50&PRC=2,910.10&totval=145,505.00&m_brk=15.00&m_stt=24.74&m_TrnsServTax=2.91&m_StampDuty=2.91&m_SebiTurn=0.28&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							47.69	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902161100004254','FUT-NIFTY-26-Feb-2009-I');">
+								200902161100004254
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Feb-2009</td>
+						<td align="left">
+							FUT-NIFTY-26-Feb-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,917.50</td>
+						<td align="right">145,875.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200902161100003174&Date=16-Feb-2009&Exc=NSE&ContDet=FUT-NIFTY-26-Feb-2009-I&Act=B&QTY=50&PRC=2,917.50&totval=145,875.00&m_brk=72.94&m_stt=0.00&m_TrnsServTax=2.92&m_StampDuty=2.92&m_SebiTurn=0.28&m_STax=9.02','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							88.08	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200902161100003174','FUT-NIFTY-26-Feb-2009-I');">
+								200902161100003174
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">28-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-26-Feb-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">1800</td>
+						<td align="right">27.00</td>
+						<td align="right">48,600.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901281300002159&Date=28-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-26-Feb-2009-S&Act=S&QTY=1800&PRC=27.00&totval=48,600.00&m_brk=24.30&m_stt=8.26&m_TrnsServTax=0.97&m_StampDuty=0.97&m_SebiTurn=0.10&m_STax=3.00','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							37.60	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901281300002159','FUT-UNITEC-26-Feb-2009-S');">
+								200901281300002159
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">28-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-26-Feb-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">1800</td>
+						<td align="right">26.70</td>
+						<td align="right">48,060.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901281300001357&Date=28-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-26-Feb-2009-S&Act=B&QTY=1800&PRC=26.70&totval=48,060.00&m_brk=30.00&m_stt=0.00&m_TrnsServTax=0.96&m_StampDuty=0.96&m_SebiTurn=0.10&m_STax=3.71','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							35.73	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901281300001357','FUT-UNITEC-26-Feb-2009-S');">
+								200901281300001357
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">27-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-26-Feb-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">26.85</td>
+						<td align="right">24,165.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901271300002910&Date=27-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-26-Feb-2009-S&Act=S&QTY=900&PRC=26.85&totval=24,165.00&m_brk=12.08&m_stt=4.11&m_TrnsServTax=0.48&m_StampDuty=0.48&m_SebiTurn=0.05&m_STax=1.49','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.69	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901271300002910','FUT-UNITEC-26-Feb-2009-S');">
+								200901271300002910
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">27-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-26-Feb-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">25.65</td>
+						<td align="right">23,085.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901271300002408&Date=27-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-26-Feb-2009-S&Act=B&QTY=900&PRC=25.65&totval=23,085.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.46&m_StampDuty=0.46&m_SebiTurn=0.05&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							17.82	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901271300002408','FUT-UNITEC-26-Feb-2009-S');">
+								200901271300002408
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">16-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">30.80</td>
+						<td align="right">27,720.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901161300000374&Date=16-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=30.80&totval=27,720.00&m_brk=13.86&m_stt=4.71&m_TrnsServTax=0.55&m_StampDuty=0.55&m_SebiTurn=0.06&m_STax=1.71','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							21.44	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901161300000374','FUT-UNITEC-29-Jan-2009-S');">
+								200901161300000374
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">15-Jan-2009</td>
+						<td align="left">
+							FUT-NIFTY-29-Jan-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,709.00</td>
+						<td align="right">135,450.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901151500004114&Date=15-Jan-2009&Exc=NSE&ContDet=FUT-NIFTY-29-Jan-2009-I&Act=S&QTY=50&PRC=2,709.00&totval=135,450.00&m_brk=67.73&m_stt=23.03&m_TrnsServTax=2.71&m_StampDuty=2.71&m_SebiTurn=0.27&m_STax=8.36','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							104.81	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901151500004114','FUT-NIFTY-29-Jan-2009-I');">
+								200901151500004114
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">15-Jan-2009</td>
+						<td align="left">
+							FUT-NIFTY-29-Jan-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,695.00</td>
+						<td align="right">134,750.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901151200001178&Date=15-Jan-2009&Exc=NSE&ContDet=FUT-NIFTY-29-Jan-2009-I&Act=B&QTY=50&PRC=2,695.00&totval=134,750.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=2.70&m_StampDuty=2.70&m_SebiTurn=0.27&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							22.52	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901151200001178','FUT-NIFTY-29-Jan-2009-I');">
+								200901151200001178
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">15-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">29.80</td>
+						<td align="right">26,820.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901151200001045&Date=15-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=29.80&totval=26,820.00&m_brk=13.41&m_stt=0.00&m_TrnsServTax=0.54&m_StampDuty=0.54&m_SebiTurn=0.05&m_STax=1.66','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							16.20	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901151200001045','FUT-UNITEC-29-Jan-2009-S');">
+								200901151200001045
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">33.35</td>
+						<td align="right">30,015.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901141200010006&Date=14-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=33.35&totval=30,015.00&m_brk=15.01&m_stt=5.09&m_TrnsServTax=0.60&m_StampDuty=0.60&m_SebiTurn=0.06&m_STax=1.86','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							23.22	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901141200010006','FUT-UNITEC-29-Jan-2009-S');">
+								200901141200010006
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">33.45</td>
+						<td align="right">30,105.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901141200009992&Date=14-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=33.45&totval=30,105.00&m_brk=15.05&m_stt=5.12&m_TrnsServTax=0.60&m_StampDuty=0.60&m_SebiTurn=0.06&m_STax=1.86','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							23.29	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901141200009992','FUT-UNITEC-29-Jan-2009-S');">
+								200901141200009992
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">33.00</td>
+						<td align="right">29,700.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901141200009422&Date=14-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=33.00&totval=29,700.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.59&m_StampDuty=0.59&m_SebiTurn=0.06&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.09	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901141200009422','FUT-UNITEC-29-Jan-2009-S');">
+								200901141200009422
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">33.15</td>
+						<td align="right">29,835.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901141200009315&Date=14-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=33.15&totval=29,835.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.60&m_StampDuty=0.60&m_SebiTurn=0.06&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.11	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901141200009315','FUT-UNITEC-29-Jan-2009-S');">
+								200901141200009315
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">33.45</td>
+						<td align="right">30,105.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901141200004906&Date=14-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=33.45&totval=30,105.00&m_brk=15.05&m_stt=5.12&m_TrnsServTax=0.60&m_StampDuty=0.60&m_SebiTurn=0.06&m_STax=1.86','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							23.29	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901141200004906','FUT-UNITEC-29-Jan-2009-S');">
+								200901141200004906
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">33.70</td>
+						<td align="right">30,330.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901141200004899&Date=14-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=33.70&totval=30,330.00&m_brk=15.17&m_stt=5.16&m_TrnsServTax=0.61&m_StampDuty=0.61&m_SebiTurn=0.06&m_STax=1.88','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							23.49	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901141200004899','FUT-UNITEC-29-Jan-2009-S');">
+								200901141200004899
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">31.80</td>
+						<td align="right">28,620.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901141200003997&Date=14-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=31.80&totval=28,620.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.56&m_StampDuty=0.56&m_SebiTurn=0.06&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.03	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901141200003997','FUT-UNITEC-29-Jan-2009-S');">
+								200901141200003997
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">33.00</td>
+						<td align="right">29,700.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901141200001682&Date=14-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=33.00&totval=29,700.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.59&m_StampDuty=0.59&m_SebiTurn=0.06&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.09	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901141200001682','FUT-UNITEC-29-Jan-2009-S');">
+								200901141200001682
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Jan-2009</td>
+						<td align="left">
+							FUT-RELCAP-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">138</td>
+						<td align="right">419.20</td>
+						<td align="right">57,849.60</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901141200001507&Date=14-Jan-2009&Exc=NSE&ContDet=FUT-RELCAP-29-Jan-2009-S&Act=S&QTY=138&PRC=419.20&totval=57,849.60&m_brk=28.92&m_stt=9.83&m_TrnsServTax=1.15&m_StampDuty=1.15&m_SebiTurn=0.12&m_STax=3.57','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							44.74	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901141200001507','FUT-RELCAP-29-Jan-2009-S');">
+								200901141200001507
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Jan-2009</td>
+						<td align="left">
+							FUT-NIFTY-29-Jan-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,785.00</td>
+						<td align="right">139,250.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901141200000780&Date=14-Jan-2009&Exc=NSE&ContDet=FUT-NIFTY-29-Jan-2009-I&Act=S&QTY=50&PRC=2,785.00&totval=139,250.00&m_brk=69.63&m_stt=23.67&m_TrnsServTax=2.79&m_StampDuty=2.79&m_SebiTurn=0.28&m_STax=8.61','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							107.77	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901141200000780','FUT-NIFTY-29-Jan-2009-I');">
+								200901141200000780
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">14-Jan-2009</td>
+						<td align="left">
+							FUT-RELCAP-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">138</td>
+						<td align="right">424.00</td>
+						<td align="right">58,512.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901141200000334&Date=14-Jan-2009&Exc=NSE&ContDet=FUT-RELCAP-29-Jan-2009-S&Act=S&QTY=138&PRC=424.00&totval=58,512.00&m_brk=29.26&m_stt=9.94&m_TrnsServTax=1.17&m_StampDuty=1.17&m_SebiTurn=0.12&m_STax=3.62','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							45.28	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901141200000334','FUT-RELCAP-29-Jan-2009-S');">
+								200901141200000334
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">13-Jan-2009</td>
+						<td align="left">
+							FUT-RELCAP-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">138</td>
+						<td align="right">404.15</td>
+						<td align="right">55,772.70</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901131300015784&Date=13-Jan-2009&Exc=NSE&ContDet=FUT-RELCAP-29-Jan-2009-S&Act=B&QTY=138&PRC=404.15&totval=55,772.70&m_brk=27.89&m_stt=0.00&m_TrnsServTax=1.12&m_StampDuty=1.12&m_SebiTurn=0.11&m_STax=3.45','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							33.69	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901131300015784','FUT-RELCAP-29-Jan-2009-S');">
+								200901131300015784
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">13-Jan-2009</td>
+						<td align="left">
+							FUT-RELCAP-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">138</td>
+						<td align="right">420.00</td>
+						<td align="right">57,960.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901131300013292&Date=13-Jan-2009&Exc=NSE&ContDet=FUT-RELCAP-29-Jan-2009-S&Act=B&QTY=138&PRC=420.00&totval=57,960.00&m_brk=28.98&m_stt=0.00&m_TrnsServTax=1.15&m_StampDuty=1.15&m_SebiTurn=0.12&m_STax=3.58','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							34.98	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901131300013292','FUT-RELCAP-29-Jan-2009-S');">
+								200901131300013292
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">13-Jan-2009</td>
+						<td align="left">
+							FUT-NIFTY-29-Jan-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,780.00</td>
+						<td align="right">139,000.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901131300005694&Date=13-Jan-2009&Exc=NSE&ContDet=FUT-NIFTY-29-Jan-2009-I&Act=B&QTY=50&PRC=2,780.00&totval=139,000.00&m_brk=69.50&m_stt=0.00&m_TrnsServTax=2.78&m_StampDuty=2.78&m_SebiTurn=0.28&m_STax=8.59','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							83.93	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901131300005694','FUT-NIFTY-29-Jan-2009-I');">
+								200901131300005694
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">13-Jan-2009</td>
+						<td align="left">
+							FUT-NIFTY-29-Jan-2009-I
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">50</td>
+						<td align="right">2,777.00</td>
+						<td align="right">138,850.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901131300000632&Date=13-Jan-2009&Exc=NSE&ContDet=FUT-NIFTY-29-Jan-2009-I&Act=S&QTY=50&PRC=2,777.00&totval=138,850.00&m_brk=15.00&m_stt=23.60&m_TrnsServTax=2.78&m_StampDuty=2.78&m_SebiTurn=0.28&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							46.29	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901131300000632','FUT-NIFTY-29-Jan-2009-I');">
+								200901131300000632
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">13-Jan-2009</td>
+						<td align="left">
+							FUT-NIFTY-29-Jan-2009-I
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">2,758.95</td>
+						<td align="right">137,947.50</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901131300000545&Date=13-Jan-2009&Exc=NSE&ContDet=FUT-NIFTY-29-Jan-2009-I&Act=B&QTY=50&PRC=2,758.95&totval=137,947.50&m_brk=68.97&m_stt=0.00&m_TrnsServTax=2.76&m_StampDuty=2.76&m_SebiTurn=0.28&m_STax=8.52','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							83.29	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901131300000545','FUT-NIFTY-29-Jan-2009-I');">
+								200901131300000545
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">12-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">32.70</td>
+						<td align="right">29,430.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901121400001255&Date=12-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=32.70&totval=29,430.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.59&m_StampDuty=0.59&m_SebiTurn=0.06&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.09	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901121400001255','FUT-UNITEC-29-Jan-2009-S');">
+								200901121400001255
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">12-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">34.00</td>
+						<td align="right">30,600.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901121200004316&Date=12-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=34.00&totval=30,600.00&m_brk=15.30&m_stt=5.20&m_TrnsServTax=0.61&m_StampDuty=0.61&m_SebiTurn=0.06&m_STax=1.89','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							23.67	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901121200004316','FUT-UNITEC-29-Jan-2009-S');">
+								200901121200004316
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">35.10</td>
+						<td align="right">31,590.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200014571&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=35.10&totval=31,590.00&m_brk=15.80&m_stt=5.37&m_TrnsServTax=0.63&m_StampDuty=0.63&m_SebiTurn=0.06&m_STax=1.95','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							24.44	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200014571','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200014571
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">34.90</td>
+						<td align="right">31,410.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200014528&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=34.90&totval=31,410.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.63&m_StampDuty=0.63&m_SebiTurn=0.06&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.17	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200014528','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200014528
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">36.00</td>
+						<td align="right">32,400.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200014266&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=36.00&totval=32,400.00&m_brk=16.20&m_stt=5.51&m_TrnsServTax=0.65&m_StampDuty=0.65&m_SebiTurn=0.06&m_STax=2.00','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.07	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200014266','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200014266
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">34.65</td>
+						<td align="right">31,185.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200014240&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=34.65&totval=31,185.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.62&m_StampDuty=0.62&m_SebiTurn=0.06&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.15	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200014240','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200014240
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">38.00</td>
+						<td align="right">34,200.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200013631&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=38.00&totval=34,200.00&m_brk=17.10&m_stt=5.81&m_TrnsServTax=0.68&m_StampDuty=0.68&m_SebiTurn=0.07&m_STax=2.11','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							26.45	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200013631','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200013631
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">35.85</td>
+						<td align="right">32,265.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200013303&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=35.85&totval=32,265.00&m_brk=16.13&m_stt=5.49&m_TrnsServTax=0.65&m_StampDuty=0.65&m_SebiTurn=0.06&m_STax=1.99','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							24.97	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200013303','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200013303
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">35.70</td>
+						<td align="right">32,130.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200013254&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=35.70&totval=32,130.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.64&m_StampDuty=0.64&m_SebiTurn=0.06&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.19	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200013254','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200013254
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">32.70</td>
+						<td align="right">29,430.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200012176&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=32.70&totval=29,430.00&m_brk=14.72&m_stt=5.00&m_TrnsServTax=0.59&m_StampDuty=0.59&m_SebiTurn=0.06&m_STax=1.82','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							22.78	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200012176','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200012176
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">32.45</td>
+						<td align="right">29,205.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200012136&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=32.45&totval=29,205.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.57&m_StampDuty=0.57&m_SebiTurn=0.06&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.05	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200012136','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200012136
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">29.60</td>
+						<td align="right">26,640.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200011594&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=29.60&totval=26,640.00&m_brk=13.32&m_stt=4.53&m_TrnsServTax=0.53&m_StampDuty=0.53&m_SebiTurn=0.05&m_STax=1.65','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							20.61	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200011594','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200011594
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">29.85</td>
+						<td align="right">26,865.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200011552&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=29.85&totval=26,865.00&m_brk=13.43&m_stt=4.57&m_TrnsServTax=0.54&m_StampDuty=0.54&m_SebiTurn=0.05&m_STax=1.66','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							20.79	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200011552','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200011552
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">29.35</td>
+						<td align="right">26,415.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200011451&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=29.35&totval=26,415.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.53&m_StampDuty=0.53&m_SebiTurn=0.05&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							17.96	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200011451','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200011451
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">29.15</td>
+						<td align="right">26,235.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200011433&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=29.15&totval=26,235.00&m_brk=13.12&m_stt=4.46&m_TrnsServTax=0.52&m_StampDuty=0.52&m_SebiTurn=0.05&m_STax=1.62','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							20.29	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200011433','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200011433
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">28.95</td>
+						<td align="right">26,055.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200009570&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=28.95&totval=26,055.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.52&m_StampDuty=0.52&m_SebiTurn=0.05&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							17.94	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200009570','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200009570
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">28.75</td>
+						<td align="right">25,875.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200009521&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=28.75&totval=25,875.00&m_brk=12.94&m_stt=4.40&m_TrnsServTax=0.52&m_StampDuty=0.52&m_SebiTurn=0.05&m_STax=1.60','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							20.03	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200009521','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200009521
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">28.50</td>
+						<td align="right">25,650.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200009445&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=28.50&totval=25,650.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.51&m_StampDuty=0.51&m_SebiTurn=0.05&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							17.92	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200009445','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200009445
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">28.40</td>
+						<td align="right">25,560.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200009410&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=28.40&totval=25,560.00&m_brk=12.78&m_stt=4.34&m_TrnsServTax=0.51&m_StampDuty=0.51&m_SebiTurn=0.05&m_STax=1.58','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							19.77	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200009410','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200009410
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">28.30</td>
+						<td align="right">25,470.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200009351&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=28.30&totval=25,470.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.51&m_StampDuty=0.51&m_SebiTurn=0.05&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							17.92	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200009351','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200009351
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-SATCOM-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">600</td>
+						<td align="right">19.90</td>
+						<td align="right">11,940.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200007774&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-SATCOM-29-Jan-2009-S&Act=B&QTY=600&PRC=19.90&totval=11,940.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.24&m_StampDuty=0.24&m_SebiTurn=0.02&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							17.35	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200007774','FUT-SATCOM-29-Jan-2009-S');">
+								200901091200007774
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-SATCOM-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">600</td>
+						<td align="right">20.85</td>
+						<td align="right">12,510.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200007424&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-SATCOM-29-Jan-2009-S&Act=S&QTY=600&PRC=20.85&totval=12,510.00&m_brk=6.26&m_stt=2.13&m_TrnsServTax=0.25&m_StampDuty=0.25&m_SebiTurn=0.03&m_STax=0.77','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							9.69	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200007424','FUT-SATCOM-29-Jan-2009-S');">
+								200901091200007424
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-SATCOM-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">600</td>
+						<td align="right">20.25</td>
+						<td align="right">12,150.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200007097&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-SATCOM-29-Jan-2009-S&Act=S&QTY=600&PRC=20.25&totval=12,150.00&m_brk=6.08&m_stt=2.06&m_TrnsServTax=0.24&m_StampDuty=0.24&m_SebiTurn=0.02&m_STax=0.75','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							9.39	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200007097','FUT-SATCOM-29-Jan-2009-S');">
+								200901091200007097
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-SATCOM-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">600</td>
+						<td align="right">19.90</td>
+						<td align="right">11,940.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200006827&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-SATCOM-29-Jan-2009-S&Act=B&QTY=600&PRC=19.90&totval=11,940.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.24&m_StampDuty=0.24&m_SebiTurn=0.02&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							17.35	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200006827','FUT-SATCOM-29-Jan-2009-S');">
+								200901091200006827
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">28.35</td>
+						<td align="right">25,515.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200005802&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=28.35&totval=25,515.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.51&m_StampDuty=0.51&m_SebiTurn=0.05&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							17.92	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200005802','FUT-UNITEC-29-Jan-2009-S');">
+								200901091200005802
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-SATCOM-26-Feb-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">600</td>
+						<td align="right">18.50</td>
+						<td align="right">11,100.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200001957&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-SATCOM-26-Feb-2009-S&Act=S&QTY=600&PRC=18.50&totval=11,100.00&m_brk=5.55&m_stt=1.89&m_TrnsServTax=0.22&m_StampDuty=0.22&m_SebiTurn=0.02&m_STax=0.69','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							8.59	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200001957','FUT-SATCOM-26-Feb-2009-S');">
+								200901091200001957
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">09-Jan-2009</td>
+						<td align="left">
+							FUT-SATCOM-26-Feb-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">600</td>
+						<td align="right">14.40</td>
+						<td align="right">8,640.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901091200001212&Date=09-Jan-2009&Exc=NSE&ContDet=FUT-SATCOM-26-Feb-2009-S&Act=B&QTY=600&PRC=14.40&totval=8,640.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.17&m_StampDuty=0.17&m_SebiTurn=0.02&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							17.21	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901091200001212','FUT-SATCOM-26-Feb-2009-S');">
+								200901091200001212
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">42.40</td>
+						<td align="right">38,160.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071300008671&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=42.40&totval=38,160.00&m_brk=19.07&m_stt=0.00&m_TrnsServTax=0.76&m_StampDuty=0.76&m_SebiTurn=0.08&m_STax=2.36','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							23.03	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071300008671','FUT-UNITEC-29-Jan-2009-S');">
+								200901071300008671
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">42.40</td>
+						<td align="right">38,160.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071300008632&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=42.40&totval=38,160.00&m_brk=15.00&m_stt=6.49&m_TrnsServTax=0.76&m_StampDuty=0.76&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							24.94	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071300008632','FUT-UNITEC-29-Jan-2009-S');">
+								200901071300008632
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">41.65</td>
+						<td align="right">37,485.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071300008586&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=41.65&totval=37,485.00&m_brk=18.73&m_stt=0.00&m_TrnsServTax=0.75&m_StampDuty=0.75&m_SebiTurn=0.07&m_STax=2.31','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							22.61	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071300008586','FUT-UNITEC-29-Jan-2009-S');">
+								200901071300008586
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">40.00</td>
+						<td align="right">36,000.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071300008235&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=40.00&totval=36,000.00&m_brk=15.00&m_stt=6.12&m_TrnsServTax=0.72&m_StampDuty=0.72&m_SebiTurn=0.07&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							24.48	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071300008235','FUT-UNITEC-29-Jan-2009-S');">
+								200901071300008235
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">43.15</td>
+						<td align="right">38,835.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071300007655&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=43.15&totval=38,835.00&m_brk=19.42&m_stt=0.00&m_TrnsServTax=0.78&m_StampDuty=0.78&m_SebiTurn=0.08&m_STax=2.40','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							23.46	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071300007655','FUT-UNITEC-29-Jan-2009-S');">
+								200901071300007655
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">43.80</td>
+						<td align="right">39,420.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071300007389&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=43.80&totval=39,420.00&m_brk=15.00&m_stt=6.70&m_TrnsServTax=0.79&m_StampDuty=0.79&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.21	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071300007389','FUT-UNITEC-29-Jan-2009-S');">
+								200901071300007389
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.00</td>
+						<td align="right">41,400.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071300001767&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.00&totval=41,400.00&m_brk=20.70&m_stt=0.00&m_TrnsServTax=0.83&m_StampDuty=0.83&m_SebiTurn=0.08&m_STax=2.56','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.00	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071300001767','FUT-UNITEC-29-Jan-2009-S');">
+								200901071300001767
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">45.90</td>
+						<td align="right">41,310.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071300001720&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=45.90&totval=41,310.00&m_brk=20.66&m_stt=0.00&m_TrnsServTax=0.83&m_StampDuty=0.83&m_SebiTurn=0.08&m_STax=2.54','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							24.94	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071300001720','FUT-UNITEC-29-Jan-2009-S');">
+								200901071300001720
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">46.35</td>
+						<td align="right">41,715.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071300001544&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=46.35&totval=41,715.00&m_brk=15.00&m_stt=7.09&m_TrnsServTax=0.83&m_StampDuty=0.83&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.68	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071300001544','FUT-UNITEC-29-Jan-2009-S');">
+								200901071300001544
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">46.35</td>
+						<td align="right">41,715.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071300001530&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=46.35&totval=41,715.00&m_brk=15.00&m_stt=7.09&m_TrnsServTax=0.83&m_StampDuty=0.83&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.68	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071300001530','FUT-UNITEC-29-Jan-2009-S');">
+								200901071300001530
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.25</td>
+						<td align="right">41,625.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071300001148&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.25&totval=41,625.00&m_brk=20.81&m_stt=0.00&m_TrnsServTax=0.83&m_StampDuty=0.83&m_SebiTurn=0.08&m_STax=2.57','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.12	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071300001148','FUT-UNITEC-29-Jan-2009-S');">
+								200901071300001148
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">07-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">32.80</td>
+						<td align="right">29,520.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901071200013736&Date=07-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=32.80&totval=29,520.00&m_brk=15.00&m_stt=5.01&m_TrnsServTax=0.59&m_StampDuty=0.59&m_SebiTurn=0.06&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							23.10	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901071200013736','FUT-UNITEC-29-Jan-2009-S');">
+								200901071200013736
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.50</td>
+						<td align="right">41,850.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400010447&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.50&totval=41,850.00&m_brk=20.93&m_stt=0.00&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=2.59','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.28	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400010447','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400010447
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">46.45</td>
+						<td align="right">41,805.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400010433&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=46.45&totval=41,805.00&m_brk=15.00&m_stt=7.11&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.72	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400010433','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400010433
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.30</td>
+						<td align="right">41,670.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400010343&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.30&totval=41,670.00&m_brk=20.84&m_stt=0.00&m_TrnsServTax=0.83&m_StampDuty=0.83&m_SebiTurn=0.08&m_STax=2.58','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.16	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400010343','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400010343
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.35</td>
+						<td align="right">41,715.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400010331&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.35&totval=41,715.00&m_brk=20.86&m_stt=0.00&m_TrnsServTax=0.83&m_StampDuty=0.83&m_SebiTurn=0.08&m_STax=2.58','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.18	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400010331','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400010331
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">46.80</td>
+						<td align="right">42,120.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400010190&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=46.80&totval=42,120.00&m_brk=15.00&m_stt=7.16&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.77	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400010190','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400010190
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.90</td>
+						<td align="right">42,210.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400010168&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.90&totval=42,210.00&m_brk=21.11&m_stt=0.00&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=2.61','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.48	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400010168','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400010168
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">47.05</td>
+						<td align="right">42,345.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400009349&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=47.05&totval=42,345.00&m_brk=15.00&m_stt=7.20&m_TrnsServTax=0.85&m_StampDuty=0.85&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.83	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400009349','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400009349
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">47.15</td>
+						<td align="right">42,435.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400009260&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=47.15&totval=42,435.00&m_brk=21.22&m_stt=0.00&m_TrnsServTax=0.85&m_StampDuty=0.85&m_SebiTurn=0.08&m_STax=2.62','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.62	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400009260','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400009260
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">47.25</td>
+						<td align="right">42,525.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400007689&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=47.25&totval=42,525.00&m_brk=15.00&m_stt=7.23&m_TrnsServTax=0.85&m_StampDuty=0.85&m_SebiTurn=0.09&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.87	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400007689','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400007689
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.40</td>
+						<td align="right">41,760.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400007665&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.40&totval=41,760.00&m_brk=20.88&m_stt=0.00&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=2.58','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.22	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400007665','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400007665
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">46.70</td>
+						<td align="right">42,030.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400006399&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=46.70&totval=42,030.00&m_brk=15.00&m_stt=7.15&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.76	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400006399','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400006399
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.65</td>
+						<td align="right">41,985.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400006357&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.65&totval=41,985.00&m_brk=20.99&m_stt=0.00&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=2.59','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.34	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400006357','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400006357
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">46.85</td>
+						<td align="right">42,165.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400006195&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=46.85&totval=42,165.00&m_brk=15.00&m_stt=7.17&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.78	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400006195','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400006195
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.95</td>
+						<td align="right">42,255.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400006073&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.95&totval=42,255.00&m_brk=21.13&m_stt=0.00&m_TrnsServTax=0.85&m_StampDuty=0.85&m_SebiTurn=0.08&m_STax=2.61','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.52	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400006073','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400006073
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">47.15</td>
+						<td align="right">42,435.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400004995&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=47.15&totval=42,435.00&m_brk=15.00&m_stt=7.21&m_TrnsServTax=0.85&m_StampDuty=0.85&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.84	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400004995','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400004995
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">46.75</td>
+						<td align="right">42,075.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400004748&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=46.75&totval=42,075.00&m_brk=15.00&m_stt=7.15&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.76	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400004748','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400004748
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.55</td>
+						<td align="right">41,895.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400003879&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.55&totval=41,895.00&m_brk=20.95&m_stt=0.00&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=2.59','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.30	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400003879','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400003879
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.30</td>
+						<td align="right">41,670.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400003118&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.30&totval=41,670.00&m_brk=20.84&m_stt=0.00&m_TrnsServTax=0.83&m_StampDuty=0.83&m_SebiTurn=0.08&m_STax=2.58','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.16	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400003118','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400003118
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">06-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">46.55</td>
+						<td align="right">41,895.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901061400001265&Date=06-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=46.55&totval=41,895.00&m_brk=15.00&m_stt=7.12&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							25.73	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901061400001265','FUT-UNITEC-29-Jan-2009-S');">
+								200901061400001265
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">02-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.95</td>
+						<td align="right">42,255.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901021200003625&Date=02-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.95&totval=42,255.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.85&m_StampDuty=0.85&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.63	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901021200003625','FUT-UNITEC-29-Jan-2009-S');">
+								200901021200003625
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">02-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">47.00</td>
+						<td align="right">42,300.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901021200003528&Date=02-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=47.00&totval=42,300.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.85&m_StampDuty=0.85&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.63	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901021200003528','FUT-UNITEC-29-Jan-2009-S');">
+								200901021200003528
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">02-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">47.10</td>
+						<td align="right">42,390.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901021200003448&Date=02-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=47.10&totval=42,390.00&m_brk=21.20&m_stt=7.21&m_TrnsServTax=0.85&m_StampDuty=0.85&m_SebiTurn=0.08&m_STax=2.62','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							32.81	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901021200003448','FUT-UNITEC-29-Jan-2009-S');">
+								200901021200003448
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">02-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">47.10</td>
+						<td align="right">42,390.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901021200003423&Date=02-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=47.10&totval=42,390.00&m_brk=21.20&m_stt=7.21&m_TrnsServTax=0.85&m_StampDuty=0.85&m_SebiTurn=0.08&m_STax=2.62','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							32.81	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901021200003423','FUT-UNITEC-29-Jan-2009-S');">
+								200901021200003423
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">02-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">46.85</td>
+						<td align="right">42,165.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901021200003252&Date=02-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=46.85&totval=42,165.00&m_brk=21.08&m_stt=7.17&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=2.61','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							32.62	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901021200003252','FUT-UNITEC-29-Jan-2009-S');">
+								200901021200003252
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">02-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Sell</td>
+						<td align="center">900</td>
+						<td align="right">46.60</td>
+						<td align="right">41,940.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901021200003225&Date=02-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=S&QTY=900&PRC=46.60&totval=41,940.00&m_brk=20.97&m_stt=7.13&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=2.59','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							32.45	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901021200003225','FUT-UNITEC-29-Jan-2009-S');">
+								200901021200003225
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">02-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.65</td>
+						<td align="right">41,985.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901021200003082&Date=02-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.65&totval=41,985.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.61	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901021200003082','FUT-UNITEC-29-Jan-2009-S');">
+								200901021200003082
+							</a>
+						</td>
+					</tr>
+					
+					<tr valign="top">
+						<td align="center">02-Jan-2009</td>
+						<td align="left">
+							FUT-UNITEC-29-Jan-2009-S
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">900</td>
+						<td align="right">46.45</td>
+						<td align="right">41,805.00</td>
+						
+						<td align="center">
+						
+						
+						<a href="javascript://" onclick="window.open('includes/STTDetails.asp?ordNo=200901021200003052&Date=02-Jan-2009&Exc=NSE&ContDet=FUT-UNITEC-29-Jan-2009-S&Act=B&QTY=900&PRC=46.45&totval=41,805.00&m_brk=15.00&m_stt=0.00&m_TrnsServTax=0.84&m_StampDuty=0.84&m_SebiTurn=0.08&m_STax=1.85','tax','height=420,width=600,resizable=no,scrollbars=yes')">
+							18.61	
+						</a>
+						
+						</td>
+						
+						<td align="center">
+							
+							<a href="javascript:setvalue('200901021200003052','FUT-UNITEC-29-Jan-2009-S');">
+								200901021200003052
+							</a>
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="left" colspan="3">Total</td>
+						<td align="center">167452</td>
+						<td>&nbsp;</td>
+						<td align="center">31,192,209.30</td>
+						<td colspan="2">&nbsp;</td>
+					</tr>
+					
+				</table>
+				
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" ID="Table6">
+					<tr>
+						<td><a name="price"></a>#Price</td>
+					</tr>
+					<tr>
+						<td><font color="blue">Indicates Limit Order (price displayed is the price at which the 
+								limit order was placed).</font></td>
+					</tr>
+					<tr>
+						<td>Indicates Market Order (price displayed is the last traded price at the time of 
+							placement of order).</td>
+					</tr>
+				</table>
+				
+			</form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,240 @@
+
+<script language="javascript">
+	var SelectedTradingFolder;
+	
+</script>
+
+<script language="JavaScript" src="script/OrderBook.js"></script>
+<div class="popup">
+	<h2 class="buyStock">F & O - ORDER BOOK</h2>
+	<div class="text_size">
+		<div class="startSection1 security">
+			<form name="OrderBookForm" method="post" action="OrderBook.asp#main" ID="Form1">
+				
+				<div name='message'><blink><MARQUEE DIRECTION="left" BEHAVIOR="SCROLL" SCROLLAMOUNT="3" SCROLLDELAY="3"><font face='Arial' size='2'><STRONG>Alpha Trade :<A
+href="http://content.icicidirect.com/mailimages/ICICIdirect_TCS_Nifty_AlphaTrade.pdf"target="new">Long TCS and Short Nifty.<A/>-- Make your stocks work for you. Never lose an opportunity with Shares As Margin. <A href="http://content.icicidirect.com/mailimages/sam.pdf"target="new"> Know more.<A/>--Trade in FuturePLUS with 5.5% margin on Nifty as compared to 11% in Futures to make most of Intra-day market volatility.</STRONG></font></MARQUEE>
+					</blink></div>
+				
+				<table width="100%" cellspacing="3" cellpadding="2">
+					<input type="hidden" name="FFO_PASS" value="1" ID="Hidden1"> <input type="hidden" name="FFO_CONTRACT" value="" ID="Hidden2">
+					<input type="hidden" name="FML_strfinal" value="" ID="Hidden3"> <input type="hidden" name="Symbol" value="" ID="Hidden4">
+					<input type="hidden" name="FFO_EXPRY_DT" value="" ID="Hidden5">
+					<input type="hidden" name="FFO_EXER_TYP" value="" ID="Hidden6">
+					<input type="hidden" name="FFO_STRK_PRC" value="" ID="Hidden7">
+					<input type="hidden" name="FFO_STATUS" value="" ID="Hidden8"> <input type="hidden" name="FFO_DP_ID" value="" ID="Hidden9">
+					<input type="hidden" name="FFO_CLNT_ID" value="" ID="Hidden10"> <input type="hidden" name="FFO_EXEC_QTY" value="" ID="Hidden11">
+					<input type="hidden" name="FFO_ORD_TOT_QTY" value="" ID="Hidden12"> <input type="hidden" name="FFO_QTY" value="" ID="Hidden13">
+					<input type="hidden" name="FFO_ORD_TYP" value="" ID="Hidden14"> <input type="hidden" name="FFO_OPEN_QTY" value="" ID="Hidden15">
+					<input type="hidden" name="FFO_LMT_MKT_SL_FLG" value="" ID="Hidden16"> <input type="hidden" name="FFO_ORDR_FLW" value="" ID="Hidden17">
+					<input type="hidden" name="FFO_LMT_RT" value="" ID="Hidden18"> <input type="hidden" name="FFO_DSCLSD_QTY" value="" ID="Hidden19">
+					<input type="hidden" name="FFO_STP_LSS_TGR" value="" ID="Hidden20"> <input type="hidden" name="FFO_DT" value="" ID="Hidden21">
+					<input type="hidden" name="FFO_ORDR_RFRNC" value="" ID="Hidden22"> <input type="hidden" name="FFO_NRI_FLAG" value="" ID="Hidden23">
+					<input type="hidden" name="FFO_PIPE_ID" value="" ID="Hidden24"> <input type="hidden" name="FFO_OPT_TYP" value="" ID="Hidden25">
+					<input type="hidden" name="FFO_TRD_PSWD_LMT" value="" ID="Hidden26"> <input type="hidden" name="FFO_GOOD_TILL_TYPE" value="" ID="Hidden27">
+					<input type="hidden" name="FFO_GOOD_TILL_DATE_TEXT_OLD" value="" ID="Hidden28">
+					<tr>
+						<td width="11%" align="right">
+							Account
+						</td>
+						<td width="2%" align="center">
+							:</td>
+						<td width="15%" align="left">8500501588
+							<input type="hidden" name="FFO_ACCOUNT" value="8500501588" ID="Hidden29">
+						</td>
+						<td width="11%" align="right">Date From</td>
+						<td width="2%" align="center">:</td>
+						<td width="15%" align="left">
+							<input type="text" name="FFO_FRM_DT"  value="26/03/2012"  size="7" maxlength="10"  ID="Text1">
+						</td>
+						<td width="11%" align="right">Date To
+						</td>
+						<td width="2%" align="center">:</td>
+						<td width="15%" align="left">
+							<input type="text" name="FFO_TO_DT"  value="26/03/2012"	 size="7" maxlength="10" ID="Text2">
+						</td>
+					</tr>
+					<tr>
+						<td width="16%" align="right">Stock Code</td>
+						<td width="2%" align="center">:</td>
+						<td width="15%" align="left">
+							<input type="text" name="FFO_UNDRLYNG" value="" size="5"  ID="Text3">
+						</td>
+						<td width="14%" align="right">Exchange</td>
+						<td width="2%" align="center">:</td>
+						<td width="15%" align="left">
+							<select name="FFO_XCHNG_CD" size="1" ID="Select1" class="IE6Select IE6SelectTicket" onchange="setProduct();">
+								<option value="NFO" selected>NSE</option>
+							</select>
+						</td>
+						<td width="14%" align="right">Status</td>
+						<td width="2%" align="center">:</td>
+						<td width="23%" align="left">
+							<select name="FML_ORDR_ST" size="1" ID="Select2" class="IE6Select IE6SelectTicket">
+								<option value="A"  selected >All</option>
+								<option value="O" >Ordered</option>
+								<option value="Q" >Queued</option>
+								<option value="R" >Requested</option>
+								<option value="P" >Part 
+									Exec.</option>
+								<option value="E" >Executed</option>
+								<option value="X" >Expired</option>
+								<option value="J" >Rejected</option>
+								<option value="C" >Cancelled</option>
+								<option value="D" >Part 
+									Exec & Cancelled</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td width="14%" align="right">Product</td>
+						<td width="2%" align="center">:</td>
+						<td align="left" colspan="6">
+							<input type=radio  checked name=FFO_PRDCT_TYP  value=F>FUTURES<input type=radio  name=FFO_PRDCT_TYP  value=P>FuturePLUS<input type=radio  name=FFO_PRDCT_TYP  value=O>OPTIONS<label id='STG'><input type=radio  name=FFO_PRDCT_TYP  value=L>Strategy</label>
+						</td>
+						<td width="15%" align="left" colspan="3">
+							<input type="button" name="Submit" value=" View " onclick="return ValidateForm_FOAjax()"
+								class="button">
+						</td>
+					</tr>
+				</table>
+				<table width="100%" class="projection">
+					<tr align="center" class="projectiontopbg">
+						<td align="center" nowrap>Contract Descriptor</td>
+						<td align="center">Valid&nbsp;Date</td>
+						<td align="center">Order Ref.</td>
+						<td align="center">Action</td>
+						<td align="center">Qty</td>
+						<td align="center"><a href="#price">Price#</a></td>
+						<td align="center">Status</td>
+						<td align="center">&nbsp;</td>
+						<td align="center">Open</td>
+						<td align="center">Executed</td>
+						<td align="center">Cancelled</td>
+						<td align="center">Expired</td>
+						<td align="center">Stop Loss Price</td>
+						<td align="center">Channel</td>
+					</tr>
+					
+					<tr   valign="top"  bgcolor="#FFFFFF" >
+						<td align="left">FUT-MINIFT-26-Apr-2012</td>
+						<td align="center">26-Mar-2012</td>
+						<td align="center">
+							
+							<a href="javascript:ValidateForm_OrderLog('Includes/OrderLog.asp?FFO_SPL_FLG=N&FFO_ORDR_RFRNC=201203261100002595&FFO_ORDR_FLW=B&FFO_EBA_MTCH_ACT_NO=8500501588&FFO_ACK_NMBR=&FFO_FRM_DT=26/03/2012&FFO_TO_DT=26/03/2012&FFO_PRDCT_TYP=F&FFO_XCHNG_CD=NFO&FFO_ORDR_STTS=R&FFO_UNDRLYNG=MINIFT&FFO_XCHNG_RMRKS=++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')">
+								201203261100002595
+							</a>
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">20</td>
+						<td align="right">
+							<a href=javascript:SendToModify('GetQuote.asp','C','','','0','20','8500501588','F','MINIFT','0','L','B','515100.00','0','0','NFO','26-Mar-2012','201203261100002595','','11','0','26-Apr-2012','E','*','100000000','T','26-Mar-2012')><font color=blue>5151</font></a>
+						</td>
+						<td align="left">
+							Requested
+						</td>
+						<td align="center">
+							<a href=javascript:SendToModify('Modify','R','','','0','20','8500501588','F','MINIFT','0','L','B','515100.00','0','0','NFO','26-Mar-2012','201203261100002595','','11','0','26-Apr-2012','E','*','100000000','T','26-Mar-2012')>Modify<BR></a><a href=javascript:SendToModify('Cancel','R','','','0','20','8500501588','F','MINIFT','0','L','B','515100.00','0','0','NFO','26-Mar-2012','201203261100002595','','11','0','26-Apr-2012','E','*','100000000','T','26-Mar-2012')>Cancel</a>
+						</td>
+						<td align="center">
+							20
+						</td>
+						<td align="right">0</td>
+						<td align="right">0</td>
+						<td align="right">0</td>
+						<td align="right">&nbsp;</td>
+						<td align="center">
+							WEB
+						</td>
+					</tr>
+					
+					<tr   valign="top"  bgcolor="#FFFFFF" >
+						<td align="left">FUT-MINIFT-26-Apr-2012</td>
+						<td align="center">26-Mar-2012</td>
+						<td align="center">
+							
+							<a href="javascript:ValidateForm_OrderLog('Includes/OrderLog.asp?FFO_SPL_FLG=N&FFO_ORDR_RFRNC=201203261100002594&FFO_ORDR_FLW=B&FFO_EBA_MTCH_ACT_NO=8500501588&FFO_ACK_NMBR=&FFO_FRM_DT=26/03/2012&FFO_TO_DT=26/03/2012&FFO_PRDCT_TYP=F&FFO_XCHNG_CD=NFO&FFO_ORDR_STTS=C&FFO_UNDRLYNG=MINIFT&FFO_XCHNG_RMRKS=++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')">
+								201203261100002594
+							</a>
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">20</td>
+						<td align="right">
+							<a href=javascript:SendToModify('GetQuote.asp','C','','','0','20','8500501588','F','MINIFT','0','L','B','515100.00','0','0','NFO','26-Mar-2012','201203261100002594','','11','0','26-Apr-2012','E','*','100000000','T','26-Mar-2012')><font color=blue>5151</font></a>
+						</td>
+						<td align="left">
+							Cancelled
+						</td>
+						<td align="center">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</td>
+						<td align="center">
+							0
+						</td>
+						<td align="right">0</td>
+						<td align="right">20</td>
+						<td align="right">0</td>
+						<td align="right">&nbsp;</td>
+						<td align="center">
+							WEB
+						</td>
+					</tr>
+					
+					<tr   valign="top"  bgcolor="#FFFFFF" >
+						<td align="left">FUT-MINIFT-29-Mar-2012</td>
+						<td align="center">26-Mar-2012</td>
+						<td align="center">
+							
+							<a href="javascript:ValidateForm_OrderLog('Includes/OrderLog.asp?FFO_SPL_FLG=N&FFO_ORDR_RFRNC=201203261100002583&FFO_ORDR_FLW=B&FFO_EBA_MTCH_ACT_NO=8500501588&FFO_ACK_NMBR=&FFO_FRM_DT=26/03/2012&FFO_TO_DT=26/03/2012&FFO_PRDCT_TYP=F&FFO_XCHNG_CD=NFO&FFO_ORDR_STTS=C&FFO_UNDRLYNG=MINIFT&FFO_XCHNG_RMRKS=++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')">
+								201203261100002583
+							</a>
+						</td>
+						<td align="center">Buy</td>
+						<td align="center">20</td>
+						<td align="right">
+							<a href=javascript:SendToModify('GetQuote.asp','C','','','0','20','8500501588','F','MINIFT','0','L','B','510000.00','0','0','NFO','26-Mar-2012','201203261100002583','','11','0','29-Mar-2012','E','*','100000000','T','26-Mar-2012')><font color=blue>5100</font></a>
+						</td>
+						<td align="left">
+							Cancelled
+						</td>
+						<td align="center">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</td>
+						<td align="center">
+							0
+						</td>
+						<td align="right">0</td>
+						<td align="right">20</td>
+						<td align="right">0</td>
+						<td align="right">&nbsp;</td>
+						<td align="center">
+							WEB
+						</td>
+					</tr>
+					
+				</table>
+				
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" ID="Table5">
+					<tr>
+						<td><a name="price"></a>#Price</td>
+					</tr>
+					<tr>
+						<td><font color="blue">Indicates Limit Order (price displayed is the price at which the 
+								limit order was placed).</font></td>
+					</tr>
+					<tr>
+						<td>Indicates Market Order (price displayed is the last traded price at the time of 
+							placement of order). Please click on Executed link to know the exact execution 
+							price.
+						</td>
+					</tr>
+					
+                        <tr>
+						    <td width="100%" bgcolor="#EAE5CC">This background color indicates Future plus Order</td>
+					    </tr>
+                    
+				</table>
+				
+			</form>
+		</div>
+	</div>
+</div>

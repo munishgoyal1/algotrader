@@ -1,0 +1,604 @@
+<script language="javascript">
+	var SelectedTradingFolder;
+	
+</script>
+
+<script LANGUAGE="JavaScript">
+window.onerror=new Function("return true");
+function trapeve()
+{
+	if (event.keyCode==13)
+		{
+			ValidateFormajax()
+		}
+}
+document.onkeydown=trapeve
+</script>
+<script language="javascript" src="script/trading_order_book.js"></script>
+<div class="popup">
+	<h2 class="buyStock">EQUITY - ORDER BOOK</h2>
+	<div class="text_size">
+		<div class="startSection1 security">
+			<form name="OrderBookForm" method="post" ID="Form1">
+				<input type="hidden" name="ImportType" ID="Hidden1">
+				<table width="100%" border="0" align="center" cellspacing="0" cellpadding="0" style="border:none">
+					
+					<tr>
+						<td bgcolor="#eeeeee"><div name="message"><blink><marquee DIRECTION="left" BEHAVIOR="SCROLL" SCROLLAMOUNT="3" SCROLLDELAY="3"><font face="Arial" size="2"><STRONG>ICICIdirect.com wins the <A href="http://content.icicidirect.com/mailimages/ic_ET_now.html"target="new">Best Broker<A/> award at the ET Now StarMine Awards for 2011-12. We thank our customers for your support, patronage and feedback to make us the No.1 Broker in India.-- Due to Corporate action of scrip SUNMUL, haircut % would be increased for Shares as Margin in a phased manner from 20% to 75%. No additional shares of SUNMUL will be accepted in Shares as Margin till 12-Apr-2012.-- <A
+href="http://content.icicidirect.com/mailimages/monthlycall.pdf"target="new">Monthly Technical Calls<A/>.</STRONG></font></marquee>
+	</blink></div>
+</td>
+					</tr>
+					
+					
+					
+					<tr>
+						<td bgcolor="#FFFFFF" valign="top">
+							<table width="100%" border="0" class="tradingForm">
+								<input type="hidden" name="FML_DOTNET_FLG" value="Y"> <input type="hidden" name="FML_URL_FLG" value="http://getquote.icicidirect.com/NewSiteTrading/trading/equity/includes/trading_stock_quote.asp">
+								<input type="hidden" name="FML_PASS" value="1"> <input type="hidden" name="FML_TRN_PRDT_TYP" value="O">
+								
+								</tr><tr>
+									</td><td width="11%" align="right">
+										Account
+									</td>
+									<td width="2%" align="center">
+										:</td>
+									<td width="15%" align="left">
+										<input type="hidden" name="FML_ACCOUNT" value="8500501588">
+										<nobr>
+											8500501588
+										</nobr>
+										
+									</td>
+									<td width="11%" align="right">Date From</td>
+									<td width="2%" align="center">:</td>
+									<td width="15%" align="left">
+										<input type="text" name="FML_FRM_DT"  
+											value="01/04/2012" 
+										 
+									size="6" maxlength="10" ID="Text1">
+									</td>
+									<td align="right" nowrap>Date To
+									</td>
+									<td width="2%" align="center">:</td>
+									<td width="15%" align="left">
+										<input type="text" name="FML_TO_DT" 
+											value="06/04/2012" 
+										
+									size="6" ID="Text2">
+									</td>
+								</tr>
+								<tr>
+									<td width="16%" align="right">Stock Code</td>
+									<td width="2%" align="center">:</td>
+									<td width="15%" align="left">
+										<input type="text" name="STCK_CD" value="All" size="5"  ID="Text3">
+									</td>
+									<td width="14%" align="right">Exchange</td>
+									<td width="2%" align="center">:</td>
+									<td width="15%" align="left">
+										<select name="FML_XCHNG_CD" ID="Select1" class="IE6Select IE6SelectTicket">
+											<option value="A" selected >
+												All
+											</option>
+											<option value="NSE"  >
+												NSE
+											</option>
+											<option value="BSE" >
+												BSE
+											</option>
+										</select>
+									</td>
+									<td width="7%" align="right">Product</td>
+									<td width="2%" align="center">:</td>
+									<td width="15%" align="left">
+										<select name="PRDCT_TYP" class="IE6Select IE6SelectTicket">
+											<option value="A">All</option>
+											<option value='B' >BTST</option><option value='C' >CASH</option><option value='M' >MARGIN</option><option value='S' >SPOT</option><option value='T' >MarginPLUS</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td width="16%" align="right">Status</td>
+									<td width="2%" align="center">:</td>
+									<td width="15%" align="left">
+										<select name="FML_ORDR_ST" ID="Select2" class="IE6Select IE6SelectTicket">
+											<option value="A"  selected >All</option>
+											<option value="O" >Ordered</option>
+											<option value="Q" >Queued</option>
+											<option value="R" >Requested</option>
+											<option value="P" >Part 
+												Exec.</option>
+											<option value="E" >Executed</option>
+											<option value="X" >Expired</option>
+											<option value="J" >Rejected</option>
+											<option value="C" >Cancelled</option>
+										</select>
+									</td>
+									<td colspan="3">&nbsp;</td>
+									<td colspan="1" align="center"><input type="button" name="Submit" value="View" onclick="return ValidateFormajax()" ID="Submit1"
+											class="button"></td>
+									<td align="left" colspan="2">
+										<input type="button" name="TradeExcel" value="Export To Excel" onclick="return ValidateFormExcel('Excel')"
+											class="button">&nbsp;&nbsp;&nbsp; <input type="button" name="TradeCSV" value="Export To CSV" onclick="return ValidateFormExcel('CSV')"
+											class="button">
+									</td>
+									
+					</tr>
+				</table>
+				
+				<table width="100%" class="projectionSmall">
+					
+					<tr align="center" class="projectiontopbg">
+						<td align="center" width="109">Date&nbsp;/&nbsp;<br>
+							Segment&nbsp;/&nbsp;<br>
+							Settl.#</td>
+						<td align="center" width="109">Order Ref.&nbsp;/&nbsp;<br>
+							Channel&nbsp;/&nbsp;<br>
+							Order Valid Date</td>
+						<td align="center" title="Exchange">Exch</td>
+						<td align="center">Stock</td>
+						<td align="center">Buy/Sell</td>
+						<td align="center" title="Quantity">Qty.</td>
+						<td align="center"><a href="#price">Price#</a></td>
+						<td align="center">Status</td>
+						<td align="center">Action<BR>
+							<a href="includes/Can-MktHelp.asp?width=650&height=450" class="thickbox_MBP">Help</a>
+						</td>
+						<td align="center">Open</td>
+						<td align="center" title="Executed">Exe</td>
+						<td align="center" title="Cancelled">Can</td>
+						<td align="center" title="Expired">Exp</td>
+						
+						<td align="center">Margin Amt. Blocked</td>
+						
+						<td align="center">Discl. Qty</td>
+						<td align="center">Stop Loss Price</td>
+						
+						<td align="center"><a href="http://content.icicidirect.com\indexfaq.asp#a85" target="_blank">Square 
+								Off Mode</a></td>
+					</tr>
+					
+					<tr valign="top" bgcolor="#F4D7C4">
+						
+						
+						
+						
+						
+						
+						<td nowrap align="center">
+							04-Apr-2012 11:49
+							<br>
+							Rolling
+							<br>
+							2012065
+						</td>
+						<td align="center">
+							
+							<a href="javascript:setorderlog('20120404N200005989','B')">
+								20120404N200005989
+							</a>
+							
+							<br>
+							WEB
+							<br>
+							
+							<a href="javascript:setGTClog('20120404N200005989','B',' ')">
+								 
+							</a>
+							
+						</td>
+						<td align="center">NSE</td>
+						<td align="center">ICIBAN</td>
+						<td align="center">Buy</td>
+						<td align="center">5</td>
+						<td align="right">
+							
+							<a href="javascript://" onClick="OpenQuote('ICIBAN')">
+								<font color="black">
+									889.15
+								</font></a>
+							
+						</td>
+						<td align="center">
+							
+							<a href="javascript:setviewtransaction('20120404N200005989')">
+								Executed</a>
+							
+						</td>
+						<td align="center" nowrap>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;
+						</td>
+						<td align="right">0</td>
+						<td align="right">5</td>
+						<td align="right">0</td>
+						<td align="right">0</td>
+						<td align="right">
+							0.00
+						</td>
+						<td align="right">&nbsp;
+							
+							&nbsp;
+						</td>
+						<td align="right">&nbsp;
+							
+							&nbsp;
+						</td>
+						
+						<td align="center">
+							
+							NA
+							
+						</td>
+						
+					</tr>
+					
+					<tr valign="top" bgcolor="#F4D7C4">
+						
+						
+						
+						
+						
+						
+						<td nowrap align="center">
+							04-Apr-2012 11:49
+							<br>
+							Rolling
+							<br>
+							2012065
+						</td>
+						<td align="center">
+							
+							<a href="javascript:setorderlog('20120404N200005988','S')">
+								20120404N200005988
+							</a>
+							
+							<br>
+							WEB
+							<br>
+							
+							<a href="javascript:setGTClog('20120404N200005988','S',' ')">
+								 
+							</a>
+							
+						</td>
+						<td align="center">NSE</td>
+						<td align="center">ICIBAN</td>
+						<td align="center">Sell</td>
+						<td align="center">5</td>
+						<td align="right">
+							
+							<a href="javascript://" onClick="OpenQuote('ICIBAN')">
+								<font color="black">
+									891.00
+								</font></a>
+							
+						</td>
+						<td align="center">
+							
+							<a href="javascript:setviewtransaction('20120404N200005988')">
+								Executed</a>
+							
+						</td>
+						<td align="center" nowrap>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;
+						</td>
+						<td align="right">0</td>
+						<td align="right">5</td>
+						<td align="right">0</td>
+						<td align="right">0</td>
+						<td align="right">
+							0.00
+						</td>
+						<td align="right">&nbsp;
+							
+							&nbsp;
+						</td>
+						<td align="right">&nbsp;
+							
+							&nbsp;
+						</td>
+						
+						<td align="center">
+							
+							NA
+							
+						</td>
+						
+					</tr>
+					
+					<tr valign="top" bgcolor="#F4D7C4">
+						
+						
+						
+						
+						
+						
+						<td nowrap align="center">
+							04-Apr-2012 11:25
+							<br>
+							Rolling
+							<br>
+							2012065
+						</td>
+						<td align="center">
+							
+							<a href="javascript:setorderlog('20120404N200005522','S')">
+								20120404N200005522
+							</a>
+							
+							<br>
+							WEB
+							<br>
+							
+							<a href="javascript:setGTClog('20120404N200005522','S',' ')">
+								 
+							</a>
+							
+						</td>
+						<td align="center">NSE</td>
+						<td align="center">RELIND</td>
+						<td align="center">Sell</td>
+						<td align="center">10</td>
+						<td align="right">
+							
+							<a href="javascript://" onClick="OpenQuote('RELIND')">
+								<font color="black">
+									746.80
+								</font></a>
+							
+						</td>
+						<td align="center">
+							
+							<a href="javascript:setviewtransaction('20120404N200005522')">
+								Executed</a>
+							
+						</td>
+						<td align="center" nowrap>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;
+						</td>
+						<td align="right">0</td>
+						<td align="right">10</td>
+						<td align="right">0</td>
+						<td align="right">0</td>
+						<td align="right">
+							0.00
+						</td>
+						<td align="right">&nbsp;
+							
+							&nbsp;
+						</td>
+						<td align="right">&nbsp;
+							
+							&nbsp;
+						</td>
+						
+						<td align="center">
+							
+							NA
+							
+						</td>
+						
+					</tr>
+					
+					<tr valign="top" bgcolor="#F4D7C4">
+						
+						
+						
+						
+						
+						
+						<td nowrap align="center">
+							04-Apr-2012 11:25
+							<br>
+							Rolling
+							<br>
+							2012065
+						</td>
+						<td align="center">
+							
+							<a href="javascript:setorderlog('20120404N200005521','B')">
+								20120404N200005521
+							</a>
+							
+							<br>
+							WEB
+							<br>
+							
+							<a href="javascript:setGTClog('20120404N200005521','B',' ')">
+								 
+							</a>
+							
+						</td>
+						<td align="center">NSE</td>
+						<td align="center">RELIND</td>
+						<td align="center">Buy</td>
+						<td align="center">10</td>
+						<td align="right">
+							
+							<a href="javascript://" onClick="OpenQuote('RELIND')">
+								<font color="black">
+									745.15
+								</font></a>
+							
+						</td>
+						<td align="center">
+							
+							<a href="javascript:setviewtransaction('20120404N200005521')">
+								Executed</a>
+							
+						</td>
+						<td align="center" nowrap>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;
+						</td>
+						<td align="right">0</td>
+						<td align="right">10</td>
+						<td align="right">0</td>
+						<td align="right">0</td>
+						<td align="right">
+							0.00
+						</td>
+						<td align="right">&nbsp;
+							
+							&nbsp;
+						</td>
+						<td align="right">&nbsp;
+							
+							&nbsp;
+						</td>
+						
+						<td align="center">
+							
+							NA
+							
+						</td>
+						
+					</tr>
+					
+					<tr valign="top" bgcolor="#FFFFFF">
+						
+						
+						
+						
+						
+						
+						<td nowrap align="center">
+							02-Apr-2012 10:35
+							<br>
+							Rolling
+							<br>
+							2012063
+						</td>
+						<td align="center">
+							
+							<a href="javascript:setorderlog('20120402N200003637','B')">
+								20120402N200003637
+							</a>
+							
+							<br>
+							WEB
+							<br>
+							
+							<a href="javascript:setGTClog('20120402N200003637','B',' ')">
+								 
+							</a>
+							
+						</td>
+						<td align="center">NSE</td>
+						<td align="center">MARCON</td>
+						<td align="center">Buy</td>
+						<td align="center">50</td>
+						<td align="right">
+							
+							<a href="javascript://" onClick="OpenQuote('MARCON')">
+								<font color="blue">
+									87.00
+								</font></a>
+							
+						</td>
+						<td align="center">
+							
+							<a href="javascript:setviewtransaction('20120402N200003637')">
+								Executed</a>
+							
+						</td>
+						<td align="center" nowrap>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;
+						</td>
+						<td align="right">0</td>
+						<td align="right">50</td>
+						<td align="right">0</td>
+						<td align="right">0</td>
+						<td align="right">
+							NA
+						</td>
+						<td align="right">&nbsp;
+							
+							&nbsp;
+						</td>
+						<td align="right">&nbsp;
+							
+							&nbsp;
+						</td>
+						
+						<td align="center">
+							
+							NA
+							
+						</td>
+						
+					</tr>
+					
+				</table>
+				
+				<br>
+				<table width="100%" border="0" cellspacing="0" cellpadding="1" align="left" ID="Table1"
+					style="border:none">
+					
+					<tr>
+						<td>
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="left"
+								ID="Table2">
+								</tr><tr>
+									</td><td width="100%" bgcolor="#FFFFA0">This background color indicates Margin Order</td>
+								</tr>
+								<tr>
+									<td width="100%" bgcolor="#eeeeee">This background color indicates Spot Order</td>
+								</tr>
+								<tr>
+									<td width="100%" bgcolor="#EAE5CC">This background color indicates BTST Order</td>
+								</tr>
+								<tr>
+									<td width="100%" bgcolor="#F4D7C4">This background color indicates MarginPLUS Order</td>
+								</tr>
+                                <tr>
+									<td width="100%" bgcolor="#d1cfbb">This background color indicates SIP Order</td>
+								</tr>
+                                
+
+								
+							</table>
+						</td>
+					</tr>
+					
+					<tr>
+						<td width="100%" bgcolor="#ffffff"><a name="price"></a>#Price</td>
+					</tr>
+					<tr>
+						<td width="100%" bgcolor="#ffffff"><font color="blue">Indicates Limit Order (price 
+								displayed is the price at which the limit order was placed).</font></td>
+					</tr>
+					<tr>
+						<td width="100%" bgcolor="#ffffff">Indicates Market Order (price displayed is the 
+							last traded price at the time of placement of order). Please click on Executed 
+							link to know the exact execution price.
+						</td>
+					</tr>
+					
+					
+				</table>
+				<input type="hidden" name="FML_FOCUS_FLAG" value="D"> <input type="hidden" name="FML_TMP_FRM_DT" value="01/04/2012">
+				<input type="hidden" name="FML_TMP_TO_DT" value="06/04/2012"> <input type="hidden" name="FML_TMP_STTLMNT_NMBR" value="">
+				<input type="hidden" name="FML_strfinal" value="06/05/2012"> <input type="hidden" name="FML_ORDR_RFRNC">
+				<input type="hidden" name="FML_ORD_ORDR_FLW"> <input type="hidden" name="FML_TILL_DT" value="">
+				<input type="hidden" name="FML_STATUS"> <input type="hidden" name="FML_ORD_DP_ID">
+				<input type="hidden" name="FML_CLNT_ID"> <input type="hidden" name="FML_EXEC_QTY">
+				<input type="hidden" name="FML_ORD_ORDR_QTY"> <input type="hidden" name="FML_ORD_PRDCT_TYP">
+				<input type="hidden" name="FML_STCK_CD"> <input type="hidden" name="FML_QTY"> <input type="hidden" name="FML_ORD_TYP">
+				<input type="hidden" name="FML_ORD_LMT_RT"> <input type="hidden" name="FML_ORD_DSCLSD_QTY">
+				<input type="hidden" name="FML_ORD_STP_LSS"> <input type="hidden" name="FML_ORD_XCHNG_CD">
+				<input type="hidden" name="FML_DT"> <input type="hidden" name="FML_USR_ZIP_CD"> <input type="hidden" name="FML_ORD_TRD_DT">
+				<input type="hidden" name="FML_POINT_TYPE" value=""> <input type="hidden" name="FML_POINT_TYPE_OLD" value="">
+			</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	tb_init_MBP('a.thickbox_MBP, area.thickbox_MBP, input.thickbox_MBP');
+</script>

@@ -1,0 +1,19 @@
+StockCode, Goodprice, BuyPriceCap (in stock lines below) and then the commonconfig as follows:  maxTradeValue,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,pctExtraMarkdownForAveraging,buyMarkdownFromLcpDefault,sellMarkupForMargin,sellMarkupForDelivery,sellMarkupForMinProfit,squareOffAllPositionsAtEOD,pctMaxLossSquareOffPositionsAtEOD,useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,startTime,endTime,Exchange,sellMarkupForEODInsufficientLimitSquareOff,maxBuyOrdersAllowedInADay,doConvertToDeliveryAtEOD,doSquareOffIfInsufficientLimitAtEOD
+60000,2,2,0.005,0.01,1.0075,1.02,1.004,0.004,true,0.003,false,09:00:00,15:00:00,NSE,0.995,4,true,false
+BAJFI,1700,1750
+UJJFIN,340,370
+#ITC,255,255
+CAPPOI,630,650
+CAPFIR,670,690
+#MOTSUM,350,350
+#PCJEW,385,385
+SUNPHA,500,530
+#HDFBAN,1800,1800
+#INFTEC,1000,1000
+#BERPAI,250,250
+#ACC,1700,1700
+#RELIND,900,900
+#HINLEV,1250,1250
+#KOTMAH,1000,1000
+#ICIBAN,300,300
+#INDHO,1200,1200

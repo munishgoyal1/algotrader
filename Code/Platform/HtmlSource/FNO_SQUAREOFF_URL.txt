@@ -1,0 +1,3 @@
+https://secure.icicidirect.com/NewSiteTrading/trading/fno/Includes/SquareOffVerifyOrder.asp
+
+Referer:https://secure.icicidirect.com/NewSiteTrading/trading/fno/fnohome.asp?FileName=SingleClick&FFO_ORDR_FLW=S&FFO_PRDCT_TYP=O&FFO_UNDRLYNG=INFTEC&FFO_EXER_TYP=E&FFO_EXPRY_DT=31-May-2012&FFO_STRK_PRC=250000&FFO_OPT_TYP=C&FFO_RQST_TYP=&FFO_CTGRY_INDSTK=S&FFO_XCHNG_CD=NFO&FFO_MIN_LOT_QTY=125&FFO_TCK_SZ=&FFO_LST_TRD_PRC=4200&FFO_LMT_RT=41&FFO_ORD_TYP=L

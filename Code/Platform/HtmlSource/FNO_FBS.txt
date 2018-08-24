@@ -1,0 +1,276 @@
+
+<script language="javascript">
+	var SelectedTradingFolder;
+	
+</script>
+
+<style type="text/css">			
+	.textboxNoBorder
+	{ 
+		font-family: Arial; font-size: 12px; font-weight: bold;
+		color: #000000; background-color: #CCCCCC text-decoration: none; 
+		border-color: #88A0C8 #88A0C8 #88A0C8; border-style: solid;
+		border-top-width: 0 px; border-right-width: 0 px; 
+		border-bottom-width: 0px; 
+		border-left-width: 0 px
+	}
+</style>
+<script LANGUAGE="javascript" src="script/FNO_FBS.js"></script>
+<script language="javascript">
+<!--
+function trapeve()
+{
+	if (event.keyCode==13 && document.getElementById("ajaxBuyLiveSearchData").style.display=="none")
+		{
+			validateForm()
+		}
+}
+document.onkeydown=trapeve
+//-->
+</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+  GTDHandeler();
+   var IEVersion;
+	IEVersion = "";
+	if(navigator.appName=="Microsoft Internet Explorer")
+	{
+		if((navigator.appVersion.split(";")[1]).split(" ")[2]=="6.0")
+		{
+			IEVersion = "IE6";
+		}
+	}
+	initPos=1;
+ });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+  OptionHandler();
+ });
+</script>
+<form method="post" action="FNO_FBS_SubmitOrder.asp" name="FNOBuyOrderForm" ID="Form1">
+	<div class="popup">
+		<table ID="Table3" width="100%" style="border:none">
+			<tr>
+				<td>
+					<h2 class="buyStock">
+						F &amp; O - FAST BUY/SELL</h2>
+				</td>
+				<td align="right" class="text_size"><a class="thickbox_LQLosers" href="http://content.icicidirect.com/mailimages/Derivatives-Strategy.pdf?height=400&width=700">
+						<u>DERIVATIVES STRATEGIES</u></a></td>
+			</tr>
+		</table>
+		<div class="text_size">
+			<div class="startSection1 security">
+				
+				<div align="center"><blink><MARQUEE DIRECTION="left" BEHAVIOR="SCROLL" SCROLLAMOUNT="3" SCROLLDELAY="3"><font face='Arial' size='2'><STRONG>Alpha Trade :<A
+href="http://content.icicidirect.com/mailimages/ICICIdirect_TCS_Nifty_AlphaTrade.pdf"target="new">Long TCS and Short Nifty.<A/>-- Make your stocks work for you. Never lose an opportunity with Shares As Margin. <A href="http://content.icicidirect.com/mailimages/sam.pdf"target="new"> Know more.<A/>--Trade in FuturePLUS with 5.5% margin on Nifty as compared to 11% in Futures to make most of Intra-day market volatility.</STRONG></font></MARQUEE>
+					</blink>
+				</div>
+				
+				<div align="center"><input type='hidden' name='FFO_CRRNT_STTS0' value='C'><b>NSE</b>&nbsp;  is currently <b>Closed</b> and will open &nbsp;on26-Mar-2012            at 915 hrs IST</div>
+				<table align="center" width="100%" border="0" ID="Table2">
+					<tr>
+						<td align="right">Account</td>
+						<td align="left">:</td>
+						<td align="left"><input type="hidden" name="FFO_ACCOUNT" value="IN302902-41294665-8500501588" ID="Hidden2">
+							IN302902-41294665-8500501588
+							<input type="hidden" name="FFO_EBA_MTCH_ACT_NO" ID="Hidden3"> <input type="hidden" name="FFO_CLNT_DPID" ID="Hidden4">
+							<input type="hidden" name="FFO_DPID" ID="Hidden5"> <input type="hidden" name="FFO_BNK_ACT_NO" ID="Hidden6">
+						</td>
+						<td align="right" colspan="3">
+							<a href="https://secure.icicidirect.com/NewSiteTrading/customer/includes/ClickToCall.asp?width=700&height=500" class="thickbox_MBP">
+								<B><font size="2">Need assistance - Click to Call</font></B></a>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Action</td>
+						<td align="left">:</td>
+						<td align="left">
+							<select name="FFO_ORDR_FLW" tabindex="1" ID="Select1" class="IE6Select IE6SelectTicket">
+								
+								<option value="B" >Buy</option>
+								
+								<option value="S" >Sell</option>
+								
+							</select></td>
+						<td align="right">&nbsp;</td>
+						<td align="left">&nbsp;</td>
+						<td align="left">&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Exchange</td>
+						<td align="left">:</td>
+						<td align="left">
+							<input type="hidden" name="FFO_XCHNG_CD" value="NFO" ID="Hidden7"> NSE</td>
+						<td nowrap align="left" ><a href="javascript://" onclick="CalculateFoLim('https://secure.icicidirect.com/NewSiteTrading')" >View 
+								your limit</a> :</td>
+						<td><B><div id="Div_Folim" style="width:100px;border-width: 1px; border-style: solid; border-color: lightblue; ">&nbsp;</div>
+							</B>
+						</td>
+						<td>
+						<a class="thickbox_MBP" href="https://secure.icicidirect.com/NewSiteTrading/trading/equity/includes/Trading_Modify_Alloc_ThicBox.asp?height=240&width=900&CmngFrm=F&tt=326201221332AM">Modify Allocation</a>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Product</td>
+						<td align="left">:</td>
+						<td align="left" colspan="3"><select name="FFO_PRDCT_TYP" onchange="javascript:OptionHandler()" tabindex="2" ID="Select2"
+								class="IE6SelectTicket">
+								<option value=F>FUTURES</option><option value=P>FuturePLUS</option><option value=O>OPTIONS</option>
+							</select></td>
+						<td width="25%">
+							<div id="OptionType" style="display:none;">
+								<table width="100%" cellpadding="0" cellspacing="0" style="border:none">
+									<tr>
+										<td width="35%">Option Type</td>
+										<td align="center" width="1%">
+											:
+										</td>
+										<td><select name="FFO_OPT_TYP" onfocus="javascript:skip1();" ID="Select3"><option value="C" >Call</option>
+												<option value="P" >Put</option>
+											</select></td>
+								</table>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Stock Code</td>
+						<td align="left">:</td>
+						<td align="left" >
+							<input type="text" name="FFO_UNDRLYNG" value=""  size="7" tabindex="3" 
+						autocomplete="off"  onBlur="MakeCaps(this.value)"
+						class="text_btm_search" id="Buykeyword" 
+						onKeyPress="return kd(event);" onkeydown="changeFocus(event,501);"> 
+							<!--input name="FML_STCK_CD" value="" size="8"  type="text" -->
+							<a href="JavaScript:ContractList('https://secure.icicidirect.com/NewSiteTrading/trading/FNO/includes/ContractListFBS.asp')" tabindex="3.5" id="NextFocus">
+								Select Contract</a>
+							<div id="ajaxBuyLiveSearchData" style="font-size:1.5em !important;display:'none';"></div>
+						</td>
+						<td align="left" colspan="3"><a href="JavaScript:stckValidate(1,'https://secure.icicidirect.com/NewSiteTrading/trading/FNO/includes')">Find 
+								a Symbol</a></td>
+					</tr>
+					<tr>
+						<td align="right">Contract Details</td>
+						<td align="left">:</td>
+						<td align="left" colspan="3">
+							<input type="text" name="FFO_CONTRACT" value=""  disabled size="35" ID="Text2">
+							<input type="hidden" name="FFO_CONTRACT_HIDDEN" value="" ID="Hidden8">
+						</td>
+						<td align="left">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="right">Quantity</td>
+						<td align="left">:</td>
+						<td align="left"  nowrap>
+							<input type="text" name="FFO_QTY" value="" size="6" maxlength=8  tabindex="4" ID="Text3">
+							<input type="hidden" name="FFO_QTY_Hidden" value="" ID="Hidden31">
+							&nbsp; <input type="text" readonly maxlength="20" size="16" name="One_Lot_Size" value="" ID="One_Lot_Size"
+								disabled>
+						</td>
+						<td align="left" colspan="3"><a href="javascript:stckValidate1(2)">Get Quote</a></td>
+					</tr>
+					<tr>
+						<td align="right">&nbsp;</td>
+						<td align="left">:</td>
+						<td align="left">
+							<div id="divCalculateQuantity" style="display:none;">
+								<table style="border:none">
+									<tr>
+										<td align="left">
+											<a href="javascript://" onclick="CalculateQty()">Calculate</a>&nbsp;<a href="javascript://" onclick="javascript:HelpFile();"><img src="/NewSiteTrading/images/qns.gif"></a>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Order Type</td>
+						<td align="left">:</td>
+						<td align="left" >
+							<input type="radio" name="FFO_ORD_TYP" value="M" onClick="ClearPrice();SetOrderValue('M')"  tabindex="5" ID="Radio1">Market&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="FFO_ORD_TYP" value="L" onClick="SetOrderValue('L')" CHECKED tabindex="5" ID="Radio2">Limit</td>
+						<input type="hidden" name="FFO_ORD_TYP_HIDDEN" value="L" ID="Hidden9">
+						<td align="left" colspan="3"><a href="javascript:stckValidate1(3)">Best 5 Bids/Offers</a></td>
+					</tr>
+					<tr>
+						<td align="right">Limit Price</td>
+						<td align="left">:</td>
+						<td align="left">
+							<input name="FFO_LMT_RT" value="" size="6"  maxlength=9  tabindex="6" ID="Text4">
+						</td>
+						<td align="right">&nbsp;</td>
+						<td align="left">&nbsp;</td>
+						<td align="left">&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Good Till Date</td>
+						<td align="left">:</td>
+						<td align="left" colspan="4">
+							<select name="FFO_GOOD_TILL_TYPE" onchange="javascript:GTDHandeler()" tabindex="7" ID="Select4">
+								<option value="T" >Day</option>
+								<!--<option value="D" >GTD</option>-->
+								<option value="I" >IOC</option>
+							</select>
+							<input name="FFO_GOOD_TILL_DATE_TEXT" type="hidden" value="26/03/2012" size="5" maxlength="10"  tabindex="8" ID="Hidden10">
+							<input type="hidden" name="FFO_GOOD_TILL_DATE" value="26/03/2012" ID="Hidden11">
+							<input type="hidden" name="FFO_GOOD_TILL_DATE1" value="26/03/2012" ID="Hidden12">
+							<input type="hidden" name="FFO_GOOD_TILL_BACK" value="" ID="Hidden13">
+							<input type="hidden" name="FFO_GOOD_TILL_DATE_TEMP" value="27/03/2012" ID="Hidden14">
+							<input type="hidden" name="date2" value="3/26/2012" ID="Hidden15">
+							<input type="hidden" name="dateEx" value="" ID="Hidden16">
+							<input type="hidden" name="date7" value="4/1/2012" ID="Hidden17">
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Stop Loss Triger Price</td>
+						<td align="left">:</td>
+						<td align="left" >
+							<input type="text" name="FFO_STP_LSS" value=""  size="6" maxlength=9  tabindex="9" ID="Text5">
+							<a href="javascript:GoWindow('/indexfaq.asp#stop','Explain')">Explain</a></td>
+						
+						<td align="left" colspan="2">
+							
+							<input type="button" name="smt" value="Submit" onClick="return validateForm()" class="button"
+								tabindex="12" ID="Button1">
+							
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="right">Password</td>
+						<td align="left">:</td>
+						<td align="left" >
+							<input type="password" name="FFO_TRADING_PASSWD" size="8" maxlength="8" tabindex="11" ID="Password1">
+						</td>
+						<td align="left" colspan="3">
+							
+							<input type="button" onClick="ClearForm()" name="Submit2" value="Clear" class="button"
+								tabindex="13" ID="Button3">
+							
+						</td>
+					</tr>
+				</table>
+				<input type="hidden" name="m_PipeId" value="11" ID="Hidden1"> <input type="hidden" name="FFO_ORD_TRD_DT" value="26-Mar-2012           " ID="Hidden19">
+				<input type="hidden" name="FFO_EXPRY_DT" value="" ID="Hidden20">
+				<input type="hidden" name="FFO_EXER_TYP" value="" ID="Hidden21"> <input type="hidden" name="FFO_RQST_TYP" value="" ID="Hidden22">
+				<input type="hidden" name="FFO_STRK_PRC" value="" ID="Hidden23">
+				<input type="hidden" name="FFO_CLNT_CTGRY" value="O" ID="Hidden24">
+				<input type="hidden" name="FFO_TRD_PSWD_LMT" value="100000000" ID="Hidden25">
+				<input type="hidden" name="FFO_CTGRY_INDSTK" value="" ID="Hidden26">
+				<input type="hidden" name="FFO_MIN_LOT_QTY" value="" ID="Hidden27">
+				<input type="hidden" name="FFO_LST_TRD_PRC" value="" ID="Hidden28">
+				<input type="hidden" name="FFO_OFLN_STTS" value="C" ID="Hidden29">
+				<input type="hidden" name="FFO_XCHNG_ST" value="" ID="Hidden30">
+			</div>
+		</div>
+	</div>
+</form>
+<script type="text/javascript">
+	tb_init_MBP('a.thickbox_MBP, area.thickbox_MBP, input.thickbox_MBP');
+	tb_init_LQLosers('a.thickbox_LQLosers, area.thickbox_LQLosers, input.thickbox_LQLosers');
+	$("#Buykeyword").typeWatch( { highlight:true, callback:function(){showLiveSearchResult(document.getElementById('Buykeyword').value,'ajaxBuyLiveSearchData',501,'T','F');} } );
+</script>

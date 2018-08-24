@@ -1,0 +1,80 @@
+
+<script language="javascript">
+	var SelectedTradingFolder;
+	
+</script>
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh start-->
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh end-->
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh start-->
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh end-->
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh start-->
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh end-->
+ <!-- CRCSN28547 ASP Changes for IOC durgesh start--><!-- CRCSN28547 ASP Changes for IOC durgesh end-->
+<script language="javascript">
+<!--
+	function backFBS()
+	{
+		xmlhttpPost('Includes/Trading_FBS.asp', 'Order_verification', 'containerTwo_left');
+		document.getElementById("body_container").focus();
+	}
+//-->
+</script>
+<script language="javascript" src="script/trading_verify.js"></script>
+
+<div class="popup">
+	<h2 class="buyStock">
+		EQUITY -Message
+	</h2>
+	<div class="text_size">
+		<div class="startSection1 security">			
+			<form action="Trading_FBS.asp" name="Order_verification" method="post">
+				<table width="773" border="0" cellspacing="0" cellpadding="3" align="center" ID="Table1">	
+					<input type = hidden name ="FML_QTY"  value="5"> <input type = hidden name = "m_FML_SQ_FLAG"  value="" ID="Hidden3">
+					<input type = hidden name = FML_STCK_CD value = "RELIND"> <input type = hidden name = FML_ORD_PRDCT_TYP value = "CASH">
+					<input type = hidden name = FML_ORD_TYP  value = L> <input type = hidden name = FML_REFNUM value = >
+					<input type = hidden name = FML_XCHNG_ST value = > <input type = hidden name = FML_ACCOUNT value = IN302902-41294665-8500501588>
+					<input type = hidden name = FML_ORD_XCHNG_CD value = BSE> <input type = hidden name = FML_ORD_LMT_RT value = 725>
+					<input type = hidden name = FML_ORD_DSCLSD_QTY value = > <input type = hidden name = FML_ORD_STP_LSS value = >
+					<input type = hidden name = FML_ORD_TRD_DT value = 12-Apr-2012> <input type="hidden" name="FML_ORD_ORDR_FLW" value="B">
+					<input type="hidden" name="FML_ORD_EXCTD_RT" value=""> <input type="hidden" name="FML_PASS" value="">
+					<input type="hidden" name="FML_ORD_CLM_MTCH_ACCNT" value="85"> <input type="hidden" name="FML_ORD_DP_CLNT_ID" value="">
+					<input type="hidden" name="FML_ORD_DP_ID" value=""> <input type="hidden" name="FML_XCHNG_SG" value="">
+					<input type="hidden" name="FML_ORD_XCHNG_SGMNT_STTLMNT" value="">
+					<input type="hidden" name="FML_DEMAT_IN_DT" value=""> <input type="hidden" name="FML_DEMAT_OUT_DT" value="">
+					<input type="hidden" name="FML_FUND_IN_DT" value=""> <input type="hidden" name="FML_FUND_OUT_DT" value="">
+					<input type="hidden" name="FML_ISIN_NUMBER" value=""> <input type="hidden" name="FML_TM" value="">
+					<input type="hidden" name="FML_QUOTE_TIME" value=""> <input type="hidden" name="FML_CVR_QTY" value="">
+					<input type="hidden" name="FML_STK_STCK_NM" value="RELIND"> <input type="hidden" name="FML_RQST_TYP" value="">
+					<input type="hidden" name="FML_TRN_PRDT_TYP" value=""> <input type="hidden" name="FML_SCHM_ID" value="">
+					<input type="hidden" name="FML_RT" value=""> <input type="hidden" name="FML_ORD_PRD_HIDDEN" value="CASH">
+					<input type="hidden" name="FML_ORD_ACCOUNT_HIDDEN" value="">
+					<input type="hidden" name="FML_GMS_CSH_PRDCT_PRCNTG" value="">
+					<input type="hidden" name="FML_PRODUCT_INDEX" value="0">
+					<input type="hidden" name="FML_ACCOUNT_INDEX" value="">
+					<input type="hidden" name="FML_TRADING_PASS_FLAG" value="">
+					<input type="hidden" name="ATValue" value=""> <input type="hidden" name="BrBack" value="Y">
+					<input type="hidden" name="FML_TRADING_ALIAS" value="">
+					<input type="hidden" name="GTCDate7" value="" ID="Hidden5">
+					<input type="hidden" name="FML_POINT_TYPE" value="" ID="Hidden1">
+					
+					
+					<input type="hidden" name="PWD_ENABLED" value="N">
+					
+					<tr>
+						<td valign="top" class="content_bold" align="center">
+							Invalid User<br>The Login Id entered is not valid
+							<br>
+							<input type="button" name="Submit2" value="Back" class="button" onclick="backFBS()">
+						</td>
+					</tr>				
+				</table>
+			</form>
+		</div>
+	</div>
+</div>

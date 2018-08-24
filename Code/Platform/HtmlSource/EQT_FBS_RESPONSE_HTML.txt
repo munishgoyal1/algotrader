@@ -1,0 +1,185 @@
+
+<script language="javascript">
+	var SelectedTradingFolder;
+	
+</script>
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh start-->
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh end-->
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh start-->
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh end-->
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh start-->
+
+<!-- CRCSN28547 ASP Changes for IOC durgesh end-->
+ <!-- CRCSN28547 ASP Changes for IOC durgesh start--><!-- CRCSN28547 ASP Changes for IOC durgesh end-->
+<script language="javascript">
+<!--
+	function backFBS()
+	{
+		xmlhttpPost('Includes/Trading_FBS.asp', 'Order_verification', 'containerTwo_left');
+		document.getElementById("body_container").focus();
+	}
+//-->
+</script>
+<script language="javascript" src="script/trading_verify.js"></script>
+
+<!--Error Message block Ends-->
+<!--ISIN block Starts-->
+
+<!--ISIN block Ends-->
+<!--Order Acknowledgement block Starts-->
+<div class="popup">
+	<h2 class="buyStock">
+		ORDER ACKNOWLEDGEMENT
+	</h2>
+	<div class="text_size">
+		<div class="startSection1 security">
+			<br>
+			<table width="100%" border="0" cellspacing="0" cellpadding="2" style="border:none">
+				<tr>
+					<td align="center" colspan="3"><b>Order placed successfully</b></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="right" width="49%"><b>Account</b></td>
+					<td align="center" width="1%">:</td>
+					
+					<td align="left" width="50%">
+						&nbsp;IN302902-41294665-8500501588
+					</td>
+					
+				</tr>
+				</tr>
+				<tr>
+					<td align="right" width="49%"><b>Action</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">
+						BUY
+					</td>
+				</tr>
+				<tr>
+					<td align="right" width="49%"><b>Exchange</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">NSE</td>
+				</tr>
+				<tr>
+					<td align="right" width="49%"><b>Stock</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">RELIANCE INDUSTRIES LIMITED</td>
+				</tr>
+				<tr>
+					<td align="right" width="49%"><b>Quantity</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">5</td>
+				</tr>
+				
+				<tr>
+					<td align="right" width="49%"><b>Square Off Mode</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">Broker</td>
+				</tr>
+				
+				<tr>
+					<td align="right" width="49%"><b>Product</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">
+						MARGIN
+						at
+						14.00
+						%*</td>
+				</tr>
+				<!-- CRCSN28547 ASP Changes for IOC durgesh start-->
+				<tr>
+					<td align="right" width="49%"><b>Order Validity</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">
+						IOC
+					</td>
+				</tr>
+				<!-- CRCSN28547 ASP Changes for IOC durgesh end-->
+				<tr>
+					<td align="right" width="49%"><b>Order Type</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">Limit</td>
+				</tr>
+				
+				<tr>
+					<td align="right" width="49%"><b>Limit Price</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">735.00</td>
+				</tr>
+				
+				<tr>
+					<td align="right" width="49%"><b>Close Price/Last Traded Price</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">739.05
+						on
+						12-Apr-2012 10:27:48
+						&nbsp;</td>
+				</tr>
+				<!--
+				<tr>
+					<td align="right" width="49%"><b>Estimated Deal Value</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">3,675.00</td>
+				</tr>
+				-->
+				
+				<tr>
+					<td align="right" width="49%"><b>Segment Traded</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">Rolling</td>
+				</tr>
+				<tr>
+					<td align="right" width="49%"><b>Settlement No.</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">2012069</td>
+				</tr>
+				<tr>
+					<td align="right" width="49%"><b>Settlement Cycle Ends On</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">12-Apr-2012</td>
+				</tr>
+				<tr>
+					<td align="right" width="49%"><b>
+							Pay-In Date for Funds
+							
+						</b>
+					</td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">13-Apr-2012</td>
+				</tr>
+				<tr>
+					<td align="right" width="49%"><b>
+							Pay-out Date for Stock
+							
+						</b>
+					</td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">17-Apr-2012</td>
+				</tr>
+				<tr>
+					<td align="right" width="49%"><b>Order Reference No</b></td>
+					<td align="center" width="1%">:</td>
+					<td align="left" width="50%">20120412N200003774</td>
+				</tr>
+				
+				<tr>
+					<td width="100%" align="left" class="content_bold" valign="bottom" colspan="3">* <a href="http://content.icicidirect.com/indexfaq.asp#mtmthreshold" target="_new">
+							Threshold Mark to Market Loss percentage is 16% for Broker mode positions in certain scrips. </a>Please <a href="javascript://" onClick="window.open('includes/MtMStocklist.asp','learning','width=500,height=400,status,scrollbars,resizable')">click here</a> to know the list of scrips.<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;Know the risks <a href="Marginrisks.htm" target="_blank">involved 
+							in margin trading</a>
+					</td>
+				</tr>
+				
+			</table>
+			<br>
+		</div>
+	</div>
+</div>

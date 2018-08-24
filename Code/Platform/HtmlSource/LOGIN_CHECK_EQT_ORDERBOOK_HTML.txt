@@ -1,0 +1,757 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>ICICI Direct</title>
+		<link rel="icon" type="image/ico" href="/ICICILogo.ico"></link>
+		<link rel="shortcut icon" href="/ICICILogo.ico"></link>
+		<!--[if IE 9]>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<script language="javascript" type="text/javascript">
+			function fnCreateJumpList(iScenario) {
+				fnClearJumpList();
+				window.external.msSiteModeCreateJumpList("Other Links")
+				window.external.msSiteModeAddJumpListItem('Portfolio', '/NewSiteTrading/trading/portfolio/portfolio.asp', '/favicon.ico');
+				window.external.msSiteModeAddJumpListItem('Mutual Funds', '/NewSiteTrading/trading/mutualfunds/mutualfunds.asp', '/favicon.ico');
+				window.external.msSiteModeAddJumpListItem('FD/Savings', '/NewSiteTrading/trading/rrb/rrb_home.asp', '/favicon.ico');
+				window.external.msSiteModeAddJumpListItem('IPO', '/NewSiteTrading/trading/Ipo/Ipo.asp', '/favicon.ico');
+				window.external.msSiteModeAddJumpListItem('Insurance', '/NewSiteTrading/trading/Insurance/TNCILInsurance.asp', '/favicon.ico');
+				window.external.msSiteModeShowJumpList();
+			}
+			function fnClearJumpList() {
+				window.external.msSiteModeClearJumplist();
+			}
+			</script>
+		<meta name="msapplication-task" content="name=Buy;action-uri=/NewSiteTrading/trading/equity/trading.asp?filename=BUY;icon-uri=/ICICILogo.ico"/>
+		<meta name="msapplication-task" content="name=Sell;action-uri=/NewSiteTrading/trading/equity/trading.asp?filename=SELL;icon-uri=/ICICILogo.ico"/>
+		<meta name="msapplication-task" content="name=Order Book;action-uri=/NewSiteTrading/trading/equity/trading.asp?filename=ORDERBOOK;icon-uri=/ICICILogo.ico"/>
+		<meta name="msapplication-task" content="name=Trade Book;action-uri=/NewSiteTrading/trading/equity/trading.asp?filename=TRADEBOOK;icon-uri=/ICICILogo.ico"/>
+		<meta name="msapplication-task" content="name=Demat Allocation;action-uri=/NewSiteTrading/trading/equity/trading.asp?filename=DEMATALLOC;icon-uri=/ICICILogo.ico"/>
+		<meta name="msapplication-task" content="name=Modify Allocation;action-uri=/NewSiteTrading/trading/equity/trading.asp?filename=MODALLOC;icon-uri=/ICICILogo.ico"/>
+		<meta name="msapplication-task" content="name=Limit;action-uri=/NewSiteTrading/trading/equity/trading.asp?filename=LIMIT;icon-uri=/ICICILogo.ico"/>
+		<script language="javascript" type="text/javascript">
+			fnCreateJumpList(2);
+		</script>
+		<![endif]-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Add this line to clear cache -->
+
+<link href="https://secure.icicidirect.com/NewSiteTrading/css/main.css" rel="stylesheet" type="text/css" />
+<link href="https://secure.icicidirect.com/NewSiteTrading/css/mainLogon.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<link rel="stylesheet" href="https://secure.icicidirect.com/NewSiteTrading/css/main_ie6.css" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="https://secure.icicidirect.com/NewSiteTrading/css/main_ie7.css" type="text/css">
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="https://secure.icicidirect.com/NewSiteTrading/css/main_ie9.css" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<![endif]-->		
+<script type="text/javascript" src="https://secure.icicidirect.com/NewSiteTrading/script/JQuery/jquery.js"></script>
+<script type="text/javascript" src="https://secure.icicidirect.com/NewSiteTrading/script/CommonFunctionsLogon.js"></script>
+<script type="text/javascript" src="https://secure.icicidirect.com/NewSiteTrading/script/CommonFunctions.js"></script>
+
+
+		<!--<script language="javascript" type="text/javascript" src="script/tooltip.js"></script>-->
+		<script language="javascript">
+			history.forward();
+		</script>
+		<!--[if IE 6]><style type="text/css">*html{overflow-y: hidden;}*html body{height: 100%;overflow: auto;}</style><![endif]-->
+	</head>
+	<body>
+		<div id="siteContainer">
+			<div id="headerContainer">
+				
+<form name="formNavigation" ID="formNavigation">
+	<input type="hidden" name="loginSecureStatus" value="1"> <input type="hidden" name="frmTServer" value="https://secure.icicidirect.com/NewSiteTrading" >
+	<input type="hidden" name="loginUserName" value="MUNISH   GOYAL" ID="Hidden1">
+	<input type="hidden" name="InvestmentAccYN" value="N">
+</form>
+<form name="Redirectsec">
+	<input type="hidden" name="filename">
+</form>
+<input type="hidden" id="Content_Server"  NAME="Content_Server" value="http://content.icicidirect.com/newsiteContent">
+<input type="hidden" id="Trading_Server"  NAME="Trading_Server" value="https://secure.icicidirect.com/NewSiteTrading">
+<table width="1000px" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td align="left" width="210">
+			<a href="#" onclick="sendTo('http://content.icicidirect.com/newsiteContent/Home/Home.asp');">
+				<img src="https://secure.icicidirect.com/NewSiteTrading/images/ICICIdirect.com_logo.gif"  alt="ICICI direct.com" /></a>
+		</td>
+		<td align="left">
+			
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td>
+						<div id="gridTabs" class="">
+							<ul>
+								<li>
+									<a href="javascript:showTopSensexTopperLooserData('india')" class="sel" id="tabIndia">
+										India</a></li>
+								<li>
+									<a href="javascript:showTopSensexTopperLooserData('world')" id="tabWorld">World</a></li>
+								<li>
+									<a href="javascript:showTopSensexTopperLooserData('gainers')" id="tabGainers">Gainers</a></li>
+								<li>
+									<a href="javascript:showTopSensexTopperLooserData('Loosers')" id="tabLoosers">Losers</a></li>
+								<li>
+									<img src="https://secure.icicidirect.com/NewSiteTrading/images/Refresh.jpg" alt="Refresh" onClick="javascript:showTopSensexTopperLooserData('Refresh')"  />
+								
+								
+							</ul>
+						</div>
+											</td>
+					<td>
+						<div id="search">
+							<!-- Add this line to clear cache -->
+
+<form name="GoogleSearch" ID="Form1">
+	<table border="0" align="right" cellpadding="0" cellspacing="1" ID="Table1">
+		<tr>
+			<td class="text_size">
+				<input type="radio" name="radio1" id="rdSite" value="te1" onClick="javascript:showHideLiveSearch('site')" />
+				<label for="te1">Site</label>
+			</td>
+			<td class="text_size">
+				<input type="radio" name="radio1" id="rdQuote" value="te2" onClick="javascript:showHideLiveSearch('quotes')" checked />
+				<label for="te2">Quote</label>
+			</td>
+			<td id="tdSite" style="display:none;">
+				<input autocomplete="off" type="text" name="normal" onclick="this.value='';" onkeyup="changeBorder(this.id);" class="text_btm_search text_size" style="width:125px"
+					ID="txtSite" />
+			</td>
+			<td id="tdQuotes">
+				<input autocomplete="off" type="text" name="normal" class="text_btm_search text_size" style="width:125px"
+					id="keyword" onKeyPress="return kd(event);"
+					tabindex="1" value="Please enter company code" onclick="this.value='';" onkeydown="changeFocus(event,1);event.cancelBubble=true;"/>
+				<div id="ajaxLiveSearchData" style="display:'none';"></div>
+			</td>
+			<td id="GOSite" style="display:none;">
+				<a class="orgBtn text_size bold" id="Submitstr" href="javascript:void(0)" name="SearchG1" onclick="return btnSearch_Click1('Submitstr');">
+					Go</a>
+			</td>
+			<td id="GOQuotes">
+			
+					<a class="orgBtn text_size bold" id="btnGo" href="javascript:void(0);" rel="keyword" onclick="validatetxt('keyword','https://secure.icicidirect.com/NewSiteTrading');">
+					Go</a>
+				
+			</td>
+		</tr>
+	</table>
+</form>
+	<script type="text/javascript">
+		$("#keyword").typeWatch( { highlight:true, callback:function(){showLiveSearchResult(document.getElementById('keyword').value,'ajaxLiveSearchData',1,'T');} } );
+		var IEVersion;
+	</script>
+
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="gridData">
+							<div id="ajaxTopSensexTopperLooserloadingImage" style="display:none;"></div>
+							<div id="ajaxTopSensexTopperLooserData">
+								<script type="text/javascript">
+							$(document).ready(function(){
+								showTopSensexTopperLooserData("india");
+							});
+								</script>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+		</td>
+		<td align="right" width="210">
+			<img src="https://secure.icicidirect.com/NewSiteTrading/images/ICICI Securities Limited.gif"  width="200" alt="ICICI direct.com" />
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" align="center">
+			<div class="loginInfo">
+				<ul>
+					
+					<li>
+						<a href="/trading/lbs/customer/trading.asp">Low Bandwidth Site</a></li>	
+					<li>
+						<a href="/NewSiteTrading/customer/customer.asp?FileName=Customer"><B>At Your Service</B></a></li>
+					<li>
+						<a href="javascript:void(0);" onclick="window.open('http://content.icicidirect.com/indexfaq.asp','webinar','scrollbars=yes,top=10,left=10,width=700,height=500,resizable,status=yes');" >
+							FAQ</a></li>	 		 
+								
+					
+					
+					<li>
+						MUNISH   GOYAL
+					</li>
+					<li>
+						<a href="/NewSiteTrading/customer/logout.asp" title="Logout"><strong>Logout</strong></a></li>
+					
+					<li class="last">
+						Monday, April 23, 2012,09:50
+						IST</li>
+				</ul>
+			</div>
+		</td>
+	</tr>
+</table>
+<script type="text/javascript">
+	var ContentURLPath=document.getElementById("Content_Server").value;
+</script>
+
+			</div>
+			<div class="clear"></div>
+			<div id="topNavContainer">
+				
+<div id="topNav">
+    
+    <div id="topNavLv1" style="height:31px;background-color:#B12A30;">
+        <ul>
+            <li><a href="#" onclick="sendTo('http://content.icicidirect.com/newsiteContent/Home/Home.asp');" class="">
+                Home</a></li>
+            <li><a href="#" onclick="sendTo('http://content.icicidirect.com/newsiteContent/ProductService/Overview.asp');"
+                class="">Products &amp; Services</a></li>
+            <li><a href="#" onclick="sendTo('http://content.icicidirect.com/newsiteContent/Market/Overview.asp');" class="">
+                Markets</a></li>
+            <li><a href="#" onclick="sendTo('http://content.icicidirect.com/newsiteContent/Research/Overview.asp');" class="">
+                Do Your Research</a></li>
+            
+            <li><a href="#" onclick="sendTo('https://secure.icicidirect.com/NewSiteTrading/Trading/Equity/Trading.asp');"
+                class="sel">Trade &amp; Invest</a></li>
+            
+            <li><a href="#" onclick="sendTo('http://content.icicidirect.com/newsiteContent/FinancialEducation/ClassroomOfProfit.asp');"
+                    class="">Centre for Financial Learning</a></li>
+                    
+              
+              <li><a href="#" onclick="TrdSecChg('https://secure.icicidirect.com/NewSiteTrading/Customer/MyAccount.asp','MyAccount');" class="">
+                Customer Service</a></li>
+             
+        </ul>
+    </div>
+    
+
+<ul id="nav" class="dropdown dropdown-horizontal">
+	
+		<li id="li_Portfolio" class="tradinglinks">
+			<a href="../portfolio/portfolio.asp" class=>Portfolio</a>
+		</li>
+		<li>
+			<div class="menuSpacer">&nbsp;</div>
+		</li>
+		<li id="li_Equity" class="tradinglinks">
+			<a href="../equity/Trading.asp" class=sel>Equity</a>
+		</li>
+		<li>
+			<div class="menuSpacer">&nbsp;</div>
+		</li>
+		<li id="li_Fno" class="tradinglinks">
+			<a href="../fno/fnohome.asp" class=>F &amp; O</a>
+		</li>
+		<li>
+			<div class="menuSpacer">&nbsp;</div>
+		</li>
+		<li id="li_MutualFunds" class="tradinglinks">
+			<a href="../mutualfunds/mutualfunds.asp" class=>Mutual Funds</a>
+		</li>
+		<li>
+			<div class="menuSpacer">&nbsp;</div>
+		</li>
+		<li id="li_Currency" class="tradinglinks">
+			<a href="../Currency/Currencyhome.asp" class=>Currency</a>
+		</li>
+		<li>
+			<div class="menuSpacer">&nbsp;</div>
+		</li>
+		<li id="li_FDGold" class="tradinglinks">
+			<a href="../rrb/rrb_home.asp" class=>FD / Bonds</a>
+		</li>
+		<li>
+			<div class="menuSpacer">&nbsp;</div>
+		</li>
+		
+			<li id="li_NPS" class="tradinglinks">
+				<a href="../NPS/NPS.asp" class=>NPS</a>
+			</li>
+		
+		<li>
+			<div class="menuSpacer">&nbsp;</div>
+		</li>
+		<li id="li_IPO" class="tradinglinks">
+			<a href="../Ipo/Ipo.asp" class=>IPO</a>
+		</li>
+		<li>
+			<div class="menuSpacer">&nbsp;</div>
+		</li>
+		<li id="li_Insurance" class="tradinglinks">
+			<a href="../Insurance/TNCILInsurance.asp" class=>Insurance</a>
+		</li>
+		<li>
+			<div class="menuSpacer">&nbsp;</div>
+		</li>
+		<li id="li_Tax" class="tradinglinks">
+			<a href="../Tax/mainpage.asp" class=>Tax</a>
+		</li>
+		<li>
+			<div class="menuSpacer">&nbsp;</div>
+		</li>
+		
+		<li id="li_OverseasTrading" class="tradinglinks">
+			<a href="../otp/otp.asp" class=>Overseas Trading</a>
+		</li>		
+	
+</ul>
+
+<script language="javascript">
+	SelectedTradingFolder = 'EQUITY';
+</script>
+
+
+</div>
+
+			</div>
+			<div class="clear"></div>
+			
+<div class="clear"></div>
+<div style="width:962px;margin-right:auto;margin-left:auto;padding-left:12px;clear:both">
+	<table class="projectionSmall2" align="center" width="100%" ID="Table1">
+		
+		<tr class="projectiontopbg2" align="center">
+			<td>
+				<a href="javascript://" onclick="showTradingDataQ('https://secure.icicidirect.com/NewSiteTrading/Trading/Equity/Includes/trading_buy.asp?FML_ORD_PRDCT_TYP=C&tt=4/23/2012 9:50:28 AM');">
+					Cash Buy</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingDataQ('https://secure.icicidirect.com/NewSiteTrading/Trading/Equity/Includes/trading_buy.asp?FML_ORD_PRDCT_TYP=M&tt=4/23/2012 9:50:28 AM');">
+					Margin Buy</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_SLTP_order');">MarginPLUS 
+					Order</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_order_book');">Order Book</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_cash_projection');">Cash 
+					Projection</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_my_messages');">My 
+					Messages ()</a>
+			</td>
+			<td>
+				<a href="#" onclick="TrdSecChg('https://secure.icicidirect.com/NewSiteTrading/trading/mutualfunds/mutualfunds.asp','ETFLIST');">
+					ETF List</a> / <a href="#" onclick="showTradingData('NcdList');">NCD List </a>&nbsp;<img src="../images/new.gif" alt="">
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_Recommd');">iCLICK 2 
+					INVEST</a>
+			</td>
+			
+		</tr>
+		<tr class="projectiontopbg2" align="center">
+			<td>
+				<a href="javascript://" onclick="showTradingDataQ('https://secure.icicidirect.com/NewSiteTrading/Trading/Equity/Includes/trading_sell.asp?FML_ORD_PRDCT_TYP=C&tt=4/23/2012 9:50:28 AM');">
+					Cash Sell</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingDataQ('https://secure.icicidirect.com/NewSiteTrading/Trading/Equity/Includes/trading_sell.asp?FML_ORD_PRDCT_TYP=M&tt=4/23/2012 9:50:28 AM');">
+					Margin Sell</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('Trading_OpenPositions');">MarginPLUS 
+					Positions</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_trade_book');">Trade Book</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_security_prjn');">Security 
+					Projection</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_market_messages');">Market 
+					Messages</a>
+			</td>
+			
+			<td>
+				<a href="javascript://" onclick="showTradingData('TNCILRecognia');">Charts</a>
+			</td>
+			
+			<td>
+				<A href="javascript://" onclick="window.open('https://secure.icicidirect.com/NewSiteTrading/Trading/Equity/Includes/iClick2Gain.asp','CL2GAIN','width=980,height=500,left=10,top=100,status,scrollbars,resizable')">
+					iCLICK-2-GAIN&nbsp; <img src="../../images/live.gif" /></A>
+			</td>
+			
+			
+			
+		</tr>
+		<tr class="projectiontopbg2" align="center">
+			<td>
+				<a href="javascript://" style="width:36px;" onclick="showTradingData('trading_security_prjn');">
+					BTST</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_margin_positions');">Margin 
+					Positions</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('Trading_FBS');">Fast Buy / Sell</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_modify_alloc');">Modify 
+					Allocation</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_ctd');">Converted to 
+					Delivery</a>
+			</td>
+			<td>
+				
+				<a href="javascript://" onclick="alert('Since you have one demat account, this link will not be applicable to you.')">
+					Select Account</a>
+				
+			</td>
+			<td>
+				<a href="javascript://" onclick="window.open('/newsitetrading/trading/portfolio/includes/Intemarketwatch.asp', 'newwin', 'location=no, menubar=no,status=no,toolbar=no, resizable=yes, scrollbars=no,width=1000,height=650,left=0,top=0');">
+					eMarketwatch</a>
+			</td>
+			
+			
+			<td>
+				<a href="#" onclick="TrdSecChg('https://secure.icicidirect.com/NewSiteTrading/customer/customer.asp','ViewPoints');">View 
+					Point</a>
+			</td>
+		</tr>
+		<tr class="projectiontopbg2" align="center">
+			<td>
+				<a href="javascript://" onclick="showTradingData('eq_sip_plc_ord');">Equity SIP</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_basket_order');">Basket 
+					Order</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_demat_balance');">Demat 
+					Allocation</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_limit');">Limit</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_em_pendDelv');">Pending 
+					for Delivery</a>
+			</td>
+			<td>
+				<a href="javascript://" onclick="showTradingData('trading_stock_list');">Stock List</a>
+			</td>
+			
+			<td>
+			<a href="#" onclick="showTradingDataQ('https://secure.icicidirect.com/NewSiteTrading/Trading/fno/Includes/SecDeposited.asp?FrmPg=Equity&tt=4/23/2012 9:50:28 AM');"><b>Shares as Margin</b></a>&nbsp;<img src="../images/new.gif" alt="">				
+			</td>
+			
+			
+			<td>
+				<a class="thickbox_TradingMenu w100" href="https://secure.icicidirect.com/NewSiteTrading/trading/equity/includes/tradinghelp.asp?height=400&width=700">
+					Help</a>
+			</td>
+			
+		</tr>
+        
+	</table>
+</div>
+
+			<div class="clear"></div>
+			<div id="body_container">
+				<div id="ajaxCustomerServiceloadingImage" style="position: absolute; top: 60%; left: 50%;">
+				</div>
+				<div id="containerTwo_left" class="flo_left">
+					
+					<script language="javascript">
+								<!--					    
+										showTradingData('Overview');
+								//-->
+					</script>
+					
+					<div class="gutter2">
+					</div>
+				</div>
+			</div>
+			<br class="clear" />
+			<div class="clear">
+			</div>
+			<div id="footerContainer">
+				
+
+<div id="footer">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" id="Table1">
+        <tr>
+            <td colspan="2">
+                <tr>
+                    <td colspan="2">
+                        <div class="footer_explore bold">
+                            Explore ICICIdirect.com</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="2%">
+                        <a href="javascript://" onclick="showfooterExp('https://secure.icicidirect.com/NewSiteTrading')"><div id="dvFooterSign" >+</div></a>
+                    </td>
+                    <td>
+                        <table border="0" class="footer_data" cellpadding="0" cellspacing="0" width="100%"
+                            id="Table2">
+                            <tr>
+                                <td class="footer_list" width="11%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Why ICICIdirect.com</td>
+                                <td class="footer_list" width="11%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products &amp; Services</td>
+                                <td class="footer_list" width="11%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Markets</td>
+                                <td class="footer_list" width="12%">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do Your Research</td>
+                                
+                                <td class="footer_list" width="11%">
+                                    Open an Account</td>
+                                
+                                <td class="footer_list" width="18%">
+                                    Centre for Financial Learning</td>
+                                <td class="footer_list" width="12%">
+                                    Customer Service</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="2%">
+                        &nbsp;</td>
+                    <td>
+                        <div id="Div_footerExp">
+                        </div>
+                    </td>
+                </tr>
+    </table>
+    <div class="gutter6">
+    </div>
+    <div class="copyrights">
+        <a href="http://www.icicibank.com/" target="_blank">ICICI Bank</a> | <a href="http://www.icicisecurities.com/"
+            target="_blank">ICICI Securities</a> | <a href="http://www.icicilombard.com/" target="_blank">
+                ICICI Lombard General Insurance</a> | <a href="http://www.iciciprulife.com/" target="_blank">
+                    ICICI Prudential Life Insurance</a> | <a href="http://www.icicipruamc.com/" target="_blank">
+                        ICICI Prudential AMC</a><br />
+        <br />
+        ICICIdirect.com is a part of ICICI Securities and offers retail trading and investment
+        services.
+        <br>
+        Copyright&copy;
+        2012
+        .&nbsp;All rights Reserved. ICICI Securities Ltd<br />
+        &reg;trademark registration in respect of the concerned mark has been applied for
+        by ICICI Bank Limited<br />
+        NSE SEBI Registration Number Capital Market :- INB 230773037 | BSE SEBI Registration
+        Number Capital Market :- INB 011286854<br />
+        NSE SEBI Registration Number Derivatives :- INF 230773037 | NSE SEBI Registration
+        Number Currency Derivatives :- INE 230773037
+        <br>
+        The site is best viewed with Internet Explorer 7.0 or above and screen resolution
+        1024 X 768.
+    </div>
+</div>
+</div>
+
+<script type="text/javascript">
+	tb_init_TopSearch('a.thickbox_TopSearch, area.thickbox_TopSearch, input.thickbox_TopSearch');
+	var ifoot=0;
+	function showfooterExp(TradingURL)
+	{
+	if(ifoot==0){	
+	url=TradingURL + "/includes/FooterExplore.asp?tt="+Math.random();
+	$('#Div_footerExp').show();
+	$("#Div_footerExp").load(url, function(response, status, xhr) {
+	});
+	ifoot= ifoot +1;		
+	document.getElementById("dvFooterSign").innerHTML="-";
+	}
+	else{	
+	$('#Div_footerExp').hide();
+    ifoot=0;    
+    document.getElementById("dvFooterSign").innerHTML="+";
+	}
+}
+</script>
+<script type="text/javascript">
+	tb_init_MBP('a.thickbox_TradingMenu, area.thickbox_TradingMenu, input.thickbox_TradingMenu');
+</script>
+
+			</div>
+		</div>
+		
+<script LANGUAGE="JavaScript">
+if (window.document.body.addEventListener) {
+   window.document.body.addEventListener("keydown",OpenTicket, false);
+} else {
+   window.document.body.attachEvent("onkeydown",OpenTicket);
+}
+var ticketTabs = new Array("Equity","FnO","ModifyAlloc");
+	var TradingURL=document.getElementById("Trading_Server").value;	
+	var DematFlg;
+var IEVersion;
+	var CHttpsPath;
+	IEVersion = "";
+	CHttpsPath = "";
+	if(navigator.appName=="Microsoft Internet Explorer")
+		{
+			if((navigator.appVersion.split(";")[1]).split(" ")[2]=="6.0")
+			{
+				IEVersion = "IE6";
+				CHttpsPath = "https://secure.icicidirect.com/NewSiteTrading";
+			}
+		}
+
+</script>
+<!--[if IE 6]>
+<script language="JavaScript">
+var displayFlag = true;
+function positionIFrameT(divid, frmid)
+{
+	var div = document.getElementById(divid);
+	var frm = document.getElementById(frmid);
+	
+	if(!displayFlag)
+	{
+		frm.style.left='0px';
+		frm.style.top='0px';
+		frm.style.height = '0px';
+		frm.style.width = '0px';
+		frm.style.display = "none";
+		displayFlag = !displayFlag;
+	}
+	else
+	{
+		frm.style.left = div.style.left;
+		frm.style.top = div.style.top;
+		frm.style.height = div.offsetHeight + 35;
+		frm.style.width = div.offsetWidth + 285;
+		frm.style.display = "block";
+		displayFlag = !displayFlag;
+	}	
+	
+}
+
+
+//findPosX and findPosY are included only to put the div over the dropdownbox.
+//They are not necessary in order to position the iFrame under the div
+function findPosX(obj)
+{
+	var curleft = 0;
+	if (obj.offsetParent)
+	{
+		while (obj.offsetParent)
+		{
+			curleft += obj.offsetLeft
+			obj = obj.offsetParent;
+		}
+	}
+	else if (obj.x)
+		curleft += obj.x;
+	return curleft;
+}
+
+function findPosY(obj)
+{
+	var curtop = 0;
+	if (obj.offsetParent)
+	{
+		while (obj.offsetParent)
+		{
+			curtop += obj.offsetTop
+			obj = obj.offsetParent;
+		}
+	}
+	else if (obj.y)
+		curtop += obj.y;
+	return curtop;
+}
+
+function positionDivT(divid, frmid)
+{	
+	var div = document.getElementById(divid);
+	div.style.left=findPosX(document.getElementById(divid)) + "px";
+	div.style.top=findPosY(document.getElementById(divid)) + "px";
+	positionIFrameT(divid, frmid);
+}
+</script>
+<![endif]-->
+<!-- ticket tab Starts here-->
+<div id="tick">
+	<a href="javascript:void(0);" title="ICICIDirect.com Ticket (Shortcut Key - F2)" onClick="showSlidingDiv();showMainTicketData();if(IEVersion == 'IE6'){positionDivT('ajaxMainTicketData', 'theframeTicket');}"
+		class="directTicket"><img src="https://secure.icicidirect.com/NewSiteTrading/images/direct-ticket-open.jpg"></a>
+	<div class="ticketTab" id="slidingDiv">
+		<div class="ticketTabNav" style="height:250px;">
+			<a href="#" title="ICICIDirect.com Ticket (Shortcut Key - F2)" onClick="showSlidingDiv();if(IEVersion == 'IE6'){positionDivT('ajaxMainTicketData', 'theframeTicket');} return false;"
+				class="directTicketTwo"><img src="https://secure.icicidirect.com/NewSiteTrading/images/direct-ticket.jpg"></a>
+			<!-- Ticket Content start here -->
+			<div class="ticketLeftDiv flo_left">
+				<div id="ticketMenu">
+					<ul>
+						<li>
+							<a href="javascript:showMainTicketData('tikTabEquity')" id="tikTabEquity">
+								<span>Equity</span></a></li>
+						<li>
+							<a href="javascript:showMainTicketData('tikTabFnO')" id="tikTabFnO">
+								<span>F & O</span></a></li>
+						<li>
+							<a href="javascript:showMainTicketData('tikTabMA')" id="tikTabMA">
+								<span>Modify Allocation</span></a></li>
+					</ul>
+				</div>
+				<div id="ddcolortabsline">&nbsp;</div>
+				<div id="ajaxMainTicketData" style="padding-left:8px;z-index:10;">
+				</div>
+			</div>
+			<div class="flo_left ticketRightDiv">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td class="gutter6"></td></tr></table>
+				<div class="gutter25 padL5 text_topl1">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td id="RightDivTitle"></td>
+							<td align="right" style="position: relative;left: 10px;">
+								<a href="#" title="Close" onClick="showSlidingDiv();showMainTicketData();if(IEVersion == 'IE6'){positionDivT('ajaxMainTicketData', 'theframeTicket');} return false;">
+									<font face="arial black" color="#990000">X</font></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div id="BSETopLosersLoadingGif"></div>
+				
+				<div class="flo_left padB3 innerLinks" id="TickRightmenu">
+					<a href="javascript:showTicketQuote('MA')" id="MA" style="font-size:1em;" title="Modify Allocation">
+						Modify Alloc.</a> | <a href="javascript:showTicketQuote('CL')" id="CL" style="font-size:1em;" title="Check Limit">
+						Limit</a>
+				</div>
+				<div class="flo_left padB3 innerLinks" id="TickRightmenuEQ">
+					&nbsp;| <a href="javascript:showTicketQuote('CMP')" id="CMP" style="font-size:1em;" title="Current Market Price">
+						CMP</a> | <a href="javascript:showTicketQuote('DQ')" id="DQ" style="font-size:1em;" title="Detailed Quote">
+						DQ</a> | <a href="javascript:showTicketQuote('MD')" id="MD" style="font-size:1em;" title="Best 5 Bid/Offer">
+						Market Depth</a>
+				</div>
+				<div class="clear"></div>
+				<div id="ajaxTikSubTabQuoteData" style="overflow:auto;width:300px;">
+				</div>
+			</div>
+			<!-- Ticket Content ends here -->
+		</div>
+	</div>
+</div>
+<!--[if IE 6]>
+<iframe id="theframeTicket" src="https://secure.icicidirect.com/NewSiteTrading/includes/HideDropDown.html" style="position:absolute;z-index:9;" frameBorder="0" scrollbar="no" width="0" height="0"></iframe>
+<![endif]-->
+<!-- Ticket Tab Ends Here -->
+
+	</body>
+</html>

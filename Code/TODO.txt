@@ -1,0 +1,5 @@
+1. convert pending for delivery at start
+2. handle part executed orders
+3. fix convert margin open positions
+
+Simply find out the post data params reqd for any action and if any mandatory value is not available try to get that first and then make this post call. it generally goes through

@@ -1,0 +1,122 @@
+
+<script language="javascript">
+	var SelectedTradingFolder;
+	
+</script>
+
+	<script LANGUAGE="javascript" src="script/VerifyOrder.js"></script>
+	<script language=javascript>
+<!--
+function trapeve()
+{
+	if (event.keyCode==13)
+		{
+			ValidateForm()
+		}
+}
+document.onkeydown=trapeve
+//-->
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		document.FNOVerifyOrderForm.smt.focus();
+	});
+</script>
+	<div class="popup">
+		<h2 class="buyStock">ORDER VERIFICATION&nbsp;</h2>
+		<div class="text_size">
+			<div class="startSection1 security">
+				<form method="post" action="Includes/VerifyOrder.asp" name="FNOVerifyOrderForm" >
+					<input type="hidden" name="FFO_ORD_TRD_DT" value="26-Mar-2012                      "> <input type = hidden name = FFO_XCHNG_ST value = C>
+					<input type = hidden name = FFO_QTY  value="20"> <input type = hidden name = FFO_UNDRLYNG value = "MINIFT">
+					<input type = hidden name = FFO_PRDCT_TYP value = "F"> <input type = hidden name = FFO_ORD_TYP  value = L>
+					<input type = hidden name = FFO_ACCOUNT value = IN302902-41294665-8500501588> <input type = hidden name = FFO_XCHNG_CD value = NFO>
+					<input type="hidden" name="FFO_CTGRY_INDSTK" value="I"> <input type = hidden name = FFO_LMT_RT value = 5151>
+					<input type = hidden name = FFO_DSCLSD_QTY value = > <input type = hidden name = FFO_STP_LSS value = >
+					<input type="hidden" name="FFO_ORDR_FLW" value="B"> <input type="hidden" name="FFO_STRK_PRC" value="0">
+					<input type="hidden" name="FFO_EXPRY_DT" value="26-Apr-2012"> <input type="hidden" name="FFO_EXER_TYP" value="E">
+					<input type="hidden" name="FFO_OPT_TYP" value="*"> <input type="hidden" name="FFO_PASS" value="1">
+					<input type="hidden" name="FFO_RT" value=""> <input type="hidden" name="FFO_SESSION_ID" value="">
+					<input type="hidden" name="FFO_EBA_MTCH_ACT_NO" value="8500501588"> <input type="hidden" name="FFO_DPID" value="IN302902">
+					<input type="hidden" name="FFO_CLNT_DPID" value="41294665"> <input type="hidden" name="FFO_CLNT_CTGRY" value="O">
+					<input type="hidden" name="FFO_BNK_ACT_NO" value=""> <input type="hidden" name="FFO_RQST_TYP" value="U">
+					<input type="hidden" name="FFO_TRD_PSWD_LMT" value="10000000">
+					<input type="hidden" name="FFO_MIN_LOT_QTY" value=""> <input type="hidden" name="FFO_GOOD_TILL_DATE" value="26/03/2012">
+					<input type="hidden" name="FFO_GOOD_TILL_TYPE" value="T"> <input type="hidden" name="FFO_GOOD_TILL_DATE_TEXT" value="26/03/2012">
+					<input type="hidden" name="FFO_GOOD_TILL_DATE_TEMP" value="27/03/2012">
+					<input type="hidden" name="FFO_TRD_FLG" value=""> <input type="hidden" name="FFO_MULTI_ROW" value="">
+					<input type="hidden" name="FFO_LST_TRD_PRC" value="">
+					<input type="hidden" name="FFO_ALIAS" value=""> <input type="hidden" name="m_PipeId" value="11">
+					
+							<table width="100%" border="0" cellspacing="1" cellpadding="3" ID="Table1">
+								<tr >
+									<td align="center" width="49%" >
+										
+										Your Order will be sent to the Exchange when the Exchange opens.
+										
+									</td>
+								</tr>
+							</table>
+							<table width="100%" border="0" cellspacing="0" cellpadding="2" ID="Table2">
+								<tr >
+									<td align="right" width="49%" ><b>Account</b></td>
+									<td align="center" width="1%" >:</td>
+									
+									<td align="left"  width="50%">
+										&nbsp;IN302902-41294665-8500501588
+										</font></td>
+									
+								</tr>
+								
+								<tr >
+									<td align="right" width="49%" ><b>Action</b></td>
+									<td align="center" width="1%" >:</td>
+									<td align="left" width="50%" >
+										BUY
+									</td>
+								</tr>
+								<tr >
+									<td align="right" width="49%" ><b>Exchange</b></td>
+									<td align="center" width="1%" >:</td>
+									<td align="left"  width="50%">NSE</td>
+								</tr>
+								<tr >
+									<td align="right" width="49%" ><b>Contract Details</b></td>
+									<td align="center" width="1%" >:</td>
+									<td align="left"  width="50%">FUT-MINIFT-26-Apr-2012</td>
+								</tr>
+								<tr >
+									<td align="right" width="49%" ><b>Quantity</b></td>
+									<td align="center" width="1%" >:</td>
+									<td align="left"  width="50%">20</td>
+								</tr>
+								<tr >
+									<td align="right" width="49%" ><b>Order Type</b></td>
+									<td align="center" width="1%" >:</td>
+									<td align="left"  width="50%">Limit</td>
+								</tr>
+								
+								<tr >
+									<td align="right" width="49%" ><b>Limit Price</b></td>
+									<td align="center" width="1%" >:</td>
+									<td align="left"  width="50%">5,151.00</td>
+								</tr>
+								
+								<tr >
+									<td align="right"  width="49%"><b>Order Date </b>
+									</td>
+									<td align="center"  width="1%">:</td>
+									<td align="left"  width="50%">26-Mar-2012                      </td>
+								</tr>
+								<tr >
+									<td align="right"  width="49%"><b>Your Reference No. </b>
+									</td>
+									<td align="center"  width="1%">:</td>
+									<td align="left"  width="50%">201203261100002594</td>
+								</tr>
+							</table>
+							
+				</form>
+			</div>
+		</div>
+	</div>

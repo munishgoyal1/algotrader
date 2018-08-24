@@ -1,0 +1,306 @@
+
+<script language="javascript">
+	//if (EscK == "")
+      //  EscK = ' or Esc Key';
+	var SelectedTradingFolder;
+	
+</script>
+
+<script language="javascript">
+				
+		function winopen(url)
+		{
+			window.open(url,"Mohan","height=600,width=620,toolbar=no,status=no,scrollbars=yes");
+		}
+</script>
+<script LANGUAGE="JavaScript">
+//window.onerror=new Function("return true");
+function trapeve()
+{
+	if (event.keyCode==13 && document.getElementById("ajaxBuyLiveSearchData").style.display=="none")
+		{
+			ValidateFormajax()
+		}
+}
+document.onkeydown=trapeve
+</script>
+
+<script language='javascript'>
+var NSEProductExchange = new Array()
+var BSEProductExchange = new Array()
+NSEProductExchange[0]='CASH';
+NSEProductExchange[1]='MARGIN';
+NSEProductExchange[2]='SPOT';
+BSEProductExchange[0]='CASH';
+BSEProductExchange[1]='MARGIN';
+BSEProductExchange[2]='SPOT';
+</script>
+
+<link type="text/css" rel="stylesheet" href="https://secure.icicidirect.com/NewSiteTrading/Calendar/Calendar.css?random=20051112" media="screen">
+</link>
+<script type="text/javascript" src="https://secure.icicidirect.com/NewSiteTrading/Calendar/Calendar.js"></script>
+<script LANGUAGE="JavaScript" src="script/trading_FBS.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		test('','1');test1();ShowPercentage();document.Verify_order.FML_ORD_ORDR_FLW.focus();SetButtonText()
+		var IEVersion;
+		IEVersion = "";
+		if(navigator.appName=="Microsoft Internet Explorer")
+		{
+			if((navigator.appVersion.split(";")[1]).split(" ")[2]=="6.0")
+			{
+				IEVersion = "IE6";
+			}
+		}
+		initPos=1;
+	});
+</script>
+<form action="Trading_FBSubmitOrder.asp" name="Verify_order" method="post" ID="Form1">
+	<div class="popup">
+		<table ID="Table1" width="100%" style="border:none">
+			<tr>
+				<td>
+					<h2 class="buyStock">
+						EQUITY - FAST
+						
+						BUY
+						
+						/
+						
+						SELL
+						
+						STOCKS</h2>
+				</td>
+			</tr>
+		</table>
+		<div class="text_size">
+			<div class="startSection1 security">
+				<table width="100%" border="0" cellspacing="3" cellpadding="2">
+					<tr>
+						<td align="right">Account</td>
+						<td align="left">:</td>
+						<td align="left">
+							<input type="hidden" name="FML_ACCOUNT" value="IN302902-41294665-8500501588">
+							IN302902-41294665-8500501588
+						</td>
+						<td align="right" colspan="6">
+							<a href="https://secure.icicidirect.com/NewSiteTrading/customer/includes/ClickToCall.asp?width=700&height=500" class="thickbox_MBP">
+								<B><font size="2">Need assistance - Click to Call</font></B></a>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Action</td>
+						<td align="left">:</td>
+						<td align="left" colspan="4">
+							<select name="FML_ORD_ORDR_FLW" onChange="DisplayProduct(document.Verify_order.FML_ORD_XCHNG_CD.value)"
+								class="IE6Select IE6SelectTicket">
+								
+								<option value="B" >Buy</option>
+								
+								<option value="S" >Sell</option>
+								
+							</select>
+						</td>
+						<td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="right">Product</td>
+						<td align="left">:</td>
+						<td align="left" colspan="7" valign="middle">
+							<div style="float:left;">
+								<select name="FML_ORD_PRDCT_TYP" value="" onchange="setFm();" ID="Select1" class="IE6Select IE6SelectTicket">
+									<option value='CASH' >CASH</option><option value='MARGIN' >MARGIN</option>
+								</select>&nbsp;&nbsp;
+							</div>
+							<div id="divSquareMode" style="display:none;float:left;">
+								<table width="100%" border="0" ID="Table3" cellpadding="0" cellspacing="0" class="projectionSmall">
+									<tr class="projectiontopbg">
+										<td valign="middle" align="right">Square 
+											Off Mode : <input type="radio" name="FML_SQ_FLAG" value="S" ID="Radio1">Broker <input type="radio" name="FML_SQ_FLAG" value="M" ID="Radio2"><font color="#0066ff">Client</font>
+											&nbsp; <a href="javascript:void(0)" onclick="window.open('http://content.icicidirect.com/EMMode.htm','EMMode','scrollbars=no,width=640,height=250,status=no,resizable=no')">
+												<img src="/NewSiteTrading/images/qns.gif"></a></font> &nbsp; <font size="1"><b>Trade till 3:30 pm in 175 stocks</b></font>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Exchange</td>
+						<td align="left">:</td>
+						<td align="left">
+							<input value='NSE'  onclick=javascript:test('NSE','0');ShowPercentage() type='radio' name='TEMP'>NSE<input value='BSE'  onclick=javascript:test('BSE','1');ShowPercentage() type='radio' name='TEMP'>BSE
+						</td>
+						<td nowrap><a href="javascript://" onclick="CalculateEqLim('https://secure.icicidirect.com/NewSiteTrading')" >View your 
+								limit</a> :</td>
+						<td><B><div id="Div_Eqlim" style="width:100px;border-width: 1px; border-style: solid; border-color: lightblue; ">&nbsp;</div>
+							</B>
+						</td>
+						<td colspan="4">
+							<a class="thickbox_MBP" href="https://secure.icicidirect.com/NewSiteTrading/trading/equity/includes/Trading_Modify_Alloc_ThicBox.asp?height=240&width=900&CmngFrm=E&tt=423201295103AM">
+								Modify Allocation</a>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Stock</td>
+						<td align="left">:</td>
+						<td align="left">
+							<input name="FML_STCK_CD" value="" size="8"  type="text"
+								autocomplete="off"
+								class="text_btm_search" id="Buykeyword" 
+								onKeyPress="return kd(event);" onkeydown="changeFocus(event,501);">
+							<div id="ajaxBuyLiveSearchData" style="font-size:1.5em !important;display:'none';"></div>
+						</td>
+						<td align="left" colspan="6"><a href="javascript://" onClick="stckValidate(1)">Find 
+								Stock Code</a></td>
+					</tr>
+					<tr>
+						<td align="right">Quantity</td>
+						<td align="left">:</td>
+						<td align="left">
+							<input name="FML_QTY" id="NextFocus" value="" size="8" maxlength=8 type="text">
+						</td>
+						<td align="left" width="180" colspan="6"><a href="javascript://" onClick="stckValidate(2)">Get 
+								Quote</a></td>
+					</tr>
+					<input type="hidden" name="FML_DOTNET_FLG" value="Y"><input type="hidden" name="FML_URL_FLG" value="http://getquote.icicidirect.com/NewSiteTrading/trading/equity/includes/trading_stock_quote.asp">
+					<!-- CRCSN28547 ASP Changes for IOC durgesh start-->
+					<tr>
+						<td align="right">Order Validity</td>
+						<td align="left">:</td>
+						<td align="left" colspan="4">
+							<!--<select name="FML_POINT_TYPE" id="FML_POINT_TYPE" onchange="return dayiocselect();">
+								<option value="T">DAY</option>
+								<option value="I">IOC</option>
+							</select>-->
+							<div style="float:left;">
+								<input type="radio" name="FML_POINT_TYPE" value="T" checked onclick="javascript:return dayiocselect();">DAY
+								<input type="radio" name="FML_POINT_TYPE" value="I" onclick="javascript:return dayiocselect();">IOC
+								<input type="radio" name="FML_POINT_TYPE" value="G" onclick="javascript:return dayiocselect();"
+									ID="Radio3">myGTC&nbsp;<a href="http://content.icicidirect.com/IndexFaq.asp#gtc" target="_blank"><img src="/NewSiteTrading/images/qns.gif"></a>
+							</div>
+							<div id="DivGTC" style="display:none;float:right;">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" ID="Table2" align="left"
+									style="border:none;background-color:#FFFFFF;">
+									<tr>
+										<td align="center">Date :
+											
+											<input type="hidden" class="textbox" name="GTCDate" id="GTCDate" value="23/04/2012">
+											<input type="hidden" class="textbox" name="GTCDateHidden7" id="GTCDateHidden7" value="22/05/2012">
+											<input type="text" class="textbox" name="GTCDate7" id="GTCDate7" value="22/05/2012" size="7" maxlength="10">
+											&nbsp; <input class="text_size" type="button" value="Cal" onclick="displayCalendar(document.getElementById('GTCDate7'),'dd/mm/yyyy',this);"
+												name="Button1" ID="Button1"> &nbsp; <b>(DD/MM/YYYY)</b>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+					<!-- CRCSN28547 ASP Changes for IOC durgesh end-->
+					<tr>
+						<td align="right">Order Type</td>
+						<td align="left">:</td>
+						<td align="left">
+							<input type="radio" name="FML_ORD_TYP" value="M"  onClick="ClearPrice();ShowPercentage();dayiocselect();"><font face="Arial" size="2">Market</font>&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="FML_ORD_TYP" value="L"  onclick='HidePercentage()' CHECKED><font face="Arial" size="2">Limit</font></td>
+						<td align="left" colspan="6"><a href="javascript://" onClick="stckValidate(3)">Best 5 
+								Bids/Offers</a></td>
+					</tr>
+					<tr>
+						<td align="right">Limit Price</td>
+						<td align="left">:</td>
+						<td align="left">
+							<input name="FML_ORD_LMT_RT" value="" size="8"  maxlength=9 type="text" >
+						</td>
+						<td align="left" colspan="4">Protection % : <input name="FML_GMS_CSH_PRDCT_PRCNTG" value="" size="5" maxlength="6" type="text">&nbsp;
+							<a class="thickbox_MBP" href="includes/explainProtection.asp?height=350&width=650">Explain</a>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Disclosed Quantity</td>
+						<td align="left">:</td>
+						<td align="left">
+							<input name="FML_ORD_DSCLSD_QTY" value="" size="8" maxlength=8 type="text" >
+						</td>
+						<td align="left" colspan="6">
+							
+							<input  type="button" name="Submit" value="Buy Now" onClick="return ValidateFormajax()" class="button">
+							
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Stop Loss Trigger Price</td>
+						<td align="left">:</td>
+						<td align="left">
+							<input name="FML_ORD_STP_LSS" value=""  size="8" maxlength=9 type="text" >&nbsp; 
+							<!--<a class="thickbox_MBP" href="includes/indexfaq.asp?height=500&width=700">-->
+							<a href="javascript://" onclick="window.open('includes/indexfaq.asp#stop','FAQ','scrollbars=yes,width=700,height=500')">
+								Explain</a>
+						</td>
+						<td align="left" colspan="6">
+							
+							<input type="button" name="Submit2" value=" Clear  " onClick="ClearForm()" class="button">
+							
+						</td>
+					</tr>
+					<tr>
+						<td align="right">Password</td>
+						<td align="left">:</td>
+						<td align="left" colspan="7">
+							<input name="FML_TRADING_PASSWD" size="8" maxlength="8" type="password">
+						</td>
+					</tr>
+					
+					<!--
+					<tr>
+						<td colspan="6" align="left">
+							<a class="thickbox_MBP" href="https://secure.icicidirect.com/NewSiteTrading/customer/includes/pan4nri.asp?height=400&width=700">
+								<b>Message for NRIs : PAN </b></a>
+						</td>
+					</tr>
+					-->
+				</table>
+				<input type="hidden" name="FML_ORD_TRD_DT_BSE" value="23-Apr-2012">
+				<input type="hidden" name="FML_ORD_TRD_DT_NSE" value="23-Apr-2012">
+				<input type="hidden" name="FML_ORD_TRD_DT"> <input type="hidden" name="FML_PRODUCT_INDEX" value="">
+				<input type="hidden" name="FML_ORD_PRD_HIDDEN" value="">
+				<input type="hidden" name="FML_ORD_CLM_MTCH_ACCNT"> <input type="hidden" name="FML_TRADING_LIMIT_NSE" value="99999999">
+				<input type="hidden" name="FML_TRADING_LIMIT_BSE" value="99999999">
+				<input type="hidden" name="FML_ORD_DP_CLNT_ID"> <input type="hidden" name="FML_ORD_DP_ID">
+				<input type="hidden" name="FML_TRN_PRDT_TYP" value=""> <input type="hidden" name="FML_ORD_XCHNG_CD">
+				<input type="hidden" name="FML_ORD_XCHNG_CD_CHECK" value="">
+				<input type="hidden" name="FML_PRCNTG_CHECK" value="3.0">
+				<input type="hidden" name="FML_ARRAY_BOUND" value="1"> <input type="hidden" name="FML_ARRAY_ELEMENT" value="">
+				<input type="hidden" name="NicValue" value=""> <input type="hidden" name="BrowserBack_Xchang" value="">
+				<input type="hidden" name="PWD_ENABLED" value="">
+				<input type="hidden" name="FML_LAS" value="Y">
+				
+				<input type="hidden" name="m_FML_AC_ACTIVATED_FROM" value="BSE" ID="Hidden1">
+				<input type="hidden" name="m_FML_USR_ZIP_CD"	value="B2" ID="Hidden2">
+				
+				<input type="hidden" name="m_FML_AC_ACTIVATED_FROM" value="NSE" ID="Hidden1">
+				<input type="hidden" name="m_FML_USR_ZIP_CD"	value="N2" ID="Hidden2">
+				
+				<table width="100%" ID="Table4" style="border:none">
+					<tr>
+						<td nowrap>
+							<b>Note :</b>
+						</td>
+						<Td rowspan="2">In case of myGTC orders, I confirm that I have read the FAQs on 
+							myGTC orders and understood the terms of myGTC order placement. I authorize 
+							I-Sec to place overnight orders for the unexecuted quantity of myGTC order as 
+							per the order specifications mentioned above.
+						</Td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</form>
+<script type="text/javascript">
+	tb_init_MBP('a.thickbox_MBP, area.thickbox_MBP, input.thickbox_MBP');
+	$("#Buykeyword").typeWatch( { highlight:true, callback:function(){showLiveSearchResult(document.getElementById('Buykeyword').value,'ajaxBuyLiveSearchData',501,'T','E');} } );
+</script>

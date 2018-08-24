@@ -1,0 +1,80 @@
+		<TITLE>ICICI direct.com :: Customer Service :: Login</TITLE>
+	</HEAD>
+	<BODY marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" valign="top">
+		<form id="form1" name="form1">
+			<input type="hidden" name="FML_DAYS_MMBRSHP_EXP" value=0 ID="Hidden1">
+			<CENTER>
+				<script>
+					if (document.forms[0].FML_DAYS_MMBRSHP_EXP.value != 0)
+					{
+						alert("Your Membership will expire in " + document.forms[0].FML_DAYS_MMBRSHP_EXP.value + " days")
+					}
+				</script>
+			</CENTER>
+		</form>
+	</BODY>
+</HTML>
+<html>
+	<head>
+		<title>ICICI Direct</title>
+		<script language="javascript">
+	function icicidirect_go()
+{
+
+	
+		var str_url=document.form_ok.ok_ref.value;
+		var str_ind=str_url.indexOf("Defaul");
+		document.form_ok.action=str_url;
+		document.form_ok.method="post";
+		if((str_url.indexOf("Defaul")>0)||(str_url.indexOf("defaul")>0))
+		{
+			document.form_ok.target="_parent";
+		}
+		document.form_ok.submit();
+	
+}
+	
+		</script>
+	</head>
+	
+	<body topmargin="50" leftmargin="0" bgcolor="#ffffff" marginwidth="0" marginheight="0">
+		<br>
+		<br>
+		<div align="center">
+			<form name="form_ok" method="post" action="" ID="Form1">
+				<input type="hidden" name="ok_ref" value="https://secure.icicidirect.com/NewSiteTrading/trading/equity/trading_SelectMDP.asp" ID="Hidden1">
+				
+				<input type="hidden" name="ok_msg" value="Welcome MUNISH   GOYAL logged on. You last accessed the site on 26-Mar-2012 02:00 a.m. IST" ID="Hidden2">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" ID="Table1">
+					<tr>
+						<td width="100%">&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td width="100%" align="center">
+							<p>
+								<font face="Arial" size="2"><STRONG>
+										Welcome MUNISH   GOYAL logged on. You last accessed the site on 26-Mar-2012 02:00 a.m. IST
+									</STRONG>
+									<br>
+									&nbsp;&nbsp;<br>
+									&nbsp;&nbsp; </font>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" align="center" nowrap>
+							<font size="0" face="arial" color="#ffffff">WELCOME<br>
+								https://secure.icicidirect.com/NewSiteTrading/trading/equity/trading_SelectMDP.asp
+							</font>
+							<br>
+							<font size="2" face="arial" color="#990000">Loading page, Please wait...</font><br>
+						</td>
+					</tr>
+				</table>
+				<script language="javascript">
+			window.setTimeout("icicidirect_go()","1000");
+				</script>
+			</form>
+		</div>
+	</body>
+</html>

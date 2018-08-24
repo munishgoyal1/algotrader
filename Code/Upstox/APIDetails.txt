@@ -1,0 +1,6 @@
+AccessKey
+1EENJJ7o6O4JG1pWDVVpYaPsarWozbZs9NPJnek2
+
+API Secret
+woyb0firil
+
