@@ -3,11 +3,13 @@ using HttpLibrary;
 using StockTrader.Core;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using StockTrader.Platform.Logging;
 using UpstoxNet;
 
 namespace StockTrader.Brokers.UpstoxBroker
@@ -19,6 +21,10 @@ namespace StockTrader.Brokers.UpstoxBroker
 
         // Locks on global Order & Trade book objects
         object lockObjectEquity = new object();
+
+
+        object lockSingleThreadedUpstoxCall = new object();
+
         private Dictionary<string, EquityTradeBookRecord> mEquityTradeBook = new Dictionary<string, EquityTradeBookRecord>();
         private Dictionary<string, EquityOrderBookRecord> mEquityOrderBook = new Dictionary<string, EquityOrderBookRecord>();
 
@@ -50,6 +56,12 @@ namespace StockTrader.Brokers.UpstoxBroker
 
             while (!upstox.Symbol_Download_Status)
                 Thread.Sleep(1000);
+
+            var ltp = upstox.GetSnapLtp("NSE_EQ", "CAPLIPOINT");
+
+            double ltpt;
+            var abc = GetEquityLTP("NSE_EQ", "CAPLIPOINT", out ltpt);
+
 
             string orderRef;
 
@@ -91,13 +103,7 @@ namespace StockTrader.Brokers.UpstoxBroker
             //string cancelAmo1 = upstox.CancelAmo("180822000000852"); // Product = D or I
 
             var positions = upstox.GetPositions();
-            var ltp = upstox.GetSnapLtp("NSE_EQ", "FEDERALBNK");
-
-            double ltpt;
-            var abc = GetEquityLTP("NSE_EQ", "FEDERALBNK", out ltpt);
-
-
-
+          
             //var b = upstox.GetOrder("NSE_EQ", "BAJFINANCE", "D");
 
 
@@ -171,8 +177,11 @@ namespace StockTrader.Brokers.UpstoxBroker
         // Equity methods
         public BrokerErrorCode GetEquityLTP(string exchange, string stockCode, out double ltp)
         {
-            ltp = upstox.GetLtp(exchange, stockCode);
-            return BrokerErrorCode.Success;
+            lock (lockSingleThreadedUpstoxCall)
+            {
+                ltp = upstox.GetLtp(exchange, stockCode);
+                return BrokerErrorCode.Success;
+            }
         }
 
         public BrokerErrorCode PlaceEquityOrder(
@@ -185,24 +194,27 @@ namespace StockTrader.Brokers.UpstoxBroker
             double price,
             out string orderId)
         {
-            BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
-            orderId = "";
-
-            try
+            lock (lockSingleThreadedUpstoxCall)
             {
-                var transType = orderDirection == OrderDirection.BUY ? "B" : "S";
-                var ordType = orderPriceType == OrderPriceType.LIMIT ? "L" : "M";
-                var prodType = orderType == EquityOrderType.DELIVERY ? "D" : "I";
-                orderId = upstox.PlaceSimpleOrder(exchange, stockCode, transType, ordType, quantity, prodType, price);
+                BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+                orderId = "";
 
-                errorCode = BrokerErrorCode.Success;
-            }
-            catch (Exception ex)
-            {
-                errorCode = BrokerErrorCode.Unknown;
-            }
+                try
+                {
+                    var transType = orderDirection == OrderDirection.BUY ? "B" : "S";
+                    var ordType = orderPriceType == OrderPriceType.LIMIT ? "L" : "M";
+                    var prodType = orderType == EquityOrderType.DELIVERY ? "D" : "I";
+                    orderId = upstox.PlaceSimpleOrder(exchange, stockCode, transType, ordType, quantity, prodType, price);
 
-            return errorCode;
+                    errorCode = BrokerErrorCode.Success;
+                }
+                catch (Exception ex)
+                {
+                    errorCode = BrokerErrorCode.Unknown;
+                }
+
+                return errorCode;
+            }
         }
 
 
@@ -210,121 +222,138 @@ namespace StockTrader.Brokers.UpstoxBroker
         //NSE_EQ,BAJFINANCE,317,D,WC,0,605,0,25,1625.9508
         public BrokerErrorCode GetHoldings(string stockCode, out List<EquityDematHoldingRecord> holdings)
         {
-            BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
-            holdings = new List<EquityDematHoldingRecord>();
-            try
+            lock (lockSingleThreadedUpstoxCall)
             {
-                var response = upstox.GetHoldings();
-
-                string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
-
-                for (int i = 1; i < lines.Length; i++)
+                BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+                holdings = new List<EquityDematHoldingRecord>();
+                try
                 {
-                    var line = lines[i].Split(',');
+                    var response = upstox.GetHoldings();
 
-                    if (line.Length < 10)
-                        continue;
+                    string[] lines = response.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.None);
 
-                    if (!string.IsNullOrEmpty(stockCode) && !line[1].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
+                    for (int i = 1; i < lines.Length; i++)
                     {
-                        continue;
+                        var line = lines[i].Split(',');
+
+                        if (line.Length < 10)
+                            continue;
+
+                        if (!string.IsNullOrEmpty(stockCode) &&
+                            !line[1].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
+                        {
+                            continue;
+                        }
+
+                        var holding = new EquityDematHoldingRecord();
+                        holding.BlockedQuantity = int.Parse(line[5]);
+                        holding.Quantity = int.Parse(line[6]);
+                        holding.AvailableQuantity = holding.Quantity - holding.BlockedQuantity;
+                        holding.StockCode = line[1];
+                        holding.Exchange = line[0];
+
+                        holdings.Add(holding);
                     }
 
-                    var holding = new EquityDematHoldingRecord();
-                    holding.BlockedQuantity = int.Parse(line[5]);
-                    holding.Quantity = int.Parse(line[6]);
-                    holding.AvailableQuantity = holding.Quantity - holding.BlockedQuantity;
-                    holding.StockCode = line[1];
-                    holding.Exchange = line[0];
-
-                    holdings.Add(holding);
+                    errorCode = BrokerErrorCode.Success;
+                }
+                catch (Exception ex)
+                {
+                    errorCode = BrokerErrorCode.Unknown;
                 }
 
-                errorCode = BrokerErrorCode.Success;
+                return errorCode;
             }
-            catch (Exception ex)
-            {
-                errorCode = BrokerErrorCode.Unknown;
-            }
-
-            return errorCode;
         }
 
         //EXCHANGE,TOKEN,SYMBOL,PRODUCT,ORDER_TYPE,TRANSACTION_TYPE,TRADED_QUANTITY,EXCHANGE_ORDER_ID,ORDER_ID,EXCHANGE_TIME,TIME_IN_MICRO,TRADED_PRICE,TRADE_ID
         public BrokerErrorCode GetTradeBook(bool newTradesOnly, string stockCode, out Dictionary<string, EquityTradeBookRecord> trades)
         {
-            BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
-            trades = new Dictionary<string, EquityTradeBookRecord>();
-            try
+            lock (lockSingleThreadedUpstoxCall)
             {
-                var response = upstox.GetTradeBook();
+                BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+                trades = new Dictionary<string, EquityTradeBookRecord>();
 
-                string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
+                int retryCount = 0;
+                int maxRetryCount = 3;
 
-                for (int i = 1; i < lines.Length; i++)
-                {
-                    var line = lines[i].Split(',');
-
-                    if (line.Length < 13)
-                        continue;
-
-                    if (!string.IsNullOrEmpty(stockCode) && !line[2].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
+                while (errorCode != BrokerErrorCode.Success && retryCount++ < maxRetryCount)
+                    try
                     {
-                        continue;
-                    }
+                        var response = upstox.GetTradeBook();
 
-                    var trade = new EquityTradeBookRecord();
-                    trade.OrderId = line[8];
-                    trade.Direction = line[5] == "B" ? OrderDirection.BUY : OrderDirection.SELL;
-                    trade.DateTime = DateTime.Parse(line[9]);
-                    trade.Quantity = int.Parse(line[6]);
-                    trade.NewQuantity = trade.Quantity;
-                    trade.Price = double.Parse(line[11]);
-                    trade.StockCode = line[2];
-                    trade.EquityOrderType = line[3] == "D" ? EquityOrderType.DELIVERY : EquityOrderType.MARGIN;
-                    trade.Exchange = line[0];
+                        string[] lines = response.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.None);
 
-                    lock (lockObjectEquity)
-                    {
-                        // existing trade
-                        if (mEquityTradeBook.ContainsKey(trade.OrderId))
+                        for (int i = 1; i < lines.Length; i++)
                         {
-                            var prevTradeRecord = mEquityTradeBook[trade.OrderId];
+                            var line = lines[i].Split(',');
 
-                            // for part exec, the NewQuantity gets updated with delta from previous
-                            trade.NewQuantity = trade.Quantity - prevTradeRecord.Quantity;
+                            if (line.Length < 13)
+                                continue;
 
-                            if (newTradesOnly)
+                            if (!string.IsNullOrEmpty(stockCode) &&
+                                !line[2].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
                             {
-                                // add if execution status change along with prev and current execution qty 
-                                if (trade.NewQuantity > 0)
+                                continue;
+                            }
+
+                            var trade = new EquityTradeBookRecord();
+                            trade.OrderId = line[8];
+                            trade.Direction = line[5] == "B" ? OrderDirection.BUY : OrderDirection.SELL;
+                            trade.DateTime = DateTime.Parse(line[9]);
+                            trade.Quantity = int.Parse(line[6]);
+                            trade.NewQuantity = trade.Quantity;
+                            trade.Price = double.Parse(line[11]);
+                            trade.StockCode = line[2];
+                            trade.EquityOrderType = line[3] == "D" ? EquityOrderType.DELIVERY : EquityOrderType.MARGIN;
+                            trade.Exchange = line[0];
+
+                            lock (lockObjectEquity)
+                            {
+                                // existing trade
+                                if (mEquityTradeBook.ContainsKey(trade.OrderId))
+                                {
+                                    var prevTradeRecord = mEquityTradeBook[trade.OrderId];
+
+                                    // for part exec, the NewQuantity gets updated with delta from previous
+                                    trade.NewQuantity = trade.Quantity - prevTradeRecord.Quantity;
+
+                                    if (newTradesOnly)
+                                    {
+                                        // add if execution status change along with prev and current execution qty 
+                                        if (trade.NewQuantity > 0)
+                                            trades.Add(trade.OrderId, trade);
+                                    }
+                                    else
+                                    {
+                                        trades.Add(trade.OrderId, trade);
+                                    }
+                                    // Update the trade
+                                    // update required because PartExec may have become full exec
+                                    mEquityTradeBook[trade.OrderId] = trade;
+                                }
+                                else
+                                {
+                                    // new trade
+                                    mEquityTradeBook.Add(trade.OrderId, trade);
                                     trades.Add(trade.OrderId, trade);
+                                }
                             }
-                            else
-                            {
-                                trades.Add(trade.OrderId, trade);
-                            }
-                            // Update the trade
-                            // update required because PartExec may have become full exec
-                            mEquityTradeBook[trade.OrderId] = trade;
                         }
-                        else
-                        {
-                            // new trade
-                            mEquityTradeBook.Add(trade.OrderId, trade);
-                            trades.Add(trade.OrderId, trade);
-                        }
+
+                        errorCode = BrokerErrorCode.Success;
                     }
-                }
+                    catch (Exception ex)
+                    {
+                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
 
-                errorCode = BrokerErrorCode.Success;
-            }
-            catch (Exception ex)
-            {
-                errorCode = BrokerErrorCode.Unknown;
-            }
+                        if (retryCount >= maxRetryCount)
+                            break;
+                    }
 
-            return errorCode;
+                return errorCode;
+            }
         }
 
 
@@ -332,93 +361,122 @@ namespace StockTrader.Brokers.UpstoxBroker
         //...MESSAGE, EXCHANGE_ORDER_ID, PARENT_ORDER_ID, ORDER_ID, EXCHANGE_TIME, TIME_IN_MICRO, STATUS, IS_AMO, VALID_DATE, ORDER_REQUEST_ID   (23 total field count)
         public BrokerErrorCode GetOrderBook(bool newOrdersOnly, bool bOnlyOutstandingOrders, string stockCode, out Dictionary<string, EquityOrderBookRecord> orders)
         {
-            BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
-            orders = new Dictionary<string, EquityOrderBookRecord>();
-            try
+            lock (lockSingleThreadedUpstoxCall)
             {
-                var response = upstox.GetOrderBook();
+                BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+                orders = new Dictionary<string, EquityOrderBookRecord>();
+                int retryCount = 0;
+                int maxRetryCount = 3;
 
-                string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
-
-                for (int i = 1; i < lines.Length; i++)
-                {
-                    var line = lines[i].Split(',');
-
-                    if (line.Length < 23)
-                        continue;
-
-                    if (!string.IsNullOrEmpty(stockCode) && !line[2].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
+                while (errorCode != BrokerErrorCode.Success && retryCount++ < maxRetryCount)
+                    try
                     {
-                        continue;
-                    }
+                        var response = upstox.GetOrderBook();
 
-                    var order = new EquityOrderBookRecord();
-                    order.OrderId = line[16];
-                    var status = line[19];
+                        string[] lines = response.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.None);
 
-                    order.Status = ParseOrderStatus(status);
-                    order.Direction = line[10] == "B" ? OrderDirection.BUY : OrderDirection.SELL;
-                    var milliseconds = long.Parse(line[18]) / 1000;
-                    order.DateTime = ((new DateTime(1970, 1, 1)).AddMilliseconds(milliseconds)).ToLocalTime();
-                    //order.DateTime = DateTimeOffset.FromUnixTimeMilliseconds(milliseconds).LocalDateTime;
-                    order.Quantity = int.Parse(line[8]);
-                    order.ExecutedQty = int.Parse(line[12]);
-                    order.Price = double.Parse(line[6]);
-                    order.StockCode = line[2];
-                    order.Exchange = line[0];
-
-                    if (!bOnlyOutstandingOrders ||
-                        order.Status == OrderStatus.PARTEXEC ||
-                        order.Status == OrderStatus.QUEUED ||
-                        order.Status == OrderStatus.REQUESTED ||
-                        order.Status == OrderStatus.ORDERED)
-                    {
-                        lock (lockObjectEquity)
+                        for (int i = 1; i < lines.Length; i++)
                         {
-                            if (mEquityOrderBook.ContainsKey(order.OrderId))
+                            var line = lines[i].Split(',');
+
+                            if (line.Length < 23)
+                                continue;
+
+                            if (!string.IsNullOrEmpty(stockCode) &&
+                                !line[2].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
                             {
-                                if (newOrdersOnly)
-                                { }
-                                else
-                                {
-                                    orders.Add(order.OrderId, order);
-                                }
-                                // Update the order
-                                mEquityOrderBook[order.OrderId] = order;
+                                continue;
                             }
-                            else
+
+                            var order = new EquityOrderBookRecord();
+                            order.OrderId = line[16];
+                            var status = line[19];
+
+                            order.Status = ParseOrderStatus(status);
+                            order.Direction = line[10] == "B" ? OrderDirection.BUY : OrderDirection.SELL;
+                            var milliseconds = long.Parse(line[18])/1000;
+                            order.DateTime = ((new DateTime(1970, 1, 1)).AddMilliseconds(milliseconds)).ToLocalTime();
+                            //order.DateTime = DateTimeOffset.FromUnixTimeMilliseconds(milliseconds).LocalDateTime;
+                            order.Quantity = int.Parse(line[8]);
+                            order.ExecutedQty = int.Parse(line[12]);
+                            order.Price = double.Parse(line[6]);
+                            order.StockCode = line[2];
+                            order.Exchange = line[0];
+
+                            if (!bOnlyOutstandingOrders ||
+                                order.Status == OrderStatus.PARTEXEC ||
+                                order.Status == OrderStatus.QUEUED ||
+                                order.Status == OrderStatus.REQUESTED ||
+                                order.Status == OrderStatus.ORDERED)
                             {
-                                mEquityOrderBook.Add(order.OrderId, order);
-                                orders.Add(order.OrderId, order);
+                                lock (lockObjectEquity)
+                                {
+                                    if (mEquityOrderBook.ContainsKey(order.OrderId))
+                                    {
+                                        if (newOrdersOnly)
+                                        {
+                                        }
+                                        else
+                                        {
+                                            orders.Add(order.OrderId, order);
+                                        }
+                                        // Update the order
+                                        mEquityOrderBook[order.OrderId] = order;
+                                    }
+                                    else
+                                    {
+                                        mEquityOrderBook.Add(order.OrderId, order);
+                                        orders.Add(order.OrderId, order);
+                                    }
+                                }
                             }
                         }
+
+                        errorCode = BrokerErrorCode.Success;
                     }
-                }
+                    catch (Exception ex)
+                    {
+                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
 
-                errorCode = BrokerErrorCode.Success;
-            }
-            catch (Exception ex)
-            {
-                errorCode = BrokerErrorCode.Unknown;
-            }
+                        if (retryCount >= maxRetryCount)
+                            break;
+                    }
 
-            return errorCode;
+                return errorCode;
+            }
         }
 
         public BrokerErrorCode CancelOrder(string orderId)
         {
-            BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
-            try
+            lock (lockSingleThreadedUpstoxCall)
             {
-                var status = upstox.CancelSimpleOrder(orderId);
-                errorCode = BrokerErrorCode.Success;
-            }
-            catch (Exception ex)
-            {
-                errorCode = BrokerErrorCode.Unknown;
-            }
+                BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+                try
+                {
+                    var status = upstox.CancelSimpleOrder(orderId);
 
-            return errorCode;
+                    if (status.Contains("Cancellation sent for"))
+                        errorCode = BrokerErrorCode.Success;
+                    else
+                    {
+                        Trace(string.Format("Cancellation failed for order: {0} with status {1}", orderId, status));
+                    }
+                }
+                catch (Exception ex)
+                {
+                    errorCode = BrokerErrorCode.Unknown;
+                }
+
+                return errorCode;
+            }
+        }
+
+        public void Trace(string message)
+        {
+            message = GetType().Name + message;
+            Console.WriteLine(DateTime.Now.ToString() + " " + message);
+            FileTracing.TraceOut(message);
         }
 
         public BrokerErrorCode ConvertToDeliveryFromMarginOpenPositions(
@@ -434,12 +492,20 @@ namespace StockTrader.Brokers.UpstoxBroker
 
         public int GetNetQty(string exchange, string stockCode)
         {
-            return upstox.GetNetQty(exchange, stockCode);
+            lock (lockSingleThreadedUpstoxCall)
+            {
+                return upstox.GetNetQty(exchange, stockCode);
+            }
         }
 
         public int GetBoughtQty(string exchange, string stockCode)
         {
-            return upstox.GetBoughtQty(exchange, stockCode);
+            lock (lockSingleThreadedUpstoxCall)
+            {
+                return upstox.GetBoughtQty(exchange, stockCode);
+            }
         }
+
+
     }
 }

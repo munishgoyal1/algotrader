@@ -196,6 +196,13 @@ namespace SimpleTrader
                     Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
                 }
 
+                if (MarketUtils.IsTimeAfter3XMin(0))
+                {
+                    // check if position conversion is already manually done then cancel the Margin order and update position file
+                    
+
+                }
+
                 if (MarketUtils.IsTimeAfter3XMin(28))
                 {
                     CancelHoldingSellOrders();
