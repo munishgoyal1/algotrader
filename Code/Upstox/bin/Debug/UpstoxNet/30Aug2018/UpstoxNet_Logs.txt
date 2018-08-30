@@ -1,0 +1,26 @@
+10:41:54 : UpstoxNet : Initialized
+10:41:54 : ThreadStart : Thread NewBackgroundWorker is started with Id 9
+10:42:26 : GetAccessToken : Value cannot be null.
+10:43:02 : UpstoxNet : Initialized
+10:43:02 : ThreadStart : Thread NewBackgroundWorker is started with Id 10
+10:48:39 : UpstoxNet : Initialized
+10:48:39 : ThreadStart : Thread NewBackgroundWorker is started with Id 11
+10:48:51 : GetAccessToken : Value cannot be null.
+10:49:31 : GetAccessToken (Overload) : Value cannot be null.
+10:50:14 : UpstoxNet : Initialized
+10:50:14 : ThreadStart : Thread NewBackgroundWorker is started with Id 11
+10:55:36 : GetAccessToken (Overload) : Unauthorized: Invalid code. If you have already used it once before, you need to generate a new one using the login URL
+11:04:03 : UpstoxNet : Initialized
+11:04:03 : ThreadStart : Thread NewBackgroundWorker is started with Id 11
+11:04:12 : GetAccessToken (Overload) : Unauthorized: Invalid code. If you have already used it once before, you need to generate a new one using the login URL
+11:04:47 : UpstoxNet : Initialized
+11:04:47 : ThreadStart : Thread NewBackgroundWorker is started with Id 11
+11:04:59 : GetAccessToken : Value cannot be null.
+11:06:44 : UpstoxNet : Initialized
+11:06:44 : ThreadStart : Thread NewBackgroundWorker is started with Id 3
+11:07:24 : GetAccessToken : Value cannot be null.
+11:23:20 : UpstoxNet : Initialized
+11:23:20 : ThreadStart : Thread NewBackgroundWorker is started with Id 3
+11:25:10 : UpstoxNet : Initialized
+11:25:10 : ThreadStart : Thread NewBackgroundWorker is started with Id 10
+11:25:28 : GetAccessToken : Value cannot be null.

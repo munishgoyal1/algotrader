@@ -28,6 +28,8 @@ namespace StockTrader.Brokers.UpstoxBroker
         private Dictionary<string, EquityTradeBookRecord> mEquityTradeBook = new Dictionary<string, EquityTradeBookRecord>();
         private Dictionary<string, EquityOrderBookRecord> mEquityOrderBook = new Dictionary<string, EquityOrderBookRecord>();
 
+        //public Dictionary<string, UpstoxBuySellBase> stockAlgos = new Dictionary<string, UpstoxBuySellBase>();
+
         public MyUpstoxWrapper(string apiKey, string apiSecret, string redirectUrl)
         {
             upstox.Api_Key = apiKey;
@@ -48,14 +50,34 @@ namespace StockTrader.Brokers.UpstoxBroker
             return result ? BrokerErrorCode.Success : BrokerErrorCode.Unknown;
         }
 
+        //public event QuotesReceivedEventEventHandler QuotesReceivedEvent;
+
+        public void QuoteReceived(object sender, QuotesReceivedEventArgs args)
+        {
+            //if (stockAlgos.Contains(args.TrdSym))
+            //{
+            //    Interlocked.Exchange(algo.Ltp, args.LTP);
+            //}
+
+
+        }
+
         public BrokerErrorCode Login1()
         {
             var result = upstox.Login();
+            //upstox.GetAccessToken("3b4f89238b618427088c3e4ce1abef4be60605e3");
             upstox.GetAccessToken();
             upstox.GetMasterContract();
 
             while (!upstox.Symbol_Download_Status)
                 Thread.Sleep(1000);
+
+
+            Upstox.QuotesReceivedEvent += new UpstoxNet.Upstox.QuotesReceivedEventEventHandler(QuoteReceived);
+
+            var subs = upstox.SubscribeQuotes("NSE_EQ", "CAPLIPOINT");
+
+
 
             var ltp = upstox.GetSnapLtp("NSE_EQ", "CAPLIPOINT");
 

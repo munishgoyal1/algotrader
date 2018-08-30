@@ -76,6 +76,8 @@ namespace SimpleTrader
 
         public BrokerErrorCode errCode;
 
+        public double Ltp;
+
         public virtual void StockBuySell()
         {
 
