@@ -88,7 +88,7 @@ namespace SimpleTrader
         public override void StockBuySell()
         {
             try
-            {
+            { 
                 Init(AlgoType.AverageTheBuyThenSell);
             }
             catch (Exception ex)

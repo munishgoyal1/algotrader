@@ -7,6 +7,7 @@ using StockTrader.Brokers.UpstoxBroker;
 using StockTrader.Core;
 using StockTrader.Platform.Logging;
 using StockTrader.Utilities;
+using UpstoxNet;
 
 namespace SimpleTrader
 {
@@ -126,6 +127,20 @@ namespace SimpleTrader
             return false;
         }
 
+        public void QuoteReceived(object sender, QuotesReceivedEventArgs args)
+        {
+
+            if(stockCode == args.TrdSym)
+                Interlocked.Exchange(ref Ltp, args.LTP);
+
+            //if (stockAlgos.Contains(args.TrdSym))//
+            //{
+            //    var algo = stockAlgos[args.TrdSym];
+            //    Interlocked.Exchange(algo.Ltp, args.LTP);
+            //}
+            // Console.WriteLine(string.Format("Sym {0}, LTP {1}, LTT {2}", args.TrdSym, args.LTP, args.LTT));
+
+        }
 
 
         // reads position file: qty avgprice holdingssellorderref
@@ -147,6 +162,12 @@ namespace SimpleTrader
 
             // Position file always contains the holding qty, holding price and different type of holdings' details (demat/btst, qty, sell order ref) etc
             ReadPositionFile();
+
+            GetLTPOnDemand(out Ltp);
+
+            myUpstoxWrapper.Upstox.QuotesReceivedEvent += new UpstoxNet.Upstox.QuotesReceivedEventEventHandler(QuoteReceived);
+
+            var substatus = myUpstoxWrapper.Upstox.SubscribeQuotes(exchStr, stockCode);
 
             var orders = new Dictionary<string, EquityOrderBookRecord>();
             var trades = new Dictionary<string, EquityTradeBookRecord>();
@@ -331,17 +352,31 @@ namespace SimpleTrader
             return Math.Round(factor * ltp, 1);
         }
 
+
         public BrokerErrorCode GetLTP(out double ltp)
+        {
+            BrokerErrorCode errCode = BrokerErrorCode.Unknown;
+            ltp = Ltp;
+            return errCode;
+        }
+
+        public BrokerErrorCode GetLTPOnDemand(out double ltp)
         {
             EquitySymbolQuote[] quote;
             BrokerErrorCode errCode = BrokerErrorCode.Unknown;
             int retryCount = 0;
+            DateTime lut;
             ltp = 0.0;
 
             while (errCode != BrokerErrorCode.Success && retryCount++ < 3)
                 try
                 {
-                    errCode = myUpstoxWrapper.GetEquityLTP(exchStr, stockCode, out ltp);
+                    errCode = myUpstoxWrapper.GetEquityLTP(exchStr, stockCode, out ltp, out lut);
+                    if (MarketUtils.IsMarketOpen())
+                    {
+                        if (DateTime.Now - lut >= TimeSpan.FromMinutes(5))
+                            ltp = 0;
+                    }
                 }
                 catch (Exception ex)
                 {

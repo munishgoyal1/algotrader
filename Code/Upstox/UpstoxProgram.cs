@@ -80,6 +80,9 @@ namespace SimpleTrader
             Trace(userId);
             MarketUtils.WaitUntilMarketOpen();
 
+            //while (true)
+           //     Thread.Sleep(1000);
+
             //// Separate Login thread in background
             //BrokingAccountThread loginThread = new BrokingAccountThread();
             //Thread thread = new Thread(new ParameterizedThreadStart(LoginUtils.Background_LoginCheckerThread));

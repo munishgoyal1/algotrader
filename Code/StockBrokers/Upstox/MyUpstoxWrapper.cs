@@ -52,15 +52,16 @@ namespace StockTrader.Brokers.UpstoxBroker
 
         //public event QuotesReceivedEventEventHandler QuotesReceivedEvent;
 
-        public void QuoteReceived(object sender, QuotesReceivedEventArgs args)
-        {
-            //if (stockAlgos.Contains(args.TrdSym))
-            //{
-            //    Interlocked.Exchange(algo.Ltp, args.LTP);
-            //}
+        //public void QuoteReceived(object sender, QuotesReceivedEventArgs args)
+        //{
+        //    if (stockAlgos.Contains(args.TrdSym))//
+        //    {
+        //        var algo = stockAlgos[args.TrdSym];
+        //        Interlocked.Exchange(algo.Ltp, args.LTP);
+        //    }
+        //   // Console.WriteLine(string.Format("Sym {0}, LTP {1}, LTT {2}", args.TrdSym, args.LTP, args.LTT));
 
-
-        }
+        //}
 
         public BrokerErrorCode Login1()
         {
@@ -73,16 +74,17 @@ namespace StockTrader.Brokers.UpstoxBroker
                 Thread.Sleep(1000);
 
 
-            Upstox.QuotesReceivedEvent += new UpstoxNet.Upstox.QuotesReceivedEventEventHandler(QuoteReceived);
+            //Upstox.QuotesReceivedEvent += new UpstoxNet.Upstox.QuotesReceivedEventEventHandler(QuoteReceived);
 
             var subs = upstox.SubscribeQuotes("NSE_EQ", "CAPLIPOINT");
 
-
+            // return BrokerErrorCode.Success;
 
             var ltp = upstox.GetSnapLtp("NSE_EQ", "CAPLIPOINT");
 
             double ltpt;
-            var abc = GetEquityLTP("NSE_EQ", "CAPLIPOINT", out ltpt);
+            DateTime lut;
+            var abc = GetEquityLTP("NSE_EQ", "CAPLIPOINT", out ltpt, out lut);
 
 
             string orderRef;
@@ -125,7 +127,7 @@ namespace StockTrader.Brokers.UpstoxBroker
             //string cancelAmo1 = upstox.CancelAmo("180822000000852"); // Product = D or I
 
             var positions = upstox.GetPositions();
-          
+
             //var b = upstox.GetOrder("NSE_EQ", "BAJFINANCE", "D");
 
 
@@ -197,11 +199,22 @@ namespace StockTrader.Brokers.UpstoxBroker
         }
 
         // Equity methods
-        public BrokerErrorCode GetEquityLTP(string exchange, string stockCode, out double ltp)
+        public BrokerErrorCode GetEquityLTP(string exchange, string stockCode, out double ltp, out DateTime lut)
         {
             lock (lockSingleThreadedUpstoxCall)
             {
-                ltp = upstox.GetLtp(exchange, stockCode);
+                var response = upstox.GetSnapLtp(exchange, stockCode, false);
+
+                string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
+                var line = lines[1].Split(',');
+
+                ltp = double.Parse(line[3]);
+                lut = DateTime.Parse(line[0]);
+
+
+                //LUT,EXCHANGE,SYMBOL,LTP
+                //16 - Mar - 2018 14:45:55,NSE_EQ,AXISBANK,456.85
+
                 return BrokerErrorCode.Success;
             }
         }
@@ -252,7 +265,7 @@ namespace StockTrader.Brokers.UpstoxBroker
                 {
                     var response = upstox.GetHoldings();
 
-                    string[] lines = response.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.None);
+                    string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
 
                     for (int i = 1; i < lines.Length; i++)
                     {
@@ -304,7 +317,7 @@ namespace StockTrader.Brokers.UpstoxBroker
                     {
                         var response = upstox.GetTradeBook();
 
-                        string[] lines = response.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.None);
+                        string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
 
                         for (int i = 1; i < lines.Length; i++)
                         {
@@ -395,7 +408,7 @@ namespace StockTrader.Brokers.UpstoxBroker
                     {
                         var response = upstox.GetOrderBook();
 
-                        string[] lines = response.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.None);
+                        string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
 
                         for (int i = 1; i < lines.Length; i++)
                         {
@@ -416,7 +429,7 @@ namespace StockTrader.Brokers.UpstoxBroker
 
                             order.Status = ParseOrderStatus(status);
                             order.Direction = line[10] == "B" ? OrderDirection.BUY : OrderDirection.SELL;
-                            var milliseconds = long.Parse(line[18])/1000;
+                            var milliseconds = long.Parse(line[18]) / 1000;
                             order.DateTime = ((new DateTime(1970, 1, 1)).AddMilliseconds(milliseconds)).ToLocalTime();
                             //order.DateTime = DateTimeOffset.FromUnixTimeMilliseconds(milliseconds).LocalDateTime;
                             order.Quantity = int.Parse(line[8]);
