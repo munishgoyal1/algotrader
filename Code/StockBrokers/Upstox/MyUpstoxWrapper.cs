@@ -206,7 +206,7 @@ namespace StockTrader.Brokers.UpstoxBroker
                 var response = upstox.GetSnapLtp(exchange, stockCode, false);
 
                 string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
-                var line = lines[1].Split(',');
+                var line = lines[0].Split(',');
 
                 ltp = double.Parse(line[3]);
                 lut = DateTime.Parse(line[0]);

@@ -355,7 +355,7 @@ namespace SimpleTrader
 
         public BrokerErrorCode GetLTP(out double ltp)
         {
-            BrokerErrorCode errCode = BrokerErrorCode.Unknown;
+            BrokerErrorCode errCode = BrokerErrorCode.Success;
             ltp = Ltp;
             return errCode;
         }
