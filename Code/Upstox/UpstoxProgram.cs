@@ -177,45 +177,48 @@ namespace SimpleTrader
 
             List<UpstoxTradeParams> tps = new List<UpstoxTradeParams>(lines.Length);
 
+            int Index = -1;
             var ctp = new UpstoxTradeParams
             {
                 stockCode = "COMMONCONFIG",
                 isinCode = "",
-                maxTradeValue = double.Parse(common[0]),
-                maxTotalPositionValueMultiple = int.Parse(common[1]),
-                maxTodayPositionValueMultiple = int.Parse(common[2]),
-                pctExtraMarkdownForAveraging = double.Parse(common[3]),
-                buyMarkdownFromLcpDefault = double.Parse(common[4]),
-                sellMarkupForMargin = double.Parse(common[5]),
-                sellMarkupForDelivery = double.Parse(common[6]),
-                sellMarkupForMinProfit = double.Parse(common[7]),
-                pctSquareOffForMinProfit = double.Parse(common[8]),
-                squareOffAllPositionsAtEOD = bool.Parse(common[9]),
-                pctMaxLossSquareOffPositionsAtEOD = double.Parse(common[10]),
-                useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = bool.Parse(common[11]),
-                startTime = GeneralUtils.GetTodayDateTime(common[12]),
-                endTime = GeneralUtils.GetTodayDateTime(common[13]),
-                exchange = (Exchange)Enum.Parse(typeof(Exchange), common[14]),
-                sellMarkupForEODInsufficientLimitSquareOff = double.Parse(common[15]),
-                maxBuyOrdersAllowedInADay = int.Parse(common[16]),
-                doConvertToDeliveryAtEOD = bool.Parse(common[17]),
-                doSquareOffIfInsufficientLimitAtEOD = bool.Parse(common[18])
+                maxTradeValue = double.Parse(common[++Index]),
+                maxTotalPositionValueMultiple = int.Parse(common[++Index]),
+                maxTodayPositionValueMultiple = int.Parse(common[++Index]),
+                pctExtraMarkdownForAveraging = double.Parse(common[++Index]),
+                buyMarkdownFromLcpDefault = double.Parse(common[++Index]),
+                sellMarkupForMargin = double.Parse(common[++Index]),
+                sellMarkupForDelivery = double.Parse(common[++Index]),
+                sellMarkupForMinProfit = double.Parse(common[++Index]),
+                pctSquareOffForMinProfit = double.Parse(common[++Index]),
+                squareOffAllPositionsAtEOD = bool.Parse(common[++Index]),
+                pctMaxLossSquareOffPositionsAtEOD = double.Parse(common[++Index]),
+                useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = bool.Parse(common[++Index]),
+                startTime = GeneralUtils.GetTodayDateTime(common[++Index]),
+                endTime = GeneralUtils.GetTodayDateTime(common[++Index]),
+                exchange = (Exchange)Enum.Parse(typeof(Exchange), common[++Index]),
+                sellMarkupForEODInsufficientLimitSquareOff = double.Parse(common[++Index]),
+                maxBuyOrdersAllowedInADay = int.Parse(common[++Index]),
+                doConvertToDeliveryAtEOD = bool.Parse(common[++Index]),
+                doSquareOffIfInsufficientLimitAtEOD = bool.Parse(common[++Index]),
+                orderType = (EquityOrderType)Enum.Parse(typeof(EquityOrderType), common[++Index])
             };
 
             for (int i = 2; i < lines.Length; i++)
             {
+                Index = -1;
                 var stock = lines[i].Split(',');
-                var stockCode = stock[0];
+                var stockCode = stock[++Index];//0
                 if (stockCode.Trim().StartsWith("#"))
                     continue;
 
-                var goodPrice = double.Parse(stock[1]);
-                var buyPriceCap = double.Parse(stock[2]);
-
-                var maxTradeVal = stock.Length > 3 ? (string.IsNullOrEmpty(stock[3]) ? ctp.maxTradeValue : double.Parse(stock[3])) : ctp.maxTradeValue;
+                var goodPrice = double.Parse(stock[++Index]);//1
+                var buyPriceCap = double.Parse(stock[++Index]);//2
+                var orderType = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.orderType : (EquityOrderType)Enum.Parse(typeof(EquityOrderType), stock[Index])) : ctp.orderType;//22
+                var maxTradeVal = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.maxTradeValue : double.Parse(stock[Index])) : ctp.maxTradeValue;//3
                 var ordQty = (int)Math.Round(maxTradeVal / goodPrice);
-                var maxTotalPositionValueMultiple = stock.Length > 4 ? (string.IsNullOrEmpty(stock[4]) ? ctp.maxTotalPositionValueMultiple : int.Parse(stock[4])) : ctp.maxTotalPositionValueMultiple;
-                var maxTodayPositionValueMultiple = stock.Length > 5 ? (string.IsNullOrEmpty(stock[5]) ? ctp.maxTodayPositionValueMultiple : int.Parse(stock[5])) : ctp.maxTodayPositionValueMultiple;
+                var maxTotalPositionValueMultiple = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.maxTotalPositionValueMultiple : int.Parse(stock[Index])) : ctp.maxTotalPositionValueMultiple;//4
+                var maxTodayPositionValueMultiple = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.maxTodayPositionValueMultiple : int.Parse(stock[Index])) : ctp.maxTodayPositionValueMultiple;//5
 
                 var tp = new UpstoxTradeParams
                 {
@@ -224,27 +227,28 @@ namespace SimpleTrader
                     maxTradeValue = maxTradeVal,
                     maxTotalPositionValueMultiple = maxTotalPositionValueMultiple,
                     maxTodayPositionValueMultiple = maxTodayPositionValueMultiple,
+                    orderType = orderType,
                     ordQty = ordQty,
                     maxTotalOutstandingQtyAllowed = ordQty * maxTotalPositionValueMultiple,
                     maxTodayOutstandingQtyAllowed = ordQty * maxTodayPositionValueMultiple,
                     goodPrice = goodPrice,
                     buyPriceCap = buyPriceCap,
-                    pctExtraMarkdownForAveraging = stock.Length > 6 ? (string.IsNullOrEmpty(stock[6]) ? ctp.pctExtraMarkdownForAveraging : double.Parse(stock[6])) : ctp.pctExtraMarkdownForAveraging,
-                    buyMarkdownFromLcpDefault = stock.Length > 7 ? (string.IsNullOrEmpty(stock[7]) ? ctp.buyMarkdownFromLcpDefault : double.Parse(stock[7])) : ctp.buyMarkdownFromLcpDefault,
-                    sellMarkupForMargin = stock.Length > 8 ? (string.IsNullOrEmpty(stock[8]) ? ctp.sellMarkupForMargin : double.Parse(stock[8])) : ctp.sellMarkupForMargin,
-                    sellMarkupForDelivery = stock.Length > 9 ? (string.IsNullOrEmpty(stock[9]) ? ctp.sellMarkupForDelivery : double.Parse(stock[9])) : ctp.sellMarkupForDelivery,
-                    sellMarkupForMinProfit = stock.Length > 10 ? (string.IsNullOrEmpty(stock[10]) ? ctp.sellMarkupForMinProfit : double.Parse(stock[10])) : ctp.sellMarkupForMinProfit,
-                    pctSquareOffForMinProfit = stock.Length > 11 ? (string.IsNullOrEmpty(stock[11]) ? ctp.pctSquareOffForMinProfit : double.Parse(stock[11])) : ctp.pctSquareOffForMinProfit,
-                    squareOffAllPositionsAtEOD = stock.Length > 12 ? (string.IsNullOrEmpty(stock[12]) ? ctp.squareOffAllPositionsAtEOD : bool.Parse(stock[12])) : ctp.squareOffAllPositionsAtEOD,
-                    pctMaxLossSquareOffPositionsAtEOD = stock.Length > 13 ? (string.IsNullOrEmpty(stock[13]) ? ctp.pctMaxLossSquareOffPositionsAtEOD : double.Parse(stock[13])) : ctp.pctMaxLossSquareOffPositionsAtEOD,
-                    useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = stock.Length > 14 ? (string.IsNullOrEmpty(stock[14]) ? ctp.useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder : bool.Parse(stock[14])) : ctp.useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,
-                    startTime = stock.Length > 15 ? (string.IsNullOrEmpty(stock[15]) ? ctp.startTime : GeneralUtils.GetTodayDateTime(stock[15])) : ctp.startTime,
-                    endTime = stock.Length > 16 ? (string.IsNullOrEmpty(stock[16]) ? ctp.endTime : GeneralUtils.GetTodayDateTime(stock[16])) : ctp.endTime,
-                    exchange = stock.Length > 17 ? (string.IsNullOrEmpty(stock[17]) ? ctp.exchange : (Exchange)Enum.Parse(typeof(Exchange), stock[17])) : ctp.exchange,
-                    sellMarkupForEODInsufficientLimitSquareOff = stock.Length > 18 ? (string.IsNullOrEmpty(stock[18]) ? ctp.sellMarkupForEODInsufficientLimitSquareOff : double.Parse(stock[18])) : ctp.sellMarkupForEODInsufficientLimitSquareOff,
-                    maxBuyOrdersAllowedInADay = stock.Length > 19 ? (string.IsNullOrEmpty(stock[19]) ? ctp.maxBuyOrdersAllowedInADay : int.Parse(stock[19])) : ctp.maxBuyOrdersAllowedInADay,
-                    doConvertToDeliveryAtEOD = stock.Length > 20 ? (string.IsNullOrEmpty(stock[20]) ? ctp.doConvertToDeliveryAtEOD : bool.Parse(stock[20])) : ctp.doConvertToDeliveryAtEOD,
-                    doSquareOffIfInsufficientLimitAtEOD = stock.Length > 21 ? (string.IsNullOrEmpty(stock[21]) ? ctp.doSquareOffIfInsufficientLimitAtEOD : bool.Parse(stock[21])) : ctp.doSquareOffIfInsufficientLimitAtEOD
+                    pctExtraMarkdownForAveraging = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.pctExtraMarkdownForAveraging : double.Parse(stock[Index])) : ctp.pctExtraMarkdownForAveraging,//6
+                    buyMarkdownFromLcpDefault = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.buyMarkdownFromLcpDefault : double.Parse(stock[Index])) : ctp.buyMarkdownFromLcpDefault,//7
+                    sellMarkupForMargin = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForMargin : double.Parse(stock[Index])) : ctp.sellMarkupForMargin,//8
+                    sellMarkupForDelivery = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForDelivery : double.Parse(stock[Index])) : ctp.sellMarkupForDelivery,//9
+                    sellMarkupForMinProfit = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForMinProfit : double.Parse(stock[Index])) : ctp.sellMarkupForMinProfit,//10
+                    pctSquareOffForMinProfit = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.pctSquareOffForMinProfit : double.Parse(stock[Index])) : ctp.pctSquareOffForMinProfit,//11
+                    squareOffAllPositionsAtEOD = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.squareOffAllPositionsAtEOD : bool.Parse(stock[Index])) : ctp.squareOffAllPositionsAtEOD,//12
+                    pctMaxLossSquareOffPositionsAtEOD = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.pctMaxLossSquareOffPositionsAtEOD : double.Parse(stock[Index])) : ctp.pctMaxLossSquareOffPositionsAtEOD,//13
+                    useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder : bool.Parse(stock[Index])) : ctp.useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,//14
+                    startTime = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.startTime : GeneralUtils.GetTodayDateTime(stock[Index])) : ctp.startTime,//15
+                    endTime = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.endTime : GeneralUtils.GetTodayDateTime(stock[Index])) : ctp.endTime,//16
+                    exchange = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.exchange : (Exchange)Enum.Parse(typeof(Exchange), stock[Index])) : ctp.exchange,//17
+                    sellMarkupForEODInsufficientLimitSquareOff = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForEODInsufficientLimitSquareOff : double.Parse(stock[Index])) : ctp.sellMarkupForEODInsufficientLimitSquareOff,//18
+                    maxBuyOrdersAllowedInADay = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.maxBuyOrdersAllowedInADay : int.Parse(stock[Index])) : ctp.maxBuyOrdersAllowedInADay,//19
+                    doConvertToDeliveryAtEOD = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.doConvertToDeliveryAtEOD : bool.Parse(stock[Index])) : ctp.doConvertToDeliveryAtEOD,//20
+                    doSquareOffIfInsufficientLimitAtEOD = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.doSquareOffIfInsufficientLimitAtEOD : bool.Parse(stock[Index])) : ctp.doSquareOffIfInsufficientLimitAtEOD//21
                 };
 
                 tps.Add(tp);
@@ -302,6 +306,7 @@ namespace SimpleTrader
         public bool useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = false;
         public bool doConvertToDeliveryAtEOD = true;
         public bool doSquareOffIfInsufficientLimitAtEOD = false;
+        public EquityOrderType orderType = EquityOrderType.MARGIN;
 
         public DateTime startTime = MarketUtils.GetTimeToday(9, 0);
         public DateTime endTime = MarketUtils.GetTimeToday(15, 0);

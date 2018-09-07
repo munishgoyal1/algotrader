@@ -24,6 +24,7 @@ namespace SimpleTrader
     {
         public double buyPriceCap;
         public double goodPrice;
+        public EquityOrderType orderType;
         public double pctExtraMarkdownForAveraging;
         public double buyMarkdownFromLcpDefault;
         public double sellMarkupDefault;
@@ -98,6 +99,7 @@ namespace SimpleTrader
 
             buyPriceCap = tradeParams.buyPriceCap;
             goodPrice = tradeParams.goodPrice;
+            orderType = tradeParams.orderType;
             pctExtraMarkdownForAveraging = tradeParams.pctExtraMarkdownForAveraging;
             buyMarkdownFromLcpDefault = tradeParams.buyMarkdownFromLcpDefault;
             sellMarkupDefault = tradeParams.sellMarkupForMargin;
@@ -248,13 +250,13 @@ namespace SimpleTrader
                 if (sellOrder != null && !string.IsNullOrEmpty(todayOutstandingSellOrderId) && sellOrder.Quantity < todayOutstandingQty)
                 {
                     // Cancel existing sell order 
-                    errCode = CancelEquityOrder("[Init Update Sell Qty]", ref todayOutstandingSellOrderId, EquityOrderType.MARGIN, OrderDirection.SELL);
+                    errCode = CancelEquityOrder("[Init Update Sell Qty]", ref todayOutstandingSellOrderId, orderType, OrderDirection.SELL);
                 }
 
                 if (string.IsNullOrEmpty(todayOutstandingSellOrderId) && todayOutstandingQty > 0)
                 {
                     var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
-                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, EquityOrderType.MARGIN, sellPrice, out todayOutstandingSellOrderId);
+                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out todayOutstandingSellOrderId);
                 }
             }
 
@@ -521,20 +523,20 @@ namespace SimpleTrader
                         if (!string.IsNullOrEmpty(todayOutstandingBuyOrderId))
                         {
                             // cancel existing buy order
-                            errCode = CancelEquityOrder("[Margin EOD]", ref todayOutstandingBuyOrderId, EquityOrderType.MARGIN, OrderDirection.BUY);
+                            errCode = CancelEquityOrder("[Margin EOD]", ref todayOutstandingBuyOrderId, orderType, OrderDirection.BUY);
                         }
 
                         // bought qty needs square off. there is outstanding sell order, revise the price to try square off 
                         if (!string.IsNullOrEmpty(todayOutstandingSellOrderId))
                         {
                             // cancel existing sell order
-                            errCode = CancelEquityOrder("[Margin EOD]", ref todayOutstandingSellOrderId, EquityOrderType.MARGIN, OrderDirection.SELL);
+                            errCode = CancelEquityOrder("[Margin EOD]", ref todayOutstandingSellOrderId, orderType, OrderDirection.SELL);
 
                             if (errCode == BrokerErrorCode.Success)
                             {
                                 // place new sell order, update sell order ref
                                 var sellPrice = GetSellPrice(todayOutstandingPrice, false, true);
-                                errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, ordPriceType, todayOutstandingQty, EquityOrderType.MARGIN, sellPrice, out todayOutstandingSellOrderId);
+                                errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, ordPriceType, todayOutstandingQty, orderType, sellPrice, out todayOutstandingSellOrderId);
                             }
                         }
                     }
@@ -576,11 +578,11 @@ namespace SimpleTrader
             bool isConversionSuccessful = false;
 
             // convert to delivery any open buy position
-            if (todayOutstandingQty > 0 && doConvertToDeliveryAtEOD)
+            if (todayOutstandingQty > 0 && doConvertToDeliveryAtEOD && orderType == EquityOrderType.MARGIN)
             {
                 // cancel outstanding order to free up the qty for conversion
                 if (!string.IsNullOrEmpty(todayOutstandingSellOrderId))
-                    errCode = CancelEquityOrder("[Margin Conversion EOD]", ref todayOutstandingSellOrderId, EquityOrderType.MARGIN, OrderDirection.SELL);
+                    errCode = CancelEquityOrder("[Margin Conversion EOD]", ref todayOutstandingSellOrderId, orderType, OrderDirection.SELL);
 
                 // convert to delivery, update holding qty and write to positions file
                 // may need to seperate out and convert each position seperately. currently all outstanding for the stock is tried to convert in single call
@@ -604,18 +606,18 @@ namespace SimpleTrader
 
                     // cancel existing sell order
                     if (!string.IsNullOrEmpty(todayOutstandingSellOrderId))
-                        errCode1 = CancelEquityOrder("[Margin EOD] Insufficient Limit to convert. Try to Squareoff", ref todayOutstandingSellOrderId, EquityOrderType.MARGIN, OrderDirection.SELL);
+                        errCode1 = CancelEquityOrder("[Margin EOD] Insufficient Limit to convert. Try to Squareoff", ref todayOutstandingSellOrderId, orderType, OrderDirection.SELL);
 
                     if (errCode1 == BrokerErrorCode.Success)
                     {
                         // place new sell order, update sell order ref
                         var sellPrice = GetSellPrice(todayOutstandingPrice, false, false, true);
-                        errCode1 = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, EquityOrderType.MARGIN, sellPrice, out todayOutstandingSellOrderId);
+                        errCode1 = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out todayOutstandingSellOrderId);
                     }
                 }
             }
 
-            if (isConversionSuccessful || isEODLast)
+            if (isConversionSuccessful || orderType == EquityOrderType.DELIVERY || isEODLast)
             {
                 holdingOutstandingPrice = (todayOutstandingPrice * todayOutstandingQty) + (holdingOutstandingQty * holdingOutstandingPrice);
                 holdingOutstandingQty += todayOutstandingQty;

@@ -80,7 +80,7 @@ namespace SimpleTrader
                     else
                         Trace(string.Format("LTP {0} lastPriceToCompareWith {1} markDownPct {2} PriceStrategy {3}", ltp, lastPriceToCompareWith, markDownPct, priceStrategy));
                     // place buy order, update buy order ref
-                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.BUY, OrderPriceType.LIMIT, ordQty, EquityOrderType.MARGIN, buyPrice, out todayOutstandingBuyOrderId);
+                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.BUY, OrderPriceType.LIMIT, ordQty, orderType, buyPrice, out todayOutstandingBuyOrderId);
                 }
             }
         }
@@ -174,13 +174,13 @@ namespace SimpleTrader
                                 if (!string.IsNullOrEmpty(todayOutstandingSellOrderId))
                                 {
                                     // cancel existing sell order if it exists
-                                    errCode = CancelEquityOrder("[Buy Executed]", ref todayOutstandingSellOrderId, EquityOrderType.MARGIN, OrderDirection.SELL);
+                                    errCode = CancelEquityOrder("[Buy Executed]", ref todayOutstandingSellOrderId, orderType, OrderDirection.SELL);
                                 }
                                 if (errCode == BrokerErrorCode.Success || string.IsNullOrEmpty(todayOutstandingSellOrderId))
                                 {
                                     // place new sell order if previous cancelled or it was first one, update sell order ref
                                     var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
-                                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, EquityOrderType.MARGIN, sellPrice, out todayOutstandingSellOrderId);
+                                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out todayOutstandingSellOrderId);
                                 }
                             }
                         }
