@@ -182,6 +182,7 @@ namespace SimpleTrader
             {
                 stockCode = "COMMONCONFIG",
                 isinCode = "",
+                orderType = (EquityOrderType)Enum.Parse(typeof(EquityOrderType), common[++Index]),
                 maxTradeValue = double.Parse(common[++Index]),
                 maxTotalPositionValueMultiple = int.Parse(common[++Index]),
                 maxTodayPositionValueMultiple = int.Parse(common[++Index]),
@@ -190,7 +191,6 @@ namespace SimpleTrader
                 sellMarkupForMargin = double.Parse(common[++Index]),
                 sellMarkupForDelivery = double.Parse(common[++Index]),
                 sellMarkupForMinProfit = double.Parse(common[++Index]),
-                pctSquareOffForMinProfit = double.Parse(common[++Index]),
                 squareOffAllPositionsAtEOD = bool.Parse(common[++Index]),
                 pctMaxLossSquareOffPositionsAtEOD = double.Parse(common[++Index]),
                 useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = bool.Parse(common[++Index]),
@@ -200,8 +200,7 @@ namespace SimpleTrader
                 sellMarkupForEODInsufficientLimitSquareOff = double.Parse(common[++Index]),
                 maxBuyOrdersAllowedInADay = int.Parse(common[++Index]),
                 doConvertToDeliveryAtEOD = bool.Parse(common[++Index]),
-                doSquareOffIfInsufficientLimitAtEOD = bool.Parse(common[++Index]),
-                orderType = (EquityOrderType)Enum.Parse(typeof(EquityOrderType), common[++Index])
+                doSquareOffIfInsufficientLimitAtEOD = bool.Parse(common[++Index])
             };
 
             for (int i = 2; i < lines.Length; i++)
@@ -238,7 +237,6 @@ namespace SimpleTrader
                     sellMarkupForMargin = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForMargin : double.Parse(stock[Index])) : ctp.sellMarkupForMargin,//8
                     sellMarkupForDelivery = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForDelivery : double.Parse(stock[Index])) : ctp.sellMarkupForDelivery,//9
                     sellMarkupForMinProfit = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForMinProfit : double.Parse(stock[Index])) : ctp.sellMarkupForMinProfit,//10
-                    pctSquareOffForMinProfit = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.pctSquareOffForMinProfit : double.Parse(stock[Index])) : ctp.pctSquareOffForMinProfit,//11
                     squareOffAllPositionsAtEOD = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.squareOffAllPositionsAtEOD : bool.Parse(stock[Index])) : ctp.squareOffAllPositionsAtEOD,//12
                     pctMaxLossSquareOffPositionsAtEOD = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.pctMaxLossSquareOffPositionsAtEOD : double.Parse(stock[Index])) : ctp.pctMaxLossSquareOffPositionsAtEOD,//13
                     useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder : bool.Parse(stock[Index])) : ctp.useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,//14
@@ -294,13 +292,12 @@ namespace SimpleTrader
         // default
         public double buyPriceCap;
         public double goodPrice;
-        public double pctExtraMarkdownForAveraging = 0.99;
-        public double buyMarkdownFromLcpDefault = 0.99;
+        public double pctExtraMarkdownForAveraging = 0.01;
+        public double buyMarkdownFromLcpDefault = 0.01;
         public double sellMarkupForMargin = 1.02;
         public double sellMarkupForDelivery = 1.025;
         public double sellMarkupForMinProfit = 1.0035;
         public double sellMarkupForEODInsufficientLimitSquareOff = 0.995;
-        public double pctSquareOffForMinProfit = 0.0035;
         public bool squareOffAllPositionsAtEOD = false;
         public double pctMaxLossSquareOffPositionsAtEOD = .01;
         public bool useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = false;

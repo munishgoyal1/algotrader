@@ -132,7 +132,7 @@ namespace SimpleTrader
         public void QuoteReceived(object sender, QuotesReceivedEventArgs args)
         {
 
-            if(stockCode == args.TrdSym)
+            if (stockCode == args.TrdSym)
                 Interlocked.Exchange(ref Ltp, args.LTP);
 
             //if (stockAlgos.Contains(args.TrdSym))//
@@ -194,7 +194,7 @@ namespace SimpleTrader
             var buyTrades = trades.Values.Where(t => t.Direction == OrderDirection.BUY).OrderByDescending(t => t.DateTime).ToList();
 
             //sort the trade book and get last buy price
-            lastBuyPrice = myUpstoxWrapper.GetBoughtQty(exchStr, stockCode) > 0 ? buyTrades .First().Price: holdingOutstandingPrice;
+            lastBuyPrice = myUpstoxWrapper.GetBoughtQty(exchStr, stockCode) > 0 ? buyTrades.First().Price : holdingOutstandingPrice;
 
             var numOutstandingBuyTrades = todayOutstandingQty > 0 ? todayOutstandingQty / ordQty : 0;
             // these are latest trades taken. each buy trade is for single lot and thus for each lot there is a trade
@@ -239,7 +239,7 @@ namespace SimpleTrader
                         }
                     }
                 }
-               
+
                 UpdatePositionFile();
             }
 
@@ -307,7 +307,7 @@ namespace SimpleTrader
         public BrokerErrorCode CancelEquityOrder(string source, ref string orderId, EquityOrderType type, OrderDirection side)
         {
             var errCode = myUpstoxWrapper.CancelOrder(orderId);
-           
+
             Trace(string.Format(orderCancelTraceFormat, source, stockCode, side + " order cancel", ", OrderRef = " + orderId, errCode));
 
             if (errCode == BrokerErrorCode.Success)
@@ -331,19 +331,10 @@ namespace SimpleTrader
             return Math.Round(factor * price, 1);
         }
 
-        public double GetBuySquareOffPrice(double price)
-        {
-            var factor = 1 - pctSquareOffForMinProfit;
-
-            return Math.Round(factor * price, 1);
-        }
-
         // TODO: refactor.. not being used currently
         public double GetBuyPrice(double ltp, bool isTodayFirstOrder, bool doesHoldingPositionExist)
         {
             var factor = 1 - buyMarkdownFromLcpDefault;  // default
-
-
 
             //if (!isTodayFirstOrder)
             //    factor = sellMarkupForDelivery;
@@ -472,18 +463,29 @@ namespace SimpleTrader
         }
 
 
-        // Try min profit squareoff first between 3 - 3.10 time.
-        // From 3.10 to 3.15 time if squareoff of all positions is set to true and the ltp diff meets threshold for max loss pct, then do a market order squareoff 
+        // Try min profit squareoff first between 
+        // 3 - 3.05 = min profit limit sell order
+        // 3.05 - 3.10 = min loss market order (if EOD sqoff enabled and loss within maxloss pct)
+        //
         public void TrySquareOffNearEOD(AlgoType algoType)
         {
             // if after 3 pm, then try to square off in at least no profit no loss if possible. cancel the outstanding buys anyway
             if (MarketUtils.IsTimeAfter3XMin(0))
             {
                 var ordPriceType = OrderPriceType.LIMIT;
-                var doUpdateOrders = false;
+                var updateSellOrder = false;
+
+                // just cancel the outstanding buy order
+                if (algoType == AlgoType.AverageTheBuyThenSell)
+                {
+                    if (!string.IsNullOrEmpty(todayOutstandingBuyOrderId))
+                    {
+                        // cancel existing buy order
+                        errCode = CancelEquityOrder("[Margin EOD]", ref todayOutstandingBuyOrderId, orderType, OrderDirection.BUY);
+                    }
+                }
 
                 // 3.05 - 3.10 pm time. market order type if must sqoff at EOD and given pct loss is within acceptable range
-                // do it before 3.15, otherwise upstox will try to squareoff on its own anytime after 3.15
                 if (MarketUtils.IsTimeAfter3XMin(5) && !MarketUtils.IsTimeAfter3XMin(10) && squareOffAllPositionsAtEOD && !isEODMinLossSquareOffMarketOrderUpdated)
                 {
                     double ltp;
@@ -501,31 +503,24 @@ namespace SimpleTrader
                     if ((Math.Abs(diff) < pctMaxLossSquareOffPositions || diff > 0) && todayOutstandingPrice > goodPrice)
                     {
                         Trace(string.Format("[Margin EOD]: max loss {0}% is less than {1}% and avg outstanding price {2} is greater than good price of {3}. LTP is {4}. Place squareoff @ MARKET.", diff, pctMaxLossSquareOffPositions, todayOutstandingPrice, goodPrice, ltp));
-                        doUpdateOrders = true;
+                        updateSellOrder = true;
                         isEODMinLossSquareOffMarketOrderUpdated = true;
                     }
                 }
 
-                // 3.00 - 3.10 pm time. try simple limit order with min profit price. watch until 3.10 pm
+                // 3.00 - 3.05 pm time. try simple limit order with min profit price. watch until 3.10 pm
                 else if (!isEODMinProfitSquareOffLimitOrderUpdated)
                 {
                     Trace(string.Format("[Margin EOD]: MinProfit Squareoff and cancel outstanding buy orders"));
                     ordPriceType = OrderPriceType.LIMIT;
                     isEODMinProfitSquareOffLimitOrderUpdated = true;
-                    doUpdateOrders = true;
+                    updateSellOrder = true;
                 }
 
-                if (doUpdateOrders)
+                if (updateSellOrder)
                 {
                     if (algoType == AlgoType.AverageTheBuyThenSell)
                     {
-                        // just cancel the outstanding buy order
-                        if (!string.IsNullOrEmpty(todayOutstandingBuyOrderId))
-                        {
-                            // cancel existing buy order
-                            errCode = CancelEquityOrder("[Margin EOD]", ref todayOutstandingBuyOrderId, orderType, OrderDirection.BUY);
-                        }
-
                         // bought qty needs square off. there is outstanding sell order, revise the price to try square off 
                         if (!string.IsNullOrEmpty(todayOutstandingSellOrderId))
                         {
