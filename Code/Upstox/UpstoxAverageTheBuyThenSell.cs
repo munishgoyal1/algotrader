@@ -44,7 +44,7 @@ namespace SimpleTrader
                 double buyPrice = priceArrivedFromLtpDefault;
                 var priceStrategy = "Default markdown from Ltp";
 
-                if (holdingOutstandingQty > 0)
+                if (holdingOutstandingQty > 0 && buyPrice <= 0)
                 {
                     markDownPct = buyMarkdownFromLcpDefault;// + pctExtraMarkdownForAveraging;
                     lastPriceToCompareWith = holdingOutstandingPrice;
@@ -63,13 +63,14 @@ namespace SimpleTrader
                     lastPriceToCompareWith = lastBuyPrice;
                     priceArrivedFromTodayOutstanding = Math.Round(0.999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
 
-                    if (priceArrivedFromTodayOutstanding < buyPrice)
+                    //if (priceArrivedFromTodayOutstanding < buyPrice)
                     {
                         priceStrategy = "Average from Today's outstanding";
                         buyPrice = priceArrivedFromTodayOutstanding;
                     }
                 }
 
+                buyPrice = Math.Min(buyPrice, ltp);
                 buyPrice = Math.Min(buyPrice, buyPriceCap);
 
                 // if ltp is less than required price then place the order or if there is no outstanding today then place the order anyway
@@ -101,9 +102,6 @@ namespace SimpleTrader
             {
                 try
                 {
-                    // Try to convert to delivery pending open positions (nearing expiry) from previous days
-                    //ConvertToDeliveryPreviousDaysExpiringOpenPositions();
-
                     var holdingTradesRef = holdingsOrders.Select(h => h.OrderId);
 
                     {
@@ -122,7 +120,7 @@ namespace SimpleTrader
                             // if any holding sell executed
                             ProcessHoldingSellOrderExecution(newTrades);
 
-                            // if sell executed, then update today outstanding to 0 , because sell order always contains the total outstanding qty and now all of it got sold with this trade
+                            // if SELL executed, then update today outstanding to 0 , because sell order always contains the total outstanding qty and now all of it got sold with this trade
                             // but handle part executions using NewQuantity
                             if (tradeRef == todayOutstandingSellOrderId)
                             {
@@ -135,8 +133,7 @@ namespace SimpleTrader
                                 }
                             }
 
-                            // if buy executed, then place a corresponding updated sell order. assumption is that qty is completely executed.
-                            // part executed qty will get considered only for first part, for later ones there is no update because we wont get it in newTrades again
+                            // if BUY executed, then place a corresponding updated sell order. 
                             if (tradeRef == todayOutstandingBuyOrderId)
                             {
                                 Dictionary<string, EquityOrderBookRecord> orders;
@@ -213,7 +210,6 @@ namespace SimpleTrader
             }
 
             // for safety call conversion once more if the conversion call in the above loop was missed due to Pause and loop's time check
-            //CancelHoldingSellOrders();
             ConvertToDeliveryAndUpdatePositionFile(true); // EOD final update
         }
 

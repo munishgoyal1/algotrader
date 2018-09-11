@@ -477,14 +477,14 @@ namespace SimpleTrader
         public void TrySquareOffNearEOD(AlgoType algoType)
         {
             // if after 3 pm, then try to square off in at least no profit no loss if possible. cancel the outstanding buys anyway
-            if (MarketUtils.IsTimeAfter310())
+            if (MarketUtils.IsTimeAfter3XMin(0))
             {
                 var ordPriceType = OrderPriceType.LIMIT;
                 var doUpdateOrders = false;
 
-                // 3.20 - 3.25 pm time. market order type for forced square off given pct loss is within acceptable range
-                // do it before 3.15, otherwise upstox will try to squareoff on its own anytime between 3.15 - 3.30
-                if (MarketUtils.IsTimeAfter320() && !MarketUtils.IsTimeAfter325() && squareOffAllPositionsAtEOD && !isEODMinLossSquareOffMarketOrderUpdated)
+                // 3.05 - 3.10 pm time. market order type if must sqoff at EOD and given pct loss is within acceptable range
+                // do it before 3.15, otherwise upstox will try to squareoff on its own anytime after 3.15
+                if (MarketUtils.IsTimeAfter3XMin(5) && !MarketUtils.IsTimeAfter3XMin(10) && squareOffAllPositionsAtEOD && !isEODMinLossSquareOffMarketOrderUpdated)
                 {
                     double ltp;
                     var errCode = GetLTP(out ltp);
@@ -506,7 +506,7 @@ namespace SimpleTrader
                     }
                 }
 
-                // 3.10 - 3.20 pm time. try simple limit order with min profit price. watch until 3.10 pm
+                // 3.00 - 3.10 pm time. try simple limit order with min profit price. watch until 3.10 pm
                 else if (!isEODMinProfitSquareOffLimitOrderUpdated)
                 {
                     Trace(string.Format("[Margin EOD]: MinProfit Squareoff and cancel outstanding buy orders"));
@@ -647,7 +647,7 @@ namespace SimpleTrader
         }
         public void PauseBetweenTradeBookCheck()
         {
-            Thread.Sleep(1000 * 60);
+            Thread.Sleep(1000 * 30);
         }
     }
 }
