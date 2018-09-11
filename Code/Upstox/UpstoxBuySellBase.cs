@@ -469,6 +469,9 @@ namespace SimpleTrader
         //
         public void TrySquareOffNearEOD(AlgoType algoType)
         {
+            if (todayOutstandingQty == 0)
+                return;
+
             // if after 3 pm, then try to square off in at least no profit no loss if possible. cancel the outstanding buys anyway
             if (MarketUtils.IsTimeAfter3XMin(0))
             {
@@ -511,7 +514,7 @@ namespace SimpleTrader
                 // 3.00 - 3.05 pm time. try simple limit order with min profit price. watch until 3.10 pm
                 else if (!isEODMinProfitSquareOffLimitOrderUpdated)
                 {
-                    Trace(string.Format("[Margin EOD]: MinProfit Squareoff and cancel outstanding buy orders"));
+                    Trace(string.Format("[Margin EOD]: MinProfit Squareoff using limit sell order"));
                     ordPriceType = OrderPriceType.LIMIT;
                     isEODMinProfitSquareOffLimitOrderUpdated = true;
                     updateSellOrder = true;
