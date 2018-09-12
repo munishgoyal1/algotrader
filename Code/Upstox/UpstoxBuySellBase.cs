@@ -469,9 +469,6 @@ namespace SimpleTrader
         //
         public void TrySquareOffNearEOD(AlgoType algoType)
         {
-            if (todayOutstandingQty == 0)
-                return;
-
             // if after 3 pm, then try to square off in at least no profit no loss if possible. cancel the outstanding buys anyway
             if (MarketUtils.IsTimeAfter3XMin(0))
             {
@@ -487,6 +484,9 @@ namespace SimpleTrader
                         errCode = CancelEquityOrder("[Margin EOD]", ref todayOutstandingBuyOrderId, orderType, OrderDirection.BUY);
                     }
                 }
+
+                if (todayOutstandingQty == 0)
+                    return;
 
                 // 3.05 - 3.10 pm time. market order type if must sqoff at EOD and given pct loss is within acceptable range
                 if (MarketUtils.IsTimeAfter3XMin(5) && !MarketUtils.IsTimeAfter3XMin(10) && squareOffAllPositionsAtEOD && !isEODMinLossSquareOffMarketOrderUpdated)

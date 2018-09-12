@@ -103,7 +103,6 @@ namespace SimpleTrader
                 try
                 {
                     var holdingTradesRef = holdingsOrders.Select(h => h.OrderId);
-
                     {
                         var newTrades = new Dictionary<string, EquityTradeBookRecord>();
                         // refresh trade book

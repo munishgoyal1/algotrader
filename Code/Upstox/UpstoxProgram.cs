@@ -139,6 +139,7 @@ namespace SimpleTrader
             foreach (var stockConfig in stocksConfig)
             {
                 stockConfig.upstox = upstoxBroker;
+                upstoxBroker.AddStock(stockConfig.stockCode);
                 var t = new Thread(new UpstoxAverageTheBuyThenSell(stockConfig).StockBuySell);
                 threads.Add(t);
             }
