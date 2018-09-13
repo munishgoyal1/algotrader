@@ -81,7 +81,7 @@ namespace SimpleTrader
             MarketUtils.WaitUntilMarketOpen();
 
             //while (true)
-           //     Thread.Sleep(1000);
+            //     Thread.Sleep(1000);
 
             //// Separate Login thread in background
             //BrokingAccountThread loginThread = new BrokingAccountThread();
@@ -132,7 +132,7 @@ namespace SimpleTrader
             // ************ TESTING Code ends ****************** //
 
             // Read the config file
-            List <UpstoxTradeParams> stocksConfig = ReadTradingConfigFile();
+            List<UpstoxTradeParams> stocksConfig = ReadTradingConfigFile();
 
             var threads = new List<Thread>(stocksConfig.Count);
 
@@ -147,12 +147,79 @@ namespace SimpleTrader
             threads.ForEach(t => { t.Start(); Thread.Sleep(1000); });
             threads.ForEach(t => t.Join());
 
+
+            WritePnL(upstoxBroker, stocksConfig);
+
             // Send out the log in email and chat
             Trace("All stock threads completed. Emailing today's log file");
             MessagingUtils.Init();
             var log = GetLogContent();
             MessagingUtils.SendAlertMessage("SimpleTrader log", log);
             Trace("Exiting..");
+        }
+
+        public void WritePnL(MyUpstoxWrapper upstoxBroker, List<UpstoxTradeParams> stocksConfig)
+        {
+            // calculate stats
+            // File.WriteAllLines(positionFile, lines);
+
+            Dictionary<string, EquityTradeBookRecord> tradeBook;
+
+            var filesPath = SystemUtils.GetPnLFilesLocation();
+
+            upstoxBroker.GetTradeBook(false, null, out tradeBook);
+            Dictionary<string, List<EquityTradeBookRecord>> stockBook = tradeBook.Values.GroupBy(t => t.StockCode).ToDictionary(g => g.Key, g => g.ToList());
+
+            foreach (var kv in stockBook)
+            {
+                var stockCode = kv.Key;
+                var trades = kv.Value;
+                var stockConfig = stocksConfig.Find(c => c.stockCode == stockCode);
+
+                string pnlFilePath = Path.Combine(filesPath, stockCode + "_pnl.txt");
+
+                var configToday = string.Format("{0},{1},{2},{3},{4},{5},{6}", stockConfig.stockCode, stockConfig.goodPrice,
+                        stockConfig.buyPriceCap, stockConfig.buyMarkdownFromLcpDefault,
+                        stockConfig.sellMarkupForMargin, stockConfig.sellMarkupForDelivery, stockConfig.pctExtraMarkdownForAveraging);
+
+                if (!File.Exists(pnlFilePath))
+                {
+
+
+                    File.WriteAllLines(pnlFilePath, new[] { configToday });
+                }
+
+
+                var lines = File.ReadAllLines(pnlFilePath);
+
+                //if(configToday != lines[0])
+                /*
+                 * tradingconfig line
+netpnl, unrealized mtm, holding qty, holding price, ltp
+date,todaypnl,# of buy trades, # of sell trades, qty multiple, buy qty, sell qty, holding sell qty, prev outstanding qty@price, today outstanding qty@price,net outstanding qty@price
+*/
+                var configLine = lines[0].Split(',');//
+                var summaryLine = lines[1].Split(',');
+
+                var todayBuyTrades = trades.Sum(t => t.Direction == OrderDirection.BUY ? 1 : 0);
+                var todaySellTrades = trades.Sum(t => t.Direction == OrderDirection.SELL ? 1 : 0);
+                var todayBuyQty = trades.Sum(t => t.Direction == OrderDirection.BUY ? t.Quantity : 0);
+                var todaySellQty = trades.Sum(t => t.Direction == OrderDirection.SELL ? t.Quantity : 0);
+                var todayBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == stockConfig.orderType? t.Quantity * t.Price : 0);
+                var todaySellValue = trades.Sum(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == stockConfig.orderType ? t.Quantity * t.Price : 0);
+                var todaypnl = todaySellValue - todayBuyValue;            
+                var orderQty = stockConfig.ordQty;
+                var netpnl = double.Parse(summaryLine[0]);
+
+                netpnl += todaypnl;
+
+                var ltp = upstoxBroker.GetEquityLTP(stock)
+
+
+
+                string.Format("{0},{1}")
+
+            }
         }
 
         public static bool IsHolidayToday()
@@ -187,10 +254,10 @@ namespace SimpleTrader
                 maxTradeValue = double.Parse(common[++Index]),
                 maxTotalPositionValueMultiple = int.Parse(common[++Index]),
                 maxTodayPositionValueMultiple = int.Parse(common[++Index]),
-                pctExtraMarkdownForAveraging = double.Parse(common[++Index]),
                 buyMarkdownFromLcpDefault = double.Parse(common[++Index]),
                 sellMarkupForMargin = double.Parse(common[++Index]),
                 sellMarkupForDelivery = double.Parse(common[++Index]),
+                pctExtraMarkdownForAveraging = double.Parse(common[++Index]),
                 sellMarkupForMinProfit = double.Parse(common[++Index]),
                 squareOffAllPositionsAtEOD = bool.Parse(common[++Index]),
                 pctMaxLossSquareOffPositionsAtEOD = double.Parse(common[++Index]),
@@ -233,10 +300,10 @@ namespace SimpleTrader
                     maxTodayOutstandingQtyAllowed = ordQty * maxTodayPositionValueMultiple,
                     goodPrice = goodPrice,
                     buyPriceCap = buyPriceCap,
-                    pctExtraMarkdownForAveraging = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.pctExtraMarkdownForAveraging : double.Parse(stock[Index])) : ctp.pctExtraMarkdownForAveraging,//6
                     buyMarkdownFromLcpDefault = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.buyMarkdownFromLcpDefault : double.Parse(stock[Index])) : ctp.buyMarkdownFromLcpDefault,//7
                     sellMarkupForMargin = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForMargin : double.Parse(stock[Index])) : ctp.sellMarkupForMargin,//8
                     sellMarkupForDelivery = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForDelivery : double.Parse(stock[Index])) : ctp.sellMarkupForDelivery,//9
+                    pctExtraMarkdownForAveraging = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.pctExtraMarkdownForAveraging : double.Parse(stock[Index])) : ctp.pctExtraMarkdownForAveraging,//6
                     sellMarkupForMinProfit = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForMinProfit : double.Parse(stock[Index])) : ctp.sellMarkupForMinProfit,//10
                     squareOffAllPositionsAtEOD = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.squareOffAllPositionsAtEOD : bool.Parse(stock[Index])) : ctp.squareOffAllPositionsAtEOD,//12
                     pctMaxLossSquareOffPositionsAtEOD = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.pctMaxLossSquareOffPositionsAtEOD : double.Parse(stock[Index])) : ctp.pctMaxLossSquareOffPositionsAtEOD,//13

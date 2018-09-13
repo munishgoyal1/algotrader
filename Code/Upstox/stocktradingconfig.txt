@@ -1,8 +1,8 @@
-StockCode, Goodprice, BuyPriceCap (in stock lines below) and then the commonconfig as follows:  orderType, maxTradeValue,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,pctExtraMarkdownForAveraging,buyMarkdownFromLcpDefault,sellMarkupForMargin,sellMarkupForDelivery,sellMarkupForMinProfit,squareOffAllPositionsAtEOD,pctMaxLossSquareOffPositionsAtEOD,useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,startTime,endTime,Exchange,sellMarkupForEODInsufficientLimitSquareOff,maxBuyOrdersAllowedInADay,doConvertToDeliveryAtEOD,doSquareOffIfInsufficientLimitAtEOD
-MARGIN,500,4,4,0.005,0.005,1.005,1.01,1.003,true,0.001,false,09:00:00,15:00:00,NSE,0.995,4,true,false
+stockCode, goodprice, buyPriceCap (in stock lines below) and then the commonconfig as follows:  orderType, maxTradeValue,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,buyMarkdownFromLcpDefault,sellMarkupForMargin,sellMarkupForDelivery,pctExtraMarkdownForAveraging,sellMarkupForMinProfit,squareOffAllPositionsAtEOD,pctMaxLossSquareOffPositionsAtEOD,useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,startTime,endTime,Exchange,sellMarkupForEODInsufficientLimitSquareOff,maxBuyOrdersAllowedInADay,doConvertToDeliveryAtEOD,doSquareOffIfInsufficientLimitAtEOD
+MARGIN,500,4,4,0.005,1.005,0.005,1.01,1.003,true,0.001,false,09:00:00,15:00:00,NSE,0.995,4,true,false
 IDFCBANK,45,55
 FEDERALBNK,75,95
-CAPLIPOINT,400,550,DELIVERY,,,,0.01,0.015,1.01,1.015
+CAPLIPOINT,400,550,DELIVERY,,,,0.015,1.01,0.01,1.015
 ITC,310,330
 TATAMOTORS,260,295
 BERGEPAINT,285,310
