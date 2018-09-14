@@ -1,10 +1,15 @@
-stockCode, goodprice, buyPriceCap (in stock lines below) and then the commonconfig as follows:  orderType, maxTradeValue,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,buyMarkdownFromLcpDefault,sellMarkupForMargin,sellMarkupForDelivery,pctExtraMarkdownForAveraging,sellMarkupForMinProfit,squareOffAllPositionsAtEOD,pctMaxLossSquareOffPositionsAtEOD,useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,startTime,endTime,Exchange,sellMarkupForEODInsufficientLimitSquareOff,maxBuyOrdersAllowedInADay,doConvertToDeliveryAtEOD,doSquareOffIfInsufficientLimitAtEOD
-MARGIN,500,4,4,0.005,1.005,0.005,1.01,1.003,true,0.001,false,09:00:00,15:00:00,NSE,0.995,4,true,false
-IDFCBANK,45,55
-FEDERALBNK,75,95
-CAPLIPOINT,400,550,DELIVERY,,,,0.015,1.01,0.01,1.015
+stockCode, goodprice, buyPriceCap (in stock lines below) and then the commonconfig as follows:  orderType, maxTradeValue,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,buyMarkdownFromLcpDefault,sellMarkupForMargin,sellMarkupForDelivery,pctExtraMarkdownForAveraging,sellMarkupForMinProfit,placeBuyNoLtpCompare,squareOffAllPositionsAtEOD,pctMaxLossSquareOffPositionsAtEOD,useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,startTime,endTime,Exchange,sellMarkupForEODInsufficientLimitSquareOff,maxBuyOrdersAllowedInADay,doConvertToDeliveryAtEOD,doSquareOffIfInsufficientLimitAtEOD
+MARGIN,400,4,4,0.005,1.005,1.01,0.005,1.003,false,true,0.001,false,09:00:00,15:00:00,NSE,0.995,4,true,false
+IDFCBANK,45,55,MARGIN,60
+FEDERALBNK,75,95,MARGIN,100
+CAPLIPOINT,400,550,DELIVERY,500,,,0.015,1.01,1.015,0.01
 ITC,310,330
 TATAMOTORS,260,295
 BERGEPAINT,285,310
-PCJEWELLER,75,90
+PCJEWELLER,75,90,MARGIN,100
 UJJIVAN,325,375
+ZEEL,450,500,MARGIN,500,,,0.01,1.01,1.01,0.01,,true
+SUNPHARMA,600,700,MARGIN,700,,,0.01,1.01,1.01,0.01,,true
+IBULHSGFIN,1100,1300,MARGIN,1200,,,0.01,1.01,1.01,0.01,,false,,,,09:20:00
+RELIANCE,1150,1300,MARGIN,1200,,,0.005,1.005,1.01,0.01,,true,,,,09:20:00
+INFY,700,800,MARGIN,800,,,0.005,1.005,1.01,0.01,,true,,,,09:20:00

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SimpleTrader
+namespace UpstoxTrader
 {
     // assumptions:
     // 1. single buy or sell outsanding order at any time
@@ -74,7 +74,7 @@ namespace SimpleTrader
                 buyPrice = Math.Min(buyPrice, buyPriceCap);
 
                 // if ltp is less than required price then place the order or if there is no outstanding today then place the order anyway
-                if (errCode == BrokerErrorCode.Success && (todayOutstandingQty == 0 || ltp <= buyPrice))
+                if (errCode == BrokerErrorCode.Success && (todayOutstandingQty == 0 || (placeBuyNoLtpCompare || (ltp <= buyPrice))))
                 {
                     if (todayOutstandingQty != 0)
                         Trace(string.Format("LTP {0} is -{1}% of Last {3} price {2}", ltp, markDownPct * 100, lastPriceToCompareWith, priceStrategy));

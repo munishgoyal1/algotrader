@@ -10,7 +10,7 @@ using StockTrader.Utilities;
 using StockTrader.Utilities.Broker;
 using UpstoxNet;
 
-namespace SimpleTrader
+namespace UpstoxTrader
 {
     class UpstoxProgram
     {
@@ -158,7 +158,7 @@ namespace SimpleTrader
             Trace("Exiting..");
         }
 
-        public void WritePnL(MyUpstoxWrapper upstoxBroker, List<UpstoxTradeParams> stocksConfig)
+        public static void WritePnL(MyUpstoxWrapper upstoxBroker, List<UpstoxTradeParams> stocksConfig)
         {
             // calculate stats
             // File.WriteAllLines(positionFile, lines);
@@ -178,14 +178,13 @@ namespace SimpleTrader
 
                 string pnlFilePath = Path.Combine(filesPath, stockCode + "_pnl.txt");
 
-                var configToday = string.Format("{0},{1},{2},{3},{4},{5},{6}", stockConfig.stockCode, stockConfig.goodPrice,
+                var configToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8}", stockConfig.stockCode, stockConfig.goodPrice,
                         stockConfig.buyPriceCap, stockConfig.buyMarkdownFromLcpDefault,
-                        stockConfig.sellMarkupForMargin, stockConfig.sellMarkupForDelivery, stockConfig.pctExtraMarkdownForAveraging);
+                        stockConfig.sellMarkupForMargin, stockConfig.sellMarkupForDelivery, stockConfig.pctExtraMarkdownForAveraging,
+                        stockConfig.placeBuyNoLtpCompare, stockConfig.startTime.ToString("hhmm"));
 
                 if (!File.Exists(pnlFilePath))
                 {
-
-
                     File.WriteAllLines(pnlFilePath, new[] { configToday });
                 }
 
@@ -196,7 +195,9 @@ namespace SimpleTrader
                 /*
                  * tradingconfig line
 netpnl, unrealized mtm, holding qty, holding price, ltp
-date,todaypnl,# of buy trades, # of sell trades, qty multiple, buy qty, sell qty, holding sell qty, prev outstanding qty@price, today outstanding qty@price,net outstanding qty@price
+date,todaypnl,# of buy trades, # of sell trades, ordqty, buy qty, sell qty
+
+                //holding sell qty, prev outstanding qty@price, today outstanding qty@price,net outstanding qty@price
 */
                 var configLine = lines[0].Split(',');//
                 var summaryLine = lines[1].Split(',');
@@ -205,19 +206,54 @@ date,todaypnl,# of buy trades, # of sell trades, qty multiple, buy qty, sell qty
                 var todaySellTrades = trades.Sum(t => t.Direction == OrderDirection.SELL ? 1 : 0);
                 var todayBuyQty = trades.Sum(t => t.Direction == OrderDirection.BUY ? t.Quantity : 0);
                 var todaySellQty = trades.Sum(t => t.Direction == OrderDirection.SELL ? t.Quantity : 0);
-                var todayBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == stockConfig.orderType? t.Quantity * t.Price : 0);
+                var todayBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == stockConfig.orderType ? t.Quantity * t.Price : 0);
                 var todaySellValue = trades.Sum(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == stockConfig.orderType ? t.Quantity * t.Price : 0);
-                var todaypnl = todaySellValue - todayBuyValue;            
+                var todaypnl = todaySellValue - todayBuyValue;
                 var orderQty = stockConfig.ordQty;
                 var netpnl = double.Parse(summaryLine[0]);
+                double outstandingQty = 0;
+                double outstandingPrice = 0;
 
                 netpnl += todaypnl;
 
-                var ltp = upstoxBroker.GetEquityLTP(stock)
+
+
+                double ltp;
+                DateTime lut;
+                upstoxBroker.GetEquityLTP(stockConfig.exchange == Exchange.NSE ? "NSE_EQ" : "BSE_EQ", stockCode, out ltp, out lut);
+                if (DateTime.Now - lut >= TimeSpan.FromMinutes(5))
+                    ltp = 0;
+
+                var unrealized = ltp > 0 ? outstandingQty * (ltp - outstandingPrice) : 0;
+
+                var positionFile = AlgoUtils.GetPositionFile(stockConfig.stockCode);
+                var positionLines = File.ReadAllLines(positionFile);
+
+
+                if (positionLines.Length > 0)
+                    if (!string.IsNullOrEmpty(positionLines[0]))
+                    {
+                        var split = positionLines[0].Split(' ');
+                        outstandingQty = int.Parse(split[0].Trim());
+                        outstandingPrice = double.Parse(split[1].Trim());
+                    }
 
 
 
-                string.Format("{0},{1}")
+                if (configToday != lines[0])
+                    File.AppendAllLines(pnlFilePath, new[] { configToday });
+
+                var readPnLLines = File.ReadAllLines(pnlFilePath);
+
+                readPnLLines[0] = string.Format("{0},{1},{2},{3},{4}", netpnl, unrealized, outstandingQty, outstandingPrice, ltp);
+
+                var summaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6}", DateTime.Today.ToString(), todaypnl, todayBuyTrades,
+                    todaySellTrades, orderQty, todayBuyQty, todaySellQty);
+
+                var finalPnLLines = readPnLLines.ToList();
+                finalPnLLines.Add(summaryToday);
+                File.WriteAllLines(pnlFilePath, finalPnLLines);
+
 
             }
         }
@@ -259,6 +295,7 @@ date,todaypnl,# of buy trades, # of sell trades, qty multiple, buy qty, sell qty
                 sellMarkupForDelivery = double.Parse(common[++Index]),
                 pctExtraMarkdownForAveraging = double.Parse(common[++Index]),
                 sellMarkupForMinProfit = double.Parse(common[++Index]),
+                placeBuyNoLtpCompare = bool.Parse(common[++Index]),
                 squareOffAllPositionsAtEOD = bool.Parse(common[++Index]),
                 pctMaxLossSquareOffPositionsAtEOD = double.Parse(common[++Index]),
                 useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = bool.Parse(common[++Index]),
@@ -305,6 +342,7 @@ date,todaypnl,# of buy trades, # of sell trades, qty multiple, buy qty, sell qty
                     sellMarkupForDelivery = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForDelivery : double.Parse(stock[Index])) : ctp.sellMarkupForDelivery,//9
                     pctExtraMarkdownForAveraging = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.pctExtraMarkdownForAveraging : double.Parse(stock[Index])) : ctp.pctExtraMarkdownForAveraging,//6
                     sellMarkupForMinProfit = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkupForMinProfit : double.Parse(stock[Index])) : ctp.sellMarkupForMinProfit,//10
+                    placeBuyNoLtpCompare = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.placeBuyNoLtpCompare : bool.Parse(stock[Index])) : ctp.placeBuyNoLtpCompare,//12
                     squareOffAllPositionsAtEOD = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.squareOffAllPositionsAtEOD : bool.Parse(stock[Index])) : ctp.squareOffAllPositionsAtEOD,//12
                     pctMaxLossSquareOffPositionsAtEOD = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.pctMaxLossSquareOffPositionsAtEOD : double.Parse(stock[Index])) : ctp.pctMaxLossSquareOffPositionsAtEOD,//13
                     useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder : bool.Parse(stock[Index])) : ctp.useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,//14
@@ -366,6 +404,7 @@ date,todaypnl,# of buy trades, # of sell trades, qty multiple, buy qty, sell qty
         public double sellMarkupForDelivery = 1.025;
         public double sellMarkupForMinProfit = 1.0035;
         public double sellMarkupForEODInsufficientLimitSquareOff = 0.995;
+        public bool placeBuyNoLtpCompare = false;
         public bool squareOffAllPositionsAtEOD = false;
         public double pctMaxLossSquareOffPositionsAtEOD = .01;
         public bool useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = false;
@@ -375,5 +414,41 @@ date,todaypnl,# of buy trades, # of sell trades, qty multiple, buy qty, sell qty
 
         public DateTime startTime = MarketUtils.GetTimeToday(9, 0);
         public DateTime endTime = MarketUtils.GetTimeToday(15, 0);
+    }
+
+    public class AlgoUtils
+    {
+        public static string GetPositionFile(string stockCode)
+        {
+            return Path.Combine(SystemUtils.GetPositionFilesLocation(), @"PositionFile_" + stockCode + ".txt");
+        }
+
+        //public static BrokerErrorCode GetLTPOnDemand(string exchStr, string stockCode, out double ltp)
+        //{
+        //    EquitySymbolQuote[] quote;
+        //    BrokerErrorCode errCode = BrokerErrorCode.Unknown;
+        //    int retryCount = 0;
+        //    DateTime lut;
+        //    ltp = 0.0;
+
+        //    while (errCode != BrokerErrorCode.Success && retryCount++ < 3)
+        //        try
+        //        {
+        //            errCode = myUpstoxWrapper.GetEquityLTP(exchStr, stockCode, out ltp, out lut);
+        //            if (MarketUtils.IsMarketOpen())
+        //            {
+        //                if (DateTime.Now - lut >= TimeSpan.FromMinutes(5))
+        //                    ltp = 0;
+        //            }
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+        //            if (retryCount >= 3)
+        //                break;
+        //        }
+
+        //    return errCode;
+        //}
     }
 }

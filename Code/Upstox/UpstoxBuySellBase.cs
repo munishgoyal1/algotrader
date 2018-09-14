@@ -8,8 +8,9 @@ using StockTrader.Core;
 using StockTrader.Platform.Logging;
 using StockTrader.Utilities;
 using UpstoxNet;
+using UpstoxTrader;
 
-namespace SimpleTrader
+namespace UpstoxTrader
 {
     public class HoldingOrder
     {
@@ -32,6 +33,7 @@ namespace SimpleTrader
         public double sellMarkupForMinProfit;
         public double sellMarkupForEODInsufficientLimitSquareOff;
         public double pctSquareOffForMinProfit;
+        public bool placeBuyNoLtpCompare;
         public bool squareOffAllPositionsAtEOD;
         public double pctMaxLossSquareOffPositions;
         public bool useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder;
@@ -95,7 +97,7 @@ namespace SimpleTrader
             maxBuyOrdersAllowedInADay = tradeParams.maxBuyOrdersAllowedInADay;
             exchange = tradeParams.exchange;
             exchStr = exchange == Exchange.NSE ? "NSE_EQ" : "BSE_EQ";
-            positionFile = Path.Combine(SystemUtils.GetPositionFilesLocation(), @"PositionFile_" + stockCode + ".txt");
+            positionFile = AlgoUtils.GetPositionFile(stockCode);
 
             buyPriceCap = tradeParams.buyPriceCap;
             goodPrice = tradeParams.goodPrice;
@@ -106,6 +108,7 @@ namespace SimpleTrader
             sellMarkupForDelivery = tradeParams.sellMarkupForDelivery;
             sellMarkupForMinProfit = tradeParams.sellMarkupForMinProfit;
             sellMarkupForEODInsufficientLimitSquareOff = tradeParams.sellMarkupForEODInsufficientLimitSquareOff;
+            placeBuyNoLtpCompare = tradeParams.placeBuyNoLtpCompare;
             squareOffAllPositionsAtEOD = tradeParams.squareOffAllPositionsAtEOD;
             pctMaxLossSquareOffPositions = tradeParams.pctMaxLossSquareOffPositionsAtEOD;
             useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = tradeParams.useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder;
@@ -230,12 +233,13 @@ namespace SimpleTrader
                 if (dematHoldings.Any())
                 {
                     var dematHolding = dematHoldings.First();
-                    if (dematHolding.AvailableQuantity > 0)
+                    if (dematHolding.BlockedQuantity < holdingOutstandingQty)
                     {
-                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, dematHolding.AvailableQuantity, EquityOrderType.DELIVERY, sellPrice, out sellOrderId);
+                        var pendingQty = holdingOutstandingQty - dematHolding.BlockedQuantity;
+                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, pendingQty, EquityOrderType.DELIVERY, sellPrice, out sellOrderId);
                         if (errCode == BrokerErrorCode.Success)
                         {
-                            holdingsOrders.Add(new HoldingOrder { Type = OrderPositionTypeEnum.Demat, OrderId = sellOrderId, Qty = dematHolding.AvailableQuantity, SettlementNumber = "" });
+                            holdingsOrders.Add(new HoldingOrder { Type = OrderPositionTypeEnum.Demat, OrderId = sellOrderId, Qty = pendingQty, SettlementNumber = "" });
                         }
                     }
                 }
