@@ -28,6 +28,9 @@ namespace StockTrader.Brokers.UpstoxBroker
         private Dictionary<string, EquityTradeBookRecord> mEquityTradeBook = new Dictionary<string, EquityTradeBookRecord>();
         private Dictionary<string, EquityOrderBookRecord> mEquityOrderBook = new Dictionary<string, EquityOrderBookRecord>();
 
+        private Dictionary<string, HashSet<string>> mOrderIds = new Dictionary<string, HashSet<string>>();
+
+
         //public Dictionary<string, UpstoxBuySellBase> stockAlgos = new Dictionary<string, UpstoxBuySellBase>();
 
         public MyUpstoxWrapper(string apiKey, string apiSecret, string redirectUrl)
@@ -36,6 +39,12 @@ namespace StockTrader.Brokers.UpstoxBroker
             upstox.Api_Secret = apiSecret;
             upstox.Redirect_Url = redirectUrl;//"https://upstox.com";  // should be exactly same in API dashboard
             //https://api.upstox.com/index/dialog/authorize?apiKey={}&redirect_uri=https://upstox.com&response_type=code
+        }
+
+        public void AddStock(string stockCode)
+        {
+            if (!string.IsNullOrEmpty(stockCode) && !mOrderIds.ContainsKey(stockCode))
+                mOrderIds.Add(stockCode, new HashSet<string>());
         }
 
         public BrokerErrorCode Login()
@@ -234,12 +243,98 @@ namespace StockTrader.Brokers.UpstoxBroker
                 BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
                 orderId = "";
 
+                if (quantity == 0)
+                {
+                    Trace("Not placing order as quantity is 0");
+                    return errorCode;
+                }
+                if (price == 0 && orderPriceType == OrderPriceType.LIMIT)
+                {
+                    Trace("Not placing order as price is 0 for limit order");
+                    return errorCode;
+                }
+
+                var transType = orderDirection == OrderDirection.BUY ? "B" : "S";
+                var ordType = orderPriceType == OrderPriceType.LIMIT ? "L" : "M";
+                var prodType = orderType == EquityOrderType.DELIVERY ? "D" : "I";
+
                 try
                 {
-                    var transType = orderDirection == OrderDirection.BUY ? "B" : "S";
-                    var ordType = orderPriceType == OrderPriceType.LIMIT ? "L" : "M";
-                    var prodType = orderType == EquityOrderType.DELIVERY ? "D" : "I";
                     orderId = upstox.PlaceSimpleOrder(exchange, stockCode, transType, ordType, quantity, prodType, price);
+
+                    mOrderIds[stockCode].Add(orderId);
+
+                    errorCode = GetOrderStatus(orderId);
+
+                }
+                catch (Exception ex)
+                {
+                    Trace("Potential Error in PlaceOrder (Checking if order was placed or not)." + ex.Message + "\nStacktrace:" + ex.StackTrace);
+
+                    var lastOrderId = upstox.GetLastOrderId(exchange, stockCode, prodType);
+
+                    if (!string.IsNullOrEmpty(lastOrderId) && !mOrderIds[stockCode].Contains(lastOrderId))
+                    {
+                        errorCode = GetOrderStatus(lastOrderId);
+
+                        if (errorCode == BrokerErrorCode.Success)
+                            mOrderIds[stockCode].Add(lastOrderId);
+
+                        Trace("Reconciled the order, updated status: " + errorCode);
+                    }
+                }
+
+                return errorCode;
+            }
+        }
+
+        private BrokerErrorCode GetOrderStatus(string orderId)
+        {
+            BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+            var status = upstox.GetOrderStatus(orderId);
+
+            if (status.ToLower() == "rejected")
+                errorCode = BrokerErrorCode.OrderRejected;
+            else
+                errorCode = BrokerErrorCode.Success;
+
+            return errorCode;
+        }
+
+        public BrokerErrorCode GetPositions(string stockCode, out List<EquityPositionRecord> positions)
+        {
+            lock (lockSingleThreadedUpstoxCall)
+            {
+                BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+                positions = new List<EquityPositionRecord>();
+                try
+                {
+                    var response = upstox.GetPositions();
+
+                    string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
+
+                    for (int i = 1; i < lines.Length; i++)
+                    {
+                        var line = lines[i].Split(',');
+
+                        if (line.Length < 19)
+                            continue;
+
+                        if (!string.IsNullOrEmpty(stockCode) &&
+                            !line[1].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
+                        {
+                            continue;
+                        }
+
+                        var position = new EquityPositionRecord();
+                       
+                        position.Exchange = line[0];
+                        position.EquityOrderType = line[1] == "D" ? EquityOrderType.DELIVERY : EquityOrderType.MARGIN;
+                        position.StockCode = line[2];
+                        position.NetQuantity = int.Parse(line[13]);
+
+                        positions.Add(position);
+                    }
 
                     errorCode = BrokerErrorCode.Success;
                 }
@@ -302,6 +397,7 @@ namespace StockTrader.Brokers.UpstoxBroker
         }
 
         //EXCHANGE,TOKEN,SYMBOL,PRODUCT,ORDER_TYPE,TRANSACTION_TYPE,TRADED_QUANTITY,EXCHANGE_ORDER_ID,ORDER_ID,EXCHANGE_TIME,TIME_IN_MICRO,TRADED_PRICE,TRADE_ID
+        // consolidated all trades for a given order, and final trade list contains consolidated trade for each order
         public BrokerErrorCode GetTradeBook(bool newTradesOnly, string stockCode, out Dictionary<string, EquityTradeBookRecord> trades)
         {
             lock (lockSingleThreadedUpstoxCall)
@@ -318,6 +414,8 @@ namespace StockTrader.Brokers.UpstoxBroker
                         var response = upstox.GetTradeBook();
 
                         string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
+
+                        var uniqueconsolidatedTrades = new Dictionary<string, EquityTradeBookRecord>();
 
                         for (int i = 1; i < lines.Length; i++)
                         {
@@ -343,6 +441,38 @@ namespace StockTrader.Brokers.UpstoxBroker
                             trade.EquityOrderType = line[3] == "D" ? EquityOrderType.DELIVERY : EquityOrderType.MARGIN;
                             trade.Exchange = line[0];
 
+                            if (uniqueconsolidatedTrades.ContainsKey(trade.OrderId))
+                            {
+                                var consolidatedTrade = uniqueconsolidatedTrades[trade.OrderId];
+
+                                var price = ((consolidatedTrade.Quantity * consolidatedTrade.Price) + (trade.Quantity * trade.Price)) / (trade.Quantity + consolidatedTrade.Quantity);
+                                price = Math.Round(price, 2);
+                                var quantity = trade.Quantity + consolidatedTrade.Quantity;
+                                var newQuantity = trade.NewQuantity + consolidatedTrade.NewQuantity;
+
+                                if (trade.DateTime > consolidatedTrade.DateTime)
+                                {
+                                    trade.Price = price;
+                                    trade.Quantity = quantity;
+                                    trade.NewQuantity = newQuantity;
+                                    uniqueconsolidatedTrades[trade.OrderId] = trade;
+                                }
+                                else
+                                {
+                                    consolidatedTrade.Price = price;
+                                    consolidatedTrade.Quantity = quantity;
+                                    consolidatedTrade.NewQuantity = newQuantity;
+                                }
+                            }
+                            else
+                            {
+                                uniqueconsolidatedTrades.Add(trade.OrderId, trade);
+                            }
+                        }
+
+
+                        foreach (var trade in uniqueconsolidatedTrades.Select(kv => kv.Value).ToList())
+                        {
                             lock (lockObjectEquity)
                             {
                                 // existing trade
@@ -540,7 +670,5 @@ namespace StockTrader.Brokers.UpstoxBroker
                 return upstox.GetBoughtQty(exchange, stockCode);
             }
         }
-
-
     }
 }

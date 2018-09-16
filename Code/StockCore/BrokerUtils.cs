@@ -36,5 +36,6 @@ namespace StockTrader.Utilities.Broker
 
             return true;
         }
+
     }
 }
