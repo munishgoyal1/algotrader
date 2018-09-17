@@ -196,7 +196,7 @@ namespace StockTrader.Utilities
                 return false;
             }
             if (Now.Hour < 9) return false;
-            if (Now.Hour == 9 && Now.Minute < 16) return false;
+            if (Now.Hour == 9 && Now.Minute < 15) return false;
             if (Now.Hour < 15) return true;
             if (Now.Hour > 15) return false;
             if (Now.Minute < 31) return true;

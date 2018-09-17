@@ -41,19 +41,19 @@ namespace UpstoxTrader
                 double priceArrivedFromHolding = double.MaxValue;
                 double priceArrivedFromTodayOutstanding = double.MaxValue;
                 double priceArrivedFromLtpDefault = Math.Round(0.999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
-                double buyPrice = priceArrivedFromLtpDefault;
+                double calculatedToBuyPrice = priceArrivedFromLtpDefault;
                 var priceStrategy = "Default markdown from Ltp";
 
-                if (holdingOutstandingQty > 0 && buyPrice <= 0)
+                if (holdingOutstandingQty > 0 && calculatedToBuyPrice <= 0)
                 {
                     markDownPct = buyMarkdownFromLcpDefault;// + pctExtraMarkdownForAveraging;
                     lastPriceToCompareWith = holdingOutstandingPrice;
                     priceArrivedFromHolding = Math.Round(0.999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
 
-                    if (priceArrivedFromHolding < buyPrice)
+                    if (priceArrivedFromHolding < calculatedToBuyPrice)
                     {
                         priceStrategy = "Average from Holding Price";
-                        buyPrice = priceArrivedFromHolding;
+                        calculatedToBuyPrice = priceArrivedFromHolding;
                     }
                 }
 
@@ -63,25 +63,19 @@ namespace UpstoxTrader
                     lastPriceToCompareWith = lastBuyPrice;
                     priceArrivedFromTodayOutstanding = Math.Round(0.999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
 
-                    //if (priceArrivedFromTodayOutstanding < buyPrice)
-                    {
-                        priceStrategy = "Average from Today's outstanding";
-                        buyPrice = priceArrivedFromTodayOutstanding;
-                    }
+                    priceStrategy = "Average from Today's outstanding";
+                    calculatedToBuyPrice = priceArrivedFromTodayOutstanding;
                 }
 
-                buyPrice = Math.Min(buyPrice, ltp);
-                buyPrice = Math.Min(buyPrice, buyPriceCap);
+                calculatedToBuyPrice = Math.Min(calculatedToBuyPrice, ltp);
+                calculatedToBuyPrice = Math.Min(calculatedToBuyPrice, buyPriceCap);
 
                 // if ltp is less than required price then place the order or if there is no outstanding today then place the order anyway
-                if (errCode == BrokerErrorCode.Success && (todayOutstandingQty == 0 || (placeBuyNoLtpCompare || (ltp <= buyPrice))))
+                if (errCode == BrokerErrorCode.Success && (todayOutstandingQty == 0 || (placeBuyNoLtpCompare || (ltp <= calculatedToBuyPrice))))
                 {
-                    if (todayOutstandingQty != 0)
-                        Trace(string.Format("LTP {0} is -{1}% of Last {3} price {2}", ltp, markDownPct * 100, lastPriceToCompareWith, priceStrategy));
-                    else
-                        Trace(string.Format("LTP {0} lastPriceToCompareWith {1} markDownPct {2} PriceStrategy {3}", ltp, lastPriceToCompareWith, markDownPct, priceStrategy));
+                    Trace(string.Format("LTP {0} calculatedToBuyPrice {1} lastPriceToCompareWith {2} placeBuyNoLtpCompare {3} PriceStrategy {4}", ltp, calculatedToBuyPrice, lastPriceToCompareWith, placeBuyNoLtpCompare, priceStrategy));
                     // place buy order, update buy order ref
-                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.BUY, OrderPriceType.LIMIT, ordQty, orderType, buyPrice, out todayOutstandingBuyOrderId);
+                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.BUY, OrderPriceType.LIMIT, ordQty, orderType, calculatedToBuyPrice, out todayOutstandingBuyOrderId);
                 }
             }
         }
@@ -89,7 +83,7 @@ namespace UpstoxTrader
         public override void StockBuySell()
         {
             try
-            { 
+            {
                 Init(AlgoType.AverageTheBuyThenSell);
             }
             catch (Exception ex)
@@ -195,7 +189,7 @@ namespace UpstoxTrader
                 if (MarketUtils.IsTimeAfter3XMin(0))
                 {
                     // check if position conversion is already manually done then cancel the Margin order and update position file
-                    
+
 
                 }
 
