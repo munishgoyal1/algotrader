@@ -6,7 +6,6 @@ SUNPHARMA,600,700,MARGIN,700,,,0.01,1.005,1.01,0.01,,true
 # high volatile so let market stabilize for 5 min. could also increase the markdowns
 #
 IBULHSGFIN,1100,1300,MARGIN,1200,,,0.01,1.01,1.01,0.01,,false,,,,09:20:00
-RELIANCE,1150,1300,MARGIN,1200,,,0.005,1.005,1.01,0.01,,true,,,,09:20:00
 INFY,700,800,MARGIN,800,,,0.005,1.005,1.01,0.01,,true,,,,09:20:00
 ADANIPORTS,350,400,MARGIN,400,,,0.01,1.01,1.01,0.01,,true,,,,09:20:00
 INDUSINDBK,1800,2000,MARGIN,2000,,,0.0075,1.0075,1.01,0.01,,true,,,,09:20:00
@@ -32,3 +31,7 @@ FEDERALBNK,75,95,MARGIN,100
 # Long term volatile short term range bound. Buy Low sell with small profit
 #
 DLF,185,225,MARGIN,250,,,0.015,1.005,1.01,0.025
+#
+# Fast trading. Stable Bluechip
+#
+RELIANCE,1150,1300,MARGIN,1200,,,0.0025,1.0025,1.005,0.01,,true,,,,09:20:00

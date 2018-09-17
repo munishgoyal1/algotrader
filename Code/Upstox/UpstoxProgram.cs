@@ -144,7 +144,7 @@ namespace UpstoxTrader
                 threads.Add(t);
             }
 
-            threads.ForEach(t => { t.Start(); Thread.Sleep(1000); });
+            threads.ForEach(t => { t.Start(); Thread.Sleep(200); });
             threads.ForEach(t => t.Join());
 
 
