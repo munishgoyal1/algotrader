@@ -511,7 +511,7 @@ namespace UpstoxTrader
 
                     Trace(string.Format("[Margin EOD]: diff {0} ltp {1} outstandingprice {2} pctMaxLossSquareOffPositions {3} goodPrice {4} ", diff, ltp, todayOutstandingPrice, pctMaxLossSquareOffPositions, goodPrice));
 
-                    if ((Math.Abs(diff) < pctMaxLossSquareOffPositions || diff > 0) && todayOutstandingPrice > goodPrice)
+                    if (diff > pctMaxLossSquareOffPositions && todayOutstandingPrice > goodPrice)
                     {
                         strategy = string.Format("[Margin EOD]: max loss {0}% is less than {1}% and avg outstanding price {2} is greater than good price of {3}. LTP is {4}. Place squareoff @ MARKET.", diff, pctMaxLossSquareOffPositions, todayOutstandingPrice, goodPrice, ltp);
                         updateSellOrder = true;

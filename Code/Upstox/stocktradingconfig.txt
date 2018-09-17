@@ -1,15 +1,30 @@
 stockCode, goodprice, buyPriceCap (in stock lines below) and then the commonconfig as follows:  orderType, maxTradeValue,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,buyMarkdownFromLcpDefault,sellMarkupForMargin,sellMarkupForDelivery,pctExtraMarkdownForAveraging,sellMarkupForMinProfit,placeBuyNoLtpCompare,squareOffAllPositionsAtEOD,pctMaxLossSquareOffPositionsAtEOD,useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,startTime,endTime,Exchange,sellMarkupForEODInsufficientLimitSquareOff,maxBuyOrdersAllowedInADay,doConvertToDeliveryAtEOD,doSquareOffIfInsufficientLimitAtEOD
-MARGIN,400,4,4,0.005,1.005,1.01,0.005,1.003,false,true,0.001,false,09:00:00,15:00:00,NSE,0.995,4,true,false
-IDFCBANK,45,55,MARGIN,60
-FEDERALBNK,75,95,MARGIN,100
-CAPLIPOINT,400,550,DELIVERY,500,,,0.015,1.01,1.015,0.01
-ITC,310,330
-TATAMOTORS,260,295
-BERGEPAINT,285,310
-PCJEWELLER,75,90,MARGIN,100
-UJJIVAN,325,375
+MARGIN,400,4,4,0.005,1.005,1.01,0.005,1.003,false,true,-0.001,false,09:00:00,15:00:00,NSE,0.995,4,true,falses
 ZEEL,450,500,MARGIN,500,,,0.01,1.01,1.01,0.01,,true
 SUNPHARMA,600,700,MARGIN,700,,,0.01,1.01,1.01,0.01,,true
+#
+# high volatile so let market stabilize for 5 min. could also increase the markdowns
+#
 IBULHSGFIN,1100,1300,MARGIN,1200,,,0.01,1.01,1.01,0.01,,false,,,,09:20:00
 RELIANCE,1150,1300,MARGIN,1200,,,0.005,1.005,1.01,0.01,,true,,,,09:20:00
 INFY,700,800,MARGIN,800,,,0.005,1.005,1.01,0.01,,true,,,,09:20:00
+ADANIPORTS,350,400,MARGIN,400,,,0.01,1.01,1.01,0.01,,true,,,,09:20:00
+INDUSINDBK,1800,2000,MARGIN,2000,,,0.0075,1.0075,1.01,0.01,,true,,,,09:20:00
+PCJEWELLER,75,90,MARGIN,100,,,0.0075,1.0075,1.01,0.01,,true,,,,09:20:00
+#
+# stock where we want to average and they have long term uptrend
+#
+BIOCON,600,700,MARGIN,1000,,,0.02,1.025,1.025,0.02
+AMARAJABAT,800,900,MARGIN,1000,,,0.02,1.025,1.025,0.02
+IGL,250,300,MARGIN,300,,,0.02,1.025,1.025,0.02
+BAJFINANCE,2500,3000,MARGIN,3000,,,0.02,1.025,1.025,0.02
+CAPLIPOINT,400,550,DELIVERY,500,,,0.015,1.01,1.015,0.01
+#
+# Low volatile range bound. So try small multiple trades
+#
+ITC,310,330
+TATAMOTORS,260,295
+BERGEPAINT,285,310
+UJJIVAN,325,375
+IDFCBANK,45,55,MARGIN,60
+FEDERALBNK,75,95,MARGIN,100
