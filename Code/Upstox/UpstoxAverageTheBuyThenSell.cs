@@ -40,7 +40,7 @@ namespace UpstoxTrader
 
                 double priceArrivedFromHolding = double.MaxValue;
                 double priceArrivedFromTodayOutstanding = double.MaxValue;
-                double priceArrivedFromLtpDefault = Math.Round(0.999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
+                double priceArrivedFromLtpDefault = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
                 double calculatedToBuyPrice = priceArrivedFromLtpDefault;
                 var priceStrategy = "Default markdown from Ltp";
 
@@ -48,7 +48,7 @@ namespace UpstoxTrader
                 {
                     markDownPct = buyMarkdownFromLcpDefault;// + pctExtraMarkdownForAveraging;
                     lastPriceToCompareWith = holdingOutstandingPrice;
-                    priceArrivedFromHolding = Math.Round(0.999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
+                    priceArrivedFromHolding = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
 
                     if (priceArrivedFromHolding < calculatedToBuyPrice)
                     {
@@ -61,7 +61,7 @@ namespace UpstoxTrader
                 {
                     markDownPct = buyMarkdownFromLcpDefault + (pctExtraMarkdownForAveraging * todayBuyOrderCount);
                     lastPriceToCompareWith = lastBuyPrice;
-                    priceArrivedFromTodayOutstanding = Math.Round(0.999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
+                    priceArrivedFromTodayOutstanding = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
 
                     priceStrategy = "Average from Today's outstanding";
                     calculatedToBuyPrice = priceArrivedFromTodayOutstanding;
@@ -115,7 +115,8 @@ namespace UpstoxTrader
 
                             // if SELL executed, then update today outstanding to 0 , because sell order always contains the total outstanding qty and now all of it got sold with this trade
                             // but handle part executions using NewQuantity
-                            if (tradeRef == todayOutstandingSellOrderId)
+                            // If it is after 3.15 and broker did auto sq off, then we dont get info on our existing sq off order cancel and auto-sqoff new order id. Handle that case and update outstanding qty
+                            if (tradeRef == todayOutstandingSellOrderId || (MarketUtils.IsTimeAfter315() && trade.EquityOrderType == EquityOrderType.MARGIN))
                             {
                                 todayOutstandingQty -= trade.NewQuantity;
 

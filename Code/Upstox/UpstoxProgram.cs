@@ -54,11 +54,16 @@ namespace UpstoxTrader
         [STAThread]
         static void Main(string[] args)
         {
+            
             BrokerErrorCode errCode = BrokerErrorCode.Unknown;
 
             var upstoxBroker = new MyUpstoxWrapper(apiKey, apiSecret, redirectUrl);
-            errCode = upstoxBroker.Login();
 
+#if DEBUG
+            Trace("DEBUG MODE");errCode = upstoxBroker.Login1();
+#else
+            Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
+#endif
             // Check for Holiday today
             if (IsHolidayToday())
             {
@@ -147,7 +152,7 @@ namespace UpstoxTrader
             threads.ForEach(t => { t.Start(); Thread.Sleep(200); });
             threads.ForEach(t => t.Join());
 
-
+            Trace("Update PnL files");
             WritePnL(upstoxBroker, stocksConfig);
 
             // Send out the log in email and chat
@@ -181,15 +186,18 @@ namespace UpstoxTrader
                 var configToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8}", stockConfig.stockCode, stockConfig.goodPrice,
                         stockConfig.buyPriceCap, stockConfig.buyMarkdownFromLcpDefault,
                         stockConfig.sellMarkupForMargin, stockConfig.sellMarkupForDelivery, stockConfig.pctExtraMarkdownForAveraging,
-                        stockConfig.placeBuyNoLtpCompare, stockConfig.startTime.ToString("hhmm"));
+                        stockConfig.placeBuyNoLtpCompare, stockConfig.startTime.ToString("hh:mm"));
+
+                
 
                 if (!File.Exists(pnlFilePath))
                 {
-                    File.WriteAllLines(pnlFilePath, new[] { configToday });
+                    var defaultSummary = string.Format("{0},{1},{2},{3},{4}", 0, 0, 0, 0, 0);
+                    File.WriteAllLines(pnlFilePath, new[] { defaultSummary, configToday });
                 }
 
 
-                var lines = File.ReadAllLines(pnlFilePath);
+                var pnlLines = File.ReadAllLines(pnlFilePath);
 
                 //if(configToday != lines[0])
                 /*
@@ -199,8 +207,8 @@ date,todaypnl,# of buy trades, # of sell trades, ordqty, buy qty, sell qty
 
                 //holding sell qty, prev outstanding qty@price, today outstanding qty@price,net outstanding qty@price
 */
-                var configLine = lines[0].Split(',');//
-                var summaryLine = lines[1].Split(',');
+                var configLine = pnlLines[1].Split(',');//
+                var summaryLine = pnlLines[0].Split(',');
 
                 var todayBuyTrades = trades.Sum(t => t.Direction == OrderDirection.BUY ? 1 : 0);
                 var todaySellTrades = trades.Sum(t => t.Direction == OrderDirection.SELL ? 1 : 0);
@@ -210,26 +218,20 @@ date,todaypnl,# of buy trades, # of sell trades, ordqty, buy qty, sell qty
                 var todaySellValue = trades.Sum(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == stockConfig.orderType ? t.Quantity * t.Price : 0);
                 var todaypnl = todaySellValue - todayBuyValue;
                 var orderQty = stockConfig.ordQty;
-                var netpnl = double.Parse(summaryLine[0]);
-                double outstandingQty = 0;
-                double outstandingPrice = 0;
-
-                netpnl += todaypnl;
-
-
-
+                
+               
+                // Get Ltp
                 double ltp;
                 DateTime lut;
                 upstoxBroker.GetEquityLTP(stockConfig.exchange == Exchange.NSE ? "NSE_EQ" : "BSE_EQ", stockCode, out ltp, out lut);
                 if (DateTime.Now - lut >= TimeSpan.FromMinutes(5))
                     ltp = 0;
 
-                var unrealized = ltp > 0 ? outstandingQty * (ltp - outstandingPrice) : 0;
-
+                // Get final holding position
+                double outstandingQty = 0;
+                double outstandingPrice = 0;
                 var positionFile = AlgoUtils.GetPositionFile(stockConfig.stockCode);
                 var positionLines = File.ReadAllLines(positionFile);
-
-
                 if (positionLines.Length > 0)
                     if (!string.IsNullOrEmpty(positionLines[0]))
                     {
@@ -239,22 +241,49 @@ date,todaypnl,# of buy trades, # of sell trades, ordqty, buy qty, sell qty
                     }
 
 
+                double todayrealized = 0;
+                double todayunrealized = 0;
+                double todaymtm = todayrealized + todayunrealized;
+                double todayholdingcost = 0;// today's deliveries
+                double todayinflow = todayrealized + todayholdingcost;
 
-                if (configToday != lines[0])
+                double netrealized = double.Parse(summaryLine[1]);
+                netrealized += todayrealized;
+                double netunrealized = ltp > 0 ? outstandingQty * (ltp - outstandingPrice) : 0;
+                double netmtm = netrealized + netunrealized;
+                double currentholdingatcost = outstandingQty * outstandingPrice;
+                double netinflow = netrealized + currentholdingatcost;
+
+                todaymtm = Math.Round(todaymtm, 1);
+                todayrealized = Math.Round(todayrealized, 1);
+                todayunrealized = Math.Round(todayunrealized, 1);
+                todayinflow = Math.Round(todayinflow, 1);
+                todayholdingcost = Math.Round(todayholdingcost, 1);
+               
+                netmtm = Math.Round(netmtm, 1);
+                netrealized = Math.Round(netrealized, 1);
+                netunrealized = Math.Round(netunrealized, 1);
+                netinflow = Math.Round(netinflow, 1);
+                currentholdingatcost = Math.Round(currentholdingatcost, 1);
+
+      
+                var lastConfigLine = pnlLines.Where(l => l.StartsWith(stockCode)).Last();
+
+                if (configToday != lastConfigLine)
                     File.AppendAllLines(pnlFilePath, new[] { configToday });
 
                 var readPnLLines = File.ReadAllLines(pnlFilePath);
 
-                readPnLLines[0] = string.Format("{0},{1},{2},{3},{4}", netpnl, unrealized, outstandingQty, outstandingPrice, ltp);
+                readPnLLines[0] = string.Format("{0},{1},{2},{3},{4},{5},{6}, {7}", netmtm, netrealized, netunrealized, netinflow, currentholdingatcost, 
+                    outstandingQty, outstandingPrice, ltp);
 
-                var summaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6}", DateTime.Today.ToString(), todaypnl, todayBuyTrades,
-                    todaySellTrades, orderQty, todayBuyQty, todaySellQty);
+                var summaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}", DateTime.Today.ToString("dd-MM-yyyy"), 
+                    todaymtm, todayrealized, todayunrealized, todayinflow, todayholdingcost,
+                    todayBuyTrades, todaySellTrades, orderQty, todayBuyQty, todaySellQty);
 
                 var finalPnLLines = readPnLLines.ToList();
                 finalPnLLines.Add(summaryToday);
                 File.WriteAllLines(pnlFilePath, finalPnLLines);
-
-
             }
         }
 

@@ -41,7 +41,13 @@ namespace StockTrader.Utilities
         public static bool IsTimeAfter(DateTime timeToCompare)
         {
             var r1 = TimeSpan.Compare(DateTime.Now.TimeOfDay, timeToCompare.TimeOfDay);
-            return r1 > 0;
+            return r1 >= 0;
+        }
+
+        public static bool IsTimeBefore(DateTime timeToCompare)
+        {
+            var r1 = TimeSpan.Compare(DateTime.Now.TimeOfDay, timeToCompare.TimeOfDay);
+            return r1 <= 0;
         }
 
         public static bool IsTimeAfter330Market(DateTime date)
@@ -68,6 +74,15 @@ namespace StockTrader.Utilities
         public static bool IsTimeAfter3XMin(int min)
         {
             return IsTimeAfter3XMin(DateTime.Now, min);
+        }
+
+        public static bool IsMinutesAfter3Between(int min, int max)
+        {
+            DateTime date = DateTime.Now;
+            if (date.Hour != 15) return false;
+            if (date.Minute < min) return false;
+            if (date.Minute > max) return false;
+            return true;
         }
 
         public static bool IsTimeAfter2XMin(DateTime date, int min)

@@ -72,7 +72,7 @@ namespace UpstoxTrader
         public bool isFirstBuyOrder = true;
 
         public int todayBuyOrderCount = 0;
-        public const string orderTraceFormat = "{4} Order: {5} {0} {1} {2} @ {3} {6}";
+        public const string orderTraceFormat = "[Place Order {4}]: {5} {0} {1} {2} @ {3} {6}. OrderId = {7}";
         public const string orderCancelTraceFormat = "{0}: {1} {2} {3}: {4}";
         public const string tradeTraceFormat = "{4} Trade: {0} {1} {2} @ {3}";
         public const string deliveryTraceFormat = "Conversion to delivery: {0} {1} qty of {2}";
@@ -408,7 +408,7 @@ namespace UpstoxTrader
 
             errCode = myUpstoxWrapper.PlaceEquityOrder(exchange, stockCode, orderDirection, orderPriceType, quantity, orderType, price, out orderId);
 
-            Trace(string.Format(orderTraceFormat, stockCode, orderDirection, quantity, price, orderType, errCode, orderPriceType));
+            Trace(string.Format(orderTraceFormat, stockCode, orderDirection, quantity, price, orderType, errCode, orderPriceType, orderId));
 
             if (errCode == BrokerErrorCode.Success && orderDirection == OrderDirection.BUY)
             {
@@ -497,7 +497,7 @@ namespace UpstoxTrader
                     return;
 
                 // 3.05 - 3.10 pm time. market order type if must sqoff at EOD and given pct loss is within acceptable range
-                if (MarketUtils.IsTimeAfter3XMin(5) && !MarketUtils.IsTimeAfter3XMin(10) && squareOffAllPositionsAtEOD && !isEODMinLossSquareOffMarketOrderUpdated)
+                if (MarketUtils.IsMinutesAfter3Between(5, 10) && squareOffAllPositionsAtEOD && !isEODMinLossSquareOffMarketOrderUpdated)
                 {
                     double ltp;
                     var errCode = GetLTP(out ltp);
@@ -520,7 +520,7 @@ namespace UpstoxTrader
                 }
 
                 // 3.00 - 3.05 pm time. try simple limit order with min profit price. watch until 3.10 pm
-                else if (!isEODMinProfitSquareOffLimitOrderUpdated)
+                else if (MarketUtils.IsMinutesAfter3Between(0, 10) && !isEODMinProfitSquareOffLimitOrderUpdated)
                 {
                     strategy = string.Format("[Margin EOD]: MinProfit Squareoff using limit sell order");
                     ordPriceType = OrderPriceType.LIMIT;
@@ -530,7 +530,7 @@ namespace UpstoxTrader
 
                 // Assuming the position and the sqoff order are same qty (i.e. in sync as of now)
                 // for already DELIVERY type sq off order, no need to do anything. Either this logic has already run or the stock was started in DELIVERY mode from starting itself
-                else if(MarketUtils.IsTimeAfter3XMin(10) && !isEODOutstandingPositionConverted && orderType == EquityOrderType.MARGIN)
+                else if (MarketUtils.IsTimeAfter3XMin(10) && !isEODOutstandingPositionConverted && orderType == EquityOrderType.MARGIN)
                 {
                     List<EquityPositionRecord> positions;
                     errCode = myUpstoxWrapper.GetPositions(stockCode, out positions);
@@ -674,9 +674,10 @@ namespace UpstoxTrader
 
             return errCode;
         }
+
         public void PauseBetweenTradeBookCheck()
         {
-            Thread.Sleep(1000 * 30);
+            Thread.Sleep(1000 * 15);
         }
     }
 }
