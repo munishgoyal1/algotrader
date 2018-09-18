@@ -187,28 +187,12 @@ namespace UpstoxTrader
                         stockConfig.buyPriceCap, stockConfig.buyMarkdownFromLcpDefault,
                         stockConfig.sellMarkupForMargin, stockConfig.sellMarkupForDelivery, stockConfig.pctExtraMarkdownForAveraging,
                         stockConfig.placeBuyNoLtpCompare, stockConfig.startTime.ToString("hh:mm"));
-
                 
-
                 if (!File.Exists(pnlFilePath))
                 {
                     var defaultSummary = string.Format("{0},{1},{2},{3},{4}", 0, 0, 0, 0, 0);
                     File.WriteAllLines(pnlFilePath, new[] { defaultSummary, configToday });
                 }
-
-
-                var pnlLines = File.ReadAllLines(pnlFilePath);
-
-                //if(configToday != lines[0])
-                /*
-                 * tradingconfig line
-netpnl, unrealized mtm, holding qty, holding price, ltp
-date,todaypnl,# of buy trades, # of sell trades, ordqty, buy qty, sell qty
-
-                //holding sell qty, prev outstanding qty@price, today outstanding qty@price,net outstanding qty@price
-*/
-                var configLine = pnlLines[1].Split(',');//
-                var summaryLine = pnlLines[0].Split(',');
 
                 var todayBuyTrades = trades.Sum(t => t.Direction == OrderDirection.BUY ? 1 : 0);
                 var todaySellTrades = trades.Sum(t => t.Direction == OrderDirection.SELL ? 1 : 0);
@@ -216,9 +200,9 @@ date,todaypnl,# of buy trades, # of sell trades, ordqty, buy qty, sell qty
                 var todaySellQty = trades.Sum(t => t.Direction == OrderDirection.SELL ? t.Quantity : 0);
                 var todayBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == stockConfig.orderType ? t.Quantity * t.Price : 0);
                 var todaySellValue = trades.Sum(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == stockConfig.orderType ? t.Quantity * t.Price : 0);
-                var todaypnl = todaySellValue - todayBuyValue;
+
+
                 var orderQty = stockConfig.ordQty;
-                
                
                 // Get Ltp
                 double ltp;
@@ -240,14 +224,27 @@ date,todaypnl,# of buy trades, # of sell trades, ordqty, buy qty, sell qty
                         outstandingPrice = double.Parse(split[1].Trim());
                     }
 
+                var prevHoldingQty = outstandingQty - (todayBuyQty - todaySellQty);
+                var todayHoldingQty = outstandingQty - prevHoldingQty;
+                var todayMatchedQty = Math.Min(todayBuyQty, todaySellQty); 
+                //10, 15, 8, 3
+                //10, 7, 2, 5
+                var realizedBuyValue = todayBuyValue - 
 
-                double todayrealized = 0;
-                double todayunrealized = 0;
-                double todaymtm = todayrealized + todayunrealized;
-                double todayholdingcost = 0;// today's deliveries
+                //prevqty, todaybuyqty, sellqty, outstandingvalue
+
+                //var todaypnl = todaySellValue - todayBuyValue;
+
+                double todayrealized = 0;//today matching sell and buy value
+                double todayunrealized = 0;//today delivery mtm
+                double todaymtm = todayrealized + todayunrealized; 
+                double todayholdingcost = todayHoldingQty;//only today delivery cost
                 double todayinflow = todayrealized + todayholdingcost;
 
-                double netrealized = double.Parse(summaryLine[1]);
+                var pnlLines = File.ReadAllLines(pnlFilePath);
+                var netPnLline = pnlLines[0].Split(',');
+
+                double netrealized = double.Parse(netPnLline[1]);
                 netrealized += todayrealized;
                 double netunrealized = ltp > 0 ? outstandingQty * (ltp - outstandingPrice) : 0;
                 double netmtm = netrealized + netunrealized;
