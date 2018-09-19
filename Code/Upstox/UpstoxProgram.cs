@@ -187,9 +187,8 @@ namespace UpstoxTrader
             var globalPnLLine = globalPnLLines[0].Split(',');
 
             double globalnetrealized = double.Parse(globalPnLLine[1]);
-
-            double globalIntradayValue = double.Parse(globalPnLLine[5]);
-            double globalDeliveryValue = double.Parse(globalPnLLine[6]);
+            double globalIntradayValue = double.Parse(globalPnLLine[7]);
+            double globalDeliveryValue = double.Parse(globalPnLLine[8]);
 
 
             double globalnetmtm = 0, globalnetunrealized = 0, globalnetinflow = 0, globalcurrentholdingatcost = 0;
@@ -218,7 +217,7 @@ namespace UpstoxTrader
 
                 if (!File.Exists(pnlFilePath))
                 {
-                    var defaultSummary = string.Format("{0},{1},{2},{3},{4}", 0, 0, 0, 0, 0);
+                    var defaultSummary = string.Format("0,0,0,0,0");
                     File.WriteAllLines(pnlFilePath, new[] { defaultSummary, configToday });
                 }
 
@@ -309,8 +308,8 @@ namespace UpstoxTrader
                 globalnetinflow += netinflow;
                 globalcurrentholdingatcost += currentholdingatcost;
 
-                double totalIntradayValue = double.Parse(netPnLline[8]);
-                double totalDeliveryValue = double.Parse(netPnLline[9]);
+                double totalIntradayValue = double.Parse(netPnLline[10]);
+                double totalDeliveryValue = double.Parse(netPnLline[11]);
 
                 totalIntradayValue += todayIntradayValue;
                 totalDeliveryValue += todayDeliveryValue;
@@ -322,9 +321,7 @@ namespace UpstoxTrader
                 pctPnL = avgAmountCommitted != 0 ? (netmtm / avgAmountCommitted) * 100 : 0;
 
                 globalMaxAmountCommittedToday += maxAmountCommittedToday;
-                 
                 globalAvgAmountCommitted += avgAmountCommitted;
-
 
                 todaymtm = Math.Round(todaymtm, 1);
                 todayrealized = Math.Round(todayrealized, 1);
@@ -363,6 +360,11 @@ namespace UpstoxTrader
                 File.WriteAllLines(pnlFilePath, finalPnLLines);
             }
 
+            var globaldayLines = globalPnLLines.Skip(1);
+            var dayCount = globaldayLines.Count();
+            globalPctPnLToday = globalMaxAmountCommittedToday != 0 ? (globaltodaymtm / globalMaxAmountCommittedToday) * 100 : 0;
+            globalPctPnL = globalAvgAmountCommitted != 0 ? (globalnetmtm / globalAvgAmountCommitted) * 100 : 0;//* (365/(dayCount == 0 ? 1:dayCount))
+
             globalIntradayValue += globalTodayIntradayValue;
             globalDeliveryValue += globalTodayDeliveryValue;
 
@@ -370,7 +372,6 @@ namespace UpstoxTrader
             globalTodayDeliveryValue = Math.Round(globalTodayDeliveryValue, 1);
             globalIntradayValue = Math.Round(globalIntradayValue, 1);
             globalDeliveryValue = Math.Round(globalDeliveryValue, 1);
-
 
             globaltodaymtm = Math.Round(globaltodaymtm, 1);
             globaltodayrealized = Math.Round(globaltodayrealized, 1);
@@ -384,14 +385,16 @@ namespace UpstoxTrader
             globalnetinflow = Math.Round(globalnetinflow, 1);
             globalcurrentholdingatcost = Math.Round(globalcurrentholdingatcost, 1);
 
-
+            globalPctPnLToday = Math.Round(globalPctPnLToday, 3);
+            globalPctPnL = Math.Round(globalPctPnL, 3);
 
             //write global pnl
-            globalPnLLines[0] = string.Format("{0},{1},{2},{3},{4},{5},{6}", globalnetmtm, globalnetrealized, globalnetunrealized, globalnetinflow, globalcurrentholdingatcost, 
+            globalPnLLines[0] = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8}", globalnetmtm, globalnetrealized, globalnetunrealized, globalnetinflow, 
+                globalcurrentholdingatcost, globalAvgAmountCommitted, globalPctPnL,
                 globalIntradayValue, globalDeliveryValue);
 
-            var globalSummaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7}", DateTime.Today.ToString("dd-MM-yyyy"),
-                globaltodaymtm, globaltodayrealized, globaltodayunrealized, globaltodayinflow, globaltodayholdingcost,
+            var globalSummaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", DateTime.Today.ToString("dd-MM-yyyy"),
+                globaltodaymtm, globaltodayrealized, globaltodayunrealized, globaltodayinflow, globaltodayholdingcost, globalAvgAmountCommitted, globalPctPnLToday,
                 globalTodayIntradayValue, globalTodayDeliveryValue);
 
             var finalGlobalPnLLines = globalPnLLines.ToList();
