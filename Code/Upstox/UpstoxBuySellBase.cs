@@ -82,6 +82,7 @@ namespace UpstoxTrader
         public BrokerErrorCode errCode;
 
         public double Ltp;
+        public UpstoxPnLStats stats = new UpstoxPnLStats();
 
         public virtual void StockBuySell()
         {
@@ -90,6 +91,7 @@ namespace UpstoxTrader
         public UpstoxBuySellBase(UpstoxTradeParams tradeParams)
         {
             myUpstoxWrapper = tradeParams.upstox;
+            tradeParams.stats = stats;
             stockCode = tradeParams.stockCode;
             isinCode = tradeParams.isinCode;
             ordQty = tradeParams.ordQty;
@@ -168,6 +170,10 @@ namespace UpstoxTrader
 
             // Position file always contains the holding qty, holding price and different type of holdings' details (demat/btst, qty, sell order ref) etc
             ReadPositionFile();
+
+            // populate stats
+            stats.prevHoldingPrice = holdingOutstandingPrice;
+            stats.prevHoldingQty = holdingOutstandingQty;
 
             GetLTPOnDemand(out Ltp);
 

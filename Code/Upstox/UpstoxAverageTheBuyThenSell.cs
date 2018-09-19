@@ -200,6 +200,10 @@ namespace UpstoxTrader
                     ConvertToDeliveryAndUpdatePositionFile();
                 }
 
+                // update stats
+                var buyValueToday = todayOutstandingPrice * (todayOutstandingQty + ordQty);
+                stats.maxBuyValueToday = Math.Max(stats.maxBuyValueToday, buyValueToday);
+
                 PauseBetweenTradeBookCheck();
             }
 

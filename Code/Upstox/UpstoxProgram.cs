@@ -54,13 +54,13 @@ namespace UpstoxTrader
         [STAThread]
         static void Main(string[] args)
         {
-            
+
             BrokerErrorCode errCode = BrokerErrorCode.Unknown;
 
             var upstoxBroker = new MyUpstoxWrapper(apiKey, apiSecret, redirectUrl);
 
 #if DEBUG
-            Trace("DEBUG MODE");errCode = upstoxBroker.Login1();
+            Trace("DEBUG MODE"); errCode = upstoxBroker.Login1();
 #else
             Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
 #endif
@@ -175,11 +175,39 @@ namespace UpstoxTrader
             upstoxBroker.GetTradeBook(false, null, out tradeBook);
             Dictionary<string, List<EquityTradeBookRecord>> stockBook = tradeBook.Values.GroupBy(t => t.StockCode).ToDictionary(g => g.Key, g => g.ToList());
 
+            string globalPnLFilePath = Path.Combine(filesPath, "global_pnl.txt");
+            if (!File.Exists(globalPnLFilePath))
+            {
+                var defaultSummary = string.Format("0 0 0 0 0 0 0");
+                File.WriteAllLines(globalPnLFilePath, new[] { defaultSummary });
+            }
+
+            var globalPnLLines = File.ReadAllLines(globalPnLFilePath);
+
+            var globalPnLLine = globalPnLLines[0].Split(',');
+
+            double globalnetrealized = double.Parse(globalPnLLine[1]);
+
+            double globalIntradayValue = double.Parse(globalPnLLine[5]);
+            double globalDeliveryValue = double.Parse(globalPnLLine[6]);
+
+
+            double globalnetmtm = 0, globalnetunrealized = 0, globalnetinflow = 0, globalcurrentholdingatcost = 0;
+
+            double globaltodaymtm = 0, globaltodayrealized = 0, globaltodayunrealized = 0, globaltodayinflow = 0, globaltodayholdingcost = 0, globalTodayIntradayValue = 0, globalTodayDeliveryValue = 0;
+
+            double maxAmountCommittedToday = 0, pctPnLToday = 0;
+            double avgAmountCommitted = 0, pctPnL = 0;
+
+            double globalMaxAmountCommittedToday = 0, globalPctPnLToday = 0;
+            double globalAvgAmountCommitted = 0, globalPctPnL = 0;
+
             foreach (var kv in stockBook)
             {
                 var stockCode = kv.Key;
                 var trades = kv.Value;
                 var stockConfig = stocksConfig.Find(c => c.stockCode == stockCode);
+                var stats = stockConfig.stats;
 
                 string pnlFilePath = Path.Combine(filesPath, stockCode + "_pnl.txt");
 
@@ -187,7 +215,7 @@ namespace UpstoxTrader
                         stockConfig.buyPriceCap, stockConfig.buyMarkdownFromLcpDefault,
                         stockConfig.sellMarkupForMargin, stockConfig.sellMarkupForDelivery, stockConfig.pctExtraMarkdownForAveraging,
                         stockConfig.placeBuyNoLtpCompare, stockConfig.startTime.ToString("hh:mm"));
-                
+
                 if (!File.Exists(pnlFilePath))
                 {
                     var defaultSummary = string.Format("{0},{1},{2},{3},{4}", 0, 0, 0, 0, 0);
@@ -198,12 +226,23 @@ namespace UpstoxTrader
                 var todaySellTrades = trades.Sum(t => t.Direction == OrderDirection.SELL ? 1 : 0);
                 var todayBuyQty = trades.Sum(t => t.Direction == OrderDirection.BUY ? t.Quantity : 0);
                 var todaySellQty = trades.Sum(t => t.Direction == OrderDirection.SELL ? t.Quantity : 0);
-                var todayBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == stockConfig.orderType ? t.Quantity * t.Price : 0);
-                var todaySellValue = trades.Sum(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == stockConfig.orderType ? t.Quantity * t.Price : 0);
+                var todayBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY ? t.Quantity * t.Price : 0);
+                var todaySellValue = trades.Sum(t => t.Direction == OrderDirection.SELL ? t.Quantity * t.Price : 0);
 
+
+                var todayIntradayValue = trades.Sum(t => t.EquityOrderType == EquityOrderType.MARGIN ? t.Quantity * t.Price : 0);
+                var todayDeliveryBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == EquityOrderType.DELIVERY ? t.Quantity * t.Price : 0);
+                var todayDeliverySellValue = Math.Abs(trades.Sum(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == EquityOrderType.DELIVERY ? t.Quantity * t.Price : 0));
+                var todayDeliveryValue = todayDeliveryBuyValue + todayDeliverySellValue;
+
+                globalTodayIntradayValue += todayIntradayValue;
+                globalTodayDeliveryValue += todayDeliveryValue;
+
+                todayIntradayValue = Math.Round(todayIntradayValue, 1);
+                todayDeliveryValue = Math.Round(todayDeliveryValue, 1);
 
                 var orderQty = stockConfig.ordQty;
-               
+
                 // Get Ltp
                 double ltp;
                 DateTime lut;
@@ -224,21 +263,28 @@ namespace UpstoxTrader
                         outstandingPrice = double.Parse(split[1].Trim());
                     }
 
-                var prevHoldingQty = outstandingQty - (todayBuyQty - todaySellQty);
+                var outstandingValue = outstandingQty * outstandingPrice;
+
+                var prevHoldingQty = stats.prevHoldingQty;
+                var prevHoldingPrice = stats.prevHoldingPrice;
+                var prevHoldingValue = prevHoldingQty * prevHoldingPrice;
+
                 var todayHoldingQty = outstandingQty - prevHoldingQty;
-                var todayMatchedQty = Math.Min(todayBuyQty, todaySellQty); 
-                //10, 15, 8, 3
-                //10, 7, 2, 5
-                var realizedBuyValue = todayBuyValue - 
+                var todayHoldingPrice = todayHoldingQty != 0 ? (outstandingValue - prevHoldingValue) / todayHoldingQty : 0;
+                var todayHoldingValue = todayHoldingQty * todayHoldingPrice;
 
-                //prevqty, todaybuyqty, sellqty, outstandingvalue
+                var todayMatchedQty = Math.Min(todayBuyQty, todaySellQty);
+                //10, 15, 8, 3.. today holdingval > 0
+                //10, 7, 2, 5.. today holding value 0
 
-                //var todaypnl = todaySellValue - todayBuyValue;
+                double todayrealized = todayHoldingValue > 0 ?
+                    todaySellValue - (todayBuyValue - Math.Abs(todayHoldingValue))
+                    : (todaySellValue - Math.Abs(todayHoldingValue)) - todayBuyValue;
 
-                double todayrealized = 0;//today matching sell and buy value
-                double todayunrealized = 0;//today delivery mtm
-                double todaymtm = todayrealized + todayunrealized; 
-                double todayholdingcost = todayHoldingQty;//only today delivery cost
+                double todayunrealized = todayHoldingQty * (ltp - todayHoldingPrice);//today delivery mtm
+
+                double todaymtm = todayrealized + todayunrealized;
+                double todayholdingcost = todayHoldingValue;//only today delivery cost
                 double todayinflow = todayrealized + todayholdingcost;
 
                 var pnlLines = File.ReadAllLines(pnlFilePath);
@@ -251,19 +297,52 @@ namespace UpstoxTrader
                 double currentholdingatcost = outstandingQty * outstandingPrice;
                 double netinflow = netrealized + currentholdingatcost;
 
+                globaltodaymtm += todaymtm;
+                globaltodayrealized += todayrealized;
+                globaltodayunrealized += todayunrealized;
+                globaltodayinflow += todayinflow;
+                globaltodayholdingcost += todayholdingcost;
+
+                globalnetmtm += netmtm;
+                globalnetrealized += netrealized;
+                globalnetunrealized += netunrealized;
+                globalnetinflow += netinflow;
+                globalcurrentholdingatcost += currentholdingatcost;
+
+                double totalIntradayValue = double.Parse(netPnLline[8]);
+                double totalDeliveryValue = double.Parse(netPnLline[9]);
+
+                totalIntradayValue += todayIntradayValue;
+                totalDeliveryValue += todayDeliveryValue;
+
+                maxAmountCommittedToday = stats.maxBuyValueToday + outstandingValue;
+                pctPnLToday = maxAmountCommittedToday != 0 ? (todaymtm / maxAmountCommittedToday) * 100 : 0;
+                var dayLines = pnlLines.Skip(1).Where(l => !l.StartsWith(stockCode));
+                avgAmountCommitted = dayLines.Any() ? dayLines.Sum(d => double.Parse(d.Split(',')[6])) / dayLines.Count() : 0;
+                pctPnL = avgAmountCommitted != 0 ? (netmtm / avgAmountCommitted) * 100 : 0;
+
+                globalMaxAmountCommittedToday += maxAmountCommittedToday;
+                 
+                globalAvgAmountCommitted += avgAmountCommitted;
+
+
                 todaymtm = Math.Round(todaymtm, 1);
                 todayrealized = Math.Round(todayrealized, 1);
                 todayunrealized = Math.Round(todayunrealized, 1);
                 todayinflow = Math.Round(todayinflow, 1);
                 todayholdingcost = Math.Round(todayholdingcost, 1);
-               
+
                 netmtm = Math.Round(netmtm, 1);
                 netrealized = Math.Round(netrealized, 1);
                 netunrealized = Math.Round(netunrealized, 1);
                 netinflow = Math.Round(netinflow, 1);
                 currentholdingatcost = Math.Round(currentholdingatcost, 1);
 
-      
+                maxAmountCommittedToday = Math.Round(maxAmountCommittedToday, 1);
+                pctPnLToday = Math.Round(pctPnLToday, 3);
+                avgAmountCommitted = Math.Round(avgAmountCommitted, 1);
+                pctPnL = Math.Round(pctPnL, 3);
+
                 var lastConfigLine = pnlLines.Where(l => l.StartsWith(stockCode)).Last();
 
                 if (configToday != lastConfigLine)
@@ -271,17 +350,53 @@ namespace UpstoxTrader
 
                 var readPnLLines = File.ReadAllLines(pnlFilePath);
 
-                readPnLLines[0] = string.Format("{0},{1},{2},{3},{4},{5},{6}, {7}", netmtm, netrealized, netunrealized, netinflow, currentholdingatcost, 
-                    outstandingQty, outstandingPrice, ltp);
+                readPnLLines[0] = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11}", netmtm, netrealized, netunrealized, netinflow, currentholdingatcost,
+                    avgAmountCommitted, pctPnL,
+                    outstandingQty, outstandingPrice, ltp, totalIntradayValue, totalDeliveryValue);
 
-                var summaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}", DateTime.Today.ToString("dd-MM-yyyy"), 
-                    todaymtm, todayrealized, todayunrealized, todayinflow, todayholdingcost,
-                    todayBuyTrades, todaySellTrades, orderQty, todayBuyQty, todaySellQty);
+                var summaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14}", DateTime.Today.ToString("dd-MM-yyyy"),
+                    todaymtm, todayrealized, todayunrealized, todayinflow, todayholdingcost, maxAmountCommittedToday, pctPnLToday,
+                    todayBuyTrades, todaySellTrades, orderQty, todayBuyQty, todaySellQty, todayIntradayValue, todayDeliveryValue);
 
                 var finalPnLLines = readPnLLines.ToList();
                 finalPnLLines.Add(summaryToday);
                 File.WriteAllLines(pnlFilePath, finalPnLLines);
             }
+
+            globalIntradayValue += globalTodayIntradayValue;
+            globalDeliveryValue += globalTodayDeliveryValue;
+
+            globalTodayIntradayValue = Math.Round(globalTodayIntradayValue, 1);
+            globalTodayDeliveryValue = Math.Round(globalTodayDeliveryValue, 1);
+            globalIntradayValue = Math.Round(globalIntradayValue, 1);
+            globalDeliveryValue = Math.Round(globalDeliveryValue, 1);
+
+
+            globaltodaymtm = Math.Round(globaltodaymtm, 1);
+            globaltodayrealized = Math.Round(globaltodayrealized, 1);
+            globaltodayunrealized = Math.Round(globaltodayunrealized, 1);
+            globaltodayinflow = Math.Round(globaltodayinflow, 1);
+            globaltodayholdingcost = Math.Round(globaltodayholdingcost, 1);
+
+            globalnetmtm = Math.Round(globalnetmtm, 1);
+            globalnetrealized = Math.Round(globalnetrealized, 1);
+            globalnetunrealized = Math.Round(globalnetunrealized, 1);
+            globalnetinflow = Math.Round(globalnetinflow, 1);
+            globalcurrentholdingatcost = Math.Round(globalcurrentholdingatcost, 1);
+
+
+
+            //write global pnl
+            globalPnLLines[0] = string.Format("{0},{1},{2},{3},{4},{5},{6}", globalnetmtm, globalnetrealized, globalnetunrealized, globalnetinflow, globalcurrentholdingatcost, 
+                globalIntradayValue, globalDeliveryValue);
+
+            var globalSummaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7}", DateTime.Today.ToString("dd-MM-yyyy"),
+                globaltodaymtm, globaltodayrealized, globaltodayunrealized, globaltodayinflow, globaltodayholdingcost,
+                globalTodayIntradayValue, globalTodayDeliveryValue);
+
+            var finalGlobalPnLLines = globalPnLLines.ToList();
+            finalGlobalPnLLines.Add(globalSummaryToday);
+            File.WriteAllLines(globalPnLFilePath, finalGlobalPnLLines);
         }
 
         public static bool IsHolidayToday()
@@ -407,9 +522,18 @@ namespace UpstoxTrader
         }
     }
 
+    public class UpstoxPnLStats
+    {
+        public int prevHoldingQty = 0;
+        public double prevHoldingPrice = 0;
+        public double maxBuyValueToday = 0;
+    }
+
     public class UpstoxTradeParams
     {
         public MyUpstoxWrapper upstox;
+        public UpstoxPnLStats stats = new UpstoxPnLStats();
+
         public string stockCode;
         public string isinCode;
         public double maxTradeValue = 50000;
