@@ -258,7 +258,7 @@ namespace UpstoxTrader
             if (algoType == AlgoType.AverageTheBuyThenSell)
             {
                 // check if the outstanding sell order has matching qty or not
-                if (sellOrder != null && !string.IsNullOrEmpty(todayOutstandingSellOrderId) && sellOrder.Quantity < todayOutstandingQty)
+                if (sellOrder != null && !string.IsNullOrEmpty(todayOutstandingSellOrderId) && sellOrder.Quantity < todayOutstandingQty && todayOutstandingQty!=int.MaxValue)
                 {
                     // Cancel existing sell order 
                     errCode = CancelEquityOrder("[Init Update Sell Qty]", ref todayOutstandingSellOrderId, orderType, OrderDirection.SELL);
@@ -502,7 +502,7 @@ namespace UpstoxTrader
                 if (todayOutstandingQty == 0)
                     return;
 
-                // 3.05 - 3.10 pm time. market order type if must sqoff at EOD and given pct loss is within acceptable range
+                // 3.05 - 3.10 pm time. market order type if must sqoff at EOD and given pct loss is within acceptable range and outstanding price is not a good price to keep holding
                 if (MarketUtils.IsMinutesAfter3Between(5, 10) && squareOffAllPositionsAtEOD && !isEODMinLossSquareOffMarketOrderUpdated)
                 {
                     double ltp;
@@ -513,7 +513,7 @@ namespace UpstoxTrader
 
                     ordPriceType = OrderPriceType.MARKET;
 
-                    var diff = (ltp - todayOutstandingPrice) / ltp;
+                    var diff = Math.Round((ltp - todayOutstandingPrice) / ltp, 5);
 
                     Trace(string.Format("[Margin EOD]: diff {0} ltp {1} outstandingprice {2} pctMaxLossSquareOffPositions {3} goodPrice {4} ", diff, ltp, todayOutstandingPrice, pctMaxLossSquareOffPositions, goodPrice));
 

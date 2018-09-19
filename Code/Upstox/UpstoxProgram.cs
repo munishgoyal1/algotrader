@@ -217,7 +217,7 @@ namespace UpstoxTrader
 
                 if (!File.Exists(pnlFilePath))
                 {
-                    var defaultSummary = string.Format("0,0,0,0,0");
+                    var defaultSummary = string.Format("0,0,0,0,0,0,0");
                     File.WriteAllLines(pnlFilePath, new[] { defaultSummary, configToday });
                 }
 
@@ -271,10 +271,6 @@ namespace UpstoxTrader
                 var todayHoldingQty = outstandingQty - prevHoldingQty;
                 var todayHoldingPrice = todayHoldingQty != 0 ? (outstandingValue - prevHoldingValue) / todayHoldingQty : 0;
                 var todayHoldingValue = todayHoldingQty * todayHoldingPrice;
-
-                var todayMatchedQty = Math.Min(todayBuyQty, todaySellQty);
-                //10, 15, 8, 3.. today holdingval > 0
-                //10, 7, 2, 5.. today holding value 0
 
                 double todayrealized = todayHoldingValue > 0 ?
                     todaySellValue - (todayBuyValue - Math.Abs(todayHoldingValue))
