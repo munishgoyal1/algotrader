@@ -82,6 +82,7 @@ namespace StockTrader.Brokers.UpstoxBroker
             while (!upstox.Symbol_Download_Status)
                 Thread.Sleep(1000);
 
+            var funds = upstox.GetFunds();
 
             //Upstox.QuotesReceivedEvent += new UpstoxNet.Upstox.QuotesReceivedEventEventHandler(QuoteReceived);
 
@@ -291,13 +292,30 @@ namespace StockTrader.Brokers.UpstoxBroker
         private BrokerErrorCode GetOrderStatus(string orderId)
         {
             BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
-            var status = upstox.GetOrderStatus(orderId);
 
-            if (status.ToLower() == "rejected")
-                errorCode = BrokerErrorCode.OrderRejected;
-            else
-                errorCode = BrokerErrorCode.Success;
+            int retryCount = 0;
+            int maxRetryCount = 3;
 
+            while (errorCode != BrokerErrorCode.Success && retryCount++ < maxRetryCount)
+            {
+                try
+                {
+                    var status = upstox.GetOrderStatus(orderId);
+
+                    if (status.ToLower() == "rejected")
+                        errorCode = BrokerErrorCode.OrderRejected;
+                    else
+                        errorCode = BrokerErrorCode.Success;
+                }
+                catch (Exception ex)
+                {
+                    Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+                    Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+
+                    if (retryCount >= maxRetryCount)
+                        break;
+                }
+            }
             return errorCode;
         }
 
@@ -307,42 +325,51 @@ namespace StockTrader.Brokers.UpstoxBroker
             {
                 BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
                 positions = new List<EquityPositionRecord>();
-                try
+                int retryCount = 0;
+                int maxRetryCount = 3;
+
+                while (errorCode != BrokerErrorCode.Success && retryCount++ < maxRetryCount)
                 {
-                    var response = upstox.GetPositions();
-
-                    string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
-
-                    for (int i = 1; i < lines.Length; i++)
+                    try
                     {
-                        var line = lines[i].Split(',');
+                        var response = upstox.GetPositions();
 
-                        if (line.Length < 19)
-                            continue;
+                        string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
 
-                        if (!string.IsNullOrEmpty(stockCode) &&
-                            !line[1].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
+                        for (int i = 1; i < lines.Length; i++)
                         {
-                            continue;
+                            var line = lines[i].Split(',');
+
+                            if (line.Length < 19)
+                                continue;
+
+                            if (!string.IsNullOrEmpty(stockCode) &&
+                                !line[2].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
+                            {
+                                continue;
+                            }
+
+                            var position = new EquityPositionRecord();
+
+                            position.Exchange = line[0];
+                            position.EquityOrderType = line[1] == "D" ? EquityOrderType.DELIVERY : EquityOrderType.MARGIN;
+                            position.StockCode = line[2];
+                            position.NetQuantity = int.Parse(line[13]);
+
+                            positions.Add(position);
                         }
 
-                        var position = new EquityPositionRecord();
-                       
-                        position.Exchange = line[0];
-                        position.EquityOrderType = line[1] == "D" ? EquityOrderType.DELIVERY : EquityOrderType.MARGIN;
-                        position.StockCode = line[2];
-                        position.NetQuantity = int.Parse(line[13]);
-
-                        positions.Add(position);
+                        errorCode = BrokerErrorCode.Success;
                     }
+                    catch (Exception ex)
+                    {
+                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
 
-                    errorCode = BrokerErrorCode.Success;
+                        if (retryCount >= maxRetryCount)
+                            break;
+                    }
                 }
-                catch (Exception ex)
-                {
-                    errorCode = BrokerErrorCode.Unknown;
-                }
-
                 return errorCode;
             }
         }
@@ -356,40 +383,51 @@ namespace StockTrader.Brokers.UpstoxBroker
             {
                 BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
                 holdings = new List<EquityDematHoldingRecord>();
-                try
+
+                int retryCount = 0;
+                int maxRetryCount = 3;
+
+                while (errorCode != BrokerErrorCode.Success && retryCount++ < maxRetryCount)
                 {
-                    var response = upstox.GetHoldings();
-
-                    string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
-
-                    for (int i = 1; i < lines.Length; i++)
+                    try
                     {
-                        var line = lines[i].Split(',');
+                        var response = upstox.GetHoldings();
 
-                        if (line.Length < 10)
-                            continue;
+                        string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
 
-                        if (!string.IsNullOrEmpty(stockCode) &&
-                            !line[1].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
+                        for (int i = 1; i < lines.Length; i++)
                         {
-                            continue;
+                            var line = lines[i].Split(',');
+
+                            if (line.Length < 10)
+                                continue;
+
+                            if (!string.IsNullOrEmpty(stockCode) &&
+                                !line[1].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
+                            {
+                                continue;
+                            }
+
+                            var holding = new EquityDematHoldingRecord();
+                            holding.BlockedQuantity = int.Parse(line[5]);
+                            holding.Quantity = int.Parse(line[6]);
+                            holding.AvailableQuantity = holding.Quantity - holding.BlockedQuantity;
+                            holding.StockCode = line[1];
+                            holding.Exchange = line[0];
+
+                            holdings.Add(holding);
                         }
 
-                        var holding = new EquityDematHoldingRecord();
-                        holding.BlockedQuantity = int.Parse(line[5]);
-                        holding.Quantity = int.Parse(line[6]);
-                        holding.AvailableQuantity = holding.Quantity - holding.BlockedQuantity;
-                        holding.StockCode = line[1];
-                        holding.Exchange = line[0];
-
-                        holdings.Add(holding);
+                        errorCode = BrokerErrorCode.Success;
                     }
+                    catch (Exception ex)
+                    {
+                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
 
-                    errorCode = BrokerErrorCode.Success;
-                }
-                catch (Exception ex)
-                {
-                    errorCode = BrokerErrorCode.Unknown;
+                        if (retryCount >= maxRetryCount)
+                            break;
+                    }
                 }
 
                 return errorCode;
@@ -617,20 +655,30 @@ namespace StockTrader.Brokers.UpstoxBroker
             lock (lockSingleThreadedUpstoxCall)
             {
                 BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
-                try
-                {
-                    var status = upstox.CancelSimpleOrder(orderId);
+                int retryCount = 0;
+                int maxRetryCount = 3;
 
-                    if (status.Contains("Cancellation sent for"))
-                        errorCode = BrokerErrorCode.Success;
-                    else
-                    {
-                        Trace(string.Format("Cancellation failed for order: {0} with status {1}", orderId, status));
-                    }
-                }
-                catch (Exception ex)
+                while (errorCode != BrokerErrorCode.Success && retryCount++ < maxRetryCount)
                 {
-                    errorCode = BrokerErrorCode.Unknown;
+                    try
+                    {
+                        var status = upstox.CancelSimpleOrder(orderId);
+
+                        if (status.Contains("Cancellation sent for"))
+                            errorCode = BrokerErrorCode.Success;
+                        else
+                        {
+                            Trace(string.Format("Cancellation failed for order: {0} with status {1}", orderId, status));
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+
+                        if (retryCount >= maxRetryCount)
+                            break;
+                    }
                 }
 
                 return errorCode;
@@ -659,7 +707,27 @@ namespace StockTrader.Brokers.UpstoxBroker
         {
             lock (lockSingleThreadedUpstoxCall)
             {
-                return upstox.GetNetQty(exchange, stockCode);
+                BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+                int retryCount = 0;
+                int maxRetryCount = 3;
+
+                while (errorCode != BrokerErrorCode.Success && retryCount++ < maxRetryCount)
+                {
+                    try
+                    {
+                        return upstox.GetNetQty(exchange, stockCode);
+                    }
+                    catch (Exception ex)
+                    {
+                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+
+                        if (retryCount >= maxRetryCount)
+                            break;
+                    }
+                }
+
+                return int.MaxValue;
             }
         }
 
@@ -667,7 +735,27 @@ namespace StockTrader.Brokers.UpstoxBroker
         {
             lock (lockSingleThreadedUpstoxCall)
             {
-                return upstox.GetBoughtQty(exchange, stockCode);
+                BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+                int retryCount = 0;
+                int maxRetryCount = 3;
+
+                while (errorCode != BrokerErrorCode.Success && retryCount++ < maxRetryCount)
+                {
+                    try
+                    {
+                        return upstox.GetBoughtQty(exchange, stockCode);
+                    }
+                    catch (Exception ex)
+                    {
+                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+
+                        if (retryCount >= maxRetryCount)
+                            break;
+                    }
+                }
+
+                return 0;
             }
         }
     }

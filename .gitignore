@@ -1,0 +1,10 @@
+*.pdb
+*.exe
+*.obj
+*.dll
+*.cache
+*.json
+*Temporary*
+*bin*
+*obj*
+*.vs*

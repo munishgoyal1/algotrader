@@ -31,6 +31,15 @@ namespace StockTrader.Platform.Logging
             return path;
         }
 
+        public static string GetPnLFilesLocation()
+        {
+            string path = Path.Combine(GetStockFilesPath(), "PnLFiles");
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
+            return path;
+        }
+
         public static string GetMessagesStoreLocation()
         {
             string path = Path.Combine(GetStockFilesPath(), "Messages\\" + DateTime.Today.Date.ToString("ddMMyyyy"));
