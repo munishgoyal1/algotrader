@@ -515,7 +515,7 @@ namespace UpstoxTrader
 
                     var diff = Math.Round((ltp - todayOutstandingPrice) / ltp, 5);
 
-                    Trace(string.Format("[Margin EOD]: diff {0} ltp {1} outstandingprice {2} pctMaxLossSquareOffPositions {3} goodPrice {4} ", diff, ltp, todayOutstandingPrice, pctMaxLossSquareOffPositions, goodPrice));
+                    //Trace(string.Format("[Margin EOD]: diff {0} ltp {1} outstandingprice {2} pctMaxLossSquareOffPositions {3} goodPrice {4} ", diff, ltp, todayOutstandingPrice, pctMaxLossSquareOffPositions, goodPrice));
 
                     if (diff > pctMaxLossSquareOffPositions && todayOutstandingPrice > goodPrice)
                     {
