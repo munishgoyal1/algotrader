@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockCore", "StockCore\StockCore.csproj", "{6D5069CC-17B0-47BB-BA12-60A6B4031D7B}"
 EndProject
@@ -22,6 +22,24 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Config", "Platform\Config\Config.csproj", "{C6DB3C03-3A2A-4D45-8ED3-56389CD3E722}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upstox", "Upstox\Upstox.csproj", "{7FE61D74-4059-4663-B4E4-08208BBCAC95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TraderBinaries", "TraderBinaries", "{863BF52D-1E87-4942-82ED-6CED2800C780}"
+	ProjectSection(SolutionItems) = preProject
+		..\UpstoxTrader\agsXMPP.dll = ..\UpstoxTrader\agsXMPP.dll
+		..\UpstoxTrader\EAGetMail40.dll = ..\UpstoxTrader\EAGetMail40.dll
+		..\UpstoxTrader\HtmlParsingLibrary.dll = ..\UpstoxTrader\HtmlParsingLibrary.dll
+		..\UpstoxTrader\HttpLibrary.dll = ..\UpstoxTrader\HttpLibrary.dll
+		..\UpstoxTrader\Logging.dll = ..\UpstoxTrader\Logging.dll
+		..\UpstoxTrader\NDde.dll = ..\UpstoxTrader\NDde.dll
+		..\UpstoxTrader\Newtonsoft.Json.dll = ..\UpstoxTrader\Newtonsoft.Json.dll
+		..\UpstoxTrader\StockCore.dll = ..\UpstoxTrader\StockCore.dll
+		..\UpstoxTrader\StockTrader.Brokers.dll = ..\UpstoxTrader\StockTrader.Brokers.dll
+		..\UpstoxTrader\StockTrader.Common.dll = ..\UpstoxTrader\StockTrader.Common.dll
+		..\UpstoxTrader\StockTrader.Utilities.dll = ..\UpstoxTrader\StockTrader.Utilities.dll
+		..\UpstoxTrader\UpstoxNet.dll = ..\UpstoxTrader\UpstoxNet.dll
+		..\UpstoxTrader\UpstoxTrader.exe = ..\UpstoxTrader\UpstoxTrader.exe
+		..\UpstoxTrader\WebSocket4Net.dll = ..\UpstoxTrader\WebSocket4Net.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
