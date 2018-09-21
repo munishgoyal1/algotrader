@@ -178,7 +178,7 @@ namespace UpstoxTrader
             string globalPnLFilePath = Path.Combine(filesPath, "global_pnl.txt");
             if (!File.Exists(globalPnLFilePath))
             {
-                var defaultSummary = string.Format("0 0 0 0 0 0 0");
+                var defaultSummary = string.Format("0,0,0,0,0,0,0,0,0,0");
                 File.WriteAllLines(globalPnLFilePath, new[] { defaultSummary });
             }
 
@@ -219,7 +219,7 @@ namespace UpstoxTrader
 
                 if (!File.Exists(pnlFilePath))
                 {
-                    var defaultSummary = string.Format("0,0,0,0,0,0,0");
+                    var defaultSummary = string.Format("0,0,0,0,0,0,0,0,0");
                     File.WriteAllLines(pnlFilePath, new[] { defaultSummary, configToday });
                 }
 
