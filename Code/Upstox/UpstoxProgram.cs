@@ -60,7 +60,7 @@ namespace UpstoxTrader
             var upstoxBroker = new MyUpstoxWrapper(apiKey, apiSecret, redirectUrl);
 
 #if DEBUG
-            Trace("DEBUG MODE"); errCode = upstoxBroker.Login1();
+            Trace("DEBUG MODE"); errCode = upstoxBroker.Login();
 #else
             Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
 #endif
@@ -219,7 +219,7 @@ namespace UpstoxTrader
 
                 if (!File.Exists(pnlFilePath))
                 {
-                    var defaultSummary = string.Format("0,0,0,0,0,0,0,0,0");
+                    var defaultSummary = string.Format("0,0,0,0,0,0,0,0,0,0,0,0,0");
                     File.WriteAllLines(pnlFilePath, new[] { defaultSummary, configToday });
                 }
 
@@ -243,8 +243,8 @@ namespace UpstoxTrader
                 globalTodayDeliveryValue += todayDeliveryValue;
                 globaltodaybrokerage += todaybrokerage;
 
-                todayIntradayValue = Math.Round(todayIntradayValue, 1);
-                todayDeliveryValue = Math.Round(todayDeliveryValue, 1);
+                todayIntradayValue = Math.Round(todayIntradayValue);
+                todayDeliveryValue = Math.Round(todayDeliveryValue);
 
                 var orderQty = stockConfig.ordQty;
 
@@ -284,10 +284,11 @@ namespace UpstoxTrader
 
                 todayrealized -= todaybrokerage;
 
-                double todayunrealized = todayHoldingQty * (ltp - todayHoldingPrice);//today delivery mtm
+                var todayHoldingNetQty = (todayHoldingQty > 0 ? todayHoldingQty : 0);
+                double todayunrealized = todayHoldingNetQty * (ltp - todayHoldingPrice);//today delivery mtm
 
                 double todaymtm = todayrealized + todayunrealized;
-                double todayholdingcost = todayHoldingValue;//only today delivery cost
+                double todayholdingcost = todayHoldingNetQty;//only today delivery cost
                 double todayinflow = todayrealized + todayholdingcost;
 
                 var pnlLines = File.ReadAllLines(pnlFilePath);
@@ -295,7 +296,7 @@ namespace UpstoxTrader
 
                 double netrealized = double.Parse(netPnLline[1]);
                 double brokerage = double.Parse(netPnLline[6]);
-                netrealized += todayrealized - todaybrokerage;
+                netrealized += todayrealized;
                 brokerage += todaybrokerage;                
                 double netunrealized = ltp > 0 ? outstandingQty * (ltp - outstandingPrice) : 0;
                 double netmtm = netrealized + netunrealized;
@@ -329,22 +330,25 @@ namespace UpstoxTrader
                 globalMaxAmountCommittedToday += maxAmountCommittedToday;
                 globalAvgAmountCommitted += avgAmountCommitted;
 
-                todaymtm = Math.Round(todaymtm, 1);
-                todayrealized = Math.Round(todayrealized, 1);
-                todayunrealized = Math.Round(todayunrealized, 1);
-                todayinflow = Math.Round(todayinflow, 1);
-                todayholdingcost = Math.Round(todayholdingcost, 1);
+                todaymtm = Math.Round(todaymtm);
+                todayrealized = Math.Round(todayrealized);
+                todayunrealized = Math.Round(todayunrealized);
+                todayinflow = Math.Round(todayinflow);
+                todayholdingcost = Math.Round(todayholdingcost);
 
-                netmtm = Math.Round(netmtm, 1);
-                netrealized = Math.Round(netrealized, 1);
-                netunrealized = Math.Round(netunrealized, 1);
-                netinflow = Math.Round(netinflow, 1);
-                currentholdingatcost = Math.Round(currentholdingatcost, 1);
+                netmtm = Math.Round(netmtm);
+                netrealized = Math.Round(netrealized);
+                netunrealized = Math.Round(netunrealized);
+                netinflow = Math.Round(netinflow);
+                currentholdingatcost = Math.Round(currentholdingatcost);
 
-                maxAmountCommittedToday = Math.Round(maxAmountCommittedToday, 1);
-                pctPnLToday = Math.Round(pctPnLToday, 3);
-                avgAmountCommitted = Math.Round(avgAmountCommitted, 1);
-                pctPnL = Math.Round(pctPnL, 3);
+                maxAmountCommittedToday = Math.Round(maxAmountCommittedToday);
+                pctPnLToday = Math.Round(pctPnLToday, 1);
+                avgAmountCommitted = Math.Round(avgAmountCommitted);
+                pctPnL = Math.Round(pctPnL, 1);
+
+                todaybrokerage = Math.Round(todaybrokerage);
+                brokerage = Math.Round(brokerage);
 
                 var lastConfigLine = pnlLines.Where(l => l.StartsWith(stockCode)).Last();
 
@@ -357,7 +361,7 @@ namespace UpstoxTrader
                     avgAmountCommitted, brokerage, pctPnL,
                     outstandingQty, outstandingPrice, ltp, totalIntradayValue, totalDeliveryValue);
 
-                var summaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14}", DateTime.Today.ToString("dd-MM-yyyy"),
+                var summaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15}", DateTime.Today.ToString("dd-MM-yyyy"),
                     todaymtm, todayrealized, todayunrealized, todayinflow, todayholdingcost, maxAmountCommittedToday, todaybrokerage, pctPnLToday,
                     todayBuyTrades, todaySellTrades, orderQty, todayBuyQty, todaySellQty, todayIntradayValue, todayDeliveryValue);
 
@@ -376,28 +380,28 @@ namespace UpstoxTrader
 
             globalbrokerage += globaltodaybrokerage;
 
-            globalTodayIntradayValue = Math.Round(globalTodayIntradayValue, 1);
-            globalTodayDeliveryValue = Math.Round(globalTodayDeliveryValue, 1);
-            globalIntradayValue = Math.Round(globalIntradayValue, 1);
-            globalDeliveryValue = Math.Round(globalDeliveryValue, 1);
+            globalTodayIntradayValue = Math.Round(globalTodayIntradayValue);
+            globalTodayDeliveryValue = Math.Round(globalTodayDeliveryValue);
+            globalIntradayValue = Math.Round(globalIntradayValue);
+            globalDeliveryValue = Math.Round(globalDeliveryValue);
 
-            globaltodaymtm = Math.Round(globaltodaymtm, 1);
-            globaltodayrealized = Math.Round(globaltodayrealized, 1);
-            globaltodayunrealized = Math.Round(globaltodayunrealized, 1);
-            globaltodayinflow = Math.Round(globaltodayinflow, 1);
-            globaltodayholdingcost = Math.Round(globaltodayholdingcost, 1);
+            globaltodaymtm = Math.Round(globaltodaymtm);
+            globaltodayrealized = Math.Round(globaltodayrealized);
+            globaltodayunrealized = Math.Round(globaltodayunrealized);
+            globaltodayinflow = Math.Round(globaltodayinflow);
+            globaltodayholdingcost = Math.Round(globaltodayholdingcost);
 
-            globalnetmtm = Math.Round(globalnetmtm, 1);
-            globalnetrealized = Math.Round(globalnetrealized, 1);
-            globalnetunrealized = Math.Round(globalnetunrealized, 1);
-            globalnetinflow = Math.Round(globalnetinflow, 1);
-            globalcurrentholdingatcost = Math.Round(globalcurrentholdingatcost, 1);
+            globalnetmtm = Math.Round(globalnetmtm);
+            globalnetrealized = Math.Round(globalnetrealized);
+            globalnetunrealized = Math.Round(globalnetunrealized);
+            globalnetinflow = Math.Round(globalnetinflow);
+            globalcurrentholdingatcost = Math.Round(globalcurrentholdingatcost);
 
-            globalPctPnLToday = Math.Round(globalPctPnLToday, 3);
-            globalPctPnL = Math.Round(globalPctPnL, 3);
+            globalPctPnLToday = Math.Round(globalPctPnLToday, 1);
+            globalPctPnL = Math.Round(globalPctPnL, 1);
 
-            globaltodaybrokerage = Math.Round(globaltodaybrokerage, 1);
-            globalbrokerage = Math.Round(globalbrokerage, 1);
+            globaltodaybrokerage = Math.Round(globaltodaybrokerage);
+            globalbrokerage = Math.Round(globalbrokerage);
 
             //write global pnl
             globalPnLLines[0] = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", globalnetmtm, globalnetrealized, globalnetunrealized, globalnetinflow, 

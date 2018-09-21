@@ -84,6 +84,9 @@ namespace StockTrader.Brokers.UpstoxBroker
 
             var funds = upstox.GetFunds();
 
+            List<EquityPositionRecord> positions;
+            BrokerErrorCode errCode = GetPositions("BERGEPAINT", out positions);
+
             //Upstox.QuotesReceivedEvent += new UpstoxNet.Upstox.QuotesReceivedEventEventHandler(QuoteReceived);
 
             var subs = upstox.SubscribeQuotes("NSE_EQ", "CAPLIPOINT");
@@ -100,7 +103,7 @@ namespace StockTrader.Brokers.UpstoxBroker
             string orderRef;
 
             List<EquityDematHoldingRecord> holdings;
-            var errCode = GetHoldings("FEDERALBNK", out holdings);
+            errCode = GetHoldings("FEDERALBNK", out holdings);
 
 
             Dictionary<string, EquityTradeBookRecord> trades;
@@ -136,7 +139,7 @@ namespace StockTrader.Brokers.UpstoxBroker
             //180822000000852
             //string cancelAmo1 = upstox.CancelAmo("180822000000852"); // Product = D or I
 
-            var positions = upstox.GetPositions();
+            
 
             //var b = upstox.GetOrder("NSE_EQ", "BAJFINANCE", "D");
 
@@ -354,7 +357,7 @@ namespace StockTrader.Brokers.UpstoxBroker
                             position.Exchange = line[0];
                             position.EquityOrderType = line[1] == "D" ? EquityOrderType.DELIVERY : EquityOrderType.MARGIN;
                             position.StockCode = line[2];
-                            position.NetQuantity = int.Parse(line[13]);
+                            position.NetQuantity = int.Parse(line[14]);
 
                             positions.Add(position);
                         }
