@@ -1,0 +1,9 @@
+8/28/2018 2:44:56 PM::: 220270
+
+8/28/2018 2:44:59 PM::: UpstoxAverageTheBuyThenSell CAPLINPOINT Error:Trade Symbol is null or invalid
+Stacktrace:   at A..(String , String )
+   at UpstoxNet.Upstox.GetNetQty(String Exch, String TrdSym)
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetNetQty(String exchange, String stockCode) in d:\GoogleDrive\UpstoxTrader\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 437
+   at SimpleTrader.UpstoxBuySellBase.Init(AlgoType algoType) in d:\GoogleDrive\UpstoxTrader\Code\Upstox\UpstoxBuySellBase.cs:line 167
+   at SimpleTrader.UpstoxAverageTheBuyThenSell.StockBuySell() in d:\GoogleDrive\UpstoxTrader\Code\Upstox\UpstoxAverageTheBuyThenSell.cs:line 92
+

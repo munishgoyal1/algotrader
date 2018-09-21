@@ -1,0 +1,28 @@
+9/17/2018 9:43:08 AM::: 126130
+
+9/17/2018 9:43:28 AM::: UpstoxAverageTheBuyThenSell DLF LTP 208.85 calculatedToBuyPrice 205.5 lastPriceToCompareWith 208.85 placeBuyNoLtpCompare False PriceStrategy Default markdown from Ltp
+
+9/17/2018 9:43:28 AM::: UpstoxAverageTheBuyThenSell DLF MARGIN Order: Success DLF BUY 1 @ 205.5 LIMIT
+
+9/17/2018 9:44:24 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 301.05 calculatedToBuyPrice 301.05 lastPriceToCompareWith 303 placeBuyNoLtpCompare False PriceStrategy Average from Today's outstanding
+
+9/17/2018 9:44:24 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT BUY 1 @ 301.05 LIMIT
+
+9/17/2018 9:44:54 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 1 @ 301.05
+
+9/17/2018 9:44:54 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 1 todayoutstandingqty 1 todayoutstandingprice 303 sellorderref 180917000040451 buyorderef 180917000042618 buyorderstatus COMPLETED
+
+9/17/2018 9:44:54 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Buy Executed]: BERGEPAINT SELL order cancel , OrderRef = 180917000040451: Success
+
+9/17/2018 9:44:54 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT SELL 2 @ 303.5 LIMIT
+
+9/17/2018 9:47:12 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA MARGIN Trade: SUNPHARMA bought 1 @ 658.2
+
+9/17/2018 9:47:12 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180917000013338 buyorderstatus COMPLETED
+
+9/17/2018 9:47:12 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA MARGIN Order: Success SUNPHARMA SELL 1 @ 661.5 LIMIT
+
+9/17/2018 9:47:12 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 658.7 calculatedToBuyPrice 644.4 lastPriceToCompareWith 658.2 placeBuyNoLtpCompare True PriceStrategy Average from Today's outstanding
+
+9/17/2018 9:47:12 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA MARGIN Order: Success SUNPHARMA BUY 1 @ 644.4 LIMIT
+

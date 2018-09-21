@@ -1,0 +1,12 @@
+9/18/2018 9:55:35 AM::: 126130
+
+9/18/2018 9:59:42 AM::: UpstoxAverageTheBuyThenSell RELIANCE MARGIN Trade: RELIANCE sold 1 @ 1229
+
+9/18/2018 10:00:42 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Trade: ITC sold 1 @ 301.9
+
+9/18/2018 10:00:42 AM::: UpstoxAverageTheBuyThenSell ITC LTP 302.15 calculatedToBuyPrice 300.6 lastPriceToCompareWith 302.15 placeBuyNoLtpCompare False PriceStrategy Default markdown from Ltp
+
+9/18/2018 10:00:43 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC BUY 1 @ 300.6 LIMIT. OrderId = 180918000056647
+
+9/18/2018 10:01:08 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS MARGIN Trade: ADANIPORTS sold 1 @ 382.4
+

@@ -1,0 +1,82 @@
+9/17/2018 3:18:02 PM::: 126130
+
+9/17/2018 3:18:05 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Order: Success INFY SELL 1 @ 736.2 LIMIT
+
+9/17/2018 3:18:07 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/17/2018 3:18:08 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: INFY SELL order cancel , OrderRef = 180917000191273: Success
+
+9/17/2018 3:18:09 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Order: Success INFY SELL 1 @ 734.7 LIMIT
+
+9/17/2018 3:18:10 PM::: UpstoxAverageTheBuyThenSell ITC MARGIN Order: Success ITC SELL 1 @ 305.2 LIMIT
+
+9/17/2018 3:18:11 PM::: UpstoxAverageTheBuyThenSell ITC [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/17/2018 3:18:11 PM::: UpstoxAverageTheBuyThenSell ITC [Margin EOD]: ITC SELL order cancel , OrderRef = 180917000191301: Unknown
+
+9/17/2018 3:18:40 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: Position converted. Converting the sq off order to DELIVERY
+
+9/17/2018 3:18:40 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: INFY SELL order cancel , OrderRef = 180917000191293: Success
+
+9/17/2018 3:18:40 PM::: UpstoxAverageTheBuyThenSell INFY DELIVERY Order: Success INFY SELL 1 @ 734.7 LIMIT
+
+9/17/2018 3:18:42 PM::: UpstoxAverageTheBuyThenSell ITC [Margin EOD]: Position converted. Converting the sq off order to DELIVERY
+
+9/17/2018 3:18:42 PM::: UpstoxAverageTheBuyThenSell ITC [Margin EOD]: ITC SELL order cancel , OrderRef = 180917000191301: Success
+
+9/17/2018 3:18:42 PM::: UpstoxAverageTheBuyThenSell ITC DELIVERY Order: Success ITC SELL 1 @ 304.6 LIMIT
+
+9/17/2018 3:28:17 PM::: UpstoxAverageTheBuyThenSell INFY [Margin Conversion EOD]: INFY SELL order cancel , OrderRef = 180917000191450: Success
+
+9/17/2018 3:28:17 PM::: UpstoxAverageTheBuyThenSell INFY Conversion to delivery: Success INFY qty of 1
+
+9/17/2018 3:28:18 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Holding EOD] Demat : PCJEWELLER SELL order cancel , OrderRef = 180917000013476: Success
+
+9/17/2018 3:28:19 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Holding EOD] Demat : IDFCBANK SELL order cancel , OrderRef = 180917000013724: Success
+
+9/17/2018 3:28:19 PM::: UpstoxAverageTheBuyThenSell ITC [Margin Conversion EOD]: ITC SELL order cancel , OrderRef = 180917000191465: Success
+
+9/17/2018 3:28:19 PM::: UpstoxAverageTheBuyThenSell ITC Conversion to delivery: Success ITC qty of 1
+
+9/17/2018 3:28:25 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Holding EOD] Demat : FEDERALBNK SELL order cancel , OrderRef = 180917000013738: Success
+
+9/17/2018 3:31:06 PM::: UpstoxAverageTheBuyThenSell ZEEL EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:06 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:07 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:10 PM::: UpstoxAverageTheBuyThenSell INDUSINDBK EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:17 PM::: UpstoxAverageTheBuyThenSell BIOCON EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:17 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:18 PM::: UpstoxAverageTheBuyThenSell IGL EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:18 PM::: UpstoxAverageTheBuyThenSell INFY EOD PositionFile updated as 1 732.5
+
+9/17/2018 3:31:18 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:19 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:19 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:19 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:19 PM::: UpstoxAverageTheBuyThenSell UJJIVAN EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:19 PM::: UpstoxAverageTheBuyThenSell RELIANCE EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:20 PM::: UpstoxAverageTheBuyThenSell DLF EOD PositionFile updated as 0 0
+
+9/17/2018 3:31:20 PM::: UpstoxAverageTheBuyThenSell IDFCBANK EOD PositionFile updated as 11 45.5
+
+9/17/2018 3:31:20 PM::: UpstoxAverageTheBuyThenSell ITC EOD PositionFile updated as 1 303.7
+
+9/17/2018 3:31:20 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER EOD PositionFile updated as -1 0
+
+9/17/2018 3:31:27 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK EOD PositionFile updated as -6 0
+

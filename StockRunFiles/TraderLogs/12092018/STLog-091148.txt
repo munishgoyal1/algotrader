@@ -1,0 +1,324 @@
+9/12/2018 9:11:48 AM::: 126130
+
+9/12/2018 9:16:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK DELIVERY Order: Success IDFCBANK SELL 11 @ 46 LIMIT
+
+9/12/2018 9:16:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 43.8 lastPriceToCompareWith 43.8 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 9:16:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK BUY 11 @ 43.5 LIMIT
+
+9/12/2018 9:16:01 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK DELIVERY Order: Success FEDERALBNK SELL 6 @ 78.6 LIMIT
+
+9/12/2018 9:16:01 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 0 lastPriceToCompareWith 77.8 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 9:16:01 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Unknown FEDERALBNK BUY 7 @ 0 LIMIT
+
+9/12/2018 9:16:02 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 526 lastPriceToCompareWith 526 markDownPct 0.015 PriceStrategy Default markdown from Ltp
+
+9/12/2018 9:16:02 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT DELIVERY Order: Success CAPLIPOINT BUY 1 @ 517.6 LIMIT
+
+9/12/2018 9:16:03 AM::: UpstoxAverageTheBuyThenSell ITC LTP 297.8 lastPriceToCompareWith 297.8 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 9:16:03 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Order: Success ITC BUY 2 @ 296 LIMIT
+
+9/12/2018 9:16:04 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 265.4 lastPriceToCompareWith 265.4 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 9:16:04 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Order: Success TATAMOTORS BUY 2 @ 263.8 LIMIT
+
+9/12/2018 9:16:05 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 300.75 lastPriceToCompareWith 300.75 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 9:16:05 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT BUY 2 @ 298.9 LIMIT
+
+9/12/2018 9:16:07 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER LTP 84.65 lastPriceToCompareWith 84.65 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 9:16:07 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER BUY 7 @ 84.1 LIMIT
+
+9/12/2018 9:16:07 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 322.4 lastPriceToCompareWith 322.4 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 9:16:07 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Order: Success UJJIVAN BUY 2 @ 320.5 LIMIT
+
+9/12/2018 9:16:31 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 75.75 lastPriceToCompareWith 75.75 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 9:16:31 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK BUY 7 @ 75.3 LIMIT
+
+9/12/2018 9:20:03 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Trade: CAPLIPOINT bought 1 @ 517.6
+
+9/12/2018 9:20:03 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180912000007290 buyorderstatus COMPLETED
+
+9/12/2018 9:20:04 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT DELIVERY Order: Success CAPLIPOINT SELL 1 @ 522.8 LIMIT
+
+9/12/2018 9:21:32 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 11 @ 43.5
+
+9/12/2018 9:21:32 AM::: UpstoxAverageTheBuyThenSell IDFCBANK Fully executed newqty 11 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180912000007211 buyorderstatus COMPLETED
+
+9/12/2018 9:21:32 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK SELL 11 @ 43.7 LIMIT
+
+9/12/2018 9:21:35 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Trade: TATAMOTORS bought 2 @ 263.8
+
+9/12/2018 9:21:35 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180912000007347 buyorderstatus COMPLETED
+
+9/12/2018 9:21:35 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Order: Success TATAMOTORS SELL 2 @ 265.1 LIMIT
+
+9/12/2018 9:21:38 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER bought 7 @ 84.1
+
+9/12/2018 9:21:38 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER Fully executed newqty 7 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180912000007410 buyorderstatus COMPLETED
+
+9/12/2018 9:21:38 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER SELL 7 @ 84.5 LIMIT
+
+9/12/2018 9:22:39 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN bought 2 @ 320.5
+
+9/12/2018 9:22:39 AM::: UpstoxAverageTheBuyThenSell UJJIVAN Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180912000007417 buyorderstatus COMPLETED
+
+9/12/2018 9:22:39 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Order: Success UJJIVAN SELL 2 @ 322.1 LIMIT
+
+9/12/2018 9:23:08 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER LTP 83.1 is -1% of Last Average from Today's outstanding price 84.1
+
+9/12/2018 9:23:08 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER BUY 7 @ 83.1 LIMIT
+
+9/12/2018 9:23:33 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK bought 7 @ 75.3
+
+9/12/2018 9:23:33 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK Fully executed newqty 7 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180912000008256 buyorderstatus COMPLETED
+
+9/12/2018 9:24:02 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Unknown FEDERALBNK SELL 7 @ 75.7 LIMIT
+
+9/12/2018 9:24:03 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 2 @ 298.9
+
+9/12/2018 9:24:05 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180912000007380 buyorderstatus COMPLETED
+
+9/12/2018 9:24:05 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT SELL 2 @ 300.4 LIMIT
+
+9/12/2018 9:25:34 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER bought 7 @ 83.1
+
+9/12/2018 9:25:34 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER Fully executed newqty 7 todayoutstandingqty 7 todayoutstandingprice 84.1 sellorderref 180912000016858 buyorderef 180912000019712 buyorderstatus COMPLETED
+
+9/12/2018 9:25:34 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Buy Executed]: PCJEWELLER SELL order cancel , OrderRef = 180912000016858: Success
+
+9/12/2018 9:25:35 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER SELL 14 @ 84 LIMIT
+
+9/12/2018 9:34:10 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT sold 2 @ 300.4
+
+9/12/2018 9:34:10 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 300.7 lastPriceToCompareWith 300.7 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 9:34:10 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT BUY 2 @ 298.9 LIMIT
+
+9/12/2018 9:36:10 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER sold 14 @ 84
+
+9/12/2018 9:36:10 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER LTP 84 lastPriceToCompareWith 84 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 9:36:11 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER BUY 7 @ 83.5 LIMIT
+
+9/12/2018 9:40:42 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER bought 7 @ 83.5
+
+9/12/2018 9:40:42 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER Fully executed newqty 7 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180912000036764 buyorderstatus COMPLETED
+
+9/12/2018 9:40:42 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER SELL 7 @ 83.9 LIMIT
+
+9/12/2018 9:41:08 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 260.65 is -1% of Last Average from Today's outstanding price 263.8
+
+9/12/2018 9:41:08 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Order: Success TATAMOTORS BUY 2 @ 260.65 LIMIT
+
+9/12/2018 9:41:38 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Trade: TATAMOTORS bought 2 @ 260.65
+
+9/12/2018 9:41:39 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS Fully executed newqty 2 todayoutstandingqty 2 todayoutstandingprice 263.8 sellorderref 180912000016782 buyorderef 180912000041671 buyorderstatus COMPLETED
+
+9/12/2018 9:41:39 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Buy Executed]: TATAMOTORS SELL order cancel , OrderRef = 180912000016782: Success
+
+9/12/2018 9:41:39 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Order: Success TATAMOTORS SELL 4 @ 263.5 LIMIT
+
+9/12/2018 9:55:42 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 317 is -1% of Last Average from Today's outstanding price 320.5
+
+9/12/2018 9:55:42 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Order: Success UJJIVAN BUY 2 @ 317 LIMIT
+
+9/12/2018 9:56:12 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN bought 2 @ 317
+
+9/12/2018 9:56:12 AM::: UpstoxAverageTheBuyThenSell UJJIVAN Fully executed newqty 2 todayoutstandingqty 2 todayoutstandingprice 320.5 sellorderref 180912000018817 buyorderef 180912000054570 buyorderstatus COMPLETED
+
+9/12/2018 9:56:12 AM::: UpstoxAverageTheBuyThenSell UJJIVAN [Buy Executed]: UJJIVAN SELL order cancel , OrderRef = 180912000018817: Success
+
+9/12/2018 9:56:12 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Order: Success UJJIVAN SELL 4 @ 320.3 LIMIT
+
+9/12/2018 9:56:46 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 2 @ 298.9
+
+9/12/2018 9:56:47 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180912000034259 buyorderstatus COMPLETED
+
+9/12/2018 9:56:47 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT SELL 2 @ 300.4 LIMIT
+
+9/12/2018 10:03:12 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 74.5 is -1% of Last Average from Today's outstanding price 75.3
+
+9/12/2018 10:03:12 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK BUY 7 @ 74.5 LIMIT
+
+9/12/2018 10:03:16 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 43 is -1% of Last Average from Today's outstanding price 43.5
+
+9/12/2018 10:03:16 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK BUY 11 @ 43 LIMIT
+
+9/12/2018 10:03:42 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK bought 7 @ 74.5
+
+9/12/2018 10:03:42 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK Fully executed newqty 7 todayoutstandingqty 7 todayoutstandingprice 75.3 sellorderref  buyorderef 180912000060562 buyorderstatus COMPLETED
+
+9/12/2018 10:03:43 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK SELL 14 @ 75.3 LIMIT
+
+9/12/2018 10:05:47 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 11 @ 43
+
+9/12/2018 10:05:47 AM::: UpstoxAverageTheBuyThenSell IDFCBANK Fully executed newqty 11 todayoutstandingqty 11 todayoutstandingprice 43.5 sellorderref 180912000016713 buyorderef 180912000060629 buyorderstatus COMPLETED
+
+9/12/2018 10:05:47 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Buy Executed]: IDFCBANK SELL order cancel , OrderRef = 180912000016713: Success
+
+9/12/2018 10:05:47 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK SELL 22 @ 43.5 LIMIT
+
+9/12/2018 10:10:18 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER LTP 80.7 is -2% of Last Average from Today's outstanding price 83.5
+
+9/12/2018 10:10:18 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER BUY 7 @ 80.7 LIMIT
+
+9/12/2018 10:10:18 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER Buy order count reached is: 4. Max buy orders allowed: 4
+
+9/12/2018 10:13:50 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT sold 2 @ 300.4
+
+9/12/2018 10:13:50 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 300.5 lastPriceToCompareWith 300.5 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 10:13:50 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT BUY 2 @ 298.7 LIMIT
+
+9/12/2018 10:18:16 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 14 @ 75.3
+
+9/12/2018 10:18:16 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 75.15 lastPriceToCompareWith 75.15 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 10:18:16 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK BUY 7 @ 74.7 LIMIT
+
+9/12/2018 10:20:18 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN sold 4 @ 320.3
+
+9/12/2018 10:20:18 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 320.15 lastPriceToCompareWith 320.15 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 10:20:18 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Order: Success UJJIVAN BUY 2 @ 318.2 LIMIT
+
+9/12/2018 10:25:18 AM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 323
+
+9/12/2018 10:25:18 AM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/12/2018 10:38:52 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 7 @ 75.7
+
+9/12/2018 11:07:00 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 2 @ 298.7
+
+9/12/2018 11:07:00 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180912000068122 buyorderstatus COMPLETED
+
+9/12/2018 11:07:00 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT SELL 2 @ 300.2 LIMIT
+
+9/12/2018 11:38:08 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT sold 2 @ 300.2
+
+9/12/2018 11:38:08 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 299.65 lastPriceToCompareWith 299.65 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 11:38:08 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT BUY 2 @ 297.9 LIMIT
+
+9/12/2018 11:38:08 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT Buy order count reached is: 4. Max buy orders allowed: 4
+
+9/12/2018 11:40:04 AM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 323
+
+9/12/2018 11:40:04 AM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/12/2018 12:23:16 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER bought 7 @ 80.7
+
+9/12/2018 12:23:16 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER Fully executed newqty 7 todayoutstandingqty 7 todayoutstandingprice 83.5 sellorderref 180912000041249 buyorderef 180912000065756 buyorderstatus COMPLETED
+
+9/12/2018 12:23:16 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Buy Executed]: PCJEWELLER SELL order cancel , OrderRef = 180912000041249: Success
+
+9/12/2018 12:23:16 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER SELL 14 @ 82.5 LIMIT
+
+9/12/2018 12:26:19 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 2 @ 297.9
+
+9/12/2018 12:26:20 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180912000110710 buyorderstatus COMPLETED
+
+9/12/2018 12:26:20 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT SELL 2 @ 299.4 LIMIT
+
+9/12/2018 12:39:53 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT sold 2 @ 299.4
+
+9/12/2018 1:07:30 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 504.2 is -2.5% of Last Average from Today's outstanding price 517.6
+
+9/12/2018 1:07:30 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT DELIVERY Order: Success CAPLIPOINT BUY 1 @ 504.2 LIMIT
+
+9/12/2018 1:08:00 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Trade: CAPLIPOINT bought 1 @ 504.2
+
+9/12/2018 1:08:01 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT Fully executed newqty 1 todayoutstandingqty 1 todayoutstandingprice 517.6 sellorderref 180912000014366 buyorderef 180912000149901 buyorderstatus COMPLETED
+
+9/12/2018 1:08:01 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Buy Executed]: CAPLIPOINT SELL order cancel , OrderRef = 180912000014366: Success
+
+9/12/2018 1:08:30 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT DELIVERY Order: Unknown CAPLIPOINT SELL 2 @ 516 LIMIT
+
+9/12/2018 1:23:03 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 323
+
+9/12/2018 1:23:03 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/12/2018 1:53:14 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Trade: TATAMOTORS sold 4 @ 263.5
+
+9/12/2018 1:53:14 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 263.6 lastPriceToCompareWith 263.6 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 1:53:14 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Order: Success TATAMOTORS BUY 2 @ 262 LIMIT
+
+9/12/2018 1:58:42 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 323
+
+9/12/2018 1:58:42 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/12/2018 1:59:43 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER sold 14 @ 82.5
+
+9/12/2018 2:01:14 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK sold 22 @ 43.5
+
+9/12/2018 2:01:14 PM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 43.5 lastPriceToCompareWith 43.5 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/12/2018 2:01:14 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK BUY 11 @ 43.2 LIMIT
+
+9/12/2018 3:00:00 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/12/2018 3:05:01 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0134893870263836 ltp 504.1 outstandingprice 510.9 pctMaxLossSquareOffPositions 0.001 goodPrice 400 
+
+9/12/2018 3:05:31 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0157057654075546 ltp 503 outstandingprice 510.9 pctMaxLossSquareOffPositions 0.001 goodPrice 400 
+
+9/12/2018 3:06:01 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0157057654075546 ltp 503 outstandingprice 510.9 pctMaxLossSquareOffPositions 0.001 goodPrice 400 
+
+9/12/2018 3:06:31 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0157057654075546 ltp 503 outstandingprice 510.9 pctMaxLossSquareOffPositions 0.001 goodPrice 400 
+
+9/12/2018 3:07:02 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0157057654075546 ltp 503 outstandingprice 510.9 pctMaxLossSquareOffPositions 0.001 goodPrice 400 
+
+9/12/2018 3:07:32 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0157057654075546 ltp 503 outstandingprice 510.9 pctMaxLossSquareOffPositions 0.001 goodPrice 400 
+
+9/12/2018 3:08:02 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0102827763496144 ltp 505.7 outstandingprice 510.9 pctMaxLossSquareOffPositions 0.001 goodPrice 400 
+
+9/12/2018 3:08:32 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.010182896688087 ltp 505.75 outstandingprice 510.9 pctMaxLossSquareOffPositions 0.001 goodPrice 400 
+
+9/12/2018 3:09:02 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00393004519551975 ltp 508.9 outstandingprice 510.9 pctMaxLossSquareOffPositions 0.001 goodPrice 400 
+
+9/12/2018 3:09:32 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00551072623499302 ltp 508.1 outstandingprice 510.9 pctMaxLossSquareOffPositions 0.001 goodPrice 400 
+
+9/12/2018 3:11:36 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK bought 7 @ 76.25
+
+9/12/2018 3:28:09 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Holding EOD] Demat : IDFCBANK SELL order cancel , OrderRef = 180912000007195: Success
+
+9/12/2018 3:28:11 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Holding EOD] Demat : FEDERALBNK SELL order cancel , OrderRef = 180912000007230: Success
+
+9/12/2018 3:31:06 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT EOD PositionFile updated as 0 0
+
+9/12/2018 3:31:08 PM::: UpstoxAverageTheBuyThenSell ITC EOD PositionFile updated as 0 0
+
+9/12/2018 3:31:08 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS EOD PositionFile updated as 0 0
+
+9/12/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT EOD PositionFile updated as 2 510.9
+
+9/12/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell UJJIVAN EOD PositionFile updated as 0 0
+
+9/12/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell IDFCBANK EOD PositionFile updated as 11 45.5
+
+9/12/2018 3:31:10 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER EOD PositionFile updated as 0 0
+
+9/12/2018 3:31:11 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK EOD PositionFile updated as 6 77.8
+
+9/12/2018 3:31:11 PM::: All stock threads completed. Emailing today's log file
+
+9/12/2018 3:31:13 PM::: Exiting..
+

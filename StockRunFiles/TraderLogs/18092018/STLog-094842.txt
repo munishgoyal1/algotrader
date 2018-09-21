@@ -1,0 +1,34 @@
+9/18/2018 9:48:42 AM::: 126130
+
+9/18/2018 9:48:48 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 256.05 calculatedToBuyPrice 256.05 lastPriceToCompareWith 257.6 placeBuyNoLtpCompare False PriceStrategy Average from Today's outstanding
+
+9/18/2018 9:48:49 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS BUY 2 @ 256.05 LIMIT. OrderId = 180918000047604
+
+9/18/2018 9:48:49 AM::: UpstoxAverageTheBuyThenSell SBIN LTP 282.15 calculatedToBuyPrice 281.4 lastPriceToCompareWith 282.15 placeBuyNoLtpCompare True PriceStrategy Default markdown from Ltp
+
+9/18/2018 9:48:49 AM::: UpstoxAverageTheBuyThenSell HDFCBANK LTP 1996.2 calculatedToBuyPrice 1992.2 lastPriceToCompareWith 1996.2 placeBuyNoLtpCompare True PriceStrategy Default markdown from Ltp
+
+9/18/2018 9:48:50 AM::: UpstoxAverageTheBuyThenSell SBIN [Place Order MARGIN]: Success SBIN BUY 1 @ 281.4 LIMIT. OrderId = 180918000047615
+
+9/18/2018 9:48:50 AM::: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 1992.2 LIMIT. OrderId = 180918000047620
+
+9/18/2018 9:49:19 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Trade: TATAMOTORS bought 2 @ 256.05
+
+9/18/2018 9:49:19 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS Fully executed newqty 2 todayoutstandingqty 2 todayoutstandingprice 257.6 sellorderref 180918000021734 buyorderef 180918000047604 buyorderstatus COMPLETED
+
+9/18/2018 9:49:19 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Buy Executed]: TATAMOTORS SELL order cancel , OrderRef = 180918000021734: Success
+
+9/18/2018 9:49:19 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS SELL 4 @ 258.1 LIMIT. OrderId = 180918000048070
+
+9/18/2018 9:49:49 AM::: UpstoxAverageTheBuyThenSell DLF MARGIN Trade: DLF sold 1 @ 211.3
+
+9/18/2018 9:49:49 AM::: UpstoxAverageTheBuyThenSell DLF LTP 211.2 calculatedToBuyPrice 207.8 lastPriceToCompareWith 211.2 placeBuyNoLtpCompare False PriceStrategy Default markdown from Ltp
+
+9/18/2018 9:49:50 AM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF BUY 1 @ 207.8 LIMIT. OrderId = 180918000048510
+
+9/18/2018 9:52:19 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN sold 1 @ 333.1
+
+9/18/2018 9:52:19 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 333.2 calculatedToBuyPrice 331.2 lastPriceToCompareWith 333.2 placeBuyNoLtpCompare False PriceStrategy Default markdown from Ltp
+
+9/18/2018 9:52:19 AM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order MARGIN]: Success UJJIVAN BUY 1 @ 331.2 LIMIT. OrderId = 180918000050541
+

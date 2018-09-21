@@ -1,0 +1,42 @@
+8/29/2018 12:28:28 PM::: 220270
+
+8/29/2018 3:10:44 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: MinProfit Squareoff and cancel outstanding buy orders
+
+8/29/2018 3:10:44 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: IDFCBANK BUY order cancel , OrderRef = 180829000110773: Success
+
+8/29/2018 3:10:46 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: MinProfit Squareoff and cancel outstanding buy orders
+
+8/29/2018 3:10:46 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: FEDERALBNK BUY order cancel , OrderRef = 180829000110779: Success
+
+8/29/2018 3:10:46 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: FEDERALBNK SELL order cancel , OrderRef = 180829000112351: Success
+
+8/29/2018 3:10:46 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Unknown FEDERALBNK SELL 0 @ 0 LIMIT
+
+8/29/2018 3:20:45 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: diff 1 ltp 48.2 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 45 
+
+8/29/2018 3:20:47 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff 1 ltp 81 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 80 
+
+8/29/2018 3:21:45 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: diff 1 ltp 48.15 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 45 
+
+8/29/2018 3:21:47 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff 1 ltp 81 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 80 
+
+8/29/2018 3:22:45 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: diff 1 ltp 48.2 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 45 
+
+8/29/2018 3:22:47 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff 1 ltp 81.05 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 80 
+
+8/29/2018 3:23:45 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: diff 1 ltp 48.25 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 45 
+
+8/29/2018 3:23:47 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff 1 ltp 81 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 80 
+
+8/29/2018 3:24:45 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: diff 1 ltp 48.25 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 45 
+
+8/29/2018 3:24:47 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff 1 ltp 81 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 80 
+
+8/29/2018 3:31:46 PM::: UpstoxAverageTheBuyThenSell IDFCBANK EOD PositionFile updated as 0 0
+
+8/29/2018 3:31:48 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK EOD PositionFile updated as 7 81.2
+
+8/29/2018 3:31:48 PM::: All stock threads completed. Emailing today's log file
+
+8/29/2018 3:31:50 PM::: Exiting..
+

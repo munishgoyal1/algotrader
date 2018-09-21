@@ -1,0 +1,2 @@
+8/31/2018 11:14:48 AM::: Another instance of the app is running. Only one instance for a userId is allowed! UserId: 220270. Exiting..
+

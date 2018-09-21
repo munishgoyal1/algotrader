@@ -1,0 +1,9 @@
+9/6/2018 11:51:01 AM::: 126130
+
+9/6/2018 11:56:20 AM::: MyUpstoxWrapperError:An item with the same key has already been added.
+Stacktrace:   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 364
+
+9/6/2018 11:56:20 AM::: MyUpstoxWrapperRetrying 1 out of 3
+

@@ -1,0 +1,4 @@
+9/11/2018 9:31:16 AM::: 126130
+
+9/11/2018 9:31:17 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK SELL 11 @ 45 LIMIT
+

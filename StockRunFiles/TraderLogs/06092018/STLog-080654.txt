@@ -1,0 +1,336 @@
+9/6/2018 8:06:54 AM::: 126130
+
+9/6/2018 9:16:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 45.2 lastPriceToCompareWith 47.05 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/6/2018 9:16:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK BUY 11 @ 44.9 LIMIT
+
+9/6/2018 9:16:30 AM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 318
+
+9/6/2018 9:16:30 AM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/6/2018 9:16:31 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 507.9 lastPriceToCompareWith 507.9 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/6/2018 9:16:31 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Order: Success CAPLIPOINT BUY 1 @ 450 LIMIT
+
+9/6/2018 9:16:31 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 78.05 lastPriceToCompareWith 79.4 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/6/2018 9:16:31 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK BUY 6 @ 77.6 LIMIT
+
+9/6/2018 9:16:32 AM::: UpstoxAverageTheBuyThenSell ITC LTP 310 lastPriceToCompareWith 315.6 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/6/2018 9:16:32 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Order: Success ITC BUY 2 @ 308.1 LIMIT
+
+9/6/2018 9:22:01 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 11 @ 44.9
+
+9/6/2018 9:22:01 AM::: UpstoxAverageTheBuyThenSell IDFCBANK Fully executed newqty 11 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180906000007494 buyorderstatus COMPLETED
+
+9/6/2018 9:22:01 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK SELL 11 @ 45.1 LIMIT
+
+9/6/2018 9:32:34 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK bought 6 @ 77.6
+
+9/6/2018 9:32:34 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK Fully executed newqty 6 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180906000008475 buyorderstatus COMPLETED
+
+9/6/2018 9:32:34 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK SELL 6 @ 78 LIMIT
+
+9/6/2018 9:43:36 AM::: MyUpstoxWrapperError:An item with the same key has already been added.
+Stacktrace:   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 360
+
+9/6/2018 9:43:36 AM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/6/2018 9:43:36 AM::: MyUpstoxWrapperError:An item with the same key has already been added.
+Stacktrace:   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 360
+
+9/6/2018 9:43:36 AM::: MyUpstoxWrapperRetrying 2 out of 3
+
+9/6/2018 9:43:36 AM::: MyUpstoxWrapperError:An item with the same key has already been added.
+Stacktrace:   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 360
+
+9/6/2018 9:43:36 AM::: MyUpstoxWrapperRetrying 3 out of 3
+
+9/6/2018 9:43:36 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 1 @ 78
+
+9/6/2018 9:44:36 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:45:36 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:46:36 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:47:36 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:48:06 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK sold 11 @ 45.1
+
+9/6/2018 9:48:06 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 45.05 lastPriceToCompareWith 47.05 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/6/2018 9:48:06 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK BUY 11 @ 44.8 LIMIT
+
+9/6/2018 9:48:37 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:49:37 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:50:37 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:51:37 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:52:37 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:53:37 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:54:37 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:55:37 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:56:38 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:57:38 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:58:38 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 9:59:38 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:00:38 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:01:38 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:02:38 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:03:38 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:04:39 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:05:40 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:06:40 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:07:40 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:08:40 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:09:40 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:10:40 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:11:09 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 11 @ 44.8
+
+9/6/2018 10:11:09 AM::: UpstoxAverageTheBuyThenSell IDFCBANK Fully executed newqty 11 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180906000050885 buyorderstatus COMPLETED
+
+9/6/2018 10:11:09 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK SELL 11 @ 45 LIMIT
+
+9/6/2018 10:11:41 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:12:41 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:13:41 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:14:41 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:15:41 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:16:41 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:17:42 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:18:42 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:19:42 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:20:42 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:21:42 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:22:42 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:23:43 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:24:43 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:25:43 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:26:43 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:27:43 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:28:43 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:29:43 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:30:43 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:31:44 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:32:44 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:33:44 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:34:44 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:35:44 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:36:44 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:37:44 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:38:44 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:39:45 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:40:45 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:41:45 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:42:14 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK sold 11 @ 45
+
+9/6/2018 10:42:14 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 45 lastPriceToCompareWith 47.05 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/6/2018 10:42:14 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK BUY 11 @ 44.7 LIMIT
+
+9/6/2018 10:42:45 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:43:45 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:44:45 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:45:45 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:46:45 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:47:46 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:48:46 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:49:46 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:50:46 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:51:46 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:52:47 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:53:47 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:54:47 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:55:47 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:56:47 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:57:47 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:58:47 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 10:59:48 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:00:48 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:01:48 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:02:48 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:03:48 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:04:48 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:05:49 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:06:49 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:07:49 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:08:49 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:09:49 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:10:50 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:11:50 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:12:50 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:13:50 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:14:50 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:15:50 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:16:50 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:17:51 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:18:51 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:19:51 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:20:19 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 11 @ 44.7
+
+9/6/2018 11:20:19 AM::: UpstoxAverageTheBuyThenSell IDFCBANK Fully executed newqty 11 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180906000087129 buyorderstatus COMPLETED
+
+9/6/2018 11:20:19 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK SELL 11 @ 44.9 LIMIT
+
+9/6/2018 11:20:51 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:21:51 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:22:51 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:23:51 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:24:51 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:25:52 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:26:52 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:27:52 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:28:52 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:29:52 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:30:52 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:31:53 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:32:53 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:33:53 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:34:53 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:35:53 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:36:53 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:37:53 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:38:54 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:39:54 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:40:54 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:41:54 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:42:54 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:43:54 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:44:54 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:45:55 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:46:55 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:47:55 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:48:55 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+
+9/6/2018 11:49:55 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 78
+

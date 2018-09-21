@@ -1,0 +1,6 @@
+8/29/2018 9:07:09 AM::: 220270
+
+8/29/2018 9:16:01 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK Error:Failed getting TradeBook at Init
+Stacktrace:   at SimpleTrader.UpstoxBuySellBase.Init(AlgoType algoType) in d:\GoogleDrive\UpstoxTrader\Code\Upstox\UpstoxBuySellBase.cs:line 158
+   at SimpleTrader.UpstoxAverageTheBuyThenSell.StockBuySell() in d:\GoogleDrive\UpstoxTrader\Code\Upstox\UpstoxAverageTheBuyThenSell.cs:line 92
+

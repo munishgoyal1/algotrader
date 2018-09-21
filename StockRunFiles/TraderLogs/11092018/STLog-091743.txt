@@ -1,0 +1,8 @@
+9/11/2018 9:17:43 AM::: 126130
+
+9/11/2018 9:17:43 AM::: UpstoxAverageTheBuyThenSell IDFCBANK DELIVERY Order: Success IDFCBANK SELL 11 @ 46 LIMIT
+
+9/11/2018 9:17:45 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 533.15 lastPriceToCompareWith 533.15 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/11/2018 9:17:45 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT DELIVERY Order: Success CAPLIPOINT BUY 1 @ 500 LIMIT
+

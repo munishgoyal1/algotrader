@@ -1,0 +1,64 @@
+9/11/2018 9:38:50 AM::: 126130
+
+9/11/2018 9:38:57 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER LTP 84.85 lastPriceToCompareWith 84.85 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/11/2018 9:38:57 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER BUY 7 @ 84.3 LIMIT
+
+9/11/2018 9:38:57 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 331.2 lastPriceToCompareWith 331.2 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/11/2018 9:38:57 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Order: Success UJJIVAN BUY 2 @ 329.2 LIMIT
+
+9/11/2018 9:43:56 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Trade: TATAMOTORS bought 2 @ 276.8
+
+9/11/2018 9:43:56 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180911000034975 buyorderstatus COMPLETED
+
+9/11/2018 9:43:56 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Order: Success TATAMOTORS SELL 2 @ 278.2 LIMIT
+
+9/11/2018 9:47:59 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN bought 2 @ 329.2
+
+9/11/2018 9:47:59 AM::: UpstoxAverageTheBuyThenSell UJJIVAN Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180911000037503 buyorderstatus COMPLETED
+
+9/11/2018 9:47:59 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Order: Success UJJIVAN SELL 2 @ 330.8 LIMIT
+
+9/11/2018 9:52:59 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN sold 2 @ 330.8
+
+9/11/2018 9:52:59 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 330.9 lastPriceToCompareWith 330.9 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/11/2018 9:53:00 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Order: Success UJJIVAN BUY 2 @ 328.9 LIMIT
+
+9/11/2018 10:17:59 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 2 @ 301.4
+
+9/11/2018 10:17:59 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180911000035001 buyorderstatus COMPLETED
+
+9/11/2018 10:18:00 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT SELL 2 @ 302.9 LIMIT
+
+9/11/2018 10:36:01 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT sold 2 @ 302.9
+
+9/11/2018 10:36:01 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 302.25 lastPriceToCompareWith 302.25 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/11/2018 10:36:02 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT BUY 2 @ 300.4 LIMIT
+
+9/11/2018 10:39:02 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 2 @ 300.4
+
+9/11/2018 10:39:02 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180911000074515 buyorderstatus COMPLETED
+
+9/11/2018 10:39:02 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT SELL 2 @ 301.9 LIMIT
+
+9/11/2018 10:47:05 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN bought 2 @ 328.9
+
+9/11/2018 10:47:05 AM::: UpstoxAverageTheBuyThenSell UJJIVAN Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180911000050022 buyorderstatus COMPLETED
+
+9/11/2018 10:47:06 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Order: Success UJJIVAN SELL 2 @ 330.5 LIMIT
+
+9/11/2018 10:52:06 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN sold 2 @ 330.5
+
+9/11/2018 10:52:06 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 330.75 lastPriceToCompareWith 330.75 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/11/2018 10:52:06 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Order: Success UJJIVAN BUY 2 @ 328.8 LIMIT
+
+9/11/2018 11:50:05 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 11 @ 44.6
+
+9/11/2018 11:50:05 AM::: UpstoxAverageTheBuyThenSell IDFCBANK Fully executed newqty 11 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180911000034910 buyorderstatus COMPLETED
+
+9/11/2018 11:50:05 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK SELL 11 @ 44.8 LIMIT
+

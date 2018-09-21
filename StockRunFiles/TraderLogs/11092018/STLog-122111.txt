@@ -1,0 +1,6 @@
+9/11/2018 12:21:11 PM::: 126130
+
+9/11/2018 12:21:29 PM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 44.65 lastPriceToCompareWith 45.5 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/11/2018 12:21:31 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK BUY 11 @ 44.4 LIMIT
+

@@ -1,0 +1,10 @@
+9/14/2018 9:35:02 AM::: 126130
+
+9/14/2018 9:35:05 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT DELIVERY Order: Success CAPLIPOINT SELL 2 @ 518.6 LIMIT
+
+9/14/2018 9:36:08 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 1 @ 305.4
+
+9/14/2018 9:36:08 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180914000026354 buyorderstatus COMPLETED
+
+9/14/2018 9:36:08 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT SELL 1 @ 306.9 LIMIT
+

@@ -1,0 +1,38 @@
+9/7/2018 9:10:58 AM::: 126130
+
+9/7/2018 9:16:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 0 lastPriceToCompareWith 94.1 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/7/2018 9:16:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Unknown IDFCBANK BUY 11 @ 0 LIMIT
+
+9/7/2018 9:16:01 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 77.15 lastPriceToCompareWith 79.4 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/7/2018 9:16:01 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK BUY 6 @ 76.7 LIMIT
+
+9/7/2018 9:16:02 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 0 lastPriceToCompareWith 0 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/7/2018 9:16:02 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Order: Unknown CAPLIPOINT BUY 1 @ 0 LIMIT
+
+9/7/2018 9:16:03 AM::: UpstoxAverageTheBuyThenSell ITC LTP 308.8 lastPriceToCompareWith 315.6 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/7/2018 9:16:04 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Order: Success ITC BUY 2 @ 306.9 LIMIT
+
+9/7/2018 9:17:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 44.6 lastPriceToCompareWith 94.1 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/7/2018 9:17:01 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK BUY 11 @ 44.3 LIMIT
+
+9/7/2018 9:17:02 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 507 lastPriceToCompareWith 507 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/7/2018 9:17:03 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Order: Success CAPLIPOINT BUY 1 @ 450 LIMIT
+
+9/7/2018 9:32:05 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 11 @ 44.3
+
+9/7/2018 9:32:05 AM::: UpstoxAverageTheBuyThenSell IDFCBANK Fully executed newqty 11 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180907000007733 buyorderstatus COMPLETED
+
+9/7/2018 9:32:05 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK SELL 11 @ 44.5 LIMIT
+
+9/7/2018 9:36:06 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK sold 11 @ 44.5
+
+9/7/2018 9:36:06 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 44.45 lastPriceToCompareWith 94.1 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/7/2018 9:36:06 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK BUY 11 @ 44.2 LIMIT
+

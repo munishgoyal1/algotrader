@@ -1,0 +1,144 @@
+9/14/2018 9:39:25 AM::: 126130
+
+9/14/2018 9:39:37 AM::: UpstoxAverageTheBuyThenSell RELIANCE LTP 1262.3 lastPriceToCompareWith 1262.3 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/14/2018 9:39:37 AM::: UpstoxAverageTheBuyThenSell RELIANCE MARGIN Order: Success RELIANCE BUY 1 @ 1254.7 LIMIT
+
+9/14/2018 9:39:38 AM::: UpstoxAverageTheBuyThenSell INFY LTP 735.3 lastPriceToCompareWith 735.3 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/14/2018 9:39:38 AM::: UpstoxAverageTheBuyThenSell INFY MARGIN Order: Success INFY BUY 1 @ 730.9 LIMIT
+
+9/14/2018 9:56:36 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER bought 5 @ 82.7
+
+9/14/2018 9:56:36 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER Fully executed newqty 5 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180914000026939 buyorderstatus COMPLETED
+
+9/14/2018 9:56:36 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER TodayOutstandingQty reached the max. todayOutstandingQty: 5 maxTodayOutstandingQtyAllowed: 4
+
+9/14/2018 9:56:36 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER TotalOutstandingQty reached the max. todayOutstandingQty: 5 holdingOutstandingQty: 0 maxTotalOutstandingQtyAllowed: 4
+
+9/14/2018 9:56:36 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER SELL 5 @ 83.1 LIMIT
+
+9/14/2018 9:57:06 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER sold 5 @ 83.1
+
+9/14/2018 9:57:06 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER LTP 83.1 lastPriceToCompareWith 83.1 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/14/2018 9:57:06 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER BUY 1 @ 82.6 LIMIT
+
+9/14/2018 10:19:16 AM::: UpstoxAverageTheBuyThenSell RELIANCE MARGIN Trade: RELIANCE bought 1 @ 1254.7
+
+9/14/2018 10:19:16 AM::: UpstoxAverageTheBuyThenSell RELIANCE Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180914000037780 buyorderstatus COMPLETED
+
+9/14/2018 10:19:16 AM::: UpstoxAverageTheBuyThenSell RELIANCE MARGIN Order: Success RELIANCE SELL 1 @ 1261 LIMIT
+
+9/14/2018 10:19:16 AM::: UpstoxAverageTheBuyThenSell RELIANCE LTP 1254.4 is -1.5% of Last Average from Today's outstanding price 1254.7
+
+9/14/2018 10:19:16 AM::: UpstoxAverageTheBuyThenSell RELIANCE MARGIN Order: Success RELIANCE BUY 1 @ 1234.6 LIMIT
+
+9/14/2018 10:32:43 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT sold 1 @ 306.9
+
+9/14/2018 10:32:43 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 306.4 lastPriceToCompareWith 306.4 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+
+9/14/2018 10:32:43 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Order: Success BERGEPAINT BUY 1 @ 304.6 LIMIT
+
+9/14/2018 11:12:53 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER bought 1 @ 82.6
+
+9/14/2018 11:12:54 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180914000050445 buyorderstatus COMPLETED
+
+9/14/2018 11:12:54 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER SELL 1 @ 83 LIMIT
+
+9/14/2018 11:57:05 AM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 367
+
+9/14/2018 11:57:05 AM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/14/2018 11:58:35 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT CASH Trade: CAPLIPOINT sold 2 @ 518.6
+
+9/14/2018 1:46:30 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Trade: INFY bought 1 @ 730.9
+
+9/14/2018 1:46:30 PM::: UpstoxAverageTheBuyThenSell INFY Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180914000037796 buyorderstatus COMPLETED
+
+9/14/2018 1:46:30 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Order: Success INFY SELL 1 @ 734.6 LIMIT
+
+9/14/2018 1:46:30 PM::: UpstoxAverageTheBuyThenSell INFY LTP 731 is -1.5% of Last Average from Today's outstanding price 730.9
+
+9/14/2018 1:46:30 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Order: Success INFY BUY 1 @ 719.2 LIMIT
+
+9/14/2018 3:00:16 PM::: UpstoxAverageTheBuyThenSell RELIANCE [Margin EOD]: RELIANCE BUY order cancel , OrderRef = 180914000064553: Success
+
+9/14/2018 3:00:16 PM::: UpstoxAverageTheBuyThenSell RELIANCE [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/14/2018 3:00:17 PM::: UpstoxAverageTheBuyThenSell RELIANCE [Margin EOD]: RELIANCE SELL order cancel , OrderRef = 180914000064551: Success
+
+9/14/2018 3:00:17 PM::: UpstoxAverageTheBuyThenSell RELIANCE MARGIN Order: Success RELIANCE SELL 1 @ 1258.5 LIMIT
+
+9/14/2018 3:00:17 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: INFY BUY order cancel , OrderRef = 180914000144311: Success
+
+9/14/2018 3:00:17 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/14/2018 3:00:17 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: INFY SELL order cancel , OrderRef = 180914000144310: Success
+
+9/14/2018 3:00:17 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Order: Success INFY SELL 1 @ 733.1 LIMIT
+
+9/14/2018 3:00:20 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: CAPLIPOINT BUY order cancel , OrderRef = 180914000026301: Success
+
+9/14/2018 3:00:21 PM::: UpstoxAverageTheBuyThenSell ITC [Margin EOD]: ITC BUY order cancel , OrderRef = 180914000026321: Success
+
+9/14/2018 3:00:21 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: TATAMOTORS BUY order cancel , OrderRef = 180914000026345: Success
+
+9/14/2018 3:00:21 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: BERGEPAINT BUY order cancel , OrderRef = 180914000071290: Success
+
+9/14/2018 3:00:22 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: UJJIVAN BUY order cancel , OrderRef = 180914000026381: Success
+
+9/14/2018 3:00:22 PM::: UpstoxAverageTheBuyThenSell ZEEL [Margin EOD]: ZEEL BUY order cancel , OrderRef = 180914000026406: Success
+
+9/14/2018 3:00:22 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/14/2018 3:00:22 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: PCJEWELLER SELL order cancel , OrderRef = 180914000087333: Success
+
+9/14/2018 3:00:22 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER SELL 1 @ 82.8 LIMIT
+
+9/14/2018 3:00:23 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Margin EOD]: SUNPHARMA BUY order cancel , OrderRef = 180914000026433: Success
+
+9/14/2018 3:00:23 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: IBULHSGFIN BUY order cancel , OrderRef = 180914000026460: Success
+
+9/14/2018 3:02:48 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Trade: INFY sold 1 @ 733.1
+
+9/14/2018 3:05:18 PM::: UpstoxAverageTheBuyThenSell RELIANCE [Margin EOD]: diff 0.000756580257237324 ltp 1255.65 outstandingprice 1254.7 pctMaxLossSquareOffPositions 0.001 goodPrice 1150 
+
+9/14/2018 3:05:18 PM::: UpstoxAverageTheBuyThenSell RELIANCE [Margin EOD]: max loss 0.000756580257237324% is less than 0.001% and avg outstanding price 1254.7 is greater than good price of 1150. LTP is 1255.65. Place squareoff @ MARKET.
+
+9/14/2018 3:05:18 PM::: UpstoxAverageTheBuyThenSell RELIANCE [Margin EOD]: RELIANCE SELL order cancel , OrderRef = 180914000170687: Success
+
+9/14/2018 3:05:18 PM::: UpstoxAverageTheBuyThenSell RELIANCE MARGIN Order: Success RELIANCE SELL 1 @ 1258.5 MARKET
+
+9/14/2018 3:05:24 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00670322973796462 ltp 82.05 outstandingprice 82.6 pctMaxLossSquareOffPositions 0.001 goodPrice 75 
+
+9/14/2018 3:05:48 PM::: UpstoxAverageTheBuyThenSell RELIANCE MARGIN Trade: RELIANCE sold 1 @ 1255.55
+
+9/14/2018 3:05:54 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.0054777845404746 ltp 82.15 outstandingprice 82.6 pctMaxLossSquareOffPositions 0.001 goodPrice 75 
+
+9/14/2018 3:06:24 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.0054777845404746 ltp 82.15 outstandingprice 82.6 pctMaxLossSquareOffPositions 0.001 goodPrice 75 
+
+9/14/2018 3:06:54 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00670322973796462 ltp 82.05 outstandingprice 82.6 pctMaxLossSquareOffPositions 0.001 goodPrice 75 
+
+9/14/2018 3:07:24 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00609013398294763 ltp 82.1 outstandingprice 82.6 pctMaxLossSquareOffPositions 0.001 goodPrice 75 
+
+9/14/2018 3:07:54 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00609013398294763 ltp 82.1 outstandingprice 82.6 pctMaxLossSquareOffPositions 0.001 goodPrice 75 
+
+9/14/2018 3:08:24 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00609013398294763 ltp 82.1 outstandingprice 82.6 pctMaxLossSquareOffPositions 0.001 goodPrice 75 
+
+9/14/2018 3:08:54 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00609013398294763 ltp 82.1 outstandingprice 82.6 pctMaxLossSquareOffPositions 0.001 goodPrice 75 
+
+9/14/2018 3:09:25 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00670322973796462 ltp 82.05 outstandingprice 82.6 pctMaxLossSquareOffPositions 0.001 goodPrice 75 
+
+9/14/2018 3:09:55 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00609013398294763 ltp 82.1 outstandingprice 82.6 pctMaxLossSquareOffPositions 0.001 goodPrice 75 
+
+9/14/2018 3:11:22 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 367
+
+9/14/2018 3:11:22 PM::: MyUpstoxWrapperRetrying 1 out of 3
+

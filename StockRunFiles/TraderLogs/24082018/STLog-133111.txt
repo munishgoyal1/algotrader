@@ -1,0 +1,10 @@
+8/24/2018 1:31:11 PM::: 220270
+
+8/24/2018 1:31:11 PM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 0 lastPriceToCompareWith 0 markDownPct 0.0075 PriceStrategy Default markdown from Ltp
+
+8/24/2018 1:31:11 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Unknown IDFCBANK BUY 11 @ 0 LIMIT
+
+8/24/2018 1:31:12 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 0 lastPriceToCompareWith 0 markDownPct 0.0075 PriceStrategy Default markdown from Ltp
+
+8/24/2018 1:31:12 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Unknown FEDERALBNK BUY 6 @ 0 LIMIT
+

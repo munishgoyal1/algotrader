@@ -1,0 +1,50 @@
+9/18/2018 8:57:29 AM::: 126130
+
+9/18/2018 8:58:05 AM::: UpstoxAverageTheBuyThenSell ZEEL EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:06 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:06 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:15 AM::: UpstoxAverageTheBuyThenSell INFY [Place Order DELIVERY]: Success INFY SELL 1 @ 739.8 LIMIT. OrderId = 180918000002437
+
+9/18/2018 8:58:15 AM::: UpstoxAverageTheBuyThenSell INFY EOD PositionFile updated as 1 732.5
+
+9/18/2018 8:58:16 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:17 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:17 AM::: UpstoxAverageTheBuyThenSell BIOCON EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:17 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:17 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:17 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:17 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:17 AM::: UpstoxAverageTheBuyThenSell IGL EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:18 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:18 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:19 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order DELIVERY]: Success ITC SELL 1 @ 306.7 LIMIT. OrderId = 180918000002441
+
+9/18/2018 8:58:19 AM::: UpstoxAverageTheBuyThenSell ITC EOD PositionFile updated as 1 303.7
+
+9/18/2018 8:58:19 AM::: UpstoxAverageTheBuyThenSell UJJIVAN EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:19 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:19 AM::: UpstoxAverageTheBuyThenSell RELIANCE EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:19 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order DELIVERY]: Success IDFCBANK SELL 11 @ 46 LIMIT. OrderId = 180918000002442
+
+9/18/2018 8:58:19 AM::: UpstoxAverageTheBuyThenSell DLF EOD PositionFile updated as 0 0
+
+9/18/2018 8:58:19 AM::: UpstoxAverageTheBuyThenSell IDFCBANK EOD PositionFile updated as 11 45.5
+
+9/18/2018 8:58:19 AM::: Update PnL files
+

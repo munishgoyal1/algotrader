@@ -1,0 +1,13 @@
+9/18/2018 10:03:32 AM::: 126130
+
+9/18/2018 10:03:42 AM::: UpstoxAverageTheBuyThenSell M&M LTP 958.5 calculatedToBuyPrice 957.4 lastPriceToCompareWith 958.5 placeBuyNoLtpCompare True PriceStrategy Default markdown from Ltp
+
+9/18/2018 10:03:42 AM::: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M BUY 1 @ 957.4 LIMIT. OrderId = 180918000058846
+
+9/18/2018 10:06:34 AM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 10:06:34 AM::: MyUpstoxWrapperRetrying 1 out of 3
+

@@ -1,0 +1,62 @@
+9/14/2018 3:14:16 PM::: 126130
+
+9/14/2018 3:14:17 PM::: UpstoxAverageTheBuyThenSell IDFCBANK DELIVERY Order: Success IDFCBANK SELL 11 @ 46 LIMIT
+
+9/14/2018 3:14:18 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK DELIVERY Order: Success FEDERALBNK SELL 6 @ 78.6 LIMIT
+
+9/14/2018 3:14:19 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/14/2018 3:14:23 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Order: Success PCJEWELLER SELL 1 @ 83 LIMIT
+
+9/14/2018 3:14:23 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/14/2018 3:14:23 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: PCJEWELLER SELL order cancel , OrderRef = 180914000177543: Unknown
+
+9/14/2018 3:28:21 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Holding EOD] Demat : IDFCBANK SELL order cancel , OrderRef = 180914000020400: Success
+
+9/14/2018 3:28:21 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Holding EOD] Demat : IDFCBANK SELL order cancel , OrderRef = 180914000026267: Success
+
+9/14/2018 3:28:21 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Holding EOD] Demat : IDFCBANK SELL order cancel , OrderRef = 180914000177499: Success
+
+9/14/2018 3:28:21 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Holding EOD] Demat : FEDERALBNK SELL order cancel , OrderRef = 180914000026281: Success
+
+9/14/2018 3:28:21 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Holding EOD] Demat : FEDERALBNK SELL order cancel , OrderRef = 180914000177508: Success
+
+9/14/2018 3:28:22 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Holding EOD] Demat : CAPLIPOINT SELL order cancel , OrderRef = 180914000026297: Success
+
+9/14/2018 3:28:22 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Holding EOD] Demat : CAPLIPOINT SELL order cancel , OrderRef = 180914000033984: Success
+
+9/14/2018 3:28:29 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin Conversion EOD]: PCJEWELLER SELL order cancel , OrderRef = 180914000177543: Success
+
+9/14/2018 3:28:29 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER Conversion to delivery: Success PCJEWELLER qty of 1
+
+9/14/2018 3:31:00 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER EOD PositionFile updated as 1 82.6
+
+9/14/2018 3:31:00 PM::: UpstoxAverageTheBuyThenSell UJJIVAN EOD PositionFile updated as 0 0
+
+9/14/2018 3:31:01 PM::: UpstoxAverageTheBuyThenSell ZEEL EOD PositionFile updated as 0 0
+
+9/14/2018 3:31:01 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA EOD PositionFile updated as 0 0
+
+9/14/2018 3:31:02 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN EOD PositionFile updated as 0 0
+
+9/14/2018 3:31:03 PM::: UpstoxAverageTheBuyThenSell RELIANCE EOD PositionFile updated as 0 0
+
+9/14/2018 3:31:03 PM::: UpstoxAverageTheBuyThenSell INFY EOD PositionFile updated as 0 0
+
+9/14/2018 3:31:22 PM::: UpstoxAverageTheBuyThenSell IDFCBANK EOD PositionFile updated as 11 45.5
+
+9/14/2018 3:31:22 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK EOD PositionFile updated as 6 77.8
+
+9/14/2018 3:31:23 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT EOD PositionFile updated as -2 0
+
+9/14/2018 3:31:24 PM::: UpstoxAverageTheBuyThenSell ITC EOD PositionFile updated as 0 0
+
+9/14/2018 3:31:25 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS EOD PositionFile updated as 0 0
+
+9/14/2018 3:31:25 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT EOD PositionFile updated as 0 0
+
+9/14/2018 3:31:25 PM::: All stock threads completed. Emailing today's log file
+
+9/14/2018 3:31:27 PM::: Exiting..
+

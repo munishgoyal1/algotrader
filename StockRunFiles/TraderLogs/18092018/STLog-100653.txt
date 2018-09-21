@@ -1,0 +1,1019 @@
+9/18/2018 10:06:54 AM::: RELEASE MODE
+
+9/18/2018 10:07:01 AM::: 126130
+
+9/18/2018 10:08:10 AM::: UpstoxAverageTheBuyThenSell M&M MARGIN Trade: M&M bought 1 @ 957.4
+
+9/18/2018 10:08:11 AM::: UpstoxAverageTheBuyThenSell M&M Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000058846 buyorderstatus COMPLETED
+
+9/18/2018 10:08:11 AM::: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M SELL 1 @ 958.4 LIMIT. OrderId = 180918000061745
+
+9/18/2018 10:08:11 AM::: UpstoxAverageTheBuyThenSell M&M LTP 957.5 calculatedToBuyPrice 937.2 lastPriceToCompareWith 957.4 placeBuyNoLtpCompare True PriceStrategy Average from Today's outstanding
+
+9/18/2018 10:08:11 AM::: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M BUY 1 @ 937.2 LIMIT. OrderId = 180918000061747
+
+9/18/2018 10:16:29 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK bought 1 @ 76.55
+
+9/18/2018 10:16:29 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK Fully executed newqty 1 todayoutstandingqty 1 todayoutstandingprice 77.6 sellorderref 180918000028074 buyorderef 180918000044990 buyorderstatus COMPLETED
+
+9/18/2018 10:16:29 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Buy Executed]: FEDERALBNK SELL order cancel , OrderRef = 180918000028074: Success
+
+9/18/2018 10:16:29 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order MARGIN]: Success FEDERALBNK SELL 2 @ 77.5 LIMIT. OrderId = 180918000066842
+
+9/18/2018 10:19:01 AM::: UpstoxAverageTheBuyThenSell M&M MARGIN Trade: M&M sold 1 @ 958.4
+
+9/18/2018 10:29:35 AM::: UpstoxAverageTheBuyThenSell HDFCBANK MARGIN Trade: HDFCBANK bought 1 @ 1992.2
+
+9/18/2018 10:29:35 AM::: UpstoxAverageTheBuyThenSell HDFCBANK Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000047620 buyorderstatus COMPLETED
+
+9/18/2018 10:29:35 AM::: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK SELL 1 @ 1994.2 LIMIT. OrderId = 180918000074156
+
+9/18/2018 10:29:35 AM::: UpstoxAverageTheBuyThenSell HDFCBANK LTP 1990.75 calculatedToBuyPrice 1950.2 lastPriceToCompareWith 1992.2 placeBuyNoLtpCompare True PriceStrategy Average from Today's outstanding
+
+9/18/2018 10:29:35 AM::: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 1950.2 LIMIT. OrderId = 180918000074158
+
+9/18/2018 10:29:49 AM::: UpstoxAverageTheBuyThenSell DLF MARGIN Trade: DLF bought 1 @ 207.8
+
+9/18/2018 10:29:49 AM::: UpstoxAverageTheBuyThenSell DLF Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000048510 buyorderstatus COMPLETED
+
+9/18/2018 10:29:49 AM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF SELL 1 @ 208.8 LIMIT. OrderId = 180918000074321
+
+9/18/2018 10:36:38 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 75.65 calculatedToBuyPrice 75.65 lastPriceToCompareWith 76.55 placeBuyNoLtpCompare False PriceStrategy Average from Today's outstanding
+
+9/18/2018 10:36:38 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order MARGIN]: Success FEDERALBNK BUY 1 @ 75.65 LIMIT. OrderId = 180918000079245
+
+9/18/2018 10:37:52 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN bought 1 @ 331.2
+
+9/18/2018 10:37:52 AM::: UpstoxAverageTheBuyThenSell UJJIVAN Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000050541 buyorderstatus COMPLETED
+
+9/18/2018 10:37:53 AM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order MARGIN]: Success UJJIVAN SELL 1 @ 332.9 LIMIT. OrderId = 180918000079982
+
+9/18/2018 10:38:09 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK bought 1 @ 75.65
+
+9/18/2018 10:38:09 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK Fully executed newqty 1 todayoutstandingqty 2 todayoutstandingprice 77.07 sellorderref 180918000066842 buyorderef 180918000079245 buyorderstatus COMPLETED
+
+9/18/2018 10:38:10 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Buy Executed]: FEDERALBNK SELL order cancel , OrderRef = 180918000066842: Success
+
+9/18/2018 10:38:10 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order MARGIN]: Success FEDERALBNK SELL 3 @ 77 LIMIT. OrderId = 180918000080175
+
+9/18/2018 10:39:55 AM::: UpstoxAverageTheBuyThenSell SBIN MARGIN Trade: SBIN bought 1 @ 281.4
+
+9/18/2018 10:39:55 AM::: UpstoxAverageTheBuyThenSell SBIN Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000047615 buyorderstatus COMPLETED
+
+9/18/2018 10:39:55 AM::: UpstoxAverageTheBuyThenSell SBIN [Place Order MARGIN]: Success SBIN SELL 1 @ 281.8 LIMIT. OrderId = 180918000081288
+
+9/18/2018 10:39:55 AM::: UpstoxAverageTheBuyThenSell SBIN LTP 281.4 calculatedToBuyPrice 275.3 lastPriceToCompareWith 281.4 placeBuyNoLtpCompare True PriceStrategy Average from Today's outstanding
+
+9/18/2018 10:39:55 AM::: UpstoxAverageTheBuyThenSell SBIN [Place Order MARGIN]: Success SBIN BUY 1 @ 275.3 LIMIT. OrderId = 180918000081291
+
+9/18/2018 10:45:12 AM::: UpstoxAverageTheBuyThenSell SBIN MARGIN Trade: SBIN sold 1 @ 281.8
+
+9/18/2018 10:49:56 AM::: UpstoxAverageTheBuyThenSell IGL MARGIN Trade: IGL bought 1 @ 265.8
+
+9/18/2018 10:49:56 AM::: UpstoxAverageTheBuyThenSell IGL Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000014010 buyorderstatus COMPLETED
+
+9/18/2018 10:49:56 AM::: UpstoxAverageTheBuyThenSell IGL [Place Order MARGIN]: Success IGL SELL 1 @ 272.4 LIMIT. OrderId = 180918000086574
+
+9/18/2018 10:53:04 AM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 10:53:04 AM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 10:56:20 AM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 10:56:20 AM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 10:57:06 AM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 10:57:06 AM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 10:58:54 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 327.85 calculatedToBuyPrice 327.85 lastPriceToCompareWith 331.2 placeBuyNoLtpCompare False PriceStrategy Average from Today's outstanding
+
+9/18/2018 10:58:54 AM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order MARGIN]: Success UJJIVAN BUY 1 @ 327.85 LIMIT. OrderId = 180918000090622
+
+9/18/2018 10:59:09 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN bought 1 @ 327.85
+
+9/18/2018 10:59:09 AM::: UpstoxAverageTheBuyThenSell UJJIVAN Fully executed newqty 1 todayoutstandingqty 1 todayoutstandingprice 331.2 sellorderref 180918000079982 buyorderef 180918000090622 buyorderstatus COMPLETED
+
+9/18/2018 10:59:09 AM::: UpstoxAverageTheBuyThenSell UJJIVAN [Buy Executed]: UJJIVAN SELL order cancel , OrderRef = 180918000079982: Success
+
+9/18/2018 10:59:09 AM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order MARGIN]: Success UJJIVAN SELL 2 @ 331.2 LIMIT. OrderId = 180918000090734
+
+9/18/2018 11:02:24 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK MARGIN Trade: INDUSINDBK bought 1 @ 1860.1
+
+9/18/2018 11:02:24 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000014731 buyorderstatus COMPLETED
+
+9/18/2018 11:02:24 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK [Place Order MARGIN]: Success INDUSINDBK SELL 1 @ 1874.1 LIMIT. OrderId = 180918000092707
+
+9/18/2018 11:02:24 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK LTP 1861.15 calculatedToBuyPrice 1827.4 lastPriceToCompareWith 1860.1 placeBuyNoLtpCompare True PriceStrategy Average from Today's outstanding
+
+9/18/2018 11:02:24 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK [Place Order MARGIN]: Success INDUSINDBK BUY 1 @ 1827.4 LIMIT. OrderId = 180918000092709
+
+9/18/2018 11:05:27 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Trade: ITC bought 1 @ 300.6
+
+9/18/2018 11:05:27 AM::: UpstoxAverageTheBuyThenSell ITC Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000056647 buyorderstatus COMPLETED
+
+9/18/2018 11:05:28 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC SELL 1 @ 302.1 LIMIT. OrderId = 180918000094627
+
+9/18/2018 11:06:42 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Trade: CAPLIPOINT bought 1 @ 500.5
+
+9/18/2018 11:06:42 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000014020 buyorderstatus COMPLETED
+
+9/18/2018 11:06:42 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT SELL 1 @ 505.5 LIMIT. OrderId = 180918000095309
+
+9/18/2018 11:09:15 AM::: UpstoxAverageTheBuyThenSell ZEEL MARGIN Trade: ZEEL bought 1 @ 471.2
+
+9/18/2018 11:09:15 AM::: UpstoxAverageTheBuyThenSell ZEEL Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000013907 buyorderstatus COMPLETED
+
+9/18/2018 11:09:15 AM::: UpstoxAverageTheBuyThenSell ZEEL [Place Order MARGIN]: Success ZEEL SELL 1 @ 473.6 LIMIT. OrderId = 180918000096353
+
+9/18/2018 11:09:15 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP 471.05 calculatedToBuyPrice 461.7 lastPriceToCompareWith 471.2 placeBuyNoLtpCompare True PriceStrategy Average from Today's outstanding
+
+9/18/2018 11:09:15 AM::: UpstoxAverageTheBuyThenSell ZEEL [Place Order MARGIN]: Success ZEEL BUY 1 @ 461.7 LIMIT. OrderId = 180918000096354
+
+9/18/2018 11:20:05 AM::: UpstoxAverageTheBuyThenSell HDFCBANK MARGIN Trade: HDFCBANK sold 1 @ 1994.2
+
+9/18/2018 11:21:19 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Trade: ITC sold 1 @ 302.1
+
+9/18/2018 11:21:19 AM::: UpstoxAverageTheBuyThenSell ITC LTP 302.15 calculatedToBuyPrice 300.6 lastPriceToCompareWith 302.15 placeBuyNoLtpCompare False PriceStrategy Default markdown from Ltp
+
+9/18/2018 11:21:20 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC BUY 1 @ 300.6 LIMIT. OrderId = 180918000100741
+
+9/18/2018 11:28:24 AM::: UpstoxAverageTheBuyThenSell ZEEL MARGIN Trade: ZEEL sold 1 @ 473.6
+
+9/18/2018 11:39:03 AM::: UpstoxAverageTheBuyThenSell DLF MARGIN Trade: DLF sold 1 @ 208.8
+
+9/18/2018 11:39:03 AM::: UpstoxAverageTheBuyThenSell DLF LTP 208.65 calculatedToBuyPrice 205.5 lastPriceToCompareWith 208.65 placeBuyNoLtpCompare False PriceStrategy Default markdown from Ltp
+
+9/18/2018 11:39:03 AM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF BUY 1 @ 205.5 LIMIT. OrderId = 180918000110423
+
+9/18/2018 12:02:36 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Trade: CAPLIPOINT sold 1 @ 505.5
+
+9/18/2018 12:02:36 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 505.8 calculatedToBuyPrice 498.2 lastPriceToCompareWith 505.8 placeBuyNoLtpCompare False PriceStrategy Default markdown from Ltp
+
+9/18/2018 12:02:36 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT BUY 1 @ 498.2 LIMIT. OrderId = 180918000119845
+
+9/18/2018 12:06:42 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 12:06:42 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 12:19:35 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN MARGIN Trade: IBULHSGFIN sold 1 @ 1199.5
+
+9/18/2018 12:19:35 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN LTP 1198.5 calculatedToBuyPrice 1186.4 lastPriceToCompareWith 1198.5 placeBuyNoLtpCompare False PriceStrategy Default markdown from Ltp
+
+9/18/2018 12:19:35 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order MARGIN]: Success IBULHSGFIN BUY 1 @ 1186.4 LIMIT. OrderId = 180918000126073
+
+9/18/2018 12:57:05 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 12:57:05 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 1:07:27 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 1:07:27 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 1:11:58 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 1:11:58 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 1:14:31 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 1:14:31 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 1:31:54 PM::: UpstoxAverageTheBuyThenSell SBIN MARGIN Trade: SBIN bought 1 @ 275.3
+
+9/18/2018 1:31:54 PM::: UpstoxAverageTheBuyThenSell SBIN Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000081291 buyorderstatus COMPLETED
+
+9/18/2018 1:31:54 PM::: UpstoxAverageTheBuyThenSell SBIN [Place Order MARGIN]: Success SBIN SELL 1 @ 275.7 LIMIT. OrderId = 180918000153408
+
+9/18/2018 1:31:54 PM::: UpstoxAverageTheBuyThenSell SBIN LTP 275.45 calculatedToBuyPrice 263.8 lastPriceToCompareWith 275.3 placeBuyNoLtpCompare True PriceStrategy Average from Today's outstanding
+
+9/18/2018 1:31:55 PM::: UpstoxAverageTheBuyThenSell SBIN [Place Order MARGIN]: Success SBIN BUY 1 @ 263.8 LIMIT. OrderId = 180918000153411
+
+9/18/2018 1:32:27 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 254.55 calculatedToBuyPrice 254.55 lastPriceToCompareWith 256.05 placeBuyNoLtpCompare False PriceStrategy Average from Today's outstanding
+
+9/18/2018 1:32:27 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS BUY 2 @ 254.55 LIMIT. OrderId = 180918000153640
+
+9/18/2018 1:32:42 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Trade: TATAMOTORS bought 2 @ 254.55
+
+9/18/2018 1:32:42 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS Fully executed newqty 2 todayoutstandingqty 4 todayoutstandingprice 256.825 sellorderref 180918000048070 buyorderef 180918000153640 buyorderstatus COMPLETED
+
+9/18/2018 1:32:42 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Buy Executed]: TATAMOTORS SELL order cancel , OrderRef = 180918000048070: Success
+
+9/18/2018 1:32:42 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS SELL 6 @ 257.4 LIMIT. OrderId = 180918000153743
+
+9/18/2018 1:33:11 PM::: UpstoxAverageTheBuyThenSell SBIN MARGIN Trade: SBIN sold 1 @ 275.7
+
+9/18/2018 1:38:29 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER bought 1 @ 81.9
+
+9/18/2018 1:38:29 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER Fully executed newqty 1 todayoutstandingqty 1 todayoutstandingprice 83.4 sellorderref 180918000032884 buyorderef 180918000032885 buyorderstatus COMPLETED
+
+9/18/2018 1:38:29 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Buy Executed]: PCJEWELLER SELL order cancel , OrderRef = 180918000032884: Success
+
+9/18/2018 1:38:29 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order MARGIN]: Success PCJEWELLER SELL 2 @ 83.3 LIMIT. OrderId = 180918000156078
+
+9/18/2018 1:38:29 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER LTP 81.8 calculatedToBuyPrice 80.5 lastPriceToCompareWith 81.9 placeBuyNoLtpCompare True PriceStrategy Average from Today's outstanding
+
+9/18/2018 1:38:29 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order MARGIN]: Success PCJEWELLER BUY 1 @ 80.5 LIMIT. OrderId = 180918000156086
+
+9/18/2018 1:38:46 PM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 322.85 calculatedToBuyPrice 322.85 lastPriceToCompareWith 327.85 placeBuyNoLtpCompare False PriceStrategy Average from Today's outstanding
+
+9/18/2018 1:38:46 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order MARGIN]: Success UJJIVAN BUY 1 @ 322.85 LIMIT. OrderId = 180918000156193
+
+9/18/2018 1:39:01 PM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN bought 1 @ 322.85
+
+9/18/2018 1:39:01 PM::: UpstoxAverageTheBuyThenSell UJJIVAN Fully executed newqty 1 todayoutstandingqty 2 todayoutstandingprice 329.52 sellorderref 180918000090734 buyorderef 180918000156193 buyorderstatus COMPLETED
+
+9/18/2018 1:39:01 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Buy Executed]: UJJIVAN SELL order cancel , OrderRef = 180918000090734: Success
+
+9/18/2018 1:39:01 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order MARGIN]: Success UJJIVAN SELL 3 @ 328.9 LIMIT. OrderId = 180918000156310
+
+9/18/2018 1:40:47 PM::: UpstoxAverageTheBuyThenSell DLF MARGIN Trade: DLF bought 1 @ 205.5
+
+9/18/2018 1:40:47 PM::: UpstoxAverageTheBuyThenSell DLF Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000110423 buyorderstatus COMPLETED
+
+9/18/2018 1:40:47 PM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF SELL 1 @ 206.5 LIMIT. OrderId = 180918000157349
+
+9/18/2018 1:41:46 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER bought 1 @ 80.5
+
+9/18/2018 1:41:46 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER Fully executed newqty 1 todayoutstandingqty 2 todayoutstandingprice 82.65 sellorderref 180918000156078 buyorderef 180918000156086 buyorderstatus COMPLETED
+
+9/18/2018 1:41:46 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Buy Executed]: PCJEWELLER SELL order cancel , OrderRef = 180918000156078: Success
+
+9/18/2018 1:41:46 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order MARGIN]: Success PCJEWELLER SELL 3 @ 82.5 LIMIT. OrderId = 180918000157952
+
+9/18/2018 1:41:46 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER LTP 81.15 calculatedToBuyPrice 78.3 lastPriceToCompareWith 80.5 placeBuyNoLtpCompare True PriceStrategy Average from Today's outstanding
+
+9/18/2018 1:41:46 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order MARGIN]: Success PCJEWELLER BUY 1 @ 78.3 LIMIT. OrderId = 180918000157953
+
+9/18/2018 1:44:16 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA MARGIN Trade: SUNPHARMA bought 1 @ 644.4
+
+9/18/2018 1:44:16 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000013924 buyorderstatus COMPLETED
+
+9/18/2018 1:44:16 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Place Order MARGIN]: Success SUNPHARMA SELL 1 @ 647.6 LIMIT. OrderId = 180918000159277
+
+9/18/2018 1:44:16 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 644.85 calculatedToBuyPrice 631.4 lastPriceToCompareWith 644.4 placeBuyNoLtpCompare True PriceStrategy Average from Today's outstanding
+
+9/18/2018 1:44:16 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Place Order MARGIN]: Success SUNPHARMA BUY 1 @ 631.4 LIMIT. OrderId = 180918000159281
+
+9/18/2018 1:48:03 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA MARGIN Trade: SUNPHARMA sold 1 @ 647.6
+
+9/18/2018 1:49:49 PM::: UpstoxAverageTheBuyThenSell INDUSINDBK MARGIN Trade: INDUSINDBK sold 1 @ 1874.1
+
+9/18/2018 1:58:56 PM::: UpstoxAverageTheBuyThenSell DLF MARGIN Trade: DLF sold 1 @ 206.5
+
+9/18/2018 1:58:56 PM::: UpstoxAverageTheBuyThenSell DLF LTP 206.55 calculatedToBuyPrice 203.4 lastPriceToCompareWith 206.55 placeBuyNoLtpCompare False PriceStrategy Default markdown from Ltp
+
+9/18/2018 1:58:56 PM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF BUY 1 @ 203.4 LIMIT. OrderId = 180918000165184
+
+9/18/2018 2:11:00 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 2:11:00 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 2:31:26 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Trade: CAPLIPOINT bought 1 @ 498.2
+
+9/18/2018 2:31:27 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000119845 buyorderstatus COMPLETED
+
+9/18/2018 2:31:27 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT SELL 1 @ 503.2 LIMIT. OrderId = 180918000176911
+
+9/18/2018 2:35:47 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 2:35:47 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 2:39:34 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 1 @ 305.1
+
+9/18/2018 2:39:35 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000014052 buyorderstatus COMPLETED
+
+9/18/2018 2:39:35 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT SELL 1 @ 306.6 LIMIT. OrderId = 180918000181920
+
+9/18/2018 2:40:08 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN MARGIN Trade: IBULHSGFIN bought 1 @ 1186.4
+
+9/18/2018 2:40:08 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000126073 buyorderstatus COMPLETED
+
+9/18/2018 2:40:09 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order MARGIN]: Success IBULHSGFIN SELL 1 @ 1198.3 LIMIT. OrderId = 180918000182345
+
+9/18/2018 2:53:14 PM::: UpstoxAverageTheBuyThenSell DLF MARGIN Trade: DLF bought 1 @ 203.4
+
+9/18/2018 2:53:14 PM::: UpstoxAverageTheBuyThenSell DLF Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180918000165184 buyorderstatus COMPLETED
+
+9/18/2018 2:53:14 PM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF SELL 1 @ 204.4 LIMIT. OrderId = 180918000190120
+
+9/18/2018 2:54:32 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 2:54:32 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 2:57:19 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 301 calculatedToBuyPrice 301 lastPriceToCompareWith 305.1 placeBuyNoLtpCompare False PriceStrategy Average from Today's outstanding
+
+9/18/2018 2:57:20 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT BUY 1 @ 301 LIMIT. OrderId = 180918000192497
+
+9/18/2018 2:57:35 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 1 @ 301
+
+9/18/2018 2:57:35 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 1 todayoutstandingqty 1 todayoutstandingprice 305.1 sellorderref 180918000181920 buyorderef 180918000192497 buyorderstatus COMPLETED
+
+9/18/2018 2:57:35 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Buy Executed]: BERGEPAINT SELL order cancel , OrderRef = 180918000181920: Success
+
+9/18/2018 2:57:36 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT SELL 2 @ 304.6 LIMIT. OrderId = 180918000192638
+
+9/18/2018 3:00:05 PM::: UpstoxAverageTheBuyThenSell INDUSINDBK [Margin EOD]: INDUSINDBK BUY order cancel , OrderRef = 180918000092709: Success
+
+9/18/2018 3:00:05 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Margin EOD]: BAJFINANCE BUY order cancel , OrderRef = 180918000014017: Success
+
+9/18/2018 3:00:05 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT [Margin EOD]: AMARAJABAT BUY order cancel , OrderRef = 180918000014004: Success
+
+9/18/2018 3:00:06 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: PCJEWELLER BUY order cancel , OrderRef = 180918000157953: Success
+
+9/18/2018 3:00:06 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/18/2018 3:00:06 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: PCJEWELLER SELL order cancel , OrderRef = 180918000157952: Success
+
+9/18/2018 3:00:06 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order MARGIN]: Success PCJEWELLER SELL 3 @ 82.2 LIMIT. OrderId = 180918000193973
+
+9/18/2018 3:00:06 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/18/2018 3:00:06 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: IGL SELL order cancel , OrderRef = 180918000086574: Success
+
+9/18/2018 3:00:06 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/18/2018 3:00:06 PM::: UpstoxAverageTheBuyThenSell RELIANCE [Margin EOD]: RELIANCE BUY order cancel , OrderRef = 180918000044482: Success
+
+9/18/2018 3:00:07 PM::: UpstoxAverageTheBuyThenSell IGL [Place Order MARGIN]: Success IGL SELL 1 @ 266.6 LIMIT. OrderId = 180918000193980
+
+9/18/2018 3:00:07 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: CAPLIPOINT SELL order cancel , OrderRef = 180918000176911: Success
+
+9/18/2018 3:00:07 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/18/2018 3:00:07 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT SELL 1 @ 499.7 LIMIT. OrderId = 180918000193983
+
+9/18/2018 3:00:07 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: TATAMOTORS SELL order cancel , OrderRef = 180918000153743: Success
+
+9/18/2018 3:00:07 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS SELL 6 @ 256.8 LIMIT. OrderId = 180918000193985
+
+9/18/2018 3:00:07 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/18/2018 3:00:07 PM::: UpstoxAverageTheBuyThenSell ITC [Margin EOD]: ITC BUY order cancel , OrderRef = 180918000100741: Success
+
+9/18/2018 3:00:07 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/18/2018 3:00:08 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: UJJIVAN SELL order cancel , OrderRef = 180918000156310: Success
+
+9/18/2018 3:00:09 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/18/2018 3:00:10 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/18/2018 3:00:10 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: DLF SELL order cancel , OrderRef = 180918000190120: Success
+
+9/18/2018 3:00:10 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order MARGIN]: Success UJJIVAN SELL 3 @ 328.3 LIMIT. OrderId = 180918000194020
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: BERGEPAINT SELL order cancel , OrderRef = 180918000192638: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell M&M [Margin EOD]: M&M BUY order cancel , OrderRef = 180918000061747: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell HDFCBANK [Margin EOD]: HDFCBANK BUY order cancel , OrderRef = 180918000074158: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: FEDERALBNK SELL order cancel , OrderRef = 180918000080175: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF SELL 1 @ 204 LIMIT. OrderId = 180918000194028
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell ZEEL [Margin EOD]: ZEEL BUY order cancel , OrderRef = 180918000096354: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell SBIN [Margin EOD]: SBIN BUY order cancel , OrderRef = 180918000153411: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Margin EOD]: SUNPHARMA BUY order cancel , OrderRef = 180918000159281: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Margin EOD]: ADANIPORTS BUY order cancel , OrderRef = 180918000041928: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: INFY BUY order cancel , OrderRef = 180918000029225: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell BIOCON [Margin EOD]: BIOCON BUY order cancel , OrderRef = 180918000013996: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: IBULHSGFIN SELL order cancel , OrderRef = 180918000182345: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT SELL 2 @ 304 LIMIT. OrderId = 180918000194030
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order MARGIN]: Success FEDERALBNK SELL 3 @ 76.8 LIMIT. OrderId = 180918000194032
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: INFY SELL order cancel , OrderRef = 180918000029218: Success
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order MARGIN]: Success IBULHSGFIN SELL 1 @ 1190 LIMIT. OrderId = 180918000194037
+
+9/18/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY SELL 1 @ 725.7 LIMIT. OrderId = 180918000194039
+
+9/18/2018 3:05:00 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0164346805299347 ltp 298.15 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:05:00 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.014569536423841 ltp 75.5 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:05:00 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0256764934728106 ltp 1156.7 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:05:00 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.0062586926286509 ltp 719 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:05:08 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00836923076923085 ltp 81.25 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:05:09 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.019953952417498 ltp 260.6 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:05:09 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00453674765601371 ltp 495.95 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:05:09 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0153449643140365 ltp 252.2 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:05:12 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0320037836985655 ltp 317.15 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:05:14 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00568603213844255 ltp 202.25 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:05:15 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0189979825151313 ltp 297.4 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:05:15 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0138980807412309 ltp 75.55 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:05:15 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0260313067543026 ltp 1156.3 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:05:15 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00534982283054266 ltp 719.65 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:05:23 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00899014778325128 ltp 81.2 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:05:24 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0189764232317423 ltp 260.85 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:05:24 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00453674765601371 ltp 495.95 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:05:24 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0153449643140365 ltp 252.2 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:05:27 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0308661417322835 ltp 317.5 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:05:29 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00568603213844255 ltp 202.25 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:05:30 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0203703703703704 ltp 297 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:05:30 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.014569536423841 ltp 75.5 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:05:30 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0246577708684201 ltp 1157.85 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:05:31 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00618872122939997 ltp 719.05 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:05:38 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00836923076923085 ltp 81.25 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:05:39 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0185859360030658 ltp 260.95 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:05:39 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0097284150790434 ltp 493.4 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:05:40 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0155463018044814 ltp 252.15 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:05:42 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0315159155373464 ltp 317.3 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:05:44 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00568603213844255 ltp 202.25 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:05:45 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0203703703703704 ltp 297 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:05:45 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.014569536423841 ltp 75.5 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:05:46 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.024171270718232 ltp 1158.4 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:05:46 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00618872122939997 ltp 719.05 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:05:54 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00899014778325128 ltp 81.2 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:05:54 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0183908045977012 ltp 261 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:05:54 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0097284150790434 ltp 493.4 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:05:55 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0155463018044814 ltp 252.15 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:05:58 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0298930144745123 ltp 317.8 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:05:59 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00593471810089029 ltp 202.2 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:06:00 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0193407332660612 ltp 297.3 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:06:00 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0152418820410867 ltp 75.45 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:06:01 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0239061016656598 ltp 1158.7 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:06:01 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00618872122939997 ltp 719.05 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:06:09 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00836923076923085 ltp 81.25 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:06:09 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0183908045977012 ltp 261 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:06:10 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0097284150790434 ltp 493.4 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:06:10 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0157477191590639 ltp 252.1 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:06:13 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0307038261691072 ltp 317.55 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:06:14 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00543746910528915 ltp 202.3 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:06:15 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0176292813969107 ltp 297.8 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:06:16 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.014569536423841 ltp 75.5 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:06:16 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0246135244839796 ltp 1157.9 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:06:16 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00611875956056178 ltp 719.1 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:06:24 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00899014778325128 ltp 81.2 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:06:25 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0185859360030658 ltp 260.95 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:06:25 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0104451881147956 ltp 493.05 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:06:25 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0155463018044814 ltp 252.15 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:06:28 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0303793483393673 ltp 317.65 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:06:29 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00693069306930696 ltp 202 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:06:30 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0176292813969107 ltp 297.8 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:06:31 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.014569536423841 ltp 75.5 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:06:31 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0248347946270462 ltp 1157.65 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:06:31 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00555941626129256 ltp 719.5 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:06:39 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00836923076923085 ltp 81.25 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:06:40 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0183908045977012 ltp 261 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:06:40 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.0104451881147956 ltp 493.05 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:06:40 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0155463018044814 ltp 252.15 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:06:43 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0313533953048684 ltp 317.35 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:06:44 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00693069306930696 ltp 202 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:06:46 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0169463087248323 ltp 298 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:06:46 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.014569536423841 ltp 75.5 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:06:46 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0242154789139726 ltp 1158.35 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:07:15 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 3:07:15 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 3:07:15 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00576909710154998 ltp 719.35 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:07:16 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00836923076923085 ltp 81.25 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:07:16 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0183908045977012 ltp 261 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:07:16 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00799190692969143 ltp 494.25 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:07:16 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0153449643140365 ltp 252.2 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:07:16 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.031678486997636 ltp 317.25 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:07:17 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00693069306930696 ltp 202 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:07:17 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0159235668789809 ltp 298.3 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:07:17 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.014569536423841 ltp 75.5 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:07:18 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0227586206896553 ltp 1160 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:07:30 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00576909710154998 ltp 719.35 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:07:31 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00836923076923085 ltp 81.25 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:07:31 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0174162679425838 ltp 261.25 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:07:31 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00799190692969143 ltp 494.25 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:07:31 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0153449643140365 ltp 252.2 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:07:32 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0303793483393673 ltp 317.65 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:07:32 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00593471810089029 ltp 202.2 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:07:33 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0159235668789809 ltp 298.3 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:07:33 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.014569536423841 ltp 75.5 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:07:33 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0222739218474001 ltp 1160.55 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:07:45 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00576909710154998 ltp 719.35 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:07:46 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00836923076923085 ltp 81.25 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:07:46 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0170269753204515 ltp 261.35 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:07:46 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00799190692969143 ltp 494.25 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:07:46 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0161507936507936 ltp 252 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:07:47 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0313533953048684 ltp 317.35 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:07:47 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00668151447661467 ltp 202.05 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:07:48 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0157533098709569 ltp 298.35 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:07:48 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0152418820410867 ltp 75.45 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:07:48 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0222739218474001 ltp 1160.55 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:08:00 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.0060488076201071 ltp 719.15 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:08:01 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00836923076923085 ltp 81.25 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:08:01 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0174162679425838 ltp 261.25 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:08:01 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00799190692969143 ltp 494.25 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:08:02 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0163524508831117 ltp 251.95 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:08:02 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.032166508987701 ltp 317.1 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:08:02 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00693069306930696 ltp 202 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:08:03 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0162642521797452 ltp 298.2 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:08:03 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.014569536423841 ltp 75.5 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:08:03 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0213059010889683 ltp 1161.65 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:08:16 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00555941626129256 ltp 719.5 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:08:16 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00774907749077503 ltp 81.3 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:08:16 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0176110260336907 ltp 261.2 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:08:17 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00799190692969143 ltp 494.25 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:08:17 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0161507936507936 ltp 252 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:08:17 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0310285084265239 ltp 317.45 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:08:17 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.0064324591786245 ltp 202.1 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:08:19 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0155831099195712 ltp 298.4 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:08:19 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0138980807412309 ltp 75.55 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:08:19 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0210861519924262 ltp 1161.9 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:08:31 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00521014241055922 ltp 719.75 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:08:31 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00774907749077503 ltp 81.3 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:08:32 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0176110260336907 ltp 261.2 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:08:32 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00799190692969143 ltp 494.25 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:08:32 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0163524508831117 ltp 251.95 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:08:32 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.032166508987701 ltp 317.1 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:08:33 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.0064324591786245 ltp 202.1 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:08:34 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0145631067961166 ltp 298.7 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:08:34 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0138980807412309 ltp 75.55 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:08:34 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0205591397849463 ltp 1162.5 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:08:46 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00514031675465413 ltp 719.8 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:08:46 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00899014778325128 ltp 81.2 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:08:47 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0172215843857635 ltp 261.3 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:08:47 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00799190692969143 ltp 494.25 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:08:47 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0165541881699086 ltp 251.9 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:08:47 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.032166508987701 ltp 317.1 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:08:48 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.0064324591786245 ltp 202.1 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:08:49 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0135451505016723 ltp 299 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:08:49 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0159151193633951 ltp 75.4 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:08:49 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0206908418290534 ltp 1162.35 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:09:01 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00541967759866589 ltp 719.6 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:09:02 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00899014778325128 ltp 81.2 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:09:02 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0170269753204515 ltp 261.35 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:09:02 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00748230535894841 ltp 494.5 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:09:02 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0165541881699086 ltp 251.9 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:09:02 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.032166508987701 ltp 317.1 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:09:03 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00618352708384863 ltp 202.15 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:09:04 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0130369379909745 ltp 299.15 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:09:04 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0159151193633951 ltp 75.4 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:09:04 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0206908418290534 ltp 1162.35 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:09:16 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00576909710154998 ltp 719.35 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:09:17 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00961182994454715 ltp 81.15 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:09:17 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0168324407039022 ltp 261.4 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:09:17 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00646464646464644 ltp 495 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:09:17 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0167560055588644 ltp 251.85 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:09:18 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0318411097099622 ltp 317.2 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:09:18 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00668151447661467 ltp 202.05 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:09:19 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0121910487641952 ltp 299.4 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:09:19 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0165892501658925 ltp 75.35 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:09:19 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0206030366897501 ltp 1162.45 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:09:31 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.0058390101487558 ltp 719.3 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:09:32 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00899014778325128 ltp 81.2 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:09:32 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0164435946462716 ltp 261.5 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:09:32 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00748230535894841 ltp 494.5 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:09:32 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0165541881699086 ltp 251.9 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:09:33 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0311909262759925 ltp 317.4 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:09:33 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.0064324591786245 ltp 202.1 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:09:34 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0121910487641952 ltp 299.4 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:09:34 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0172642762284196 ltp 75.3 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:09:34 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0205591397849463 ltp 1162.5 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:09:46 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.0058390101487558 ltp 719.3 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:09:47 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00899014778325128 ltp 81.2 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:09:47 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0164435946462716 ltp 261.5 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:09:48 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00748230535894841 ltp 494.5 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:09:48 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0163524508831117 ltp 251.95 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:09:48 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0315159155373464 ltp 317.3 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:09:48 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.0064324591786245 ltp 202.1 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:09:49 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0121910487641952 ltp 299.4 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:09:49 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0165892501658925 ltp 75.35 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:09:50 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0201203783319003 ltp 1163 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:10:01 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00576909710154998 ltp 719.35 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:10:02 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00836923076923085 ltp 81.25 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:10:03 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0162492831198624 ltp 261.55 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:10:03 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00748230535894841 ltp 494.5 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:10:03 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0159492164253124 ltp 252.05 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:10:03 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0313533953048684 ltp 317.35 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:10:03 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00618352708384863 ltp 202.15 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:10:04 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.012360113579422 ltp 299.35 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:10:05 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0172642762284196 ltp 75.3 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:10:05 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0204274717240786 ltp 1162.65 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:10:17 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00590893291623219 ltp 719.25 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:10:17 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00899014778325128 ltp 81.2 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:10:18 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0154727793696276 ltp 261.75 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:10:18 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00748230535894841 ltp 494.5 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:10:18 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0163524508831117 ltp 251.95 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:10:18 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0315159155373464 ltp 317.3 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:10:19 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00444444444444447 ltp 202.5 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:10:20 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0120220404074137 ltp 299.45 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:10:20 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0172642762284196 ltp 75.3 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:10:20 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0208664974400895 ltp 1162.15 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:10:32 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00632867376034488 ltp 718.95 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:10:32 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.00836923076923085 ltp 81.25 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:10:33 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0154727793696276 ltp 261.75 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:10:33 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00748230535894841 ltp 494.5 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:10:33 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0153449643140365 ltp 252.2 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:10:34 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0311909262759925 ltp 317.4 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:10:34 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00419649469266845 ltp 202.55 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:10:35 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0121910487641952 ltp 299.4 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:10:35 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0172642762284196 ltp 75.3 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:10:35 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0213059010889683 ltp 1161.65 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:10:47 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: diff -0.00681881436125797 ltp 718.6 outstandingprice 723.5 pctMaxLossSquareOffPositions -0.001 goodPrice 700 
+
+9/18/2018 3:10:48 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: diff -0.0102342786683109 ltp 81.1 outstandingprice 81.93 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:10:48 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: diff -0.0174162679425838 ltp 261.25 outstandingprice 265.8 pctMaxLossSquareOffPositions -0.001 goodPrice 250 
+
+9/18/2018 3:10:48 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: diff -0.00748230535894841 ltp 494.5 outstandingprice 498.2 pctMaxLossSquareOffPositions -0.001 goodPrice 400 
+
+9/18/2018 3:10:48 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: diff -0.0153449643140365 ltp 252.2 outstandingprice 256.07 pctMaxLossSquareOffPositions -0.001 goodPrice 260 
+
+9/18/2018 3:10:49 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: diff -0.0318411097099622 ltp 317.2 outstandingprice 327.3 pctMaxLossSquareOffPositions -0.001 goodPrice 325 
+
+9/18/2018 3:10:49 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: diff -0.00246426811237063 ltp 202.9 outstandingprice 203.4 pctMaxLossSquareOffPositions -0.001 goodPrice 185 
+
+9/18/2018 3:10:50 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: diff -0.0108405603735824 ltp 299.8 outstandingprice 303.05 pctMaxLossSquareOffPositions -0.001 goodPrice 285 
+
+9/18/2018 3:10:50 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff -0.0165892501658925 ltp 75.35 outstandingprice 76.6 pctMaxLossSquareOffPositions -0.001 goodPrice 75 
+
+9/18/2018 3:10:50 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: diff -0.0223179663937959 ltp 1160.5 outstandingprice 1186.4 pctMaxLossSquareOffPositions -0.001 goodPrice 1100 
+
+9/18/2018 3:14:39 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: Position converted. Converting the sq off order to DELIVERY
+
+9/18/2018 3:14:39 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: TATAMOTORS SELL order cancel , OrderRef = 180918000193985: Success
+
+9/18/2018 3:14:39 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order DELIVERY]: Success TATAMOTORS SELL 6 @ 256.8 LIMIT. OrderId = 180918000202006
+
+9/18/2018 3:14:40 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: Position converted. Converting the sq off order to DELIVERY
+
+9/18/2018 3:14:40 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: FEDERALBNK SELL order cancel , OrderRef = 180918000194032: Success
+
+9/18/2018 3:14:40 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order DELIVERY]: Success FEDERALBNK SELL 3 @ 76.8 LIMIT. OrderId = 180918000202021
+
+9/18/2018 3:14:52 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: Position converted. Converting the sq off order to DELIVERY
+
+9/18/2018 3:14:52 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: PCJEWELLER SELL order cancel , OrderRef = 180918000193973: Success
+
+9/18/2018 3:14:52 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order DELIVERY]: Success PCJEWELLER SELL 3 @ 82.2 LIMIT. OrderId = 180918000202133
+
+9/18/2018 3:15:11 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: Position converted. Converting the sq off order to DELIVERY
+
+9/18/2018 3:15:11 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: BERGEPAINT SELL order cancel , OrderRef = 180918000194030: Success
+
+9/18/2018 3:15:12 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order DELIVERY]: Success BERGEPAINT SELL 2 @ 304 LIMIT. OrderId = 180918000202275
+
+9/18/2018 3:16:22 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Trade: INFY sold 1 @ 719.1
+
+9/18/2018 3:16:25 PM::: UpstoxAverageTheBuyThenSell IGL MARGIN Trade: IGL sold 1 @ 261.2
+
+9/18/2018 3:16:28 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN MARGIN Trade: IBULHSGFIN sold 1 @ 1152
+
+9/18/2018 3:18:42 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 415
+
+9/18/2018 3:18:42 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/18/2018 3:28:03 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin Conversion EOD]: TATAMOTORS SELL order cancel , OrderRef = 180918000202006: Success
+
+9/18/2018 3:28:03 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS Conversion to delivery: Success TATAMOTORS qty of 6
+
+9/18/2018 3:28:03 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin Conversion EOD]: BERGEPAINT SELL order cancel , OrderRef = 180918000202275: Success
+
+9/18/2018 3:28:03 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT Conversion to delivery: Success BERGEPAINT qty of 2
+
+9/18/2018 3:28:03 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin Conversion EOD]: FEDERALBNK SELL order cancel , OrderRef = 180918000202021: Success
+
+9/18/2018 3:28:03 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK Conversion to delivery: Success FEDERALBNK qty of 3
+
+9/18/2018 3:28:06 PM::: UpstoxAverageTheBuyThenSell ITC [Holding EOD] Demat : ITC SELL order cancel , OrderRef = 180918000014047: Success
+
+9/18/2018 3:28:06 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Holding EOD] Demat : IDFCBANK SELL order cancel , OrderRef = 180918000014060: Success
+
+9/18/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin Conversion EOD]: PCJEWELLER SELL order cancel , OrderRef = 180918000202133: Success
+
+9/18/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER Conversion to delivery: Success PCJEWELLER qty of 3
+
+9/18/2018 3:28:13 PM::: UpstoxAverageTheBuyThenSell IGL [Margin Conversion EOD]: IGL SELL order cancel , OrderRef = 180918000193980: Success
+
+9/18/2018 3:28:13 PM::: UpstoxAverageTheBuyThenSell IGL Conversion to delivery: Success IGL qty of 1
+
+9/18/2018 3:28:13 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin Conversion EOD]: UJJIVAN SELL order cancel , OrderRef = 180918000194020: Success
+
+9/18/2018 3:28:13 PM::: UpstoxAverageTheBuyThenSell UJJIVAN Conversion to delivery: Success UJJIVAN qty of 3
+
+9/18/2018 3:28:13 PM::: UpstoxAverageTheBuyThenSell DLF [Margin Conversion EOD]: DLF SELL order cancel , OrderRef = 180918000194028: Success
+
+9/18/2018 3:28:13 PM::: UpstoxAverageTheBuyThenSell DLF Conversion to delivery: Success DLF qty of 1
+
+9/18/2018 3:28:13 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin Conversion EOD]: IBULHSGFIN SELL order cancel , OrderRef = 180918000194037: Success
+
+9/18/2018 3:28:14 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN Conversion to delivery: Success IBULHSGFIN qty of 1
+
+9/18/2018 3:28:14 PM::: UpstoxAverageTheBuyThenSell INFY [Holding EOD] Demat : INFY SELL order cancel , OrderRef = 180918000013962: Success
+
+9/18/2018 3:28:14 PM::: UpstoxAverageTheBuyThenSell INFY [Margin Conversion EOD]: INFY SELL order cancel , OrderRef = 180918000194039: Success
+
+9/18/2018 3:28:14 PM::: UpstoxAverageTheBuyThenSell INFY Conversion to delivery: Success INFY qty of 1
+
+9/18/2018 3:31:00 PM::: UpstoxAverageTheBuyThenSell UJJIVAN EOD PositionFile updated as 3 327.3
+
+9/18/2018 3:31:00 PM::: UpstoxAverageTheBuyThenSell DLF EOD PositionFile updated as 1 203.4
+
+9/18/2018 3:31:00 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN EOD PositionFile updated as 1 1186.4
+
+9/18/2018 3:31:00 PM::: UpstoxAverageTheBuyThenSell INFY EOD PositionFile updated as 2 728
+
+9/18/2018 3:31:03 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS EOD PositionFile updated as 0 0
+
+9/18/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell BIOCON EOD PositionFile updated as 0 0
+
+9/18/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS EOD PositionFile updated as 6 256.07
+
+9/18/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT EOD PositionFile updated as 2 303.05
+
+9/18/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK EOD PositionFile updated as 3 76.6
+
+9/18/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell INDUSINDBK EOD PositionFile updated as 0 0
+
+9/18/2018 3:31:06 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE EOD PositionFile updated as 0 0
+
+9/18/2018 3:31:07 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT EOD PositionFile updated as 0 0
+
+9/18/2018 3:31:07 PM::: UpstoxAverageTheBuyThenSell RELIANCE EOD PositionFile updated as 0 0
+
+9/18/2018 3:31:07 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT EOD PositionFile updated as 1 498.2
+
+9/18/2018 3:31:08 PM::: UpstoxAverageTheBuyThenSell ITC EOD PositionFile updated as 1 303.7
+
+9/18/2018 3:31:08 PM::: UpstoxAverageTheBuyThenSell IDFCBANK EOD PositionFile updated as 11 45.5
+
+9/18/2018 3:31:08 PM::: UpstoxAverageTheBuyThenSell M&M EOD PositionFile updated as 0 0
+
+9/18/2018 3:31:08 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER EOD PositionFile updated as 3 81.93
+
+9/18/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell HDFCBANK EOD PositionFile updated as 0 0
+
+9/18/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell ZEEL EOD PositionFile updated as 0 0
+
+9/18/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell SBIN EOD PositionFile updated as 0 0
+
+9/18/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA EOD PositionFile updated as 0 0
+
+9/18/2018 3:31:15 PM::: UpstoxAverageTheBuyThenSell IGL EOD PositionFile updated as 1 265.8
+
+9/18/2018 3:31:15 PM::: Update PnL files
+
+9/18/2018 3:31:17 PM::: All stock threads completed. Emailing today's log file
+
+9/18/2018 3:31:19 PM::: Exiting..
+

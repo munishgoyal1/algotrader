@@ -1,0 +1,50 @@
+9/3/2018 1:20:12 PM::: 126130
+
+9/3/2018 1:20:13 PM::: UpstoxAverageTheBuyThenSell IDFCBANK Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+
+9/3/2018 1:20:13 PM::: UpstoxAverageTheBuyThenSell IDFCBANK Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+
+9/3/2018 1:20:13 PM::: UpstoxAverageTheBuyThenSell IDFCBANK Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+
+9/3/2018 1:20:14 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+
+9/3/2018 1:20:14 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+
+9/3/2018 1:20:14 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+
+9/3/2018 1:20:15 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+
+9/3/2018 1:20:15 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+
+9/3/2018 1:20:15 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+
+9/3/2018 1:20:16 PM::: UpstoxAverageTheBuyThenSell ITC Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+
+9/3/2018 1:20:16 PM::: UpstoxAverageTheBuyThenSell ITC Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+
+9/3/2018 1:20:16 PM::: UpstoxAverageTheBuyThenSell ITC Error:Index was outside the bounds of the array.
+Stacktrace:   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetEquityLTP(String exchange, String stockCode, Double& ltp, DateTime& lut) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 209
+   at SimpleTrader.UpstoxBuySellBase.GetLTPOnDemand(Double& ltp) in C:\UpstoxCode\Code\Upstox\UpstoxBuySellBase.cs:line 374
+

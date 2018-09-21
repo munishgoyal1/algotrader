@@ -1,0 +1,9 @@
+9/3/2018 1:23:20 PM::: 126130
+
+9/3/2018 1:23:49 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in C:\UpstoxCode\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 318
+
+9/3/2018 1:23:49 PM::: MyUpstoxWrapperRetrying 1 out of 3
+

@@ -1,0 +1,4 @@
+9/7/2018 1:25:24 PM::: 126130
+
+9/7/2018 1:25:27 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 524.45 lastPriceToCompareWith 524.45 markDownPct 0.005 PriceStrategy Default markdown from Ltp
+

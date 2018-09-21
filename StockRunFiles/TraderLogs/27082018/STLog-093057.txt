@@ -1,0 +1,22 @@
+8/27/2018 9:30:57 AM::: 220270
+
+8/27/2018 9:30:57 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 0 lastPriceToCompareWith 0 markDownPct 0.0075 PriceStrategy Default markdown from Ltp
+
+8/27/2018 9:30:57 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Unknown IDFCBANK BUY 11 @ 0 LIMIT
+
+8/27/2018 9:30:58 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK DELIVERY Order: Success FEDERALBNK SELL 1 @ 82.6 LIMIT
+
+8/27/2018 9:30:58 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 82.1 lastPriceToCompareWith 81.8 markDownPct 0.0075 PriceStrategy Average from Holding Price
+
+8/27/2018 9:30:58 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK BUY 6 @ 81.1 LIMIT
+
+8/27/2018 9:31:57 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 47.1 lastPriceToCompareWith 47.1 markDownPct 0.0075 PriceStrategy Default markdown from Ltp
+
+8/27/2018 9:31:57 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK BUY 11 @ 46.7 LIMIT
+
+8/27/2018 12:20:13 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK bought 6 @ 81.1
+
+8/27/2018 12:20:13 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK Fully executed newqty 6 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180827000026546 buyorderstatus COMPLETED
+
+8/27/2018 12:20:13 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK SELL 6 @ 81.7 LIMIT
+

@@ -1,0 +1,52 @@
+8/29/2018 9:21:14 AM::: 220270
+
+8/29/2018 9:21:15 AM::: MyUpstoxWrapperError:Your previous request is currently being processed, please wait for the previous request to finish.
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in d:\GoogleDrive\UpstoxTrader\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 267
+
+8/29/2018 9:21:15 AM::: MyUpstoxWrapperRetrying 1 out of 3
+
+8/29/2018 9:21:15 AM::: MyUpstoxWrapperError:Your previous request is currently being processed, please wait for the previous request to finish.
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in d:\GoogleDrive\UpstoxTrader\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 267
+
+8/29/2018 9:21:15 AM::: MyUpstoxWrapperRetrying 2 out of 3
+
+8/29/2018 9:21:15 AM::: MyUpstoxWrapperError:Your previous request is currently being processed, please wait for the previous request to finish.
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in d:\GoogleDrive\UpstoxTrader\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 267
+
+8/29/2018 9:21:15 AM::: MyUpstoxWrapperRetrying 3 out of 3
+
+8/29/2018 9:21:15 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 0 lastPriceToCompareWith 0 markDownPct 0.0075 PriceStrategy Default markdown from Ltp
+
+8/29/2018 9:21:15 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Unknown IDFCBANK BUY 11 @ 0 LIMIT
+
+8/29/2018 9:21:16 AM::: MyUpstoxWrapperError:Your previous request is currently being processed, please wait for the previous request to finish.
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in d:\GoogleDrive\UpstoxTrader\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 267
+
+8/29/2018 9:21:16 AM::: MyUpstoxWrapperRetrying 1 out of 3
+
+8/29/2018 9:21:16 AM::: MyUpstoxWrapperError:Your previous request is currently being processed, please wait for the previous request to finish.
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in d:\GoogleDrive\UpstoxTrader\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 267
+
+8/29/2018 9:21:16 AM::: MyUpstoxWrapperRetrying 2 out of 3
+
+8/29/2018 9:21:16 AM::: MyUpstoxWrapperError:Your previous request is currently being processed, please wait for the previous request to finish.
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades) in d:\GoogleDrive\UpstoxTrader\Code\StockBrokers\Upstox\MyUpstoxWrapper.cs:line 267
+
+8/29/2018 9:21:16 AM::: MyUpstoxWrapperRetrying 3 out of 3
+
+8/29/2018 9:21:16 AM::: UpstoxAverageTheBuyThenSell CAPLINPOINT Error:Failed getting TradeBook at Init
+Stacktrace:   at SimpleTrader.UpstoxBuySellBase.Init(AlgoType algoType) in d:\GoogleDrive\UpstoxTrader\Code\Upstox\UpstoxBuySellBase.cs:line 158
+   at SimpleTrader.UpstoxAverageTheBuyThenSell.StockBuySell() in d:\GoogleDrive\UpstoxTrader\Code\Upstox\UpstoxAverageTheBuyThenSell.cs:line 92
+

@@ -1,0 +1,62 @@
+8/30/2018 11:23:26 AM::: 220270
+
+8/30/2018 11:23:29 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 48.7 lastPriceToCompareWith 48.7 markDownPct 0.0075 PriceStrategy Default markdown from Ltp
+
+8/30/2018 11:23:30 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Order: Success IDFCBANK BUY 11 @ 48.3 LIMIT
+
+8/30/2018 11:23:31 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK DELIVERY Order: Success FEDERALBNK SELL 7 @ 82 LIMIT
+
+8/30/2018 11:23:32 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 81.45 lastPriceToCompareWith 81.2 markDownPct 0.0075 PriceStrategy Average from Holding Price
+
+8/30/2018 11:23:32 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK BUY 6 @ 80.5 LIMIT
+
+8/30/2018 12:32:25 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK CASH Trade: FEDERALBNK sold 7 @ 82
+
+8/30/2018 2:55:38 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK bought 6 @ 80.5
+
+8/30/2018 2:55:39 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK Fully executed newqty 6 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180830000102815 buyorderstatus COMPLETED
+
+8/30/2018 2:55:40 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK SELL 6 @ 81.1 LIMIT
+
+8/30/2018 3:10:44 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: MinProfit Squareoff and cancel outstanding buy orders
+
+8/30/2018 3:10:45 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: IDFCBANK BUY order cancel , OrderRef = 180830000102802: Success
+
+8/30/2018 3:10:54 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: MinProfit Squareoff and cancel outstanding buy orders
+
+8/30/2018 3:10:54 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: FEDERALBNK SELL order cancel , OrderRef = 180830000197090: Success
+
+8/30/2018 3:10:55 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Order: Success FEDERALBNK SELL 6 @ 80.8 LIMIT
+
+8/30/2018 3:11:56 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 6 @ 80.8
+
+8/30/2018 3:20:03 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff 1 ltp 80.7 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 80 
+
+8/30/2018 3:20:54 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: diff 1 ltp 48.55 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 45 
+
+8/30/2018 3:21:04 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff 1 ltp 80.75 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 80 
+
+8/30/2018 3:21:55 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: diff 1 ltp 48.5 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 45 
+
+8/30/2018 3:22:05 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff 1 ltp 81 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 80 
+
+8/30/2018 3:22:56 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: diff 1 ltp 48.5 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 45 
+
+8/30/2018 3:23:06 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff 1 ltp 81.15 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 80 
+
+8/30/2018 3:23:57 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: diff 1 ltp 48.65 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 45 
+
+8/30/2018 3:24:07 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: diff 1 ltp 81.1 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 80 
+
+8/30/2018 3:24:57 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: diff 1 ltp 48.6 outstandingprice 0 pctMaxLossSquareOffPositions 0.003 goodPrice 45 
+
+8/30/2018 3:28:11 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Holding EOD] Demat : FEDERALBNK SELL order cancel , OrderRef = 180830000102807: Success
+
+8/30/2018 3:31:02 PM::: UpstoxAverageTheBuyThenSell IDFCBANK EOD PositionFile updated as 0 0
+
+8/30/2018 3:31:13 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK EOD PositionFile updated as 0 0
+
+8/30/2018 3:31:13 PM::: All stock threads completed. Emailing today's log file
+
+8/30/2018 3:31:15 PM::: Exiting..
+
