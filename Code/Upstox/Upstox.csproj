@@ -102,10 +102,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="config_debug.txt" />
     <Content Include="creds.txt" />
     <Content Include="holidayslist.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="stats_format.txt" />
     <Content Include="stocktradingconfig.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

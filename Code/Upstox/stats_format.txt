@@ -1,0 +1,3 @@
+tradingconfig line
+netpnl, unrealized mtm, holding qty, holding price, ltp
+date,todaypnl,# of buy trades, # of sell trades, qty multiple, buy qty, sell qty, holding sell qty, prev outstanding qty@price, today outstanding qty@price,net outstanding qty@price
