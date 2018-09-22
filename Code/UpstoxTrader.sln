@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2016
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockCore", "StockCore\StockCore.csproj", "{6D5069CC-17B0-47BB-BA12-60A6B4031D7B}"
 EndProject
@@ -23,24 +23,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Config", "Platform\Config\C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upstox", "Upstox\Upstox.csproj", "{7FE61D74-4059-4663-B4E4-08208BBCAC95}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TraderBinaries", "TraderBinaries", "{863BF52D-1E87-4942-82ED-6CED2800C780}"
-	ProjectSection(SolutionItems) = preProject
-		..\UpstoxTrader\agsXMPP.dll = ..\UpstoxTrader\agsXMPP.dll
-		..\UpstoxTrader\EAGetMail40.dll = ..\UpstoxTrader\EAGetMail40.dll
-		..\UpstoxTrader\HtmlParsingLibrary.dll = ..\UpstoxTrader\HtmlParsingLibrary.dll
-		..\UpstoxTrader\HttpLibrary.dll = ..\UpstoxTrader\HttpLibrary.dll
-		..\UpstoxTrader\Logging.dll = ..\UpstoxTrader\Logging.dll
-		..\UpstoxTrader\NDde.dll = ..\UpstoxTrader\NDde.dll
-		..\UpstoxTrader\Newtonsoft.Json.dll = ..\UpstoxTrader\Newtonsoft.Json.dll
-		..\UpstoxTrader\StockCore.dll = ..\UpstoxTrader\StockCore.dll
-		..\UpstoxTrader\StockTrader.Brokers.dll = ..\UpstoxTrader\StockTrader.Brokers.dll
-		..\UpstoxTrader\StockTrader.Common.dll = ..\UpstoxTrader\StockTrader.Common.dll
-		..\UpstoxTrader\StockTrader.Utilities.dll = ..\UpstoxTrader\StockTrader.Utilities.dll
-		..\UpstoxTrader\UpstoxNet.dll = ..\UpstoxTrader\UpstoxNet.dll
-		..\UpstoxTrader\UpstoxTrader.exe = ..\UpstoxTrader\UpstoxTrader.exe
-		..\UpstoxTrader\WebSocket4Net.dll = ..\UpstoxTrader\WebSocket4Net.dll
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,12 +43,14 @@ Global
 		{6D5069CC-17B0-47BB-BA12-60A6B4031D7B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6D5069CC-17B0-47BB-BA12-60A6B4031D7B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{6D5069CC-17B0-47BB-BA12-60A6B4031D7B}.Release|x86.ActiveCfg = Release|Any CPU
-		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Debug|x86.ActiveCfg = Debug|x86
 		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Debug|x86.Build.0 = Debug|x86
-		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Release|Any CPU.ActiveCfg = Release|x86
+		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Release|Mixed Platforms.Build.0 = Release|x86
 		{8EE111EF-FD3A-43AC-8F80-167F909F08FA}.Release|x86.ActiveCfg = Release|x86
