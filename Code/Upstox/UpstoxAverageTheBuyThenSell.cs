@@ -56,12 +56,13 @@ namespace UpstoxTrader
 
                 if (todayOutstandingQty > 0)
                 {
+                    var outstandingMultiple = ((todayOutstandingQty + ordQty - 1) / ordQty);
                     lastPriceToCompareWith = lastBuyPrice;
-                    markDownPct = buyMarkdownFromLcpDefault + (pctExtraMarkdownForAveraging * todayBuyOrderCount);
+                    markDownPct = buyMarkdownFromLcpDefault + (pctExtraMarkdownForAveraging * outstandingMultiple);
                     priceArrivedFromTodayOutstanding = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
                     priceStrategy = "Average Today";
                     calculatedToBuyPrice = priceArrivedFromTodayOutstanding;
-                    calculatedOrderQty = ordQty * (1 + ((todayOutstandingQty + ordQty - 1) / ordQty));
+                    calculatedOrderQty = ordQty * (1 + outstandingMultiple);
                 }
 
                 calculatedToBuyPrice = Math.Min(calculatedToBuyPrice, ltp);
