@@ -33,38 +33,35 @@ namespace UpstoxTrader
             {
                 double ltp;
                 var errCode = GetLTP(out ltp);
+                var calculatedOrderQty = ordQty;
 
                 // todayOutstandingQty == 0 default case
-                var markDownPct = buyMarkdownFromLcpDefault;
                 var lastPriceToCompareWith = ltp;
-
+                var markDownPct = buyMarkdownFromLcpDefault;
                 double priceArrivedFromHolding = double.MaxValue;
                 double priceArrivedFromTodayOutstanding = double.MaxValue;
                 double priceArrivedFromLtpDefault = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
                 double calculatedToBuyPrice = priceArrivedFromLtpDefault;
-                var priceStrategy = "Default markdown from Ltp";
+                var priceStrategy = "Default LTP Markdown";
 
+                // if ltp is somehow not available, then use holdingprice as reference to calculate the price. Useful only once at start of day that oo in case Ltp is not populated yet due to trade or upstox hasnt updated yet.
                 if (holdingOutstandingQty > 0 && calculatedToBuyPrice <= 0)
                 {
-                    markDownPct = buyMarkdownFromLcpDefault;// + pctExtraMarkdownForAveraging;
                     lastPriceToCompareWith = holdingOutstandingPrice;
+                    markDownPct = buyMarkdownFromLcpDefault;// + pctExtraMarkdownForAveraging;
                     priceArrivedFromHolding = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
-
-                    if (priceArrivedFromHolding < calculatedToBuyPrice)
-                    {
-                        priceStrategy = "Average from Holding Price";
-                        calculatedToBuyPrice = priceArrivedFromHolding;
-                    }
+                    priceStrategy = "Average Holding";
+                    calculatedToBuyPrice = priceArrivedFromHolding;
                 }
 
                 if (todayOutstandingQty > 0)
                 {
-                    markDownPct = buyMarkdownFromLcpDefault + (pctExtraMarkdownForAveraging * todayBuyOrderCount);
                     lastPriceToCompareWith = lastBuyPrice;
+                    markDownPct = buyMarkdownFromLcpDefault + (pctExtraMarkdownForAveraging * todayBuyOrderCount);
                     priceArrivedFromTodayOutstanding = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
-
-                    priceStrategy = "Average from Today's outstanding";
+                    priceStrategy = "Average Today";
                     calculatedToBuyPrice = priceArrivedFromTodayOutstanding;
+                    calculatedOrderQty = ordQty * (1 + ((todayOutstandingQty + ordQty - 1) / ordQty));
                 }
 
                 calculatedToBuyPrice = Math.Min(calculatedToBuyPrice, ltp);
@@ -73,9 +70,9 @@ namespace UpstoxTrader
                 // if ltp is less than required price then place the order or if there is no outstanding today then place the order anyway
                 if (errCode == BrokerErrorCode.Success && (todayOutstandingQty == 0 || (placeBuyNoLtpCompare || (ltp <= calculatedToBuyPrice))))
                 {
-                    Trace(string.Format("LTP {0} calculatedToBuyPrice {1} lastPriceToCompareWith {2} placeBuyNoLtpCompare {3} PriceStrategy {4}", ltp, calculatedToBuyPrice, lastPriceToCompareWith, placeBuyNoLtpCompare, priceStrategy));
+                    Trace(string.Format("LTP {0}, calculatedToBuyPrice {1}, lastPriceToCompareWith {2}, calculatedOrderQty {3}, placeBuyNoLtpCompare {4}, PriceStrategy {5} ", ltp, calculatedToBuyPrice, lastPriceToCompareWith, calculatedOrderQty, placeBuyNoLtpCompare, priceStrategy));
                     // place buy order, update buy order ref
-                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.BUY, OrderPriceType.LIMIT, ordQty, orderType, calculatedToBuyPrice, out todayOutstandingBuyOrderId);
+                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.BUY, OrderPriceType.LIMIT, calculatedOrderQty, orderType, calculatedToBuyPrice, out todayOutstandingBuyOrderId);
                 }
             }
         }

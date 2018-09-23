@@ -1,5 +1,5 @@
 stockCode, goodprice, buyPriceCap (in stock lines below) and then the commonconfig as follows:  orderType, maxTradeValue,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,buyMarkdownFromLcpDefault,sellMarkupForMargin,sellMarkupForDelivery,pctExtraMarkdownForAveraging,sellMarkupForMinProfit,placeBuyNoLtpCompare,squareOffAllPositionsAtEOD,pctMaxLossSquareOffPositionsAtEOD,useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,startTime,endTime,Exchange,sellMarkupForEODInsufficientLimitSquareOff,maxBuyOrdersAllowedInADay,doConvertToDeliveryAtEOD,doSquareOffIfInsufficientLimitAtEOD
-MARGIN,400,4,4,0.005,1.005,1.01,0.005,1.003,false,true,-0.001,false,09:00:00,15:00:00,NSE,0.995,4,true,false
+MARGIN,400,20,10,0.005,1.005,1.01,0.005,1.003,false,true,-0.001,false,09:00:00,15:00:00,NSE,0.995,100,true,false
 ZEEL,450,500,MARGIN,500,,,0.01,1.005,1.01,0.01,,true
 SUNPHARMA,600,700,MARGIN,700,,,0.01,1.005,1.01,0.01,,true
 #
@@ -35,6 +35,6 @@ DLF,185,225,MARGIN,250,,,0.015,1.005,1.005,0.025
 # Fast trading. Stable Bluechip
 #
 RELIANCE,1150,1300,MARGIN,1200,,,0.0025,1.0025,1.005,0.01,,true,,,,09:20:00
-SBIN,250,300,MARGIN,300,2,2,0.0015,1.0015,1.005,0.02,,true,,,,09:30:00
-HDFCBANK,2000,2100,MARGIN,2200,2,2,0.001,1.001,1.005,0.02,,true,,,,09:30:00
-M&M,900,1000,MARGIN,1000,5,5,0.001,1.001,1.005,0.02,,true,,,,09:20:00
+SBIN,250,300,MARGIN,300,,,0.0015,1.0015,1.005,0.02,,true,,,,09:30:00
+HDFCBANK,2000,2100,MARGIN,2200,,,0.001,1.001,1.005,0.02,,true,,,,09:30:00
+M&M,900,1000,MARGIN,1000,,,0.001,1.001,1.005,0.02,,true,,,,09:20:00
