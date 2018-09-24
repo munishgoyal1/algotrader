@@ -284,11 +284,11 @@ namespace UpstoxTrader
 
                 todayrealized -= todaybrokerage;
 
-                var todayHoldingNetQty = (todayHoldingQty > 0 ? todayHoldingQty : 0);
+                var todayHoldingNetQty = Math.Max(todayHoldingQty,0);
                 double todayunrealized = todayHoldingNetQty * (ltp - todayHoldingPrice);//today delivery mtm
 
                 double todaymtm = todayrealized + todayunrealized;
-                double todayholdingcost = todayHoldingNetQty;//only today delivery cost
+                double todayholdingcost = todayHoldingNetQty * todayHoldingPrice;//only today delivery cost
                 double todayinflow = todayrealized + todayholdingcost;
 
                 var pnlLines = File.ReadAllLines(pnlFilePath);
@@ -321,10 +321,10 @@ namespace UpstoxTrader
                 totalIntradayValue += todayIntradayValue;
                 totalDeliveryValue += todayDeliveryValue;
 
-                maxAmountCommittedToday = stats.maxBuyValueToday + outstandingValue;
+                maxAmountCommittedToday = (stats.maxBuyValueToday * 0.1) + outstandingValue; //10% as margin money so it is 0.1 of the maxBuyValue
                 pctPnLToday = maxAmountCommittedToday != 0 ? (todaymtm / maxAmountCommittedToday) * 100 : 0;
                 var dayLines = pnlLines.Skip(1).Where(l => !l.StartsWith(stockCode));
-                avgAmountCommitted = dayLines.Any() ? dayLines.Sum(d => double.Parse(d.Split(',')[6])) / dayLines.Count() : 0;
+                avgAmountCommitted = (maxAmountCommittedToday + dayLines.Sum(d => double.Parse(d.Split(',')[6]))) / (dayLines.Count() + 1);
                 pctPnL = avgAmountCommitted != 0 ? (netmtm / avgAmountCommitted) * 100 : 0;
 
                 globalMaxAmountCommittedToday += maxAmountCommittedToday;

@@ -13,11 +13,17 @@ PCJEWELLER,75,90,MARGIN,100,,,0.0075,1.0075,1.01,0.01,,true,,,,09:20:00
 #
 # stock where we want to average and they have long term uptrend
 #
-BIOCON,600,700,MARGIN,1000,,,0.02,1.025,1.025,0.02
-AMARAJABAT,800,900,MARGIN,1000,,,0.02,1.025,1.025,0.02
+BIOCON,600,700,MARGIN,1000,,,0.01,1.01,1.01,0.01
+BAJFINANCE,2500,3000,MARGIN,3000,,,0.01,1.01,1.01,0.02
+#
+# Highly volatile big range. Buy at deep low sell fast
+#
+CAPLIPOINT,400,550,DELIVERY,500,,,0.02,1.01,1.01,0.015
+#
+# Not sure of range. Play safe
+#
 IGL,250,300,MARGIN,300,,,0.02,1.025,1.025,0.02
-BAJFINANCE,2500,3000,MARGIN,3000,,,0.015,1.01,1.01,0.02
-CAPLIPOINT,400,550,DELIVERY,500,,,0.015,1.01,1.01,0.01
+AMARAJABAT,800,900,MARGIN,1000,,,0.02,1.025,1.025,0.02
 #
 # Low volatile range bound. So try small multiple trades
 #

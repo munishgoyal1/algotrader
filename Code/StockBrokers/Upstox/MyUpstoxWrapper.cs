@@ -82,6 +82,9 @@ namespace StockTrader.Brokers.UpstoxBroker
             while (!upstox.Symbol_Download_Status)
                 Thread.Sleep(1000);
 
+
+            //public string GetOrderExchId(string OrderId)
+
             var funds = upstox.GetFunds();
 
             List<EquityPositionRecord> positions;
@@ -266,10 +269,9 @@ namespace StockTrader.Brokers.UpstoxBroker
                 {
                     orderId = upstox.PlaceSimpleOrder(exchange, stockCode, transType, ordType, quantity, prodType, price);
 
-                    mOrderIds[stockCode].Add(orderId);
-
                     errorCode = GetOrderStatus(orderId);
 
+                    mOrderIds[stockCode].Add(orderId);
                 }
                 catch (Exception ex)
                 {
