@@ -230,22 +230,6 @@ namespace UpstoxTrader
                 var todayBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY ? t.Quantity * t.Price : 0);
                 var todaySellValue = trades.Sum(t => t.Direction == OrderDirection.SELL ? t.Quantity * t.Price : 0);
 
-
-                var todayIntradayValue = trades.Sum(t => t.EquityOrderType == EquityOrderType.MARGIN ? t.Quantity * t.Price : 0);
-                var todayDeliveryBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == EquityOrderType.DELIVERY ? t.Quantity * t.Price : 0);
-                var todayDeliverySellValue = Math.Abs(trades.Sum(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == EquityOrderType.DELIVERY ? t.Quantity * t.Price : 0));
-                var todayDeliveryValue = todayDeliveryBuyValue + todayDeliverySellValue;
-
-                todaybrokerage = 0.0005 * todayIntradayValue;
-                todaybrokerage += (0.0015 * todayDeliveryValue);
-
-                globalTodayIntradayValue += todayIntradayValue;
-                globalTodayDeliveryValue += todayDeliveryValue;
-                globaltodaybrokerage += todaybrokerage;
-
-                todayIntradayValue = Math.Round(todayIntradayValue);
-                todayDeliveryValue = Math.Round(todayDeliveryValue);
-
                 var orderQty = stockConfig.ordQty;
 
                 // Get Ltp
@@ -282,11 +266,32 @@ namespace UpstoxTrader
                     todaySellValue - (todayBuyValue - Math.Abs(todayHoldingValue))
                     : (todaySellValue - Math.Abs(todayHoldingValue)) - todayBuyValue;
 
+                var todayHoldingNetQty = Math.Max(todayHoldingQty, 0);
+
+                var todayIntradayValue = trades.Sum(t => t.EquityOrderType == EquityOrderType.MARGIN ? t.Quantity * t.Price : 0);
+                var todayDeliveryBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == EquityOrderType.DELIVERY ? t.Quantity * t.Price : 0);
+                var todayDeliverySellValue = Math.Abs(trades.Sum(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == EquityOrderType.DELIVERY ? t.Quantity * t.Price : 0));
+
+                var prevRemainingOutstandingValue = prevHoldingValue - todayDeliverySellValue;
+                var todayDeliveryConvertedValue = outstandingValue - prevRemainingOutstandingValue;
+                todayDeliveryConvertedValue = todayDeliveryConvertedValue > todayHoldingPrice / 2 ? todayHoldingPrice : 0; // to ignore small delta which means no real converted qty today
+
+                todayIntradayValue -= todayDeliveryConvertedValue;
+                todayDeliveryBuyValue += todayDeliveryConvertedValue;
+                var todayDeliveryValue = todayDeliveryBuyValue + todayDeliverySellValue;
+
+                todaybrokerage = 0.0005 * todayIntradayValue;
+                todaybrokerage += (0.0015 * todayDeliveryValue);
+
+                globalTodayIntradayValue += todayIntradayValue;
+                globalTodayDeliveryValue += todayDeliveryValue;
+                globaltodaybrokerage += todaybrokerage;
+
+                todayIntradayValue = Math.Round(todayIntradayValue);
+                todayDeliveryValue = Math.Round(todayDeliveryValue);
+
                 todayrealized -= todaybrokerage;
-
-                var todayHoldingNetQty = Math.Max(todayHoldingQty,0);
                 double todayunrealized = todayHoldingNetQty * (ltp - todayHoldingPrice);//today delivery mtm
-
                 double todaymtm = todayrealized + todayunrealized;
                 double todayholdingcost = todayHoldingNetQty * todayHoldingPrice;//only today delivery cost
                 double todayinflow = todayrealized + todayholdingcost;
@@ -409,7 +414,7 @@ namespace UpstoxTrader
                 globalIntradayValue, globalDeliveryValue);
 
             var globalSummaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}", DateTime.Today.ToString("dd-MM-yyyy"),
-                globaltodaymtm, globaltodayrealized, globaltodayunrealized, globaltodayinflow, globaltodayholdingcost, globalAvgAmountCommitted, globaltodaybrokerage, globalPctPnLToday,
+                globaltodaymtm, globaltodayrealized, globaltodayunrealized, globaltodayinflow, globaltodayholdingcost, globalMaxAmountCommittedToday, globaltodaybrokerage, globalPctPnLToday,
                 globalTodayIntradayValue, globalTodayDeliveryValue);
 
             var finalGlobalPnLLines = globalPnLLines.ToList();
