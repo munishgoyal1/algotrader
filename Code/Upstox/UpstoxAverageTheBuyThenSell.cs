@@ -112,7 +112,7 @@ namespace UpstoxTrader
                             ProcessHoldingSellOrderExecution(newTrades);
 
                             // if SELL executed, then update today outstanding with executed qty (handle part executions using NewQuantity)
-                            // If it is after 3.15 and broker did auto sq off, then we dont get info on our existing sq off order cancel and auto-sqoff new order id. Handle that case and update outstanding qty
+                            // If it is after 3.15 and broker did auto sq off, then broker's order ref is not with us and wont match with our sq off order. Our sqoff order will be cancelled by the broker
                             if (tradeRef == todayOutstandingSellOrderId || (MarketUtils.IsTimeAfter315() && trade.EquityOrderType == EquityOrderType.MARGIN))
                             {
                                 todayOutstandingQty -= trade.NewQuantity;

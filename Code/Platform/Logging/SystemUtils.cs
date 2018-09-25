@@ -15,10 +15,15 @@ namespace StockTrader.Platform.Logging
 
         public static string GetStockFilesPath()
         {
+
+#if DEBUG
+            var path = @"..\..\..\..\StockRunFiles";
+#else
+           
             var path = ConfigurationManager.AppSettings.Get("StockFilesPath");
             if (string.IsNullOrEmpty(path))
                 path = @"C:\StockRunFiles";
-
+#endif
             return path;
         }
 

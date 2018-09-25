@@ -18,11 +18,7 @@ namespace UpstoxTrader
 
         static UpstoxProgram()
         {
-#if DEBUG
-            var filesPath = @"..\..\..\..\StockRunFiles";
-#else
-           var filesPath = SystemUtils.GetStockFilesPath();
-#endif
+            var filesPath = SystemUtils.GetStockFilesPath();
             string credsFilePath = Path.Combine(filesPath, "creds.txt");
             var credsLines = File.ReadAllLines(credsFilePath);
 
@@ -68,7 +64,7 @@ namespace UpstoxTrader
             var upstoxBroker = new MyUpstoxWrapper(apiKey, apiSecret, redirectUrl);
 
 #if DEBUG
-            Trace("DEBUG MODE"); errCode = upstoxBroker.Login1();
+            Trace("DEBUG MODE"); errCode = upstoxBroker.Login();
 #else
             Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
 #endif
@@ -91,7 +87,10 @@ namespace UpstoxTrader
             }
 
             Trace(userId);
+
+#if !DEBUG
             MarketUtils.WaitUntilMarketOpen();
+#endif
 
             //while (true)
             //     Thread.Sleep(1000);
