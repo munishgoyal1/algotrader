@@ -444,7 +444,7 @@ namespace StockTrader.Brokers.UpstoxBroker
 
         //EXCHANGE,TOKEN,SYMBOL,PRODUCT,ORDER_TYPE,TRANSACTION_TYPE,TRADED_QUANTITY,EXCHANGE_ORDER_ID,ORDER_ID,EXCHANGE_TIME,TIME_IN_MICRO,TRADED_PRICE,TRADE_ID
         // consolidated all trades for a given order, and final trade list contains consolidated trade for each order
-        public BrokerErrorCode GetTradeBook(bool newTradesOnly, string stockCode, out Dictionary<string, EquityTradeBookRecord> trades)
+        public BrokerErrorCode GetTradeBook(bool getOnlyNewTrades, string stockCode, out Dictionary<string, EquityTradeBookRecord> trades)
         {
             lock (lockSingleThreadedUpstoxCall)
             {
@@ -530,7 +530,7 @@ namespace StockTrader.Brokers.UpstoxBroker
                                     // for part exec, the NewQuantity gets updated with delta from previous
                                     trade.NewQuantity = trade.Quantity - prevTradeRecord.Quantity;
 
-                                    if (newTradesOnly)
+                                    if (getOnlyNewTrades)
                                     {
                                         // add if execution status change along with prev and current execution qty 
                                         if (trade.NewQuantity > 0)
@@ -571,7 +571,7 @@ namespace StockTrader.Brokers.UpstoxBroker
 
         //EXCHANGE, TOKEN, SYMBOL, PRODUCT, ORDER_TYPE, DURATION, PRICE, TRIGGER_PRICE, QUANTITY, DISCLOSED_QUANTITY, TRANSACTION_TYPE, AVERAGE_PRICE,TRADED_QUANTITY, (13)...
         //...MESSAGE, EXCHANGE_ORDER_ID, PARENT_ORDER_ID, ORDER_ID, EXCHANGE_TIME, TIME_IN_MICRO, STATUS, IS_AMO, VALID_DATE, ORDER_REQUEST_ID   (23 total field count)
-        public BrokerErrorCode GetOrderBook(bool newOrdersOnly, bool bOnlyOutstandingOrders, string stockCode, out Dictionary<string, EquityOrderBookRecord> orders)
+        public BrokerErrorCode GetOrderBook(bool getOnlyNewOrders, bool getOnlyOpenOrders, string stockCode, out Dictionary<string, EquityOrderBookRecord> orders)
         {
             lock (lockSingleThreadedUpstoxCall)
             {
@@ -615,7 +615,7 @@ namespace StockTrader.Brokers.UpstoxBroker
                             order.StockCode = line[2];
                             order.Exchange = line[0];
 
-                            if (!bOnlyOutstandingOrders ||
+                            if (!getOnlyOpenOrders ||
                                 order.Status == OrderStatus.PARTEXEC ||
                                 order.Status == OrderStatus.QUEUED ||
                                 order.Status == OrderStatus.REQUESTED ||
@@ -625,7 +625,7 @@ namespace StockTrader.Brokers.UpstoxBroker
                                 {
                                     if (mEquityOrderBook.ContainsKey(order.OrderId))
                                     {
-                                        if (newOrdersOnly)
+                                        if (getOnlyNewOrders)
                                         {
                                         }
                                         else

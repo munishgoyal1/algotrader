@@ -48,7 +48,7 @@ namespace UpstoxTrader
                 if (holdingOutstandingQty > 0 && calculatedToBuyPrice <= 0)
                 {
                     lastPriceToCompareWith = holdingOutstandingPrice;
-                    markDownPct = buyMarkdownFromLcpDefault;// + pctExtraMarkdownForAveraging;
+                    markDownPct = buyMarkdownFromLcpDefault;
                     priceArrivedFromHolding = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
                     priceStrategy = "Average Holding";
                     calculatedToBuyPrice = priceArrivedFromHolding;
@@ -199,7 +199,7 @@ namespace UpstoxTrader
 
                 // update stats
                 var buyValueToday = todayOutstandingPrice * (todayOutstandingQty + ordQty);
-                stats.maxBuyValueToday = Math.Max(stats.maxBuyValueToday, buyValueToday);
+                pnlStats.maxBuyValueToday = Math.Max(pnlStats.maxBuyValueToday, buyValueToday);
 
                 PauseBetweenTradeBookCheck();
             }

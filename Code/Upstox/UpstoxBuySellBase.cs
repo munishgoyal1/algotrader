@@ -23,6 +23,9 @@ namespace UpstoxTrader
 
     public class UpstoxBuySellBase
     {
+        public MyUpstoxWrapper myUpstoxWrapper = null;
+
+        // Config
         public double buyPriceCap;
         public double goodPrice;
         public EquityOrderType orderType;
@@ -39,11 +42,8 @@ namespace UpstoxTrader
         public bool useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder;
         public bool doConvertToDeliveryAtEOD;
         public bool doSquareOffIfInsufficientLimitAtEOD;
-
         public DateTime startTime;
         public DateTime endTime;
-
-        public MyUpstoxWrapper myUpstoxWrapper = null;
         public string stockCode = null;
         public string isinCode = null;
         public int ordQty = 0;
@@ -52,26 +52,26 @@ namespace UpstoxTrader
         public int maxBuyOrdersAllowedInADay = 0;
         public Exchange exchange;
         public string exchStr;
+
         public string positionFile;
 
+        // State
         public double holdingOutstandingPrice = 0;
         public int holdingOutstandingQty = 0;
         public double todayOutstandingPrice = 0;
         public int todayOutstandingQty = 0;
-
         public List<HoldingOrder> holdingsOrders = new List<HoldingOrder>();
-
         public string todayOutstandingBuyOrderId = ""; // outstanding buy order Id
         public string todayOutstandingSellOrderId = "";// outstanding sell order Id
+        public double lastBuyPrice = 0;
+        public bool isFirstBuyOrder = true;
+        public int todayBuyOrderCount = 0;
         public bool isEODMinProfitSquareOffLimitOrderUpdated = false;
         public bool isEODMinLossSquareOffMarketOrderUpdated = false;
         public bool isOutstandingPositionConverted = false;
+        public double Ltp;
         public string settlementNumber = "";
 
-        public double lastBuyPrice = 0;
-        public bool isFirstBuyOrder = true;
-
-        public int todayBuyOrderCount = 0;
         public const string orderTraceFormat = "[Place Order {4}]: {5} {0} {1} {2} @ {3} {6}. OrderId = {7}";
         public const string orderCancelTraceFormat = "{0}: {1} {2} {3}: {4}";
         public const string tradeTraceFormat = "{4} Trade: {0} {1} {2} @ {3}. OrderId = {5}";
@@ -79,10 +79,8 @@ namespace UpstoxTrader
         public const string positionFileTotalQtyPriceFormat = "{0} {1}\n";
         public const string positionFileLineQtyPriceFormat = "{0} {1} {2} {3} {4}";
 
-        public BrokerErrorCode errCode;
-
-        public double Ltp;
-        public UpstoxPnLStats stats = new UpstoxPnLStats();
+        public BrokerErrorCode errCode;        
+        public UpstoxPnLStats pnlStats = new UpstoxPnLStats();
 
         public virtual void StockBuySell()
         {
@@ -91,7 +89,7 @@ namespace UpstoxTrader
         public UpstoxBuySellBase(UpstoxTradeParams tradeParams)
         {
             myUpstoxWrapper = tradeParams.upstox;
-            tradeParams.stats = stats;
+            tradeParams.stats = pnlStats;
             stockCode = tradeParams.stockCode;
             isinCode = tradeParams.isinCode;
             ordQty = tradeParams.ordQty;
@@ -166,14 +164,12 @@ namespace UpstoxTrader
             if (!File.Exists(positionFile))
                 File.WriteAllText(positionFile, "");
 
-            // just place squareoff orders for previous days open positions pending for delivery - develop it later
-
             // Position file always contains the holding qty, holding price and different type of holdings' details (demat/btst, qty, sell order ref) etc
             ReadPositionFile();
 
             // populate stats
-            stats.prevHoldingPrice = holdingOutstandingPrice;
-            stats.prevHoldingQty = holdingOutstandingQty;
+            pnlStats.prevHoldingPrice = holdingOutstandingPrice;
+            pnlStats.prevHoldingQty = holdingOutstandingQty;
 
             GetLTPOnDemand(out Ltp);
 
@@ -199,17 +195,26 @@ namespace UpstoxTrader
             var holdingTradesRef = holdingsOrders.Select(h => h.OrderId);
 
             // any outstanding qty (buy minus sell trades) today except from holding qty trade
-            todayOutstandingQty = myUpstoxWrapper.GetNetQty(exchStr, stockCode);
+            var buyQty = trades.Values.Where(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == orderType).Sum(t => t.Quantity);
+            var sellQty = trades.Values.Where(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == orderType).Sum(t => t.Quantity);
+
+            todayOutstandingQty = buyQty - sellQty;
 
             var buyTrades = trades.Values.Where(t => t.Direction == OrderDirection.BUY).OrderByDescending(t => t.DateTime).ToList();
 
             //sort the trade book and get last buy price
-            lastBuyPrice = myUpstoxWrapper.GetBoughtQty(exchStr, stockCode) > 0 ? buyTrades.First().Price : holdingOutstandingPrice;
+            lastBuyPrice = buyTrades.Any() ? buyTrades.First().Price : holdingOutstandingPrice;
 
-            var numOutstandingBuyTrades = todayOutstandingQty > 0 ? todayOutstandingQty / ordQty : 0;
+            var qtyTotal = 0;
+            int outstandingAttritbutionOrderCount = 0;
+            while(qtyTotal < todayOutstandingQty)
+            {
+                qtyTotal += (ordQty * ++outstandingAttritbutionOrderCount);
+            }
+
             // these are latest trades taken. each buy trade is for single lot and thus for each lot there is a trade
-            todayOutstandingPrice = numOutstandingBuyTrades == 0 ? 0 : buyTrades.Take(numOutstandingBuyTrades).Average(t => t.Price);
-
+            todayOutstandingPrice = outstandingAttritbutionOrderCount == 0 ? 0 : buyTrades.Take(outstandingAttritbutionOrderCount).Average(t => t.Price);
+            
             ProcessHoldingSellOrderExecution(trades);
 
             var buyOrders = orders.Values.Where(o => o.Direction == OrderDirection.BUY && o.Status == OrderStatus.ORDERED);
@@ -242,11 +247,11 @@ namespace UpstoxTrader
                     var dematHolding = dematHoldings.First();
                     if (dematHolding.BlockedQuantity < holdingOutstandingQty)
                     {
-                        var pendingQty = holdingOutstandingQty - dematHolding.BlockedQuantity;
-                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, pendingQty, EquityOrderType.DELIVERY, sellPrice, out sellOrderId);
+                        var algoPendingQty = holdingOutstandingQty - dematHolding.BlockedQuantity;// because there may be long term previous holdings for a stock
+                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, algoPendingQty, EquityOrderType.DELIVERY, sellPrice, out sellOrderId);
                         if (errCode == BrokerErrorCode.Success)
                         {
-                            holdingsOrders.Add(new HoldingOrder { Type = OrderPositionTypeEnum.Demat, OrderId = sellOrderId, Qty = pendingQty, SettlementNumber = "" });
+                            holdingsOrders.Add(new HoldingOrder { Type = OrderPositionTypeEnum.Demat, OrderId = sellOrderId, Qty = algoPendingQty, SettlementNumber = "" });
                         }
                     }
                 }
