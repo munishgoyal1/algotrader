@@ -1,0 +1,327 @@
+9/25/2018 2:47:55 PM::: RELEASE MODE
+
+9/25/2018 2:48:10 PM::: 126130
+
+9/25/2018 2:48:40 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order DELIVERY]: Success PCJEWELLER SELL 4 @ 82.4 LIMIT. OrderId = 180925000243543
+
+9/25/2018 2:48:41 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT SELL 2 @ 497.8 LIMIT. OrderId = 180925000243555
+
+9/25/2018 2:48:41 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order DELIVERY]: Success UJJIVAN SELL 4 @ 331.1 LIMIT. OrderId = 180925000243556
+
+9/25/2018 2:48:42 PM::: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY SELL 1 @ 733.1 LIMIT. OrderId = 180925000243563
+
+9/25/2018 2:48:43 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER LTP 69.45, calculatedToBuyPrice 68.9, lastPriceToCompareWith 69.45, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy Default LTP Markdown 
+
+9/25/2018 2:49:12 PM::: MyUpstoxWrapperPotential Error in PlaceOrder (Checking if order was placed or not).: Endpoint request timed out
+Stacktrace:   at A..(String , String , String , String , Int32 , String , Double 	, Double , String  , String , Int32 , String , String , String , String , Boolean , String , Boolean )
+   at UpstoxNet.Upstox.PlaceSimpleOrder(String Exch, String TrdSym, String Trans, String OrdType, Int32 Qty, String ProdType, Double LmtPrice, Double TrgPrice, String Validity, String CTag, Int32 DiscQty, String TagAPI)
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.PlaceEquityOrder(String exchange, String stockCode, OrderDirection orderDirection, OrderPriceType orderPriceType, Int32 quantity, EquityOrderType orderType, Double price, String& orderId)
+
+9/25/2018 2:49:12 PM::: MyUpstoxWrapperReconciled the order, updated status: OrderRejected
+
+9/25/2018 2:49:12 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order DELIVERY]: OrderRejected IDFCBANK SELL 11 @ 46 LIMIT. OrderId = 
+
+9/25/2018 2:49:13 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Margin EOD]: ADANIPORTS BUY order cancel , OrderRef = 180925000237526: Success
+
+9/25/2018 2:49:13 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Margin EOD]: Position converted. Convert SELL order to DELIVERY
+
+9/25/2018 2:49:14 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order MARGIN]: Success PCJEWELLER BUY 1 @ 68.9 LIMIT. OrderId = 180925000243941
+
+9/25/2018 2:49:47 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Margin EOD]: ADANIPORTS SELL order cancel , OrderRef = 180925000226634: Success
+
+9/25/2018 2:49:53 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order DELIVERY]: Success ADANIPORTS SELL 3 @ 337.4 LIMIT. OrderId = 180925000244432
+
+9/25/2018 2:49:53 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: INFY BUY order cancel , OrderRef = 180925000241202: Success
+
+9/25/2018 2:49:53 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: Position converted. Convert SELL order to DELIVERY
+
+9/25/2018 2:49:54 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: INFY SELL order cancel , OrderRef = 180925000243563: Success
+
+9/25/2018 2:49:54 PM::: UpstoxAverageTheBuyThenSell INFY [Place Order DELIVERY]: Success INFY SELL 1 @ 731.7 LIMIT. OrderId = 180925000244445
+
+9/25/2018 2:50:10 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS MARGIN Trade: ADANIPORTS sold 3 @ 336.3
+
+9/25/2018 2:56:09 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 2:56:09 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/25/2018 2:57:19 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 2:57:19 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/25/2018 2:57:48 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 2:57:48 PM::: MyUpstoxWrapperRetrying 2 out of 3
+
+9/25/2018 3:00:02 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Margin EOD]: SUNPHARMA BUY order cancel , OrderRef = 180925000005813: Success
+
+9/25/2018 3:00:03 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin EOD]: IBULHSGFIN BUY order cancel , OrderRef = 180925000216732: Success
+
+9/25/2018 3:00:03 PM::: UpstoxAverageTheBuyThenSell BIOCON [Margin EOD]: BIOCON BUY order cancel , OrderRef = 180925000004957: Success
+
+9/25/2018 3:00:04 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Margin EOD]: BAJFINANCE BUY order cancel , OrderRef = 180925000052481: Success
+
+9/25/2018 3:00:05 PM::: UpstoxAverageTheBuyThenSell INDUSINDBK [Margin EOD]: INDUSINDBK BUY order cancel , OrderRef = 180925000005972: Success
+
+9/25/2018 3:00:05 PM::: UpstoxAverageTheBuyThenSell IGL [Margin EOD]: IGL BUY order cancel , OrderRef = 180925000005748: Success
+
+9/25/2018 3:00:05 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT [Margin EOD]: AMARAJABAT BUY order cancel , OrderRef = 180925000005751: Success
+
+9/25/2018 3:00:05 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin EOD]: BERGEPAINT BUY order cancel , OrderRef = 180925000057049: Success
+
+9/25/2018 3:00:05 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin EOD]: IDFCBANK BUY order cancel , OrderRef = 180925000240671: Success
+
+9/25/2018 3:00:06 PM::: UpstoxAverageTheBuyThenSell RELIANCE [Margin EOD]: RELIANCE BUY order cancel , OrderRef = 180925000198845: Success
+
+9/25/2018 3:00:06 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Margin EOD]: CAPLIPOINT BUY order cancel , OrderRef = 180925000057477: Success
+
+9/25/2018 3:00:07 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/25/2018 3:00:07 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Margin EOD]: ADANIPORTS SELL order cancel , OrderRef = 180925000244432: Success
+
+9/25/2018 3:00:08 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order DELIVERY]: OrderRejected ADANIPORTS SELL 3 @ 337.4 LIMIT. OrderId = 180925000251688
+
+9/25/2018 3:00:08 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: MinProfit Squareoff using limit sell order
+
+9/25/2018 3:00:08 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: INFY SELL order cancel , OrderRef = 180925000244445: Success
+
+9/25/2018 3:00:10 PM::: UpstoxAverageTheBuyThenSell INFY [Place Order DELIVERY]: Success INFY SELL 1 @ 731.7 LIMIT. OrderId = 180925000251721
+
+9/25/2018 3:00:10 PM::: UpstoxAverageTheBuyThenSell SBIN [Margin EOD]: SBIN BUY order cancel , OrderRef = 180925000010565: Success
+
+9/25/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell ITC [Margin EOD]: ITC BUY order cancel , OrderRef = 180925000110265: Success
+
+9/25/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin EOD]: TATAMOTORS BUY order cancel , OrderRef = 180925000241192: Success
+
+9/25/2018 3:00:11 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Margin EOD]: FEDERALBNK BUY order cancel , OrderRef = 180925000223273: Success
+
+9/25/2018 3:00:12 PM::: UpstoxAverageTheBuyThenSell DLF [Margin EOD]: DLF BUY order cancel , OrderRef = 180925000238060: Success
+
+9/25/2018 3:00:12 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin EOD]: UJJIVAN BUY order cancel , OrderRef = 180925000222481: Success
+
+9/25/2018 3:00:13 PM::: UpstoxAverageTheBuyThenSell HDFCBANK [Margin EOD]: HDFCBANK BUY order cancel , OrderRef = 180925000013235: Success
+
+9/25/2018 3:00:13 PM::: UpstoxAverageTheBuyThenSell M&M [Margin EOD]: M&M BUY order cancel , OrderRef = 180925000039836: Success
+
+9/25/2018 3:00:14 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin EOD]: PCJEWELLER BUY order cancel , OrderRef = 180925000243941: Success
+
+9/25/2018 3:00:14 PM::: UpstoxAverageTheBuyThenSell ZEEL [Margin EOD]: ZEEL BUY order cancel , OrderRef = 180925000030199: Success
+
+9/25/2018 3:04:18 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 3:04:18 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/25/2018 3:04:50 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 3:04:50 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/25/2018 3:05:11 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: max loss 0.00014% is less than -0.001% and avg outstanding price 729.5 is greater than good price of 700. LTP is 729.6. Place squareoff @ MARKET.
+
+9/25/2018 3:05:12 PM::: UpstoxAverageTheBuyThenSell INFY [Margin EOD]: INFY SELL order cancel , OrderRef = 180925000251721: Success
+
+9/25/2018 3:05:13 PM::: UpstoxAverageTheBuyThenSell INFY [Place Order DELIVERY]: OrderRejected INFY SELL 1 @ 731.7 MARKET. OrderId = 180925000255567
+
+9/25/2018 3:07:16 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 3:07:16 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/25/2018 3:10:03 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 3:10:03 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/25/2018 3:10:03 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Trade: INFY bought 1 @ 726.4
+
+9/25/2018 3:14:37 PM::: UpstoxAverageTheBuyThenSell HDFCBANK MARGIN Trade: HDFCBANK sold 1 @ 1921.9
+
+9/25/2018 3:14:37 PM::: UpstoxAverageTheBuyThenSell HDFCBANK MARGIN Trade: HDFCBANK bought 1 @ 1918.9
+
+9/25/2018 3:16:50 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Trade: INFY sold 3 @ 725.7
+
+9/25/2018 3:17:21 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 3:17:21 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/25/2018 3:18:30 PM::: UpstoxAverageTheBuyThenSell M&M MARGIN Trade: M&M sold 4 @ 870.3
+
+9/25/2018 3:18:30 PM::: UpstoxAverageTheBuyThenSell M&M MARGIN Trade: M&M sold 3 @ 886.3
+
+9/25/2018 3:18:30 PM::: UpstoxAverageTheBuyThenSell M&M MARGIN Trade: M&M bought 2 @ 883.6
+
+9/25/2018 3:18:30 PM::: UpstoxAverageTheBuyThenSell M&M MARGIN Trade: M&M bought 1 @ 889
+
+9/25/2018 3:18:30 PM::: UpstoxAverageTheBuyThenSell M&M MARGIN Trade: M&M bought 4 @ 869.4
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK sold 1 @ 37.5
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK sold 3 @ 37.5
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK sold 1 @ 37.5
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK sold 1 @ 38.2
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK sold 1 @ 38.2
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK sold 3 @ 37.8
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 1 @ 37.3
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 1 @ 37.3
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 1 @ 37.6
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 1 @ 38
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 2 @ 37.2
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 2 @ 37.5
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 1 @ 37.9
+
+9/25/2018 3:20:34 PM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 1 @ 38
+
+9/25/2018 3:24:29 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 3:24:29 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/25/2018 3:27:59 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 3:27:59 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/25/2018 3:28:04 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Holding EOD] Demat : ADANIPORTS SELL order cancel , OrderRef = 180925000004581: Success
+
+9/25/2018 3:28:04 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Holding EOD] Demat : CAPLIPOINT SELL order cancel , OrderRef = 180925000243555: Success
+
+9/25/2018 3:28:04 PM::: UpstoxAverageTheBuyThenSell INFY [Holding EOD] Demat : INFY SELL order cancel , OrderRef = 180925000005919: Success
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Holding EOD] Demat : PCJEWELLER SELL order cancel , OrderRef = 180925000004834: Success
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell HDFCBANK [Holding EOD] Demat : HDFCBANK SELL order cancel , OrderRef = 180925000005903: Success
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Margin Conversion EOD]: ADANIPORTS SELL order cancel , OrderRef = 180925000251688: Success
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS Conversion to delivery: Success ADANIPORTS qty of 3
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell M&M [Holding EOD] Demat : M&M SELL order cancel , OrderRef = 180925000005909: Success
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell INDUSINDBK [Holding EOD] Demat : INDUSINDBK SELL order cancel , OrderRef = 180925000004679: Success
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Holding EOD] Demat : IDFCBANK SELL order cancel , OrderRef = 180925000005870: Success
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell ITC [Holding EOD] Demat : ITC SELL order cancel , OrderRef = 180925000005785: Success
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Holding EOD] Demat : TATAMOTORS SELL order cancel , OrderRef = 180925000005788: Success
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Holding EOD] Demat : FEDERALBNK SELL order cancel , OrderRef = 180925000005884: Success
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell DLF [Holding EOD] Demat : DLF SELL order cancel , OrderRef = 180925000005892: Success
+
+9/25/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Holding EOD] Demat : UJJIVAN SELL order cancel , OrderRef = 180925000005744: Success
+
+9/25/2018 3:28:08 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Holding EOD] Demat : PCJEWELLER SELL order cancel , OrderRef = 180925000243543: Success
+
+9/25/2018 3:28:08 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Holding EOD] Demat : UJJIVAN SELL order cancel , OrderRef = 180925000243556: Success
+
+9/25/2018 3:28:50 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 3:28:50 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/25/2018 3:30:45 PM::: MyUpstoxWrapperError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean newTradesOnly, String stockCode, Dictionary`2& trades)
+
+9/25/2018 3:30:45 PM::: MyUpstoxWrapperRetrying 1 out of 3
+
+9/25/2018 3:31:01 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS EOD PositionFile updated as 6 342.08
+
+9/25/2018 3:31:02 PM::: UpstoxAverageTheBuyThenSell INFY HoldingOutstandingQty is invalid @ -2. Setting it to 0.
+
+9/25/2018 3:31:02 PM::: UpstoxAverageTheBuyThenSell INFY EOD PositionFile updated as 0 729.5
+
+9/25/2018 3:31:02 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT EOD PositionFile updated as 2 492.85
+
+9/25/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA EOD PositionFile updated as 0 0
+
+9/25/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell ZEEL HoldingOutstandingQty is invalid @ -2. Setting it to 0.
+
+9/25/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell ZEEL EOD PositionFile updated as 0 0
+
+9/25/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN EOD PositionFile updated as 0 0
+
+9/25/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell BIOCON EOD PositionFile updated as 0 0
+
+9/25/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE EOD PositionFile updated as 0 0
+
+9/25/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell IGL EOD PositionFile updated as 0 0
+
+9/25/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT EOD PositionFile updated as 0 0
+
+9/25/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT EOD PositionFile updated as 0 0
+
+9/25/2018 3:31:04 PM::: UpstoxAverageTheBuyThenSell RELIANCE EOD PositionFile updated as 0 0
+
+9/25/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell SBIN EOD PositionFile updated as 0 0
+
+9/25/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell HDFCBANK EOD PositionFile updated as 1 1961.8
+
+9/25/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell M&M HoldingOutstandingQty is invalid @ -11. Setting it to 0.
+
+9/25/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell M&M EOD PositionFile updated as 0 -253.34
+
+9/25/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell INDUSINDBK EOD PositionFile updated as 3 1715.47
+
+9/25/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell IDFCBANK HoldingOutstandingQty is invalid @ -9. Setting it to 0.
+
+9/25/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell IDFCBANK EOD PositionFile updated as 0 -55.61
+
+9/25/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell ITC EOD PositionFile updated as 1 303.7
+
+9/25/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS EOD PositionFile updated as 12 250.86
+
+9/25/2018 3:31:05 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK EOD PositionFile updated as 4 76.32
+
+9/25/2018 3:31:06 PM::: UpstoxAverageTheBuyThenSell DLF EOD PositionFile updated as 3 187.77
+
+9/25/2018 3:31:06 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER EOD PositionFile updated as 4 81.62
+
+9/25/2018 3:31:06 PM::: UpstoxAverageTheBuyThenSell UJJIVAN EOD PositionFile updated as 4 324.58
+
+9/25/2018 3:31:06 PM::: Update PnL files
+
+9/25/2018 3:31:08 PM::: All stock threads completed. Emailing today's log file
+
+9/25/2018 3:31:10 PM::: Exiting..
+

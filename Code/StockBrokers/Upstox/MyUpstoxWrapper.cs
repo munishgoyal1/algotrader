@@ -11,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using StockTrader.Platform.Logging;
 using UpstoxNet;
+using StockTrader.Utilities;
 
 namespace StockTrader.Brokers.UpstoxBroker
 {
@@ -21,7 +22,8 @@ namespace StockTrader.Brokers.UpstoxBroker
 
         // Locks on global Order & Trade book objects
         object lockObjectEquity = new object();
-
+        string genericErrorLogFormat = "{0} {1}Error:{2}\nStacktrace:{3}";
+        string retryLogFormat = " Retrying {0} out of {1}";
 
         object lockSingleThreadedUpstoxCall = new object();
 
@@ -88,7 +90,7 @@ namespace StockTrader.Brokers.UpstoxBroker
             var funds = upstox.GetFunds();
 
             List<EquityPositionRecord> positions;
-            BrokerErrorCode errCode = GetPositions("BERGEPAINT", out positions);
+            BrokerErrorCode errCode = GetPositions("INFY", out positions);
 
             //Upstox.QuotesReceivedEvent += new UpstoxNet.Upstox.QuotesReceivedEventEventHandler(QuoteReceived);
 
@@ -110,7 +112,7 @@ namespace StockTrader.Brokers.UpstoxBroker
 
 
             Dictionary<string, EquityTradeBookRecord> trades;
-            var tradebook = GetTradeBook(false, "IDFCBANK", out trades);
+            var tradebook = GetTradeBook(false, "", out trades);
 
             Dictionary<string, EquityOrderBookRecord> orders;
             var orderbook = GetOrderBook(true, true, "BAJFINANCE", out orders);
@@ -275,7 +277,9 @@ namespace StockTrader.Brokers.UpstoxBroker
                 }
                 catch (Exception ex)
                 {
-                    Trace("Potential Error in PlaceOrder (Checking if order was placed or not)." + ex.Message + "\nStacktrace:" + ex.StackTrace);
+                    Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
+
+                    Trace("Potential Error in PlaceOrder (Checking if order was placed or not). OrderId = " + orderId);
 
                     var lastOrderId = upstox.GetLastOrderId(exchange, stockCode, prodType);
 
@@ -286,7 +290,7 @@ namespace StockTrader.Brokers.UpstoxBroker
                         if (errorCode == BrokerErrorCode.Success)
                             mOrderIds[stockCode].Add(lastOrderId);
 
-                        Trace("Reconciled the order, updated status: " + errorCode);
+                        Trace(string.Format("Reconciled the order. updated status: {0}, lastOrderId: {1} ", errorCode, lastOrderId));
                     }
                 }
 
@@ -314,8 +318,8 @@ namespace StockTrader.Brokers.UpstoxBroker
                 }
                 catch (Exception ex)
                 {
-                    Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
-                    Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+                    Trace(string.Format(genericErrorLogFormat, orderId, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
+                    Trace(string.Format(retryLogFormat, retryCount, maxRetryCount));
 
                     if (retryCount >= maxRetryCount)
                         break;
@@ -368,8 +372,8 @@ namespace StockTrader.Brokers.UpstoxBroker
                     }
                     catch (Exception ex)
                     {
-                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
-                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+                        Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
+                        Trace(string.Format(retryLogFormat, retryCount, maxRetryCount));
 
                         if (retryCount >= maxRetryCount)
                             break;
@@ -378,7 +382,6 @@ namespace StockTrader.Brokers.UpstoxBroker
                 return errorCode;
             }
         }
-
 
         //EXCHANGE,SYMBOL,TOKEN,PRODUCT,COLLATERAL_TYPE ,CNC_USED_QUANTITY,QUANTITY,COLLATERAL_QTY,HAIRCUT,AVG_PRICE
         //NSE_EQ,BAJFINANCE,317,D,WC,0,605,0,25,1625.9508
@@ -427,8 +430,8 @@ namespace StockTrader.Brokers.UpstoxBroker
                     }
                     catch (Exception ex)
                     {
-                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
-                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+                        Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
+                        Trace(string.Format(retryLogFormat, retryCount, maxRetryCount));
 
                         if (retryCount >= maxRetryCount)
                             break;
@@ -475,6 +478,7 @@ namespace StockTrader.Brokers.UpstoxBroker
 
                             var trade = new EquityTradeBookRecord();
                             trade.OrderId = line[8];
+                            trade.TradeId = line[12];
                             trade.Direction = line[5] == "B" ? OrderDirection.BUY : OrderDirection.SELL;
                             trade.DateTime = DateTime.Parse(line[9]);
                             trade.Quantity = int.Parse(line[6]);
@@ -553,8 +557,8 @@ namespace StockTrader.Brokers.UpstoxBroker
                     }
                     catch (Exception ex)
                     {
-                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
-                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+                        Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));                        
+                        Trace(string.Format(retryLogFormat, retryCount, maxRetryCount));
 
                         if (retryCount >= maxRetryCount)
                             break;
@@ -644,8 +648,8 @@ namespace StockTrader.Brokers.UpstoxBroker
                     }
                     catch (Exception ex)
                     {
-                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
-                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+                        Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
+                        Trace(string.Format(retryLogFormat, retryCount, maxRetryCount));
 
                         if (retryCount >= maxRetryCount)
                             break;
@@ -678,11 +682,13 @@ namespace StockTrader.Brokers.UpstoxBroker
                     }
                     catch (Exception ex)
                     {
-                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
-                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+                        Trace(string.Format(genericErrorLogFormat, orderId, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
+                        Trace(string.Format(retryLogFormat, retryCount, maxRetryCount));
 
-                        if (retryCount >= maxRetryCount)
+                        if (retryCount >= maxRetryCount || ex.Message.Contains("No open orders to cancel"))
                             break;
+
+                        Thread.Sleep(500);
                     }
                 }
 
@@ -724,8 +730,8 @@ namespace StockTrader.Brokers.UpstoxBroker
                     }
                     catch (Exception ex)
                     {
-                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
-                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+                        Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
+                        Trace(string.Format(retryLogFormat, retryCount, maxRetryCount));
 
                         if (retryCount >= maxRetryCount)
                             break;
@@ -752,8 +758,8 @@ namespace StockTrader.Brokers.UpstoxBroker
                     }
                     catch (Exception ex)
                     {
-                        Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
-                        Trace(string.Format("Retrying {0} out of {1}", retryCount, maxRetryCount));
+                        Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
+                        Trace(string.Format(retryLogFormat, retryCount, maxRetryCount));
 
                         if (retryCount >= maxRetryCount)
                             break;

@@ -59,7 +59,8 @@ open points:
 2. In tradebook polling, got old trades of 10 am in the filter again at 3.10 pm for some of the stocks. Why that happened ?eg. ZEEL on 24 sept. at 3.10pm
 3. fix pnl stats - avgAmountCommitted , totalIntradayValue, totalDeliveryValue -all fixed
 4. allow for manual conversion to delivery anytime in day
-
+5. price is -ve in position file even when qty is 0
+6. On restart of trader, why should old trades show up during loop run. once trade book is fetched at Init, only new trades post that should come up. 25 Sep - HDFC, IDFC around 3pm in 2nd log file.
 
 
 

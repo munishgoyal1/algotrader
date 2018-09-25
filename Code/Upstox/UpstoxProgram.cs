@@ -18,11 +18,19 @@ namespace UpstoxTrader
 
         static UpstoxProgram()
         {
-            var filesPath = SystemUtils.GetStockFilesPath();
+#if DEBUG
+            var filesPath = @"..\..\..\..\StockRunFiles";
+#else
+           var filesPath = SystemUtils.GetStockFilesPath();
+#endif
             string credsFilePath = Path.Combine(filesPath, "creds.txt");
             var credsLines = File.ReadAllLines(credsFilePath);
 
+#if DEBUG
+            userId = credsLines[0] + "_DEBUG";
+#else
             userId = credsLines[0];
+#endif
             apiKey = credsLines[1];
             apiSecret = credsLines[2];
             redirectUrl = credsLines[3];
@@ -60,7 +68,7 @@ namespace UpstoxTrader
             var upstoxBroker = new MyUpstoxWrapper(apiKey, apiSecret, redirectUrl);
 
 #if DEBUG
-            Trace("DEBUG MODE"); errCode = upstoxBroker.Login();
+            Trace("DEBUG MODE"); errCode = upstoxBroker.Login1();
 #else
             Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
 #endif
@@ -302,7 +310,7 @@ namespace UpstoxTrader
                 double netrealized = double.Parse(netPnLline[1]);
                 double brokerage = double.Parse(netPnLline[6]);
                 netrealized += todayrealized;
-                brokerage += todaybrokerage;                
+                brokerage += todaybrokerage;
                 double netunrealized = ltp > 0 ? outstandingQty * (ltp - outstandingPrice) : 0;
                 double netmtm = netrealized + netunrealized;
                 double currentholdingatcost = outstandingQty * outstandingPrice;
@@ -409,7 +417,7 @@ namespace UpstoxTrader
             globalbrokerage = Math.Round(globalbrokerage);
 
             //write global pnl
-            globalPnLLines[0] = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", globalnetmtm, globalnetrealized, globalnetunrealized, globalnetinflow, 
+            globalPnLLines[0] = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", globalnetmtm, globalnetrealized, globalnetunrealized, globalnetinflow,
                 globalcurrentholdingatcost, globalAvgAmountCommitted, globalbrokerage, globalPctPnL,
                 globalIntradayValue, globalDeliveryValue);
 

@@ -15,6 +15,7 @@ namespace StockTrader.Core
         public double TradeValue;
         public double Brokerage;
         public string OrderId;
+        public string TradeId;
         public string SettlementNumber;
         public string Exchange;
     }

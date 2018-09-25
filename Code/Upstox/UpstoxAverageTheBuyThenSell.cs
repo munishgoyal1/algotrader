@@ -23,7 +23,7 @@ namespace UpstoxTrader
         private void PlaceBuyOrderIfEligible()
         {
             // start and end timings. If we already converted then dont place fresh buy orders
-            if (!IsOrderTimeWithinRange() && isEODOutstandingPositionConverted)
+            if (!IsOrderTimeWithinRange() || isOutstandingPositionConverted)
                 return;
 
             // place buy order if eligible: if there is no pending buy order and if totaloutstanding qty is less than maxoutstanding
@@ -106,13 +106,12 @@ namespace UpstoxTrader
                             var trade = tradeKv.Value;
 
                             Trace(string.Format(tradeTraceFormat, stockCode, trade.Direction == OrderDirection.BUY ? "bought" : "sold", trade.NewQuantity, trade.Price,
-                                holdingTradesRef.Contains(tradeRef) ? "CASH" : "MARGIN"));
+                                holdingTradesRef.Contains(tradeRef) ? "CASH" : "MARGIN", trade.OrderId));
 
                             // if any holding sell executed
                             ProcessHoldingSellOrderExecution(newTrades);
 
-                            // if SELL executed, then update today outstanding to 0 , because sell order always contains the total outstanding qty and now all of it got sold with this trade
-                            // but handle part executions using NewQuantity
+                            // if SELL executed, then update today outstanding with executed qty (handle part executions using NewQuantity)
                             // If it is after 3.15 and broker did auto sq off, then we dont get info on our existing sq off order cancel and auto-sqoff new order id. Handle that case and update outstanding qty
                             if (tradeRef == todayOutstandingSellOrderId || (MarketUtils.IsTimeAfter315() && trade.EquityOrderType == EquityOrderType.MARGIN))
                             {
