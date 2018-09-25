@@ -258,7 +258,7 @@ namespace UpstoxTrader
             if (algoType == AlgoType.AverageTheBuyThenSell)
             {
                 // check if the outstanding sell order has matching qty or not
-                if (sellOrder != null && !string.IsNullOrEmpty(todayOutstandingSellOrderId) && sellOrder.Quantity < todayOutstandingQty && todayOutstandingQty!=int.MaxValue)
+                if (sellOrder != null && !string.IsNullOrEmpty(todayOutstandingSellOrderId) && sellOrder.Quantity < todayOutstandingQty && todayOutstandingQty != int.MaxValue)
                 {
                     // Cancel existing sell order 
                     errCode = CancelEquityOrder("[Init Update Sell Qty]", ref todayOutstandingSellOrderId, orderType, OrderDirection.SELL);
@@ -457,6 +457,12 @@ namespace UpstoxTrader
         public void UpdatePositionFile(bool isEODUpdate = false)
         {
             var lines = new List<string>();
+            if(holdingOutstandingQty < 0)
+            {
+                Trace(string.Format("HoldingOutstandingQty is invalid @ {0}. Setting it to 0.", holdingOutstandingQty));
+                holdingOutstandingQty = 0;
+            }
+
             var positionTotalStr = string.Format(positionFileTotalQtyPriceFormat, holdingOutstandingQty, holdingOutstandingPrice);
             lines.Add(positionTotalStr);
             if (!isEODUpdate)
@@ -481,27 +487,52 @@ namespace UpstoxTrader
         public void TrySquareOffNearEOD(AlgoType algoType)
         {
             string strategy = "[Margin EOD]";
+            var ordPriceType = OrderPriceType.LIMIT;
+            var equityOrderType = orderType;
+            var updateSellOrder = false;
+
+            // Assuming the position and the sqoff order are same qty (i.e. in sync as of now)
+            // for already DELIVERY type sq off order, no need to do anything. Either this logic has already run or the stock was started in DELIVERY mode from starting itself
+            if (MarketUtils.IsTimeAfter2XMin(0) && !isEODOutstandingPositionConverted && orderType == EquityOrderType.MARGIN)
+            {
+                List<EquityPositionRecord> positions;
+                errCode = myUpstoxWrapper.GetPositions(stockCode, out positions);
+
+                if (errCode == BrokerErrorCode.Success)
+                {
+                    var position = positions.Where(p => p.Exchange == exchStr && p.EquityOrderType == EquityOrderType.DELIVERY).FirstOrDefault();
+                    // check if position is converted to delivery, then cancel sq off order and place sell delivery order
+                    if (position != null)
+                    {
+                        strategy = string.Format("[Margin EOD]: Position converted. Convert SELL order to DELIVERY");
+                        equityOrderType = EquityOrderType.DELIVERY;
+                        ordPriceType = OrderPriceType.LIMIT;
+                        isEODOutstandingPositionConverted = true;
+                        updateSellOrder = true;
+                    }
+                }
+            }
+            else if (isEODOutstandingPositionConverted)
+            {
+                equityOrderType = EquityOrderType.DELIVERY;
+            }
+
+            // just cancel the outstanding buy order. Post 3PM or if position converted
+            if (algoType == AlgoType.AverageTheBuyThenSell && (MarketUtils.IsTimeAfter3XMin(0) || isEODOutstandingPositionConverted))
+            {
+                if (!string.IsNullOrEmpty(todayOutstandingBuyOrderId))
+                {
+                    // cancel existing buy order
+                    errCode = CancelEquityOrder("[Margin EOD]", ref todayOutstandingBuyOrderId, orderType, OrderDirection.BUY);
+                }
+            }
+
+            if (todayOutstandingQty == 0)
+                return;
 
             // if after 3 pm, then try to square off in at least no profit no loss if possible. cancel the outstanding buys anyway
             if (MarketUtils.IsTimeAfter3XMin(0))
-            {
-                var ordPriceType = OrderPriceType.LIMIT;
-                var equityOrderType = orderType;
-                var updateSellOrder = false;
-
-                // just cancel the outstanding buy order
-                if (algoType == AlgoType.AverageTheBuyThenSell)
-                {
-                    if (!string.IsNullOrEmpty(todayOutstandingBuyOrderId))
-                    {
-                        // cancel existing buy order
-                        errCode = CancelEquityOrder("[Margin EOD]", ref todayOutstandingBuyOrderId, orderType, OrderDirection.BUY);
-                    }
-                }
-
-                if (todayOutstandingQty == 0)
-                    return;
-
+            {              
                 // 3.05 - 3.10 pm time. market order type if must sqoff at EOD and given pct loss is within acceptable range and outstanding price is not a good price to keep holding
                 if (MarketUtils.IsMinutesAfter3Between(5, 10) && squareOffAllPositionsAtEOD && !isEODMinLossSquareOffMarketOrderUpdated)
                 {
@@ -532,47 +563,25 @@ namespace UpstoxTrader
                     ordPriceType = OrderPriceType.LIMIT;
                     isEODMinProfitSquareOffLimitOrderUpdated = true;
                     updateSellOrder = true;
-                }
+                }              
+            }
 
-                // Assuming the position and the sqoff order are same qty (i.e. in sync as of now)
-                // for already DELIVERY type sq off order, no need to do anything. Either this logic has already run or the stock was started in DELIVERY mode from starting itself
-                else if (MarketUtils.IsTimeAfter3XMin(10) && !isEODOutstandingPositionConverted && orderType == EquityOrderType.MARGIN)
+            if (updateSellOrder)
+            {
+                if (algoType == AlgoType.AverageTheBuyThenSell)
                 {
-                    List<EquityPositionRecord> positions;
-                    errCode = myUpstoxWrapper.GetPositions(stockCode, out positions);
-
-                    if (errCode == BrokerErrorCode.Success)
+                    // bought qty needs square off. there is outstanding sell order, revise the price to try square off 
+                    if (!string.IsNullOrEmpty(todayOutstandingSellOrderId))
                     {
-                        var position = positions.Where(p => p.Exchange == exchStr && p.EquityOrderType == EquityOrderType.DELIVERY).FirstOrDefault();
-                        // check if position is converted to delivery, then cancel sq off order and place sell delivery order
-                        if (position != null)
-                        {
-                            strategy = string.Format("[Margin EOD]: Position converted. Converting the sq off order to DELIVERY");
-                            equityOrderType = EquityOrderType.DELIVERY;
-                            ordPriceType = OrderPriceType.LIMIT;
-                            isEODOutstandingPositionConverted = true;
-                            updateSellOrder = true;
-                        }
-                    }
-                }
+                        Trace(strategy);
+                        // cancel existing sell order
+                        errCode = CancelEquityOrder("[Margin EOD]", ref todayOutstandingSellOrderId, orderType, OrderDirection.SELL);
 
-                if (updateSellOrder)
-                {
-                    if (algoType == AlgoType.AverageTheBuyThenSell)
-                    {
-                        // bought qty needs square off. there is outstanding sell order, revise the price to try square off 
-                        if (!string.IsNullOrEmpty(todayOutstandingSellOrderId))
+                        if (errCode == BrokerErrorCode.Success)
                         {
-                            Trace(strategy);
-                            // cancel existing sell order
-                            errCode = CancelEquityOrder("[Margin EOD]", ref todayOutstandingSellOrderId, orderType, OrderDirection.SELL);
-
-                            if (errCode == BrokerErrorCode.Success)
-                            {
-                                // place new sell order, update sell order ref
-                                var sellPrice = GetSellPrice(todayOutstandingPrice, false, true);
-                                errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, ordPriceType, todayOutstandingQty, equityOrderType, sellPrice, out todayOutstandingSellOrderId);
-                            }
+                            // place new sell order, update sell order ref
+                            var sellPrice = GetSellPrice(todayOutstandingPrice, false, true);
+                            errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, ordPriceType, todayOutstandingQty, equityOrderType, sellPrice, out todayOutstandingSellOrderId);
                         }
                     }
                 }

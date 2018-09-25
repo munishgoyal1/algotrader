@@ -22,8 +22,8 @@ namespace UpstoxTrader
 
         private void PlaceBuyOrderIfEligible()
         {
-            // start and end timings
-            if (!IsOrderTimeWithinRange())
+            // start and end timings. If we already converted then dont place fresh buy orders
+            if (!IsOrderTimeWithinRange() && isEODOutstandingPositionConverted)
                 return;
 
             // place buy order if eligible: if there is no pending buy order and if totaloutstanding qty is less than maxoutstanding
