@@ -196,12 +196,13 @@ namespace UpstoxTrader
             var onlyTodaySellQty = trades.Values.Where(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == orderType).Sum(t => t.Quantity);
 
             // For delivery ordertype (eg CAPLIN) find the executed qty and remove it from todayoutstanding
-            if(!string.IsNullOrEmpty(holdingOrder.OrderId))
+            if(!string.IsNullOrEmpty(holdingOrder.OrderId) && orderType == EquityOrderType.DELIVERY)
             {
-                onlyTodaySellQty -= (holdingOrder.StartingQty - holdingOrder.UnexecutedQty);                    
+                onlyTodaySellQty = onlyTodaySellQty - (holdingOrder.StartingQty - holdingOrder.UnexecutedQty);                    
             }
 
             todayOutstandingQty = onlyTodayBuyQty - onlyTodaySellQty;
+            todayOutstandingQty = Math.Max(todayOutstandingQty, 0);
 
             var buyTrades = trades.Values.Where(t => t.Direction == OrderDirection.BUY).OrderByDescending(t => t.DateTime).ToList();
 
