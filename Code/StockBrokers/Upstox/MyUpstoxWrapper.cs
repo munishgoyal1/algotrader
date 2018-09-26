@@ -250,16 +250,18 @@ namespace StockTrader.Brokers.UpstoxBroker
             lock (lockSingleThreadedUpstoxCall)
             {
                 BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+                OrderStatus orderStatus;
                 orderId = "";
 
                 if (quantity == 0)
                 {
                     Trace("Not placing order as quantity is 0");
+                    Trace(string.Format("Not placing order: {0} {1} {2} {3}@{4} {5}, as quantity is 0", orderType, stockCode, orderDirection, quantity, price, orderPriceType));
                     return errorCode;
                 }
                 if (price == 0 && orderPriceType == OrderPriceType.LIMIT)
                 {
-                    Trace("Not placing order as price is 0 for limit order");
+                    Trace(string.Format("Not placing order: {0} {1} {2} {3}@{4} {5}, as price is 0 for limit order", orderType, stockCode, orderDirection, quantity, price, orderPriceType));
                     return errorCode;
                 }
 
@@ -270,8 +272,8 @@ namespace StockTrader.Brokers.UpstoxBroker
                 try
                 {
                     orderId = upstox.PlaceSimpleOrder(exchange, stockCode, transType, ordType, quantity, prodType, price);
-
-                    errorCode = GetOrderStatus(orderId);
+                    Thread.Sleep(300); // let the order status update at server
+                    errorCode = GetOrderStatus(orderId, stockCode, out orderStatus);
 
                     mOrderIds[stockCode].Add(orderId);
                 }
@@ -279,18 +281,18 @@ namespace StockTrader.Brokers.UpstoxBroker
                 {
                     Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
 
-                    Trace("Potential Error in PlaceOrder (Checking if order was placed or not). OrderId = " + orderId);
+                    Trace(string.Format("{0} Exception in PlaceOrder (Reconfirming Order status). OrderId={1}", stockCode, orderId));
 
-                    var lastOrderId = upstox.GetLastOrderId(exchange, stockCode, prodType);
+                    var lastOrderId = upstox.GetLastOrderId(exchange, stockCode, prodType); // more sure way to get server side lastorderid, incase placeorder itslef errored and we didnt get the orderid
 
                     if (!string.IsNullOrEmpty(lastOrderId) && !mOrderIds[stockCode].Contains(lastOrderId))
                     {
-                        errorCode = GetOrderStatus(lastOrderId);
+                        errorCode = GetOrderStatus(lastOrderId, stockCode, out orderStatus);
 
                         if (errorCode == BrokerErrorCode.Success)
                             mOrderIds[stockCode].Add(lastOrderId);
 
-                        Trace(string.Format("Reconciled the order. updated status: {0}, lastOrderId: {1} ", errorCode, lastOrderId));
+                        Trace(string.Format("{0} Reconciled the order. updated status: {1}, PlaceSimpleOrder OrderId={2}, lastOrderId: {3} ", stockCode, errorCode, orderId, lastOrderId));
                     }
                 }
 
@@ -298,9 +300,11 @@ namespace StockTrader.Brokers.UpstoxBroker
             }
         }
 
-        private BrokerErrorCode GetOrderStatus(string orderId)
+        //stockCode only for logging
+        private BrokerErrorCode GetOrderStatus(string orderId, string stockCode, out OrderStatus orderStatus)
         {
             BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+            orderStatus = OrderStatus.UNKNOWN;
 
             int retryCount = 0;
             int maxRetryCount = 3;
@@ -311,10 +315,18 @@ namespace StockTrader.Brokers.UpstoxBroker
                 {
                     var status = upstox.GetOrderStatus(orderId);
 
+                    Trace(string.Format("{0} OrderId:{1}, UpstoxOrderStatus:{2}", stockCode, orderId, status));
+
                     if (status.ToLower() == "rejected")
+                    {
                         errorCode = BrokerErrorCode.OrderRejected;
+                        orderStatus = OrderStatus.REJECTED;
+                    }
                     else
+                    {
                         errorCode = BrokerErrorCode.Success;
+                        orderStatus = OrderStatus.ORDERED;
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -698,7 +710,7 @@ namespace StockTrader.Brokers.UpstoxBroker
 
         public void Trace(string message)
         {
-            message = GetType().Name + message;
+            message = GetType().Name + " " + message;
             Console.WriteLine(DateTime.Now.ToString() + " " + message);
             FileTracing.TraceOut(message);
         }

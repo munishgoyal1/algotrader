@@ -1,5 +1,5 @@
 stockCode, goodprice, buyPriceCap (in stock lines below) and then the commonconfig as follows:  orderType, maxTradeValue,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,buyMarkdownFromLcpDefault,sellMarkupForMargin,sellMarkupForDelivery,pctExtraMarkdownForAveraging,sellMarkupForMinProfit,placeBuyNoLtpCompare,squareOffAllPositionsAtEOD,pctMaxLossSquareOffPositionsAtEOD,useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,startTime,endTime,Exchange,sellMarkupForEODInsufficientLimitSquareOff,maxBuyOrdersAllowedInADay,doConvertToDeliveryAtEOD,doSquareOffIfInsufficientLimitAtEOD
-MARGIN,400,20,10,0.005,1.005,1.01,0.005,1.003,false,true,-0.001,false,09:00:00,15:00:00,NSE,0.995,100,true,false
+MARGIN,400,30,15,0.005,1.005,1.01,0.005,1.003,false,true,-0.001,false,09:00:00,15:00:00,NSE,0.995,100,true,false
 ZEEL,450,500,MARGIN,500,,,0.01,1.005,1.01,0.01,,true
 SUNPHARMA,600,700,MARGIN,700,,,0.01,1.005,1.01,0.01,,true
 #
@@ -28,7 +28,7 @@ AMARAJABAT,800,900,MARGIN,1000,,,0.02,1.025,1.025,0.02
 # Low volatile range bound. So try small multiple trades
 #
 ITC,310,330
-TATAMOTORS,260,295
+TATAMOTORS,260,295,,600,50,15
 BERGEPAINT,285,310
 IDFCBANK,45,55,MARGIN,60
 FEDERALBNK,75,95,MARGIN,100

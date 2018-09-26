@@ -100,7 +100,8 @@ namespace StockTrader.Core
         REJECTED,
         CANCELLED,
         PARTEXECANDCANCELLED,
-        NOTFOUND
+        NOTFOUND,
+        UNKNOWN
     }
 
     public enum SolutionErrorCode

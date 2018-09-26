@@ -488,7 +488,7 @@ namespace UpstoxTrader
 
             // Assuming the position and the sqoff order are same qty (i.e. in sync as of now)
             // for already DELIVERY type sq off order, no need to do anything. Either this logic has already run or the stock was started in DELIVERY mode from starting itself
-            if (!isOutstandingPositionConverted && orderType == EquityOrderType.MARGIN)
+            if (todayOutstandingQty > 0 && !isOutstandingPositionConverted && orderType == EquityOrderType.MARGIN)
             {
                 List<EquityPositionRecord> positions;
                 errCode = myUpstoxWrapper.GetPositions(stockCode, out positions);
@@ -572,7 +572,7 @@ namespace UpstoxTrader
                     {
                         Trace(strategy);
                         // cancel existing sell order
-                        errCode = CancelEquityOrder("[EOD]", ref todayOutstandingSellOrderId, orderType, OrderDirection.SELL);
+                        errCode = CancelEquityOrder(isOutstandingPositionConverted ? "[Converted to DELIVERY]" : "[EOD]", ref todayOutstandingSellOrderId, orderType, OrderDirection.SELL);
 
                         if (errCode == BrokerErrorCode.Success)
                         {

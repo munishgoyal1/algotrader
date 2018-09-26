@@ -35,44 +35,66 @@ namespace UpstoxTrader
                 var errCode = GetLTP(out ltp);
                 var calculatedOrderQty = ordQty;
 
-                // todayOutstandingQty == 0 default case
-                var lastPriceToCompareWith = ltp;
-                var markDownPct = buyMarkdownFromLcpDefault;
-                double priceArrivedFromHolding = double.MaxValue;
-                double priceArrivedFromTodayOutstanding = double.MaxValue;
-                double priceArrivedFromLtpDefault = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
-                double calculatedToBuyPrice = priceArrivedFromLtpDefault;
-                var priceStrategy = "Default LTP Markdown";
+                double lastPriceToCompareWith = ltp;
+                string priceStrategy = "LTP Markdown";
+                string qtyStrategy = "Default TodayOutstandingMultiple";
 
-                // if ltp is somehow not available, then use holdingprice as reference to calculate the price. Useful only once at start of day that oo in case Ltp is not populated yet due to trade or upstox hasnt updated yet.
-                if (holdingOutstandingQty > 0 && calculatedToBuyPrice <= 0)
-                {
-                    lastPriceToCompareWith = holdingOutstandingPrice;
-                    markDownPct = buyMarkdownFromLcpDefault;
-                    priceArrivedFromHolding = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
-                    priceStrategy = "Average Holding";
-                    calculatedToBuyPrice = priceArrivedFromHolding;
-                }
+                // if outstanding, then use lastbuy
+                // if 0 outstanding, use ltp
+                // if 0 Ltp, then use holdingprice
 
                 if (todayOutstandingQty > 0)
                 {
-                    var outstandingMultiple = ((todayOutstandingQty + ordQty - 1) / ordQty);
                     lastPriceToCompareWith = lastBuyPrice;
-                    markDownPct = buyMarkdownFromLcpDefault + (pctExtraMarkdownForAveraging * outstandingMultiple);
-                    priceArrivedFromTodayOutstanding = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
-                    priceStrategy = "Average Today";
-                    calculatedToBuyPrice = priceArrivedFromTodayOutstanding;
-                    calculatedOrderQty = ordQty * (1 + outstandingMultiple);
+                    priceStrategy = "LastBuyPrice Markdown";
+                }
+                else if (ltp > 0)
+                {
+                    lastPriceToCompareWith = ltp;
+                    priceStrategy = "LTP Markdown";
+
+                }
+                else if (holdingOutstandingQty > 0)
+                {
+                    lastPriceToCompareWith = holdingOutstandingPrice;
+                    priceStrategy = "HoldingPrice Markdown";
+                }
+                else
+                {
+                    Trace(string.Format("LTP:{0}, LastBuyPrice:{1}, HoldingOutstandingPrice:{2}. No reference price to place BUY order", ltp, lastBuyPrice, holdingOutstandingPrice));
+                    return;
                 }
 
-                calculatedToBuyPrice = Math.Min(calculatedToBuyPrice, ltp);
+                var totalOutstandingQty = todayOutstandingQty + holdingOutstandingQty;
+                var todayOutstandingMultiple = ((todayOutstandingQty + ordQty - 1) / ordQty);
+                var totalOutstandingMultiple = ((totalOutstandingQty + ordQty - 1) / ordQty);
+                var multipleForQty = todayOutstandingMultiple;
+
+                var markDownPct = buyMarkdownFromLcpDefault + (pctExtraMarkdownForAveraging * todayOutstandingMultiple);
+                var calculatedToBuyPrice = Math.Round(0.9999 * (1 - markDownPct) * lastPriceToCompareWith, 1);
+
+                // if CalculatedPriceToBuy is less than calculated from Holdingprice based calc then use totalOutstandingMultiple for Qty
+                if (holdingOutstandingQty > 0)
+                {
+                    var markDownPctExpected = buyMarkdownFromLcpDefault + (pctExtraMarkdownForAveraging * totalOutstandingMultiple);
+                    var priceExpected = Math.Round(0.9999 * (1 - markDownPctExpected) * holdingOutstandingPrice, 1);
+
+                    if (calculatedToBuyPrice < priceExpected)
+                    {
+                        multipleForQty = totalOutstandingMultiple;
+                        qtyStrategy = "TotalOutstandingMultiple";
+                    }
+                }
+
+                calculatedOrderQty = ordQty * (1 + multipleForQty);
+
                 calculatedToBuyPrice = Math.Min(calculatedToBuyPrice, buyPriceCap);
 
-                // if ltp is less than required price then place the order or if there is no outstanding today then place the order anyway
                 if (errCode == BrokerErrorCode.Success && (todayOutstandingQty == 0 || (placeBuyNoLtpCompare || (ltp <= calculatedToBuyPrice))))
                 {
-                    Trace(string.Format("LTP {0}, calculatedToBuyPrice {1}, lastPriceToCompareWith {2}, calculatedOrderQty {3}, placeBuyNoLtpCompare {4}, PriceStrategy {5} ", ltp, calculatedToBuyPrice, lastPriceToCompareWith, calculatedOrderQty, placeBuyNoLtpCompare, priceStrategy));
-                    // place buy order, update buy order ref
+                    Trace(string.Format("LTP {0}, calculatedToBuyPrice {1}, lastPriceToCompareWith {2}, calculatedOrderQty {3}, placeBuyNoLtpCompare {4}, PriceStrategy {5}, QtyStrategy {6} ", 
+                        ltp, calculatedToBuyPrice, lastPriceToCompareWith, calculatedOrderQty, placeBuyNoLtpCompare, priceStrategy, qtyStrategy));
+
                     errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.BUY, OrderPriceType.LIMIT, calculatedOrderQty, orderType, calculatedToBuyPrice, out todayOutstandingBuyOrderId);
                 }
             }
