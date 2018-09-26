@@ -14,9 +14,8 @@ namespace UpstoxTrader
 {
     public class HoldingOrder
     {
-        public OrderPositionTypeEnum Type;
-        public string SettlementNumber;
-        public int Qty;
+        public int UnexecutedQty;
+        public int StartingQty;
         public string OrderId;
         public OrderStatus Status;
     }
@@ -60,9 +59,10 @@ namespace UpstoxTrader
         public int holdingOutstandingQty = 0;
         public double todayOutstandingPrice = 0;
         public int todayOutstandingQty = 0;
-        public List<HoldingOrder> holdingsOrders = new List<HoldingOrder>();
         public string todayOutstandingBuyOrderId = ""; // outstanding buy order Id
         public string todayOutstandingSellOrderId = "";// outstanding sell order Id
+        public HoldingOrder holdingOrder = new HoldingOrder();
+
         public double lastBuyPrice = 0;
         public bool isFirstBuyOrder = true;
         public int todayBuyOrderCount = 0;
@@ -76,10 +76,10 @@ namespace UpstoxTrader
         public const string orderCancelTraceFormat = "{0}: {1} {2} {3}: {4}";
         public const string tradeTraceFormat = "{4} Trade: {0} {1} {2} @ {3}. OrderId = {5}";
         public const string deliveryTraceFormat = "Conversion to delivery: {0} {1} qty of {2}";
-        public const string positionFileTotalQtyPriceFormat = "{0} {1}\n";
-        public const string positionFileLineQtyPriceFormat = "{0} {1} {2} {3} {4}";
+        public const string positionFileTotalQtyPriceFormat = "{0} {1}";
+        public const string positionFileLineQtyPriceFormat = "{0} {1} {2} {3}";
 
-        public BrokerErrorCode errCode;        
+        public BrokerErrorCode errCode;
         public UpstoxPnLStats pnlStats = new UpstoxPnLStats();
 
         public virtual void StockBuySell()
@@ -191,14 +191,17 @@ namespace UpstoxTrader
             if (errCode != BrokerErrorCode.Success)
                 throw new Exception("Failed getting OrderBook at Init");
 
-            // get all holding qty trades
-            var holdingTradesRef = holdingsOrders.Select(h => h.OrderId);
-
             // any outstanding qty (buy minus sell trades) today except from holding qty trade
-            var buyQty = trades.Values.Where(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == orderType).Sum(t => t.Quantity);
-            var sellQty = trades.Values.Where(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == orderType).Sum(t => t.Quantity);
+            var onlyTodayBuyQty = trades.Values.Where(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == orderType).Sum(t => t.Quantity);
+            var onlyTodaySellQty = trades.Values.Where(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == orderType).Sum(t => t.Quantity);
 
-            todayOutstandingQty = buyQty - sellQty;
+            // For delivery ordertype (eg CAPLIN) find the executed qty and remove it from todayoutstanding
+            if(!string.IsNullOrEmpty(holdingOrder.OrderId))
+            {
+                onlyTodaySellQty -= (holdingOrder.StartingQty - holdingOrder.UnexecutedQty);                    
+            }
+
+            todayOutstandingQty = onlyTodayBuyQty - onlyTodaySellQty;
 
             var buyTrades = trades.Values.Where(t => t.Direction == OrderDirection.BUY).OrderByDescending(t => t.DateTime).ToList();
 
@@ -207,18 +210,18 @@ namespace UpstoxTrader
 
             var qtyTotal = 0;
             int outstandingAttritbutionOrderCount = 0;
-            while(qtyTotal < todayOutstandingQty)
+            while (qtyTotal < todayOutstandingQty)
             {
                 qtyTotal += (ordQty * ++outstandingAttritbutionOrderCount);
             }
 
             // these are latest trades taken. each buy trade is for single lot and thus for each lot there is a trade
             todayOutstandingPrice = outstandingAttritbutionOrderCount == 0 ? 0 : buyTrades.Take(outstandingAttritbutionOrderCount).Average(t => t.Price);
-            
+
             ProcessHoldingSellOrderExecution(trades);
 
             var buyOrders = orders.Values.Where(o => o.Direction == OrderDirection.BUY && o.Status == OrderStatus.ORDERED);
-            var sellOrders = orders.Values.Where(o => o.Direction == OrderDirection.SELL && o.Status == OrderStatus.ORDERED && !holdingTradesRef.Contains(o.OrderId)); // pick only today's outstanding related sell orders
+            var sellOrders = orders.Values.Where(o => o.Direction == OrderDirection.SELL && o.Status == OrderStatus.ORDERED && holdingOrder.OrderId != o.OrderId); // pick only today's outstanding related sell orders
 
             // assumed that there is always at max only single outstanding buy order and a at max single outstanding sell order
             todayOutstandingBuyOrderId = buyOrders.Any() ? buyOrders.First().OrderId : "";
@@ -228,9 +231,8 @@ namespace UpstoxTrader
 
             isFirstBuyOrder = string.IsNullOrEmpty(todayOutstandingBuyOrderId) && !trades.Where(t => t.Value.Direction == OrderDirection.BUY).Any();
 
-            // if sqoff sell order for holdings is needed then place it 
-            //assumption is: if there is a holding pending from day before then it would have been converted to delivery
-            if (holdingOutstandingQty > 0)
+            // if sqoff sell order for holding is needed then place it 
+            if (holdingOutstandingQty > 0 && string.IsNullOrEmpty(holdingOrder.OrderId))
             {
                 // get holdings
                 List<EquityDematHoldingRecord> dematHoldings;
@@ -241,17 +243,19 @@ namespace UpstoxTrader
 
                 // place sq off sell order, update sell order ref
                 var sellPrice = GetSellPrice(holdingOutstandingPrice, true, false);
-                string sellOrderId = "";
+
                 if (dematHoldings.Any())
                 {
                     var dematHolding = dematHoldings.First();
                     if (dematHolding.BlockedQuantity < holdingOutstandingQty)
                     {
-                        var algoPendingQty = holdingOutstandingQty - dematHolding.BlockedQuantity;// because there may be long term previous holdings for a stock
-                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, algoPendingQty, EquityOrderType.DELIVERY, sellPrice, out sellOrderId);
+                        var algoPendingQty = holdingOutstandingQty - dematHolding.BlockedQuantity;
+                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, algoPendingQty, EquityOrderType.DELIVERY, sellPrice, out holdingOrder.OrderId);
+
                         if (errCode == BrokerErrorCode.Success)
                         {
-                            holdingsOrders.Add(new HoldingOrder { Type = OrderPositionTypeEnum.Demat, OrderId = sellOrderId, Qty = algoPendingQty, SettlementNumber = "" });
+                            holdingOrder.UnexecutedQty = algoPendingQty;
+                            holdingOrder.Status = OrderStatus.ORDERED;
                         }
                     }
                 }
@@ -281,38 +285,25 @@ namespace UpstoxTrader
 
         protected void ProcessHoldingSellOrderExecution(Dictionary<string, EquityTradeBookRecord> trades)
         {
-            var holdingTradesId = holdingsOrders.Select(h => h.OrderId);
-
-            if (!holdingTradesId.Any(htr => trades.ContainsKey(htr)))
-                return;
-
-            var holdingsOrdersToRemove = new List<HoldingOrder>();
-
-            foreach (var holdingOrder in holdingsOrders.Where(ho => ho.Qty > 0 && !string.IsNullOrEmpty(ho.OrderId)))
+            if (holdingOrder.UnexecutedQty > 0 && !string.IsNullOrEmpty(holdingOrder.OrderId))
             {
-                var orderRef = holdingOrder.OrderId;
-
-                if (trades.ContainsKey(orderRef))
+                if (trades.ContainsKey(holdingOrder.OrderId))
                 {
-                    var trade = trades[orderRef];
+                    var trade = trades[holdingOrder.OrderId];
                     holdingOutstandingQty -= trade.NewQuantity;
-                    holdingOrder.Qty -= trade.NewQuantity;
+                    holdingOrder.UnexecutedQty -= trade.NewQuantity;
 
-                    holdingOutstandingQty = holdingOutstandingQty < 0 ? 0 : holdingOutstandingQty;
-                    holdingOrder.Qty = holdingOrder.Qty < 0 ? 0 : holdingOrder.Qty;
+                    holdingOutstandingQty = Math.Max(holdingOutstandingQty, 0);
+                    holdingOrder.UnexecutedQty = Math.Max(holdingOrder.UnexecutedQty, 0);
 
-                    holdingOrder.Status = OrderStatus.PARTEXEC;
-
-                    if (holdingOrder.Qty == 0)
-                    {
+                    if (holdingOrder.UnexecutedQty == 0)
                         // instead of removing the order mark the status
                         holdingOrder.Status = OrderStatus.COMPLETED;
-                        //holdingsOrdersToRemove.Add(holdingOrder);
-                    }
+                    else
+                        holdingOrder.Status = OrderStatus.PARTEXEC;
+
                 }
             }
-
-            holdingsOrders.RemoveAll(h => holdingsOrdersToRemove.Contains(h));
 
             if (holdingOutstandingQty == 0)
                 holdingOutstandingPrice = 0;
@@ -434,6 +425,7 @@ namespace UpstoxTrader
         public void ReadPositionFile()
         {
             var lines = File.ReadAllLines(positionFile);
+
             for (int i = 0; i < lines.Length; i++)
             {
                 var line = lines[i];
@@ -444,16 +436,17 @@ namespace UpstoxTrader
                     {
                         holdingOutstandingQty = int.Parse(split[0].Trim());
                         holdingOutstandingPrice = double.Parse(split[1].Trim());
+                        holdingOrder.StartingQty = holdingOutstandingQty;
+                        holdingOrder.UnexecutedQty = holdingOrder.StartingQty;
+                        holdingOrder.Status = OrderStatus.NOTFOUND;
+                        holdingOrder.OrderId = null;
                     }
                     else
                     {
-                        var holdingOrder = new HoldingOrder();
-                        holdingOrder.Type = (OrderPositionTypeEnum)Enum.Parse(typeof(OrderPositionTypeEnum), split[0].Trim());
-                        holdingOrder.SettlementNumber = split[1].Trim();
-                        holdingOrder.Qty = int.Parse(split[2].Trim());
-                        holdingOrder.OrderId = split[3].Trim();
-                        holdingOrder.Status = (OrderStatus)Enum.Parse(typeof(OrderStatus), split[4].Trim());
-                        holdingsOrders.Add(holdingOrder);
+                        holdingOrder.StartingQty = int.Parse(split[0].Trim());
+                        holdingOrder.UnexecutedQty = int.Parse(split[1].Trim());
+                        holdingOrder.OrderId = split[2].Trim();
+                        holdingOrder.Status = (OrderStatus)Enum.Parse(typeof(OrderStatus), split[3].Trim());
                     }
                 }
             }
@@ -461,24 +454,19 @@ namespace UpstoxTrader
 
         public void UpdatePositionFile(bool isEODUpdate = false)
         {
-            var lines = new List<string>();
-            if(holdingOutstandingQty < 0)
+            var lines = new string[2];
+            if (holdingOutstandingQty < 0)
             {
                 Trace(string.Format("HoldingOutstandingQty is invalid @ {0}. Setting it to 0.", holdingOutstandingQty));
                 holdingOutstandingQty = 0;
                 holdingOutstandingPrice = 0;
             }
 
-            var positionTotalStr = string.Format(positionFileTotalQtyPriceFormat, holdingOutstandingQty, holdingOutstandingPrice);
-            lines.Add(positionTotalStr);
+            lines[0] = string.Format(positionFileTotalQtyPriceFormat, holdingOutstandingQty, holdingOutstandingPrice);
+
             if (!isEODUpdate)
-            {
-                foreach (var holdingOrder in holdingsOrders)
-                {
-                    var positionLineStr = string.Format(positionFileLineQtyPriceFormat, holdingOrder.Type, holdingOrder.SettlementNumber, holdingOrder.Qty, holdingOrder.OrderId, holdingOrder.Status);
-                    lines.Add(positionLineStr);
-                }
-            }
+                lines[1] = string.Format(positionFileLineQtyPriceFormat, holdingOrder.StartingQty, holdingOrder.UnexecutedQty, holdingOrder.OrderId, holdingOrder.Status);
+
             File.WriteAllLines(positionFile, lines);
 
             if (isEODUpdate)
@@ -540,7 +528,7 @@ namespace UpstoxTrader
 
             // if after 3 pm, then try to square off in at least no profit no loss if possible. cancel the outstanding buys anyway
             if (MarketUtils.IsTimeAfter3XMin(0))
-            {              
+            {
                 // 3.05 - 3.10 pm time. market order type if must sqoff at EOD and given pct loss is within acceptable range and outstanding price is not a good price to keep holding
                 if (MarketUtils.IsMinutesAfter3Between(5, 10) && squareOffAllPositionsAtEOD && !isEODMinLossSquareOffMarketOrderUpdated)
                 {
@@ -571,7 +559,7 @@ namespace UpstoxTrader
                     ordPriceType = OrderPriceType.LIMIT;
                     isEODMinProfitSquareOffLimitOrderUpdated = true;
                     updateSellOrder = true;
-                }              
+                }
             }
 
             if (updateSellOrder)
@@ -598,28 +586,20 @@ namespace UpstoxTrader
 
         public void CancelHoldingSellOrders()
         {
-            if (!holdingsOrders.Any())
-                return;
-
             BrokerErrorCode errCode = BrokerErrorCode.Unknown;
             var holdingsOrdersToRemove = new List<HoldingOrder>();
-            foreach (var holdingOrder in holdingsOrders)
+            if (!string.IsNullOrEmpty(holdingOrder.OrderId))
             {
-                if (!string.IsNullOrEmpty(holdingOrder.OrderId))
-                {
-                    errCode = CancelEquityOrder(string.Format("[Holding EOD] {0} {1}", holdingOrder.Type, holdingOrder.SettlementNumber), ref holdingOrder.OrderId, EquityOrderType.DELIVERY, OrderDirection.SELL);
+                errCode = CancelEquityOrder(string.Format("[Holding EOD] StartingQty:{0} UnexecutedQty:{1} OrderExecutionStatus:{2} ", holdingOrder.StartingQty, holdingOrder.UnexecutedQty, holdingOrder.Status), ref holdingOrder.OrderId, EquityOrderType.DELIVERY, OrderDirection.SELL);
 
-                    if (errCode == BrokerErrorCode.Success)
-                    {
-                        // instead of removing the order make the qty 0
-                        holdingOrder.Qty = 0;
-                        holdingOrder.Status = OrderStatus.CANCELLED;
-                        //holdingsOrdersToRemove.Add(holdingOrder);
-                    }
+                if (errCode == BrokerErrorCode.Success)
+                {
+                    // instead of removing the order make the qty 0
+                    holdingOrder.UnexecutedQty = 0;
+                    holdingOrder.Status = OrderStatus.CANCELLED;
                 }
             }
 
-            holdingsOrders.RemoveAll(h => holdingsOrdersToRemove.Contains(h));
             UpdatePositionFile();
         }
 

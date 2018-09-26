@@ -1,0 +1,19 @@
+9/26/2018 11:00:19 AM::: RELEASE MODE
+
+9/26/2018 11:00:33 AM::: 126130
+
+9/26/2018 11:00:40 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order DELIVERY]: Success ADANIPORTS SELL 3 @ 351.2 LIMIT. OrderId = 180926000102150
+
+9/26/2018 11:00:42 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order DELIVERY]: Success PCJEWELLER SELL 4 @ 82.4 LIMIT. OrderId = 180926000102169
+
+9/26/2018 11:00:43 AM::: UpstoxAverageTheBuyThenSell ITC [Init Update Sell Qty]: ITC SELL order cancel , OrderRef = 180926000030897: Success
+
+9/26/2018 11:00:43 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT SELL 2 @ 497.8 LIMIT. OrderId = 180926000102180
+
+9/26/2018 11:00:43 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Init Update Sell Qty]: TATAMOTORS SELL order cancel , OrderRef = 180926000020599: Success
+
+9/26/2018 11:00:44 AM::: UpstoxAverageTheBuyThenSell HDFCBANK Error:Sequence contains no elements
+Stacktrace:   at System.Linq.Enumerable.Average(IEnumerable`1 source)
+   at UpstoxTrader.UpstoxBuySellBase.Init(AlgoType algoType)
+   at UpstoxTrader.UpstoxAverageTheBuyThenSell.StockBuySell()
+

@@ -94,7 +94,6 @@ namespace UpstoxTrader
             {
                 try
                 {
-                    var holdingTradesRef = holdingsOrders.Select(h => h.OrderId);
                     {
                         var newTrades = new Dictionary<string, EquityTradeBookRecord>();
                         // refresh trade book
@@ -106,7 +105,7 @@ namespace UpstoxTrader
                             var trade = tradeKv.Value;
 
                             Trace(string.Format(tradeTraceFormat, stockCode, trade.Direction == OrderDirection.BUY ? "bought" : "sold", trade.NewQuantity, trade.Price,
-                                holdingTradesRef.Contains(tradeRef) ? "CASH" : "MARGIN", trade.OrderId));
+                                holdingOrder.OrderId == tradeRef ? "CASH" : "MARGIN", trade.OrderId));
 
                             // if any holding sell executed
                             ProcessHoldingSellOrderExecution(newTrades);
