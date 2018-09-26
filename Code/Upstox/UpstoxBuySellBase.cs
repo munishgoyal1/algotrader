@@ -71,8 +71,9 @@ namespace UpstoxTrader
         public bool isOutstandingPositionConverted = false;
         public double Ltp;
         public string settlementNumber = "";
+        public OrderStatus upstoxOrderStatus;
 
-        public const string orderTraceFormat = "[Place Order {4}]: {5} {0} {1} {2} @ {3} {6}. OrderId = {7}";
+        public const string orderTraceFormat = "[Place Order {4}]: {5} {0} {1} {2} @ {3} {6}. OrderId = {7}. BrokerOrderStatus={8}";
         public const string orderCancelTraceFormat = "{0}: {1} {2} {3}: {4}";
         public const string tradeTraceFormat = "{4} Trade: {0} {1} {2} @ {3}. OrderId = {5}";
         public const string deliveryTraceFormat = "Conversion to delivery: {0} {1} qty of {2}";
@@ -251,7 +252,7 @@ namespace UpstoxTrader
                     if (dematHolding.BlockedQuantity < holdingOutstandingQty)
                     {
                         var algoPendingQty = holdingOutstandingQty - dematHolding.BlockedQuantity;
-                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, algoPendingQty, EquityOrderType.DELIVERY, sellPrice, out holdingOrder.OrderId);
+                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, algoPendingQty, EquityOrderType.DELIVERY, sellPrice, out holdingOrder.OrderId, out upstoxOrderStatus);
 
                         if (errCode == BrokerErrorCode.Success)
                         {
@@ -277,7 +278,7 @@ namespace UpstoxTrader
                 if (string.IsNullOrEmpty(todayOutstandingSellOrderId) && todayOutstandingQty > 0)
                 {
                     var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
-                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out todayOutstandingSellOrderId);
+                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out todayOutstandingSellOrderId, out upstoxOrderStatus);
                 }
             }
 
@@ -404,14 +405,16 @@ namespace UpstoxTrader
             int quantity,
             EquityOrderType orderType,
             double price,
-            out string orderId)
+            out string orderId,
+            out OrderStatus orderStatus)
         {
             BrokerErrorCode errCode = BrokerErrorCode.Unknown;
+            orderStatus = OrderStatus.UNKNOWN;
             orderId = "";
 
-            errCode = myUpstoxWrapper.PlaceEquityOrder(exchange, stockCode, orderDirection, orderPriceType, quantity, orderType, price, out orderId);
+            errCode = myUpstoxWrapper.PlaceEquityOrder(exchange, stockCode, orderDirection, orderPriceType, quantity, orderType, price, out orderId, out orderStatus);
 
-            Trace(string.Format(orderTraceFormat, stockCode, orderDirection, quantity, price, orderType, errCode, orderPriceType, orderId));
+            Trace(string.Format(orderTraceFormat, stockCode, orderDirection, quantity, price, orderType, errCode, orderPriceType, orderId, orderStatus));
 
             if (errCode == BrokerErrorCode.Success && orderDirection == OrderDirection.BUY)
             {
@@ -578,7 +581,7 @@ namespace UpstoxTrader
                         {
                             // place new sell order, update sell order ref
                             var sellPrice = GetSellPrice(todayOutstandingPrice, false, true);
-                            errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, ordPriceType, todayOutstandingQty, equityOrderType, sellPrice, out todayOutstandingSellOrderId);
+                            errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, ordPriceType, todayOutstandingQty, equityOrderType, sellPrice, out todayOutstandingSellOrderId, out upstoxOrderStatus);
                         }
                     }
                 }
@@ -645,7 +648,7 @@ namespace UpstoxTrader
                     {
                         // place new sell order, update sell order ref
                         var sellPrice = GetSellPrice(todayOutstandingPrice, false, false, true);
-                        errCode1 = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out todayOutstandingSellOrderId);
+                        errCode1 = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out todayOutstandingSellOrderId, out upstoxOrderStatus);
                     }
                 }
             }

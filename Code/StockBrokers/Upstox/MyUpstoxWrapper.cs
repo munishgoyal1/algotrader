@@ -245,12 +245,13 @@ namespace StockTrader.Brokers.UpstoxBroker
             int quantity,
             EquityOrderType orderType,
             double price,
-            out string orderId)
+            out string orderId,
+            out OrderStatus orderStatus)
         {
             lock (lockSingleThreadedUpstoxCall)
             {
                 BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
-                OrderStatus orderStatus;
+                orderStatus = OrderStatus.UNKNOWN;
                 orderId = "";
 
                 if (quantity == 0)
@@ -301,10 +302,10 @@ namespace StockTrader.Brokers.UpstoxBroker
         }
 
         //stockCode only for logging
-        private BrokerErrorCode GetOrderStatus(string orderId, string stockCode, out OrderStatus orderStatus)
+        private BrokerErrorCode GetOrderStatus(string orderId, string stockCode, out OrderStatus upstoxOrderStatus)
         {
             BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
-            orderStatus = OrderStatus.UNKNOWN;
+            upstoxOrderStatus = OrderStatus.UNKNOWN;
 
             int retryCount = 0;
             int maxRetryCount = 3;
@@ -320,12 +321,12 @@ namespace StockTrader.Brokers.UpstoxBroker
                     if (status.ToLower() == "rejected")
                     {
                         errorCode = BrokerErrorCode.OrderRejected;
-                        orderStatus = OrderStatus.REJECTED;
+                        upstoxOrderStatus = OrderStatus.REJECTED;
                     }
                     else
                     {
                         errorCode = BrokerErrorCode.Success;
-                        orderStatus = OrderStatus.ORDERED;
+                        upstoxOrderStatus = OrderStatus.ORDERED;
                     }
                 }
                 catch (Exception ex)
