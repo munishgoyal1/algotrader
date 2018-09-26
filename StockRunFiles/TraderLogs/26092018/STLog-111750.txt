@@ -1,0 +1,9 @@
+9/26/2018 11:17:50 AM::: DEBUG MODE
+
+9/26/2018 11:18:18 AM::: 126130_DEBUG
+
+9/26/2018 11:18:40 AM::: UpstoxAverageTheBuyThenSell HDFCBANK Error:Sequence contains no elements
+Stacktrace:   at System.Linq.Enumerable.Average(IEnumerable`1 source)
+   at UpstoxTrader.UpstoxBuySellBase.Init(AlgoType algoType) in C:\upstox\Code\Upstox\UpstoxBuySellBase.cs:line 219
+   at UpstoxTrader.UpstoxAverageTheBuyThenSell.StockBuySell() in C:\upstox\Code\Upstox\UpstoxAverageTheBuyThenSell.cs:line 85
+

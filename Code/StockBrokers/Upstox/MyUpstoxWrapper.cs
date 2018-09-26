@@ -22,7 +22,7 @@ namespace StockTrader.Brokers.UpstoxBroker
 
         // Locks on global Order & Trade book objects
         object lockObjectEquity = new object();
-        string genericErrorLogFormat = "{0} {1}Error:{2}\nStacktrace:{3}";
+        string genericErrorLogFormat = " {0} {1}Error:{2}\nStacktrace:{3}";
         string retryLogFormat = " Retrying {0} out of {1}";
 
         object lockSingleThreadedUpstoxCall = new object();
