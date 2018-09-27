@@ -52,12 +52,16 @@ namespace UpstoxTrader
                 {
                     lastPriceToCompareWith = ltp;
                     priceStrategy = "LTP Markdown";
-
                 }
                 else if (holdingOutstandingQty > 0)
                 {
                     lastPriceToCompareWith = holdingOutstandingPrice;
                     priceStrategy = "HoldingPrice Markdown";
+                }
+                else if(lastBuyPrice > 0)
+                {
+                    lastPriceToCompareWith = lastBuyPrice;
+                    priceStrategy = "LastBuyPriceAsLastFallback Markdown";
                 }
                 else
                 {
