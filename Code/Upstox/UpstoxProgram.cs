@@ -301,7 +301,7 @@ namespace UpstoxTrader
                 double todayunrealized = todayHoldingNetQty * (ltp - todayHoldingPrice);//today delivery mtm
                 double todaymtm = todayrealized + todayunrealized;
                 double todayholdingcost = todayHoldingNetQty * todayHoldingPrice;//only today delivery cost
-                double todayinflow = todayrealized + todayholdingcost;
+                double todayinflow = todayrealized - todayholdingcost;
 
                 var pnlLines = File.ReadAllLines(pnlFilePath);
                 var netPnLline = pnlLines[0].Split(',');
@@ -313,7 +313,7 @@ namespace UpstoxTrader
                 double netunrealized = ltp > 0 ? outstandingQty * (ltp - outstandingPrice) : 0;
                 double netmtm = netrealized + netunrealized;
                 double currentholdingatcost = outstandingQty * outstandingPrice;
-                double netinflow = netrealized + currentholdingatcost;
+                double netinflow = netrealized - currentholdingatcost;
 
                 globaltodaymtm += todaymtm;
                 globaltodayrealized += todayrealized;
@@ -402,6 +402,7 @@ namespace UpstoxTrader
             globaltodayunrealized = Math.Round(globaltodayunrealized);
             globaltodayinflow = Math.Round(globaltodayinflow);
             globaltodayholdingcost = Math.Round(globaltodayholdingcost);
+            globalMaxAmountCommittedToday = Math.Round(globalMaxAmountCommittedToday);
 
             globalnetmtm = Math.Round(globalnetmtm);
             globalnetrealized = Math.Round(globalnetrealized);
@@ -414,6 +415,7 @@ namespace UpstoxTrader
 
             globaltodaybrokerage = Math.Round(globaltodaybrokerage);
             globalbrokerage = Math.Round(globalbrokerage);
+
 
             //write global pnl
             globalPnLLines[0] = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", globalnetmtm, globalnetrealized, globalnetunrealized, globalnetinflow,
