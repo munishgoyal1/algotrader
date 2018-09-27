@@ -1,0 +1,1449 @@
+9/27/2018 9:13:23 AM::: RELEASE MODE
+
+9/27/2018 9:14:12 AM::: 126130
+
+9/27/2018 9:15:02 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP:0, LastBuyPrice:0, HoldingOutstandingPrice:0. No reference price to place BUY order
+
+9/27/2018 9:15:02 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP:0, LastBuyPrice:0, HoldingOutstandingPrice:0. No reference price to place BUY order
+
+9/27/2018 9:15:07 AM::: UpstoxAverageTheBuyThenSell BIOCON LTP 704.25, calculatedToBuyPrice 697.1, lastPriceToCompareWith 704.25, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:15:08 AM::: MyUpstoxWrapper ADANIPORTS OrderId:180927000006534, UpstoxOrderStatus:put order req received
+
+9/27/2018 9:15:08 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order DELIVERY]: Success ADANIPORTS SELL 3 @ 351.2 LIMIT. OrderId = 180927000006534. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:09 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE LTP 2320, calculatedToBuyPrice 2296.6, lastPriceToCompareWith 2320, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:15:09 AM::: MyUpstoxWrapper INDUSINDBK OrderId:180927000006580, UpstoxOrderStatus:validation pending
+
+9/27/2018 9:15:09 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK [Place Order DELIVERY]: Success INDUSINDBK SELL 3 @ 1732.6 LIMIT. OrderId = 180927000006580. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:10 AM::: MyUpstoxWrapper PCJEWELLER OrderId:180927000006589, UpstoxOrderStatus:put order req received
+
+9/27/2018 9:15:10 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order DELIVERY]: Success PCJEWELLER SELL 4 @ 82.4 LIMIT. OrderId = 180927000006589. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:10 AM::: MyUpstoxWrapper BIOCON OrderId:180927000006602, UpstoxOrderStatus:validation pending
+
+9/27/2018 9:15:10 AM::: UpstoxAverageTheBuyThenSell BIOCON [Place Order MARGIN]: Success BIOCON BUY 2 @ 697.1 LIMIT. OrderId = 180927000006602. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:16 AM::: MyUpstoxWrapper BAJFINANCE OrderId:180927000006868, UpstoxOrderStatus:open
+
+9/27/2018 9:15:16 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order MARGIN]: Success BAJFINANCE BUY 1 @ 2296.6 LIMIT. OrderId = 180927000006868. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:17 AM::: UpstoxAverageTheBuyThenSell IGL LTP 268.6, calculatedToBuyPrice 263.2, lastPriceToCompareWith 268.6, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:15:18 AM::: MyUpstoxWrapper CAPLIPOINT OrderId:180927000006922, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:18 AM::: MyUpstoxWrapper CAPLIPOINT OrderId:180927000006922, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:18 AM::: MyUpstoxWrapper CAPLIPOINT OrderId:180927000006922, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:18 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: OrderRejected CAPLIPOINT SELL 2 @ 497.8 LIMIT. OrderId = 180927000006922. BrokerOrderStatus=REJECTED
+
+9/27/2018 9:15:18 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT LTP 783.2, calculatedToBuyPrice 767.5, lastPriceToCompareWith 783.2, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:15:19 AM::: MyUpstoxWrapper UJJIVAN OrderId:180927000007031, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:19 AM::: MyUpstoxWrapper UJJIVAN OrderId:180927000007031, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:19 AM::: MyUpstoxWrapper UJJIVAN OrderId:180927000007031, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:19 AM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order DELIVERY]: OrderRejected UJJIVAN SELL 4 @ 331.1 LIMIT. OrderId = 180927000007031. BrokerOrderStatus=REJECTED
+
+9/27/2018 9:15:19 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP 447.75, calculatedToBuyPrice 443.2, lastPriceToCompareWith 447.75, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:15:19 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 641.1, calculatedToBuyPrice 634.6, lastPriceToCompareWith 641.1, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:15:20 AM::: MyUpstoxWrapper IGL OrderId:180927000007057, UpstoxOrderStatus:open
+
+9/27/2018 9:15:20 AM::: UpstoxAverageTheBuyThenSell IGL [Place Order MARGIN]: Success IGL BUY 1 @ 263.2 LIMIT. OrderId = 180927000007057. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:20 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 435, calculatedToBuyPrice 426.3, lastPriceToCompareWith 435, calculatedOrderQty 3, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 9:15:20 AM::: MyUpstoxWrapper AMARAJABAT OrderId:180927000007080, UpstoxOrderStatus:validation pending
+
+9/27/2018 9:15:20 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT [Place Order MARGIN]: Success AMARAJABAT BUY 1 @ 767.5 LIMIT. OrderId = 180927000007080. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:21 AM::: UpstoxAverageTheBuyThenSell DLF LTP 181.55, calculatedToBuyPrice 178.8, lastPriceToCompareWith 181.55, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:15:21 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 281.5, calculatedToBuyPrice 277.2, lastPriceToCompareWith 281.5, calculatedOrderQty 5, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 9:15:22 AM::: MyUpstoxWrapper ZEEL OrderId:180927000007140, UpstoxOrderStatus:open
+
+9/27/2018 9:15:22 AM::: UpstoxAverageTheBuyThenSell ZEEL [Place Order MARGIN]: Success ZEEL BUY 1 @ 443.2 LIMIT. OrderId = 180927000007140. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:22 AM::: MyUpstoxWrapper ITC OrderId:180927000007145, UpstoxOrderStatus:open pending
+
+9/27/2018 9:15:22 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order DELIVERY]: Success ITC SELL 4 @ 302 LIMIT. OrderId = 180927000007145. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:23 AM::: MyUpstoxWrapper SUNPHARMA OrderId:180927000007153, UpstoxOrderStatus:open
+
+9/27/2018 9:15:23 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Place Order MARGIN]: Success SUNPHARMA BUY 1 @ 634.6 LIMIT. OrderId = 180927000007153. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:23 AM::: MyUpstoxWrapper TATAMOTORS OrderId:180927000007179, UpstoxOrderStatus:open pending
+
+9/27/2018 9:15:23 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order DELIVERY]: Success TATAMOTORS SELL 26 @ 244.7 LIMIT. OrderId = 180927000007179. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:23 AM::: MyUpstoxWrapper CAPLIPOINT OrderId:180927000007196, UpstoxOrderStatus:open
+
+9/27/2018 9:15:23 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT BUY 3 @ 426.3 LIMIT. OrderId = 180927000007196. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:24 AM::: MyUpstoxWrapper BERGEPAINT OrderId:180927000007224, UpstoxOrderStatus:open pending
+
+9/27/2018 9:15:24 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order DELIVERY]: Success BERGEPAINT SELL 3 @ 300.7 LIMIT. OrderId = 180927000007224. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:24 AM::: MyUpstoxWrapper IDFCBANK OrderId:180927000007237, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:24 AM::: MyUpstoxWrapper IDFCBANK OrderId:180927000007237, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:24 AM::: MyUpstoxWrapper IDFCBANK OrderId:180927000007237, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:24 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order DELIVERY]: OrderRejected IDFCBANK SELL 11 @ 45.8 LIMIT. OrderId = 180927000007237. BrokerOrderStatus=REJECTED
+
+9/27/2018 9:15:25 AM::: MyUpstoxWrapper FEDERALBNK OrderId:180927000007250, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:25 AM::: MyUpstoxWrapper FEDERALBNK OrderId:180927000007250, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:25 AM::: MyUpstoxWrapper FEDERALBNK OrderId:180927000007250, UpstoxOrderStatus:rejected
+
+9/27/2018 9:15:25 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order DELIVERY]: OrderRejected FEDERALBNK SELL 3 @ 102.8 LIMIT. OrderId = 180927000007250. BrokerOrderStatus=REJECTED
+
+9/27/2018 9:15:25 AM::: MyUpstoxWrapper DLF OrderId:180927000007268, UpstoxOrderStatus:open
+
+9/27/2018 9:15:25 AM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF BUY 1 @ 178.8 LIMIT. OrderId = 180927000007268. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:25 AM::: MyUpstoxWrapper SBIN OrderId:180927000007281, UpstoxOrderStatus:open pending
+
+9/27/2018 9:15:25 AM::: UpstoxAverageTheBuyThenSell SBIN [Place Order DELIVERY]: Success SBIN SELL 3 @ 268.7 LIMIT. OrderId = 180927000007281. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:26 AM::: MyUpstoxWrapper M&M OrderId:180927000007296, UpstoxOrderStatus:open
+
+9/27/2018 9:15:26 AM::: UpstoxAverageTheBuyThenSell M&M [Place Order DELIVERY]: Success M&M SELL 3 @ 933.6 LIMIT. OrderId = 180927000007296. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:26 AM::: MyUpstoxWrapper INFY OrderId:180927000007307, UpstoxOrderStatus:open pending
+
+9/27/2018 9:15:26 AM::: UpstoxAverageTheBuyThenSell INFY [Place Order DELIVERY]: Success INFY SELL 3 @ 724.2 LIMIT. OrderId = 180927000007307. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:27 AM::: MyUpstoxWrapper UJJIVAN OrderId:180927000007317, UpstoxOrderStatus:open pending
+
+9/27/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order MARGIN]: Success UJJIVAN BUY 5 @ 277.2 LIMIT. OrderId = 180927000007317. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell ITC LTP 292.5, calculatedToBuyPrice 291, lastPriceToCompareWith 292.5, calculatedOrderQty 5, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 236, calculatedToBuyPrice 234.8, lastPriceToCompareWith 236, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 295.8, calculatedToBuyPrice 294.3, lastPriceToCompareWith 295.8, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 38.2, calculatedToBuyPrice 38, lastPriceToCompareWith 38.2, calculatedOrderQty 12, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 70.85, calculatedToBuyPrice 70.5, lastPriceToCompareWith 70.85, calculatedOrderQty 4, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 9:15:28 AM::: MyUpstoxWrapper ITC OrderId:180927000007356, UpstoxOrderStatus:open
+
+9/27/2018 9:15:28 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC BUY 5 @ 291 LIMIT. OrderId = 180927000007356. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:28 AM::: MyUpstoxWrapper TATAMOTORS OrderId:180927000007364, UpstoxOrderStatus:open
+
+9/27/2018 9:15:28 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS BUY 2 @ 234.8 LIMIT. OrderId = 180927000007364. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:29 AM::: MyUpstoxWrapper BERGEPAINT OrderId:180927000007372, UpstoxOrderStatus:open pending
+
+9/27/2018 9:15:29 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT BUY 1 @ 294.3 LIMIT. OrderId = 180927000007372. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:29 AM::: MyUpstoxWrapper IDFCBANK OrderId:180927000007384, UpstoxOrderStatus:open pending
+
+9/27/2018 9:15:29 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order MARGIN]: Success IDFCBANK BUY 12 @ 38 LIMIT. OrderId = 180927000007384. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:15:29 AM::: MyUpstoxWrapper FEDERALBNK OrderId:180927000007392, UpstoxOrderStatus:open
+
+9/27/2018 9:15:29 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order MARGIN]: Success FEDERALBNK BUY 4 @ 70.5 LIMIT. OrderId = 180927000007392. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Trade: TATAMOTORS bought 2 @ 234.8. OrderId = 180927000007364
+
+9/27/2018 9:16:14 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007364 buyorderstatus COMPLETED
+
+9/27/2018 9:16:14 AM::: MyUpstoxWrapper TATAMOTORS OrderId:180927000008970, UpstoxOrderStatus:open
+
+9/27/2018 9:16:14 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS SELL 2 @ 236 LIMIT. OrderId = 180927000008970. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:16:14 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 12 @ 38. OrderId = 180927000007384
+
+9/27/2018 9:16:14 AM::: UpstoxAverageTheBuyThenSell IDFCBANK Fully executed newqty 12 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007384 buyorderstatus COMPLETED
+
+9/27/2018 9:16:15 AM::: MyUpstoxWrapper IDFCBANK OrderId:180927000008990, UpstoxOrderStatus:open
+
+9/27/2018 9:16:15 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order MARGIN]: Success IDFCBANK SELL 12 @ 38.2 LIMIT. OrderId = 180927000008990. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:16:33 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE MARGIN Trade: BAJFINANCE bought 1 @ 2296.6. OrderId = 180927000006868
+
+9/27/2018 9:16:33 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000006868 buyorderstatus COMPLETED
+
+9/27/2018 9:16:34 AM::: MyUpstoxWrapper BAJFINANCE OrderId:180927000009695, UpstoxOrderStatus:put order req received
+
+9/27/2018 9:16:34 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order MARGIN]: Success BAJFINANCE SELL 1 @ 2319.6 LIMIT. OrderId = 180927000009695. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:19:09 AM::: UpstoxAverageTheBuyThenSell ZEEL MARGIN Trade: ZEEL bought 1 @ 443.2. OrderId = 180927000007140
+
+9/27/2018 9:19:09 AM::: UpstoxAverageTheBuyThenSell ZEEL Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007140 buyorderstatus COMPLETED
+
+9/27/2018 9:19:10 AM::: MyUpstoxWrapper ZEEL OrderId:180927000014068, UpstoxOrderStatus:open pending
+
+9/27/2018 9:19:10 AM::: UpstoxAverageTheBuyThenSell ZEEL [Place Order MARGIN]: Success ZEEL SELL 1 @ 445.4 LIMIT. OrderId = 180927000014068. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:19:10 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP 442.75, calculatedToBuyPrice 434.3, lastPriceToCompareWith 443.2, calculatedOrderQty 2, placeBuyNoLtpCompare True, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:19:10 AM::: MyUpstoxWrapper ZEEL OrderId:180927000014087, UpstoxOrderStatus:open pending
+
+9/27/2018 9:19:10 AM::: UpstoxAverageTheBuyThenSell ZEEL [Place Order MARGIN]: Success ZEEL BUY 2 @ 434.3 LIMIT. OrderId = 180927000014087. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:19:56 AM::: UpstoxAverageTheBuyThenSell ZEEL MARGIN Trade: ZEEL sold 1 @ 445.4. OrderId = 180927000014068
+
+9/27/2018 9:20:02 AM::: UpstoxAverageTheBuyThenSell M&M LTP 882.05, calculatedToBuyPrice 881.1, lastPriceToCompareWith 882.05, calculatedOrderQty 4, placeBuyNoLtpCompare True, PriceStrategy LTP Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 9:20:02 AM::: UpstoxAverageTheBuyThenSell INFY LTP 722.5, calculatedToBuyPrice 718.8, lastPriceToCompareWith 722.5, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:20:02 AM::: MyUpstoxWrapper M&M OrderId:180927000015509, UpstoxOrderStatus:open
+
+9/27/2018 9:20:02 AM::: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M BUY 4 @ 881.1 LIMIT. OrderId = 180927000015509. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:20:03 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Trade: ITC bought 5 @ 291. OrderId = 180927000007356
+
+9/27/2018 9:20:03 AM::: MyUpstoxWrapper INFY OrderId:180927000015527, UpstoxOrderStatus:put order req received
+
+9/27/2018 9:20:03 AM::: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY BUY 1 @ 718.8 LIMIT. OrderId = 180927000015527. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:20:03 AM::: UpstoxAverageTheBuyThenSell ITC Fully executed newqty 5 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007356 buyorderstatus COMPLETED
+
+9/27/2018 9:20:04 AM::: MyUpstoxWrapper ITC OrderId:180927000015552, UpstoxOrderStatus:open
+
+9/27/2018 9:20:04 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC SELL 5 @ 292.5 LIMIT. OrderId = 180927000015552. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:20:04 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS LTP 340.55, calculatedToBuyPrice 337.1, lastPriceToCompareWith 340.55, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:20:05 AM::: MyUpstoxWrapper ADANIPORTS OrderId:180927000015610, UpstoxOrderStatus:open pending
+
+9/27/2018 9:20:05 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order MARGIN]: Success ADANIPORTS BUY 1 @ 337.1 LIMIT. OrderId = 180927000015610. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:20:05 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK LTP 1692.25, calculatedToBuyPrice 1679.4, lastPriceToCompareWith 1692.25, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:20:05 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER LTP 69.85, calculatedToBuyPrice 69.3, lastPriceToCompareWith 69.85, calculatedOrderQty 5, placeBuyNoLtpCompare True, PriceStrategy LTP Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 9:20:05 AM::: MyUpstoxWrapper INDUSINDBK OrderId:180927000015643, UpstoxOrderStatus:open pending
+
+9/27/2018 9:20:05 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK [Place Order MARGIN]: Success INDUSINDBK BUY 1 @ 1679.4 LIMIT. OrderId = 180927000015643. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:20:06 AM::: MyUpstoxWrapper PCJEWELLER OrderId:180927000015651, UpstoxOrderStatus:open pending
+
+9/27/2018 9:20:06 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order MARGIN]: Success PCJEWELLER BUY 5 @ 69.3 LIMIT. OrderId = 180927000015651. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:20:08 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN LTP 989.15, calculatedToBuyPrice 979.2, lastPriceToCompareWith 989.15, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:20:08 AM::: UpstoxAverageTheBuyThenSell RELIANCE LTP 1257.4, calculatedToBuyPrice 1254.1, lastPriceToCompareWith 1257.4, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:20:09 AM::: MyUpstoxWrapper IBULHSGFIN OrderId:180927000015751, UpstoxOrderStatus:open pending
+
+9/27/2018 9:20:09 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order MARGIN]: Success IBULHSGFIN BUY 1 @ 979.2 LIMIT. OrderId = 180927000015751. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:20:09 AM::: MyUpstoxWrapper RELIANCE OrderId:180927000015766, UpstoxOrderStatus:open
+
+9/27/2018 9:20:09 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1254.1 LIMIT. OrderId = 180927000015766. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:20:48 AM::: UpstoxAverageTheBuyThenSell M&M MARGIN Trade: M&M bought 4 @ 881.1. OrderId = 180927000015509
+
+9/27/2018 9:20:48 AM::: UpstoxAverageTheBuyThenSell M&M Fully executed newqty 4 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000015509 buyorderstatus COMPLETED
+
+9/27/2018 9:20:48 AM::: MyUpstoxWrapper M&M OrderId:180927000016646, UpstoxOrderStatus:open pending
+
+9/27/2018 9:20:48 AM::: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M SELL 4 @ 882 LIMIT. OrderId = 180927000016646. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:20:48 AM::: UpstoxAverageTheBuyThenSell M&M LTP 880.7, calculatedToBuyPrice 862.5, lastPriceToCompareWith 881.1, calculatedOrderQty 8, placeBuyNoLtpCompare True, PriceStrategy LastBuyPrice Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 9:20:49 AM::: MyUpstoxWrapper M&M OrderId:180927000016656, UpstoxOrderStatus:open pending
+
+9/27/2018 9:20:49 AM::: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M BUY 8 @ 862.5 LIMIT. OrderId = 180927000016656. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:21:20 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK sold 12 @ 38.2. OrderId = 180927000008990
+
+9/27/2018 9:21:20 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 38.2, calculatedToBuyPrice 38, lastPriceToCompareWith 38.2, calculatedOrderQty 12, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 9:21:21 AM::: MyUpstoxWrapper IDFCBANK OrderId:180927000017536, UpstoxOrderStatus:put order req received
+
+9/27/2018 9:21:21 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order MARGIN]: Success IDFCBANK BUY 12 @ 38 LIMIT. OrderId = 180927000017536. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:21:49 AM::: UpstoxAverageTheBuyThenSell INFY CASH Trade: INFY sold 3 @ 724.2. OrderId = 180927000007307
+
+9/27/2018 9:21:50 AM::: UpstoxAverageTheBuyThenSell M&M MARGIN Trade: M&M sold 4 @ 882. OrderId = 180927000016646
+
+9/27/2018 9:22:52 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Trade: TATAMOTORS sold 2 @ 236. OrderId = 180927000008970
+
+9/27/2018 9:22:52 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 236.3, calculatedToBuyPrice 235.1, lastPriceToCompareWith 236.3, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:22:52 AM::: MyUpstoxWrapper TATAMOTORS OrderId:180927000019748, UpstoxOrderStatus:open
+
+9/27/2018 9:22:52 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS BUY 2 @ 235.1 LIMIT. OrderId = 180927000019748. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:23:10 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN MARGIN Trade: IBULHSGFIN bought 1 @ 979.2. OrderId = 180927000015751
+
+9/27/2018 9:23:10 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000015751 buyorderstatus COMPLETED
+
+9/27/2018 9:23:10 AM::: MyUpstoxWrapper IBULHSGFIN OrderId:180927000020132, UpstoxOrderStatus:open pending
+
+9/27/2018 9:23:10 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order MARGIN]: Success IBULHSGFIN SELL 1 @ 989 LIMIT. OrderId = 180927000020132. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:23:22 AM::: UpstoxAverageTheBuyThenSell IDFCBANK MARGIN Trade: IDFCBANK bought 12 @ 38. OrderId = 180927000017536
+
+9/27/2018 9:23:22 AM::: UpstoxAverageTheBuyThenSell IDFCBANK Fully executed newqty 12 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000017536 buyorderstatus COMPLETED
+
+9/27/2018 9:23:23 AM::: MyUpstoxWrapper IDFCBANK OrderId:180927000020410, UpstoxOrderStatus:put order req received
+
+9/27/2018 9:23:23 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order MARGIN]: Success IDFCBANK SELL 12 @ 38.2 LIMIT. OrderId = 180927000020410. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:23:54 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Trade: ITC sold 5 @ 292.5. OrderId = 180927000015552
+
+9/27/2018 9:23:54 AM::: UpstoxAverageTheBuyThenSell ITC LTP 292.75, calculatedToBuyPrice 291.3, lastPriceToCompareWith 292.75, calculatedOrderQty 5, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 9:23:55 AM::: MyUpstoxWrapper ITC OrderId:180927000021133, UpstoxOrderStatus:open pending
+
+9/27/2018 9:23:55 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC BUY 5 @ 291.3 LIMIT. OrderId = 180927000021133. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:26:23 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Trade: TATAMOTORS bought 2 @ 235.1. OrderId = 180927000019748
+
+9/27/2018 9:26:24 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000019748 buyorderstatus COMPLETED
+
+9/27/2018 9:26:24 AM::: MyUpstoxWrapper TATAMOTORS OrderId:180927000024528, UpstoxOrderStatus:open
+
+9/27/2018 9:26:24 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS SELL 2 @ 236.3 LIMIT. OrderId = 180927000024528. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:30:07 AM::: UpstoxAverageTheBuyThenSell SBIN LTP 266.65, calculatedToBuyPrice 266.2, lastPriceToCompareWith 266.65, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:30:08 AM::: MyUpstoxWrapper SBIN OrderId:180927000028840, UpstoxOrderStatus:open pending
+
+9/27/2018 9:30:08 AM::: UpstoxAverageTheBuyThenSell SBIN [Place Order MARGIN]: Success SBIN BUY 1 @ 266.2 LIMIT. OrderId = 180927000028840. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:30:14 AM::: UpstoxAverageTheBuyThenSell HDFCBANK LTP 1967.7, calculatedToBuyPrice 1965.5, lastPriceToCompareWith 1967.7, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:30:15 AM::: MyUpstoxWrapper HDFCBANK OrderId:180927000028982, UpstoxOrderStatus:put order req received
+
+9/27/2018 9:30:15 AM::: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 1965.5 LIMIT. OrderId = 180927000028982. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:32:58 AM::: MyUpstoxWrapper  AMARAJABAT GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 9:32:58 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 9:35:30 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Trade: ITC bought 5 @ 291.3. OrderId = 180927000021133
+
+9/27/2018 9:35:30 AM::: UpstoxAverageTheBuyThenSell ITC Fully executed newqty 5 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000021133 buyorderstatus COMPLETED
+
+9/27/2018 9:35:31 AM::: MyUpstoxWrapper ITC OrderId:180927000035175, UpstoxOrderStatus:put order req received
+
+9/27/2018 9:35:31 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC SELL 5 @ 292.8 LIMIT. OrderId = 180927000035175. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:41:32 AM::: MyUpstoxWrapper  RELIANCE GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 9:41:32 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 9:45:23 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Trade: ITC sold 5 @ 292.8. OrderId = 180927000035175
+
+9/27/2018 9:45:23 AM::: UpstoxAverageTheBuyThenSell ITC LTP 293.1, calculatedToBuyPrice 291.6, lastPriceToCompareWith 293.1, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:45:23 AM::: MyUpstoxWrapper ITC OrderId:180927000044950, UpstoxOrderStatus:open
+
+9/27/2018 9:45:23 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC BUY 1 @ 291.6 LIMIT. OrderId = 180927000044950. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:45:24 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN LTP 957.55, calculatedToBuyPrice 959.5, lastPriceToCompareWith 979.2, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:45:24 AM::: MyUpstoxWrapper IBULHSGFIN OrderId:180927000044976, UpstoxOrderStatus:open pending
+
+9/27/2018 9:45:24 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order MARGIN]: Success IBULHSGFIN BUY 2 @ 959.5 LIMIT. OrderId = 180927000044976. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:45:40 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN MARGIN Trade: IBULHSGFIN bought 2 @ 957.75. OrderId = 180927000044976
+
+9/27/2018 9:45:40 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN Fully executed newqty 2 todayoutstandingqty 1 todayoutstandingprice 979.2 sellorderref 180927000020132 buyorderef 180927000044976 buyorderstatus COMPLETED
+
+9/27/2018 9:45:40 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Buy Executed]: IBULHSGFIN SELL order cancel , OrderRef = 180927000020132: Success
+
+9/27/2018 9:45:40 AM::: MyUpstoxWrapper IBULHSGFIN OrderId:180927000045226, UpstoxOrderStatus:validation pending
+
+9/27/2018 9:45:40 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order MARGIN]: Success IBULHSGFIN SELL 3 @ 974.5 LIMIT. OrderId = 180927000045226. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:46:22 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 1 @ 294.3. OrderId = 180927000007372
+
+9/27/2018 9:46:22 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007372 buyorderstatus COMPLETED
+
+9/27/2018 9:46:22 AM::: MyUpstoxWrapper BERGEPAINT OrderId:180927000045932, UpstoxOrderStatus:open
+
+9/27/2018 9:46:22 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT SELL 1 @ 295.8 LIMIT. OrderId = 180927000045932. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:46:52 AM::: UpstoxAverageTheBuyThenSell SBIN MARGIN Trade: SBIN bought 1 @ 266.2. OrderId = 180927000028840
+
+9/27/2018 9:46:53 AM::: UpstoxAverageTheBuyThenSell SBIN Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000028840 buyorderstatus COMPLETED
+
+9/27/2018 9:46:53 AM::: MyUpstoxWrapper SBIN OrderId:180927000046438, UpstoxOrderStatus:open pending
+
+9/27/2018 9:46:53 AM::: UpstoxAverageTheBuyThenSell SBIN [Place Order MARGIN]: Success SBIN SELL 1 @ 266.6 LIMIT. OrderId = 180927000046438. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:46:53 AM::: UpstoxAverageTheBuyThenSell SBIN LTP 266.3, calculatedToBuyPrice 264.4, lastPriceToCompareWith 266.2, calculatedOrderQty 2, placeBuyNoLtpCompare True, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:46:54 AM::: MyUpstoxWrapper SBIN OrderId:180927000046445, UpstoxOrderStatus:open pending
+
+9/27/2018 9:46:54 AM::: UpstoxAverageTheBuyThenSell SBIN [Place Order MARGIN]: Success SBIN BUY 2 @ 264.4 LIMIT. OrderId = 180927000046445. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:52:37 AM::: UpstoxAverageTheBuyThenSell HDFCBANK MARGIN Trade: HDFCBANK bought 1 @ 1965.5. OrderId = 180927000028982
+
+9/27/2018 9:52:37 AM::: UpstoxAverageTheBuyThenSell HDFCBANK Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000028982 buyorderstatus COMPLETED
+
+9/27/2018 9:52:38 AM::: MyUpstoxWrapper HDFCBANK OrderId:180927000051784, UpstoxOrderStatus:open
+
+9/27/2018 9:52:38 AM::: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK SELL 1 @ 1967.5 LIMIT. OrderId = 180927000051784. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:52:38 AM::: UpstoxAverageTheBuyThenSell HDFCBANK LTP 1966.75, calculatedToBuyPrice 1953.5, lastPriceToCompareWith 1965.5, calculatedOrderQty 2, placeBuyNoLtpCompare True, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:52:38 AM::: MyUpstoxWrapper HDFCBANK OrderId:180927000051788, UpstoxOrderStatus:open pending
+
+9/27/2018 9:52:38 AM::: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 2 @ 1953.5 LIMIT. OrderId = 180927000051788. BrokerOrderStatus=ORDERED
+
+9/27/2018 9:55:41 AM::: UpstoxAverageTheBuyThenSell HDFCBANK MARGIN Trade: HDFCBANK sold 1 @ 1967.5. OrderId = 180927000051784
+
+9/27/2018 9:59:38 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT sold 1 @ 295.8. OrderId = 180927000045932
+
+9/27/2018 9:59:38 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 295.6, calculatedToBuyPrice 294.1, lastPriceToCompareWith 295.6, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 9:59:38 AM::: MyUpstoxWrapper BERGEPAINT OrderId:180927000057713, UpstoxOrderStatus:open pending
+
+9/27/2018 9:59:38 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT BUY 1 @ 294.1 LIMIT. OrderId = 180927000057713. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:05:00 AM::: UpstoxAverageTheBuyThenSell RELIANCE MARGIN Trade: RELIANCE bought 1 @ 1254.1. OrderId = 180927000015766
+
+9/27/2018 10:05:00 AM::: UpstoxAverageTheBuyThenSell RELIANCE Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000015766 buyorderstatus COMPLETED
+
+9/27/2018 10:05:00 AM::: MyUpstoxWrapper RELIANCE OrderId:180927000061781, UpstoxOrderStatus:open pending
+
+9/27/2018 10:05:00 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE SELL 1 @ 1257.2 LIMIT. OrderId = 180927000061781. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:05:00 AM::: UpstoxAverageTheBuyThenSell RELIANCE LTP 1253.05, calculatedToBuyPrice 1244.6, lastPriceToCompareWith 1254.1, calculatedOrderQty 2, placeBuyNoLtpCompare True, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 10:05:01 AM::: MyUpstoxWrapper RELIANCE OrderId:180927000061792, UpstoxOrderStatus:open pending
+
+9/27/2018 10:05:01 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 2 @ 1244.6 LIMIT. OrderId = 180927000061792. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:05:37 AM::: UpstoxAverageTheBuyThenSell IGL MARGIN Trade: IGL bought 1 @ 263.2. OrderId = 180927000007057
+
+9/27/2018 10:05:37 AM::: UpstoxAverageTheBuyThenSell IGL Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007057 buyorderstatus COMPLETED
+
+9/27/2018 10:05:37 AM::: MyUpstoxWrapper IGL OrderId:180927000062180, UpstoxOrderStatus:open
+
+9/27/2018 10:05:37 AM::: UpstoxAverageTheBuyThenSell IGL [Place Order MARGIN]: Success IGL SELL 1 @ 269.8 LIMIT. OrderId = 180927000062180. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:09:50 AM::: MyUpstoxWrapper  IDFCBANK GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 10:09:50 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 10:10:24 AM::: UpstoxAverageTheBuyThenSell SBIN MARGIN Trade: SBIN sold 1 @ 266.6. OrderId = 180927000046438
+
+9/27/2018 10:18:05 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 1 @ 294.1. OrderId = 180927000057713
+
+9/27/2018 10:18:06 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000057713 buyorderstatus COMPLETED
+
+9/27/2018 10:18:07 AM::: MyUpstoxWrapper BERGEPAINT OrderId:180927000070165, UpstoxOrderStatus:validation pending
+
+9/27/2018 10:18:07 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT SELL 1 @ 295.6 LIMIT. OrderId = 180927000070165. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:20:21 AM::: MyUpstoxWrapper  IDFCBANK GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 10:20:21 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 10:20:23 AM::: UpstoxAverageTheBuyThenSell UJJIVAN MARGIN Trade: UJJIVAN bought 5 @ 277.2. OrderId = 180927000007317
+
+9/27/2018 10:20:24 AM::: UpstoxAverageTheBuyThenSell UJJIVAN Fully executed newqty 5 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007317 buyorderstatus COMPLETED
+
+9/27/2018 10:20:25 AM::: MyUpstoxWrapper UJJIVAN OrderId:180927000071698, UpstoxOrderStatus:open
+
+9/27/2018 10:20:25 AM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order MARGIN]: Success UJJIVAN SELL 5 @ 281.4 LIMIT. OrderId = 180927000071698. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:21:07 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA MARGIN Trade: SUNPHARMA bought 1 @ 634.6. OrderId = 180927000007153
+
+9/27/2018 10:21:07 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007153 buyorderstatus COMPLETED
+
+9/27/2018 10:21:08 AM::: MyUpstoxWrapper SUNPHARMA OrderId:180927000072510, UpstoxOrderStatus:open
+
+9/27/2018 10:21:08 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Place Order MARGIN]: Success SUNPHARMA SELL 1 @ 637.8 LIMIT. OrderId = 180927000072510. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:21:08 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 635, calculatedToBuyPrice 621.8, lastPriceToCompareWith 634.6, calculatedOrderQty 2, placeBuyNoLtpCompare True, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 10:21:09 AM::: MyUpstoxWrapper SUNPHARMA OrderId:180927000072529, UpstoxOrderStatus:open pending
+
+9/27/2018 10:21:09 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Place Order MARGIN]: Success SUNPHARMA BUY 2 @ 621.8 LIMIT. OrderId = 180927000072529. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:24:25 AM::: UpstoxAverageTheBuyThenSell DLF MARGIN Trade: DLF bought 1 @ 178.8. OrderId = 180927000007268
+
+9/27/2018 10:24:25 AM::: UpstoxAverageTheBuyThenSell DLF Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007268 buyorderstatus COMPLETED
+
+9/27/2018 10:24:26 AM::: MyUpstoxWrapper DLF OrderId:180927000075119, UpstoxOrderStatus:validation pending
+
+9/27/2018 10:24:26 AM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF SELL 1 @ 179.7 LIMIT. OrderId = 180927000075119. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:24:57 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER MARGIN Trade: PCJEWELLER bought 5 @ 69.3. OrderId = 180927000015651
+
+9/27/2018 10:24:57 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER Fully executed newqty 5 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000015651 buyorderstatus COMPLETED
+
+9/27/2018 10:24:58 AM::: MyUpstoxWrapper PCJEWELLER OrderId:180927000075400, UpstoxOrderStatus:open pending
+
+9/27/2018 10:24:58 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order MARGIN]: Success PCJEWELLER SELL 5 @ 69.8 LIMIT. OrderId = 180927000075400. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:24:58 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER LTP 69.3, calculatedToBuyPrice 65.3, lastPriceToCompareWith 69.3, calculatedOrderQty 10, placeBuyNoLtpCompare True, PriceStrategy LastBuyPrice Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 10:24:58 AM::: MyUpstoxWrapper PCJEWELLER OrderId:180927000075407, UpstoxOrderStatus:open pending
+
+9/27/2018 10:24:58 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order MARGIN]: Success PCJEWELLER BUY 10 @ 65.3 LIMIT. OrderId = 180927000075407. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:26:12 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS MARGIN Trade: ADANIPORTS bought 1 @ 337.1. OrderId = 180927000015610
+
+9/27/2018 10:26:12 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000015610 buyorderstatus COMPLETED
+
+9/27/2018 10:26:13 AM::: MyUpstoxWrapper ADANIPORTS OrderId:180927000076103, UpstoxOrderStatus:put order req received
+
+9/27/2018 10:26:13 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order MARGIN]: Success ADANIPORTS SELL 1 @ 340.5 LIMIT. OrderId = 180927000076103. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:26:13 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS LTP 337.2, calculatedToBuyPrice 330.3, lastPriceToCompareWith 337.1, calculatedOrderQty 2, placeBuyNoLtpCompare True, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 10:26:13 AM::: MyUpstoxWrapper ADANIPORTS OrderId:180927000076109, UpstoxOrderStatus:open
+
+9/27/2018 10:26:13 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order MARGIN]: Success ADANIPORTS BUY 2 @ 330.3 LIMIT. OrderId = 180927000076109. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:27:13 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Trade: ITC bought 1 @ 291.6. OrderId = 180927000044950
+
+9/27/2018 10:27:13 AM::: UpstoxAverageTheBuyThenSell ITC Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000044950 buyorderstatus COMPLETED
+
+9/27/2018 10:27:13 AM::: MyUpstoxWrapper ITC OrderId:180927000076832, UpstoxOrderStatus:complete
+
+9/27/2018 10:27:13 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC SELL 1 @ 293.1 LIMIT. OrderId = 180927000076832. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:27:29 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Trade: ITC sold 1 @ 293.95. OrderId = 180927000076832
+
+9/27/2018 10:27:29 AM::: UpstoxAverageTheBuyThenSell ITC LTP 293.75, calculatedToBuyPrice 292.3, lastPriceToCompareWith 293.75, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 10:27:29 AM::: MyUpstoxWrapper ITC OrderId:180927000077013, UpstoxOrderStatus:open pending
+
+9/27/2018 10:27:29 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC BUY 1 @ 292.3 LIMIT. OrderId = 180927000077013. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:37:44 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT sold 1 @ 295.6. OrderId = 180927000070165
+
+9/27/2018 10:37:44 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 295.65, calculatedToBuyPrice 294.1, lastPriceToCompareWith 295.65, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 10:37:44 AM::: MyUpstoxWrapper BERGEPAINT OrderId:180927000084073, UpstoxOrderStatus:open pending
+
+9/27/2018 10:37:44 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT BUY 1 @ 294.1 LIMIT. OrderId = 180927000084073. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:38:31 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK bought 4 @ 70.5. OrderId = 180927000007392
+
+9/27/2018 10:38:31 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK Fully executed newqty 4 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007392 buyorderstatus COMPLETED
+
+9/27/2018 10:38:32 AM::: MyUpstoxWrapper FEDERALBNK OrderId:180927000084702, UpstoxOrderStatus:open
+
+9/27/2018 10:38:32 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order MARGIN]: Success FEDERALBNK SELL 4 @ 70.9 LIMIT. OrderId = 180927000084702. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:45:31 AM::: MyUpstoxWrapper  IDFCBANK GetPositionsError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetPositions()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetPositions(String stockCode, List`1& positions)
+
+9/27/2018 10:45:31 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 10:46:05 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 232.55, calculatedToBuyPrice 232.7, lastPriceToCompareWith 235.1, calculatedOrderQty 4, placeBuyNoLtpCompare False, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 10:46:06 AM::: MyUpstoxWrapper TATAMOTORS OrderId:180927000089914, UpstoxOrderStatus:open pending
+
+9/27/2018 10:46:06 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS BUY 4 @ 232.7 LIMIT. OrderId = 180927000089914. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:46:23 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Trade: TATAMOTORS bought 4 @ 232.7. OrderId = 180927000089914
+
+9/27/2018 10:46:24 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS Fully executed newqty 4 todayoutstandingqty 2 todayoutstandingprice 235.1 sellorderref 180927000024528 buyorderef 180927000089914 buyorderstatus COMPLETED
+
+9/27/2018 10:46:25 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Buy Executed]: TATAMOTORS SELL order cancel , OrderRef = 180927000024528: Success
+
+9/27/2018 10:46:25 AM::: MyUpstoxWrapper TATAMOTORS OrderId:180927000090145, UpstoxOrderStatus:open
+
+9/27/2018 10:46:25 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS SELL 6 @ 234.7 LIMIT. OrderId = 180927000090145. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:47:54 AM::: MyUpstoxWrapper  RELIANCE GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 10:47:54 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 10:47:55 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 1 @ 294.1. OrderId = 180927000084073
+
+9/27/2018 10:47:58 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000084073 buyorderstatus COMPLETED
+
+9/27/2018 10:47:59 AM::: MyUpstoxWrapper BERGEPAINT OrderId:180927000091099, UpstoxOrderStatus:open pending
+
+9/27/2018 10:47:59 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT SELL 1 @ 295.6 LIMIT. OrderId = 180927000091099. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:53:30 AM::: UpstoxAverageTheBuyThenSell ITC MARGIN Trade: ITC bought 1 @ 292.3. OrderId = 180927000077013
+
+9/27/2018 10:53:30 AM::: UpstoxAverageTheBuyThenSell ITC Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000077013 buyorderstatus COMPLETED
+
+9/27/2018 10:53:31 AM::: MyUpstoxWrapper ITC OrderId:180927000094409, UpstoxOrderStatus:open
+
+9/27/2018 10:53:31 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC SELL 1 @ 293.8 LIMIT. OrderId = 180927000094409. BrokerOrderStatus=ORDERED
+
+9/27/2018 10:55:38 AM::: MyUpstoxWrapper  BERGEPAINT GetPositionsError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetPositions()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetPositions(String stockCode, List`1& positions)
+
+9/27/2018 10:55:38 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:02:49 AM::: MyUpstoxWrapper  IBULHSGFIN GetPositionsError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetPositions()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetPositions(String stockCode, List`1& positions)
+
+9/27/2018 11:02:49 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:04:38 AM::: MyUpstoxWrapper  RELIANCE GetPositionsError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetPositions()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetPositions(String stockCode, List`1& positions)
+
+9/27/2018 11:04:38 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:06:09 AM::: MyUpstoxWrapper  M&M GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:06:09 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:07:54 AM::: MyUpstoxWrapper  HDFCBANK GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:07:54 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:10:12 AM::: UpstoxAverageTheBuyThenSell BIOCON MARGIN Trade: BIOCON bought 2 @ 697.1. OrderId = 180927000006602
+
+9/27/2018 11:10:12 AM::: UpstoxAverageTheBuyThenSell BIOCON Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000006602 buyorderstatus COMPLETED
+
+9/27/2018 11:10:13 AM::: MyUpstoxWrapper BIOCON OrderId:180927000103608, UpstoxOrderStatus:open
+
+9/27/2018 11:10:13 AM::: UpstoxAverageTheBuyThenSell BIOCON [Place Order MARGIN]: Success BIOCON SELL 2 @ 704.1 LIMIT. OrderId = 180927000103608. BrokerOrderStatus=ORDERED
+
+9/27/2018 11:11:14 AM::: MyUpstoxWrapper  FEDERALBNK GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:11:14 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:13:36 AM::: MyUpstoxWrapper  RELIANCE GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:13:36 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:18:59 AM::: MyUpstoxWrapper  FEDERALBNK GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:18:59 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:20:15 AM::: MyUpstoxWrapper  INFY GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:20:15 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:28:30 AM::: MyUpstoxWrapper  RELIANCE GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:28:30 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:29:01 AM::: MyUpstoxWrapper  PCJEWELLER GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:29:01 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:31:35 AM::: MyUpstoxWrapper  AMARAJABAT GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:31:35 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:41:53 AM::: MyUpstoxWrapper  RELIANCE GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:41:53 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:49:48 AM::: MyUpstoxWrapper  BIOCON GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:49:48 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:50:19 AM::: MyUpstoxWrapper  AMARAJABAT GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:50:19 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:53:24 AM::: MyUpstoxWrapper  TATAMOTORS GetPositionsError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetPositions()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetPositions(String stockCode, List`1& positions)
+
+9/27/2018 11:53:24 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:55:25 AM::: MyUpstoxWrapper  INDUSINDBK GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 11:55:25 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 11:59:29 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Trade: CAPLIPOINT bought 3 @ 426.3. OrderId = 180927000007196
+
+9/27/2018 11:59:29 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT Fully executed newqty 3 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007196 buyorderstatus COMPLETED
+
+9/27/2018 11:59:29 AM::: MyUpstoxWrapper CAPLIPOINT OrderId:180927000130678, UpstoxOrderStatus:open
+
+9/27/2018 11:59:29 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT SELL 3 @ 430.6 LIMIT. OrderId = 180927000130678. BrokerOrderStatus=ORDERED
+
+9/27/2018 12:02:09 PM::: MyUpstoxWrapper  SUNPHARMA GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 12:02:09 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 12:03:41 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Trade: CAPLIPOINT sold 3 @ 430.6. OrderId = 180927000130678
+
+9/27/2018 12:03:41 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 430.6, calculatedToBuyPrice 421.9, lastPriceToCompareWith 430.6, calculatedOrderQty 3, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 12:03:42 PM::: MyUpstoxWrapper CAPLIPOINT OrderId:180927000132982, UpstoxOrderStatus:open
+
+9/27/2018 12:03:42 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT BUY 3 @ 421.9 LIMIT. OrderId = 180927000132982. BrokerOrderStatus=ORDERED
+
+9/27/2018 12:11:10 PM::: MyUpstoxWrapper  ITC GetPositionsError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetPositions()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetPositions(String stockCode, List`1& positions)
+
+9/27/2018 12:11:10 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 12:17:14 PM::: MyUpstoxWrapper  CAPLIPOINT GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 12:17:14 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 12:20:17 PM::: MyUpstoxWrapper  AMARAJABAT GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 12:20:17 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 12:24:42 PM::: MyUpstoxWrapper  BAJFINANCE GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 12:24:42 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 12:39:39 PM::: MyUpstoxWrapper  ZEEL GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 12:39:39 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 12:43:01 PM::: MyUpstoxWrapper  TATAMOTORS GetPositionsError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetPositions()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetPositions(String stockCode, List`1& positions)
+
+9/27/2018 12:43:01 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 12:49:19 PM::: MyUpstoxWrapper  BAJFINANCE GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 12:49:19 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 12:50:21 PM::: MyUpstoxWrapper  ITC GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 12:50:21 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 12:51:42 PM::: MyUpstoxWrapper  BAJFINANCE GetPositionsError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetPositions()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetPositions(String stockCode, List`1& positions)
+
+9/27/2018 12:51:42 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 12:54:59 PM::: MyUpstoxWrapper  INDUSINDBK GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 12:54:59 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 1:06:06 PM::: MyUpstoxWrapper  ITC GetPositionsError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetPositions()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetPositions(String stockCode, List`1& positions)
+
+9/27/2018 1:06:06 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 1:06:36 PM::: MyUpstoxWrapper  SUNPHARMA GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 1:06:36 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 1:12:21 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 227.95, calculatedToBuyPrice 228, lastPriceToCompareWith 232.7, calculatedOrderQty 8, placeBuyNoLtpCompare False, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 1:12:22 PM::: MyUpstoxWrapper TATAMOTORS OrderId:180927000167026, UpstoxOrderStatus:put order req received
+
+9/27/2018 1:12:22 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS BUY 8 @ 228 LIMIT. OrderId = 180927000167026. BrokerOrderStatus=ORDERED
+
+9/27/2018 1:12:39 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS MARGIN Trade: TATAMOTORS bought 8 @ 227.9. OrderId = 180927000167026
+
+9/27/2018 1:12:40 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS Fully executed newqty 8 todayoutstandingqty 6 todayoutstandingprice 233.5 sellorderref 180927000090145 buyorderef 180927000167026 buyorderstatus COMPLETED
+
+9/27/2018 1:12:41 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Buy Executed]: TATAMOTORS SELL order cancel , OrderRef = 180927000090145: Success
+
+9/27/2018 1:12:41 PM::: MyUpstoxWrapper TATAMOTORS OrderId:180927000167157, UpstoxOrderStatus:validation pending
+
+9/27/2018 1:12:41 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS SELL 14 @ 231.5 LIMIT. OrderId = 180927000167157. BrokerOrderStatus=ORDERED
+
+9/27/2018 1:13:40 PM::: MyUpstoxWrapper  IGL GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 1:13:40 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 1:14:14 PM::: MyUpstoxWrapper  ADANIPORTS GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 1:14:14 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 1:15:23 PM::: UpstoxAverageTheBuyThenSell BIOCON MARGIN Trade: BIOCON sold 2 @ 704.1. OrderId = 180927000103608
+
+9/27/2018 1:15:23 PM::: UpstoxAverageTheBuyThenSell BIOCON LTP 704.05, calculatedToBuyPrice 696.9, lastPriceToCompareWith 704.05, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 1:15:23 PM::: MyUpstoxWrapper BIOCON OrderId:180927000168523, UpstoxOrderStatus:open pending
+
+9/27/2018 1:15:23 PM::: UpstoxAverageTheBuyThenSell BIOCON [Place Order MARGIN]: Success BIOCON BUY 2 @ 696.9 LIMIT. OrderId = 180927000168523. BrokerOrderStatus=ORDERED
+
+9/27/2018 1:16:27 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE LTP 2226.05, calculatedToBuyPrice 2227.5, lastPriceToCompareWith 2296.6, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 1:16:28 PM::: MyUpstoxWrapper BAJFINANCE OrderId:180927000169098, UpstoxOrderStatus:put order req received
+
+9/27/2018 1:16:28 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order MARGIN]: Success BAJFINANCE BUY 2 @ 2227.5 LIMIT. OrderId = 180927000169098. BrokerOrderStatus=ORDERED
+
+9/27/2018 1:16:43 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE MARGIN Trade: BAJFINANCE bought 2 @ 2227.5. OrderId = 180927000169098
+
+9/27/2018 1:16:43 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE Fully executed newqty 2 todayoutstandingqty 1 todayoutstandingprice 2296.6 sellorderref 180927000009695 buyorderef 180927000169098 buyorderstatus COMPLETED
+
+9/27/2018 1:16:43 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Buy Executed]: BAJFINANCE SELL order cancel , OrderRef = 180927000009695: Success
+
+9/27/2018 1:16:44 PM::: MyUpstoxWrapper BAJFINANCE OrderId:180927000169217, UpstoxOrderStatus:open
+
+9/27/2018 1:16:44 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order MARGIN]: Success BAJFINANCE SELL 3 @ 2273 LIMIT. OrderId = 180927000169217. BrokerOrderStatus=ORDERED
+
+9/27/2018 1:22:21 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT sold 1 @ 295.6. OrderId = 180927000091099
+
+9/27/2018 1:22:21 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 295.95, calculatedToBuyPrice 294.4, lastPriceToCompareWith 295.95, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 1:22:22 PM::: UpstoxAverageTheBuyThenSell RELIANCE MARGIN Trade: RELIANCE bought 2 @ 1244.6. OrderId = 180927000061792
+
+9/27/2018 1:22:24 PM::: MyUpstoxWrapper BERGEPAINT OrderId:180927000172198, UpstoxOrderStatus:put order req received
+
+9/27/2018 1:22:24 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT BUY 1 @ 294.4 LIMIT. OrderId = 180927000172198. BrokerOrderStatus=ORDERED
+
+9/27/2018 1:22:24 PM::: UpstoxAverageTheBuyThenSell RELIANCE Fully executed newqty 2 todayoutstandingqty 1 todayoutstandingprice 1254.1 sellorderref 180927000061781 buyorderef 180927000061792 buyorderstatus COMPLETED
+
+9/27/2018 1:22:25 PM::: UpstoxAverageTheBuyThenSell RELIANCE [Buy Executed]: RELIANCE SELL order cancel , OrderRef = 180927000061781: Success
+
+9/27/2018 1:22:25 PM::: MyUpstoxWrapper RELIANCE OrderId:180927000172212, UpstoxOrderStatus:open
+
+9/27/2018 1:22:25 PM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE SELL 3 @ 1250.9 LIMIT. OrderId = 180927000172212. BrokerOrderStatus=ORDERED
+
+9/27/2018 1:22:25 PM::: UpstoxAverageTheBuyThenSell RELIANCE LTP 1243.25, calculatedToBuyPrice 1222.7, lastPriceToCompareWith 1244.6, calculatedOrderQty 4, placeBuyNoLtpCompare True, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 1:22:26 PM::: MyUpstoxWrapper RELIANCE OrderId:180927000172220, UpstoxOrderStatus:open
+
+9/27/2018 1:22:26 PM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 4 @ 1222.7 LIMIT. OrderId = 180927000172220. BrokerOrderStatus=ORDERED
+
+9/27/2018 1:24:40 PM::: MyUpstoxWrapper  BAJFINANCE GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 1:24:40 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 1:30:23 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT MARGIN Trade: BERGEPAINT bought 1 @ 294.4. OrderId = 180927000172198
+
+9/27/2018 1:30:24 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000172198 buyorderstatus COMPLETED
+
+9/27/2018 1:30:24 PM::: MyUpstoxWrapper BERGEPAINT OrderId:180927000176137, UpstoxOrderStatus:open
+
+9/27/2018 1:30:24 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT SELL 1 @ 295.9 LIMIT. OrderId = 180927000176137. BrokerOrderStatus=ORDERED
+
+9/27/2018 1:31:17 PM::: UpstoxAverageTheBuyThenSell DLF LTP 171.6, calculatedToBuyPrice 171.6, lastPriceToCompareWith 178.8, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 1:31:18 PM::: MyUpstoxWrapper DLF OrderId:180927000176662, UpstoxOrderStatus:open pending
+
+9/27/2018 1:31:18 PM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF BUY 2 @ 171.6 LIMIT. OrderId = 180927000176662. BrokerOrderStatus=ORDERED
+
+9/27/2018 1:31:34 PM::: UpstoxAverageTheBuyThenSell DLF MARGIN Trade: DLF bought 2 @ 171.55. OrderId = 180927000176662
+
+9/27/2018 1:31:35 PM::: UpstoxAverageTheBuyThenSell DLF Fully executed newqty 2 todayoutstandingqty 1 todayoutstandingprice 178.8 sellorderref 180927000075119 buyorderef 180927000176662 buyorderstatus COMPLETED
+
+9/27/2018 1:31:35 PM::: UpstoxAverageTheBuyThenSell DLF [Buy Executed]: DLF SELL order cancel , OrderRef = 180927000075119: Success
+
+9/27/2018 1:31:35 PM::: MyUpstoxWrapper DLF OrderId:180927000176860, UpstoxOrderStatus:open pending
+
+9/27/2018 1:31:35 PM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF SELL 3 @ 174.8 LIMIT. OrderId = 180927000176860. BrokerOrderStatus=ORDERED
+
+9/27/2018 1:33:24 PM::: MyUpstoxWrapper  PCJEWELLER GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 1:33:24 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 1:35:34 PM::: MyUpstoxWrapper  SUNPHARMA GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 1:35:34 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 1:42:56 PM::: MyUpstoxWrapper  SBIN GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 1:42:56 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 1:50:07 PM::: MyUpstoxWrapper  FEDERALBNK GetPositionsError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetPositions()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetPositions(String stockCode, List`1& positions)
+
+9/27/2018 1:50:07 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 1:58:54 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Trade: CAPLIPOINT bought 3 @ 421.9. OrderId = 180927000132982
+
+9/27/2018 1:58:54 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT Fully executed newqty 3 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000132982 buyorderstatus COMPLETED
+
+9/27/2018 1:58:55 PM::: MyUpstoxWrapper CAPLIPOINT OrderId:180927000190550, UpstoxOrderStatus:open pending
+
+9/27/2018 1:58:55 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT SELL 3 @ 426.1 LIMIT. OrderId = 180927000190550. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:00:53 PM::: UpstoxAverageTheBuyThenSell RELIANCE MARGIN Trade: RELIANCE sold 3 @ 1250.9. OrderId = 180927000172212
+
+9/27/2018 2:14:16 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT MARGIN Trade: AMARAJABAT bought 1 @ 767.5. OrderId = 180927000007080
+
+9/27/2018 2:14:16 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000007080 buyorderstatus COMPLETED
+
+9/27/2018 2:14:17 PM::: MyUpstoxWrapper AMARAJABAT OrderId:180927000199933, UpstoxOrderStatus:open pending
+
+9/27/2018 2:14:17 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT [Place Order MARGIN]: Success AMARAJABAT SELL 1 @ 786.7 LIMIT. OrderId = 180927000199933. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:17:36 PM::: MyUpstoxWrapper  CAPLIPOINT GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 2:17:36 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 2:19:52 PM::: MyUpstoxWrapper  SUNPHARMA GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 2:19:52 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 2:25:46 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT MARGIN Trade: CAPLIPOINT sold 3 @ 426.1. OrderId = 180927000190550
+
+9/27/2018 2:25:46 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 426.1, calculatedToBuyPrice 417.5, lastPriceToCompareWith 426.1, calculatedOrderQty 3, placeBuyNoLtpCompare False, PriceStrategy LTP Markdown, QtyStrategy TotalOutstandingMultiple 
+
+9/27/2018 2:25:47 PM::: MyUpstoxWrapper CAPLIPOINT OrderId:180927000206434, UpstoxOrderStatus:open pending
+
+9/27/2018 2:25:47 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT BUY 3 @ 417.5 LIMIT. OrderId = 180927000206434. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:29:24 PM::: MyUpstoxWrapper  SBIN GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 2:29:24 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 2:30:56 PM::: MyUpstoxWrapper  INDUSINDBK GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 2:30:56 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 2:32:28 PM::: MyUpstoxWrapper  HDFCBANK GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 2:32:28 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 2:48:34 PM::: MyUpstoxWrapper  PCJEWELLER GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 2:48:34 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 2:52:17 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:52:17 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Converted to DELIVERY]: BAJFINANCE SELL order cancel , OrderRef = 180927000169217: Success
+
+9/27/2018 2:52:18 PM::: MyUpstoxWrapper BAJFINANCE OrderId:180927000221569, UpstoxOrderStatus:open pending
+
+9/27/2018 2:52:18 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order DELIVERY]: Success BAJFINANCE SELL 3 @ 2257.3 LIMIT. OrderId = 180927000221569. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:52:24 PM::: UpstoxAverageTheBuyThenSell IGL [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:52:25 PM::: UpstoxAverageTheBuyThenSell IGL [Converted to DELIVERY]: IGL SELL order cancel , OrderRef = 180927000062180: Success
+
+9/27/2018 2:52:25 PM::: MyUpstoxWrapper IGL OrderId:180927000221644, UpstoxOrderStatus:open
+
+9/27/2018 2:52:25 PM::: UpstoxAverageTheBuyThenSell IGL [Place Order DELIVERY]: Success IGL SELL 1 @ 264 LIMIT. OrderId = 180927000221644. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:52:44 PM::: UpstoxAverageTheBuyThenSell DLF [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:52:44 PM::: UpstoxAverageTheBuyThenSell DLF [Converted to DELIVERY]: DLF SELL order cancel , OrderRef = 180927000176860: Success
+
+9/27/2018 2:52:44 PM::: MyUpstoxWrapper DLF OrderId:180927000221779, UpstoxOrderStatus:validation pending
+
+9/27/2018 2:52:44 PM::: UpstoxAverageTheBuyThenSell DLF [Place Order DELIVERY]: Success DLF SELL 3 @ 174.5 LIMIT. OrderId = 180927000221779. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:52:58 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Converted to DELIVERY]: ADANIPORTS BUY order cancel , OrderRef = 180927000076109: Success
+
+9/27/2018 2:52:58 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:52:58 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Converted to DELIVERY]: ADANIPORTS SELL order cancel , OrderRef = 180927000076103: Success
+
+9/27/2018 2:52:59 PM::: MyUpstoxWrapper ADANIPORTS OrderId:180927000221927, UpstoxOrderStatus:open pending
+
+9/27/2018 2:52:59 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order DELIVERY]: Success ADANIPORTS SELL 1 @ 338.1 LIMIT. OrderId = 180927000221927. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:52:59 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:52:59 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Converted to DELIVERY]: IDFCBANK SELL order cancel , OrderRef = 180927000020410: Success
+
+9/27/2018 2:52:59 PM::: MyUpstoxWrapper IDFCBANK OrderId:180927000221936, UpstoxOrderStatus:open pending
+
+9/27/2018 2:52:59 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order DELIVERY]: Success IDFCBANK SELL 12 @ 38.1 LIMIT. OrderId = 180927000221936. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:53:17 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:53:17 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Converted to DELIVERY]: IBULHSGFIN SELL order cancel , OrderRef = 180927000045226: Success
+
+9/27/2018 2:53:17 PM::: MyUpstoxWrapper IBULHSGFIN OrderId:180927000222094, UpstoxOrderStatus:open
+
+9/27/2018 2:53:17 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order DELIVERY]: Success IBULHSGFIN SELL 3 @ 967.8 LIMIT. OrderId = 180927000222094. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:53:42 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:53:42 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Converted to DELIVERY]: UJJIVAN SELL order cancel , OrderRef = 180927000071698: Success
+
+9/27/2018 2:53:42 PM::: MyUpstoxWrapper UJJIVAN OrderId:180927000222333, UpstoxOrderStatus:open
+
+9/27/2018 2:53:42 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order DELIVERY]: Success UJJIVAN SELL 5 @ 278 LIMIT. OrderId = 180927000222333. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:53:43 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Converted to DELIVERY]: SUNPHARMA BUY order cancel , OrderRef = 180927000072529: Success
+
+9/27/2018 2:53:43 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:53:44 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Converted to DELIVERY]: SUNPHARMA SELL order cancel , OrderRef = 180927000072510: Success
+
+9/27/2018 2:53:44 PM::: MyUpstoxWrapper SUNPHARMA OrderId:180927000222351, UpstoxOrderStatus:open pending
+
+9/27/2018 2:53:44 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Place Order DELIVERY]: Success SUNPHARMA SELL 1 @ 636.5 LIMIT. OrderId = 180927000222351. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:53:58 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:53:58 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Converted to DELIVERY]: TATAMOTORS SELL order cancel , OrderRef = 180927000167157: Success
+
+9/27/2018 2:53:59 PM::: MyUpstoxWrapper TATAMOTORS OrderId:180927000222493, UpstoxOrderStatus:open
+
+9/27/2018 2:53:59 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order DELIVERY]: Success TATAMOTORS SELL 14 @ 231 LIMIT. OrderId = 180927000222493. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:54:00 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:54:01 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Converted to DELIVERY]: FEDERALBNK SELL order cancel , OrderRef = 180927000084702: Success
+
+9/27/2018 2:54:01 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Converted to DELIVERY]: PCJEWELLER BUY order cancel , OrderRef = 180927000075407: Success
+
+9/27/2018 2:54:01 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:54:01 PM::: MyUpstoxWrapper FEDERALBNK OrderId:180927000222516, UpstoxOrderStatus:open
+
+9/27/2018 2:54:01 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order DELIVERY]: Success FEDERALBNK SELL 4 @ 70.7 LIMIT. OrderId = 180927000222516. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:54:02 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Converted to DELIVERY]: PCJEWELLER SELL order cancel , OrderRef = 180927000075400: Success
+
+9/27/2018 2:54:02 PM::: MyUpstoxWrapper PCJEWELLER OrderId:180927000222521, UpstoxOrderStatus:put order req received
+
+9/27/2018 2:54:02 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order DELIVERY]: Success PCJEWELLER SELL 5 @ 69.5 LIMIT. OrderId = 180927000222521. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:54:10 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:54:10 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT [Converted to DELIVERY]: AMARAJABAT SELL order cancel , OrderRef = 180927000199933: Success
+
+9/27/2018 2:54:10 PM::: MyUpstoxWrapper AMARAJABAT OrderId:180927000222623, UpstoxOrderStatus:open pending
+
+9/27/2018 2:54:10 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT [Place Order DELIVERY]: Success AMARAJABAT SELL 1 @ 769.8 LIMIT. OrderId = 180927000222623. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:54:19 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:54:19 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Converted to DELIVERY]: BERGEPAINT SELL order cancel , OrderRef = 180927000176137: Success
+
+9/27/2018 2:54:19 PM::: MyUpstoxWrapper BERGEPAINT OrderId:180927000222738, UpstoxOrderStatus:put order req received
+
+9/27/2018 2:54:19 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order DELIVERY]: Success BERGEPAINT SELL 1 @ 295.3 LIMIT. OrderId = 180927000222738. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:54:26 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT MARGIN Trade: AMARAJABAT sold 1 @ 772.05. OrderId = 180927000222623
+
+9/27/2018 2:54:27 PM::: UpstoxAverageTheBuyThenSell ITC [Converted to DELIVERY]: Detected position conversion. Convert SELL order to DELIVERY
+
+9/27/2018 2:54:27 PM::: UpstoxAverageTheBuyThenSell ITC [Converted to DELIVERY]: ITC SELL order cancel , OrderRef = 180927000094409: Success
+
+9/27/2018 2:54:27 PM::: MyUpstoxWrapper ITC OrderId:180927000222838, UpstoxOrderStatus:put order req received
+
+9/27/2018 2:54:27 PM::: UpstoxAverageTheBuyThenSell ITC [Place Order DELIVERY]: Success ITC SELL 1 @ 293.2 LIMIT. OrderId = 180927000222838. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:54:42 PM::: UpstoxAverageTheBuyThenSell ITC MARGIN Trade: ITC sold 1 @ 293.25. OrderId = 180927000222838
+
+9/27/2018 2:55:43 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Trade: INFY bought 1 @ 718.8. OrderId = 180927000015527
+
+9/27/2018 2:55:43 PM::: UpstoxAverageTheBuyThenSell INFY Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 180927000015527 buyorderstatus COMPLETED
+
+9/27/2018 2:55:44 PM::: MyUpstoxWrapper INFY OrderId:180927000223751, UpstoxOrderStatus:open
+
+9/27/2018 2:55:44 PM::: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY SELL 1 @ 722.4 LIMIT. OrderId = 180927000223751. BrokerOrderStatus=ORDERED
+
+9/27/2018 2:55:44 PM::: UpstoxAverageTheBuyThenSell INFY LTP 719.05, calculatedToBuyPrice 711.5, lastPriceToCompareWith 718.8, calculatedOrderQty 2, placeBuyNoLtpCompare True, PriceStrategy LastBuyPrice Markdown, QtyStrategy Default TodayOutstandingMultiple 
+
+9/27/2018 2:55:45 PM::: MyUpstoxWrapper INFY OrderId:180927000223759, UpstoxOrderStatus:open
+
+9/27/2018 2:55:45 PM::: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY BUY 2 @ 711.5 LIMIT. OrderId = 180927000223759. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:02 PM::: UpstoxAverageTheBuyThenSell BIOCON [EOD]: BIOCON BUY order cancel , OrderRef = 180927000168523: Success
+
+9/27/2018 3:00:02 PM::: UpstoxAverageTheBuyThenSell ZEEL [EOD]: ZEEL BUY order cancel , OrderRef = 180927000014087: Success
+
+9/27/2018 3:00:02 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:02 PM::: UpstoxAverageTheBuyThenSell INDUSINDBK [EOD]: INDUSINDBK BUY order cancel , OrderRef = 180927000015643: Success
+
+9/27/2018 3:00:02 PM::: UpstoxAverageTheBuyThenSell IGL [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:03 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Converted to DELIVERY]: UJJIVAN SELL order cancel , OrderRef = 180927000222333: Success
+
+9/27/2018 3:00:03 PM::: UpstoxAverageTheBuyThenSell IGL [Converted to DELIVERY]: IGL SELL order cancel , OrderRef = 180927000221644: Success
+
+9/27/2018 3:00:03 PM::: MyUpstoxWrapper UJJIVAN OrderId:180927000227212, UpstoxOrderStatus:open
+
+9/27/2018 3:00:03 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order DELIVERY]: Success UJJIVAN SELL 5 @ 278 LIMIT. OrderId = 180927000227212. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:03 PM::: MyUpstoxWrapper IGL OrderId:180927000227214, UpstoxOrderStatus:open pending
+
+9/27/2018 3:00:03 PM::: UpstoxAverageTheBuyThenSell IGL [Place Order DELIVERY]: Success IGL SELL 1 @ 264 LIMIT. OrderId = 180927000227214. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:04 PM::: UpstoxAverageTheBuyThenSell SBIN [EOD]: SBIN BUY order cancel , OrderRef = 180927000046445: Success
+
+9/27/2018 3:00:04 PM::: UpstoxAverageTheBuyThenSell M&M [EOD]: M&M BUY order cancel , OrderRef = 180927000016656: Success
+
+9/27/2018 3:00:04 PM::: UpstoxAverageTheBuyThenSell HDFCBANK [EOD]: HDFCBANK BUY order cancel , OrderRef = 180927000051788: Success
+
+9/27/2018 3:00:04 PM::: UpstoxAverageTheBuyThenSell RELIANCE [EOD]: RELIANCE BUY order cancel , OrderRef = 180927000172220: Success
+
+9/27/2018 3:00:14 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:14 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:14 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:43 PM::: MyUpstoxWrapper  IDFCBANK GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 3:00:43 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 3:00:43 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:43 PM::: UpstoxAverageTheBuyThenSell DLF [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:43 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:44 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:44 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:44 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:44 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [EOD]: MinProfit Squareoff using limit sell order
+
+9/27/2018 3:00:44 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [EOD]: CAPLIPOINT BUY order cancel , OrderRef = 180927000206434: Success
+
+9/27/2018 3:00:44 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Trade: INFY sold 1 @ 722.4. OrderId = 180927000223751
+
+9/27/2018 3:00:44 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Converted to DELIVERY]: TATAMOTORS SELL order cancel , OrderRef = 180927000222493: Success
+
+9/27/2018 3:00:44 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Converted to DELIVERY]: SUNPHARMA SELL order cancel , OrderRef = 180927000222351: Success
+
+9/27/2018 3:00:44 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Converted to DELIVERY]: ADANIPORTS SELL order cancel , OrderRef = 180927000221927: Success
+
+9/27/2018 3:00:46 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Converted to DELIVERY]: IDFCBANK SELL order cancel , OrderRef = 180927000221936: Success
+
+9/27/2018 3:00:46 PM::: UpstoxAverageTheBuyThenSell DLF [Converted to DELIVERY]: DLF SELL order cancel , OrderRef = 180927000221779: Success
+
+9/27/2018 3:00:46 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Converted to DELIVERY]: FEDERALBNK SELL order cancel , OrderRef = 180927000222516: Success
+
+9/27/2018 3:00:46 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Converted to DELIVERY]: PCJEWELLER SELL order cancel , OrderRef = 180927000222521: Success
+
+9/27/2018 3:00:46 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Converted to DELIVERY]: IBULHSGFIN SELL order cancel , OrderRef = 180927000222094: Success
+
+9/27/2018 3:00:46 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Converted to DELIVERY]: BAJFINANCE SELL order cancel , OrderRef = 180927000221569: Success
+
+9/27/2018 3:00:46 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Converted to DELIVERY]: BERGEPAINT SELL order cancel , OrderRef = 180927000222738: Success
+
+9/27/2018 3:00:46 PM::: UpstoxAverageTheBuyThenSell INFY [EOD]: INFY BUY order cancel , OrderRef = 180927000223759: Success
+
+9/27/2018 3:00:47 PM::: MyUpstoxWrapper TATAMOTORS OrderId:180927000227886, UpstoxOrderStatus:open pending
+
+9/27/2018 3:00:47 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order DELIVERY]: Success TATAMOTORS SELL 14 @ 231 LIMIT. OrderId = 180927000227886. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:47 PM::: MyUpstoxWrapper SUNPHARMA OrderId:180927000227903, UpstoxOrderStatus:open
+
+9/27/2018 3:00:47 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Place Order DELIVERY]: Success SUNPHARMA SELL 1 @ 636.5 LIMIT. OrderId = 180927000227903. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:48 PM::: MyUpstoxWrapper ADANIPORTS OrderId:180927000227908, UpstoxOrderStatus:open pending
+
+9/27/2018 3:00:48 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order DELIVERY]: Success ADANIPORTS SELL 1 @ 338.1 LIMIT. OrderId = 180927000227908. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:48 PM::: MyUpstoxWrapper IDFCBANK OrderId:180927000227914, UpstoxOrderStatus:open pending
+
+9/27/2018 3:00:48 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order DELIVERY]: Success IDFCBANK SELL 12 @ 38.1 LIMIT. OrderId = 180927000227914. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:49 PM::: MyUpstoxWrapper DLF OrderId:180927000227919, UpstoxOrderStatus:validation pending
+
+9/27/2018 3:00:49 PM::: UpstoxAverageTheBuyThenSell DLF [Place Order DELIVERY]: Success DLF SELL 3 @ 174.5 LIMIT. OrderId = 180927000227919. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:49 PM::: MyUpstoxWrapper FEDERALBNK OrderId:180927000227930, UpstoxOrderStatus:open pending
+
+9/27/2018 3:00:49 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order DELIVERY]: Success FEDERALBNK SELL 4 @ 70.7 LIMIT. OrderId = 180927000227930. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:50 PM::: MyUpstoxWrapper PCJEWELLER OrderId:180927000227940, UpstoxOrderStatus:open
+
+9/27/2018 3:00:50 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order DELIVERY]: Success PCJEWELLER SELL 5 @ 69.5 LIMIT. OrderId = 180927000227940. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:50 PM::: MyUpstoxWrapper IBULHSGFIN OrderId:180927000227951, UpstoxOrderStatus:validation pending
+
+9/27/2018 3:00:50 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order DELIVERY]: Success IBULHSGFIN SELL 3 @ 967.8 LIMIT. OrderId = 180927000227951. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:51 PM::: MyUpstoxWrapper BAJFINANCE OrderId:180927000227958, UpstoxOrderStatus:open
+
+9/27/2018 3:00:51 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order DELIVERY]: Success BAJFINANCE SELL 3 @ 2257.3 LIMIT. OrderId = 180927000227958. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:00:51 PM::: MyUpstoxWrapper BERGEPAINT OrderId:180927000227967, UpstoxOrderStatus:open
+
+9/27/2018 3:00:51 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order DELIVERY]: Success BERGEPAINT SELL 1 @ 295.3 LIMIT. OrderId = 180927000227967. BrokerOrderStatus=ORDERED
+
+9/27/2018 3:02:03 PM::: MyUpstoxWrapper  IDFCBANK GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 3:02:03 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 3:17:34 PM::: UpstoxAverageTheBuyThenSell INFY MARGIN Trade: INFY bought 1 @ 725.6. OrderId = 180927000239863
+
+9/27/2018 3:17:53 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE MARGIN Trade: BAJFINANCE bought 1 @ 2296.6. OrderId = 180927000006868
+
+9/27/2018 3:17:53 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE MARGIN Trade: BAJFINANCE bought 2 @ 2227.5. OrderId = 180927000169098
+
+9/27/2018 3:19:12 PM::: MyUpstoxWrapper  ZEEL GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 3:19:12 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 3:22:50 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK MARGIN Trade: FEDERALBNK sold 4 @ 70.7. OrderId = 180927000227930
+
+9/27/2018 3:26:17 PM::: MyUpstoxWrapper  SBIN GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+9/27/2018 3:26:17 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+9/27/2018 3:28:04 PM::: UpstoxAverageTheBuyThenSell SBIN [Holding EOD] StartingQty:3 UnexecutedQty:3 OrderExecutionStatus:ORDERED : SBIN SELL order cancel , OrderRef = 180927000007281: Success
+
+9/27/2018 3:28:04 PM::: UpstoxAverageTheBuyThenSell M&M [Holding EOD] StartingQty:3 UnexecutedQty:3 OrderExecutionStatus:ORDERED : M&M SELL order cancel , OrderRef = 180927000007296: Success
+
+9/27/2018 3:28:04 PM::: UpstoxAverageTheBuyThenSell INFY [Holding EOD] StartingQty:3 UnexecutedQty:0 OrderExecutionStatus:COMPLETED : INFY SELL order cancel , OrderRef = 180927000007307: Success
+
+9/27/2018 3:28:04 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Holding EOD] StartingQty:26 UnexecutedQty:26 OrderExecutionStatus:ORDERED : TATAMOTORS SELL order cancel , OrderRef = 180927000007179: Success
+
+9/27/2018 3:28:05 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Margin Conversion EOD]: TATAMOTORS SELL order cancel , OrderRef = 180927000227886: Success
+
+9/27/2018 3:28:05 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS Conversion to delivery: Success TATAMOTORS qty of 14
+
+9/27/2018 3:28:05 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Margin Conversion EOD]: SUNPHARMA SELL order cancel , OrderRef = 180927000227903: Success
+
+9/27/2018 3:28:05 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA Conversion to delivery: Success SUNPHARMA qty of 1
+
+9/27/2018 3:28:06 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Holding EOD] StartingQty:3 UnexecutedQty:3 OrderExecutionStatus:ORDERED : ADANIPORTS SELL order cancel , OrderRef = 180927000006534: Success
+
+9/27/2018 3:28:06 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Holding EOD] StartingQty:11 UnexecutedQty:11 OrderExecutionStatus:NOTFOUND : IDFCBANK SELL order cancel , OrderRef = 180927000007237: Success
+
+9/27/2018 3:28:06 PM::: UpstoxAverageTheBuyThenSell DLF [Margin Conversion EOD]: DLF SELL order cancel , OrderRef = 180927000227919: Success
+
+9/27/2018 3:28:06 PM::: UpstoxAverageTheBuyThenSell DLF Conversion to delivery: Success DLF qty of 3
+
+9/27/2018 3:28:06 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Holding EOD] StartingQty:3 UnexecutedQty:3 OrderExecutionStatus:NOTFOUND : FEDERALBNK SELL order cancel , OrderRef = 180927000007250: Success
+
+9/27/2018 3:28:06 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Holding EOD] StartingQty:4 UnexecutedQty:4 OrderExecutionStatus:ORDERED : PCJEWELLER SELL order cancel , OrderRef = 180927000006589: Success
+
+9/27/2018 3:28:06 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Margin Conversion EOD]: ADANIPORTS SELL order cancel , OrderRef = 180927000227908: Success
+
+9/27/2018 3:28:06 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS Conversion to delivery: Success ADANIPORTS qty of 1
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Margin Conversion EOD]: IBULHSGFIN SELL order cancel , OrderRef = 180927000227951: Success
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN Conversion to delivery: Success IBULHSGFIN qty of 3
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell IDFCBANK [Margin Conversion EOD]: IDFCBANK SELL order cancel , OrderRef = 180927000227914: Success
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell IDFCBANK Conversion to delivery: Success IDFCBANK qty of 12
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Holding EOD] StartingQty:3 UnexecutedQty:3 OrderExecutionStatus:ORDERED : BERGEPAINT SELL order cancel , OrderRef = 180927000007224: Success
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Margin Conversion EOD]: PCJEWELLER SELL order cancel , OrderRef = 180927000227940: Success
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER Conversion to delivery: Success PCJEWELLER qty of 5
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Holding EOD] StartingQty:2 UnexecutedQty:2 OrderExecutionStatus:NOTFOUND : CAPLIPOINT SELL order cancel , OrderRef = 180927000006922: Success
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell ITC [Holding EOD] StartingQty:4 UnexecutedQty:4 OrderExecutionStatus:ORDERED : ITC SELL order cancel , OrderRef = 180927000007145: Success
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Margin Conversion EOD]: BERGEPAINT SELL order cancel , OrderRef = 180927000227967: Success
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT Conversion to delivery: Success BERGEPAINT qty of 1
+
+9/27/2018 3:28:07 PM::: UpstoxAverageTheBuyThenSell INDUSINDBK [Holding EOD] StartingQty:3 UnexecutedQty:3 OrderExecutionStatus:ORDERED : INDUSINDBK SELL order cancel , OrderRef = 180927000006580: Success
+
+9/27/2018 3:28:08 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Holding EOD] StartingQty:4 UnexecutedQty:4 OrderExecutionStatus:NOTFOUND : UJJIVAN SELL order cancel , OrderRef = 180927000007031: Success
+
+9/27/2018 3:28:08 PM::: UpstoxAverageTheBuyThenSell IGL [Margin Conversion EOD]: IGL SELL order cancel , OrderRef = 180927000227214: Success
+
+9/27/2018 3:28:08 PM::: UpstoxAverageTheBuyThenSell IGL Conversion to delivery: Success IGL qty of 1
+
+9/27/2018 3:28:08 PM::: UpstoxAverageTheBuyThenSell UJJIVAN [Margin Conversion EOD]: UJJIVAN SELL order cancel , OrderRef = 180927000227212: Success
+
+9/27/2018 3:28:08 PM::: UpstoxAverageTheBuyThenSell UJJIVAN Conversion to delivery: Success UJJIVAN qty of 5
+
+9/27/2018 3:31:06 PM::: UpstoxAverageTheBuyThenSell HDFCBANK EOD PositionFile updated as 0 0
+
+9/27/2018 3:31:06 PM::: UpstoxAverageTheBuyThenSell RELIANCE EOD PositionFile updated as 0 0
+
+9/27/2018 3:31:07 PM::: UpstoxAverageTheBuyThenSell SBIN EOD PositionFile updated as 3 267.35
+
+9/27/2018 3:31:07 PM::: UpstoxAverageTheBuyThenSell M&M EOD PositionFile updated as 3 929
+
+9/27/2018 3:31:07 PM::: UpstoxAverageTheBuyThenSell INFY HoldingOutstandingQty is invalid @ -1. Setting it to 0.
+
+9/27/2018 3:31:07 PM::: UpstoxAverageTheBuyThenSell INFY EOD PositionFile updated as 0 0
+
+9/27/2018 3:31:07 PM::: UpstoxAverageTheBuyThenSell TATAMOTORS EOD PositionFile updated as 40 238.07
+
+9/27/2018 3:31:07 PM::: UpstoxAverageTheBuyThenSell SUNPHARMA EOD PositionFile updated as 1 634.6
+
+9/27/2018 3:31:08 PM::: UpstoxAverageTheBuyThenSell BAJFINANCE EOD PositionFile updated as 0 0
+
+9/27/2018 3:31:08 PM::: UpstoxAverageTheBuyThenSell DLF EOD PositionFile updated as 3 173.97
+
+9/27/2018 3:31:08 PM::: UpstoxAverageTheBuyThenSell FEDERALBNK EOD PositionFile updated as 3 101.76
+
+9/27/2018 3:31:08 PM::: UpstoxAverageTheBuyThenSell ADANIPORTS EOD PositionFile updated as 4 345.1
+
+9/27/2018 3:31:08 PM::: UpstoxAverageTheBuyThenSell AMARAJABAT EOD PositionFile updated as 0 0
+
+9/27/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell IBULHSGFIN EOD PositionFile updated as 3 964.9
+
+9/27/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell IDFCBANK EOD PositionFile updated as 23 41.49
+
+9/27/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell BIOCON EOD PositionFile updated as 0 0
+
+9/27/2018 3:31:09 PM::: UpstoxAverageTheBuyThenSell ZEEL EOD PositionFile updated as 0 0
+
+9/27/2018 3:31:10 PM::: UpstoxAverageTheBuyThenSell PCJEWELLER EOD PositionFile updated as 9 74.78
+
+9/27/2018 3:31:10 PM::: UpstoxAverageTheBuyThenSell CAPLIPOINT EOD PositionFile updated as 2 492.85
+
+9/27/2018 3:31:10 PM::: UpstoxAverageTheBuyThenSell ITC EOD PositionFile updated as 4 299.05
+
+9/27/2018 3:31:10 PM::: UpstoxAverageTheBuyThenSell BERGEPAINT EOD PositionFile updated as 4 296.93
+
+9/27/2018 3:31:10 PM::: UpstoxAverageTheBuyThenSell INDUSINDBK EOD PositionFile updated as 3 1715.47
+
+9/27/2018 3:31:11 PM::: UpstoxAverageTheBuyThenSell IGL EOD PositionFile updated as 1 263.2
+
+9/27/2018 3:31:11 PM::: UpstoxAverageTheBuyThenSell UJJIVAN EOD PositionFile updated as 9 298.26
+
+9/27/2018 3:31:11 PM::: Update PnL files
+
+9/27/2018 3:31:15 PM::: All stock threads completed. Emailing today's log file
+
+9/27/2018 3:31:17 PM::: Exiting..
+
