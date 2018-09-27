@@ -31,5 +31,7 @@ namespace StockTrader.Core
         public string StockCode;
         public EquityOrderType EquityOrderType;
         public int NetQuantity;
+        public int BuyQuantity;
+        public int SellQuantity;
     }
 }

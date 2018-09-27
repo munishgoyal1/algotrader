@@ -131,7 +131,7 @@ namespace UpstoxTrader
                             var trade = tradeKv.Value;
 
                             Trace(string.Format(tradeTraceFormat, stockCode, trade.Direction == OrderDirection.BUY ? "bought" : "sold", trade.NewQuantity, trade.Price,
-                                holdingOrder.OrderId == tradeRef ? "CASH" : "MARGIN", trade.OrderId));
+                                holdingOrder.OrderId == tradeRef ? "DELIVERY" : "MARGIN", trade.OrderId));
 
                             // if any holding sell executed
                             ProcessHoldingSellOrderExecution(newTrades);
@@ -201,26 +201,16 @@ namespace UpstoxTrader
                         PlaceBuyOrderIfEligible();
                     }
 
-                    // Only relevant near EOD
-                    TrySquareOffNearEOD(AlgoType.AverageTheBuyThenSell);
+                    HandleConversionAnytime();
+                    TrySquareOffNearEOD();
                 }
                 catch (Exception ex)
                 {
                     Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
                 }
 
-                if (MarketUtils.IsTimeAfter3XMin(0))
-                {
-                    // check if position conversion is already manually done then cancel the Margin order and update position file
-
-
-                }
-
-                if (MarketUtils.IsTimeAfter3XMin(28))
-                {
-                    CancelHoldingSellOrders();
-                    ConvertToDeliveryAndUpdatePositionFile();
-                }
+                if (MarketUtils.IsTimeAfter3XMin(29))
+                    CancelOpenOrders();
 
                 // update stats
                 var buyValueToday = todayOutstandingPrice * (todayOutstandingQty + ordQty);
@@ -229,8 +219,7 @@ namespace UpstoxTrader
                 PauseBetweenTradeBookCheck();
             }
 
-            // for safety call conversion once more if the conversion call in the above loop was missed due to Pause and loop's time check
-            ConvertToDeliveryAndUpdatePositionFile(true); // EOD final update
+            EODProcess(true); // EOD final update
         }
 
         // TODO: refactor.. not being used currently

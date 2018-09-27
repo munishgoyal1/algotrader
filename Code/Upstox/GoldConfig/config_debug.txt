@@ -63,4 +63,6 @@ open points:
 6. On restart of trader, why should old trades show up during loop run. once trade book is fetched at Init, only new trades post that should come up. 25 Sep - HDFC, IDFC around 3pm in 2nd log file.
 7. federalbank position file is 3 107 which is not at all inline with its price of 70.
 
+8. Bajajfin holding updated is 0, we have 3 qty conversion done. 27 sep. trades appear again somehow after 3.15 pm. Only new trades should come really
+
 

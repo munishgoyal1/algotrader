@@ -376,6 +376,8 @@ namespace StockTrader.Brokers.UpstoxBroker
                             position.Exchange = line[0];
                             position.EquityOrderType = line[1] == "D" ? EquityOrderType.DELIVERY : EquityOrderType.MARGIN;
                             position.StockCode = line[2];
+                            position.BuyQuantity = int.Parse(line[6]);
+                            position.SellQuantity = int.Parse(line[7]);
                             position.NetQuantity = int.Parse(line[14]);
 
                             positions.Add(position);
