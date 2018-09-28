@@ -87,7 +87,8 @@ namespace StockTrader.Brokers.UpstoxBroker
 
             //public string GetOrderExchId(string OrderId)
 
-            var funds = upstox.GetFunds();
+            var snapquote = upstox.GetSnapQuote("NSE_EQ", "PCJEWELLER");
+
 
             List<EquityPositionRecord> positions;
             BrokerErrorCode errCode = GetPositions("INFY", out positions);
@@ -791,6 +792,58 @@ namespace StockTrader.Brokers.UpstoxBroker
                 }
 
                 return 0;
+            }
+        }
+
+        public BrokerErrorCode GetSnapQuote(string exchange, string stockCode, out EquitySymbolQuote quote)
+        {
+            quote = new EquitySymbolQuote();
+
+            lock (lockSingleThreadedUpstoxCall)
+            {
+                BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+                int retryCount = 0;
+                int maxRetryCount = 3;
+
+                while (errorCode != BrokerErrorCode.Success && retryCount++ < maxRetryCount)
+                {
+                    try
+                    {
+                        var response = upstox.GetSnapQuote(exchange, stockCode);
+
+                        string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
+
+                        for (int i = 1; i < lines.Length; i++)
+                        {
+                            var line = lines[i].Split(',');
+
+                            if (line.Length < 19)
+                                continue;
+
+                            if (!string.IsNullOrEmpty(stockCode) &&
+                                !line[2].Equals(stockCode, StringComparison.OrdinalIgnoreCase))
+                            {
+                                continue;
+                            }
+
+                            quote.ExchangeStr = line[1];
+                            quote.StockCode = line[2];
+                            quote.LowerCircuitPrice = double.Parse(line[14]);
+                            quote.UpperCircuitPrice = int.Parse(line[15]);
+                            errorCode = BrokerErrorCode.Success;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
+                        Trace(string.Format(retryLogFormat, retryCount, maxRetryCount));
+
+                        if (retryCount >= maxRetryCount)
+                            break;
+                    }
+                }
+
+                return errorCode;
             }
         }
     }

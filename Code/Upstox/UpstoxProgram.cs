@@ -143,6 +143,8 @@ namespace UpstoxTrader
             //Trace("Testing ends");
             // ************ TESTING Code ends ****************** //
 
+            Thread.Sleep(5000);// Let the rates etc update on server
+
             // Read the config file
             List<UpstoxTradeParams> stocksConfig = ReadTradingConfigFile();
 

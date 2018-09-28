@@ -94,6 +94,12 @@ namespace UpstoxTrader
 
                 calculatedToBuyPrice = Math.Min(calculatedToBuyPrice, buyPriceCap);
 
+                if(calculatedToBuyPrice < lowerCircuitLimit)
+                {
+                    Trace(string.Format("calculatedToBuyPrice {0} is lower than lowerCircuitPrice {1}, Not placing order", calculatedToBuyPrice, lowerCircuitLimit));
+                    return;
+                }
+
                 if (errCode == BrokerErrorCode.Success && (todayOutstandingQty == 0 || (placeBuyNoLtpCompare || (ltp <= calculatedToBuyPrice))))
                 {
                     Trace(string.Format("LTP {0}, calculatedToBuyPrice {1}, lastPriceToCompareWith {2}, calculatedOrderQty {3}, placeBuyNoLtpCompare {4}, PriceStrategy {5}, QtyStrategy {6} ", 

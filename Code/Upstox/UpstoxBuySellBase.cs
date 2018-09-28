@@ -63,6 +63,8 @@ namespace UpstoxTrader
         public string todayOutstandingSellOrderId = "";// outstanding sell order Id
         public HoldingOrder holdingOrder = new HoldingOrder();
 
+        public double lowerCircuitLimit;
+        public double upperCircuitLimit;
         public int lastBuyOrdQty = 0;
         public double lastBuyPrice = 0;
         public bool isFirstBuyOrder = true;
@@ -172,6 +174,17 @@ namespace UpstoxTrader
             // populate stats
             pnlStats.prevHoldingPrice = holdingOutstandingPrice;
             pnlStats.prevHoldingQty = holdingOutstandingQty;
+
+            // Get circuit prices
+            EquitySymbolQuote quote;
+            errCode = myUpstoxWrapper.GetSnapQuote(exchStr, stockCode, out quote);
+
+            if(errCode == BrokerErrorCode.Success)
+            {
+                lowerCircuitLimit = quote.LowerCircuitPrice;
+                upperCircuitLimit = quote.UpperCircuitPrice;
+            }
+              
 
             GetLTPOnDemand(out Ltp);
 
@@ -412,6 +425,12 @@ namespace UpstoxTrader
             BrokerErrorCode errCode = BrokerErrorCode.Unknown;
             orderStatus = OrderStatus.UNKNOWN;
             orderId = "";
+
+            if (orderPriceType == OrderPriceType.LIMIT && (price < lowerCircuitLimit || price > upperCircuitLimit))
+            {
+                Trace(string.Format("orderPrice {0} is outside circuit limits of lowerCircuitLimit {1} upperCircuitLimit {2}, Not placing order", price, lowerCircuitLimit, upperCircuitLimit));
+                return BrokerErrorCode.OutsidePriceRange;
+            }
 
             errCode = myUpstoxWrapper.PlaceEquityOrder(exchange, stockCode, orderDirection, orderPriceType, quantity, orderType, price, out orderId, out orderStatus);
 

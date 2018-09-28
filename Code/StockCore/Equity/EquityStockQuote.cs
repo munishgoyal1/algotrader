@@ -22,6 +22,10 @@ namespace StockTrader.Core
         //public EquityStockSpread Spread;
 
         // Price Info //
+        public double LowerCircuitPrice;
+        public double UpperCircuitPrice;
+        public string ExchangeStr;
+
 
         // LTP
         private double mLastTradePriceDouble;
