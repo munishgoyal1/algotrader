@@ -64,7 +64,7 @@ namespace UpstoxTrader
             var upstoxBroker = new MyUpstoxWrapper(apiKey, apiSecret, redirectUrl);
 
 #if DEBUG
-            Trace("DEBUG MODE"); errCode = upstoxBroker.Login();
+            Trace("DEBUG MODE"); errCode = upstoxBroker.Login1();
 #else
             Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
 #endif

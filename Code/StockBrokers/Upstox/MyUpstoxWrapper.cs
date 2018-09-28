@@ -144,7 +144,7 @@ namespace StockTrader.Brokers.UpstoxBroker
             //180822000000852
             //string cancelAmo1 = upstox.CancelAmo("180822000000852"); // Product = D or I
 
-            
+
 
             //var b = upstox.GetOrder("NSE_EQ", "BAJFINANCE", "D");
 
@@ -273,10 +273,19 @@ namespace StockTrader.Brokers.UpstoxBroker
                 try
                 {
                     orderId = upstox.PlaceSimpleOrder(exchange, stockCode, transType, ordType, quantity, prodType, price);
-                    Thread.Sleep(300); // let the order status update at server
+                    Thread.Sleep(1000); // let the order status update at server
                     errorCode = GetOrderStatus(orderId, stockCode, out orderStatus);
 
                     mOrderIds[stockCode].Add(orderId);
+
+                    // For unsuccessful placeorder dont send orderId
+                    if (orderStatus == OrderStatus.EXPIRED ||
+                        orderStatus == OrderStatus.CANCELLED ||
+                        orderStatus == OrderStatus.NOTFOUND ||
+                        orderStatus == OrderStatus.REJECTED ||
+                        orderStatus == OrderStatus.UNKNOWN)
+
+                        orderId = "";
                 }
                 catch (Exception ex)
                 {
@@ -310,7 +319,7 @@ namespace StockTrader.Brokers.UpstoxBroker
             int retryCount = 0;
             int maxRetryCount = 3;
 
-            while (errorCode != BrokerErrorCode.Success && retryCount++ < maxRetryCount)
+            while (!(errorCode == BrokerErrorCode.Success || errorCode == BrokerErrorCode.OrderRejected) && retryCount++ < maxRetryCount)
             {
                 try
                 {
@@ -572,7 +581,7 @@ namespace StockTrader.Brokers.UpstoxBroker
                     }
                     catch (Exception ex)
                     {
-                        Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));                        
+                        Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
                         Trace(string.Format(retryLogFormat, retryCount, maxRetryCount));
 
                         if (retryCount >= maxRetryCount)

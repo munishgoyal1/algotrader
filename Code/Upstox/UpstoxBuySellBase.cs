@@ -63,6 +63,7 @@ namespace UpstoxTrader
         public string todayOutstandingSellOrderId = "";// outstanding sell order Id
         public HoldingOrder holdingOrder = new HoldingOrder();
 
+        public int lastBuyOrdQty = 0;
         public double lastBuyPrice = 0;
         public bool isFirstBuyOrder = true;
         public int todayBuyOrderCount = 0;
@@ -619,7 +620,7 @@ namespace UpstoxTrader
             if (!string.IsNullOrEmpty(todayOutstandingSellOrderId))
             {
                 var sqOffOrderType = isOutstandingPositionConverted ? EquityOrderType.DELIVERY : orderType;
-                errCode = CancelEquityOrder(string.Format("[EOD Cancel SqOff] OrderId:{0} OrderType:{1}", todayOutstandingSellOrderId, sqOffOrderType), ref todayOutstandingSellOrderId, sqOffOrderType, OrderDirection.SELL);
+                errCode = CancelEquityOrder(string.Format("[EOD Cancel SqOff] OrderType:{0}", sqOffOrderType), ref todayOutstandingSellOrderId, sqOffOrderType, OrderDirection.SELL);
             }
         }
 
@@ -627,9 +628,9 @@ namespace UpstoxTrader
         {
             BrokerErrorCode errCode = BrokerErrorCode.Unknown;
 
-            if (!string.IsNullOrEmpty(holdingOrder.OrderId))
+            if (!string.IsNullOrEmpty(holdingOrder.OrderId) && holdingOrder.UnexecutedQty > 0)
             {
-                errCode = CancelEquityOrder(string.Format("[EOD Cancel HoldingOrder] StartingQty:{0} UnexecutedQty:{1} OrderId:{2} OrderExecutionStatus:{3} ", holdingOrder.StartingQty, holdingOrder.UnexecutedQty, holdingOrder.OrderId, holdingOrder.Status), ref holdingOrder.OrderId, EquityOrderType.DELIVERY, OrderDirection.SELL);
+                errCode = CancelEquityOrder(string.Format("[EOD Cancel HoldingOrder] StartingQty:{0} UnexecutedQty:{1} OrderExecutionStatus:{2} ", holdingOrder.StartingQty, holdingOrder.UnexecutedQty, holdingOrder.Status), ref holdingOrder.OrderId, EquityOrderType.DELIVERY, OrderDirection.SELL);
 
                 if (errCode == BrokerErrorCode.Success)
                 {

@@ -65,4 +65,6 @@ open points:
 
 8. Bajajfin holding updated is 0, we have 3 qty conversion done. 27 sep. trades appear again somehow after 3.15 pm. Only new trades should come really
 
+9. maxpct loss should be a positive number
+
 
