@@ -195,9 +195,7 @@ namespace UpstoxTrader
                                 if ((todayOutstandingQty + holdingOutstandingQty) >= maxTotalOutstandingQtyAllowed)
                                     Trace(string.Format("TotalOutstandingQty reached the max. todayOutstandingQty: {0} holdingOutstandingQty: {1} maxTotalOutstandingQtyAllowed: {2}", todayOutstandingQty, holdingOutstandingQty, maxTotalOutstandingQtyAllowed));
 
-                                settlementNumber = trade.SettlementNumber;
-
-                                lastBuyPrice = useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder ? todayOutstandingPrice : trade.Price;
+                                lastBuyPrice = trade.Price;
 
                                 if (!string.IsNullOrEmpty(todayOutstandingSellOrderId))
                                 {
@@ -247,7 +245,7 @@ namespace UpstoxTrader
             if (holdingOutstandingQty > 0)
                 finalPrice = Math.Min(finalPrice, holdingOutstandingPrice);
 
-            return Math.Min(calculatedBuyPrice, buyPriceCap);
+            return calculatedBuyPrice;
         }
     }
 }

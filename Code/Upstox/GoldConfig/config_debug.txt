@@ -10,9 +10,9 @@ maxBuyOrdersAllowedInADay,doConvertToDeliveryAtEOD,doSquareOffIfInsufficientLimi
 
 
 
-orderType,BaseOrderAmount,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple
-pctExtraMarkdownForAveraging,buyMarkdownFromLcpDefault,sellMarkup,minProfitMarkup,useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,
-startTime,endTime,Exchange
+orderType,baseOrderVal,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,markDownPctForBuy,markDownPctForAveraging,sellMarkup,placeBuyNoLtpCompare,startTime,endTime,Exchange
+
+stockCode,indicativePrice
 
 ============================
 PnL stats 

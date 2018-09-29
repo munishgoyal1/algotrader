@@ -25,30 +25,18 @@ namespace UpstoxTrader
         public MyUpstoxWrapper myUpstoxWrapper = null;
 
         // Config
-        public double buyPriceCap;
-        public double goodPrice;
         public EquityOrderType orderType;
-        public double pctExtraMarkdownForAveraging;
         public double markDownPctForBuy;
-        public double sellMarkupDefault;
-        public double sellMarkupForDelivery;
-        public double sellMarkupForMinProfit;
-        public double sellMarkupForEODInsufficientLimitSquareOff;
-        public double pctSquareOffForMinProfit;
+        public double markDownPctForAveraging;
+        public double sellMarkup;
+        public double deliveryBrokerage = 0.0035;
         public bool placeBuyNoLtpCompare;
-        public bool squareOffAllPositionsAtEOD;
-        public double pctMaxLossSquareOffPositions;
-        public bool useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder;
-        public bool doConvertToDeliveryAtEOD;
-        public bool doSquareOffIfInsufficientLimitAtEOD;
         public DateTime startTime;
         public DateTime endTime;
         public string stockCode = null;
-        public string isinCode = null;
         public int baseOrdQty = 0;
         public int maxTotalOutstandingQtyAllowed = 0;
         public int maxTodayOutstandingQtyAllowed = 0;
-        public int maxBuyOrdersAllowedInADay = 0;
         public Exchange exchange;
         public string exchStr;
 
@@ -59,8 +47,6 @@ namespace UpstoxTrader
         public double[] priceBucketFactorForQty = new[] { 1.2, 1.3, 1.5, 2, 2.2, 2.4, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4 };
         public double qtyAgressionFactor = 0.5;
         public double[] priceBucketFactorForPrice = new[] { 1, 1.5, 2.6, 4.1, 6, 2 };
-
-
 
         // State
         public double holdingOutstandingPrice = 0;
@@ -80,7 +66,6 @@ namespace UpstoxTrader
         public bool isEODMinLossSquareOffMarketOrderUpdated = false;
         public bool isOutstandingPositionConverted = false;
         public double Ltp;
-        public string settlementNumber = "";
         public OrderStatus upstoxOrderStatus;
 
         public const string orderTraceFormat = "[Place Order {4}]: {5} {0} {1} {2} @ {3} {6}. OrderId = {7}. BrokerOrderStatus={8}";
@@ -102,31 +87,18 @@ namespace UpstoxTrader
             myUpstoxWrapper = tradeParams.upstox;
             tradeParams.stats = pnlStats;
             stockCode = tradeParams.stockCode;
-            isinCode = tradeParams.isinCode;
-            baseOrdQty = tradeParams.ordQty;
+            baseOrdQty = tradeParams.baseOrdQty;
             maxTotalOutstandingQtyAllowed = tradeParams.maxTotalOutstandingQtyAllowed;
             maxTodayOutstandingQtyAllowed = tradeParams.maxTodayOutstandingQtyAllowed;
-            maxBuyOrdersAllowedInADay = tradeParams.maxBuyOrdersAllowedInADay;
             exchange = tradeParams.exchange;
             exchStr = exchange == Exchange.NSE ? "NSE_EQ" : "BSE_EQ";
             positionFile = AlgoUtils.GetPositionFile(stockCode);
 
-            buyPriceCap = tradeParams.buyPriceCap;
-            goodPrice = tradeParams.goodPrice;
             orderType = tradeParams.orderType;
-            pctExtraMarkdownForAveraging = tradeParams.pctExtraMarkdownForAveraging;
-            markDownPctForBuy = tradeParams.buyMarkdownFromLcpDefault;
-            sellMarkupDefault = tradeParams.sellMarkupForMargin;
-            sellMarkupForDelivery = tradeParams.sellMarkupForDelivery;
-            sellMarkupForMinProfit = tradeParams.sellMarkupForMinProfit;
-            sellMarkupForEODInsufficientLimitSquareOff = tradeParams.sellMarkupForEODInsufficientLimitSquareOff;
+            markDownPctForBuy = tradeParams.markDownPctForBuy;
+            markDownPctForAveraging = tradeParams.markDownPctForAveraging;
+            sellMarkup = tradeParams.sellMarkup;
             placeBuyNoLtpCompare = tradeParams.placeBuyNoLtpCompare;
-            squareOffAllPositionsAtEOD = tradeParams.squareOffAllPositionsAtEOD;
-            pctMaxLossSquareOffPositions = tradeParams.pctMaxLossSquareOffPositionsAtEOD;
-            useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = tradeParams.useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder;
-            doConvertToDeliveryAtEOD = tradeParams.doConvertToDeliveryAtEOD;
-            doSquareOffIfInsufficientLimitAtEOD = tradeParams.doSquareOffIfInsufficientLimitAtEOD;
-
             startTime = tradeParams.startTime;
             endTime = tradeParams.endTime;
         }
@@ -186,12 +158,12 @@ namespace UpstoxTrader
             EquitySymbolQuote quote;
             errCode = myUpstoxWrapper.GetSnapQuote(exchStr, stockCode, out quote);
 
-            if(errCode == BrokerErrorCode.Success)
+            if (errCode == BrokerErrorCode.Success)
             {
                 lowerCircuitLimit = quote.LowerCircuitPrice;
                 upperCircuitLimit = quote.UpperCircuitPrice;
             }
-              
+
 
             GetLTPOnDemand(out Ltp);
 
@@ -345,18 +317,15 @@ namespace UpstoxTrader
             return errCode;
         }
 
-        public double GetSellPrice(double price, bool isForDeliveryQty, bool isForMinProfitSquareOff, bool isInsufficientLimitEODSquareOff = false)
+        public double GetSellPrice(double price, bool isForDeliveryQty, bool isForMinProfitSquareOff)
         {
-            var factor = sellMarkupDefault;  // default
+            var factor = sellMarkup;  // default
 
             if (isForDeliveryQty)
-                factor = sellMarkupForDelivery;
+                factor = sellMarkup;
 
             if (isForMinProfitSquareOff)
-                factor = sellMarkupForMinProfit;
-
-            if (isInsufficientLimitEODSquareOff)
-                factor = sellMarkupForEODInsufficientLimitSquareOff;
+                factor = 1 + deliveryBrokerage;
 
             return Math.Round(factor * price, 1);
         }
@@ -449,13 +418,6 @@ namespace UpstoxTrader
             errCode = myUpstoxWrapper.PlaceEquityOrder(exchange, stockCode, orderDirection, orderPriceType, quantity, orderType, price, out orderId, out orderStatus);
 
             Trace(string.Format(orderTraceFormat, stockCode, orderDirection, quantity, price, orderType, errCode, orderPriceType, orderId, orderStatus));
-
-            if (errCode == BrokerErrorCode.Success && orderDirection == OrderDirection.BUY)
-            {
-                todayPositionCount++;
-                if (todayPositionCount >= maxBuyOrdersAllowedInADay)
-                    Trace(string.Format("Buy order count reached is: {0}. Max buy orders allowed: {1}", todayPositionCount, maxBuyOrdersAllowedInADay));
-            }
 
             return errCode;
         }
@@ -594,7 +556,7 @@ namespace UpstoxTrader
             if (MarketUtils.IsTimeAfter3XMin(0))
             {
                 // 3.05 - 3.10 pm time. market order type if must sqoff at EOD and given pct loss is within acceptable range and outstanding price is not a good price to keep holding
-                if (MarketUtils.IsMinutesAfter3Between(5, 10) && squareOffAllPositionsAtEOD && !isEODMinLossSquareOffMarketOrderUpdated)
+                if (MarketUtils.IsMinutesAfter3Between(5, 10) && !isEODMinLossSquareOffMarketOrderUpdated)
                 {
                     double ltp;
                     var errCode = GetLTP(out ltp);
@@ -604,11 +566,9 @@ namespace UpstoxTrader
 
                     var diff = Math.Round((ltp - todayOutstandingPrice) / ltp, 5);
 
-                    //Trace(string.Format("[Margin EOD]: diff {0} ltp {1} outstandingprice {2} pctMaxLossSquareOffPositions {3} goodPrice {4} ", diff, ltp, todayOutstandingPrice, pctMaxLossSquareOffPositions, goodPrice));
-
-                    if (diff > pctMaxLossSquareOffPositions && todayOutstandingPrice > goodPrice)
+                    if (diff > deliveryBrokerage)
                     {
-                        strategy = string.Format("{5}: max loss {0}% is less than {1}% and avg outstanding price {2} is greater than good price of {3}. LTP is {4}. Place squareoff @ MARKET.", diff, pctMaxLossSquareOffPositions, todayOutstandingPrice, goodPrice, ltp, eventType);
+                        strategy = string.Format("{5}: max loss {0}% is less than {1}% . LTP is {2}. Place squareoff @ MARKET.", diff, ltp, eventType);
                         ordPriceType = OrderPriceType.MARKET;
                         updateSellOrder = true;
                         isEODMinLossSquareOffMarketOrderUpdated = true;
