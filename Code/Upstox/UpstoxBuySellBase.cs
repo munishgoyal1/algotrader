@@ -29,7 +29,7 @@ namespace UpstoxTrader
         public double goodPrice;
         public EquityOrderType orderType;
         public double pctExtraMarkdownForAveraging;
-        public double buyMarkdownFromLcpDefault;
+        public double markDownPctForBuy;
         public double sellMarkupDefault;
         public double sellMarkupForDelivery;
         public double sellMarkupForMinProfit;
@@ -54,8 +54,13 @@ namespace UpstoxTrader
 
         public string positionFile;
 
+        // Algo core price calcs parameters
         // 5% buckets
         public double[] priceBucketFactorForQty = new[] { 1.2, 1.3, 1.5, 2, 2.2, 2.4, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4 };
+        public double qtyAgressionFactor = 0.5;
+        public double[] priceBucketFactorForPrice = new[] { 1, 1.5, 2.6, 4.1, 6, 2 };
+
+
 
         // State
         public double holdingOutstandingPrice = 0;
@@ -70,7 +75,7 @@ namespace UpstoxTrader
         public int lastBuyOrdQty = 0;
         public double lastBuyPrice = 0;
         public bool isFirstBuyOrder = true;
-        public int todayBuyOrderCount = 0;
+        public int todayPositionCount = 0;
         public bool isEODMinProfitSquareOffLimitOrderUpdated = false;
         public bool isEODMinLossSquareOffMarketOrderUpdated = false;
         public bool isOutstandingPositionConverted = false;
@@ -110,7 +115,7 @@ namespace UpstoxTrader
             goodPrice = tradeParams.goodPrice;
             orderType = tradeParams.orderType;
             pctExtraMarkdownForAveraging = tradeParams.pctExtraMarkdownForAveraging;
-            buyMarkdownFromLcpDefault = tradeParams.buyMarkdownFromLcpDefault;
+            markDownPctForBuy = tradeParams.buyMarkdownFromLcpDefault;
             sellMarkupDefault = tradeParams.sellMarkupForMargin;
             sellMarkupForDelivery = tradeParams.sellMarkupForDelivery;
             sellMarkupForMinProfit = tradeParams.sellMarkupForMinProfit;
@@ -298,7 +303,7 @@ namespace UpstoxTrader
                 }
             }
 
-            todayBuyOrderCount = buyOrders.Count();
+            todayPositionCount = buyOrders.Count();
         }
 
         protected void ProcessHoldingSellOrderExecution(Dictionary<string, EquityTradeBookRecord> trades)
@@ -359,7 +364,7 @@ namespace UpstoxTrader
         // TODO: refactor.. not being used currently
         public double GetBuyPrice(double ltp, bool isTodayFirstOrder, bool doesHoldingPositionExist)
         {
-            var factor = 1 - buyMarkdownFromLcpDefault;  // default
+            var factor = 1 - markDownPctForBuy;  // default
 
             //if (!isTodayFirstOrder)
             //    factor = sellMarkupForDelivery;
@@ -434,15 +439,22 @@ namespace UpstoxTrader
                 return BrokerErrorCode.OutsidePriceRange;
             }
 
+            if (quantity <= 0)
+            {
+                Trace(string.Format("quantity {0} is invalid, Not placing order", quantity));
+                return BrokerErrorCode.InvalidLotSize;
+            }
+
+
             errCode = myUpstoxWrapper.PlaceEquityOrder(exchange, stockCode, orderDirection, orderPriceType, quantity, orderType, price, out orderId, out orderStatus);
 
             Trace(string.Format(orderTraceFormat, stockCode, orderDirection, quantity, price, orderType, errCode, orderPriceType, orderId, orderStatus));
 
             if (errCode == BrokerErrorCode.Success && orderDirection == OrderDirection.BUY)
             {
-                todayBuyOrderCount++;
-                if (todayBuyOrderCount >= maxBuyOrdersAllowedInADay)
-                    Trace(string.Format("Buy order count reached is: {0}. Max buy orders allowed: {1}", todayBuyOrderCount, maxBuyOrdersAllowedInADay));
+                todayPositionCount++;
+                if (todayPositionCount >= maxBuyOrdersAllowedInADay)
+                    Trace(string.Format("Buy order count reached is: {0}. Max buy orders allowed: {1}", todayPositionCount, maxBuyOrdersAllowedInADay));
             }
 
             return errCode;
