@@ -64,7 +64,10 @@ namespace UpstoxTrader
             var upstoxBroker = new MyUpstoxWrapper(apiKey, apiSecret, redirectUrl);
 
 #if DEBUG
-            Trace("DEBUG MODE"); errCode = upstoxBroker.Login1();
+            Trace("DEBUG MODE");
+            List<UpstoxTradeParams> stocksConfig1 = ReadTradingConfigFile();
+
+            errCode = upstoxBroker.Login1();
 #else
             Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
 #endif
@@ -167,8 +170,7 @@ namespace UpstoxTrader
                 string pnlFilePath = Path.Combine(filesPath, stockCode + "_pnl.txt");
 
                 var configToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7}", stockConfig.stockCode, stockConfig.indicativePrice,
-                        stockConfig.markDownPctForBuy,
-                        stockConfig.sellMarkup, stockConfig.markDownPctForAveraging,
+                        stockConfig.markDownPctForBuy, stockConfig.markDownPctForAveraging, stockConfig.sellMarkup,
                         stockConfig.placeBuyNoLtpCompare, stockConfig.startTime.ToString("hh:mm"));
 
                 if (!File.Exists(pnlFilePath))

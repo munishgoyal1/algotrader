@@ -1,46 +1,46 @@
-stockCode, goodprice, buyPriceCap (in stock lines below) and then the commonconfig as follows:  orderType, maxTradeValue,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,buyMarkdownFromLcpDefault,sellMarkupForMargin,sellMarkupForDelivery,pctExtraMarkdownForAveraging,sellMarkupForMinProfit,placeBuyNoLtpCompare,squareOffAllPositionsAtEOD,pctMaxLossSquareOffPositionsAtEOD,useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,startTime,endTime,Exchange,sellMarkupForEODInsufficientLimitSquareOff,maxBuyOrdersAllowedInADay,doConvertToDeliveryAtEOD,doSquareOffIfInsufficientLimitAtEOD
-MARGIN,400,20,10,0.005,1.005,1.01,0.005,1.003,false,true,-0.001,false,09:00:00,15:00:00,NSE,0.995,100,true,false
-ZEEL,450,500,MARGIN,500,,,0.01,1.005,1.01,0.01,,true
-SUNPHARMA,600,700,MARGIN,700,,,0.01,1.005,1.01,0.01,,true
+stockCode, indicativePrice (in stock lines below) and then the commonconfig as follows: orderType,baseOrderVal,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,markDownPctForBuy,markDownPctForAveraging,sellMarkup,placeBuyNoLtpCompare,startTime,endTime,Exchange
+MARGIN,400,30,15,0.005,0.005,1.01,false,09:00:00,15:00:00,NSE
+ZEEL,450,MARGIN,500,,,0.01,0.01,1.01,true
+SUNPHARMA,600,MARGIN,700,,,0.01,0.01,1.005,true
 #
 # high volatile so let market stabilize for 5 min. could also increase the markdowns
 #
-IBULHSGFIN,1100,1300,MARGIN,1200,,,0.01,1.01,1.01,0.01,,false,,,,09:20:00
-INFY,700,800,MARGIN,800,,,0.005,1.005,1.01,0.01,,true,,,,09:20:00
-ADANIPORTS,350,400,MARGIN,400,,,0.01,1.01,1.01,0.01,,true,,,,09:20:00
-INDUSINDBK,1800,2000,MARGIN,2000,,,0.0075,1.0075,1.01,0.01,,true,,,,09:20:00
-PCJEWELLER,75,90,MARGIN,100,,,0.0075,1.0075,1.01,0.01,,true,,,,09:20:00
+IBULHSGFIN,1100,MARGIN,1200,,,0.01,0.01,1.01,false,09:20:00
+ADANIPORTS,350,MARGIN,400,,,0.01,0.01,1.01,true,09:20:00
+INDUSINDBK,1800,MARGIN,2000,,,0.0075,0.01,1.01,true,09:20:00
+PCJEWELLER,75,MARGIN,100,,,0.0075,0.01,1.0075,true,09:20:00
 #
 # stock where we want to average and they have long term uptrend
 #
-BIOCON,600,700,MARGIN,1000,,,0.01,1.01,1.01,0.01
-BAJFINANCE,2500,3000,MARGIN,3000,,,0.01,1.01,1.01,0.02
+BIOCON,600,MARGIN,1000,,,0.01,0.01,1.01
+BAJFINANCE,2500,MARGIN,3000,,,0.01,0.02,1.01
 #
 # Highly volatile big range. Buy at deep low sell fast
 #
-CAPLIPOINT,400,550,DELIVERY,500,,,0.02,1.01,1.01,0.015
+CAPLIPOINT,400,DELIVERY,500,,,0.02,0.015,1.01
+UJJIVAN,250,MARGIN,300,,,0.015,0.02,1.015
 #
-# Not sure of range. Play safe
+# Not sure of range. Play safe. Buy deep low Sell fast
 #
-IGL,250,300,MARGIN,300,,,0.02,1.025,1.025,0.02
-AMARAJABAT,800,900,MARGIN,1000,,,0.02,1.025,1.025,0.02
+IGL,250,MARGIN,300,,,0.02,0.02,1.025
+AMARAJABAT,800,MARGIN,1000,,,0.02,0.02,1.025
 #
 # Low volatile range bound. So try small multiple trades
 #
-ITC,310,330
-TATAMOTORS,260,295
-BERGEPAINT,285,310
-UJJIVAN,325,375
-IDFCBANK,45,55,MARGIN,60
-FEDERALBNK,75,95,MARGIN,100
+ITC,310,MARGIN,400
+TATAMOTORS,260,,600,50,15
+BERGEPAINT,285,MARGIN,350
+IDFCBANK,45,MARGIN,60
+FEDERALBNK,75,MARGIN,100
 #
 # Long term volatile short term range bound. Buy Low sell with small profit
 #
-DLF,185,225,MARGIN,250,,,0.015,1.005,1.005,0.025
+DLF,185,MARGIN,250,,,0.015,0.025,1.005
 #
-# Fast trading. Stable Bluechip
+# Fast trading. Stable Bluechip. Let rates stabilize
 #
-RELIANCE,1150,1300,MARGIN,1200,,,0.0025,1.0025,1.005,0.01,,true,,,,09:20:00
-SBIN,250,300,MARGIN,300,,,0.0015,1.0015,1.005,0.02,,true,,,,09:30:00
-HDFCBANK,2000,2100,MARGIN,2200,,,0.001,1.001,1.005,0.02,,true,,,,09:30:00
-M&M,900,1000,MARGIN,1000,,,0.001,1.001,1.005,0.02,,true,,,,09:20:00
+RELIANCE,1150,MARGIN,1200,,,0.0025,0.005,1.0025,true,09:20:00
+SBIN,250,MARGIN,300,,,0.0015,0.005,1.0015,true,09:30:00
+HDFCBANK,2000,MARGIN,2200,,,0.001,0.005,1.005,true,09:30:00
+M&M,900,MARGIN,1000,,,0.001,0.005,1.001,true,09:20:00
+INFY,700,MARGIN,800,,,0.005,0.005,1.005,true,09:20:00

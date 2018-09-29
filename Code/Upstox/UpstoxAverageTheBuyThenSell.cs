@@ -234,18 +234,5 @@ namespace UpstoxTrader
 
             EODProcess(true); // EOD final update
         }
-
-        // TODO: refactor.. not being used currently
-        public new double GetBuyPrice(double ltp, bool isTodayFirstOrder, bool doesHoldingPositionExist)
-        {
-            var calculatedBuyPrice = base.GetBuyPrice(ltp, isTodayFirstOrder, doesHoldingPositionExist);
-
-            var finalPrice = Math.Min(calculatedBuyPrice, holdingOutstandingPrice);
-
-            if (holdingOutstandingQty > 0)
-                finalPrice = Math.Min(finalPrice, holdingOutstandingPrice);
-
-            return calculatedBuyPrice;
-        }
     }
 }

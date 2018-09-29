@@ -319,31 +319,16 @@ namespace UpstoxTrader
 
         public double GetSellPrice(double price, bool isForDeliveryQty, bool isForMinProfitSquareOff)
         {
-            var factor = sellMarkup;  // default
+            var factor = sellMarkup;
 
             if (isForDeliveryQty)
-                factor = sellMarkup;
+                factor = sellMarkup + deliveryBrokerage;
 
             if (isForMinProfitSquareOff)
                 factor = 1 + deliveryBrokerage;
 
             return Math.Round(factor * price, 1);
         }
-
-        // TODO: refactor.. not being used currently
-        public double GetBuyPrice(double ltp, bool isTodayFirstOrder, bool doesHoldingPositionExist)
-        {
-            var factor = 1 - markDownPctForBuy;  // default
-
-            //if (!isTodayFirstOrder)
-            //    factor = sellMarkupForDelivery;
-
-            //if (doesHoldingPositionExist)
-            //    factor = sellMarkupForMinProfit;
-
-            return Math.Round(factor * ltp, 1);
-        }
-
 
         public BrokerErrorCode GetLTP(out double ltp)
         {
