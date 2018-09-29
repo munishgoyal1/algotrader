@@ -45,7 +45,7 @@ namespace UpstoxTrader
         public DateTime endTime;
         public string stockCode = null;
         public string isinCode = null;
-        public int ordQty = 0;
+        public int baseOrdQty = 0;
         public int maxTotalOutstandingQtyAllowed = 0;
         public int maxTodayOutstandingQtyAllowed = 0;
         public int maxBuyOrdersAllowedInADay = 0;
@@ -53,6 +53,9 @@ namespace UpstoxTrader
         public string exchStr;
 
         public string positionFile;
+
+        // 5% buckets
+        public double[] priceBucketFactorForQty = new[] { 1.2, 1.3, 1.5, 2, 2.2, 2.4, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4 };
 
         // State
         public double holdingOutstandingPrice = 0;
@@ -62,7 +65,6 @@ namespace UpstoxTrader
         public string todayOutstandingBuyOrderId = ""; // outstanding buy order Id
         public string todayOutstandingSellOrderId = "";// outstanding sell order Id
         public HoldingOrder holdingOrder = new HoldingOrder();
-
         public double lowerCircuitLimit;
         public double upperCircuitLimit;
         public int lastBuyOrdQty = 0;
@@ -96,7 +98,7 @@ namespace UpstoxTrader
             tradeParams.stats = pnlStats;
             stockCode = tradeParams.stockCode;
             isinCode = tradeParams.isinCode;
-            ordQty = tradeParams.ordQty;
+            baseOrdQty = tradeParams.ordQty;
             maxTotalOutstandingQtyAllowed = tradeParams.maxTotalOutstandingQtyAllowed;
             maxTodayOutstandingQtyAllowed = tradeParams.maxTodayOutstandingQtyAllowed;
             maxBuyOrdersAllowedInADay = tradeParams.maxBuyOrdersAllowedInADay;
@@ -228,7 +230,7 @@ namespace UpstoxTrader
             int outstandingAttritbutionOrderCount = 0;
             while (qtyTotal < todayOutstandingQty)
             {
-                qtyTotal += (ordQty * ++outstandingAttritbutionOrderCount);
+                qtyTotal += (baseOrdQty * ++outstandingAttritbutionOrderCount);
             }
 
             // these are latest trades taken. each buy trade is for single lot and thus for each lot there is a trade

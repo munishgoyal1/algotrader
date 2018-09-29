@@ -8,6 +8,12 @@ squareOffAllPositionsAtEOD,pctMaxLossSquareOffPositionsAtEOD,useAvgBuyPriceInste
 startTime,endTime,Exchange,sellMarkupForEODInsufficientLimitSquareOff,
 maxBuyOrdersAllowedInADay,doConvertToDeliveryAtEOD,doSquareOffIfInsufficientLimitAtEOD
 
+
+
+orderType,BaseOrderAmount,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple
+pctExtraMarkdownForAveraging,buyMarkdownFromLcpDefault,sellMarkup,minProfitMarkup,useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder,
+startTime,endTime,Exchange
+
 ============================
 PnL stats 
 ============================
