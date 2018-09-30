@@ -43,10 +43,10 @@ namespace UpstoxTrader
         public string positionFile;
 
         // Algo core price calcs parameters
-        // 5% buckets
-        public double[] priceBucketFactorForQty = new[] { 1.2, 1.3, 1.5, 2, 2.2, 2.4, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4 };
-        public double qtyAgressionFactor = 0.5;
-        public double[] priceBucketFactorForPrice = new[] { 1, 1.5, 2.6, 4.1, 6, 2 };
+        public double priceBucketWidthForQty;
+        public double[] priceBucketFactorForQty;
+        public double qtyAgressionFactor;
+        public double[] priceBucketFactorForPrice;
 
         // State
         public double holdingOutstandingPrice = 0;
@@ -101,6 +101,11 @@ namespace UpstoxTrader
             placeBuyNoLtpCompare = tradeParams.placeBuyNoLtpCompare;
             startTime = tradeParams.startTime;
             endTime = tradeParams.endTime;
+
+            priceBucketWidthForQty = tradeParams.priceBucketWidthForQty;
+            priceBucketFactorForQty = tradeParams.priceBucketFactorForQty;
+            qtyAgressionFactor = tradeParams.qtyAgressionFactor;
+            priceBucketFactorForPrice = tradeParams.priceBucketFactorForPrice;
         }
 
         public bool IsOrderTimeWithinRange()

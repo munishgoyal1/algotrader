@@ -92,7 +92,7 @@ namespace UpstoxTrader
 #if !DEBUG
             MarketUtils.WaitUntilMarketOpen();
 #endif
-           
+
             Thread.Sleep(5000);// Let the rates etc update on server
 
             // Read the config file
@@ -169,9 +169,10 @@ namespace UpstoxTrader
 
                 string pnlFilePath = Path.Combine(filesPath, stockCode + "_pnl.txt");
 
-                var configToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7}", stockConfig.stockCode, stockConfig.indicativePrice,
+                var configToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}", stockConfig.stockCode,
                         stockConfig.markDownPctForBuy, stockConfig.markDownPctForAveraging, stockConfig.sellMarkup,
-                        stockConfig.placeBuyNoLtpCompare, stockConfig.startTime.ToString("hh:mm"));
+                        stockConfig.placeBuyNoLtpCompare, stockConfig.startTime.ToString("hh:mm"), stockConfig.priceBucketWidthForQty, stockConfig.qtyAgressionFactor,
+                        string.Join(":",stockConfig.priceBucketFactorForPrice), string.Join(";", stockConfig.priceBucketFactorForQty));
 
                 if (!File.Exists(pnlFilePath))
                 {
@@ -395,39 +396,72 @@ namespace UpstoxTrader
         public static List<UpstoxTradeParams> ReadTradingConfigFile()
         {
             var filesPath = SystemUtils.GetStockFilesPath();
-
             string configFilePath = Path.Combine(filesPath, "stocktradingconfig.txt");
+            int Index = -1;
+            var ctp = new UpstoxTradeParams();
+
+            double priceBucketWidthForQty = 0;
+            double[] priceBucketFactorForQty = new[]{ 0.0};
+            double qtyAgressionFactor = 0;
+            double[] priceBucketFactorForPrice = new[] { 0.0 };
+            double deliveryBrokerage = 0;
 
             var lines = File.ReadAllLines(configFilePath);
-            var common = lines[1].Split(',');
-
-            List<UpstoxTradeParams> tps = new List<UpstoxTradeParams>(lines.Length);
-
-            int Index = -1;
-            var ctp = new UpstoxTradeParams
+ 
+            // Common config
+            foreach (var line in lines.Where(l => !string.IsNullOrEmpty(l.Trim()) && l.Trim().StartsWith("@")))
             {
-                stockCode = "COMMONCONFIG",
-                orderType = (EquityOrderType)Enum.Parse(typeof(EquityOrderType), common[++Index]),
-                baseOrderVal = double.Parse(common[++Index]),
-                maxTotalPositionValueMultiple = int.Parse(common[++Index]),
-                maxTodayPositionValueMultiple = int.Parse(common[++Index]),
-                markDownPctForBuy = double.Parse(common[++Index]),
-                markDownPctForAveraging = double.Parse(common[++Index]),
-                sellMarkup = double.Parse(common[++Index]),
-                placeBuyNoLtpCompare = bool.Parse(common[++Index]),
-                startTime = GeneralUtils.GetTodayDateTime(common[++Index]),
-                endTime = GeneralUtils.GetTodayDateTime(common[++Index]),
-                exchange = (Exchange)Enum.Parse(typeof(Exchange), common[++Index])
-            };
+                var split = line.Split('=');
 
-            for (int i = 2; i < lines.Length; i++)
+                switch (split[0].Trim())
+                {
+                    case "@priceBucketWidthForQty":
+                        priceBucketWidthForQty = double.Parse(split[1]);
+                        break;
+
+                    case "@qtyAgressionFactor":
+                        qtyAgressionFactor = double.Parse(split[1]);
+                        break;
+
+                    case "@priceBucketFactorForQty":
+                        priceBucketFactorForQty = split[1].Split(',').Select(a => double.Parse(a)).ToArray();
+                        break;
+
+                    case "@priceBucketFactorForPrice":
+                        priceBucketFactorForPrice = split[1].Split(',').Select(a => double.Parse(a)).ToArray();
+                        break;
+
+                    case "@deliveryBrokerage":
+                        deliveryBrokerage = double.Parse(split[1]);
+                        break;
+
+                    case "@commonStock":
+                        var common = split[1].Split(',');
+                        Index = -1;
+                        ctp.stockCode = "COMMONCONFIG";
+                        ctp.orderType = (EquityOrderType)Enum.Parse(typeof(EquityOrderType), common[++Index]);
+                        ctp.baseOrderVal = double.Parse(common[++Index]);
+                        ctp.maxTotalPositionValueMultiple = int.Parse(common[++Index]);
+                        ctp.maxTodayPositionValueMultiple = int.Parse(common[++Index]);
+                        ctp.markDownPctForBuy = double.Parse(common[++Index]);
+                        ctp.markDownPctForAveraging = double.Parse(common[++Index]);
+                        ctp.sellMarkup = double.Parse(common[++Index]);
+                        ctp.placeBuyNoLtpCompare = bool.Parse(common[++Index]);
+                        ctp.startTime = GeneralUtils.GetTodayDateTime(common[++Index]);
+                        ctp.endTime = GeneralUtils.GetTodayDateTime(common[++Index]);
+                        ctp.exchange = (Exchange)Enum.Parse(typeof(Exchange), common[++Index]);
+                        break;
+                }
+
+            }
+
+            // Stocks config
+            List<UpstoxTradeParams> tps = new List<UpstoxTradeParams>(lines.Length);
+            foreach (var line in lines.Where(l => !string.IsNullOrEmpty(l.Trim()) && !(l.Trim().StartsWith("#") || l.Trim().StartsWith("@"))))
             {
                 Index = -1;
-                var stock = lines[i].Split(',');
-                var stockCode = stock[++Index];//0
-                if (stockCode.Trim().StartsWith("#"))
-                    continue;
-
+                var stock = line.Split(',');
+                var stockCode = stock[++Index];
                 var indicativePrice = double.Parse(stock[++Index]);//1
                 var orderType = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.orderType : (EquityOrderType)Enum.Parse(typeof(EquityOrderType), stock[Index])) : ctp.orderType;//22
                 var baseOrderVal = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.baseOrderVal : double.Parse(stock[Index])) : ctp.baseOrderVal;//3
@@ -453,6 +487,12 @@ namespace UpstoxTrader
                     endTime = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.endTime : GeneralUtils.GetTodayDateTime(stock[Index])) : ctp.endTime,//16
                     exchange = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.exchange : (Exchange)Enum.Parse(typeof(Exchange), stock[Index])) : ctp.exchange
                 };
+
+                tp.deliveryBrokerage = deliveryBrokerage;
+                tp.priceBucketWidthForQty = priceBucketWidthForQty;
+                tp.priceBucketFactorForQty = priceBucketFactorForQty;
+                tp.qtyAgressionFactor = qtyAgressionFactor;
+                tp.priceBucketFactorForPrice = priceBucketFactorForPrice;
 
                 tps.Add(tp);
             }
@@ -492,9 +532,14 @@ namespace UpstoxTrader
         public MyUpstoxWrapper upstox;
         public UpstoxPnLStats stats = new UpstoxPnLStats();
 
+        // common algo config
+        public double priceBucketWidthForQty;
+        public double[] priceBucketFactorForQty;
+        public double qtyAgressionFactor;
+        public double[] priceBucketFactorForPrice;
+
         public string stockCode;
         public double baseOrderVal = 50000;
-        public double indicativePrice = 0;
         public int maxTotalPositionValueMultiple = 4;
         public int maxTodayPositionValueMultiple = 2;
         public int baseOrdQty;
