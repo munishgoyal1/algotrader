@@ -43,10 +43,10 @@ namespace UpstoxTrader
         public string positionFile;
 
         // Algo core price calcs parameters
-        public double priceBucketWidthForQty;
-        public double[] priceBucketFactorForQty;
+        public double priceBucketWidthInPctForQty;
+        public double[] priceBucketsForQty;
         public double qtyAgressionFactor;
-        public double[] priceBucketFactorForPrice;
+        public double[] priceBucketsForPrice;
 
         // State
         public double holdingOutstandingPrice = 0;
@@ -61,7 +61,7 @@ namespace UpstoxTrader
         public int lastBuyOrdQty = 0;
         public double lastBuyPrice = 0;
         public bool isFirstBuyOrder = true;
-        public int todayPositionCount = 0;
+        public int todayOutstandingTradeCount = 0;
         public bool isEODMinProfitSquareOffLimitOrderUpdated = false;
         public bool isEODMinLossSquareOffMarketOrderUpdated = false;
         public bool isOutstandingPositionConverted = false;
@@ -102,10 +102,10 @@ namespace UpstoxTrader
             startTime = tradeParams.startTime;
             endTime = tradeParams.endTime;
 
-            priceBucketWidthForQty = tradeParams.priceBucketWidthForQty;
-            priceBucketFactorForQty = tradeParams.priceBucketFactorForQty;
+            priceBucketWidthInPctForQty = tradeParams.priceBucketWidthForQty;
+            priceBucketsForQty = tradeParams.priceBucketsForQty;
             qtyAgressionFactor = tradeParams.qtyAgressionFactor;
-            priceBucketFactorForPrice = tradeParams.priceBucketFactorForPrice;
+            priceBucketsForPrice = tradeParams.priceBucketsForPrice;
         }
 
         public bool IsOrderTimeWithinRange()
@@ -282,7 +282,7 @@ namespace UpstoxTrader
                 }
             }
 
-            todayPositionCount = buyOrders.Count();
+            todayOutstandingTradeCount = buyOrders.Count();
         }
 
         protected void ProcessHoldingSellOrderExecution(Dictionary<string, EquityTradeBookRecord> trades)
@@ -394,7 +394,7 @@ namespace UpstoxTrader
             orderStatus = OrderStatus.UNKNOWN;
             orderId = "";
 
-            if (orderPriceType == OrderPriceType.LIMIT && (price < lowerCircuitLimit || price > upperCircuitLimit))
+            if (orderPriceType == OrderPriceType.LIMIT && ((lowerCircuitLimit > 0 && price < lowerCircuitLimit) || (upperCircuitLimit > 0 && price > upperCircuitLimit)))
             {
                 Trace(string.Format("orderPrice {0} is outside circuit limits of lowerCircuitLimit {1} upperCircuitLimit {2}, Not placing order", price, lowerCircuitLimit, upperCircuitLimit));
                 return BrokerErrorCode.OutsidePriceRange;
@@ -511,7 +511,8 @@ namespace UpstoxTrader
                     if (errCode == BrokerErrorCode.Success)
                     {
                         // place new sell order, update sell order ref
-                        var sellPrice = GetSellPrice(todayOutstandingPrice, false, true);
+                        var isForMinProfitSqOff = MarketUtils.IsTimeAfter3XMin(10) ? true : false;
+                        var sellPrice = GetSellPrice(todayOutstandingPrice, false, isForMinProfitSqOff);
                         errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, ordPriceType, todayOutstandingQty, equityOrderType, sellPrice, out todayOutstandingSellOrderId, out upstoxOrderStatus);
                     }
                 }

@@ -1,0 +1,642 @@
+10/3/2018 9:13:23 AM::: RELEASE MODE
+
+10/3/2018 9:13:57 AM::: 126130
+
+10/3/2018 9:15:06 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP 440, calculatedToBuyPrice 435.6, lastPriceToCompareWith 440, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 440, calculatedToBuyPrice 435.6,
+                    lastBuyPrice 0, LTP 440, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:06 AM::: UpstoxAverageTheBuyThenSell ZEEL orderPrice 435.6 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:06 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA orderPrice 640 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:07 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 637, calculatedToBuyPrice 630.6, lastPriceToCompareWith 637, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.54, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 637, calculatedToBuyPrice 630.6,
+                    lastBuyPrice 634.6, LTP 637, totalAvgHoldingPrice 634.6, totalOutstandingQty 1, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:07 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA orderPrice 630.6 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:07 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN orderPrice 977.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:07 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS orderPrice 349.8 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:08 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK orderPrice 1732.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:09 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER orderPrice 70.6 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:11 AM::: UpstoxAverageTheBuyThenSell BIOCON LTP 679.9, calculatedToBuyPrice 673.1, lastPriceToCompareWith 679.9, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 679.9, calculatedToBuyPrice 673.1,
+                    lastBuyPrice 0, LTP 679.9, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 60, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:11 AM::: UpstoxAverageTheBuyThenSell BIOCON orderPrice 673.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:17 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE orderPrice 2280.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:22 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT orderPrice 499.5 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:24 AM::: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 292.5 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:24 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE LTP 2169.95, calculatedToBuyPrice 2148.3, lastPriceToCompareWith 2169.95, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.681, priceFactorCalcForQty 0.181, priceFactorFinalForQty 0.181, qtyFactorCalcForQty 1.5, qtyFactorFinalForQty 1.5, qtyAgressionFactor 0.5, priceToCompare 2250, calculatedToBuyPrice 2148.3,
+                    lastBuyPrice 2250, LTP 2169.95, totalAvgHoldingPrice 2250, totalOutstandingQty 3, priceDiffMultiple 0.15, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:24 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE orderPrice 2148.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:24 AM::: UpstoxAverageTheBuyThenSell IGL orderPrice 258.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:25 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT orderPrice 769.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:25 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP 440.75, calculatedToBuyPrice 436.3, lastPriceToCompareWith 440.75, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 440.75, calculatedToBuyPrice 436.3,
+                    lastBuyPrice 0, LTP 440.75, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:25 AM::: UpstoxAverageTheBuyThenSell ZEEL orderPrice 436.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:25 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 637.15, calculatedToBuyPrice 630.8, lastPriceToCompareWith 637.15, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.54, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 637.15, calculatedToBuyPrice 630.8,
+                    lastBuyPrice 634.6, LTP 637.15, totalAvgHoldingPrice 634.6, totalOutstandingQty 1, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:25 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA orderPrice 630.8 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:25 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 426.3, calculatedToBuyPrice 417.8, lastPriceToCompareWith 426.3, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.609, priceFactorCalcForQty 0.609, priceFactorFinalForQty 0.609, qtyFactorCalcForQty 1, qtyFactorFinalForQty 1, qtyAgressionFactor 0.5, priceToCompare 492.85, calculatedToBuyPrice 417.8,
+                    lastBuyPrice 492.85, LTP 426.3, totalAvgHoldingPrice 492.85, totalOutstandingQty 2, priceDiffMultiple 0.51, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:15:25 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT orderPrice 417.8 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:25 AM::: UpstoxAverageTheBuyThenSell ITC orderPrice 303.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:26 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 252.65, calculatedToBuyPrice 248.9, lastPriceToCompareWith 252.65, calculatedOrderQty 6, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 6, qtyCurve 6.533, priceFactorCalcForQty 0.533, priceFactorFinalForQty 0.533, qtyFactorCalcForQty 6, qtyFactorFinalForQty 6, qtyAgressionFactor 0.5, priceToCompare 287.16, calculatedToBuyPrice 248.9,
+                    lastBuyPrice 287.16, LTP 252.65, totalAvgHoldingPrice 287.16, totalOutstandingQty 12, priceDiffMultiple 0.44, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:15:26 AM::: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 248.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:26 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS orderPrice 241.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:26 AM::: UpstoxAverageTheBuyThenSell IGL LTP 247.15, calculatedToBuyPrice 242.2, lastPriceToCompareWith 247.15, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.639, priceFactorCalcForQty 0.139, priceFactorFinalForQty 0.139, qtyFactorCalcForQty 2.5, qtyFactorFinalForQty 2.5, qtyAgressionFactor 0.5, priceToCompare 250.92, calculatedToBuyPrice 242.2,
+                    lastBuyPrice 250.92, LTP 247.15, totalAvgHoldingPrice 250.92, totalOutstandingQty 5, priceDiffMultiple 0.12, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:15:26 AM::: UpstoxAverageTheBuyThenSell IGL orderPrice 242.2 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:26 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 282.35, calculatedToBuyPrice 280.9, lastPriceToCompareWith 282.35, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.021, priceFactorCalcForQty 0.021, priceFactorFinalForQty 0.021, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 282.35, calculatedToBuyPrice 280.9,
+                    lastBuyPrice 0, LTP 282.35, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.02, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:26 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT orderPrice 280.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:26 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT LTP 730.35, calculatedToBuyPrice 715.7, lastPriceToCompareWith 730.35, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.676, priceFactorCalcForQty 0.176, priceFactorFinalForQty 0.176, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 748.6, calculatedToBuyPrice 715.7,
+                    lastBuyPrice 748.6, LTP 730.35, totalAvgHoldingPrice 748.6, totalOutstandingQty 1, priceDiffMultiple 0.15, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:15:26 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT orderPrice 715.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell IDFCBANK orderPrice 42.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK orderPrice 78 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell ITC LTP 295.95, calculatedToBuyPrice 294.5, lastPriceToCompareWith 295.95, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.061, priceFactorCalcForQty 0.061, priceFactorFinalForQty 0.061, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 299.05, calculatedToBuyPrice 294.5,
+                    lastBuyPrice 299.05, LTP 295.95, totalAvgHoldingPrice 299.05, totalOutstandingQty 4, priceDiffMultiple 0.05, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell ITC orderPrice 294.5 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell DLF orderPrice 180.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 227.85, calculatedToBuyPrice 226.7, lastPriceToCompareWith 227.85, calculatedOrderQty 20, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 20, qtyCurve 10.191, priceFactorCalcForQty 0.191, priceFactorFinalForQty 0.191, qtyFactorCalcForQty 10, qtyFactorFinalForQty 10, qtyAgressionFactor 0.5, priceToCompare 238.07, calculatedToBuyPrice 226.7,
+                    lastBuyPrice 238.07, LTP 227.85, totalAvgHoldingPrice 238.07, totalOutstandingQty 40, priceDiffMultiple 0.16, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 100, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS orderPrice 226.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell BIOCON LTP 678.5, calculatedToBuyPrice 671.7, lastPriceToCompareWith 678.5, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 678.5, calculatedToBuyPrice 671.7,
+                    lastBuyPrice 0, LTP 678.5, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 60, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:27 AM::: UpstoxAverageTheBuyThenSell BIOCON orderPrice 671.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:28 AM::: UpstoxAverageTheBuyThenSell M&M orderPrice 933.2 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:28 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 37.15, calculatedToBuyPrice 37, lastPriceToCompareWith 37.15, calculatedOrderQty 7, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 7, qtyCurve 11.933, priceFactorCalcForQty 0.433, priceFactorFinalForQty 0.433, qtyFactorCalcForQty 11.5, qtyFactorFinalForQty 11.5, qtyAgressionFactor 0.5, priceToCompare 41.49, calculatedToBuyPrice 37,
+                    lastBuyPrice 41.49, LTP 37.15, totalAvgHoldingPrice 41.49, totalOutstandingQty 23, priceDiffMultiple 0.36, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:28 AM::: UpstoxAverageTheBuyThenSell IDFCBANK orderPrice 37 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:28 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 72.3, calculatedToBuyPrice 71.9, lastPriceToCompareWith 72.3, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.265, priceFactorCalcForQty 0.265, priceFactorFinalForQty 0.265, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 77, calculatedToBuyPrice 71.9,
+                    lastBuyPrice 77, LTP 72.3, totalAvgHoldingPrice 77, totalOutstandingQty 4, priceDiffMultiple 0.22, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:28 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK orderPrice 71.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:28 AM::: UpstoxAverageTheBuyThenSell DLF LTP 156, calculatedToBuyPrice 153.7, lastPriceToCompareWith 156, calculatedOrderQty 4, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 4, qtyCurve 4.061, priceFactorCalcForQty 0.561, priceFactorFinalForQty 0.561, qtyFactorCalcForQty 3.5, qtyFactorFinalForQty 3.5, qtyAgressionFactor 0.5, priceToCompare 178.79, calculatedToBuyPrice 153.7,
+                    lastBuyPrice 178.79, LTP 156, totalAvgHoldingPrice 178.79, totalOutstandingQty 7, priceDiffMultiple 0.47, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:15:28 AM::: UpstoxAverageTheBuyThenSell DLF orderPrice 153.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:39 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE LTP 2178.05, calculatedToBuyPrice 2156.3, lastPriceToCompareWith 2178.05, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.667, priceFactorCalcForQty 0.167, priceFactorFinalForQty 0.167, qtyFactorCalcForQty 1.5, qtyFactorFinalForQty 1.5, qtyAgressionFactor 0.5, priceToCompare 2250, calculatedToBuyPrice 2156.3,
+                    lastBuyPrice 2250, LTP 2178.05, totalAvgHoldingPrice 2250, totalOutstandingQty 3, priceDiffMultiple 0.14, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:39 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE orderPrice 2156.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:40 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP 441.3, calculatedToBuyPrice 436.9, lastPriceToCompareWith 441.3, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 441.3, calculatedToBuyPrice 436.9,
+                    lastBuyPrice 0, LTP 441.3, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:40 AM::: UpstoxAverageTheBuyThenSell ZEEL orderPrice 436.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:40 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 636.5, calculatedToBuyPrice 630.1, lastPriceToCompareWith 636.5, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.54, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 636.5, calculatedToBuyPrice 630.1,
+                    lastBuyPrice 634.6, LTP 636.5, totalAvgHoldingPrice 634.6, totalOutstandingQty 1, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:40 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA orderPrice 630.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:41 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 422.4, calculatedToBuyPrice 414, lastPriceToCompareWith 422.4, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.64, priceFactorCalcForQty 0.64, priceFactorFinalForQty 0.64, qtyFactorCalcForQty 1, qtyFactorFinalForQty 1, qtyAgressionFactor 0.5, priceToCompare 492.85, calculatedToBuyPrice 414,
+                    lastBuyPrice 492.85, LTP 422.4, totalAvgHoldingPrice 492.85, totalOutstandingQty 2, priceDiffMultiple 0.53, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:15:41 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT orderPrice 414 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:41 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 251.6, calculatedToBuyPrice 247.8, lastPriceToCompareWith 251.6, calculatedOrderQty 6, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 6, qtyCurve 6.548, priceFactorCalcForQty 0.548, priceFactorFinalForQty 0.548, qtyFactorCalcForQty 6, qtyFactorFinalForQty 6, qtyAgressionFactor 0.5, priceToCompare 287.16, calculatedToBuyPrice 247.8,
+                    lastBuyPrice 287.16, LTP 251.6, totalAvgHoldingPrice 287.16, totalOutstandingQty 12, priceDiffMultiple 0.46, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:15:41 AM::: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 247.8 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:41 AM::: UpstoxAverageTheBuyThenSell IGL LTP 247.35, calculatedToBuyPrice 242.4, lastPriceToCompareWith 247.35, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.636, priceFactorCalcForQty 0.136, priceFactorFinalForQty 0.136, qtyFactorCalcForQty 2.5, qtyFactorFinalForQty 2.5, qtyAgressionFactor 0.5, priceToCompare 250.92, calculatedToBuyPrice 242.4,
+                    lastBuyPrice 250.92, LTP 247.35, totalAvgHoldingPrice 250.92, totalOutstandingQty 5, priceDiffMultiple 0.11, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:15:41 AM::: UpstoxAverageTheBuyThenSell IGL orderPrice 242.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:41 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 280.8, calculatedToBuyPrice 279.4, lastPriceToCompareWith 280.8, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.02, priceFactorCalcForQty 0.02, priceFactorFinalForQty 0.02, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 280.8, calculatedToBuyPrice 279.4,
+                    lastBuyPrice 0, LTP 280.8, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.02, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:41 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT orderPrice 279.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:42 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT LTP 736.5, calculatedToBuyPrice 721.8, lastPriceToCompareWith 736.5, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.643, priceFactorCalcForQty 0.143, priceFactorFinalForQty 0.143, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 748.6, calculatedToBuyPrice 721.8,
+                    lastBuyPrice 748.6, LTP 736.5, totalAvgHoldingPrice 748.6, totalOutstandingQty 1, priceDiffMultiple 0.12, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:15:42 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT orderPrice 721.8 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:42 AM::: UpstoxAverageTheBuyThenSell ITC LTP 296.75, calculatedToBuyPrice 295.3, lastPriceToCompareWith 296.75, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.05, priceFactorCalcForQty 0.05, priceFactorFinalForQty 0.05, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 299.05, calculatedToBuyPrice 295.3,
+                    lastBuyPrice 299.05, LTP 296.75, totalAvgHoldingPrice 299.05, totalOutstandingQty 4, priceDiffMultiple 0.04, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:42 AM::: UpstoxAverageTheBuyThenSell ITC orderPrice 295.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:42 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 227.6, calculatedToBuyPrice 226.5, lastPriceToCompareWith 227.6, calculatedOrderQty 20, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 20, qtyCurve 10.194, priceFactorCalcForQty 0.194, priceFactorFinalForQty 0.194, qtyFactorCalcForQty 10, qtyFactorFinalForQty 10, qtyAgressionFactor 0.5, priceToCompare 238.07, calculatedToBuyPrice 226.5,
+                    lastBuyPrice 238.07, LTP 227.6, totalAvgHoldingPrice 238.07, totalOutstandingQty 40, priceDiffMultiple 0.16, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 100, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:42 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS orderPrice 226.5 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:42 AM::: UpstoxAverageTheBuyThenSell BIOCON LTP 677.75, calculatedToBuyPrice 671, lastPriceToCompareWith 677.75, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 677.75, calculatedToBuyPrice 671,
+                    lastBuyPrice 0, LTP 677.75, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 60, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:42 AM::: UpstoxAverageTheBuyThenSell BIOCON orderPrice 671 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:43 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 37.15, calculatedToBuyPrice 37, lastPriceToCompareWith 37.15, calculatedOrderQty 7, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 7, qtyCurve 11.933, priceFactorCalcForQty 0.433, priceFactorFinalForQty 0.433, qtyFactorCalcForQty 11.5, qtyFactorFinalForQty 11.5, qtyAgressionFactor 0.5, priceToCompare 41.49, calculatedToBuyPrice 37,
+                    lastBuyPrice 41.49, LTP 37.15, totalAvgHoldingPrice 41.49, totalOutstandingQty 23, priceDiffMultiple 0.36, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:43 AM::: UpstoxAverageTheBuyThenSell IDFCBANK orderPrice 37 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:43 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 72.1, calculatedToBuyPrice 71.7, lastPriceToCompareWith 72.1, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.275, priceFactorCalcForQty 0.275, priceFactorFinalForQty 0.275, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 77, calculatedToBuyPrice 71.7,
+                    lastBuyPrice 77, LTP 72.1, totalAvgHoldingPrice 77, totalOutstandingQty 4, priceDiffMultiple 0.23, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:43 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK orderPrice 71.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:43 AM::: UpstoxAverageTheBuyThenSell DLF LTP 155.55, calculatedToBuyPrice 153.2, lastPriceToCompareWith 155.55, calculatedOrderQty 4, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 4, qtyCurve 4.073, priceFactorCalcForQty 0.573, priceFactorFinalForQty 0.573, qtyFactorCalcForQty 3.5, qtyFactorFinalForQty 3.5, qtyAgressionFactor 0.5, priceToCompare 178.79, calculatedToBuyPrice 153.2,
+                    lastBuyPrice 178.79, LTP 155.55, totalAvgHoldingPrice 178.79, totalOutstandingQty 7, priceDiffMultiple 0.48, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:15:43 AM::: UpstoxAverageTheBuyThenSell DLF orderPrice 153.2 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:54 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE LTP 2182.35, calculatedToBuyPrice 2160.5, lastPriceToCompareWith 2182.35, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.659, priceFactorCalcForQty 0.159, priceFactorFinalForQty 0.159, qtyFactorCalcForQty 1.5, qtyFactorFinalForQty 1.5, qtyAgressionFactor 0.5, priceToCompare 2250, calculatedToBuyPrice 2160.5,
+                    lastBuyPrice 2250, LTP 2182.35, totalAvgHoldingPrice 2250, totalOutstandingQty 3, priceDiffMultiple 0.13, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:54 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE orderPrice 2160.5 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP 440.5, calculatedToBuyPrice 436.1, lastPriceToCompareWith 440.5, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 440.5, calculatedToBuyPrice 436.1,
+                    lastBuyPrice 0, LTP 440.5, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell ZEEL orderPrice 436.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 636.75, calculatedToBuyPrice 630.4, lastPriceToCompareWith 636.75, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.54, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 636.75, calculatedToBuyPrice 630.4,
+                    lastBuyPrice 634.6, LTP 636.75, totalAvgHoldingPrice 634.6, totalOutstandingQty 1, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA orderPrice 630.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 423.8, calculatedToBuyPrice 415.3, lastPriceToCompareWith 423.8, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.629, priceFactorCalcForQty 0.629, priceFactorFinalForQty 0.629, qtyFactorCalcForQty 1, qtyFactorFinalForQty 1, qtyAgressionFactor 0.5, priceToCompare 492.85, calculatedToBuyPrice 415.3,
+                    lastBuyPrice 492.85, LTP 423.8, totalAvgHoldingPrice 492.85, totalOutstandingQty 2, priceDiffMultiple 0.52, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT orderPrice 415.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 252, calculatedToBuyPrice 248.2, lastPriceToCompareWith 252, calculatedOrderQty 6, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 6, qtyCurve 6.543, priceFactorCalcForQty 0.543, priceFactorFinalForQty 0.543, qtyFactorCalcForQty 6, qtyFactorFinalForQty 6, qtyAgressionFactor 0.5, priceToCompare 287.16, calculatedToBuyPrice 248.2,
+                    lastBuyPrice 287.16, LTP 252, totalAvgHoldingPrice 287.16, totalOutstandingQty 12, priceDiffMultiple 0.45, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 248.2 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell IGL LTP 247.35, calculatedToBuyPrice 242.4, lastPriceToCompareWith 247.35, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.636, priceFactorCalcForQty 0.136, priceFactorFinalForQty 0.136, qtyFactorCalcForQty 2.5, qtyFactorFinalForQty 2.5, qtyAgressionFactor 0.5, priceToCompare 250.92, calculatedToBuyPrice 242.4,
+                    lastBuyPrice 250.92, LTP 247.35, totalAvgHoldingPrice 250.92, totalOutstandingQty 5, priceDiffMultiple 0.11, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell IGL orderPrice 242.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 280, calculatedToBuyPrice 278.6, lastPriceToCompareWith 280, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.02, priceFactorCalcForQty 0.02, priceFactorFinalForQty 0.02, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 280, calculatedToBuyPrice 278.6,
+                    lastBuyPrice 0, LTP 280, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.02, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:56 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT orderPrice 278.6 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:57 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT LTP 737.8, calculatedToBuyPrice 723, lastPriceToCompareWith 737.8, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.637, priceFactorCalcForQty 0.137, priceFactorFinalForQty 0.137, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 748.6, calculatedToBuyPrice 723,
+                    lastBuyPrice 748.6, LTP 737.8, totalAvgHoldingPrice 748.6, totalOutstandingQty 1, priceDiffMultiple 0.11, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:15:57 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT orderPrice 723 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:57 AM::: UpstoxAverageTheBuyThenSell ITC LTP 296.65, calculatedToBuyPrice 295.2, lastPriceToCompareWith 296.65, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.051, priceFactorCalcForQty 0.051, priceFactorFinalForQty 0.051, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 299.05, calculatedToBuyPrice 295.2,
+                    lastBuyPrice 299.05, LTP 296.65, totalAvgHoldingPrice 299.05, totalOutstandingQty 4, priceDiffMultiple 0.04, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:57 AM::: UpstoxAverageTheBuyThenSell ITC orderPrice 295.2 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:57 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 227.55, calculatedToBuyPrice 226.4, lastPriceToCompareWith 227.55, calculatedOrderQty 20, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 20, qtyCurve 10.196, priceFactorCalcForQty 0.196, priceFactorFinalForQty 0.196, qtyFactorCalcForQty 10, qtyFactorFinalForQty 10, qtyAgressionFactor 0.5, priceToCompare 238.07, calculatedToBuyPrice 226.4,
+                    lastBuyPrice 238.07, LTP 227.55, totalAvgHoldingPrice 238.07, totalOutstandingQty 40, priceDiffMultiple 0.16, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 100, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:57 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS orderPrice 226.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:57 AM::: UpstoxAverageTheBuyThenSell BIOCON LTP 677.15, calculatedToBuyPrice 670.4, lastPriceToCompareWith 677.15, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 677.15, calculatedToBuyPrice 670.4,
+                    lastBuyPrice 0, LTP 677.15, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 60, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:15:57 AM::: UpstoxAverageTheBuyThenSell BIOCON orderPrice 670.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:58 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 37.15, calculatedToBuyPrice 37, lastPriceToCompareWith 37.15, calculatedOrderQty 7, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 7, qtyCurve 11.933, priceFactorCalcForQty 0.433, priceFactorFinalForQty 0.433, qtyFactorCalcForQty 11.5, qtyFactorFinalForQty 11.5, qtyAgressionFactor 0.5, priceToCompare 41.49, calculatedToBuyPrice 37,
+                    lastBuyPrice 41.49, LTP 37.15, totalAvgHoldingPrice 41.49, totalOutstandingQty 23, priceDiffMultiple 0.36, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:58 AM::: UpstoxAverageTheBuyThenSell IDFCBANK orderPrice 37 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:58 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 72.05, calculatedToBuyPrice 71.7, lastPriceToCompareWith 72.05, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.275, priceFactorCalcForQty 0.275, priceFactorFinalForQty 0.275, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 77, calculatedToBuyPrice 71.7,
+                    lastBuyPrice 77, LTP 72.05, totalAvgHoldingPrice 77, totalOutstandingQty 4, priceDiffMultiple 0.23, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:15:58 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK orderPrice 71.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:15:58 AM::: UpstoxAverageTheBuyThenSell DLF LTP 155.8, calculatedToBuyPrice 153.5, lastPriceToCompareWith 155.8, calculatedOrderQty 4, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 4, qtyCurve 4.066, priceFactorCalcForQty 0.566, priceFactorFinalForQty 0.566, qtyFactorCalcForQty 3.5, qtyFactorFinalForQty 3.5, qtyAgressionFactor 0.5, priceToCompare 178.79, calculatedToBuyPrice 153.5,
+                    lastBuyPrice 178.79, LTP 155.8, totalAvgHoldingPrice 178.79, totalOutstandingQty 7, priceDiffMultiple 0.47, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:15:58 AM::: UpstoxAverageTheBuyThenSell DLF orderPrice 153.5 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:09 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE LTP 2181.75, calculatedToBuyPrice 2159.9, lastPriceToCompareWith 2181.75, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.66, priceFactorCalcForQty 0.16, priceFactorFinalForQty 0.16, qtyFactorCalcForQty 1.5, qtyFactorFinalForQty 1.5, qtyAgressionFactor 0.5, priceToCompare 2250, calculatedToBuyPrice 2159.9,
+                    lastBuyPrice 2250, LTP 2181.75, totalAvgHoldingPrice 2250, totalOutstandingQty 3, priceDiffMultiple 0.13, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:09 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE orderPrice 2159.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:11 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP 440.25, calculatedToBuyPrice 435.8, lastPriceToCompareWith 440.25, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 440.25, calculatedToBuyPrice 435.8,
+                    lastBuyPrice 0, LTP 440.25, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:11 AM::: UpstoxAverageTheBuyThenSell ZEEL orderPrice 435.8 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:11 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 637.35, calculatedToBuyPrice 631, lastPriceToCompareWith 637.35, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.54, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 637.35, calculatedToBuyPrice 631,
+                    lastBuyPrice 634.6, LTP 637.35, totalAvgHoldingPrice 634.6, totalOutstandingQty 1, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:11 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA orderPrice 631 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:12 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 426.95, calculatedToBuyPrice 418.4, lastPriceToCompareWith 426.95, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.604, priceFactorCalcForQty 0.604, priceFactorFinalForQty 0.604, qtyFactorCalcForQty 1, qtyFactorFinalForQty 1, qtyAgressionFactor 0.5, priceToCompare 492.85, calculatedToBuyPrice 418.4,
+                    lastBuyPrice 492.85, LTP 426.95, totalAvgHoldingPrice 492.85, totalOutstandingQty 2, priceDiffMultiple 0.5, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:12 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT orderPrice 418.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 252.4, calculatedToBuyPrice 248.6, lastPriceToCompareWith 252.4, calculatedOrderQty 6, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 6, qtyCurve 6.537, priceFactorCalcForQty 0.537, priceFactorFinalForQty 0.537, qtyFactorCalcForQty 6, qtyFactorFinalForQty 6, qtyAgressionFactor 0.5, priceToCompare 287.16, calculatedToBuyPrice 248.6,
+                    lastBuyPrice 287.16, LTP 252.4, totalAvgHoldingPrice 287.16, totalOutstandingQty 12, priceDiffMultiple 0.45, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 248.6 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell IGL LTP 246.65, calculatedToBuyPrice 241.7, lastPriceToCompareWith 246.65, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.647, priceFactorCalcForQty 0.147, priceFactorFinalForQty 0.147, qtyFactorCalcForQty 2.5, qtyFactorFinalForQty 2.5, qtyAgressionFactor 0.5, priceToCompare 250.92, calculatedToBuyPrice 241.7,
+                    lastBuyPrice 250.92, LTP 246.65, totalAvgHoldingPrice 250.92, totalOutstandingQty 5, priceDiffMultiple 0.12, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell IGL orderPrice 241.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 278.75, calculatedToBuyPrice 277.4, lastPriceToCompareWith 278.75, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.019, priceFactorCalcForQty 0.019, priceFactorFinalForQty 0.019, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 278.75, calculatedToBuyPrice 277.4,
+                    lastBuyPrice 0, LTP 278.75, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.02, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT orderPrice 277.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT LTP 735.8, calculatedToBuyPrice 721.1, lastPriceToCompareWith 735.8, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.647, priceFactorCalcForQty 0.147, priceFactorFinalForQty 0.147, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 748.6, calculatedToBuyPrice 721.1,
+                    lastBuyPrice 748.6, LTP 735.8, totalAvgHoldingPrice 748.6, totalOutstandingQty 1, priceDiffMultiple 0.12, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT orderPrice 721.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell ITC LTP 296.55, calculatedToBuyPrice 295.1, lastPriceToCompareWith 296.55, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.053, priceFactorCalcForQty 0.053, priceFactorFinalForQty 0.053, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 299.05, calculatedToBuyPrice 295.1,
+                    lastBuyPrice 299.05, LTP 296.55, totalAvgHoldingPrice 299.05, totalOutstandingQty 4, priceDiffMultiple 0.04, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell ITC orderPrice 295.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 227.2, calculatedToBuyPrice 226.1, lastPriceToCompareWith 227.2, calculatedOrderQty 20, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 20, qtyCurve 10.201, priceFactorCalcForQty 0.201, priceFactorFinalForQty 0.201, qtyFactorCalcForQty 10, qtyFactorFinalForQty 10, qtyAgressionFactor 0.5, priceToCompare 238.07, calculatedToBuyPrice 226.1,
+                    lastBuyPrice 238.07, LTP 227.2, totalAvgHoldingPrice 238.07, totalOutstandingQty 40, priceDiffMultiple 0.17, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 100, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS orderPrice 226.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell BIOCON LTP 676.25, calculatedToBuyPrice 669.5, lastPriceToCompareWith 676.25, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 676.25, calculatedToBuyPrice 669.5,
+                    lastBuyPrice 0, LTP 676.25, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 60, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:13 AM::: UpstoxAverageTheBuyThenSell BIOCON orderPrice 669.5 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:14 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 37.1, calculatedToBuyPrice 36.9, lastPriceToCompareWith 37.1, calculatedOrderQty 7, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 7, qtyCurve 11.943, priceFactorCalcForQty 0.443, priceFactorFinalForQty 0.443, qtyFactorCalcForQty 11.5, qtyFactorFinalForQty 11.5, qtyAgressionFactor 0.5, priceToCompare 41.49, calculatedToBuyPrice 36.9,
+                    lastBuyPrice 41.49, LTP 37.1, totalAvgHoldingPrice 41.49, totalOutstandingQty 23, priceDiffMultiple 0.37, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:14 AM::: UpstoxAverageTheBuyThenSell IDFCBANK orderPrice 36.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:14 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 71.85, calculatedToBuyPrice 71.5, lastPriceToCompareWith 71.85, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.286, priceFactorCalcForQty 0.286, priceFactorFinalForQty 0.286, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 77, calculatedToBuyPrice 71.5,
+                    lastBuyPrice 77, LTP 71.85, totalAvgHoldingPrice 77, totalOutstandingQty 4, priceDiffMultiple 0.24, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:14 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK orderPrice 71.5 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:14 AM::: UpstoxAverageTheBuyThenSell DLF LTP 155.45, calculatedToBuyPrice 153.1, lastPriceToCompareWith 155.45, calculatedOrderQty 4, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 4, qtyCurve 4.075, priceFactorCalcForQty 0.575, priceFactorFinalForQty 0.575, qtyFactorCalcForQty 3.5, qtyFactorFinalForQty 3.5, qtyAgressionFactor 0.5, priceToCompare 178.79, calculatedToBuyPrice 153.1,
+                    lastBuyPrice 178.79, LTP 155.45, totalAvgHoldingPrice 178.79, totalOutstandingQty 7, priceDiffMultiple 0.48, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:16:14 AM::: UpstoxAverageTheBuyThenSell DLF orderPrice 153.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:24 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE LTP 2175.5, calculatedToBuyPrice 2153.7, lastPriceToCompareWith 2175.5, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.671, priceFactorCalcForQty 0.171, priceFactorFinalForQty 0.171, qtyFactorCalcForQty 1.5, qtyFactorFinalForQty 1.5, qtyAgressionFactor 0.5, priceToCompare 2250, calculatedToBuyPrice 2153.7,
+                    lastBuyPrice 2250, LTP 2175.5, totalAvgHoldingPrice 2250, totalOutstandingQty 3, priceDiffMultiple 0.14, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:24 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE orderPrice 2153.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:26 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP 439.95, calculatedToBuyPrice 435.6, lastPriceToCompareWith 439.95, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 439.95, calculatedToBuyPrice 435.6,
+                    lastBuyPrice 0, LTP 439.95, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:26 AM::: UpstoxAverageTheBuyThenSell ZEEL orderPrice 435.6 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:26 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 637.25, calculatedToBuyPrice 630.9, lastPriceToCompareWith 637.25, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.54, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 637.25, calculatedToBuyPrice 630.9,
+                    lastBuyPrice 634.6, LTP 637.25, totalAvgHoldingPrice 634.6, totalOutstandingQty 1, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:26 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA orderPrice 630.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:27 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 425.85, calculatedToBuyPrice 417.3, lastPriceToCompareWith 425.85, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.613, priceFactorCalcForQty 0.613, priceFactorFinalForQty 0.613, qtyFactorCalcForQty 1, qtyFactorFinalForQty 1, qtyAgressionFactor 0.5, priceToCompare 492.85, calculatedToBuyPrice 417.3,
+                    lastBuyPrice 492.85, LTP 425.85, totalAvgHoldingPrice 492.85, totalOutstandingQty 2, priceDiffMultiple 0.51, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:27 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT orderPrice 417.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 252.15, calculatedToBuyPrice 248.4, lastPriceToCompareWith 252.15, calculatedOrderQty 6, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 6, qtyCurve 6.54, priceFactorCalcForQty 0.54, priceFactorFinalForQty 0.54, qtyFactorCalcForQty 6, qtyFactorFinalForQty 6, qtyAgressionFactor 0.5, priceToCompare 287.16, calculatedToBuyPrice 248.4,
+                    lastBuyPrice 287.16, LTP 252.15, totalAvgHoldingPrice 287.16, totalOutstandingQty 12, priceDiffMultiple 0.45, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 248.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell IGL LTP 246.1, calculatedToBuyPrice 241.2, lastPriceToCompareWith 246.1, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.655, priceFactorCalcForQty 0.155, priceFactorFinalForQty 0.155, qtyFactorCalcForQty 2.5, qtyFactorFinalForQty 2.5, qtyAgressionFactor 0.5, priceToCompare 250.92, calculatedToBuyPrice 241.2,
+                    lastBuyPrice 250.92, LTP 246.1, totalAvgHoldingPrice 250.92, totalOutstandingQty 5, priceDiffMultiple 0.13, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell IGL orderPrice 241.2 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 280.35, calculatedToBuyPrice 278.9, lastPriceToCompareWith 280.35, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.021, priceFactorCalcForQty 0.021, priceFactorFinalForQty 0.021, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 280.35, calculatedToBuyPrice 278.9,
+                    lastBuyPrice 0, LTP 280.35, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.02, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT orderPrice 278.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT LTP 736.75, calculatedToBuyPrice 722, lastPriceToCompareWith 736.75, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.642, priceFactorCalcForQty 0.142, priceFactorFinalForQty 0.142, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 748.6, calculatedToBuyPrice 722,
+                    lastBuyPrice 748.6, LTP 736.75, totalAvgHoldingPrice 748.6, totalOutstandingQty 1, priceDiffMultiple 0.12, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT orderPrice 722 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell ITC LTP 296.35, calculatedToBuyPrice 294.9, lastPriceToCompareWith 296.35, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.056, priceFactorCalcForQty 0.056, priceFactorFinalForQty 0.056, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 299.05, calculatedToBuyPrice 294.9,
+                    lastBuyPrice 299.05, LTP 296.35, totalAvgHoldingPrice 299.05, totalOutstandingQty 4, priceDiffMultiple 0.05, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell ITC orderPrice 294.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 227.8, calculatedToBuyPrice 226.7, lastPriceToCompareWith 227.8, calculatedOrderQty 20, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 20, qtyCurve 10.191, priceFactorCalcForQty 0.191, priceFactorFinalForQty 0.191, qtyFactorCalcForQty 10, qtyFactorFinalForQty 10, qtyAgressionFactor 0.5, priceToCompare 238.07, calculatedToBuyPrice 226.7,
+                    lastBuyPrice 238.07, LTP 227.8, totalAvgHoldingPrice 238.07, totalOutstandingQty 40, priceDiffMultiple 0.16, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 100, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS orderPrice 226.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell BIOCON LTP 675.5, calculatedToBuyPrice 668.7, lastPriceToCompareWith 675.5, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 675.5, calculatedToBuyPrice 668.7,
+                    lastBuyPrice 0, LTP 675.5, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 60, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:28 AM::: UpstoxAverageTheBuyThenSell BIOCON orderPrice 668.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:29 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 37.05, calculatedToBuyPrice 36.9, lastPriceToCompareWith 37.05, calculatedOrderQty 7, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 7, qtyCurve 11.943, priceFactorCalcForQty 0.443, priceFactorFinalForQty 0.443, qtyFactorCalcForQty 11.5, qtyFactorFinalForQty 11.5, qtyAgressionFactor 0.5, priceToCompare 41.49, calculatedToBuyPrice 36.9,
+                    lastBuyPrice 41.49, LTP 37.05, totalAvgHoldingPrice 41.49, totalOutstandingQty 23, priceDiffMultiple 0.37, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:29 AM::: UpstoxAverageTheBuyThenSell IDFCBANK orderPrice 36.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:29 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 72.1, calculatedToBuyPrice 71.7, lastPriceToCompareWith 72.1, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.275, priceFactorCalcForQty 0.275, priceFactorFinalForQty 0.275, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 77, calculatedToBuyPrice 71.7,
+                    lastBuyPrice 77, LTP 72.1, totalAvgHoldingPrice 77, totalOutstandingQty 4, priceDiffMultiple 0.23, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:29 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK orderPrice 71.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:29 AM::: UpstoxAverageTheBuyThenSell DLF LTP 155.6, calculatedToBuyPrice 153.3, lastPriceToCompareWith 155.6, calculatedOrderQty 4, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 4, qtyCurve 4.07, priceFactorCalcForQty 0.57, priceFactorFinalForQty 0.57, qtyFactorCalcForQty 3.5, qtyFactorFinalForQty 3.5, qtyAgressionFactor 0.5, priceToCompare 178.79, calculatedToBuyPrice 153.3,
+                    lastBuyPrice 178.79, LTP 155.6, totalAvgHoldingPrice 178.79, totalOutstandingQty 7, priceDiffMultiple 0.48, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:16:29 AM::: UpstoxAverageTheBuyThenSell DLF orderPrice 153.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:39 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE LTP 2178.55, calculatedToBuyPrice 2156.8, lastPriceToCompareWith 2178.55, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.666, priceFactorCalcForQty 0.166, priceFactorFinalForQty 0.166, qtyFactorCalcForQty 1.5, qtyFactorFinalForQty 1.5, qtyAgressionFactor 0.5, priceToCompare 2250, calculatedToBuyPrice 2156.8,
+                    lastBuyPrice 2250, LTP 2178.55, totalAvgHoldingPrice 2250, totalOutstandingQty 3, priceDiffMultiple 0.14, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:39 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE orderPrice 2156.8 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:42 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP 439.6, calculatedToBuyPrice 435.2, lastPriceToCompareWith 439.6, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 439.6, calculatedToBuyPrice 435.2,
+                    lastBuyPrice 0, LTP 439.6, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:42 AM::: UpstoxAverageTheBuyThenSell ZEEL orderPrice 435.2 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:42 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 638.75, calculatedToBuyPrice 632.4, lastPriceToCompareWith 638.75, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.54, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 638.75, calculatedToBuyPrice 632.4,
+                    lastBuyPrice 634.6, LTP 638.75, totalAvgHoldingPrice 634.6, totalOutstandingQty 1, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:42 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA orderPrice 632.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:42 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 425.85, calculatedToBuyPrice 417.3, lastPriceToCompareWith 425.85, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.613, priceFactorCalcForQty 0.613, priceFactorFinalForQty 0.613, qtyFactorCalcForQty 1, qtyFactorFinalForQty 1, qtyAgressionFactor 0.5, priceToCompare 492.85, calculatedToBuyPrice 417.3,
+                    lastBuyPrice 492.85, LTP 425.85, totalAvgHoldingPrice 492.85, totalOutstandingQty 2, priceDiffMultiple 0.51, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:42 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT orderPrice 417.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 253.85, calculatedToBuyPrice 250, lastPriceToCompareWith 253.85, calculatedOrderQty 6, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 6, qtyCurve 6.518, priceFactorCalcForQty 0.518, priceFactorFinalForQty 0.518, qtyFactorCalcForQty 6, qtyFactorFinalForQty 6, qtyAgressionFactor 0.5, priceToCompare 287.16, calculatedToBuyPrice 250,
+                    lastBuyPrice 287.16, LTP 253.85, totalAvgHoldingPrice 287.16, totalOutstandingQty 12, priceDiffMultiple 0.43, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 250 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell IGL LTP 246.35, calculatedToBuyPrice 241.4, lastPriceToCompareWith 246.35, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.652, priceFactorCalcForQty 0.152, priceFactorFinalForQty 0.152, qtyFactorCalcForQty 2.5, qtyFactorFinalForQty 2.5, qtyAgressionFactor 0.5, priceToCompare 250.92, calculatedToBuyPrice 241.4,
+                    lastBuyPrice 250.92, LTP 246.35, totalAvgHoldingPrice 250.92, totalOutstandingQty 5, priceDiffMultiple 0.13, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell IGL orderPrice 241.4 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 280.75, calculatedToBuyPrice 279.3, lastPriceToCompareWith 280.75, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.021, priceFactorCalcForQty 0.021, priceFactorFinalForQty 0.021, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 280.75, calculatedToBuyPrice 279.3,
+                    lastBuyPrice 0, LTP 280.75, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.02, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT orderPrice 279.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT LTP 736, calculatedToBuyPrice 721.3, lastPriceToCompareWith 736, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.646, priceFactorCalcForQty 0.146, priceFactorFinalForQty 0.146, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 748.6, calculatedToBuyPrice 721.3,
+                    lastBuyPrice 748.6, LTP 736, totalAvgHoldingPrice 748.6, totalOutstandingQty 1, priceDiffMultiple 0.12, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT orderPrice 721.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell ITC LTP 296.35, calculatedToBuyPrice 294.9, lastPriceToCompareWith 296.35, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.056, priceFactorCalcForQty 0.056, priceFactorFinalForQty 0.056, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 299.05, calculatedToBuyPrice 294.9,
+                    lastBuyPrice 299.05, LTP 296.35, totalAvgHoldingPrice 299.05, totalOutstandingQty 4, priceDiffMultiple 0.05, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell ITC orderPrice 294.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 228.05, calculatedToBuyPrice 226.9, lastPriceToCompareWith 228.05, calculatedOrderQty 20, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 20, qtyCurve 10.188, priceFactorCalcForQty 0.188, priceFactorFinalForQty 0.188, qtyFactorCalcForQty 10, qtyFactorFinalForQty 10, qtyAgressionFactor 0.5, priceToCompare 238.07, calculatedToBuyPrice 226.9,
+                    lastBuyPrice 238.07, LTP 228.05, totalAvgHoldingPrice 238.07, totalOutstandingQty 40, priceDiffMultiple 0.16, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 100, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:43 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS orderPrice 226.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:44 AM::: UpstoxAverageTheBuyThenSell BIOCON LTP 675.75, calculatedToBuyPrice 669, lastPriceToCompareWith 675.75, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 675.75, calculatedToBuyPrice 669,
+                    lastBuyPrice 0, LTP 675.75, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 60, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:44 AM::: UpstoxAverageTheBuyThenSell BIOCON orderPrice 669 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:45 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 37, calculatedToBuyPrice 36.8, lastPriceToCompareWith 37, calculatedOrderQty 7, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 7, qtyCurve 11.952, priceFactorCalcForQty 0.452, priceFactorFinalForQty 0.452, qtyFactorCalcForQty 11.5, qtyFactorFinalForQty 11.5, qtyAgressionFactor 0.5, priceToCompare 41.49, calculatedToBuyPrice 36.8,
+                    lastBuyPrice 41.49, LTP 37, totalAvgHoldingPrice 41.49, totalOutstandingQty 23, priceDiffMultiple 0.38, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:45 AM::: UpstoxAverageTheBuyThenSell IDFCBANK orderPrice 36.8 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:45 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 72.1, calculatedToBuyPrice 71.7, lastPriceToCompareWith 72.1, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.275, priceFactorCalcForQty 0.275, priceFactorFinalForQty 0.275, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 77, calculatedToBuyPrice 71.7,
+                    lastBuyPrice 77, LTP 72.1, totalAvgHoldingPrice 77, totalOutstandingQty 4, priceDiffMultiple 0.23, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:45 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK orderPrice 71.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:45 AM::: UpstoxAverageTheBuyThenSell DLF LTP 156.35, calculatedToBuyPrice 154, lastPriceToCompareWith 156.35, calculatedOrderQty 4, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 4, qtyCurve 4.055, priceFactorCalcForQty 0.555, priceFactorFinalForQty 0.555, qtyFactorCalcForQty 3.5, qtyFactorFinalForQty 3.5, qtyAgressionFactor 0.5, priceToCompare 178.79, calculatedToBuyPrice 154,
+                    lastBuyPrice 178.79, LTP 156.35, totalAvgHoldingPrice 178.79, totalOutstandingQty 7, priceDiffMultiple 0.46, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:16:45 AM::: UpstoxAverageTheBuyThenSell DLF orderPrice 154 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:54 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE LTP 2181.4, calculatedToBuyPrice 2159.6, lastPriceToCompareWith 2181.4, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.661, priceFactorCalcForQty 0.161, priceFactorFinalForQty 0.161, qtyFactorCalcForQty 1.5, qtyFactorFinalForQty 1.5, qtyAgressionFactor 0.5, priceToCompare 2250, calculatedToBuyPrice 2159.6,
+                    lastBuyPrice 2250, LTP 2181.4, totalAvgHoldingPrice 2250, totalOutstandingQty 3, priceDiffMultiple 0.13, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:54 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE orderPrice 2159.6 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:57 AM::: UpstoxAverageTheBuyThenSell ZEEL LTP 439.65, calculatedToBuyPrice 435.3, lastPriceToCompareWith 439.65, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 439.65, calculatedToBuyPrice 435.3,
+                    lastBuyPrice 0, LTP 439.65, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:57 AM::: UpstoxAverageTheBuyThenSell ZEEL orderPrice 435.3 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:57 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA LTP 639, calculatedToBuyPrice 632.6, lastPriceToCompareWith 639, calculatedOrderQty 1, placeBuyNoLtpCompare True, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.54, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 639, calculatedToBuyPrice 632.6,
+                    lastBuyPrice 634.6, LTP 639, totalAvgHoldingPrice 634.6, totalOutstandingQty 1, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:57 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA orderPrice 632.6 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:57 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT LTP 422.5, calculatedToBuyPrice 414, lastPriceToCompareWith 422.5, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 1.64, priceFactorCalcForQty 0.64, priceFactorFinalForQty 0.64, qtyFactorCalcForQty 1, qtyFactorFinalForQty 1, qtyAgressionFactor 0.5, priceToCompare 492.85, calculatedToBuyPrice 414,
+                    lastBuyPrice 492.85, LTP 422.5, totalAvgHoldingPrice 492.85, totalOutstandingQty 2, priceDiffMultiple 0.53, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:57 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT orderPrice 414 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell UJJIVAN LTP 253.95, calculatedToBuyPrice 250.1, lastPriceToCompareWith 253.95, calculatedOrderQty 6, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 6, qtyCurve 6.516, priceFactorCalcForQty 0.516, priceFactorFinalForQty 0.516, qtyFactorCalcForQty 6, qtyFactorFinalForQty 6, qtyAgressionFactor 0.5, priceToCompare 287.16, calculatedToBuyPrice 250.1,
+                    lastBuyPrice 287.16, LTP 253.95, totalAvgHoldingPrice 287.16, totalOutstandingQty 12, priceDiffMultiple 0.43, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 250.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell IGL LTP 246.75, calculatedToBuyPrice 241.8, lastPriceToCompareWith 246.75, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.645, priceFactorCalcForQty 0.145, priceFactorFinalForQty 0.145, qtyFactorCalcForQty 2.5, qtyFactorFinalForQty 2.5, qtyAgressionFactor 0.5, priceToCompare 250.92, calculatedToBuyPrice 241.8,
+                    lastBuyPrice 250.92, LTP 246.75, totalAvgHoldingPrice 250.92, totalOutstandingQty 5, priceDiffMultiple 0.12, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell IGL orderPrice 241.8 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT LTP 281.2, calculatedToBuyPrice 279.8, lastPriceToCompareWith 281.2, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.02, priceFactorCalcForQty 0.02, priceFactorFinalForQty 0.02, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 281.2, calculatedToBuyPrice 279.8,
+                    lastBuyPrice 0, LTP 281.2, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.02, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT orderPrice 279.8 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT LTP 733.6, calculatedToBuyPrice 718.9, lastPriceToCompareWith 733.6, calculatedOrderQty 1, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 1, qtyCurve 0.659, priceFactorCalcForQty 0.159, priceFactorFinalForQty 0.159, qtyFactorCalcForQty 0.5, qtyFactorFinalForQty 0.5, qtyAgressionFactor 0.5, priceToCompare 748.6, calculatedToBuyPrice 718.9,
+                    lastBuyPrice 748.6, LTP 733.6, totalAvgHoldingPrice 748.6, totalOutstandingQty 1, priceDiffMultiple 0.13, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.02 
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT orderPrice 718.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell ITC LTP 296.6, calculatedToBuyPrice 295.1, lastPriceToCompareWith 296.6, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.053, priceFactorCalcForQty 0.053, priceFactorFinalForQty 0.053, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 299.05, calculatedToBuyPrice 295.1,
+                    lastBuyPrice 299.05, LTP 296.6, totalAvgHoldingPrice 299.05, totalOutstandingQty 4, priceDiffMultiple 0.04, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell ITC orderPrice 295.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS LTP 228.25, calculatedToBuyPrice 227.1, lastPriceToCompareWith 228.25, calculatedOrderQty 20, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 20, qtyCurve 10.184, priceFactorCalcForQty 0.184, priceFactorFinalForQty 0.184, qtyFactorCalcForQty 10, qtyFactorFinalForQty 10, qtyAgressionFactor 0.5, priceToCompare 238.07, calculatedToBuyPrice 227.1,
+                    lastBuyPrice 238.07, LTP 228.25, totalAvgHoldingPrice 238.07, totalOutstandingQty 40, priceDiffMultiple 0.15, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 100, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS orderPrice 227.1 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell BIOCON LTP 675.45, calculatedToBuyPrice 668.7, lastPriceToCompareWith 675.45, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 0.04, priceFactorCalcForQty 0.04, priceFactorFinalForQty 0.04, qtyFactorCalcForQty 0, qtyFactorFinalForQty 0, qtyAgressionFactor 0.5, priceToCompare 675.45, calculatedToBuyPrice 668.7,
+                    lastBuyPrice 0, LTP 675.45, totalAvgHoldingPrice 0, totalOutstandingQty 0, priceDiffMultiple 0.03, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 30, maxTotalOutstandingQtyAllowed 60, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.01 
+
+10/3/2018 9:16:59 AM::: UpstoxAverageTheBuyThenSell BIOCON orderPrice 668.7 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:17:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK LTP 37.05, calculatedToBuyPrice 36.9, lastPriceToCompareWith 37.05, calculatedOrderQty 7, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 7, qtyCurve 11.943, priceFactorCalcForQty 0.443, priceFactorFinalForQty 0.443, qtyFactorCalcForQty 11.5, qtyFactorFinalForQty 11.5, qtyAgressionFactor 0.5, priceToCompare 41.49, calculatedToBuyPrice 36.9,
+                    lastBuyPrice 41.49, LTP 37.05, totalAvgHoldingPrice 41.49, totalOutstandingQty 23, priceDiffMultiple 0.37, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:17:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK orderPrice 36.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:17:01 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK LTP 72.25, calculatedToBuyPrice 71.9, lastPriceToCompareWith 72.25, calculatedOrderQty 2, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 2, qtyCurve 2.265, priceFactorCalcForQty 0.265, priceFactorFinalForQty 0.265, qtyFactorCalcForQty 2, qtyFactorFinalForQty 2, qtyAgressionFactor 0.5, priceToCompare 77, calculatedToBuyPrice 71.9,
+                    lastBuyPrice 77, LTP 72.25, totalAvgHoldingPrice 77, totalOutstandingQty 4, priceDiffMultiple 0.22, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.005 
+
+10/3/2018 9:17:01 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK orderPrice 71.9 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+
+10/3/2018 9:17:01 AM::: UpstoxAverageTheBuyThenSell DLF LTP 156.35, calculatedToBuyPrice 154, lastPriceToCompareWith 156.35, calculatedOrderQty 4, placeBuyNoLtpCompare False, PriceStrategy: LTP Markdown: todayPositionCount 0, priceBucketAgressionFactorForPrice 0, QtyStrategy: calculatedOrderQty 4, qtyCurve 4.055, priceFactorCalcForQty 0.555, priceFactorFinalForQty 0.555, qtyFactorCalcForQty 3.5, qtyFactorFinalForQty 3.5, qtyAgressionFactor 0.5, priceToCompare 178.79, calculatedToBuyPrice 154,
+                    lastBuyPrice 178.79, LTP 156.35, totalAvgHoldingPrice 178.79, totalOutstandingQty 7, priceDiffMultiple 0.46, priceBucketfactor System.Double[], todayOutstandingQty 0,
+                    maxTodayOutstandingQtyAllowed 15, maxTotalOutstandingQtyAllowed 30, todayPositionCount 0, priceBucketAgressionFactorForQty 1.2, markDownPct 0.015 
+
+10/3/2018 9:17:01 AM::: UpstoxAverageTheBuyThenSell DLF orderPrice 154 is outside circuit limits of lowerCircuitLimit 0 upperCircuitLimit 0, Not placing order
+

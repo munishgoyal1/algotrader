@@ -1,14 +1,15 @@
-#stockCode, indicativePrice (in stock lines below) and then the commonconfig as follows: orderType,baseOrderVal,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,markDownPctForBuy,markDownPctForAveraging,sellMarkup,placeBuyNoLtpCompare,startTime,endTime,Exchange
+#stockCode, indicativePrice (in stock lines below) and then the commonconfig as follows
+#orderType,baseOrderVal,maxTotalPositionValueMultiple,maxTodayPositionValueMultiple,markDownPctForBuy,markDownPctForAveraging,sellMarkup,placeBuyNoLtpCompare,startTime,endTime,Exchange
 #
 #
 #
 #
 
 @deliveryBrokerage=0.0035
-@priceBucketWidthForQty=0.3
-@priceBucketFactorForQty=1.2, 1.3, 1.5, 2, 2.2, 2.4, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4
+@priceBucketWidthInPctForQty=.03
+@priceBucketsForQty=1.2, 1.3, 1.5, 2, 2.2, 2.4, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4
 @qtyAgressionFactor = 0.5
-@priceBucketFactorForPrice=1, 1.5, 2.6, 4.1, 6, 2
+@priceBucketsForPrice=1, 1.5, 2.6, 4.1, 6, 2
 @commonStock=MARGIN,400,30,15,0.005,0.005,1.01,false,09:00:00,15:00:00,NSE
 
 ZEEL,450,MARGIN,500,,,0.01,0.01,1.01,true

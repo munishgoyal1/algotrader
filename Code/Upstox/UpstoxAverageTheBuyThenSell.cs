@@ -69,34 +69,35 @@ namespace UpstoxTrader
                     return;
                 }
 
-                todayPositionCount = todayOutstandingQty > 0 ? todayPositionCount + 1 : 0;
-                todayPositionCount = Math.Min(todayPositionCount, priceBucketFactorForPrice.Length - 1);
+                // price calc independent of the holdings
+                var todayOutstandingTradeBucketNumberForPrice = Math.Min(todayOutstandingTradeCount, priceBucketsForPrice.Length - 1);
+                var priceBucketAgressionForPrice = priceBucketsForPrice[todayOutstandingTradeBucketNumberForPrice];
+                var markDownPctCalculated = markDownPctForBuy * priceBucketAgressionForPrice;
+                var calculatedToBuyPrice = Math.Round((1 - markDownPctCalculated) * lastPriceToCompareWith, 1);
 
-                // Price and Qty calcs to place buy order
+                priceStrategy = string.Format(
+                    @"{0},LTP={1}, lastBuyPrice={2}, holdingOutstandingPrice={3}, lastPriceToCompareWith={4}, todayOutstandingTradeCount={5}, 
+                    todayOutstandingTradeBucketNumberForPrice={6}, priceBucketAgressionForPrice={7}, markDownPctForBuy={8}, markDownPctCalculated={9},
+                    calculatedToBuyPrice={10}, priceBucketsForPrice={11};\n",
+                    priceStrategy, ltp, lastBuyPrice, holdingOutstandingPrice, lastPriceToCompareWith, todayOutstandingTradeCount, todayOutstandingTradeBucketNumberForPrice, 
+                    priceBucketAgressionForPrice, markDownPctForBuy, markDownPctCalculated, calculatedToBuyPrice, string.Join(":", priceBucketsForPrice));
+
+                // Qty calc depends upon calculatedbuyprice and totaloutstanding qty
                 var totalOutstandingQty = todayOutstandingQty + holdingOutstandingQty;
                 double todayOutstandingMultiple = todayOutstandingQty / baseOrdQty;
                 double totalOutstandingMultiple = totalOutstandingQty / baseOrdQty;
                 var qtyFactorCalcForQty = totalOutstandingMultiple * qtyAgressionFactor;
-                var qtyFactorFinalForQty = qtyFactorCalcForQty;
-
-                // price calc independent of the holdings
-                var priceBucketAgressionFactorForPrice = priceBucketFactorForPrice[todayPositionCount];
-                var markDownPct = markDownPctForBuy * priceBucketAgressionFactorForPrice;
-                var calculatedToBuyPrice = Math.Round((1 - markDownPct) * lastPriceToCompareWith, 1);
-
-                priceStrategy = string.Format("{0}: todayPositionCount {1}, priceBucketAgressionFactorForPrice {1}", priceStrategy, todayPositionCount, priceBucketAgressionFactorForPrice);
 
                 var totalAvgHoldingPrice = (todayOutstandingPrice * todayOutstandingQty) + (holdingOutstandingQty * holdingOutstandingPrice);
                 totalAvgHoldingPrice = totalOutstandingQty > 0 ? totalAvgHoldingPrice / totalOutstandingQty : 0;
                 var priceToCompareForQty = Math.Max(Math.Max(totalAvgHoldingPrice, lastBuyPrice), ltp);
                 var priceDiffPct = (priceToCompareForQty - calculatedToBuyPrice) / priceToCompareForQty;
-                var priceDiffMultiple = priceDiffPct / priceBucketWidthForQty;
-                var priceDiffBucket = Math.Min((int)priceDiffMultiple, priceBucketFactorForQty.Length - 1);
-                var priceBucketAgressionFactorForQty = priceBucketFactorForQty[priceDiffBucket];
-                var priceFactorCalcForQty = priceDiffMultiple * priceBucketAgressionFactorForQty;
-                var priceFactorFinalForQty = priceFactorCalcForQty;
+                var priceDiffMultiple = priceDiffPct / priceBucketWidthInPctForQty;
+                var priceDiffBucketNumberForQty = Math.Min((int)priceDiffMultiple, priceBucketsForQty.Length - 1);
+                var priceDiffBucketAgressionForQty = priceBucketsForQty[priceDiffBucketNumberForQty];
+                var priceFactorCalcForQty = priceDiffMultiple * priceDiffBucketAgressionForQty;
 
-                var qtyCurve = qtyFactorFinalForQty + priceFactorFinalForQty;
+                var qtyCurve = qtyFactorCalcForQty + priceFactorCalcForQty;
 
                 calculatedOrderQty = (int)(baseOrdQty * Math.Max(1, qtyCurve));
 
@@ -104,17 +105,20 @@ namespace UpstoxTrader
                 calculatedOrderQty = Math.Min(calculatedOrderQty, maxTotalOutstandingQtyAllowed - totalOutstandingQty);
 
                 qtyStrategy = string.Format(
-                    @"calculatedOrderQty {10}, qtyCurve {9}, priceFactorCalcForQty {4}, priceFactorFinalForQty {20}, qtyFactorCalcForQty {18}, qtyFactorFinalForQty {19}, qtyAgressionFactor {5}, priceToCompare {6}, calculatedToBuyPrice {11},
-                    lastBuyPrice {7}, LTP {8}, totalAvgHoldingPrice {0}, totalOutstandingQty {1}, priceDiffMultiple {2}, priceBucketfactor {3}, todayOutstandingQty {12},
-                    maxTodayOutstandingQtyAllowed {13}, maxTotalOutstandingQtyAllowed {14}, todayPositionCount {15}, priceBucketAgressionFactorForQty {16}, markDownPct {17}",
-                    totalAvgHoldingPrice, totalOutstandingQty, Math.Round(priceDiffMultiple, 2), priceBucketFactorForQty, Math.Round(priceFactorCalcForQty, 3), qtyAgressionFactor,
-                    priceToCompareForQty, lastBuyPrice, ltp, Math.Round(qtyCurve, 3), calculatedOrderQty, calculatedToBuyPrice, todayOutstandingQty, maxTodayOutstandingQtyAllowed, maxTotalOutstandingQtyAllowed,
-                    todayPositionCount, priceBucketAgressionFactorForQty, markDownPct, Math.Round(qtyFactorCalcForQty, 3), Math.Round(qtyFactorFinalForQty, 3), Math.Round(priceFactorFinalForQty, 3));
+                    @"todayOutstandingQty={0}, todayOutstandingPrice={1}, holdingOutstandingQty={2}, holdingOutstandingPrice={3}, baseOrdQty={4}, todayOutstandingMultiple={4}, totalOutstandingMultiple={5}, 
+                    qtyAgressionFactor={6}, qtyFactorCalcForQty={7};
+                    totalAvgHoldingPrice={8}, priceToCompareForQty={9}, priceDiffPct={10}, priceBucketWidthInPctForQty={11}, priceDiffMultiple={12},
+                    priceDiffBucketNumberForQty={13}, priceDiffBucketAgressionForQty={14}, priceFactorCalcForQty={15};
+                    qtyCurve={16}, calculatedOrderQty={17}, maxTodayOutstandingQtyAllowed={18}, maxTotalOutstandingQtyAllowed={19};",
+                    todayOutstandingQty, Math.Round(todayOutstandingPrice, 2), holdingOutstandingQty, Math.Round(holdingOutstandingPrice, 2), baseOrdQty, todayOutstandingMultiple, totalOutstandingMultiple,
+                    qtyAgressionFactor, qtyFactorCalcForQty, 
+                    Math.Round(totalAvgHoldingPrice, 2), Math.Round(priceToCompareForQty, 2), Math.Round(priceDiffPct, 2), priceBucketWidthInPctForQty, Math.Round(priceDiffMultiple, 2),
+                    priceDiffBucketNumberForQty, priceDiffBucketAgressionForQty, Math.Round(priceFactorCalcForQty, 2), 
+                    Math.Round(qtyCurve, 3), calculatedOrderQty, maxTodayOutstandingQtyAllowed, maxTotalOutstandingQtyAllowed);
 
                 if (errCode == BrokerErrorCode.Success && (todayOutstandingQty == 0 || (placeBuyNoLtpCompare || (ltp <= calculatedToBuyPrice))))
                 {
-                    Trace(string.Format("LTP {0}, calculatedToBuyPrice {1}, lastPriceToCompareWith {2}, calculatedOrderQty {3}, placeBuyNoLtpCompare {4}, PriceStrategy: {5}, QtyStrategy: {6} ",
-                        ltp, calculatedToBuyPrice, lastPriceToCompareWith, calculatedOrderQty, placeBuyNoLtpCompare, priceStrategy, qtyStrategy));
+                    Trace(string.Format("PriceStrategy={0}\nQtyStrategy={1}\nplaceBuyNoLtpCompare={2}", priceStrategy, qtyStrategy, placeBuyNoLtpCompare));
 
                     errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.BUY, OrderPriceType.LIMIT, calculatedOrderQty, orderType, calculatedToBuyPrice, out todayOutstandingBuyOrderId, out upstoxOrderStatus);
 
@@ -166,6 +170,7 @@ namespace UpstoxTrader
                                 {
                                     todayOutstandingPrice = 0;
                                     todayOutstandingSellOrderId = "";
+                                    todayOutstandingTradeCount = 0;
                                 }
                             }
 
@@ -179,6 +184,7 @@ namespace UpstoxTrader
                                 {
                                     Trace(string.Format("[Trade Execution] Fully executed newqty {0} todayoutstandingqty {1} todayoutstandingprice {2} sellorderref {3} buyorderef {4} buyorderstatus {5}", trade.NewQuantity, todayOutstandingQty, todayOutstandingPrice, todayOutstandingSellOrderId, todayOutstandingBuyOrderId, orders[todayOutstandingBuyOrderId].Status));
                                     todayOutstandingBuyOrderId = "";
+                                    todayOutstandingTradeCount++;
                                 }
                                 else
                                 {
@@ -188,11 +194,8 @@ namespace UpstoxTrader
                                 // update outstanding qty and outstanding price to place updated sell order
                                 todayOutstandingPrice = (todayOutstandingPrice * todayOutstandingQty) + (trade.NewQuantity * trade.Price);
                                 todayOutstandingQty += trade.NewQuantity;
-                                if (todayOutstandingQty == 0)
-                                    todayOutstandingPrice = 0;
-                                else
-                                    todayOutstandingPrice /= todayOutstandingQty;
-                                todayOutstandingPrice = Math.Round(todayOutstandingPrice, 2);
+                                todayOutstandingPrice = todayOutstandingQty == 0 ? 0 : todayOutstandingPrice / todayOutstandingQty;                                
+                                //todayOutstandingPrice = Math.Round(todayOutstandingPrice, 2);
 
                                 if (todayOutstandingQty >= maxTodayOutstandingQtyAllowed)
                                     Trace(string.Format("TodayOutstandingQty reached the max. todayOutstandingQty: {0} maxTodayOutstandingQtyAllowed: {1}", todayOutstandingQty, maxTodayOutstandingQtyAllowed));
