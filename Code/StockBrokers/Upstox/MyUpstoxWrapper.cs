@@ -91,7 +91,10 @@ namespace StockTrader.Brokers.UpstoxBroker
 
             ohlcquote = upstox.GetSnapOHLC("NSE_EQ", "PCJEWELLER");
             var snapquote = upstox.GetSnapQuote("NSE_EQ", "PCJEWELLER");
-            upstox.GetSnapQuote("NSE_EQ", "CAPLIPOINT");
+            snapquote = upstox.GetSnapQuote("NSE_EQ", "CAPLIPOINT");
+            EquitySymbolQuote quote;
+
+            var wrapped = GetSnapQuote("NSE_EQ", "CAPLIPOINT", out quote);
 
             List<EquityPositionRecord> positions;
             BrokerErrorCode errCode = GetPositions("INFY", out positions);
@@ -815,11 +818,11 @@ namespace StockTrader.Brokers.UpstoxBroker
 
                         string[] lines = response.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
 
-                        for (int i = 1; i < lines.Length; i++)
+                        for (int i = 0; i < lines.Length; i++)
                         {
                             var line = lines[i].Split(',');
 
-                            if (line.Length < 19)
+                            if (line.Length < 47)
                                 continue;
 
                             if (!string.IsNullOrEmpty(stockCode) &&
@@ -830,8 +833,10 @@ namespace StockTrader.Brokers.UpstoxBroker
 
                             quote.ExchangeStr = line[1];
                             quote.StockCode = line[2];
+                            quote.ClosePrice = double.Parse(line[7]);
+                            quote.ATP = double.Parse(line[9]);
                             quote.LowerCircuitPrice = double.Parse(line[14]);
-                            quote.UpperCircuitPrice = int.Parse(line[15]);
+                            quote.UpperCircuitPrice = double.Parse(line[15]);
                             errorCode = BrokerErrorCode.Success;
                         }
                     }

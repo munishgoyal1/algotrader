@@ -1,0 +1,9 @@
+10/3/2018 8:39:38 PM::: DEBUG MODE
+
+10/3/2018 8:43:13 PM::: MyUpstoxWrapper  CAPLIPOINT GetSnapQuoteError:Input string was not in a correct format.
+Stacktrace:   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetSnapQuote(String exchange, String stockCode, EquitySymbolQuote& quote)
+
+10/3/2018 8:43:14 PM::: MyUpstoxWrapper  Retrying 1 out of 3
+

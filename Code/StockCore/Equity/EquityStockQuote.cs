@@ -26,6 +26,8 @@ namespace StockTrader.Core
         public double UpperCircuitPrice;
         public string ExchangeStr;
 
+        public double ATP;
+
 
         // LTP
         private double mLastTradePriceDouble;
@@ -107,6 +109,7 @@ namespace StockTrader.Core
             }
         }
 
+        public double ClosePrice;
         // Previous Day Close Price
         private double mPreviousClosePriceDouble;
         public double PreviousClosePriceDouble

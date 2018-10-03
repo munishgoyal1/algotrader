@@ -33,7 +33,7 @@ namespace UpstoxTrader
             {
                 double ltp;
                 var errCode = GetLTP(out ltp);
-                var calculatedOrderQty = baseOrdQty;
+                var calculatedOrderQty = baseOrderQty;
 
                 double lastPriceToCompareWith = ltp;
                 string priceStrategy = "LTP Markdown";
@@ -84,8 +84,8 @@ namespace UpstoxTrader
 
                 // Qty calc depends upon calculatedbuyprice and totaloutstanding qty
                 var totalOutstandingQty = todayOutstandingQty + holdingOutstandingQty;
-                double todayOutstandingMultiple = todayOutstandingQty / baseOrdQty;
-                double totalOutstandingMultiple = totalOutstandingQty / baseOrdQty;
+                double todayOutstandingMultiple = todayOutstandingQty / baseOrderQty;
+                double totalOutstandingMultiple = totalOutstandingQty / baseOrderQty;
                 var qtyFactorCalcForQty = totalOutstandingMultiple * qtyAgressionFactor;
 
                 var totalAvgHoldingPrice = (todayOutstandingPrice * todayOutstandingQty) + (holdingOutstandingQty * holdingOutstandingPrice);
@@ -99,18 +99,18 @@ namespace UpstoxTrader
 
                 var qtyCurve = qtyFactorCalcForQty + priceFactorCalcForQty;
 
-                calculatedOrderQty = (int)(baseOrdQty * Math.Max(1, qtyCurve));
+                calculatedOrderQty = (int)(baseOrderQty * Math.Max(1, qtyCurve));
 
                 calculatedOrderQty = Math.Min(calculatedOrderQty, maxTodayOutstandingQtyAllowed - todayOutstandingQty);
                 calculatedOrderQty = Math.Min(calculatedOrderQty, maxTotalOutstandingQtyAllowed - totalOutstandingQty);
 
                 qtyStrategy = string.Format(
-                    @"todayOutstandingQty={0}, todayOutstandingPrice={1}, holdingOutstandingQty={2}, holdingOutstandingPrice={3}, baseOrdQty={4}, todayOutstandingMultiple={4}, totalOutstandingMultiple={5}, 
+                    @"todayOutstandingQty={0}, todayOutstandingPrice={1}, holdingOutstandingQty={2}, holdingOutstandingPrice={3}, baseOrderQty={4}, todayOutstandingMultiple={4}, totalOutstandingMultiple={5}, 
                     qtyAgressionFactor={6}, qtyFactorCalcForQty={7};
                     totalAvgHoldingPrice={8}, priceToCompareForQty={9}, priceDiffPct={10}, priceBucketWidthInPctForQty={11}, priceDiffMultiple={12},
                     priceDiffBucketNumberForQty={13}, priceDiffBucketAgressionForQty={14}, priceFactorCalcForQty={15};
                     qtyCurve={16}, calculatedOrderQty={17}, maxTodayOutstandingQtyAllowed={18}, maxTotalOutstandingQtyAllowed={19};",
-                    todayOutstandingQty, Math.Round(todayOutstandingPrice, 2), holdingOutstandingQty, Math.Round(holdingOutstandingPrice, 2), baseOrdQty, todayOutstandingMultiple, totalOutstandingMultiple,
+                    todayOutstandingQty, Math.Round(todayOutstandingPrice, 2), holdingOutstandingQty, Math.Round(holdingOutstandingPrice, 2), baseOrderQty, todayOutstandingMultiple, totalOutstandingMultiple,
                     qtyAgressionFactor, qtyFactorCalcForQty, 
                     Math.Round(totalAvgHoldingPrice, 2), Math.Round(priceToCompareForQty, 2), Math.Round(priceDiffPct, 2), priceBucketWidthInPctForQty, Math.Round(priceDiffMultiple, 2),
                     priceDiffBucketNumberForQty, priceDiffBucketAgressionForQty, Math.Round(priceFactorCalcForQty, 2), 

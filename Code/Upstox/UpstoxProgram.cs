@@ -189,7 +189,7 @@ namespace UpstoxTrader
                     var todayBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY ? t.Quantity * t.Price : 0);
                     var todaySellValue = trades.Sum(t => t.Direction == OrderDirection.SELL ? t.Quantity * t.Price : 0);
 
-                    var orderQty = stockConfig.baseOrdQty;
+                    var orderQty = stockConfig.baseOrderQty;
 
                     // Get Ltp
                     double ltp;
@@ -483,7 +483,7 @@ namespace UpstoxTrader
                     maxTotalPositionValueMultiple = maxTotalPositionValueMultiple,
                     maxTodayPositionValueMultiple = maxTodayPositionValueMultiple,
                     orderType = orderType,
-                    baseOrdQty = ordQty,
+                    baseOrderQty = ordQty,
                     maxTotalOutstandingQtyAllowed = ordQty * maxTotalPositionValueMultiple,
                     maxTodayOutstandingQtyAllowed = ordQty * maxTodayPositionValueMultiple,
                     markDownPctForBuy = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.markDownPctForBuy : double.Parse(stock[Index])) : ctp.markDownPctForBuy,//7
@@ -549,7 +549,7 @@ namespace UpstoxTrader
         public double baseOrderVal = 50000;
         public int maxTotalPositionValueMultiple = 4;
         public int maxTodayPositionValueMultiple = 2;
-        public int baseOrdQty;
+        public int baseOrderQty;
         public int maxTotalOutstandingQtyAllowed;
         public int maxTodayOutstandingQtyAllowed;
         public Exchange exchange;

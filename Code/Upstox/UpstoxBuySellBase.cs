@@ -34,7 +34,8 @@ namespace UpstoxTrader
         public DateTime startTime;
         public DateTime endTime;
         public string stockCode = null;
-        public int baseOrdQty = 0;
+        public double baseOrderVal = 0;
+        public int baseOrderQty = 0;
         public int maxTotalOutstandingQtyAllowed = 0;
         public int maxTodayOutstandingQtyAllowed = 0;
         public Exchange exchange;
@@ -87,7 +88,8 @@ namespace UpstoxTrader
             myUpstoxWrapper = tradeParams.upstox;
             tradeParams.stats = pnlStats;
             stockCode = tradeParams.stockCode;
-            baseOrdQty = tradeParams.baseOrdQty;
+            baseOrderVal = tradeParams.baseOrderVal;
+            baseOrderQty = tradeParams.baseOrderQty;
             maxTotalOutstandingQtyAllowed = tradeParams.maxTotalOutstandingQtyAllowed;
             maxTodayOutstandingQtyAllowed = tradeParams.maxTodayOutstandingQtyAllowed;
             exchange = tradeParams.exchange;
@@ -167,8 +169,12 @@ namespace UpstoxTrader
             {
                 lowerCircuitLimit = quote.LowerCircuitPrice;
                 upperCircuitLimit = quote.UpperCircuitPrice;
+                if (quote.ClosePrice > 0)
+                    baseOrderQty = (int)Math.Round(baseOrderVal / quote.ClosePrice);
             }
 
+            Trace(string.Format("SnapQuote status={0}. lowerCircuitLimit={1}, upperCircuitLimit={2}, ClosePrice={3}, baseOrderQty={4}",
+                errCode, lowerCircuitLimit, upperCircuitLimit, quote.ClosePrice, baseOrderQty));
 
             GetLTPOnDemand(out Ltp);
 
@@ -214,7 +220,7 @@ namespace UpstoxTrader
             int outstandingAttritbutionOrderCount = 0;
             while (qtyTotal < todayOutstandingQty)
             {
-                qtyTotal += (baseOrdQty * ++outstandingAttritbutionOrderCount);
+                qtyTotal += (baseOrderQty * ++outstandingAttritbutionOrderCount);
             }
 
             // these are latest trades taken. each buy trade is for single lot and thus for each lot there is a trade
