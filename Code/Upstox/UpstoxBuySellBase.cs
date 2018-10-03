@@ -194,6 +194,8 @@ namespace UpstoxTrader
             var onlyTodayBuyQty = trades.Values.Where(t => t.Direction == OrderDirection.BUY && t.EquityOrderType == orderType).Sum(t => t.Quantity);
             var onlyTodaySellQty = trades.Values.Where(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == orderType).Sum(t => t.Quantity);
 
+            // TODO: Try to get the holding order also live from the orderbook than relying on the positionfile. Because orders may be added manually from outside the algo.
+
             // For delivery ordertype (eg CAPLIN) find the executed qty and remove it from todayoutstanding
             if (!string.IsNullOrEmpty(holdingOrder.OrderId) && orderType == EquityOrderType.DELIVERY)
             {

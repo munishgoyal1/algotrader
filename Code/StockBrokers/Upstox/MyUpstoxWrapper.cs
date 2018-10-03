@@ -87,8 +87,11 @@ namespace StockTrader.Brokers.UpstoxBroker
 
             //public string GetOrderExchId(string OrderId)
 
-            var snapquote = upstox.GetSnapQuote("NSE_EQ", "PCJEWELLER");
+            var ohlcquote = upstox.GetSnapOHLC("NSE_EQ", "CAPLIPOINT");
 
+            ohlcquote = upstox.GetSnapOHLC("NSE_EQ", "PCJEWELLER");
+            var snapquote = upstox.GetSnapQuote("NSE_EQ", "PCJEWELLER");
+            upstox.GetSnapQuote("NSE_EQ", "CAPLIPOINT");
 
             List<EquityPositionRecord> positions;
             BrokerErrorCode errCode = GetPositions("INFY", out positions);
@@ -154,8 +157,7 @@ namespace StockTrader.Brokers.UpstoxBroker
             /*
             var mCookieContainer = new CookieContainer();
 
-            var UPSTOX_LOGIN_URL = "https://api.upstox.com/index/dialog/authorize?apiKey=1EENJJ7o6O4JG1pWDVVpYaPsarWozbZs9NPJnek2&redirect_uri=https://upstox.com&response_type=code";
-            //https://api.upstox.com/index/dialog/authorize?apiKey=6wiVNUdhRw10R7FzCxNso6zvKFaUU4RjlYe2Ltc9&redirect_uri=https://upstox.com&response_type=code
+            //https://api.upstox.com/index/dialog/authorize?apiKey=zxonzooEKr7LIUj87W86o459PKkLydqu7hWZoBfb&redirect_uri=https://upstox.com&response_type=code
             //code = 5e56183a1ad7902d9c97249079b28cce3f6b9715
             var UPSTOX_LOGON_REFERRER = "https://api.upstox.com";
 
