@@ -35,20 +35,6 @@ namespace UpstoxTrader
         }
 
         //Run logs - C:\StockRunFiles\TraderLogs\
-        static double _pctLtpOfLastBuyPriceForAveraging = 0.99;
-        static double _buyMarkdownFromLtpDefault = 0.985;
-        static double _sellMarkupForMargin = 1.015;
-        static double _sellMarkupForDelivery = 1.025;   // 2.5%
-        static double _sellMarkupForMinProfit = 1.0035; // .35%
-        static double _sellMarkupForEODInsufficientLimitSquareOff = 0.995;
-        static double _pctSquareOffForMinProfit = 0.0035;
-        static bool _squareOffAllPositionsAtEOD = false;
-        static double _pctMaxLossSquareOffPositionsAtEOD = .002; // 0.5%
-        static bool _useAvgBuyPriceInsteadOfLastBuyPriceToCalculateBuyPriceForNewOrder = false;
-        static bool _doConvertToDeliveryAtEOD = true;
-        static bool _doSquareOffIfInsufficientLimitAtEOD = false;
-        static DateTime _startTime = MarketUtils.GetTimeToday(9, 0);
-        static DateTime _endTime = MarketUtils.GetTimeToday(15, 00);
         private static string userId;
         private static string apiKey;
         private static string apiSecret;
@@ -67,7 +53,7 @@ namespace UpstoxTrader
             Trace("DEBUG MODE");
             //List<UpstoxTradeParams> stocksConfig1 = ReadTradingConfigFile();
 
-            errCode = upstoxBroker.Login1();
+            errCode = upstoxBroker.Login();
 #else
             Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
 #endif
@@ -171,7 +157,7 @@ namespace UpstoxTrader
 
                     string pnlFilePath = Path.Combine(filesPath, stockCode + "_pnl.txt");
 
-                    var configToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}", stockConfig.stockCode,
+                    var configToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", stockConfig.stockCode,
                             stockConfig.markDownPctForBuy, stockConfig.markDownPctForAveraging, stockConfig.sellMarkup,
                             stockConfig.placeBuyNoLtpCompare, stockConfig.startTime.ToString("hh:mm"), stockConfig.priceBucketWidthForQty, stockConfig.qtyAgressionFactor,
                             string.Join(":", stockConfig.priceBucketsForPrice), string.Join(";", stockConfig.priceBucketsForQty));
