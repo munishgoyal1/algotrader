@@ -267,6 +267,8 @@ namespace UpstoxTrader
                     if (dematHolding.BlockedQuantity < holdingOutstandingQty)
                     {
                         var algoPendingQty = holdingOutstandingQty - dematHolding.BlockedQuantity;
+                        Trace(string.Format("[DELIVERY Holding SquareOff] Will place order {0} {1} {2} @ {3}.", OrderDirection.SELL, stockCode, algoPendingQty, sellPrice));
+
                         errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, algoPendingQty, EquityOrderType.DELIVERY, sellPrice, out holdingOrder.OrderId, out upstoxOrderStatus);
 
                         if (errCode == BrokerErrorCode.Success)

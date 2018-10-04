@@ -1,0 +1,812 @@
+10/4/2018 9:17:05 AM::: RELEASE MODE
+
+10/4/2018 9:17:16 AM::: 126130
+
+10/4/2018 9:17:21 AM::: UpstoxAverageTheBuyThenSell ZEEL SnapQuote status=Success. lowerCircuitLimit=393.95, upperCircuitLimit=481.45, ClosePrice=437.7, baseOrderQty=1
+
+10/4/2018 9:17:22 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA SnapQuote status=Success. lowerCircuitLimit=558.8, upperCircuitLimit=682.9, ClosePrice=620.85, baseOrderQty=1
+
+10/4/2018 9:17:22 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN SnapQuote status=Success. lowerCircuitLimit=849.6, upperCircuitLimit=1038.3, ClosePrice=943.95, baseOrderQty=1
+
+10/4/2018 9:17:22 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS SnapQuote status=Success. lowerCircuitLimit=296.8, upperCircuitLimit=362.7, ClosePrice=329.75, baseOrderQty=1
+
+10/4/2018 9:17:22 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK SnapQuote status=Success. lowerCircuitLimit=1474.85, upperCircuitLimit=1802.55, ClosePrice=1638.7, baseOrderQty=1
+
+10/4/2018 9:17:22 AM::: UpstoxAverageTheBuyThenSell ZEEL PriceStrategy=LTP Markdown,LTP=434.5, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=434.5, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctCalculated=0.01,
+                    calculatedToBuyPrice=430.2, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=0, priceDiffPct=434.5, priceBucketWidthInPctForQty=0.01, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.33, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.4, calculatedOrderQty=0.396, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:17:23 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER SnapQuote status=Success. lowerCircuitLimit=50, upperCircuitLimit=61.1, ClosePrice=55.55, baseOrderQty=2
+
+10/4/2018 9:17:24 AM::: MyUpstoxWrapper ZEEL OrderId:181004000012758, UpstoxOrderStatus:open pending
+
+10/4/2018 9:17:24 AM::: UpstoxAverageTheBuyThenSell ZEEL [Place Order MARGIN]: Success ZEEL BUY 1 @ 430.2 LIMIT. OrderId = 181004000012758. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:24 AM::: UpstoxAverageTheBuyThenSell BIOCON SnapQuote status=Success. lowerCircuitLimit=594.85, upperCircuitLimit=726.95, ClosePrice=660.9, baseOrderQty=2
+
+10/4/2018 9:17:24 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE SnapQuote status=Success. lowerCircuitLimit=2009, upperCircuitLimit=2455.4, ClosePrice=2232.2, baseOrderQty=1
+
+10/4/2018 9:17:24 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT SnapQuote status=Success. lowerCircuitLimit=409.05, upperCircuitLimit=499.85, ClosePrice=454.45, baseOrderQty=1
+
+10/4/2018 9:17:24 AM::: UpstoxAverageTheBuyThenSell UJJIVAN SnapQuote status=Success. lowerCircuitLimit=229.55, upperCircuitLimit=280.55, ClosePrice=255.05, baseOrderQty=1
+
+10/4/2018 9:17:25 AM::: UpstoxAverageTheBuyThenSell IGL SnapQuote status=Success. lowerCircuitLimit=217.1, upperCircuitLimit=265.3, ClosePrice=241.2, baseOrderQty=1
+
+10/4/2018 9:17:25 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT SnapQuote status=Success. lowerCircuitLimit=663.75, upperCircuitLimit=811.25, ClosePrice=737.5, baseOrderQty=1
+
+10/4/2018 9:17:25 AM::: UpstoxAverageTheBuyThenSell ITC SnapQuote status=Success. lowerCircuitLimit=265.7, upperCircuitLimit=324.7, ClosePrice=295.2, baseOrderQty=1
+
+10/4/2018 9:17:25 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS SnapQuote status=Success. lowerCircuitLimit=204.85, upperCircuitLimit=250.35, ClosePrice=227.6, baseOrderQty=3
+
+10/4/2018 9:17:25 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA PriceStrategy=LTP Markdown,LTP=612.6, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=612.6, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctCalculated=0.01,
+                    calculatedToBuyPrice=606.5, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=0, priceDiffPct=612.6, priceBucketWidthInPctForQty=0.01, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.33, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.4, calculatedOrderQty=0.398, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:17:25 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT SnapQuote status=Success. lowerCircuitLimit=255.15, upperCircuitLimit=311.85, ClosePrice=283.5, baseOrderQty=1
+
+10/4/2018 9:17:25 AM::: UpstoxAverageTheBuyThenSell IDFCBANK SnapQuote status=Success. lowerCircuitLimit=33.75, upperCircuitLimit=41.25, ClosePrice=37.5, baseOrderQty=2
+
+10/4/2018 9:17:25 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK SnapQuote status=Success. lowerCircuitLimit=63.2, upperCircuitLimit=77.2, ClosePrice=70.2, baseOrderQty=1
+
+10/4/2018 9:17:27 AM::: MyUpstoxWrapper SUNPHARMA OrderId:181004000012842, UpstoxOrderStatus:open pending
+
+10/4/2018 9:17:27 AM::: UpstoxAverageTheBuyThenSell SUNPHARMA [Place Order MARGIN]: Success SUNPHARMA BUY 1 @ 606.5 LIMIT. OrderId = 181004000012842. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:27 AM::: UpstoxAverageTheBuyThenSell DLF SnapQuote status=Success. lowerCircuitLimit=139.35, upperCircuitLimit=170.25, ClosePrice=154.8, baseOrderQty=2
+
+10/4/2018 9:17:28 AM::: MyUpstoxWrapper ADANIPORTS OrderId:181004000012889, UpstoxOrderStatus:open pending
+
+10/4/2018 9:17:28 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order DELIVERY]: Success ADANIPORTS SELL 4 @ 349.8 LIMIT. OrderId = 181004000012889. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:28 AM::: UpstoxAverageTheBuyThenSell RELIANCE SnapQuote status=Success. lowerCircuitLimit=1084.6, upperCircuitLimit=1325.6, ClosePrice=1205.1, baseOrderQty=1
+
+10/4/2018 9:17:28 AM::: UpstoxAverageTheBuyThenSell SBIN SnapQuote status=Success. lowerCircuitLimit=244.55, upperCircuitLimit=298.85, ClosePrice=271.7, baseOrderQty=1
+
+10/4/2018 9:17:28 AM::: UpstoxAverageTheBuyThenSell HDFCBANK SnapQuote status=Success. lowerCircuitLimit=1828.05, upperCircuitLimit=2234.25, ClosePrice=2031.15, baseOrderQty=1
+
+10/4/2018 9:17:29 AM::: UpstoxAverageTheBuyThenSell M&M SnapQuote status=Success. lowerCircuitLimit=712.45, upperCircuitLimit=870.75, ClosePrice=791.6, baseOrderQty=1
+
+10/4/2018 9:17:29 AM::: UpstoxAverageTheBuyThenSell INFY SnapQuote status=Success. lowerCircuitLimit=655.65, upperCircuitLimit=801.35, ClosePrice=728.5, baseOrderQty=1
+
+10/4/2018 9:17:29 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER orderPrice 70.6 is outside circuit limits of lowerCircuitLimit 50 upperCircuitLimit 61.1, Not placing order
+
+10/4/2018 9:17:30 AM::: MyUpstoxWrapper INDUSINDBK OrderId:181004000012988, UpstoxOrderStatus:open pending
+
+10/4/2018 9:17:30 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK [Place Order DELIVERY]: Success INDUSINDBK SELL 5 @ 1732.7 LIMIT. OrderId = 181004000012988. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:32 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE PriceStrategy=LTP Markdown,LTP=2151, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=2151, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctCalculated=0.01,
+                    calculatedToBuyPrice=2129.5, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=0, priceDiffPct=2151, priceBucketWidthInPctForQty=0.01, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.33, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.4, calculatedOrderQty=0.4, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:32 AM::: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 292.5 is outside circuit limits of lowerCircuitLimit 229.55 upperCircuitLimit 280.55, Not placing order
+
+10/4/2018 9:17:34 AM::: MyUpstoxWrapper BIOCON OrderId:181004000013103, UpstoxOrderStatus:open
+
+10/4/2018 9:17:34 AM::: UpstoxAverageTheBuyThenSell BIOCON [Place Order DELIVERY]: Success BIOCON SELL 2 @ 681 LIMIT. OrderId = 181004000013103. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:34 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT PriceStrategy=LTP Markdown,LTP=277.35, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=277.35, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=276, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=0, priceDiffPct=277.35, priceBucketWidthInPctForQty=0, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.16, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.19, calculatedOrderQty=0.195, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:35 AM::: MyUpstoxWrapper BAJFINANCE OrderId:181004000013142, UpstoxOrderStatus:open
+
+10/4/2018 9:17:35 AM::: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order MARGIN]: Success BAJFINANCE BUY 1 @ 2129.5 LIMIT. OrderId = 181004000013142. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:36 AM::: MyUpstoxWrapper CAPLIPOINT OrderId:181004000013185, UpstoxOrderStatus:open
+
+10/4/2018 9:17:36 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT SELL 2 @ 499.5 LIMIT. OrderId = 181004000013185. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:37 AM::: UpstoxAverageTheBuyThenSell UJJIVAN PriceStrategy=LTP Markdown,LTP=247.6, lastBuyPrice=287.16, holdingOutstandingPrice=287.16, lastPriceToCompareWith=247.6, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.015, markDownPctCalculated=0.015,
+                    calculatedToBuyPrice=243.9, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=12, holdingOutstandingPrice=287.16, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=12, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=6, priceToCompareForQty=287.16, priceDiffPct=287.16, priceBucketWidthInPctForQty=0.15, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=5.02, priceDiffBucketAgressionForQty=5, priceFactorCalcForQty=2.4;
+                    qtyCurve=12.05, calculatedOrderQty=18.052, maxTodayPositionValueMultiple=15, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:38 AM::: MyUpstoxWrapper IGL OrderId:181004000013243, UpstoxOrderStatus:open
+
+10/4/2018 9:17:38 AM::: UpstoxAverageTheBuyThenSell IGL [Place Order DELIVERY]: Success IGL SELL 7 @ 255.7 LIMIT. OrderId = 181004000013243. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:39 AM::: MyUpstoxWrapper AMARAJABAT OrderId:181004000013277, UpstoxOrderStatus:open
+
+10/4/2018 9:17:39 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT [Place Order DELIVERY]: Success AMARAJABAT SELL 1 @ 769.9 LIMIT. OrderId = 181004000013277. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:40 AM::: MyUpstoxWrapper ITC OrderId:181004000013311, UpstoxOrderStatus:open
+
+10/4/2018 9:17:40 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order DELIVERY]: Success ITC SELL 4 @ 303.1 LIMIT. OrderId = 181004000013311. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:41 AM::: MyUpstoxWrapper TATAMOTORS OrderId:181004000013353, UpstoxOrderStatus:open
+
+10/4/2018 9:17:41 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order DELIVERY]: Success TATAMOTORS SELL 70 @ 237.4 LIMIT. OrderId = 181004000013353. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:43 AM::: UpstoxAverageTheBuyThenSell BIOCON PriceStrategy=LTP Markdown,LTP=644, lastBuyPrice=671.9, holdingOutstandingPrice=671.9, lastPriceToCompareWith=644, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctCalculated=0.01,
+                    calculatedToBuyPrice=637.6, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=2, holdingOutstandingPrice=671.9, baseOrderQty=2, todayOutstandingMultiple=2, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=1, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0.5, priceToCompareForQty=671.9, priceDiffPct=671.9, priceBucketWidthInPctForQty=0.05, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=1.7, priceDiffBucketAgressionForQty=1, priceFactorCalcForQty=1.3;
+                    qtyCurve=2.21, calculatedOrderQty=2.712, maxTodayPositionValueMultiple=5, maxTotalPositionValueMultiple=30;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:43 AM::: UpstoxAverageTheBuyThenSell DLF orderPrice 180.3 is outside circuit limits of lowerCircuitLimit 139.35 upperCircuitLimit 170.25, Not placing order
+
+10/4/2018 9:17:44 AM::: MyUpstoxWrapper BERGEPAINT OrderId:181004000013470, UpstoxOrderStatus:open
+
+10/4/2018 9:17:44 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT BUY 1 @ 276 LIMIT. OrderId = 181004000013470. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:45 AM::: MyUpstoxWrapper IDFCBANK OrderId:181004000013532, UpstoxOrderStatus:open pending
+
+10/4/2018 9:17:45 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order DELIVERY]: Success IDFCBANK SELL 30 @ 41.2 LIMIT. OrderId = 181004000013532. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:45 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT PriceStrategy=LTP Markdown,LTP=444.55, lastBuyPrice=492.85, holdingOutstandingPrice=492.85, lastPriceToCompareWith=444.55, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.02, markDownPctCalculated=0.02,
+                    calculatedToBuyPrice=435.7, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=2, holdingOutstandingPrice=492.85, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=2, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=1, priceToCompareForQty=492.85, priceDiffPct=492.85, priceBucketWidthInPctForQty=0.12, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=3.87, priceDiffBucketAgressionForQty=3, priceFactorCalcForQty=2;
+                    qtyCurve=7.73, calculatedOrderQty=8.731, maxTodayPositionValueMultiple=8, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:46 AM::: MyUpstoxWrapper UJJIVAN OrderId:181004000013586, UpstoxOrderStatus:open
+
+10/4/2018 9:17:46 AM::: UpstoxAverageTheBuyThenSell UJJIVAN [Place Order MARGIN]: Success UJJIVAN BUY 15 @ 243.9 LIMIT. OrderId = 181004000013586. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:46 AM::: UpstoxAverageTheBuyThenSell IGL PriceStrategy=LTP Markdown,LTP=240.15, lastBuyPrice=248.66, holdingOutstandingPrice=248.66, lastPriceToCompareWith=240.15, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.02, markDownPctCalculated=0.02,
+                    calculatedToBuyPrice=235.3, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=7, holdingOutstandingPrice=248.66, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=7, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=3.5, priceToCompareForQty=248.66, priceDiffPct=248.66, priceBucketWidthInPctForQty=0.05, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=1.79, priceDiffBucketAgressionForQty=1, priceFactorCalcForQty=1.3;
+                    qtyCurve=2.33, calculatedOrderQty=5.828, maxTodayPositionValueMultiple=5, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:47 AM::: MyUpstoxWrapper FEDERALBNK OrderId:181004000013649, UpstoxOrderStatus:open pending
+
+10/4/2018 9:17:47 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order DELIVERY]: Success FEDERALBNK SELL 19 @ 73.1 LIMIT. OrderId = 181004000013649. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:48 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT PriceStrategy=LTP Markdown,LTP=727.6, lastBuyPrice=748.6, holdingOutstandingPrice=748.6, lastPriceToCompareWith=727.6, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.02, markDownPctCalculated=0.02,
+                    calculatedToBuyPrice=713, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=1, holdingOutstandingPrice=748.6, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=1, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0.5, priceToCompareForQty=748.6, priceDiffPct=748.6, priceBucketWidthInPctForQty=0.05, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=1.59, priceDiffBucketAgressionForQty=1, priceFactorCalcForQty=1.3;
+                    qtyCurve=2.06, calculatedOrderQty=2.561, maxTodayPositionValueMultiple=2, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:48 AM::: UpstoxAverageTheBuyThenSell ITC PriceStrategy=LTP Markdown,LTP=291.8, lastBuyPrice=299.05, holdingOutstandingPrice=299.05, lastPriceToCompareWith=291.8, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=290.3, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=4, holdingOutstandingPrice=299.05, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=4, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=2, priceToCompareForQty=299.05, priceDiffPct=299.05, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.98, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=1.17, calculatedOrderQty=3.17, maxTodayPositionValueMultiple=3, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:48 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS PriceStrategy=LTP Markdown,LTP=224, lastBuyPrice=234.22, holdingOutstandingPrice=234.22, lastPriceToCompareWith=224, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=222.9, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=70, holdingOutstandingPrice=234.22, baseOrderQty=3, todayOutstandingMultiple=3, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=23, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=11.5, priceToCompareForQty=234.22, priceDiffPct=234.22, priceBucketWidthInPctForQty=0.05, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=1.61, priceDiffBucketAgressionForQty=1, priceFactorCalcForQty=1.3;
+                    qtyCurve=2.09, calculatedOrderQty=13.594, maxTodayPositionValueMultiple=40, maxTotalPositionValueMultiple=90;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:48 AM::: UpstoxAverageTheBuyThenSell M&M orderPrice 933.2 is outside circuit limits of lowerCircuitLimit 712.45 upperCircuitLimit 870.75, Not placing order
+
+10/4/2018 9:17:49 AM::: MyUpstoxWrapper BIOCON OrderId:181004000013762, UpstoxOrderStatus:open
+
+10/4/2018 9:17:49 AM::: UpstoxAverageTheBuyThenSell BIOCON [Place Order MARGIN]: Success BIOCON BUY 5 @ 637.6 LIMIT. OrderId = 181004000013762. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:49 AM::: UpstoxAverageTheBuyThenSell DLF PriceStrategy=LTP Markdown,LTP=149.8, lastBuyPrice=178.79, holdingOutstandingPrice=178.79, lastPriceToCompareWith=149.8, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.015, markDownPctCalculated=0.015,
+                    calculatedToBuyPrice=147.6, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=7, holdingOutstandingPrice=178.79, baseOrderQty=2, todayOutstandingMultiple=2, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=3, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=1.5, priceToCompareForQty=178.79, priceDiffPct=178.79, priceBucketWidthInPctForQty=0.17, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=5.82, priceDiffBucketAgressionForQty=5, priceFactorCalcForQty=2.4;
+                    qtyCurve=13.96, calculatedOrderQty=15.456, maxTodayPositionValueMultiple=30, maxTotalPositionValueMultiple=30;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:49 AM::: UpstoxAverageTheBuyThenSell IDFCBANK PriceStrategy=LTP Markdown,LTP=36.85, lastBuyPrice=40.7, holdingOutstandingPrice=40.7, lastPriceToCompareWith=36.85, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=36.7, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=30, holdingOutstandingPrice=40.7, baseOrderQty=2, todayOutstandingMultiple=2, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=15, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=7.5, priceToCompareForQty=40.7, priceDiffPct=40.7, priceBucketWidthInPctForQty=0.1, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=3.28, priceDiffBucketAgressionForQty=3, priceFactorCalcForQty=2;
+                    qtyCurve=6.55, calculatedOrderQty=14.052, maxTodayPositionValueMultiple=28, maxTotalPositionValueMultiple=30;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:51 AM::: MyUpstoxWrapper CAPLIPOINT OrderId:181004000013822, UpstoxOrderStatus:open pending
+
+10/4/2018 9:17:51 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT BUY 8 @ 435.7 LIMIT. OrderId = 181004000013822. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:52 AM::: MyUpstoxWrapper IGL OrderId:181004000013868, UpstoxOrderStatus:open
+
+10/4/2018 9:17:52 AM::: UpstoxAverageTheBuyThenSell IGL [Place Order MARGIN]: Success IGL BUY 5 @ 235.3 LIMIT. OrderId = 181004000013868. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:52 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK PriceStrategy=LTP Markdown,LTP=68.55, lastBuyPrice=72.14, holdingOutstandingPrice=72.14, lastPriceToCompareWith=68.55, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=68.2, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=19, holdingOutstandingPrice=72.14, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=19, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=9.5, priceToCompareForQty=72.14, priceDiffPct=72.14, priceBucketWidthInPctForQty=0.05, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=1.82, priceDiffBucketAgressionForQty=1, priceFactorCalcForQty=1.3;
+                    qtyCurve=2.37, calculatedOrderQty=11.867, maxTodayPositionValueMultiple=11, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:17:53 AM::: MyUpstoxWrapper AMARAJABAT OrderId:181004000013936, UpstoxOrderStatus:open
+
+10/4/2018 9:17:53 AM::: UpstoxAverageTheBuyThenSell AMARAJABAT [Place Order MARGIN]: Success AMARAJABAT BUY 2 @ 713 LIMIT. OrderId = 181004000013936. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:54 AM::: MyUpstoxWrapper ITC OrderId:181004000013986, UpstoxOrderStatus:open pending
+
+10/4/2018 9:17:54 AM::: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC BUY 3 @ 290.3 LIMIT. OrderId = 181004000013986. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:55 AM::: MyUpstoxWrapper TATAMOTORS OrderId:181004000014017, UpstoxOrderStatus:open
+
+10/4/2018 9:17:55 AM::: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS BUY 40 @ 222.9 LIMIT. OrderId = 181004000014017. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:56 AM::: MyUpstoxWrapper INFY OrderId:181004000014074, UpstoxOrderStatus:open pending
+
+10/4/2018 9:17:56 AM::: UpstoxAverageTheBuyThenSell INFY [Place Order DELIVERY]: Success INFY SELL 3 @ 744.7 LIMIT. OrderId = 181004000014074. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:57 AM::: MyUpstoxWrapper DLF OrderId:181004000014109, UpstoxOrderStatus:open
+
+10/4/2018 9:17:57 AM::: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF BUY 30 @ 147.6 LIMIT. OrderId = 181004000014109. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:17:58 AM::: MyUpstoxWrapper IDFCBANK OrderId:181004000014167, UpstoxOrderStatus:open
+
+10/4/2018 9:17:58 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order MARGIN]: Success IDFCBANK BUY 28 @ 36.7 LIMIT. OrderId = 181004000014167. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:18:00 AM::: MyUpstoxWrapper FEDERALBNK OrderId:181004000014238, UpstoxOrderStatus:open pending
+
+10/4/2018 9:18:00 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order MARGIN]: Success FEDERALBNK BUY 11 @ 68.2 LIMIT. OrderId = 181004000014238. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:18:28 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Trade Execution] MARGIN Trade: IDFCBANK bought 28 @ 36.7. OrderId = 181004000014167
+
+10/4/2018 9:18:29 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Trade Execution] Fully executed newqty 28 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000014167 buyorderstatus COMPLETED
+
+10/4/2018 9:18:30 AM::: MyUpstoxWrapper IDFCBANK OrderId:181004000015307, UpstoxOrderStatus:open
+
+10/4/2018 9:18:30 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order MARGIN]: Success IDFCBANK SELL 28 @ 37.1 LIMIT. OrderId = 181004000015307. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:18:30 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Trade Execution] MARGIN Trade: BERGEPAINT bought 1 @ 276. OrderId = 181004000013470
+
+10/4/2018 9:18:30 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Trade Execution] Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000013470 buyorderstatus COMPLETED
+
+10/4/2018 9:18:32 AM::: MyUpstoxWrapper BERGEPAINT OrderId:181004000015364, UpstoxOrderStatus:open pending
+
+10/4/2018 9:18:32 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT SELL 1 @ 278.8 LIMIT. OrderId = 181004000015364. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:20:01 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Trade Execution] MARGIN Trade: FEDERALBNK bought 11 @ 68.2. OrderId = 181004000014238
+
+10/4/2018 9:20:01 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Trade Execution] Fully executed newqty 11 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000014238 buyorderstatus COMPLETED
+
+10/4/2018 9:20:01 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK TotalOutstandingQty reached the max. todayOutstandingQty: 11 holdingOutstandingQty: 19 maxTotalPositionValueMultiple: 30
+
+10/4/2018 9:20:01 AM::: UpstoxAverageTheBuyThenSell INFY PriceStrategy=LTP Markdown,LTP=720.1, lastBuyPrice=738.47, holdingOutstandingPrice=738.47, lastPriceToCompareWith=720.1, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=716.5, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=3, holdingOutstandingPrice=738.47, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=3, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=1.5, priceToCompareForQty=738.47, priceDiffPct=738.47, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.99, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=1.19, calculatedOrderQty=2.69, maxTodayPositionValueMultiple=2, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:20:02 AM::: MyUpstoxWrapper FEDERALBNK OrderId:181004000018315, UpstoxOrderStatus:open
+
+10/4/2018 9:20:02 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order MARGIN]: Success FEDERALBNK SELL 11 @ 68.9 LIMIT. OrderId = 181004000018315. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:20:02 AM::: UpstoxAverageTheBuyThenSell RELIANCE PriceStrategy=LTP Markdown,LTP=1174.65, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=1174.65, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.0025, markDownPctCalculated=0.0025,
+                    calculatedToBuyPrice=1171.7, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=0, priceDiffPct=1174.65, priceBucketWidthInPctForQty=0, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.08, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.1, calculatedOrderQty=0.1, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:20:04 AM::: MyUpstoxWrapper INFY OrderId:181004000018348, UpstoxOrderStatus:open pending
+
+10/4/2018 9:20:04 AM::: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY BUY 2 @ 716.5 LIMIT. OrderId = 181004000018348. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:20:05 AM::: MyUpstoxWrapper RELIANCE OrderId:181004000018383, UpstoxOrderStatus:open pending
+
+10/4/2018 9:20:05 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1171.7 LIMIT. OrderId = 181004000018383. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:20:05 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN PriceStrategy=LTP Markdown,LTP=919.55, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=919.55, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctCalculated=0.01,
+                    calculatedToBuyPrice=910.4, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=0, priceDiffPct=919.55, priceBucketWidthInPctForQty=0.01, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.33, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.4, calculatedOrderQty=0.398, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:20:05 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS PriceStrategy=LTP Markdown,LTP=322.4, lastBuyPrice=345.1, holdingOutstandingPrice=345.1, lastPriceToCompareWith=322.4, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctCalculated=0.01,
+                    calculatedToBuyPrice=319.2, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=4, holdingOutstandingPrice=345.1, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=4, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=2, priceToCompareForQty=345.1, priceDiffPct=345.1, priceBucketWidthInPctForQty=0.08, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=2.5, priceDiffBucketAgressionForQty=2, priceFactorCalcForQty=1.5;
+                    qtyCurve=3.75, calculatedOrderQty=5.753, maxTodayPositionValueMultiple=5, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:20:07 AM::: MyUpstoxWrapper IBULHSGFIN OrderId:181004000018415, UpstoxOrderStatus:open pending
+
+10/4/2018 9:20:07 AM::: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order MARGIN]: Success IBULHSGFIN BUY 1 @ 910.4 LIMIT. OrderId = 181004000018415. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:20:08 AM::: MyUpstoxWrapper ADANIPORTS OrderId:181004000018445, UpstoxOrderStatus:open
+
+10/4/2018 9:20:08 AM::: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order MARGIN]: Success ADANIPORTS BUY 5 @ 319.2 LIMIT. OrderId = 181004000018445. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:20:08 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER PriceStrategy=LTP Markdown,LTP=54.25, lastBuyPrice=69.84, holdingOutstandingPrice=69.84, lastPriceToCompareWith=54.25, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.0075, markDownPctCalculated=0.0075,
+                    calculatedToBuyPrice=53.8, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=19, holdingOutstandingPrice=69.84, baseOrderQty=2, todayOutstandingMultiple=2, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=9, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=4.5, priceToCompareForQty=69.84, priceDiffPct=69.84, priceBucketWidthInPctForQty=0.23, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=7.66, priceDiffBucketAgressionForQty=7, priceFactorCalcForQty=2.8;
+                    qtyCurve=21.44, calculatedOrderQty=25.936, maxTodayPositionValueMultiple=30, maxTotalPositionValueMultiple=30;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:20:09 AM::: MyUpstoxWrapper PCJEWELLER OrderId:181004000018494, UpstoxOrderStatus:open
+
+10/4/2018 9:20:09 AM::: UpstoxAverageTheBuyThenSell PCJEWELLER [Place Order MARGIN]: Success PCJEWELLER BUY 30 @ 53.8 LIMIT. OrderId = 181004000018494. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:20:09 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK PriceStrategy=LTP Markdown,LTP=1616, lastBuyPrice=1709.62, holdingOutstandingPrice=1709.62, lastPriceToCompareWith=1616, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.0075, markDownPctCalculated=0.0075,
+                    calculatedToBuyPrice=1603.9, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=5, holdingOutstandingPrice=1709.62, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=5, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=2.5, priceToCompareForQty=1709.62, priceDiffPct=1709.62, priceBucketWidthInPctForQty=0.06, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=2.06, priceDiffBucketAgressionForQty=2, priceFactorCalcForQty=1.5;
+                    qtyCurve=3.09, calculatedOrderQty=5.592, maxTodayPositionValueMultiple=5, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:20:11 AM::: MyUpstoxWrapper INDUSINDBK OrderId:181004000018525, UpstoxOrderStatus:open pending
+
+10/4/2018 9:20:11 AM::: UpstoxAverageTheBuyThenSell INDUSINDBK [Place Order MARGIN]: Success INDUSINDBK BUY 5 @ 1603.9 LIMIT. OrderId = 181004000018525. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:20:12 AM::: UpstoxAverageTheBuyThenSell M&M PriceStrategy=LTP Markdown,LTP=772.9, lastBuyPrice=929, holdingOutstandingPrice=929, lastPriceToCompareWith=772.9, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.001, markDownPctCalculated=0.001,
+                    calculatedToBuyPrice=772.1, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=3, holdingOutstandingPrice=929, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=3, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=1.5, priceToCompareForQty=929, priceDiffPct=929, priceBucketWidthInPctForQty=0.17, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=5.63, priceDiffBucketAgressionForQty=5, priceFactorCalcForQty=2.4;
+                    qtyCurve=13.51, calculatedOrderQty=15.011, maxTodayPositionValueMultiple=15, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:20:13 AM::: MyUpstoxWrapper M&M OrderId:181004000018593, UpstoxOrderStatus:open pending
+
+10/4/2018 9:20:13 AM::: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M BUY 15 @ 772.1 LIMIT. OrderId = 181004000018593. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:21:17 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Trade Execution] MARGIN Trade: IDFCBANK sold 28 @ 37.1. OrderId = 181004000015307
+
+10/4/2018 9:21:17 AM::: UpstoxAverageTheBuyThenSell IDFCBANK PriceStrategy=LTP Markdown,LTP=37.2, lastBuyPrice=36.7, holdingOutstandingPrice=40.7, lastPriceToCompareWith=37.2, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=37, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=30, holdingOutstandingPrice=40.7, baseOrderQty=2, todayOutstandingMultiple=2, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=15, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=7.5, priceToCompareForQty=40.7, priceDiffPct=40.7, priceBucketWidthInPctForQty=0.09, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=3.03, priceDiffBucketAgressionForQty=3, priceFactorCalcForQty=2;
+                    qtyCurve=6.06, calculatedOrderQty=13.561, maxTodayPositionValueMultiple=27, maxTotalPositionValueMultiple=30;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:21:19 AM::: MyUpstoxWrapper IDFCBANK OrderId:181004000020715, UpstoxOrderStatus:open
+
+10/4/2018 9:21:19 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order MARGIN]: Success IDFCBANK BUY 27 @ 37 LIMIT. OrderId = 181004000020715. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:21:20 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Trade Execution] MARGIN Trade: FEDERALBNK sold 11 @ 68.9. OrderId = 181004000018315
+
+10/4/2018 9:21:20 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK PriceStrategy=LTP Markdown,LTP=69.05, lastBuyPrice=68.2, holdingOutstandingPrice=72.14, lastPriceToCompareWith=69.05, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=68.7, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=19, holdingOutstandingPrice=72.14, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=19, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=9.5, priceToCompareForQty=72.14, priceDiffPct=72.14, priceBucketWidthInPctForQty=0.05, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=1.59, priceDiffBucketAgressionForQty=1, priceFactorCalcForQty=1.3;
+                    qtyCurve=2.07, calculatedOrderQty=11.566, maxTodayPositionValueMultiple=11, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:21:21 AM::: MyUpstoxWrapper FEDERALBNK OrderId:181004000020798, UpstoxOrderStatus:open
+
+10/4/2018 9:21:21 AM::: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order MARGIN]: Success FEDERALBNK BUY 11 @ 68.7 LIMIT. OrderId = 181004000020798. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:21:28 AM::: UpstoxAverageTheBuyThenSell M&M [Trade Execution] MARGIN Trade: M&M bought 15 @ 772.1. OrderId = 181004000018593
+
+10/4/2018 9:21:29 AM::: UpstoxAverageTheBuyThenSell M&M [Trade Execution] Fully executed newqty 15 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000018593 buyorderstatus COMPLETED
+
+10/4/2018 9:21:29 AM::: UpstoxAverageTheBuyThenSell M&M TodayOutstandingQty reached the max. todayOutstandingQty: 15 maxTodayPositionValueMultiple: 15
+
+10/4/2018 9:21:30 AM::: MyUpstoxWrapper M&M OrderId:181004000021143, UpstoxOrderStatus:open
+
+10/4/2018 9:21:30 AM::: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M SELL 15 @ 772.9 LIMIT. OrderId = 181004000021143. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:21:36 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE bought 1 @ 1171.7. OrderId = 181004000018383
+
+10/4/2018 9:21:36 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000018383 buyorderstatus COMPLETED
+
+10/4/2018 9:21:38 AM::: MyUpstoxWrapper RELIANCE OrderId:181004000021478, UpstoxOrderStatus:complete
+
+10/4/2018 9:21:38 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE SELL 1 @ 1174.6 LIMIT. OrderId = 181004000021478. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:21:38 AM::: UpstoxAverageTheBuyThenSell RELIANCE PriceStrategy=LastBuyPrice Markdown,LTP=1177.15, lastBuyPrice=1171.7, holdingOutstandingPrice=0, lastPriceToCompareWith=1171.7, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1.5, markDownPctForBuy=0.0025, markDownPctCalculated=0.00375,
+                    calculatedToBuyPrice=1167.3, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=1, todayOutstandingPrice=1171.7, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=1, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0.5, priceToCompareForQty=1171.7, priceDiffPct=1177.15, priceBucketWidthInPctForQty=0.01, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.28, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.33, calculatedOrderQty=0.835, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:21:39 AM::: MyUpstoxWrapper RELIANCE OrderId:181004000021526, UpstoxOrderStatus:open pending
+
+10/4/2018 9:21:39 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1167.3 LIMIT. OrderId = 181004000021526. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:21:40 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Trade Execution] MARGIN Trade: CAPLIPOINT bought 8 @ 435.7. OrderId = 181004000013822
+
+10/4/2018 9:21:41 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Trade Execution] Fully executed newqty 8 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000013822 buyorderstatus COMPLETED
+
+10/4/2018 9:21:42 AM::: MyUpstoxWrapper CAPLIPOINT OrderId:181004000021631, UpstoxOrderStatus:open pending
+
+10/4/2018 9:21:42 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT SELL 8 @ 440.1 LIMIT. OrderId = 181004000021631. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:21:45 AM::: UpstoxAverageTheBuyThenSell M&M [Trade Execution] MARGIN Trade: M&M sold 15 @ 772.9. OrderId = 181004000021143
+
+10/4/2018 9:21:45 AM::: UpstoxAverageTheBuyThenSell M&M PriceStrategy=LTP Markdown,LTP=772.85, lastBuyPrice=772.1, holdingOutstandingPrice=929, lastPriceToCompareWith=772.85, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.001, markDownPctCalculated=0.001,
+                    calculatedToBuyPrice=772.1, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=3, holdingOutstandingPrice=929, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=3, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=1.5, priceToCompareForQty=929, priceDiffPct=929, priceBucketWidthInPctForQty=0.17, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=5.63, priceDiffBucketAgressionForQty=5, priceFactorCalcForQty=2.4;
+                    qtyCurve=13.51, calculatedOrderQty=15.011, maxTodayPositionValueMultiple=15, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:21:47 AM::: MyUpstoxWrapper M&M OrderId:181004000021774, UpstoxOrderStatus:open
+
+10/4/2018 9:21:47 AM::: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M BUY 15 @ 772.1 LIMIT. OrderId = 181004000021774. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:21:55 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE sold 1 @ 1176.5. OrderId = 181004000021478
+
+10/4/2018 9:22:26 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Trade Execution] MARGIN Trade: BERGEPAINT sold 1 @ 278.8. OrderId = 181004000015364
+
+10/4/2018 9:22:26 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT PriceStrategy=LTP Markdown,LTP=279.1, lastBuyPrice=276, holdingOutstandingPrice=0, lastPriceToCompareWith=279.1, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=277.7, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=0, priceDiffPct=279.1, priceBucketWidthInPctForQty=0.01, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.17, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.2, calculatedOrderQty=0.201, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:22:27 AM::: MyUpstoxWrapper BERGEPAINT OrderId:181004000023434, UpstoxOrderStatus:validation pending
+
+10/4/2018 9:22:27 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT BUY 1 @ 277.7 LIMIT. OrderId = 181004000023434. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:23:40 AM::: MyUpstoxWrapper  BIOCON GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+10/4/2018 9:23:40 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+10/4/2018 9:23:42 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Trade Execution] MARGIN Trade: BERGEPAINT bought 1 @ 277.7. OrderId = 181004000023434
+
+10/4/2018 9:24:12 AM::: MyUpstoxWrapper  UJJIVAN GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+10/4/2018 9:24:12 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+10/4/2018 9:24:12 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Trade Execution] Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000023434 buyorderstatus COMPLETED
+
+10/4/2018 9:24:12 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE bought 1 @ 1167.3. OrderId = 181004000021526
+
+10/4/2018 9:24:13 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Trade Execution] MARGIN Trade: CAPLIPOINT sold 8 @ 440.1. OrderId = 181004000021631
+
+10/4/2018 9:24:13 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT PriceStrategy=LTP Markdown,LTP=440, lastBuyPrice=435.7, holdingOutstandingPrice=492.85, lastPriceToCompareWith=440, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.02, markDownPctCalculated=0.02,
+                    calculatedToBuyPrice=431.2, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=2, holdingOutstandingPrice=492.85, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=2, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=1, priceToCompareForQty=492.85, priceDiffPct=492.85, priceBucketWidthInPctForQty=0.13, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=4.17, priceDiffBucketAgressionForQty=4, priceFactorCalcForQty=2.2;
+                    qtyCurve=9.17, calculatedOrderQty=10.173, maxTodayPositionValueMultiple=10, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:24:14 AM::: MyUpstoxWrapper BERGEPAINT OrderId:181004000026450, UpstoxOrderStatus:open
+
+10/4/2018 9:24:14 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT SELL 1 @ 280.5 LIMIT. OrderId = 181004000026450. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:24:15 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000021526 buyorderstatus COMPLETED
+
+10/4/2018 9:24:17 AM::: MyUpstoxWrapper CAPLIPOINT OrderId:181004000026514, UpstoxOrderStatus:open pending
+
+10/4/2018 9:24:17 AM::: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT BUY 10 @ 431.2 LIMIT. OrderId = 181004000026514. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:24:18 AM::: MyUpstoxWrapper RELIANCE OrderId:181004000026544, UpstoxOrderStatus:open pending
+
+10/4/2018 9:24:18 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE SELL 1 @ 1170.2 LIMIT. OrderId = 181004000026544. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:24:18 AM::: UpstoxAverageTheBuyThenSell RELIANCE PriceStrategy=LastBuyPrice Markdown,LTP=1165.05, lastBuyPrice=1167.3, holdingOutstandingPrice=0, lastPriceToCompareWith=1167.3, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1.5, markDownPctForBuy=0.0025, markDownPctCalculated=0.00375,
+                    calculatedToBuyPrice=1162.9, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=1, todayOutstandingPrice=1167.3, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=1, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0.5, priceToCompareForQty=1167.3, priceDiffPct=1167.3, priceBucketWidthInPctForQty=0, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.13, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.15, calculatedOrderQty=0.651, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:24:19 AM::: MyUpstoxWrapper RELIANCE OrderId:181004000026573, UpstoxOrderStatus:open
+
+10/4/2018 9:24:19 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1162.9 LIMIT. OrderId = 181004000026573. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:26:36 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE sold 1 @ 1170.2. OrderId = 181004000026544
+
+10/4/2018 9:29:39 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE bought 1 @ 1162.9. OrderId = 181004000026573
+
+10/4/2018 9:29:39 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000026573 buyorderstatus COMPLETED
+
+10/4/2018 9:29:40 AM::: MyUpstoxWrapper RELIANCE OrderId:181004000034462, UpstoxOrderStatus:open
+
+10/4/2018 9:29:40 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE SELL 1 @ 1165.8 LIMIT. OrderId = 181004000034462. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:29:40 AM::: UpstoxAverageTheBuyThenSell RELIANCE PriceStrategy=LastBuyPrice Markdown,LTP=1161.1, lastBuyPrice=1162.9, holdingOutstandingPrice=0, lastPriceToCompareWith=1162.9, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1.5, markDownPctForBuy=0.0025, markDownPctCalculated=0.00375,
+                    calculatedToBuyPrice=1158.5, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=1, todayOutstandingPrice=1162.9, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=1, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0.5, priceToCompareForQty=1162.9, priceDiffPct=1162.9, priceBucketWidthInPctForQty=0, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.13, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.15, calculatedOrderQty=0.651, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:29:41 AM::: MyUpstoxWrapper RELIANCE OrderId:181004000034491, UpstoxOrderStatus:open pending
+
+10/4/2018 9:29:41 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1158.5 LIMIT. OrderId = 181004000034491. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:29:56 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE bought 1 @ 1158.5. OrderId = 181004000034491
+
+10/4/2018 9:29:56 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] Fully executed newqty 1 todayoutstandingqty 1 todayoutstandingprice 1162.9 sellorderref 181004000034462 buyorderef 181004000034491 buyorderstatus COMPLETED
+
+10/4/2018 9:29:56 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Buy Executed]: RELIANCE SELL order cancel , OrderRef = 181004000034462: Success
+
+10/4/2018 9:29:57 AM::: MyUpstoxWrapper RELIANCE OrderId:181004000034856, UpstoxOrderStatus:open
+
+10/4/2018 9:29:57 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE SELL 2 @ 1163.6 LIMIT. OrderId = 181004000034856. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:29:57 AM::: UpstoxAverageTheBuyThenSell RELIANCE PriceStrategy=LastBuyPrice Markdown,LTP=1157.1, lastBuyPrice=1158.5, holdingOutstandingPrice=0, lastPriceToCompareWith=1158.5, todayOutstandingTradeCount=2, 
+                    todayOutstandingTradeBucketNumberForPrice=2, priceBucketAgressionForPrice=2.6, markDownPctForBuy=0.0025, markDownPctCalculated=0.0065,
+                    calculatedToBuyPrice=1151, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=2, todayOutstandingPrice=1160.7, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=2, 
+                    qtyAgressionFactor=2, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=1, priceToCompareForQty=1160.7, priceDiffPct=1160.7, priceBucketWidthInPctForQty=0.01, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.28, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.33, calculatedOrderQty=1.334, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:29:59 AM::: MyUpstoxWrapper RELIANCE OrderId:181004000034886, UpstoxOrderStatus:open
+
+10/4/2018 9:29:59 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1151 LIMIT. OrderId = 181004000034886. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:30:00 AM::: UpstoxAverageTheBuyThenSell HDFCBANK PriceStrategy=LTP Markdown,LTP=2004.25, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=2004.25, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.001, markDownPctCalculated=0.001,
+                    calculatedToBuyPrice=2002.2, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=0, priceDiffPct=2004.25, priceBucketWidthInPctForQty=0, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.03, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.04, calculatedOrderQty=0.041, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:30:02 AM::: MyUpstoxWrapper HDFCBANK OrderId:181004000034946, UpstoxOrderStatus:open
+
+10/4/2018 9:30:02 AM::: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 2002.2 LIMIT. OrderId = 181004000034946. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:30:05 AM::: UpstoxAverageTheBuyThenSell SBIN PriceStrategy=LTP Markdown,LTP=267.9, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=267.9, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.0015, markDownPctCalculated=0.0015,
+                    calculatedToBuyPrice=267.5, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=0, priceDiffPct=267.9, priceBucketWidthInPctForQty=0, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.05, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.06, calculatedOrderQty=0.06, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:30:06 AM::: MyUpstoxWrapper SBIN OrderId:181004000035049, UpstoxOrderStatus:open
+
+10/4/2018 9:30:06 AM::: UpstoxAverageTheBuyThenSell SBIN [Place Order MARGIN]: Success SBIN BUY 1 @ 267.5 LIMIT. OrderId = 181004000035049. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:30:14 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE bought 1 @ 1151. OrderId = 181004000034886
+
+10/4/2018 9:30:14 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] Fully executed newqty 1 todayoutstandingqty 2 todayoutstandingprice 1160.7 sellorderref 181004000034856 buyorderef 181004000034886 buyorderstatus COMPLETED
+
+10/4/2018 9:30:14 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Buy Executed]: RELIANCE SELL order cancel , OrderRef = 181004000034856: Success
+
+10/4/2018 9:30:43 AM::: MyUpstoxWrapper  RELIANCE PlaceEquityOrderError:: Endpoint request timed out
+Stacktrace:   at A..(String , String , String , String , Int32 , String , Double 	, Double , String  , String , Int32 , String , String , String , String , Boolean , String , Boolean )
+   at UpstoxNet.Upstox.PlaceSimpleOrder(String Exch, String TrdSym, String Trans, String OrdType, Int32 Qty, String ProdType, Double LmtPrice, Double TrgPrice, String Validity, String CTag, Int32 DiscQty, String TagAPI)
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.PlaceEquityOrder(String exchange, String stockCode, OrderDirection orderDirection, OrderPriceType orderPriceType, Int32 quantity, EquityOrderType orderType, Double price, String& orderId, OrderStatus& orderStatus)
+
+10/4/2018 9:30:43 AM::: MyUpstoxWrapper RELIANCE Exception in PlaceOrder (Reconfirming Order status). OrderId=
+
+10/4/2018 9:30:43 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Unknown RELIANCE SELL 3 @ 1160.4 LIMIT. OrderId = . BrokerOrderStatus=UNKNOWN
+
+10/4/2018 9:30:43 AM::: UpstoxAverageTheBuyThenSell RELIANCE PriceStrategy=LastBuyPrice Markdown,LTP=1154.7, lastBuyPrice=1151, holdingOutstandingPrice=0, lastPriceToCompareWith=1151, todayOutstandingTradeCount=3, 
+                    todayOutstandingTradeBucketNumberForPrice=3, priceBucketAgressionForPrice=4.1, markDownPctForBuy=0.0025, markDownPctCalculated=0.01025,
+                    calculatedToBuyPrice=1139.2, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=3, todayOutstandingPrice=1157.47, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=3, 
+                    qtyAgressionFactor=3, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=1.5, priceToCompareForQty=1157.47, priceDiffPct=1157.47, priceBucketWidthInPctForQty=0.02, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.53, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.63, calculatedOrderQty=2.131, maxTodayPositionValueMultiple=2, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:30:46 AM::: MyUpstoxWrapper RELIANCE OrderId:181004000035995, UpstoxOrderStatus:open
+
+10/4/2018 9:30:46 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 2 @ 1139.2 LIMIT. OrderId = 181004000035995. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:31:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Trade Execution] MARGIN Trade: IDFCBANK bought 27 @ 37. OrderId = 181004000020715
+
+10/4/2018 9:31:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Trade Execution] Fully executed newqty 27 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000020715 buyorderstatus COMPLETED
+
+10/4/2018 9:31:01 AM::: MyUpstoxWrapper IDFCBANK OrderId:181004000036335, UpstoxOrderStatus:open
+
+10/4/2018 9:31:01 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order MARGIN]: Success IDFCBANK SELL 27 @ 37.4 LIMIT. OrderId = 181004000036335. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:32:01 AM::: UpstoxAverageTheBuyThenSell SBIN [Trade Execution] MARGIN Trade: SBIN bought 1 @ 267.5. OrderId = 181004000035049
+
+10/4/2018 9:32:01 AM::: UpstoxAverageTheBuyThenSell SBIN [Trade Execution] Fully executed newqty 1 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000035049 buyorderstatus COMPLETED
+
+10/4/2018 9:32:02 AM::: MyUpstoxWrapper SBIN OrderId:181004000037580, UpstoxOrderStatus:open
+
+10/4/2018 9:32:02 AM::: UpstoxAverageTheBuyThenSell SBIN [Place Order MARGIN]: Success SBIN SELL 1 @ 267.9 LIMIT. OrderId = 181004000037580. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:32:02 AM::: UpstoxAverageTheBuyThenSell SBIN PriceStrategy=LastBuyPrice Markdown,LTP=267.6, lastBuyPrice=267.5, holdingOutstandingPrice=0, lastPriceToCompareWith=267.5, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1.5, markDownPctForBuy=0.0015, markDownPctCalculated=0.00225,
+                    calculatedToBuyPrice=266.9, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=1, todayOutstandingPrice=267.5, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=1, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0.5, priceToCompareForQty=267.5, priceDiffPct=267.6, priceBucketWidthInPctForQty=0, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.09, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.1, calculatedOrderQty=0.605, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:32:03 AM::: MyUpstoxWrapper SBIN OrderId:181004000037594, UpstoxOrderStatus:open pending
+
+10/4/2018 9:32:03 AM::: UpstoxAverageTheBuyThenSell SBIN [Place Order MARGIN]: Success SBIN BUY 1 @ 266.9 LIMIT. OrderId = 181004000037594. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:32:34 AM::: UpstoxAverageTheBuyThenSell SBIN [Trade Execution] MARGIN Trade: SBIN sold 1 @ 267.9. OrderId = 181004000037580
+
+10/4/2018 9:34:21 AM::: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE sold 3 @ 1160.4. OrderId = 181004000035247
+
+10/4/2018 9:39:39 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Trade Execution] MARGIN Trade: IDFCBANK sold 27 @ 37.4. OrderId = 181004000036335
+
+10/4/2018 9:39:39 AM::: UpstoxAverageTheBuyThenSell IDFCBANK PriceStrategy=LTP Markdown,LTP=37.4, lastBuyPrice=37, holdingOutstandingPrice=40.7, lastPriceToCompareWith=37.4, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=37.2, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=30, holdingOutstandingPrice=40.7, baseOrderQty=2, todayOutstandingMultiple=2, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=15, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=7.5, priceToCompareForQty=40.7, priceDiffPct=40.7, priceBucketWidthInPctForQty=0.09, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=2.87, priceDiffBucketAgressionForQty=2, priceFactorCalcForQty=1.5;
+                    qtyCurve=4.3, calculatedOrderQty=11.8, maxTodayPositionValueMultiple=23, maxTotalPositionValueMultiple=30;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:39:40 AM::: MyUpstoxWrapper IDFCBANK OrderId:181004000046082, UpstoxOrderStatus:open
+
+10/4/2018 9:39:40 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order MARGIN]: Success IDFCBANK BUY 23 @ 37.2 LIMIT. OrderId = 181004000046082. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:41:31 AM::: MyUpstoxWrapper  UJJIVAN GetTradeBookError:: Endpoint request timed out
+Stacktrace:   at A. .()
+   at UpstoxNet.Upstox.GetTradeBook()
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetTradeBook(Boolean getOnlyNewTrades, String stockCode, Dictionary`2& trades)
+
+10/4/2018 9:41:31 AM::: MyUpstoxWrapper  Retrying 1 out of 3
+
+10/4/2018 9:42:04 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Trade Execution] MARGIN Trade: IDFCBANK bought 23 @ 37.2. OrderId = 181004000046082
+
+10/4/2018 9:42:04 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Trade Execution] Fully executed newqty 23 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000046082 buyorderstatus COMPLETED
+
+10/4/2018 9:42:05 AM::: MyUpstoxWrapper IDFCBANK OrderId:181004000048269, UpstoxOrderStatus:open
+
+10/4/2018 9:42:05 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order MARGIN]: Success IDFCBANK SELL 23 @ 37.6 LIMIT. OrderId = 181004000048269. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:42:19 AM::: UpstoxAverageTheBuyThenSell INFY [Trade Execution] MARGIN Trade: INFY bought 2 @ 716.5. OrderId = 181004000018348
+
+10/4/2018 9:42:19 AM::: UpstoxAverageTheBuyThenSell INFY [Trade Execution] Fully executed newqty 2 todayoutstandingqty 0 todayoutstandingprice 0 sellorderref  buyorderef 181004000018348 buyorderstatus COMPLETED
+
+10/4/2018 9:42:20 AM::: MyUpstoxWrapper INFY OrderId:181004000048506, UpstoxOrderStatus:open pending
+
+10/4/2018 9:42:20 AM::: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY SELL 2 @ 720.1 LIMIT. OrderId = 181004000048506. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:42:20 AM::: UpstoxAverageTheBuyThenSell INFY PriceStrategy=LastBuyPrice Markdown,LTP=716.55, lastBuyPrice=716.5, holdingOutstandingPrice=738.47, lastPriceToCompareWith=716.5, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1.5, markDownPctForBuy=0.005, markDownPctCalculated=0.0075,
+                    calculatedToBuyPrice=711.1, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=2, todayOutstandingPrice=716.5, holdingOutstandingQty=3, holdingOutstandingPrice=738.47, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=2, 
+                    qtyAgressionFactor=5, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=2.5, priceToCompareForQty=729.68, priceDiffPct=729.68, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.85, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=1.02, calculatedOrderQty=3.519, maxTodayPositionValueMultiple=3, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=True
+
+10/4/2018 9:42:22 AM::: MyUpstoxWrapper INFY OrderId:181004000048538, UpstoxOrderStatus:open pending
+
+10/4/2018 9:42:22 AM::: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY BUY 3 @ 711.1 LIMIT. OrderId = 181004000048538. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:50:14 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Trade Execution] MARGIN Trade: BERGEPAINT sold 1 @ 280.5. OrderId = 181004000026450
+
+10/4/2018 9:50:14 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT PriceStrategy=LTP Markdown,LTP=280.35, lastBuyPrice=277.7, holdingOutstandingPrice=0, lastPriceToCompareWith=280.35, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=278.9, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=0, priceDiffPct=280.35, priceBucketWidthInPctForQty=0.01, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0.17, priceDiffBucketAgressionForQty=0, priceFactorCalcForQty=1.2;
+                    qtyCurve=0.21, calculatedOrderQty=0.207, maxTodayPositionValueMultiple=1, maxTotalPositionValueMultiple=15;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:50:15 AM::: MyUpstoxWrapper BERGEPAINT OrderId:181004000055487, UpstoxOrderStatus:open pending
+
+10/4/2018 9:50:15 AM::: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT BUY 1 @ 278.9 LIMIT. OrderId = 181004000055487. BrokerOrderStatus=ORDERED
+
+10/4/2018 9:51:59 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Trade Execution] MARGIN Trade: IDFCBANK sold 23 @ 37.6. OrderId = 181004000048269
+
+10/4/2018 9:51:59 AM::: UpstoxAverageTheBuyThenSell IDFCBANK PriceStrategy=LTP Markdown,LTP=37.6, lastBuyPrice=37.2, holdingOutstandingPrice=40.7, lastPriceToCompareWith=37.6, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctCalculated=0.005,
+                    calculatedToBuyPrice=37.4, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;\n
+QtyStrategy=todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=30, holdingOutstandingPrice=40.7, baseOrderQty=2, todayOutstandingMultiple=2, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=15, qtyFactorCalcForQty=0.5;
+                    totalAvgHoldingPrice=7.5, priceToCompareForQty=40.7, priceDiffPct=40.7, priceBucketWidthInPctForQty=0.08, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=2.7, priceDiffBucketAgressionForQty=2, priceFactorCalcForQty=1.5;
+                    qtyCurve=4.05, calculatedOrderQty=11.554, maxTodayPositionValueMultiple=23, maxTotalPositionValueMultiple=30;
+placeBuyNoLtpCompare=False
+
+10/4/2018 9:52:00 AM::: MyUpstoxWrapper IDFCBANK OrderId:181004000057230, UpstoxOrderStatus:open
+
+10/4/2018 9:52:00 AM::: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order MARGIN]: Success IDFCBANK BUY 23 @ 37.4 LIMIT. OrderId = 181004000057230. BrokerOrderStatus=ORDERED
+

@@ -71,16 +71,18 @@ namespace UpstoxTrader
 
                 // price calc independent of the holdings
                 var todayOutstandingTradeBucketNumberForPrice = Math.Min(todayOutstandingTradeCount, priceBucketsForPrice.Length - 1);
+                var tighteningScale = 5;
+                var markDownExtraPctCalculated = markDownPctForAveraging * (Math.Min(todayOutstandingTradeCount, tighteningScale) / tighteningScale);
                 var priceBucketAgressionForPrice = priceBucketsForPrice[todayOutstandingTradeBucketNumberForPrice];
-                var markDownPctCalculated = markDownPctForBuy * priceBucketAgressionForPrice;
+                var markDownPctCalculated = (markDownPctForBuy + markDownExtraPctCalculated) * priceBucketAgressionForPrice;
                 var calculatedToBuyPrice = Math.Round((1 - markDownPctCalculated) * lastPriceToCompareWith, 1);
 
                 priceStrategy = string.Format(
                     @"{0},LTP={1}, lastBuyPrice={2}, holdingOutstandingPrice={3}, lastPriceToCompareWith={4}, todayOutstandingTradeCount={5}, 
-                    todayOutstandingTradeBucketNumberForPrice={6}, priceBucketAgressionForPrice={7}, markDownPctForBuy={8}, markDownPctCalculated={9},
-                    calculatedToBuyPrice={10}, priceBucketsForPrice={11};\n",
-                    priceStrategy, ltp, lastBuyPrice, holdingOutstandingPrice, lastPriceToCompareWith, todayOutstandingTradeCount, todayOutstandingTradeBucketNumberForPrice, 
-                    priceBucketAgressionForPrice, markDownPctForBuy, markDownPctCalculated, calculatedToBuyPrice, string.Join(":", priceBucketsForPrice));
+                    todayOutstandingTradeBucketNumberForPrice={6}, priceBucketAgressionForPrice={7}, markDownPctForBuy={8}, markDownPctForAveraging={9}, markDownExtraPctCalculated={10},
+                    markDownPctCalculated={11}, calculatedToBuyPrice={12}, priceBucketsForPrice={13};",
+                    priceStrategy, ltp, lastBuyPrice, holdingOutstandingPrice, lastPriceToCompareWith, todayOutstandingTradeCount, todayOutstandingTradeBucketNumberForPrice,
+                    priceBucketAgressionForPrice, markDownPctForBuy, markDownPctForAveraging, markDownExtraPctCalculated, markDownPctCalculated, calculatedToBuyPrice, string.Join(":", priceBucketsForPrice));
 
                 // Qty calc depends upon calculatedbuyprice and totaloutstanding qty
                 var totalOutstandingQty = todayOutstandingQty + holdingOutstandingQty;
@@ -105,20 +107,20 @@ namespace UpstoxTrader
                 calculatedOrderQty = Math.Min(calculatedOrderQty, maxTotalOutstandingQtyAllowed - totalOutstandingQty);
 
                 qtyStrategy = string.Format(
-                    @"todayOutstandingQty={0}, todayOutstandingPrice={1}, holdingOutstandingQty={2}, holdingOutstandingPrice={3}, baseOrderQty={4}, todayOutstandingMultiple={4}, totalOutstandingMultiple={5}, 
-                    qtyAgressionFactor={6}, qtyFactorCalcForQty={7};
-                    totalAvgHoldingPrice={8}, priceToCompareForQty={9}, priceDiffPct={10}, priceBucketWidthInPctForQty={11}, priceDiffMultiple={12},
-                    priceDiffBucketNumberForQty={13}, priceDiffBucketAgressionForQty={14}, priceFactorCalcForQty={15};
-                    qtyCurve={16}, calculatedOrderQty={17}, maxTodayPositionValueMultiple={18}, maxTotalPositionValueMultiple={19};",
+                    @"todayOutstandingQty={0}, todayOutstandingPrice={1}, holdingOutstandingQty={2}, holdingOutstandingPrice={3}, baseOrderQty={4}, todayOutstandingMultiple={5}, totalOutstandingMultiple={6}, 
+                    qtyAgressionFactor={7}, qtyFactorCalcForQty={8};
+                    totalAvgHoldingPrice={9}, priceToCompareForQty={10}, priceDiffPct={11}, priceBucketWidthInPctForQty={12}, priceDiffMultiple={13},
+                    priceDiffBucketNumberForQty={14}, priceDiffBucketAgressionForQty={15}, priceFactorCalcForQty={16};
+                    qtyCurve={17}, calculatedOrderQty={18}, maxTodayPositionValueMultiple={19}, maxTotalPositionValueMultiple={20};",
                     todayOutstandingQty, Math.Round(todayOutstandingPrice, 2), holdingOutstandingQty, Math.Round(holdingOutstandingPrice, 2), baseOrderQty, todayOutstandingMultiple, totalOutstandingMultiple,
-                    qtyAgressionFactor, qtyFactorCalcForQty, 
+                    qtyAgressionFactor, qtyFactorCalcForQty,
                     Math.Round(totalAvgHoldingPrice, 2), Math.Round(priceToCompareForQty, 2), Math.Round(priceDiffPct, 2), priceBucketWidthInPctForQty, Math.Round(priceDiffMultiple, 2),
-                    priceDiffBucketNumberForQty, priceDiffBucketAgressionForQty, Math.Round(priceFactorCalcForQty, 2), 
+                    priceDiffBucketNumberForQty, priceDiffBucketAgressionForQty, Math.Round(priceFactorCalcForQty, 2),
                     Math.Round(qtyCurve, 3), calculatedOrderQty, maxTodayOutstandingQtyAllowed, maxTotalOutstandingQtyAllowed);
 
                 if (errCode == BrokerErrorCode.Success && (todayOutstandingQty == 0 || (placeBuyNoLtpCompare || (ltp <= calculatedToBuyPrice))))
                 {
-                    Trace(string.Format("PriceStrategy={0}\nQtyStrategy={1}\nplaceBuyNoLtpCompare={2}", priceStrategy, qtyStrategy, placeBuyNoLtpCompare));
+                    Trace(string.Format("\nPriceStrategy~{0}\nQtyStrategy~{1}\nplaceBuyNoLtpCompare~{2}", priceStrategy, qtyStrategy, placeBuyNoLtpCompare));
 
                     errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.BUY, OrderPriceType.LIMIT, calculatedOrderQty, orderType, calculatedToBuyPrice, out todayOutstandingBuyOrderId, out upstoxOrderStatus);
 
@@ -145,6 +147,7 @@ namespace UpstoxTrader
                 try
                 {
                     {
+                        var isSellOnlyExecutedAndFully = false;
                         var newTrades = new Dictionary<string, EquityTradeBookRecord>();
                         // refresh trade book
                         errCode = myUpstoxWrapper.GetTradeBook(true, stockCode, out newTrades);
@@ -171,6 +174,7 @@ namespace UpstoxTrader
                                     todayOutstandingPrice = 0;
                                     todayOutstandingSellOrderId = "";
                                     todayOutstandingTradeCount = 0;
+                                    isSellOnlyExecutedAndFully = true;
                                 }
                             }
 
@@ -194,7 +198,7 @@ namespace UpstoxTrader
                                 // update outstanding qty and outstanding price to place updated sell order
                                 todayOutstandingPrice = (todayOutstandingPrice * todayOutstandingQty) + (trade.NewQuantity * trade.Price);
                                 todayOutstandingQty += trade.NewQuantity;
-                                todayOutstandingPrice = todayOutstandingQty == 0 ? 0 : todayOutstandingPrice / todayOutstandingQty;                                
+                                todayOutstandingPrice = todayOutstandingQty == 0 ? 0 : todayOutstandingPrice / todayOutstandingQty;
                                 //todayOutstandingPrice = Math.Round(todayOutstandingPrice, 2);
 
                                 if (todayOutstandingQty >= maxTodayOutstandingQtyAllowed)
@@ -216,6 +220,19 @@ namespace UpstoxTrader
                                     var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
                                     errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out todayOutstandingSellOrderId, out upstoxOrderStatus);
                                 }
+
+                                isSellOnlyExecutedAndFully = false;
+                            }
+                        }
+
+                        if (isSellOnlyExecutedAndFully)
+                        {
+                            // Cancel existing Buy order which might be an average seeking order, as the pricecalc might have changed
+
+                            if (!string.IsNullOrEmpty(todayOutstandingBuyOrderId))
+                            {
+                                // cancel existing buy order
+                                errCode = CancelEquityOrder("[Sell Executed Fully]", ref todayOutstandingBuyOrderId, orderType, OrderDirection.BUY);
                             }
                         }
 
