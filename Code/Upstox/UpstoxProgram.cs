@@ -51,9 +51,9 @@ namespace UpstoxTrader
 
 #if DEBUG
             Trace("DEBUG MODE");
-            //List<UpstoxTradeParams> stocksConfig1 = ReadTradingConfigFile();
+            List<UpstoxTradeParams> stocksConfig1 = ReadTradingConfigFile();
 
-            errCode = upstoxBroker.Login();
+            errCode = upstoxBroker.Login1();
 #else
             Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
 #endif
@@ -175,7 +175,7 @@ namespace UpstoxTrader
                     var todayBuyValue = trades.Sum(t => t.Direction == OrderDirection.BUY ? t.Quantity * t.Price : 0);
                     var todaySellValue = trades.Sum(t => t.Direction == OrderDirection.SELL ? t.Quantity * t.Price : 0);
 
-                    var orderQty = stockConfig.baseOrderQty;
+                    var orderQty = stats.baseOrderQty;
 
                     // Get Ltp
                     double ltp;
@@ -432,7 +432,6 @@ namespace UpstoxTrader
                         var common = split[1].Split(',');
                         Index = -1;
                         ctp.stockCode = "COMMONCONFIG";
-                        ctp.orderType = (EquityOrderType)Enum.Parse(typeof(EquityOrderType), common[++Index]);
                         ctp.baseOrderVal = double.Parse(common[++Index]);
                         ctp.maxTotalPositionValueMultiple = int.Parse(common[++Index]);
                         ctp.maxTodayPositionValueMultiple = int.Parse(common[++Index]);
@@ -442,6 +441,7 @@ namespace UpstoxTrader
                         ctp.placeBuyNoLtpCompare = bool.Parse(common[++Index]);
                         ctp.startTime = GeneralUtils.GetTodayDateTime(common[++Index]);
                         ctp.endTime = GeneralUtils.GetTodayDateTime(common[++Index]);
+                        ctp.orderType = (EquityOrderType)Enum.Parse(typeof(EquityOrderType), common[++Index]);
                         ctp.exchange = (Exchange)Enum.Parse(typeof(Exchange), common[++Index]);
                         break;
                 }
@@ -454,30 +454,20 @@ namespace UpstoxTrader
             {
                 Index = -1;
                 var stock = line.Split(',');
-                var stockCode = stock[++Index];
-                var indicativePrice = double.Parse(stock[++Index]);//1
-                var orderType = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.orderType : (EquityOrderType)Enum.Parse(typeof(EquityOrderType), stock[Index])) : ctp.orderType;//22
-                var baseOrderVal = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.baseOrderVal : double.Parse(stock[Index])) : ctp.baseOrderVal;//3
-                var ordQty = (int)Math.Round(baseOrderVal / indicativePrice);
-                var maxTotalPositionValueMultiple = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.maxTotalPositionValueMultiple : int.Parse(stock[Index])) : ctp.maxTotalPositionValueMultiple;//4
-                var maxTodayPositionValueMultiple = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.maxTodayPositionValueMultiple : int.Parse(stock[Index])) : ctp.maxTodayPositionValueMultiple;//5
 
                 var tp = new UpstoxTradeParams
                 {
-                    stockCode = stockCode,
-                    baseOrderVal = baseOrderVal,
-                    maxTotalPositionValueMultiple = maxTotalPositionValueMultiple,
-                    maxTodayPositionValueMultiple = maxTodayPositionValueMultiple,
-                    orderType = orderType,
-                    baseOrderQty = ordQty,
-                    maxTotalOutstandingQtyAllowed = ordQty * maxTotalPositionValueMultiple,
-                    maxTodayOutstandingQtyAllowed = ordQty * maxTodayPositionValueMultiple,
+                    stockCode = stock[++Index],
+                    baseOrderVal = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.baseOrderVal : double.Parse(stock[Index])) : ctp.baseOrderVal,
+                    maxTotalPositionValueMultiple = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.maxTotalPositionValueMultiple : int.Parse(stock[Index])) : ctp.maxTotalPositionValueMultiple,
+                    maxTodayPositionValueMultiple = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.maxTodayPositionValueMultiple : int.Parse(stock[Index])) : ctp.maxTodayPositionValueMultiple,
                     markDownPctForBuy = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.markDownPctForBuy : double.Parse(stock[Index])) : ctp.markDownPctForBuy,//7
                     markDownPctForAveraging = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.markDownPctForAveraging : double.Parse(stock[Index])) : ctp.markDownPctForAveraging,//6
                     sellMarkup = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkup : double.Parse(stock[Index])) : ctp.sellMarkup,//8
                     placeBuyNoLtpCompare = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.placeBuyNoLtpCompare : bool.Parse(stock[Index])) : ctp.placeBuyNoLtpCompare,//12
                     startTime = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.startTime : GeneralUtils.GetTodayDateTime(stock[Index])) : ctp.startTime,//15
                     endTime = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.endTime : GeneralUtils.GetTodayDateTime(stock[Index])) : ctp.endTime,//16
+                    orderType = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.orderType : (EquityOrderType)Enum.Parse(typeof(EquityOrderType), stock[Index])) : ctp.orderType,
                     exchange = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.exchange : (Exchange)Enum.Parse(typeof(Exchange), stock[Index])) : ctp.exchange
                 };
 
@@ -518,6 +508,7 @@ namespace UpstoxTrader
         public int prevHoldingQty = 0;
         public double prevHoldingPrice = 0;
         public double maxBuyValueToday = 0;
+        public int baseOrderQty;
     }
 
     public class UpstoxTradeParams
@@ -533,11 +524,8 @@ namespace UpstoxTrader
 
         public string stockCode;
         public double baseOrderVal = 50000;
-        public int maxTotalPositionValueMultiple = 4;
-        public int maxTodayPositionValueMultiple = 2;
-        public int baseOrderQty;
-        public int maxTotalOutstandingQtyAllowed;
-        public int maxTodayOutstandingQtyAllowed;
+        public int maxTotalPositionValueMultiple;
+        public int maxTodayPositionValueMultiple;
         public Exchange exchange;
 
         // default

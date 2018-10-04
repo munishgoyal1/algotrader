@@ -109,7 +109,7 @@ namespace UpstoxTrader
                     qtyAgressionFactor={6}, qtyFactorCalcForQty={7};
                     totalAvgHoldingPrice={8}, priceToCompareForQty={9}, priceDiffPct={10}, priceBucketWidthInPctForQty={11}, priceDiffMultiple={12},
                     priceDiffBucketNumberForQty={13}, priceDiffBucketAgressionForQty={14}, priceFactorCalcForQty={15};
-                    qtyCurve={16}, calculatedOrderQty={17}, maxTodayOutstandingQtyAllowed={18}, maxTotalOutstandingQtyAllowed={19};",
+                    qtyCurve={16}, calculatedOrderQty={17}, maxTodayPositionValueMultiple={18}, maxTotalPositionValueMultiple={19};",
                     todayOutstandingQty, Math.Round(todayOutstandingPrice, 2), holdingOutstandingQty, Math.Round(holdingOutstandingPrice, 2), baseOrderQty, todayOutstandingMultiple, totalOutstandingMultiple,
                     qtyAgressionFactor, qtyFactorCalcForQty, 
                     Math.Round(totalAvgHoldingPrice, 2), Math.Round(priceToCompareForQty, 2), Math.Round(priceDiffPct, 2), priceBucketWidthInPctForQty, Math.Round(priceDiffMultiple, 2),
@@ -198,10 +198,10 @@ namespace UpstoxTrader
                                 //todayOutstandingPrice = Math.Round(todayOutstandingPrice, 2);
 
                                 if (todayOutstandingQty >= maxTodayOutstandingQtyAllowed)
-                                    Trace(string.Format("TodayOutstandingQty reached the max. todayOutstandingQty: {0} maxTodayOutstandingQtyAllowed: {1}", todayOutstandingQty, maxTodayOutstandingQtyAllowed));
+                                    Trace(string.Format("TodayOutstandingQty reached the max. todayOutstandingQty: {0} maxTodayPositionValueMultiple: {1}", todayOutstandingQty, maxTodayOutstandingQtyAllowed));
 
                                 if ((todayOutstandingQty + holdingOutstandingQty) >= maxTotalOutstandingQtyAllowed)
-                                    Trace(string.Format("TotalOutstandingQty reached the max. todayOutstandingQty: {0} holdingOutstandingQty: {1} maxTotalOutstandingQtyAllowed: {2}", todayOutstandingQty, holdingOutstandingQty, maxTotalOutstandingQtyAllowed));
+                                    Trace(string.Format("TotalOutstandingQty reached the max. todayOutstandingQty: {0} holdingOutstandingQty: {1} maxTotalPositionValueMultiple: {2}", todayOutstandingQty, holdingOutstandingQty, maxTotalOutstandingQtyAllowed));
 
                                 lastBuyPrice = trade.Price;
 

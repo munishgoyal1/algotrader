@@ -36,6 +36,8 @@ namespace UpstoxTrader
         public string stockCode = null;
         public double baseOrderVal = 0;
         public int baseOrderQty = 0;
+        public int maxTotalPositionValueMultiple = 0;
+        public int maxTodayPositionValueMultiple = 0;
         public int maxTotalOutstandingQtyAllowed = 0;
         public int maxTodayOutstandingQtyAllowed = 0;
         public Exchange exchange;
@@ -89,9 +91,8 @@ namespace UpstoxTrader
             tradeParams.stats = pnlStats;
             stockCode = tradeParams.stockCode;
             baseOrderVal = tradeParams.baseOrderVal;
-            baseOrderQty = tradeParams.baseOrderQty;
-            maxTotalOutstandingQtyAllowed = tradeParams.maxTotalOutstandingQtyAllowed;
-            maxTodayOutstandingQtyAllowed = tradeParams.maxTodayOutstandingQtyAllowed;
+            maxTotalPositionValueMultiple = tradeParams.maxTotalPositionValueMultiple;
+            maxTodayPositionValueMultiple = tradeParams.maxTodayPositionValueMultiple;
             exchange = tradeParams.exchange;
             exchStr = exchange == Exchange.NSE ? "NSE_EQ" : "BSE_EQ";
             positionFile = AlgoUtils.GetPositionFile(stockCode);
@@ -170,11 +171,19 @@ namespace UpstoxTrader
                 lowerCircuitLimit = quote.LowerCircuitPrice;
                 upperCircuitLimit = quote.UpperCircuitPrice;
                 if (quote.ClosePrice > 0)
+                {
                     baseOrderQty = (int)Math.Round(baseOrderVal / quote.ClosePrice);
+                    maxTotalOutstandingQtyAllowed = baseOrderQty * maxTotalPositionValueMultiple;
+                    maxTodayOutstandingQtyAllowed = baseOrderQty * maxTodayPositionValueMultiple;
+                }
             }
 
             Trace(string.Format("SnapQuote status={0}. lowerCircuitLimit={1}, upperCircuitLimit={2}, ClosePrice={3}, baseOrderQty={4}",
                 errCode, lowerCircuitLimit, upperCircuitLimit, quote.ClosePrice, baseOrderQty));
+
+            baseOrderQty = Math.Max(1, baseOrderQty); //TODO- Remove it later. just to ensure SnapQuote is working for few days.
+
+            pnlStats.baseOrderQty = baseOrderQty;
 
             GetLTPOnDemand(out Ltp);
 
