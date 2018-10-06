@@ -46,6 +46,8 @@ namespace UpstoxTrader
         public string positionFile;
 
         // Algo core price calcs parameters
+        public double mktConditionBuyExtraMarkDownPct;
+        public int markDownPctForAveragingTightening;
         public double priceBucketWidthInPctForQty;
         public double[] priceBucketsForQty;
         public double qtyAgressionFactor;
@@ -105,6 +107,8 @@ namespace UpstoxTrader
             startTime = tradeParams.startTime;
             endTime = tradeParams.endTime;
 
+            markDownPctForAveragingTightening = tradeParams.markDownPctForAveragingTightening;
+            mktConditionBuyExtraMarkDownPct = tradeParams.mktConditionBuyExtraMarkDownPct;
             priceBucketWidthInPctForQty = tradeParams.priceBucketWidthForQty;
             priceBucketsForQty = tradeParams.priceBucketsForQty;
             qtyAgressionFactor = tradeParams.qtyAgressionFactor;
@@ -299,7 +303,7 @@ namespace UpstoxTrader
                 }
             }
 
-            todayOutstandingTradeCount = buyOrders.Count();
+            todayOutstandingTradeCount = buyOrders.Count() - sellOrders.Count();
         }
 
         protected void ProcessHoldingSellOrderExecution(Dictionary<string, EquityTradeBookRecord> trades)

@@ -81,3 +81,6 @@ Buy trades for FEDERALBNK repeating in Trade execution at 3:16 pm on 3 Oct 2018.
 11. maintain state of orders placed. need of  last price of order when replacing an order on delivery conversion detection
 
 
+12. Fast trades, both buy and sell in same cycle then the state goes bad.see M&M log for 5 Oct 2018.
+
+13. Fix the Init logic

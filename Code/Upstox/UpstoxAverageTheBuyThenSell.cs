@@ -71,18 +71,20 @@ namespace UpstoxTrader
 
                 // price calc independent of the holdings
                 var todayOutstandingTradeBucketNumberForPrice = Math.Min(todayOutstandingTradeCount, priceBucketsForPrice.Length - 1);
-                var tighteningScale = 5;
-                var markDownExtraPctCalculated = markDownPctForAveraging * (Math.Min(todayOutstandingTradeCount, tighteningScale) / tighteningScale);
+                var avergaingExtraMarkDownPctCalculated = markDownPctForAveraging * (Math.Min(todayOutstandingTradeCount, markDownPctForAveragingTightening) / markDownPctForAveragingTightening);
                 var priceBucketAgressionForPrice = priceBucketsForPrice[todayOutstandingTradeBucketNumberForPrice];
-                var markDownPctCalculated = (markDownPctForBuy + markDownExtraPctCalculated) * priceBucketAgressionForPrice;
+                var mktConditionExtraMarkdownPctCalculated = mktConditionBuyExtraMarkDownPct;// * Math.Min(0, todayOutstandingTradeCount);
+                var markDownPctCalculated = (markDownPctForBuy + avergaingExtraMarkDownPctCalculated + mktConditionExtraMarkdownPctCalculated) * priceBucketAgressionForPrice;
                 var calculatedToBuyPrice = Math.Round((1 - markDownPctCalculated) * lastPriceToCompareWith, 1);
 
                 priceStrategy = string.Format(
                     @"{0},LTP={1}, lastBuyPrice={2}, holdingOutstandingPrice={3}, lastPriceToCompareWith={4}, todayOutstandingTradeCount={5}, 
-                    todayOutstandingTradeBucketNumberForPrice={6}, priceBucketAgressionForPrice={7}, markDownPctForBuy={8}, markDownPctForAveraging={9}, markDownExtraPctCalculated={10},
-                    markDownPctCalculated={11}, calculatedToBuyPrice={12}, priceBucketsForPrice={13};",
+                    todayOutstandingTradeBucketNumberForPrice={6}, priceBucketAgressionForPrice={7}, markDownPctForBuy={8}, markDownPctForAveraging={9}, markDownPctForAveragingTightening={10},
+                    avergaingExtraMarkDownPctCalculated={11}, mktConditionBuyExtraMarkDownPct={12}, mktConditionExtraMarkdownPctCalculated={13},
+                    markDownPctCalculated={14}, calculatedToBuyPrice={15}, priceBucketsForPrice={16};",
                     priceStrategy, ltp, lastBuyPrice, holdingOutstandingPrice, lastPriceToCompareWith, todayOutstandingTradeCount, todayOutstandingTradeBucketNumberForPrice,
-                    priceBucketAgressionForPrice, markDownPctForBuy, markDownPctForAveraging, markDownExtraPctCalculated, markDownPctCalculated, calculatedToBuyPrice, string.Join(":", priceBucketsForPrice));
+                    priceBucketAgressionForPrice, markDownPctForBuy, markDownPctForAveraging, markDownPctForAveragingTightening, avergaingExtraMarkDownPctCalculated,
+                    mktConditionBuyExtraMarkDownPct, mktConditionExtraMarkdownPctCalculated, markDownPctCalculated, calculatedToBuyPrice, string.Join(":", priceBucketsForPrice));
 
                 // Qty calc depends upon calculatedbuyprice and totaloutstanding qty
                 var totalOutstandingQty = todayOutstandingQty + holdingOutstandingQty;

@@ -117,7 +117,7 @@ namespace StockTrader.Platform.Logging
                     //using (StreamWriter sw = new StreamWriter(fs))
                     {
                         //string timeAndThread = DateTime.Now.ToString("yyyyMMdd:HHmmss") + "::" + Thread.CurrentThread.Name;
-                        string timeAndThread = DateTime.Now.ToString() + "::" + Thread.CurrentThread.Name;
+                        string timeAndThread = DateTime.Now.ToString() + ":" + Thread.CurrentThread.Name;
                         traceString = timeAndThread + ": " + traceString + "\n";
                         sw.WriteLine(traceString);
                         //Console.WriteLine(traceString);

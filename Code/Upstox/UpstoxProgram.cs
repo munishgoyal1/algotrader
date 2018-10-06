@@ -393,6 +393,8 @@ namespace UpstoxTrader
             int Index = -1;
             var ctp = new UpstoxTradeParams();
 
+            double mktConditionBuyExtraMarkDown = 0;
+            int markDownPctForAveragingTightening = 0;
             double priceBucketWidthInPctForQty = 0;
             double[] priceBucketsForQty = new[]{ 0.0};
             double qtyAgressionFactor = 0;
@@ -408,6 +410,14 @@ namespace UpstoxTrader
 
                 switch (split[0].Trim())
                 {
+                    case "@mktConditionBuyExtraMarkDownPct":
+                        mktConditionBuyExtraMarkDown = double.Parse(split[1]);
+                        break;
+
+                    case "@markDownPctForAveragingTightening":
+                        markDownPctForAveragingTightening = int.Parse(split[1]);
+                        break;
+
                     case "@priceBucketWidthInPctForQty":
                         priceBucketWidthInPctForQty = double.Parse(split[1]);
                         break;
@@ -471,6 +481,8 @@ namespace UpstoxTrader
                     exchange = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.exchange : (Exchange)Enum.Parse(typeof(Exchange), stock[Index])) : ctp.exchange
                 };
 
+                tp.markDownPctForAveragingTightening = markDownPctForAveragingTightening;
+                tp.mktConditionBuyExtraMarkDownPct = mktConditionBuyExtraMarkDown;
                 tp.deliveryBrokerage = deliveryBrokerage;
                 tp.priceBucketWidthForQty = priceBucketWidthInPctForQty;
                 tp.priceBucketsForQty = priceBucketsForQty;
@@ -517,6 +529,8 @@ namespace UpstoxTrader
         public UpstoxPnLStats stats = new UpstoxPnLStats();
 
         // common algo config
+        public double mktConditionBuyExtraMarkDownPct;
+        public int markDownPctForAveragingTightening;
         public double priceBucketWidthForQty;
         public double[] priceBucketsForQty;
         public double qtyAgressionFactor;
