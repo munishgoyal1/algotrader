@@ -5,14 +5,16 @@
 #
 #
 
+@mktConditionBuyExtraMarkDownPct=0.005
+@markDownPctForAveragingTightening=5
 @deliveryBrokerage=0.0035
 @priceBucketWidthInPctForQty=.03
 @priceBucketsForQty=1.3, 1.4, 1.6, 2, 2.2, 2.4, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4
-@qtyAgressionFactor = 0.35
+@qtyAgressionFactor = 0.2
 @priceBucketsForPrice=1, 1.5, 2.6, 4.1, 6, 2
 @commonStock=400,30,30,0.005,0.005,1.01,false,09:00:00,15:00:00,MARGIN,NSE
 
-ZEEL,500,,,0.01,0.01,1.01,true
+#ZEEL,500,,,0.01,0.01,1.01,true
 SUNPHARMA,700,,,0.01,0.01,1.005,true
 
 #
@@ -67,7 +69,7 @@ DLF,250,,,0.015,0.005,1.005
 #
 
 RELIANCE,1500,,,0.0025,0.005,1.0025,true,09:20:00
-SBIN,300,,,0.0015,0.01,1.0015,true,09:30:00
+#SBIN,300,,,0.0015,0.01,1.0015,true,09:30:00
 HDFCBANK,2500,,,0.001,0.01,1.005,true,09:30:00
-M&M,1000,,,0.001,0.005,1.005,true,09:20:00
+M&M,1000,,,0.005,0.005,1.001,true,09:20:00
 INFY,800,,,0.005,0.005,1.005,true,09:20:00
