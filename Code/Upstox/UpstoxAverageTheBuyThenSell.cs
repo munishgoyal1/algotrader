@@ -3,6 +3,7 @@ using StockTrader.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UpstoxNet;
 
 namespace UpstoxTrader
 {
@@ -127,7 +128,10 @@ namespace UpstoxTrader
                     errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.BUY, OrderPriceType.LIMIT, calculatedOrderQty, orderType, calculatedToBuyPrice, out outstandingBuyOrder.OrderId, out upstoxOrderStatus);
 
                     if (errCode == BrokerErrorCode.Success)
+                    {
                         lastBuyOrdQty = calculatedOrderQty;
+                        UpdatePnLStats();
+                    }
                 }
             }
         }
@@ -136,6 +140,7 @@ namespace UpstoxTrader
         {
             try
             {
+                myUpstoxWrapper.Upstox.TradeUpdateEvent += new UpstoxNet.Upstox.TradeUpdateEventEventHandler(TradeUpdated);
                 Init(AlgoType.AverageTheBuyThenSell);
             }
             catch (Exception ex)
@@ -148,118 +153,215 @@ namespace UpstoxTrader
             {
                 try
                 {
-                    {
-                        var isSellOnlyExecutedAndFully = false;
-                        var newTrades = new Dictionary<string, EquityTradeBookRecord>();
-                        // refresh trade book
-                        errCode = myUpstoxWrapper.GetTradeBook(true, stockCode, out newTrades);
-
-                        foreach (var tradeKv in newTrades.OrderBy(t => t.Value.Direction).Reverse())
-                        {
-                            var tradeRef = tradeKv.Key;
-                            var trade = tradeKv.Value;
-
-                            Trace(string.Format(tradeTraceFormat, stockCode, trade.Direction == OrderDirection.BUY ? "bought" : "sold", trade.NewQuantity, trade.Price,
-                                holdingSellOrder.OrderId == tradeRef ? "DELIVERY" : "MARGIN", trade.OrderId));
-
-                            // if any holding sell executed
-                            ProcessHoldingSellOrderExecution(newTrades);
-
-                            // if SELL executed, then update today outstanding with executed qty (handle part executions using NewQuantity)
-                            // If it is after 3.15 and broker did auto sq off, then broker's order ref is not with us and wont match with our sq off order. Our sqoff order will be cancelled by the broker
-                            if (tradeRef == outstandingSellOrder.OrderId || (MarketUtils.IsTimeAfter315() && trade.EquityOrderType == EquityOrderType.MARGIN))
-                            {
-                                todayOutstandingQty -= trade.NewQuantity;
-
-                                if (todayOutstandingQty == 0)
-                                {
-                                    todayOutstandingPrice = 0;
-                                    outstandingSellOrder.OrderId = "";
-                                    todayOutstandingTradeCount = 0;
-                                    isSellOnlyExecutedAndFully = true;
-                                }
-                            }
-
-                            // if BUY executed, then place a corresponding updated sell order. 
-                            if (tradeRef == outstandingBuyOrder.OrderId)
-                            {
-                                Dictionary<string, EquityOrderBookRecord> orders;
-                                errCode = myUpstoxWrapper.GetOrderBook(false, false, stockCode, out orders);
-
-                                if (orders[outstandingBuyOrder.OrderId].Status == OrderStatus.COMPLETED)
-                                {
-                                    Trace(string.Format("[Trade Execution] Fully executed newqty {0} todayoutstandingqty {1} todayoutstandingprice {2} sellorderref {3} buyorderef {4} buyorderstatus {5}", trade.NewQuantity, todayOutstandingQty, todayOutstandingPrice, outstandingSellOrder.OrderId, outstandingBuyOrder.OrderId, orders[outstandingBuyOrder.OrderId].Status));
-                                    outstandingBuyOrder.OrderId = "";
-                                    todayOutstandingTradeCount++;
-                                }
-                                else
-                                {
-                                    Trace(string.Format("[Trade Execution] Partially executed newqty {0} todayoutstandingqty {1} todayoutstandingprice {2} sellorderref {3} buyorderef {4} buyorderstatus {5}", trade.NewQuantity, todayOutstandingQty, todayOutstandingPrice, outstandingSellOrder.OrderId, outstandingBuyOrder.OrderId, orders[outstandingBuyOrder.OrderId].Status));
-                                }
-
-                                // update outstanding qty and outstanding price to place updated sell order
-                                todayOutstandingPrice = (todayOutstandingPrice * todayOutstandingQty) + (trade.NewQuantity * trade.Price);
-                                todayOutstandingQty += trade.NewQuantity;
-                                todayOutstandingPrice = todayOutstandingQty == 0 ? 0 : todayOutstandingPrice / todayOutstandingQty;
-                                //todayOutstandingPrice = Math.Round(todayOutstandingPrice, 2);
-
-                                if (todayOutstandingQty >= maxTodayOutstandingQtyAllowed)
-                                    Trace(string.Format("TodayOutstandingQty reached the max. todayOutstandingQty: {0} maxTodayPositionValueMultiple: {1}", todayOutstandingQty, maxTodayOutstandingQtyAllowed));
-
-                                if ((todayOutstandingQty + holdingOutstandingQty) >= maxTotalOutstandingQtyAllowed)
-                                    Trace(string.Format("TotalOutstandingQty reached the max. todayOutstandingQty: {0} holdingOutstandingQty: {1} maxTotalPositionValueMultiple: {2}", todayOutstandingQty, holdingOutstandingQty, maxTotalOutstandingQtyAllowed));
-
-                                lastBuyPrice = trade.Price;
-
-                                if (!string.IsNullOrEmpty(outstandingSellOrder.OrderId))
-                                {
-                                    // cancel existing sell order if it exists
-                                    errCode = CancelEquityOrder("[Buy Executed]", ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
-                                }
-                                if (errCode == BrokerErrorCode.Success || string.IsNullOrEmpty(outstandingSellOrder.OrderId))
-                                {
-                                    // place new sell order if previous cancelled or it was first one, update sell order ref
-                                    var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
-                                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out outstandingSellOrder.OrderId, out upstoxOrderStatus);
-                                }
-
-                                isSellOnlyExecutedAndFully = false;
-                            }
-                        }
-
-                        if (isSellOnlyExecutedAndFully)
-                        {
-                            // Cancel existing Buy order which might be an average seeking order, as the pricecalc might have changed
-
-                            if (!string.IsNullOrEmpty(outstandingBuyOrder.OrderId))
-                            {
-                                // cancel existing buy order
-                                errCode = CancelEquityOrder("[Sell Executed Fully]", ref outstandingBuyOrder.OrderId, orderType, OrderDirection.BUY);
-                            }
-                        }
-
-                        PlaceBuyOrderIfEligible();
-                    }
-
+                    //ProcessTradeExecution();
+                    PlaceBuyOrderIfEligible();
                     HandleConversionAnytime();
-                    TrySquareOffNearEOD();
+                    NearEODSquareOffAndCancelBuyOrder();
+
+                    if (MarketUtils.IsTimeAfter3XMin(29))
+                        CancelOpenOrders();
                 }
                 catch (Exception ex)
                 {
                     Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
                 }
 
-                if (MarketUtils.IsTimeAfter3XMin(29))
-                    CancelOpenOrders();
-
-                // update stats
-                var buyValueToday = todayOutstandingPrice * (todayOutstandingQty + lastBuyOrdQty);
-                pnlStats.maxBuyValueToday = Math.Max(pnlStats.maxBuyValueToday, buyValueToday);
-
-                PauseBetweenTradeBookCheck();
+                MainLoopPause();
             }
 
             EODProcess(true); // EOD final update
+        }
+
+        public void ProcessTradeExecution()
+        {
+            var isSellOnlyExecutedAndFully = false;
+            var newTrades = new Dictionary<string, EquityTradeBookRecord>();
+            // refresh trade book
+            errCode = myUpstoxWrapper.GetTradeBook(true, stockCode, out newTrades);
+
+            foreach (var tradeKv in newTrades.OrderBy(t => t.Value.Direction).Reverse())
+            {
+                var tradeRef = tradeKv.Key;
+                var trade = tradeKv.Value;
+
+                Trace(string.Format(tradeTraceFormat, stockCode, trade.Direction == OrderDirection.BUY ? "bought" : "sold", trade.NewQuantity, trade.Price,
+                    holdingSellOrder.OrderId == tradeRef ? "DELIVERY" : "MARGIN", trade.OrderId));
+
+                // if any holding sell executed
+                ProcessHoldingSellOrderExecution(newTrades);
+
+                // if SELL executed, then update today outstanding with executed qty (handle part executions using NewQuantity)
+                // If it is after 3.15 and broker did auto sq off, then broker's order ref is not with us and wont match with our sq off order. Our sqoff order will be cancelled by the broker
+                if (tradeRef == outstandingSellOrder.OrderId || (MarketUtils.IsTimeAfter315() && trade.EquityOrderType == EquityOrderType.MARGIN))
+                {
+                    todayOutstandingQty -= trade.NewQuantity;
+
+                    if (todayOutstandingQty == 0)
+                    {
+                        todayOutstandingPrice = 0;
+                        outstandingSellOrder.OrderId = "";
+                        todayOutstandingTradeCount = 0;
+                        isSellOnlyExecutedAndFully = true;
+                    }
+                }
+
+                // if BUY executed, then place a corresponding updated sell order. 
+                if (tradeRef == outstandingBuyOrder.OrderId)
+                {
+                    Dictionary<string, EquityOrderBookRecord> orders;
+                    errCode = myUpstoxWrapper.GetOrderBook(false, false, stockCode, out orders);
+
+                    if (orders[outstandingBuyOrder.OrderId].Status == OrderStatus.COMPLETED)
+                    {
+                        Trace(string.Format("[Trade Execution] Fully executed NewQty={0} TotalQty={1}", trade.NewQuantity, trade.Quantity));
+                        outstandingBuyOrder.OrderId = "";
+                        todayOutstandingTradeCount++;
+                    }
+                    else
+                    {
+                        Trace(string.Format("[Trade Execution] Partially executed NewQty={0} TotalQty={1}", trade.NewQuantity, trade.Quantity));
+                    }
+
+                    // update outstanding qty and outstanding price to place updated sell order
+                    todayOutstandingPrice = (todayOutstandingPrice * todayOutstandingQty) + (trade.NewQuantity * trade.Price);
+                    todayOutstandingQty += trade.NewQuantity;
+                    todayOutstandingPrice = todayOutstandingQty == 0 ? 0 : todayOutstandingPrice / todayOutstandingQty;
+
+                    if (todayOutstandingQty >= maxTodayOutstandingQtyAllowed)
+                        Trace(string.Format("[Trading Limits Hit] TodayOutstandingQty reached the max. todayOutstandingQty: {0} maxTodayPositionValueMultiple: {1}", todayOutstandingQty, maxTodayOutstandingQtyAllowed));
+
+                    if ((todayOutstandingQty + holdingOutstandingQty) >= maxTotalOutstandingQtyAllowed)
+                        Trace(string.Format("[Trading Limits Hit] TotalOutstandingQty reached the max. todayOutstandingQty: {0} holdingOutstandingQty: {1} maxTotalPositionValueMultiple: {2}", todayOutstandingQty, holdingOutstandingQty, maxTotalOutstandingQtyAllowed));
+
+                    lastBuyPrice = trade.Price;
+
+                    if (!string.IsNullOrEmpty(outstandingSellOrder.OrderId))
+                    {
+                        // cancel existing sell order if it exists
+                        errCode = CancelEquityOrder("[Buy Executed]", ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
+                    }
+                    if (errCode == BrokerErrorCode.Success || string.IsNullOrEmpty(outstandingSellOrder.OrderId))
+                    {
+                        // place new sell order if previous cancelled or it was first one, update sell order ref
+                        var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
+                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out outstandingSellOrder.OrderId, out upstoxOrderStatus);
+                    }
+
+                    isSellOnlyExecutedAndFully = false;
+                }
+            }
+
+            if (isSellOnlyExecutedAndFully)
+            {
+                // Cancel existing Buy order which might be an average seeking order, as the pricecalc might have changed
+                if (!string.IsNullOrEmpty(outstandingBuyOrder.OrderId))
+                {
+                    // cancel existing buy order
+                    errCode = CancelEquityOrder("[Sell Executed Fully]", ref outstandingBuyOrder.OrderId, orderType, OrderDirection.BUY);
+                }
+            }
+
+            PlaceBuyOrderIfEligible();
+            HandleConversionAnytime();
+            NearEODSquareOffAndCancelBuyOrder();
+
+            UpdatePnLStats();
+        }
+
+        public void TradeUpdated(object sender, TradeUpdateEventArgs args)
+        {
+            try
+            {
+                var trade = ConvertTradeUpdateArgsToTradeRecord(args);
+
+                if (!(stockCode == trade.StockCode && (trade.OrderId == outstandingBuyOrder.OrderId || trade.OrderId == outstandingSellOrder.OrderId || trade.OrderId == holdingSellOrder.OrderId)))
+                    return;
+
+                var isSellExecutedFully = false;
+
+
+                Trace(string.Format(tradeTraceFormat, stockCode, trade.Direction == OrderDirection.BUY ? "bought" : "sold", args.TradedQty, args.TradedPrice,
+                    holdingSellOrder.OrderId == trade.OrderId ? "DELIVERY" : "MARGIN", trade.OrderId));
+
+                // if any holding sell executed
+                if (trade.OrderId == holdingSellOrder.OrderId)
+                    ProcessHoldingSellOrderExecution(trade.NewQuantity);
+
+                // if SELL executed, then update today outstanding with executed qty (handle part executions using NewQuantity)
+                // If it is after 3.15 and broker did auto sq off, then broker's order ref is not with us and wont match with our sq off order. Our sqoff order will be cancelled by the broker
+                if (trade.OrderId == outstandingSellOrder.OrderId || (MarketUtils.IsTimeAfter315() && trade.EquityOrderType == EquityOrderType.MARGIN))
+                {
+                    todayOutstandingQty -= trade.NewQuantity;
+
+                    if (todayOutstandingQty == 0)
+                    {
+                        todayOutstandingPrice = 0;
+                        outstandingSellOrder.OrderId = "";
+                        todayOutstandingTradeCount = 0;
+                        isSellExecutedFully = true;
+                    }
+                }
+
+                // if BUY executed, then place a corresponding updated sell order. 
+                if (trade.OrderId == outstandingBuyOrder.OrderId)
+                {
+                    Dictionary<string, EquityOrderBookRecord> orders;
+                    errCode = myUpstoxWrapper.GetOrderBook(false, false, stockCode, out orders);
+                    var matchingOrder = orders[outstandingBuyOrder.OrderId];
+
+                    if (matchingOrder.Status == OrderStatus.COMPLETED)
+                    {
+                        Trace(string.Format("[Trade Execution] Fully executed NewQty={0} TotalQty={1}", trade.NewQuantity, matchingOrder.Quantity));
+                        outstandingBuyOrder.OrderId = "";
+                        todayOutstandingTradeCount++;
+                    }
+                    else
+                    {
+                        Trace(string.Format("[Trade Execution] Partially executed NewQty={0} TotalQty={1}", trade.NewQuantity, matchingOrder.Quantity));
+                    }
+
+                    // update outstanding qty and outstanding price to place updated sell order
+                    todayOutstandingPrice = (todayOutstandingPrice * todayOutstandingQty) + (trade.NewQuantity * trade.Price);
+                    todayOutstandingQty += trade.NewQuantity;
+                    todayOutstandingPrice = todayOutstandingQty == 0 ? 0 : todayOutstandingPrice / todayOutstandingQty;
+
+                    UpdatePnLStats();
+
+                    if (todayOutstandingQty >= maxTodayOutstandingQtyAllowed)
+                        Trace(string.Format("[Trading Limits Hit] TodayOutstandingQty reached the max. todayOutstandingQty: {0} maxTodayPositionValueMultiple: {1}", todayOutstandingQty, maxTodayOutstandingQtyAllowed));
+
+                    if ((todayOutstandingQty + holdingOutstandingQty) >= maxTotalOutstandingQtyAllowed)
+                        Trace(string.Format("[Trading Limits Hit] TotalOutstandingQty reached the max. todayOutstandingQty: {0} holdingOutstandingQty: {1} maxTotalPositionValueMultiple: {2}", todayOutstandingQty, holdingOutstandingQty, maxTotalOutstandingQtyAllowed));
+
+                    lastBuyPrice = trade.Price;
+
+                    if (!string.IsNullOrEmpty(outstandingSellOrder.OrderId))
+                    {
+                        // cancel existing sell order if it exists
+                        errCode = CancelEquityOrder("[Buy Executed]", ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
+                    }
+                    if (errCode == BrokerErrorCode.Success || string.IsNullOrEmpty(outstandingSellOrder.OrderId))
+                    {
+                        // place new sell order if previous cancelled or it was first one, update sell order ref
+                        var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
+                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out outstandingSellOrder.OrderId, out upstoxOrderStatus);
+                    }
+                }
+
+                if (isSellExecutedFully)
+                {
+                    // Cancel existing Buy order which might be an average seeking order, as the pricecalc might have changed
+                    if (!string.IsNullOrEmpty(outstandingBuyOrder.OrderId))
+                    {
+                        // cancel existing buy order
+                        errCode = CancelEquityOrder("[Sell Executed Fully]", ref outstandingBuyOrder.OrderId, orderType, OrderDirection.BUY);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+            }
         }
     }
 }

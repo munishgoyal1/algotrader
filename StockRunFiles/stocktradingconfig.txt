@@ -6,7 +6,7 @@
 #
 
 @mktConditionBuyExtraMarkDownPct=0.005
-@markDownPctForAveragingTightening=5
+@markDownPctForAveragingTightening=3
 @deliveryBrokerage=0.0035
 @priceBucketWidthInPctForQty=.03
 @priceBucketsForQty=1.3, 1.4, 1.6, 2, 2.2, 2.4, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4
@@ -14,62 +14,26 @@
 @priceBucketsForPrice=1, 1.5, 2.6, 4.1, 6, 2
 @commonStock=400,30,30,0.005,0.005,1.01,false,09:00:00,15:00:00,MARGIN,NSE
 
-#ZEEL,500,,,0.01,0.01,1.01,true
-SUNPHARMA,700,,,0.01,0.01,1.005,true
-
-#
-# high volatile so let market stabilize for 5 min. could also increase the markdowns
-#
-
-
-IBULHSGFIN,1200,,,0.01,0.005,1.01,false,09:20:00
-ADANIPORTS,400,,,0.01,0.005,1.01,true,09:20:00
-INDUSINDBK,2000,,,0.0075,0.005,1.01,true,09:20:00
-PCJEWELLER,100,,,0.0075,0.005,1.0075,true,09:20:00
-
-#
-# stock where we want to average and they have long term uptrend
-#
-
-BIOCON,1000,,,0.01,0.005,1.01
 BAJFINANCE,3000,,,0.01,0.005,1.01
-
-#
-# Highly volatile big range. Buy at deep low sell fast
-#
-
 CAPLIPOINT,500,,,0.01,0.005,1.01,,,,DELIVERY
-UJJIVAN,300,,,0.015,0.005,1.015
-
-#
-# Not sure of range. Play safe. Buy deep low Sell fast
-#
-
-IGL,300,,,0.015,0.005,1.025
-AMARAJABAT,1000,,,0.015,0.005,1.025
-
-#
-# Low volatile range bound. So try small multiple trades
-#
-
+IBULHSGFIN,1200,,,0.01,0.005,1.01,false,09:20:00
 ITC,400
-TATAMOTORS,600,100,30
+SUNPHARMA,700,,,0.01,0.01,1.005,true
+RELIANCE,1500,,,0.0025,0.005,1.0025,true,09:20:00
+HDFCBANK,2500,,,0.001,0.01,1.005,true,09:30:00
+INFY,800,,,0.005,0.005,1.005,true,09:20:00
 BERGEPAINT,350
-IDFCBANK,60
-FEDERALBNK,100
-
-#
-# Long term volatile short term range bound. Buy Low sell with small profit
-#
-
 DLF,250,,,0.015,0.005,1.005
 
-#
-# Fast trading. Stable Bluechip. Let rates stabilize
-#
-
-RELIANCE,1500,,,0.0025,0.005,1.0025,true,09:20:00
-#SBIN,300,,,0.0015,0.01,1.0015,true,09:30:00
-HDFCBANK,2500,,,0.001,0.01,1.005,true,09:30:00
+INDUSINDBK,2000,,,0.0075,0.005,1.01,true,09:20:00
+PCJEWELLER,100,,,0.0075,0.005,1.0075,true,09:20:00
+BIOCON,1000,,,0.01,0.005,1.01
+UJJIVAN,300,,,0.015,0.005,1.015
+IGL,300,,,0.015,0.005,1.025
+AMARAJABAT,1000,,,0.015,0.005,1.025
+TATAMOTORS,600,100,30
+FEDERALBNK,100
 M&M,1000,,,0.005,0.005,1.001,true,09:20:00
-INFY,800,,,0.005,0.005,1.005,true,09:20:00
+
+#IDFCBANK,60
+#ADANIPORTS,400,,,0.01,0.005,1.01,true,09:20:00

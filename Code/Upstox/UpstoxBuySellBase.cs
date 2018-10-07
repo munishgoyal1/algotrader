@@ -90,7 +90,7 @@ namespace UpstoxTrader
         public const string tradeTraceFormat = "[Trade Execution] {4} Trade: {0} {1} {2} @ {3}. OrderId = {5}";
         public const string deliveryTraceFormat = "Conversion to delivery: {0} {1} qty of {2}";
         public const string positionFileTotalQtyPriceFormat = "{0} {1}";
-        public const string positionFileLineQtyPriceFormat = "{0} {1} {2} {3}";
+        public const string positionFileLineQtyPriceFormat = "{0} {1} {2} {3} {4}";
 
         public BrokerErrorCode errCode;
 
@@ -154,6 +154,29 @@ namespace UpstoxTrader
 
         }
 
+        public EquityTradeBookRecord ConvertTradeUpdateArgsToTradeRecord(TradeUpdateEventArgs args)
+        {
+            var trade = new EquityTradeBookRecord();
+            trade.OrderId = args.OrderId;
+            trade.TradeId = args.TradeId;
+            trade.Direction = args.TransType == "B" ? OrderDirection.BUY : OrderDirection.SELL;
+            trade.DateTime = DateTime.Parse(args.ExchTime);
+            trade.Quantity = args.TradedQty;
+            trade.NewQuantity = args.TradedQty;
+            trade.Price = args.TradedPrice;
+            trade.StockCode = args.TrdSym;
+            trade.EquityOrderType = args.Product == "D" ? EquityOrderType.DELIVERY : EquityOrderType.MARGIN;
+            trade.Exchange = args.Exch;
+
+            return trade;
+        }
+
+        public void UpdatePnLStats()
+        {
+            // update stats
+            var buyValueToday = todayOutstandingPrice * (todayOutstandingQty + lastBuyOrdQty);
+            pnlStats.maxBuyValueToday = Math.Max(pnlStats.maxBuyValueToday, buyValueToday);
+        }
 
         public bool IsOrderLive(OrderStatus orderStatus)
         {
@@ -230,7 +253,6 @@ namespace UpstoxTrader
             GetLTPOnDemand(out Ltp);
 
             myUpstoxWrapper.Upstox.QuotesReceivedEvent += new UpstoxNet.Upstox.QuotesReceivedEventEventHandler(QuoteReceived);
-
             var substatus = myUpstoxWrapper.Upstox.SubscribeQuotes(exchStr, stockCode);
 
             var orders = new Dictionary<string, EquityOrderBookRecord>();
@@ -287,7 +309,11 @@ namespace UpstoxTrader
             }
             ).Average(t => t.Price);
 
-            ProcessHoldingSellOrderExecution(trades);
+            if (!string.IsNullOrEmpty(holdingSellOrder.OrderId) && trades.ContainsKey(holdingSellOrder.OrderId))
+            {
+                var holdingSellTrade = trades[holdingSellOrder.OrderId];
+                ProcessHoldingSellOrderExecution(holdingSellTrade.NewQuantity);
+            }
 
             var outstandingBuyOrders = orders.Values.Where(o => o.Direction == OrderDirection.BUY && IsOrderLive(o.Status));
             var outstandingSellOrders = orders.Values.Where(o => o.Direction == OrderDirection.SELL && IsOrderLive(o.Status) && holdingSellOrder.OrderId != o.OrderId);
@@ -296,8 +322,6 @@ namespace UpstoxTrader
             {
                 Trace(string.Format("[Exception] At Init, outstandingBuyOrders={0} outstandingSellOrders={1}. Any of them should not be more than 1", outstandingBuyOrders.Count(), outstandingSellOrders.Count()));
             }
-
-            var sellTrades = trades.Values.Where(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == orderType);
 
             // assumed that there is always at max only single outstanding buy order and a at max single outstanding sell order
             var outstandingBuyOrderFromOrderbook = outstandingBuyOrders.Any() ? outstandingBuyOrders.First() : null;
@@ -373,6 +397,7 @@ namespace UpstoxTrader
                 }
             }
 
+            var sellTrades = trades.Values.Where(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == orderType);
             if (buyTrades.Any())
             {
                 if (sellTrades.Any())
@@ -383,6 +408,26 @@ namespace UpstoxTrader
                 else
                     todayOutstandingTradeCount = buyTrades.Count();
             }
+        }
+
+        protected void ProcessHoldingSellOrderExecution(int tradedQty)
+        {
+            holdingOutstandingQty -= tradedQty;
+            holdingSellOrder.UnexecutedQty -= tradedQty;
+
+            holdingOutstandingQty = Math.Max(holdingOutstandingQty, 0);
+            holdingSellOrder.UnexecutedQty = Math.Max(holdingSellOrder.UnexecutedQty, 0);
+
+            if (holdingSellOrder.UnexecutedQty == 0)
+                // instead of removing the order mark the status
+                holdingSellOrder.Status = OrderStatus.COMPLETED;
+            else
+                holdingSellOrder.Status = OrderStatus.PARTEXEC;
+
+            if (holdingOutstandingQty == 0)
+                holdingOutstandingPrice = 0;
+
+            UpdatePositionFile();
         }
 
         protected void ProcessHoldingSellOrderExecution(Dictionary<string, EquityTradeBookRecord> trades)
@@ -399,7 +444,6 @@ namespace UpstoxTrader
                     holdingSellOrder.UnexecutedQty = Math.Max(holdingSellOrder.UnexecutedQty, 0);
 
                     if (holdingSellOrder.UnexecutedQty == 0)
-                        // instead of removing the order mark the status
                         holdingSellOrder.Status = OrderStatus.COMPLETED;
                     else
                         holdingSellOrder.Status = OrderStatus.PARTEXEC;
@@ -506,7 +550,6 @@ namespace UpstoxTrader
                 return BrokerErrorCode.InvalidLotSize;
             }
 
-
             errCode = myUpstoxWrapper.PlaceEquityOrder(exchange, stockCode, orderDirection, orderPriceType, quantity, orderType, price, out orderId, out orderStatus);
 
             Trace(string.Format(orderTraceFormat, stockCode, orderDirection, quantity, price, orderType, errCode, orderPriceType, orderId, orderStatus));
@@ -536,9 +579,10 @@ namespace UpstoxTrader
                     else
                     {
                         holdingSellOrder.StartingQty = int.Parse(split[0].Trim());
-                        holdingSellOrder.UnexecutedQty = int.Parse(split[1].Trim());
+                        holdingSellOrder.UnexecutedQty = holdingSellOrder.StartingQty - int.Parse(split[1].Trim());
                         holdingSellOrder.OrderId = split[2].Trim();
-                        holdingSellOrder.Status = (OrderStatus)Enum.Parse(typeof(OrderStatus), split[3].Trim());
+                        holdingSellOrder.Direction = (OrderDirection)Enum.Parse(typeof(OrderDirection), split[3].Trim());
+                        holdingSellOrder.Status = (OrderStatus)Enum.Parse(typeof(OrderStatus), split[4].Trim());
                     }
                 }
             }
@@ -546,7 +590,7 @@ namespace UpstoxTrader
 
         public void UpdatePositionFile(bool isEODUpdate = false)
         {
-            var lines = new string[2];
+            var lines = new List<string>(1);
             if (holdingOutstandingQty < 0)
             {
                 Trace(string.Format("HoldingOutstandingQty is invalid @ {0}. Setting it to 0.", holdingOutstandingQty));
@@ -554,10 +598,12 @@ namespace UpstoxTrader
                 holdingOutstandingPrice = 0;
             }
 
-            lines[0] = string.Format(positionFileTotalQtyPriceFormat, holdingOutstandingQty, holdingOutstandingPrice);
+            lines.Add(string.Format(positionFileTotalQtyPriceFormat, holdingOutstandingQty, holdingOutstandingPrice));
 
             if (!isEODUpdate)
-                lines[1] = string.Format(positionFileLineQtyPriceFormat, holdingSellOrder.StartingQty, holdingSellOrder.UnexecutedQty, holdingSellOrder.OrderId, holdingSellOrder.Status);
+            {
+                lines.Add(string.Format(positionFileLineQtyPriceFormat, holdingSellOrder.StartingQty, holdingSellOrder.StartingQty - holdingSellOrder.UnexecutedQty, holdingSellOrder.OrderId, holdingSellOrder.Direction, holdingSellOrder.Status));
+            }
 
             File.WriteAllLines(positionFile, lines);
 
@@ -621,9 +667,8 @@ namespace UpstoxTrader
 
         // Try min profit squareoff first between 
         // 3 - 3.05 = min profit limit sell order
-        // 3.05 - 3.10 = min loss market order (if EOD sqoff enabled and loss within maxloss pct)
-        //
-        public void TrySquareOffNearEOD()
+        // 3.05 - 3.10 = min loss market order
+        public void NearEODSquareOffAndCancelBuyOrder()
         {
             var eventType = "[EOD]";
             string strategy = "None";
@@ -825,7 +870,7 @@ namespace UpstoxTrader
         //    return errCode;
         //}
 
-        public void PauseBetweenTradeBookCheck()
+        public void MainLoopPause()
         {
             Thread.Sleep(1000 * 15);
         }
