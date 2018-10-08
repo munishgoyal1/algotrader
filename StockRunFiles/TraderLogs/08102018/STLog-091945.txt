@@ -1,0 +1,24 @@
+10/8/2018 9:19:45 AM:: DEBUG MODE
+
+10/8/2018 9:20:06 AM:: 126130_DEBUG
+
+10/8/2018 9:20:12 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE SnapQuote status=Success. lowerCircuitLimit=1821, upperCircuitLimit=2225.6, ClosePrice=2023.3, baseOrderQty=1
+
+10/8/2018 9:20:12 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT SnapQuote status=Success. lowerCircuitLimit=334.65, upperCircuitLimit=501.95, ClosePrice=418.3, baseOrderQty=1
+
+10/8/2018 9:20:21 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN SnapQuote status=Success. lowerCircuitLimit=820.55, upperCircuitLimit=1002.85, ClosePrice=911.7, baseOrderQty=1
+
+10/8/2018 9:20:22 AM:: UpstoxAverageTheBuyThenSell ITC SnapQuote status=Success. lowerCircuitLimit=248.85, upperCircuitLimit=304.15, ClosePrice=276.5, baseOrderQty=1
+
+10/8/2018 9:20:24 AM:: UpstoxAverageTheBuyThenSell RELIANCE SnapQuote status=Success. lowerCircuitLimit=944, upperCircuitLimit=1153.7, ClosePrice=1048.85, baseOrderQty=1
+
+10/8/2018 9:20:29 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA SnapQuote status=Success. lowerCircuitLimit=538.2, upperCircuitLimit=657.7, ClosePrice=597.95, baseOrderQty=1
+
+10/8/2018 9:20:30 AM:: UpstoxAverageTheBuyThenSell HDFCBANK SnapQuote status=Success. lowerCircuitLimit=1768.8, upperCircuitLimit=2161.8, ClosePrice=1965.3, baseOrderQty=1
+
+10/8/2018 9:20:30 AM:: UpstoxAverageTheBuyThenSell INFY SnapQuote status=Success. lowerCircuitLimit=652.15, upperCircuitLimit=797.05, ClosePrice=724.6, baseOrderQty=1
+
+10/8/2018 9:20:36 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT SnapQuote status=Success. lowerCircuitLimit=241.15, upperCircuitLimit=294.65, ClosePrice=267.9, baseOrderQty=1
+
+10/8/2018 9:20:37 AM:: UpstoxAverageTheBuyThenSell DLF SnapQuote status=Success. lowerCircuitLimit=134.35, upperCircuitLimit=164.15, ClosePrice=149.25, baseOrderQty=2
+

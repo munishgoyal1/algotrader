@@ -1,0 +1,22 @@
+10/8/2018 9:14:27 AM:: RELEASE MODE
+
+10/8/2018 9:14:57 AM:: 126130
+
+10/8/2018 9:15:05 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE SnapQuote status=Success. lowerCircuitLimit=1821, upperCircuitLimit=2225.6, ClosePrice=2023.3, baseOrderQty=1
+
+10/8/2018 9:15:05 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT SnapQuote status=Success. lowerCircuitLimit=334.65, upperCircuitLimit=501.95, ClosePrice=418.3, baseOrderQty=1
+
+10/8/2018 9:15:05 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE Error:Sequence contains no elements
+Stacktrace:   at System.Linq.Enumerable.Average(IEnumerable`1 source)
+   at UpstoxTrader.UpstoxBuySellBase.Init(AlgoType algoType)
+   at UpstoxTrader.UpstoxAverageTheBuyThenSell.StockBuySell()
+
+10/8/2018 9:15:05 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN SnapQuote status=Success. lowerCircuitLimit=820.55, upperCircuitLimit=1002.85, ClosePrice=911.7, baseOrderQty=1
+
+10/8/2018 9:15:05 AM:: UpstoxAverageTheBuyThenSell ITC SnapQuote status=Success. lowerCircuitLimit=248.85, upperCircuitLimit=304.15, ClosePrice=276.5, baseOrderQty=1
+
+10/8/2018 9:15:05 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT Error:Sequence contains no elements
+Stacktrace:   at System.Linq.Enumerable.Average(IEnumerable`1 source)
+   at UpstoxTrader.UpstoxBuySellBase.Init(AlgoType algoType)
+   at UpstoxTrader.UpstoxAverageTheBuyThenSell.StockBuySell()
+

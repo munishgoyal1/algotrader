@@ -9,6 +9,7 @@ namespace StockTrader.Core
         public string StockCode;
         public OrderDirection Direction;
         public EquityOrderType EquityOrderType;
+        public OrderPriceType OrderPriceType;
         public int Quantity;
         public int NewQuantity;
         public double Price;

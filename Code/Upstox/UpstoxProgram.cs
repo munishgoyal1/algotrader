@@ -53,7 +53,7 @@ namespace UpstoxTrader
             Trace("DEBUG MODE");
             List<UpstoxTradeParams> stocksConfig1 = ReadTradingConfigFile();
 
-            errCode = upstoxBroker.Login1();
+            errCode = upstoxBroker.Login();
 #else
             Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
 #endif

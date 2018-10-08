@@ -74,7 +74,8 @@ namespace UpstoxTrader
         public Order holdingSellOrder = new Order();
         public Order outstandingBuyOrder = new Order();
         public Order outstandingSellOrder = new Order();
-        public int lastBuyOrdQty = 0;
+        public int currentBuyOrdQty = 0;
+        public int currentBuyOrdExecutedQty = 0;
         public double lastBuyPrice = 0;
         public bool isFirstBuyOrderStillToBePlaced = true;
         public int todayOutstandingTradeCount = 0;
@@ -85,9 +86,9 @@ namespace UpstoxTrader
         public OrderStatus upstoxOrderStatus;
         public UpstoxPnLStats pnlStats = new UpstoxPnLStats();
 
-        public const string orderTraceFormat = "[Place Order {4}]: {5} {0} {1} {2} @ {3} {6}. OrderId = {7}. BrokerOrderStatus={8}";
+        public const string orderTraceFormat = "[Place Order {4}]: {5} {0} {1} {2} @ {3} {6}. OrderId={7}, BrokerOrderStatus={8}";
         public const string orderCancelTraceFormat = "{0}: {1} {2} {3}: {4}";
-        public const string tradeTraceFormat = "[Trade Execution] {4} Trade: {0} {1} {2} @ {3}. OrderId = {5}";
+        public const string tradeTraceFormat = "[Trade Execution] {4} Trade: {0} {1} {2} @ {3}. OrderId={5}, TradeId={6}, ExchExecutionTime={7}";
         public const string deliveryTraceFormat = "Conversion to delivery: {0} {1} qty of {2}";
         public const string positionFileTotalQtyPriceFormat = "{0} {1}";
         public const string positionFileLineQtyPriceFormat = "{0} {1} {2} {3} {4}";
@@ -167,6 +168,7 @@ namespace UpstoxTrader
             trade.StockCode = args.TrdSym;
             trade.EquityOrderType = args.Product == "D" ? EquityOrderType.DELIVERY : EquityOrderType.MARGIN;
             trade.Exchange = args.Exch;
+            trade.OrderPriceType = args.OrderType == "L" ? OrderPriceType.LIMIT : OrderPriceType.MARKET;
 
             return trade;
         }
@@ -174,7 +176,7 @@ namespace UpstoxTrader
         public void UpdatePnLStats()
         {
             // update stats
-            var buyValueToday = todayOutstandingPrice * (todayOutstandingQty + lastBuyOrdQty);
+            var buyValueToday = todayOutstandingPrice * (todayOutstandingQty + currentBuyOrdQty);
             pnlStats.maxBuyValueToday = Math.Max(pnlStats.maxBuyValueToday, buyValueToday);
         }
 
@@ -302,12 +304,12 @@ namespace UpstoxTrader
             var qtyTotal = 0;
 
             // these are latest trades taken. each buy trade is for single lot and thus for each lot there is a trade
-            todayOutstandingPrice = buyTrades.TakeWhile(t =>
+            todayOutstandingPrice = buyTrades.Any() ? buyTrades.TakeWhile(t =>
             {
                 qtyTotal += t.Quantity;
                 return qtyTotal < todayOutstandingQty;
             }
-            ).Average(t => t.Price);
+            ).Average(t => t.Price) : 0;
 
             if (!string.IsNullOrEmpty(holdingSellOrder.OrderId) && trades.ContainsKey(holdingSellOrder.OrderId))
             {
@@ -684,6 +686,16 @@ namespace UpstoxTrader
                 {
                     // cancel existing buy order
                     errCode = CancelEquityOrder(eventType, ref outstandingBuyOrder.OrderId, orderType, OrderDirection.BUY);
+                }
+            }
+
+            // just cancel the squareoff margin order
+            if (MarketUtils.IsTimeAfter3XMin(15) && orderType == EquityOrderType.MARGIN)
+            {
+                if (!string.IsNullOrEmpty(outstandingSellOrder.OrderId))
+                {
+                    // cancel existing sell order
+                    errCode = CancelEquityOrder("[In Broker SquareOff Mode]", ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
                 }
             }
 
