@@ -1,0 +1,35 @@
+10/9/2018 9:49:05 AM:: RELEASE MODE
+
+10/9/2018 9:49:18 AM:: 126130
+
+10/9/2018 9:49:24 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE SnapQuote status=Success. lowerCircuitLimit=1777.4, upperCircuitLimit=2172.3, ClosePrice=1974.85, baseOrderQty=2
+
+10/9/2018 9:49:24 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT SnapQuote status=Success. lowerCircuitLimit=327.25, upperCircuitLimit=490.85, ClosePrice=409.05, baseOrderQty=1
+
+10/9/2018 9:49:24 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN SnapQuote status=Success. lowerCircuitLimit=846.15, upperCircuitLimit=1034.15, ClosePrice=940.15, baseOrderQty=1
+
+10/9/2018 9:49:24 AM:: UpstoxAverageTheBuyThenSell ITC SnapQuote status=Success. lowerCircuitLimit=245.9, upperCircuitLimit=300.5, ClosePrice=273.2, baseOrderQty=1
+
+10/9/2018 9:49:25 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA SnapQuote status=Success. lowerCircuitLimit=543.85, upperCircuitLimit=664.65, ClosePrice=604.25, baseOrderQty=1
+
+10/9/2018 9:49:25 AM:: UpstoxAverageTheBuyThenSell RELIANCE SnapQuote status=Success. lowerCircuitLimit=998.5, upperCircuitLimit=1220.3, ClosePrice=1109.4, baseOrderQty=1
+
+10/9/2018 9:49:25 AM:: UpstoxAverageTheBuyThenSell HDFCBANK SnapQuote status=Success. lowerCircuitLimit=1750.5, upperCircuitLimit=2139.5, ClosePrice=1945, baseOrderQty=1
+
+10/9/2018 9:49:25 AM:: UpstoxAverageTheBuyThenSell INFY SnapQuote status=Success. lowerCircuitLimit=643.05, upperCircuitLimit=785.85, ClosePrice=714.45, baseOrderQty=1
+
+10/9/2018 9:49:25 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT SnapQuote status=Success. lowerCircuitLimit=247.85, upperCircuitLimit=302.85, ClosePrice=275.35, baseOrderQty=1
+
+10/9/2018 9:49:26 AM:: UpstoxAverageTheBuyThenSell DLF SnapQuote status=Success. lowerCircuitLimit=136.7, upperCircuitLimit=167, ClosePrice=151.85, baseOrderQty=2
+
+10/9/2018 9:49:26 AM:: UpstoxAverageTheBuyThenSell M&M SnapQuote status=Success. lowerCircuitLimit=697.4, upperCircuitLimit=852.3, ClosePrice=774.85, baseOrderQty=1
+
+10/9/2018 9:49:26 AM:: UpstoxAverageTheBuyThenSell RELIANCE Error:Sequence contains no elements
+Stacktrace:   at System.Linq.Enumerable.Average(IEnumerable`1 source)
+   at UpstoxTrader.UpstoxBuySellBase.Init(AlgoType algoType)
+   at UpstoxTrader.UpstoxAverageTheBuyThenSell.StockBuySell()
+
+10/9/2018 9:49:26 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK SnapQuote status=Success. lowerCircuitLimit=1440, upperCircuitLimit=1760, ClosePrice=1600, baseOrderQty=1
+
+10/9/2018 9:49:27 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER SnapQuote status=Success. lowerCircuitLimit=53, upperCircuitLimit=64.7, ClosePrice=58.85, baseOrderQty=2
+

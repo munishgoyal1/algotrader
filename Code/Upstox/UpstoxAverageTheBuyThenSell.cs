@@ -84,7 +84,7 @@ namespace UpstoxTrader
                     averagingExtraMarkDownPctCalculated={11}, mktConditionBuyExtraMarkDownPct={12}, mktConditionExtraMarkdownPctCalculated={13},
                     markDownPctCalculated={14}, calculatedToBuyPrice={15}, priceBucketsForPrice={16};",
                     priceStrategy, ltp, lastBuyPrice, holdingOutstandingPrice, lastPriceToCompareWith, todayOutstandingTradeCount, todayOutstandingTradeBucketNumberForPrice,
-                    priceBucketAgressionForPrice, markDownPctForBuy, markDownPctForAveraging, markDownPctForAveragingTightening, averagingExtraMarkDownPctCalculated,
+                    priceBucketAgressionForPrice, markDownPctForBuy, markDownPctForAveraging, markDownPctForAveragingTightening, Math.Round(averagingExtraMarkDownPctCalculated,4),
                     mktConditionBuyExtraMarkDownPct, mktConditionExtraMarkdownPctCalculated, markDownPctCalculated, calculatedToBuyPrice, string.Join(":", priceBucketsForPrice));
 
                 // Qty calc depends upon calculatedbuyprice and totaloutstanding qty

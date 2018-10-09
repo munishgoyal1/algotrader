@@ -304,12 +304,14 @@ namespace UpstoxTrader
             var qtyTotal = 0;
 
             // these are latest trades taken. each buy trade is for single lot and thus for each lot there is a trade
-            todayOutstandingPrice = buyTrades.Any() ? buyTrades.TakeWhile(t =>
+            var latestBuyTradesTowardsOutstandingQty = buyTrades.TakeWhile(t =>
             {
                 qtyTotal += t.Quantity;
                 return qtyTotal < todayOutstandingQty;
             }
-            ).Average(t => t.Price) : 0;
+            );
+
+            todayOutstandingPrice = latestBuyTradesTowardsOutstandingQty.Any() ? latestBuyTradesTowardsOutstandingQty.Average(t => t.Price) : 0;
 
             if (!string.IsNullOrEmpty(holdingSellOrder.OrderId) && trades.ContainsKey(holdingSellOrder.OrderId))
             {
@@ -334,6 +336,8 @@ namespace UpstoxTrader
                 outstandingBuyOrder.UnexecutedQty = outstandingSellOrder.StartingQty - outstandingBuyOrderFromOrderbook.ExecutedQty;
                 outstandingBuyOrder.Direction = outstandingBuyOrderFromOrderbook.Direction;
                 outstandingBuyOrder.Status = outstandingBuyOrderFromOrderbook.Status;
+                currentBuyOrdExecutedQty = outstandingBuyOrderFromOrderbook.ExecutedQty;
+                currentBuyOrdQty = outstandingBuyOrderFromOrderbook.Quantity;
             }
 
             var outstandingSellOrderFromOrderbook = outstandingSellOrders.Any() ? outstandingSellOrders.First() : null;

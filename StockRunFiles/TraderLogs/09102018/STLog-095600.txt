@@ -1,0 +1,94 @@
+10/9/2018 9:56:00 AM:: RELEASE MODE
+
+10/9/2018 9:56:08 AM:: 126130
+
+10/9/2018 9:56:14 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE SnapQuote status=Success. lowerCircuitLimit=1777.4, upperCircuitLimit=2172.3, ClosePrice=1974.85, baseOrderQty=2
+
+10/9/2018 9:56:14 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT SnapQuote status=Success. lowerCircuitLimit=327.25, upperCircuitLimit=490.85, ClosePrice=409.05, baseOrderQty=1
+
+10/9/2018 9:56:14 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN SnapQuote status=Success. lowerCircuitLimit=846.15, upperCircuitLimit=1034.15, ClosePrice=940.15, baseOrderQty=1
+
+10/9/2018 9:56:14 AM:: UpstoxAverageTheBuyThenSell ITC SnapQuote status=Success. lowerCircuitLimit=245.9, upperCircuitLimit=300.5, ClosePrice=273.2, baseOrderQty=1
+
+10/9/2018 9:56:14 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA SnapQuote status=Success. lowerCircuitLimit=543.85, upperCircuitLimit=664.65, ClosePrice=604.25, baseOrderQty=1
+
+10/9/2018 9:56:15 AM:: UpstoxAverageTheBuyThenSell RELIANCE SnapQuote status=Success. lowerCircuitLimit=998.5, upperCircuitLimit=1220.3, ClosePrice=1109.4, baseOrderQty=1
+
+10/9/2018 9:56:15 AM:: UpstoxAverageTheBuyThenSell HDFCBANK SnapQuote status=Success. lowerCircuitLimit=1750.5, upperCircuitLimit=2139.5, ClosePrice=1945, baseOrderQty=1
+
+10/9/2018 9:56:15 AM:: UpstoxAverageTheBuyThenSell INFY SnapQuote status=Success. lowerCircuitLimit=643.05, upperCircuitLimit=785.85, ClosePrice=714.45, baseOrderQty=1
+
+10/9/2018 9:56:15 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT SnapQuote status=Success. lowerCircuitLimit=247.85, upperCircuitLimit=302.85, ClosePrice=275.35, baseOrderQty=1
+
+10/9/2018 9:56:16 AM:: UpstoxAverageTheBuyThenSell DLF SnapQuote status=Success. lowerCircuitLimit=136.7, upperCircuitLimit=167, ClosePrice=151.85, baseOrderQty=2
+
+10/9/2018 9:56:16 AM:: UpstoxAverageTheBuyThenSell M&M SnapQuote status=Success. lowerCircuitLimit=697.4, upperCircuitLimit=852.3, ClosePrice=774.85, baseOrderQty=1
+
+10/9/2018 9:56:16 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK SnapQuote status=Success. lowerCircuitLimit=1440, upperCircuitLimit=1760, ClosePrice=1600, baseOrderQty=1
+
+10/9/2018 9:56:16 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER SnapQuote status=Success. lowerCircuitLimit=53, upperCircuitLimit=64.7, ClosePrice=58.85, baseOrderQty=2
+
+10/9/2018 9:56:17 AM:: UpstoxAverageTheBuyThenSell BIOCON SnapQuote status=Success. lowerCircuitLimit=535.7, upperCircuitLimit=654.7, ClosePrice=595.2, baseOrderQty=2
+
+10/9/2018 9:56:17 AM:: UpstoxAverageTheBuyThenSell UJJIVAN SnapQuote status=Success. lowerCircuitLimit=208, upperCircuitLimit=254.2, ClosePrice=231.1, baseOrderQty=1
+
+10/9/2018 9:56:17 AM:: UpstoxAverageTheBuyThenSell INFY 
+PriceStrategy~LastBuyPrice Markdown,LTP=711.95, lastBuyPrice=713, holdingOutstandingPrice=0, lastPriceToCompareWith=713, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1.5, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=3,
+                    averagingExtraMarkDownPctCalculated=0.00166666666666667, mktConditionBuyExtraMarkDownPct=0.003, mktConditionExtraMarkdownPctCalculated=0.003,
+                    markDownPctCalculated=0.0145, calculatedToBuyPrice=702.7, priceBucketsForPrice=1:1.5:2.6:4.1:6:2;
+QtyStrategy~todayOutstandingQty=1, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.2;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=713, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.48,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.63;
+                    qtyCurve=0.826, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=10, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/9/2018 9:56:17 AM:: UpstoxAverageTheBuyThenSell IGL SnapQuote status=Success. lowerCircuitLimit=198.9, upperCircuitLimit=243, ClosePrice=220.95, baseOrderQty=1
+
+10/9/2018 9:56:17 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT SnapQuote status=Success. lowerCircuitLimit=656.55, upperCircuitLimit=802.35, ClosePrice=729.45, baseOrderQty=1
+
+10/9/2018 9:56:17 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS SnapQuote status=Success. lowerCircuitLimit=191.15, upperCircuitLimit=233.55, ClosePrice=212.35, baseOrderQty=3
+
+10/9/2018 9:56:19 AM:: MyUpstoxWrapper INFY OrderId:181009000053677, UpstoxOrderStatus:open
+
+10/9/2018 9:56:19 AM:: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY BUY 1 @ 702.7 LIMIT. OrderId=181009000053677, BrokerOrderStatus=ORDERED
+
+10/9/2018 9:56:19 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK SnapQuote status=Success. lowerCircuitLimit=63.3, upperCircuitLimit=77.3, ClosePrice=70.3, baseOrderQty=1
+
+10/9/2018 9:56:19 AM:: UpstoxAverageTheBuyThenSell IDFCBANK SnapQuote status=Success. lowerCircuitLimit=30.4, upperCircuitLimit=37.1, ClosePrice=33.75, baseOrderQty=2
+
+10/9/2018 9:56:19 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS SnapQuote status=Success. lowerCircuitLimit=273.95, upperCircuitLimit=334.75, ClosePrice=304.35, baseOrderQty=1
+
+10/9/2018 9:56:20 AM:: UpstoxAverageTheBuyThenSell DLF [DELIVERY Holding SquareOff] Will place order SELL DLF 7 @ 180.5.
+
+10/9/2018 9:56:20 AM:: UpstoxAverageTheBuyThenSell DLF orderPrice 180.5 is outside circuit limits of lowerCircuitLimit 136.7 upperCircuitLimit 167, Not placing order
+
+10/9/2018 9:56:20 AM:: UpstoxAverageTheBuyThenSell M&M [DELIVERY Holding SquareOff] Will place order SELL M&M 3 @ 933.2.
+
+10/9/2018 9:56:20 AM:: UpstoxAverageTheBuyThenSell M&M orderPrice 933.2 is outside circuit limits of lowerCircuitLimit 697.4 upperCircuitLimit 852.3, Not placing order
+
+10/9/2018 9:56:21 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER [DELIVERY Holding SquareOff] Will place order SELL PCJEWELLER 39 @ 66.
+
+10/9/2018 9:56:21 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER orderPrice 66 is outside circuit limits of lowerCircuitLimit 53 upperCircuitLimit 64.7, Not placing order
+
+10/9/2018 9:56:22 AM:: UpstoxAverageTheBuyThenSell UJJIVAN [DELIVERY Holding SquareOff] Will place order SELL UJJIVAN 12 @ 292.5.
+
+10/9/2018 9:56:22 AM:: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 292.5 is outside circuit limits of lowerCircuitLimit 208 upperCircuitLimit 254.2, Not placing order
+
+10/9/2018 9:56:22 AM:: UpstoxAverageTheBuyThenSell IGL [DELIVERY Holding SquareOff] Will place order SELL IGL 7 @ 253.3.
+
+10/9/2018 9:56:22 AM:: UpstoxAverageTheBuyThenSell IGL orderPrice 253.3 is outside circuit limits of lowerCircuitLimit 198.9 upperCircuitLimit 243, Not placing order
+
+10/9/2018 9:56:22 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS [DELIVERY Holding SquareOff] Will place order SELL TATAMOTORS 70 @ 237.4.
+
+10/9/2018 9:56:22 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS orderPrice 237.4 is outside circuit limits of lowerCircuitLimit 191.15 upperCircuitLimit 233.55, Not placing order
+
+10/9/2018 9:56:22 AM:: UpstoxAverageTheBuyThenSell IDFCBANK [DELIVERY Holding SquareOff] Will place order SELL IDFCBANK 60 @ 39.5.
+
+10/9/2018 9:56:22 AM:: UpstoxAverageTheBuyThenSell IDFCBANK orderPrice 39.5 is outside circuit limits of lowerCircuitLimit 30.4 upperCircuitLimit 37.1, Not placing order
+
+10/9/2018 9:56:22 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS [DELIVERY Holding SquareOff] Will place order SELL ADANIPORTS 9 @ 335.2.
+
+10/9/2018 9:56:22 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS orderPrice 335.2 is outside circuit limits of lowerCircuitLimit 273.95 upperCircuitLimit 334.75, Not placing order
+

@@ -5,7 +5,7 @@
 #
 #
 
-@mktConditionBuyExtraMarkDownPct=0.005
+@mktConditionBuyExtraMarkDownPct=0.003
 @markDownPctForAveragingTightening=3
 @deliveryBrokerage=0.0035
 @priceBucketWidthInPctForQty=.03
