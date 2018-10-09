@@ -56,7 +56,7 @@ namespace UpstoxTrader
 
         // Algo core price calcs parameters
         public double mktConditionBuyExtraMarkDownPct;
-        public int markDownPctForAveragingTightening;
+        public double markDownPctForAveragingTightening;
         public double priceBucketWidthInPctForQty;
         public double[] priceBucketsForQty;
         public double qtyAgressionFactor;
@@ -374,6 +374,7 @@ namespace UpstoxTrader
                         if (errCode == BrokerErrorCode.Success)
                         {
                             holdingSellOrder.UnexecutedQty = algoPendingQty;
+                            holdingSellOrder.Direction = OrderDirection.SELL;
                             holdingSellOrder.Status = OrderStatus.ORDERED;
                         }
                     }

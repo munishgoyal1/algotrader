@@ -394,7 +394,7 @@ namespace UpstoxTrader
             var ctp = new UpstoxTradeParams();
 
             double mktConditionBuyExtraMarkDown = 0;
-            int markDownPctForAveragingTightening = 0;
+            double markDownPctForAveragingTightening = 0;
             double priceBucketWidthInPctForQty = 0;
             double[] priceBucketsForQty = new[]{ 0.0};
             double qtyAgressionFactor = 0;
@@ -415,7 +415,7 @@ namespace UpstoxTrader
                         break;
 
                     case "@markDownPctForAveragingTightening":
-                        markDownPctForAveragingTightening = int.Parse(split[1]);
+                        markDownPctForAveragingTightening = double.Parse(split[1]);
                         break;
 
                     case "@priceBucketWidthInPctForQty":
@@ -530,7 +530,7 @@ namespace UpstoxTrader
 
         // common algo config
         public double mktConditionBuyExtraMarkDownPct;
-        public int markDownPctForAveragingTightening;
+        public double markDownPctForAveragingTightening;
         public double priceBucketWidthForQty;
         public double[] priceBucketsForQty;
         public double qtyAgressionFactor;
