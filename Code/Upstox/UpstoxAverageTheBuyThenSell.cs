@@ -141,7 +141,9 @@ namespace UpstoxTrader
         {
             try
             {
-                myUpstoxWrapper.Upstox.TradeUpdateEvent += new UpstoxNet.Upstox.TradeUpdateEventEventHandler(TradeUpdated);
+                myUpstoxWrapper.Upstox.TradeUpdateEvent += new Upstox.TradeUpdateEventEventHandler(TradeUpdated);
+                myUpstoxWrapper.Upstox.OrderUpdateEvent += new Upstox.OrderUpdateEventEventHandler(OrderUpdated);
+                myUpstoxWrapper.Upstox.PositionUpdateEvent += new Upstox.PositionUpdateEventEventHandler(PositionUpdated);
                 Init(AlgoType.AverageTheBuyThenSell);
             }
             catch (Exception ex)
@@ -265,6 +267,42 @@ namespace UpstoxTrader
                         errCode = CancelEquityOrder("[Sell Executed Fully]", ref outstandingBuyOrder.OrderId, orderType, OrderDirection.BUY);
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+            }
+        }
+
+        public void OrderUpdated(object sender, OrderUpdateEventArgs args)
+        {
+            try
+            {
+                if (stockCode != args.TrdSym)
+                    return;
+
+                // just log the update info for debug first
+                Trace(string.Format("[Order Updated] {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15} {16}",
+                    args.TrdSym, args.OrderId, args.Status, args.Price, args.Product, args.ExchTime, args.Duration, args.Message,
+                    args.Quantity, args.TradedQty, args.ExchId, args.ExchToken, args.InstToken, args.ParentId, args.TransType, args.TimeStamp, args.AvgPrice));
+            }
+            catch (Exception ex)
+            {
+                Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+            }
+        }
+
+        public void PositionUpdated(object sender, PositionUpdateEventArgs args)
+        {
+            try
+            {
+                if (stockCode != args.TrdSym)
+                    return;
+
+                // just log the update info for debug first
+                Trace(string.Format("[Position Updated] {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10}",
+                    args.TrdSym, args.Ask, args.Bid, args.AvgBoughtPrice, args.AvgSoldPrice, args.BoughtQty, args.SoldQty, args.MTM,
+                    args.Ltp, args.NetQty, args.InstToken));
             }
             catch (Exception ex)
             {

@@ -61,23 +61,21 @@ globalTodayIntradayValue, globalTodayDeliveryValue
 
 =============================================
 open points:
-1. getting correct order status in PlaceOrder. Sometimes rejected order is still logged as success. Probably try to get the exch order id. if it is not generated it means it is not success.
 2. In tradebook polling, got old trades of 10 am in the filter again at 3.10 pm for some of the stocks. Why that happened ?eg. ZEEL on 24 sept. at 3.10pm
-3. fix pnl stats - avgAmountCommitted , totalIntradayValue, totalDeliveryValue -all fixed
-5. price is -ve in position file even when qty is 0
-6. On restart of trader, why should old trades show up during loop run. once trade book is fetched at Init, only new trades post that should come up. 25 Sep - HDFC, IDFC around 3pm in 2nd log file.
-7. federalbank position file is 3 107 which is not at all inline with its price of 70.
-
 8. Bajajfin holding updated is 0, we have 3 qty conversion done. 27 sep. trades appear again somehow after 3.15 pm. Only new trades should come really
 Buy trades for FEDERALBNK repeating in Trade execution at 3:16 pm on 3 Oct 2018.
+6. On restart of trader, why should old trades show up during loop run. once trade book is fetched at Init, only new trades post that should come up. 25 Sep - HDFC, IDFC around 3pm in 2nd log file.
+
+3. fix pnl stats - avgAmountCommitted , totalIntradayValue, totalDeliveryValue -all fixed
+5. price is -ve in position file even when qty is 0
+7. federalbank position file is 3 107 which is not at all inline with its price of 70.
 
 
 9. maxpct loss should be a positive number
 
-
-
 11. maintain state of orders placed. need of  last price of order when replacing an order on delivery conversion detection
-
-
+1. getting correct order status in PlaceOrder. Sometimes rejected order is still logged as success. Probably try to get the exch order id. if it is not generated it means it is not success.
 12. add order update event handler.
 13. use modify order instead of cancel and place new order wherever possible
+
+14. If placeorder timeouts / fails, then the order might have got placed. find a way to get order status. retry if it really didnt place or get orderid and confirm its status.

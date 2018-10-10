@@ -297,18 +297,19 @@ namespace StockTrader.Brokers.UpstoxBroker
                 {
                     Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
 
-                    Trace(string.Format("{0} Exception in PlaceOrder (Reconfirming Order status). OrderId={1}", stockCode, orderId));
-
                     var lastOrderId = upstox.GetLastOrderId(exchange, stockCode, prodType); // more sure way to get server side lastorderid, incase placeorder itslef errored and we didnt get the orderid
+
+                    Trace(string.Format("{0} Exception in PlaceOrder (Reconfirming Order status). OrderId={1} LastOrderId={2}", stockCode, orderId, lastOrderId));
 
                     if (!string.IsNullOrEmpty(lastOrderId) && !mOrderIds[stockCode].Contains(lastOrderId))
                     {
                         errorCode = GetOrderStatus(lastOrderId, stockCode, out orderStatus);
 
-                        if (errorCode == BrokerErrorCode.Success)
-                            mOrderIds[stockCode].Add(lastOrderId);
+                        orderId = lastOrderId;
+                        //if (errorCode == BrokerErrorCode.Success)
+                        mOrderIds[stockCode].Add(lastOrderId);
 
-                        Trace(string.Format("{0} Reconciled the order. updated status: {1}, PlaceSimpleOrder OrderId={2}, lastOrderId: {3} ", stockCode, errorCode, orderId, lastOrderId));
+                        Trace(string.Format("{0} Reconciled the order. updated status: {1}, PlaceSimpleOrder OrderId={2}, LastOrderId={3} ", stockCode, errorCode, orderId, lastOrderId));
                     }
                 }
 
