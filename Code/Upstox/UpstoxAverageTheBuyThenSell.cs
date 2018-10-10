@@ -185,7 +185,7 @@ namespace UpstoxTrader
                 var isSellExecutedFully = false;
 
                 Trace(string.Format(tradeTraceFormat, stockCode, trade.Direction == OrderDirection.BUY ? "bought" : "sold", args.TradedQty, args.TradedPrice,
-                    holdingSellOrder.OrderId == trade.OrderId ? "DELIVERY" : "MARGIN", trade.OrderId, trade.TradeId, trade.DateTime));
+                    holdingSellOrder.OrderId == trade.OrderId ? "DELIVERY" : "MARGIN", trade.OrderId, trade.TradeId, trade.DateTime, args.ExchTime, args.TimeStamp));
 
                 // if any holding sell executed
                 if (trade.OrderId == holdingSellOrder.OrderId)

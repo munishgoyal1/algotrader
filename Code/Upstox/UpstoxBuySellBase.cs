@@ -88,7 +88,7 @@ namespace UpstoxTrader
 
         public const string orderTraceFormat = "[Place Order {4}]: {5} {0} {1} {2} @ {3} {6}. OrderId={7}, BrokerOrderStatus={8}";
         public const string orderCancelTraceFormat = "{0}: {1} {2} {3}: {4}";
-        public const string tradeTraceFormat = "[Trade Execution] {4} Trade: {0} {1} {2} @ {3}. OrderId={5}, TradeId={6}, ExchExecutionTime={7}";
+        public const string tradeTraceFormat = "[Trade Execution] {4} Trade: {0} {1} {2} @ {3}. OrderId={5}, TradeId={6}, ExchExecutionTime={7}, ExchTime={8}, Timestamp={9}";
         public const string deliveryTraceFormat = "Conversion to delivery: {0} {1} qty of {2}";
         public const string positionFileTotalQtyPriceFormat = "{0} {1}";
         public const string positionFileLineQtyPriceFormat = "{0} {1} {2} {3} {4}";

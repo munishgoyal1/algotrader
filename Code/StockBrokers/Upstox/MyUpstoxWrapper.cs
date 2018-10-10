@@ -254,7 +254,7 @@ namespace StockTrader.Brokers.UpstoxBroker
             out string orderId,
             out OrderStatus orderStatus)
         {
-            lock (lockSingleThreadedUpstoxCall)
+            //lock (lockSingleThreadedUpstoxCall)
             {
                 BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
                 orderStatus = OrderStatus.UNKNOWN;
@@ -310,6 +310,50 @@ namespace StockTrader.Brokers.UpstoxBroker
 
                         Trace(string.Format("{0} Reconciled the order. updated status: {1}, PlaceSimpleOrder OrderId={2}, lastOrderId: {3} ", stockCode, errorCode, orderId, lastOrderId));
                     }
+                }
+
+                return errorCode;
+            }
+        }
+
+        public BrokerErrorCode ModifyEquityOrder(
+           string stockCode,
+           string orderId,
+           OrderPriceType orderPriceType,
+           int quantity,
+           double price,
+           out OrderStatus orderStatus)
+        {
+            //lock (lockSingleThreadedUpstoxCall)
+            {
+                BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
+                orderStatus = OrderStatus.UNKNOWN;
+                var ordType = orderPriceType == OrderPriceType.LIMIT ? "L" : "M";
+
+                try
+                {
+                    upstox.ModifySimpleOrder(orderId, ordType, quantity, price, quantity);
+                    Thread.Sleep(1000); // let the order status update at server
+                    errorCode = GetOrderStatus(orderId, stockCode, out orderStatus);
+
+                    if (orderStatus == OrderStatus.EXPIRED ||
+                        orderStatus == OrderStatus.CANCELLED ||
+                        orderStatus == OrderStatus.NOTFOUND ||
+                        orderStatus == OrderStatus.REJECTED ||
+                        orderStatus == OrderStatus.UNKNOWN)
+                    {
+                        Trace("ModifyOrder failed with status: " + orderStatus);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
+
+                    Trace(string.Format("{0} Exception in ModifyOrder (Reconfirming Order status). OrderId={1}", stockCode, orderId));
+
+                    errorCode = GetOrderStatus(orderId, stockCode, out orderStatus);
+
+                    Trace(string.Format("{0} Reconciled the order. updated status: {1}, ModifySimpleOrder OrderId={2}", stockCode, errorCode, orderId));
                 }
 
                 return errorCode;
@@ -598,7 +642,6 @@ namespace StockTrader.Brokers.UpstoxBroker
             }
         }
 
-
         //EXCHANGE, TOKEN, SYMBOL, PRODUCT, ORDER_TYPE, DURATION, PRICE, TRIGGER_PRICE, QUANTITY, DISCLOSED_QUANTITY, TRANSACTION_TYPE, AVERAGE_PRICE,TRADED_QUANTITY, (13)...
         //...MESSAGE, EXCHANGE_ORDER_ID, PARENT_ORDER_ID, ORDER_ID, EXCHANGE_TIME, TIME_IN_MICRO, STATUS, IS_AMO, VALID_DATE, ORDER_REQUEST_ID   (23 total field count)
         public BrokerErrorCode GetOrderBook(bool getOnlyNewOrders, bool getOnlyOpenOrders, string stockCode, out Dictionary<string, EquityOrderBookRecord> orders)
@@ -642,7 +685,7 @@ namespace StockTrader.Brokers.UpstoxBroker
                             order.Quantity = int.Parse(line[8]);
                             order.ExecutedQty = int.Parse(line[12]);
                             order.Price = double.Parse(line[6]);
-                            order.EquityOrderType = line[3] == "D" ? EquityOrderType.DELIVERY:EquityOrderType.MARGIN;
+                            order.EquityOrderType = line[3] == "D" ? EquityOrderType.DELIVERY : EquityOrderType.MARGIN;
                             order.StockCode = line[2];
                             order.Exchange = line[0];
 
@@ -692,7 +735,7 @@ namespace StockTrader.Brokers.UpstoxBroker
 
         public BrokerErrorCode CancelOrder(string orderId)
         {
-            lock (lockSingleThreadedUpstoxCall)
+            //lock (lockSingleThreadedUpstoxCall)
             {
                 BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
                 int retryCount = 0;
@@ -734,20 +777,9 @@ namespace StockTrader.Brokers.UpstoxBroker
             FileTracing.TraceOut(message);
         }
 
-        public BrokerErrorCode ConvertToDeliveryFromMarginOpenPositions(
-          string stockCode,
-          int openQty,
-          int toConvertQty,
-          string settlementRef,
-          OrderDirection ordDirection,
-          string exchange)
-        {
-            return BrokerErrorCode.Success;
-        }
-
         public int GetNetQty(string exchange, string stockCode)
         {
-            lock (lockSingleThreadedUpstoxCall)
+            //lock (lockSingleThreadedUpstoxCall)
             {
                 BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
                 int retryCount = 0;
@@ -775,7 +807,7 @@ namespace StockTrader.Brokers.UpstoxBroker
 
         public int GetBoughtQty(string exchange, string stockCode)
         {
-            lock (lockSingleThreadedUpstoxCall)
+            //lock (lockSingleThreadedUpstoxCall)
             {
                 BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
                 int retryCount = 0;
@@ -805,7 +837,7 @@ namespace StockTrader.Brokers.UpstoxBroker
         {
             quote = new EquitySymbolQuote();
 
-            lock (lockSingleThreadedUpstoxCall)
+            //lock (lockSingleThreadedUpstoxCall)
             {
                 BrokerErrorCode errorCode = BrokerErrorCode.Unknown;
                 int retryCount = 0;
