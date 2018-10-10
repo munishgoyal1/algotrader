@@ -74,13 +74,10 @@ Buy trades for FEDERALBNK repeating in Trade execution at 3:16 pm on 3 Oct 2018.
 
 9. maxpct loss should be a positive number
 
-10. GetTradeBook timeouts - See How to make it event driven on every trade or so.
-
 
 
 11. maintain state of orders placed. need of  last price of order when replacing an order on delivery conversion detection
 
 
-12. Fast trades, both buy and sell in same cycle then the state goes bad.see M&M log for 5 Oct 2018.
-
-13. Fix the Init logic
+12. add order update event handler.
+13. use modify order instead of cancel and place new order wherever possible

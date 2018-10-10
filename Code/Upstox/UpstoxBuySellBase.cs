@@ -303,16 +303,17 @@ namespace UpstoxTrader
 
             var qtyTotal = 0;
 
-            // these are latest trades taken. each buy trade is for single lot and thus for each lot there is a trade
-            var latestBuyTradesTowardsOutstandingQty = buyTrades.TakeWhile(t =>
+            for (int i = 0; i < buyTrades.Count; i++)
             {
-                qtyTotal += t.Quantity;
-                return qtyTotal < todayOutstandingQty;
+                var buyTrade = buyTrades[i];
+                var tradeQty = buyTrade.Quantity;
+                todayOutstandingPrice = (todayOutstandingPrice * qtyTotal) + (tradeQty * buyTrade.Price);
+                qtyTotal += tradeQty;
+                todayOutstandingPrice /= qtyTotal;
+                if (qtyTotal >= todayOutstandingQty)
+                    break;
             }
-            );
-
-            todayOutstandingPrice = latestBuyTradesTowardsOutstandingQty.Any() ? latestBuyTradesTowardsOutstandingQty.Average(t => t.Price) : 0;
-
+        
             if (!string.IsNullOrEmpty(holdingSellOrder.OrderId) && trades.ContainsKey(holdingSellOrder.OrderId))
             {
                 var holdingSellTrade = trades[holdingSellOrder.OrderId];

@@ -1,0 +1,51 @@
+10/9/2018 1:28:05 PM:: DEBUG MODE
+
+10/9/2018 1:28:25 PM:: 126130_DEBUG
+
+10/9/2018 1:28:30 PM:: UpstoxAverageTheBuyThenSell BAJFINANCE SnapQuote status=Success. lowerCircuitLimit=1777.4, upperCircuitLimit=2172.3, ClosePrice=1974.85, baseOrderQty=2
+
+10/9/2018 1:28:31 PM:: UpstoxAverageTheBuyThenSell CAPLIPOINT SnapQuote status=Success. lowerCircuitLimit=327.25, upperCircuitLimit=490.85, ClosePrice=409.05, baseOrderQty=1
+
+10/9/2018 1:30:07 PM:: UpstoxAverageTheBuyThenSell ITC SnapQuote status=Success. lowerCircuitLimit=245.9, upperCircuitLimit=300.5, ClosePrice=273.2, baseOrderQty=1
+
+10/9/2018 1:30:07 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN SnapQuote status=Success. lowerCircuitLimit=846.15, upperCircuitLimit=1034.15, ClosePrice=940.15, baseOrderQty=1
+
+10/9/2018 1:30:08 PM:: UpstoxAverageTheBuyThenSell BIOCON SnapQuote status=Success. lowerCircuitLimit=535.7, upperCircuitLimit=654.7, ClosePrice=595.2, baseOrderQty=2
+
+10/9/2018 1:30:08 PM:: UpstoxAverageTheBuyThenSell PCJEWELLER SnapQuote status=Success. lowerCircuitLimit=53, upperCircuitLimit=64.7, ClosePrice=58.85, baseOrderQty=2
+
+10/9/2018 1:30:08 PM:: UpstoxAverageTheBuyThenSell IGL SnapQuote status=Success. lowerCircuitLimit=198.9, upperCircuitLimit=243, ClosePrice=220.95, baseOrderQty=1
+
+10/9/2018 1:30:10 PM:: UpstoxAverageTheBuyThenSell UJJIVAN SnapQuote status=Success. lowerCircuitLimit=208, upperCircuitLimit=254.2, ClosePrice=231.1, baseOrderQty=1
+
+10/9/2018 1:30:11 PM:: UpstoxAverageTheBuyThenSell AMARAJABAT SnapQuote status=Success. lowerCircuitLimit=656.55, upperCircuitLimit=802.35, ClosePrice=729.45, baseOrderQty=1
+
+10/9/2018 1:30:11 PM:: UpstoxAverageTheBuyThenSell TATAMOTORS SnapQuote status=Success. lowerCircuitLimit=169.9, upperCircuitLimit=233.55, ClosePrice=212.35, baseOrderQty=3
+
+10/9/2018 1:30:11 PM:: UpstoxAverageTheBuyThenSell FEDERALBNK SnapQuote status=Success. lowerCircuitLimit=63.3, upperCircuitLimit=77.3, ClosePrice=70.3, baseOrderQty=1
+
+10/9/2018 1:30:12 PM:: UpstoxAverageTheBuyThenSell INDUSINDBK SnapQuote status=Success. lowerCircuitLimit=1440, upperCircuitLimit=1760, ClosePrice=1600, baseOrderQty=1
+
+10/9/2018 1:30:12 PM:: UpstoxAverageTheBuyThenSell M&M SnapQuote status=Success. lowerCircuitLimit=697.4, upperCircuitLimit=852.3, ClosePrice=774.85, baseOrderQty=1
+
+10/9/2018 1:30:12 PM:: UpstoxAverageTheBuyThenSell DLF SnapQuote status=Success. lowerCircuitLimit=136.7, upperCircuitLimit=167, ClosePrice=151.85, baseOrderQty=2
+
+10/9/2018 1:30:12 PM:: UpstoxAverageTheBuyThenSell BERGEPAINT SnapQuote status=Success. lowerCircuitLimit=247.85, upperCircuitLimit=302.85, ClosePrice=275.35, baseOrderQty=1
+
+10/9/2018 1:30:12 PM:: UpstoxAverageTheBuyThenSell INFY SnapQuote status=Success. lowerCircuitLimit=643.05, upperCircuitLimit=785.85, ClosePrice=714.45, baseOrderQty=1
+
+10/9/2018 1:30:12 PM:: UpstoxAverageTheBuyThenSell HDFCBANK SnapQuote status=Success. lowerCircuitLimit=1750.5, upperCircuitLimit=2139.5, ClosePrice=1945, baseOrderQty=1
+
+10/9/2018 1:30:12 PM:: UpstoxAverageTheBuyThenSell RELIANCE SnapQuote status=Success. lowerCircuitLimit=998.5, upperCircuitLimit=1220.3, ClosePrice=1109.4, baseOrderQty=1
+
+10/9/2018 1:30:12 PM:: UpstoxAverageTheBuyThenSell SUNPHARMA SnapQuote status=Success. lowerCircuitLimit=543.85, upperCircuitLimit=664.65, ClosePrice=604.25, baseOrderQty=1
+
+10/9/2018 1:30:13 PM:: UpstoxAverageTheBuyThenSell ADANIPORTS SnapQuote status=Success. lowerCircuitLimit=273.95, upperCircuitLimit=334.75, ClosePrice=304.35, baseOrderQty=1
+
+10/9/2018 1:30:13 PM:: UpstoxAverageTheBuyThenSell IDFCBANK SnapQuote status=Success. lowerCircuitLimit=30.4, upperCircuitLimit=37.1, ClosePrice=33.75, baseOrderQty=2
+
+10/9/2018 1:30:44 PM:: UpstoxAverageTheBuyThenSell BIOCON BIOCON Error: Sequence contains no elements 
+Stacktrace:   at System.Linq.Enumerable.Average(IEnumerable`1 source)
+   at UpstoxTrader.UpstoxBuySellBase.Init(AlgoType algoType) in C:\upstox\Code\Upstox\UpstoxBuySellBase.cs:line 314
+   at UpstoxTrader.UpstoxAverageTheBuyThenSell.StockBuySell() in C:\upstox\Code\Upstox\UpstoxAverageTheBuyThenSell.cs:line 145
+

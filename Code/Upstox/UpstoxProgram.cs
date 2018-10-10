@@ -51,7 +51,7 @@ namespace UpstoxTrader
 
 #if DEBUG
             Trace("DEBUG MODE");
-            List<UpstoxTradeParams> stocksConfig1 = ReadTradingConfigFile();
+            //List<UpstoxTradeParams> stocksConfig1 = ReadTradingConfigFile();
 
             errCode = upstoxBroker.Login();
 #else

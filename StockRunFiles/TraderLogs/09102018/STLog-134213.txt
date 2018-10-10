@@ -1,0 +1,6 @@
+10/9/2018 1:42:13 PM:: DEBUG MODE
+
+10/9/2018 1:42:30 PM:: 126130_DEBUG
+
+10/9/2018 1:42:35 PM:: UpstoxAverageTheBuyThenSell BIOCON SnapQuote status=Success. lowerCircuitLimit=535.7, upperCircuitLimit=654.7, ClosePrice=595.2, baseOrderQty=2
+

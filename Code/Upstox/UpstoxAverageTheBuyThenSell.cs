@@ -146,7 +146,7 @@ namespace UpstoxTrader
             }
             catch (Exception ex)
             {
-                Trace("Error:" + ex.Message + "\nStacktrace:" + ex.StackTrace);
+                Trace(string.Format("{0} Error: {1} \nStacktrace:{2}", stockCode, ex.Message, ex.StackTrace));
                 throw;
             }
 
@@ -195,7 +195,7 @@ namespace UpstoxTrader
                 // If it is after 3.15 and broker did auto sq off, then broker's order ref is not with us and wont match with our sq off order. Our sqoff order will be cancelled by the broker
                 if (trade.OrderId == outstandingSellOrder.OrderId || ((MarketUtils.IsTimeAfter315() && trade.EquityOrderType == EquityOrderType.MARGIN && trade.Direction == OrderDirection.SELL)))
                 {
-                    if (trade.OrderId != outstandingSellOrder.OrderId)
+                    if (!string.IsNullOrEmpty(outstandingSellOrder.OrderId) && trade.OrderId != outstandingSellOrder.OrderId)
                     {
                         // If broker initiated market squareoff then Cancel the known sell order to avoid extra execution
                         errCode = CancelEquityOrder("[Broker SquareOff Executed]", ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
