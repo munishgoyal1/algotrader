@@ -84,7 +84,7 @@ namespace UpstoxTrader
                     averagingExtraMarkDownPctCalculated={11}, mktConditionBuyExtraMarkDownPct={12}, mktConditionExtraMarkdownPctCalculated={13},
                     markDownPctCalculated={14}, calculatedToBuyPrice={15}, priceBucketsForPrice={16};",
                     priceStrategy, ltp, lastBuyPrice, holdingOutstandingPrice, lastPriceToCompareWith, todayOutstandingTradeCount, todayOutstandingTradeBucketNumberForPrice,
-                    priceBucketAgressionForPrice, markDownPctForBuy, markDownPctForAveraging, markDownPctForAveragingTightening, Math.Round(averagingExtraMarkDownPctCalculated,4),
+                    priceBucketAgressionForPrice, markDownPctForBuy, markDownPctForAveraging, markDownPctForAveragingTightening, Math.Round(averagingExtraMarkDownPctCalculated, 4),
                     mktConditionBuyExtraMarkDownPct, mktConditionExtraMarkdownPctCalculated, markDownPctCalculated, calculatedToBuyPrice, string.Join(":", priceBucketsForPrice));
 
                 // Qty calc depends upon calculatedbuyprice and totaloutstanding qty
@@ -183,7 +183,7 @@ namespace UpstoxTrader
 
                 if (stockCode != trade.StockCode)
                     return;
-                        
+
                 var isSellExecutedFully = false;
 
                 Trace(string.Format(tradeTraceFormat, stockCode, trade.Direction == OrderDirection.BUY ? "bought" : "sold", args.TradedQty, args.TradedPrice,
@@ -285,6 +285,18 @@ namespace UpstoxTrader
                 Trace(string.Format("[Order Updated] {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12} {13} {14} {15} {16}",
                     args.TrdSym, args.OrderId, args.Status, args.Price, args.Product, args.ExchTime, args.Duration, args.Message,
                     args.Quantity, args.TradedQty, args.ExchId, args.ExchToken, args.InstToken, args.ParentId, args.TransType, args.TimeStamp, args.AvgPrice));
+
+                lock (myUpstoxWrapper.lockSingleThreadedUpstoxCall)
+                {
+                    latestOrderUpdateInfo = args;
+                }
+
+                var orderStatus = myUpstoxWrapper.ParseOrderStatus(args.Status);
+
+                //if (orderStatus == OrderStatus.ORDERED)
+                    orderUpdateReceived.Set();
+                //return;
+
             }
             catch (Exception ex)
             {

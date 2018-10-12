@@ -32,6 +32,7 @@ namespace UpstoxTrader
     public class UpstoxBuySellBase
     {
         public MyUpstoxWrapper myUpstoxWrapper = null;
+        public AutoResetEvent orderUpdateReceived = new AutoResetEvent(false);
 
         // Config
         public EquityOrderType orderType;
@@ -85,6 +86,7 @@ namespace UpstoxTrader
         public double Ltp;
         public OrderStatus upstoxOrderStatus;
         public UpstoxPnLStats pnlStats = new UpstoxPnLStats();
+        public OrderUpdateEventArgs latestOrderUpdateInfo;
 
         public const string orderPlaceTraceFormat = "[Place Order {4}]: {5} {0} {1} {2} @ {3} {6}. OrderId={7}, BrokerOrderStatus={8}";
         public const string orderModifyTraceFormat = "[Modify Order {3}]: {4} {0} {1} @ {2} {5}. OrderId={6}, BrokerOrderStatus={7}";
@@ -559,7 +561,7 @@ namespace UpstoxTrader
                 return BrokerErrorCode.InvalidLotSize;
             }
 
-            errCode = myUpstoxWrapper.PlaceEquityOrder(exchange, stockCode, orderDirection, orderPriceType, quantity, orderType, price, out orderId, out orderStatus);
+            errCode = myUpstoxWrapper.PlaceEquityOrder(ref latestOrderUpdateInfo, orderUpdateReceived, exchange, stockCode, orderDirection, orderPriceType, quantity, orderType, price, out orderId, out orderStatus);
 
             Trace(string.Format(orderPlaceTraceFormat, stockCode, orderDirection, quantity, price, orderType, errCode, orderPriceType, orderId, orderStatus));
 

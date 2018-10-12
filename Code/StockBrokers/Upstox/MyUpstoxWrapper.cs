@@ -25,7 +25,7 @@ namespace StockTrader.Brokers.UpstoxBroker
         string genericErrorLogFormat = " {0} {1}Error:{2}\nStacktrace:{3}";
         string retryLogFormat = " Retrying {0} out of {1}";
 
-        object lockSingleThreadedUpstoxCall = new object();
+        public object lockSingleThreadedUpstoxCall = new object();
 
         private Dictionary<string, EquityTradeBookRecord> mEquityTradeBook = new Dictionary<string, EquityTradeBookRecord>();
         private Dictionary<string, EquityOrderBookRecord> mEquityOrderBook = new Dictionary<string, EquityOrderBookRecord>();
@@ -201,7 +201,7 @@ namespace StockTrader.Brokers.UpstoxBroker
 
             var statusStrLower = statusStr.ToLower();
 
-            if (statusStrLower.Contains("open pending") || statusStrLower.Contains("received") || statusStrLower.Contains("open"))
+            if (statusStrLower.Contains("open pending") || statusStrLower.Contains("received") || statusStrLower.Contains("open") || statusStrLower.Contains("validation"))
             {
                 ordStatus = OrderStatus.ORDERED;
             }
@@ -220,6 +220,19 @@ namespace StockTrader.Brokers.UpstoxBroker
 
 
             return ordStatus;
+        }
+
+        public bool IsValidOrder(OrderStatus orderStatus)
+        {
+            if (orderStatus == OrderStatus.EXPIRED ||
+                       orderStatus == OrderStatus.CANCELLED ||
+                       orderStatus == OrderStatus.NOTFOUND ||
+                       orderStatus == OrderStatus.REJECTED ||
+                       orderStatus == OrderStatus.UNKNOWN)
+
+                return false;
+
+            return true;
         }
 
         // Equity methods
@@ -244,6 +257,8 @@ namespace StockTrader.Brokers.UpstoxBroker
         }
 
         public BrokerErrorCode PlaceEquityOrder(
+            ref OrderUpdateEventArgs latestOrderUpdatedInfo,
+            AutoResetEvent orderUpdatedEvent,
             string exchange,
             string stockCode,
             OrderDirection orderDirection,
@@ -297,19 +312,35 @@ namespace StockTrader.Brokers.UpstoxBroker
                 {
                     Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
 
-                    var lastOrderId = upstox.GetLastOrderId(exchange, stockCode, prodType); // more sure way to get server side lastorderid, incase placeorder itslef errored and we didnt get the orderid
+                    // wait for orderupdate event signal
+                    var orderUpdateWait = orderUpdatedEvent.WaitOne(20 * 1000);
 
-                    Trace(string.Format("{0} Exception in PlaceOrder (Reconfirming Order status). OrderId={1} LastOrderId={2}", stockCode, orderId, lastOrderId));
-
-                    if (!string.IsNullOrEmpty(lastOrderId) && !mOrderIds[stockCode].Contains(lastOrderId))
+                    lock (lockSingleThreadedUpstoxCall)
                     {
-                        errorCode = GetOrderStatus(lastOrderId, stockCode, out orderStatus);
+                        if (orderUpdateWait)
+                        {
+                            if (latestOrderUpdatedInfo != null)
+                            {
+                                // match the order
+                                if (latestOrderUpdatedInfo.Price == price && latestOrderUpdatedInfo.Quantity == quantity && latestOrderUpdatedInfo.Product == prodType && transType == latestOrderUpdatedInfo.TransType)
+                                {
+                                    orderStatus = ParseOrderStatus(latestOrderUpdatedInfo.Status);
+                                    orderId = latestOrderUpdatedInfo.OrderId;
+                                    if (!string.IsNullOrEmpty(orderId) && !mOrderIds[stockCode].Contains(orderId))
+                                        mOrderIds[stockCode].Add(orderId);
 
-                        orderId = lastOrderId;
-                        //if (errorCode == BrokerErrorCode.Success)
-                        mOrderIds[stockCode].Add(lastOrderId);
-
-                        Trace(string.Format("{0} Reconciled the order. updated status: {1}, PlaceSimpleOrder OrderId={2}, LastOrderId={3} ", stockCode, errorCode, orderId, lastOrderId));
+                                    Trace(string.Format("{0} PlaceSimpleOrder Reconciliation completed. ErrCode={1}, OrderStatus={2}, OrderId={3}", stockCode, errorCode, orderStatus, orderId));
+                                }
+                                else
+                                {
+                                    Trace(string.Format("{0} PlaceSimpleOrder Reconciliation failed OrderNotMatched. ErrCode={1}, OrderStatus={2}, OrderId={2}", stockCode, errorCode, orderStatus, orderId));
+                                }
+                            }
+                        }
+                        else
+                        {
+                            Trace(string.Format("{0} PlaceSimpleOrder Reconciliation failed NoOrderUpdate. ErrCode={1}, OrderStatus={2}, OrderId={2}", stockCode, errorCode, orderStatus, orderId));
+                        }
                     }
                 }
 

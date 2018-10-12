@@ -75,7 +75,11 @@ Buy trades for FEDERALBNK repeating in Trade execution at 3:16 pm on 3 Oct 2018.
 
 11. maintain state of orders placed. need of  last price of order when replacing an order on delivery conversion detection
 1. getting correct order status in PlaceOrder. Sometimes rejected order is still logged as success. Probably try to get the exch order id. if it is not generated it means it is not success.
-12. add order update event handler.
+14. If placeorder timeouts / fails, then the order might have got placed. find a way to get order status. retry if it really didnt place or get orderid and confirm its status.
+use order update event handler, and synchronize it with retry placeorder.
 13. use modify order instead of cancel and place new order wherever possible
 
-14. If placeorder timeouts / fails, then the order might have got placed. find a way to get order status. retry if it really didnt place or get orderid and confirm its status.
+
+try to squareoff same day if overall day profit is made ?
+
+

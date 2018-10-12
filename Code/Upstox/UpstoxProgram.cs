@@ -51,9 +51,9 @@ namespace UpstoxTrader
 
 #if DEBUG
             Trace("DEBUG MODE");
-            //List<UpstoxTradeParams> stocksConfig1 = ReadTradingConfigFile();
+            List<UpstoxTradeParams> stocksConfig1 = ReadTradingConfigFile();
 
-            errCode = upstoxBroker.Login();
+            errCode = upstoxBroker.Login1();
 #else
             Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
 #endif
@@ -347,6 +347,7 @@ namespace UpstoxTrader
                 globalnetunrealized = Math.Round(globalnetunrealized);
                 globalnetinflow = Math.Round(globalnetinflow);
                 globalcurrentholdingatcost = Math.Round(globalcurrentholdingatcost);
+                globalAvgAmountCommitted = Math.Round(globalAvgAmountCommitted);
 
                 globalPctPnLToday = Math.Round(globalPctPnLToday, 1);
                 globalPctPnL = Math.Round(globalPctPnL, 1);
@@ -560,6 +561,8 @@ namespace UpstoxTrader
         {
             return Path.Combine(SystemUtils.GetPositionFilesLocation(), @"PositionFile_" + stockCode + ".txt");
         }
+
+    
 
         //public static BrokerErrorCode GetLTPOnDemand(string exchStr, string stockCode, out double ltp)
         //{
