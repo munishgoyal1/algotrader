@@ -17,8 +17,6 @@ namespace UpstoxTrader
     {
         public UpstoxAverageTheBuyThenSell(UpstoxTradeParams tradeParams) : base(tradeParams)
         {
-            //ConvertPendingMarginPositionsToDelivery(stockCode, 4, 1, "2017084", OrderDirection.BUY, exchange);
-
         }
 
         private void PlaceBuyOrderIfEligible()
@@ -74,18 +72,17 @@ namespace UpstoxTrader
                 var todayOutstandingTradeBucketNumberForPrice = Math.Min(todayOutstandingTradeCount, priceBucketsForPrice.Length - 1);
                 var averagingExtraMarkDownPctCalculated = markDownPctForAveraging * (Math.Min(todayOutstandingTradeCount, markDownPctForAveragingTightening) / markDownPctForAveragingTightening);
                 var priceBucketAgressionForPrice = priceBucketsForPrice[todayOutstandingTradeBucketNumberForPrice];
-                var mktConditionExtraMarkdownPctCalculated = mktConditionBuyExtraMarkDownPct;
-                var markDownPctCalculated = (markDownPctForBuy + averagingExtraMarkDownPctCalculated + mktConditionExtraMarkdownPctCalculated) * priceBucketAgressionForPrice;
+                var markDownPctCalculated = (markDownPctForBuy + averagingExtraMarkDownPctCalculated + mktConditionBuyExtraMarkDownPct) * priceBucketAgressionForPrice * mktTrend.mktTrendFactorForBuyMarkdown;
                 var calculatedToBuyPrice = Math.Round((1 - markDownPctCalculated) * lastPriceToCompareWith, 1);
 
                 priceStrategy = string.Format(
                     @"{0},LTP={1}, lastBuyPrice={2}, holdingOutstandingPrice={3}, lastPriceToCompareWith={4}, todayOutstandingTradeCount={5}, 
                     todayOutstandingTradeBucketNumberForPrice={6}, priceBucketAgressionForPrice={7}, markDownPctForBuy={8}, markDownPctForAveraging={9}, markDownPctForAveragingTightening={10},
-                    averagingExtraMarkDownPctCalculated={11}, mktConditionBuyExtraMarkDownPct={12}, mktConditionExtraMarkdownPctCalculated={13},
+                    averagingExtraMarkDownPctCalculated={11}, mktConditionBuyExtraMarkDownPct={12}, mktTrendFactorForBuyMarkdown={13},
                     markDownPctCalculated={14}, calculatedToBuyPrice={15}, priceBucketsForPrice={16};",
                     priceStrategy, ltp, lastBuyPrice, holdingOutstandingPrice, lastPriceToCompareWith, todayOutstandingTradeCount, todayOutstandingTradeBucketNumberForPrice,
                     priceBucketAgressionForPrice, markDownPctForBuy, markDownPctForAveraging, markDownPctForAveragingTightening, Math.Round(averagingExtraMarkDownPctCalculated, 4),
-                    mktConditionBuyExtraMarkDownPct, mktConditionExtraMarkdownPctCalculated, markDownPctCalculated, calculatedToBuyPrice, string.Join(":", priceBucketsForPrice));
+                    mktConditionBuyExtraMarkDownPct, mktTrend.mktTrendFactorForBuyMarkdown, markDownPctCalculated, calculatedToBuyPrice, string.Join(":", priceBucketsForPrice));
 
                 // Qty calc depends upon calculatedbuyprice and totaloutstanding qty
                 var totalOutstandingQty = todayOutstandingQty + holdingOutstandingQty;
@@ -102,7 +99,7 @@ namespace UpstoxTrader
                 var priceDiffBucketAgressionForQty = priceBucketsForQty[priceDiffBucketNumberForQty];
                 var priceFactorCalcForQty = priceDiffMultiple * priceDiffBucketAgressionForQty;
 
-                var qtyCurve = qtyFactorCalcForQty + priceFactorCalcForQty;
+                var qtyCurve = qtyFactorCalcForQty * priceFactorCalcForQty;
 
                 calculatedOrderQty = (int)(baseOrderQty * Math.Max(1, qtyCurve));
 
@@ -294,7 +291,7 @@ namespace UpstoxTrader
                 var orderStatus = myUpstoxWrapper.ParseOrderStatus(args.Status);
 
                 //if (orderStatus == OrderStatus.ORDERED)
-                    orderUpdateReceived.Set();
+                    orderUpdateReceivedEvent.Set();
                 //return;
 
             }

@@ -86,15 +86,24 @@ namespace UpstoxTrader
 
             var threads = new List<Thread>(stocksConfig.Count);
 
+            var mktTrendConfig = new UpstoxMarketTrendParams();
+            mktTrendConfig.stockCode = "NIFTY";
+            mktTrendConfig.exchange = Exchange.NSE;
+            mktTrendConfig.upstox = upstoxBroker;
+            var mktTrend = new MarketTrend(mktTrendConfig);
+            var mktThread = new Thread(mktTrend.StartCapturingMarketTrend);
+            threads.Add(mktThread);
+
             foreach (var stockConfig in stocksConfig)
             {
                 stockConfig.upstox = upstoxBroker;
+                stockConfig.mktTrend = mktTrend;
                 upstoxBroker.AddStock(stockConfig.stockCode);
                 var t = new Thread(new UpstoxAverageTheBuyThenSell(stockConfig).StockBuySell);
                 threads.Add(t);
             }
 
-            threads.ForEach(t => { t.Start(); Thread.Sleep(200); });
+            threads.ForEach(t => { t.Start(); /*Thread.Sleep(200);*/ });
             threads.ForEach(t => t.Join());
 
             Trace("Update PnL files");
@@ -524,10 +533,18 @@ namespace UpstoxTrader
         public int baseOrderQty;
     }
 
+    public class UpstoxMarketTrendParams
+    {
+        public MyUpstoxWrapper upstox;
+        public string stockCode;
+        public Exchange exchange;
+    }
+
     public class UpstoxTradeParams
     {
         public MyUpstoxWrapper upstox;
         public UpstoxPnLStats stats = new UpstoxPnLStats();
+        public MarketTrend mktTrend;
 
         // common algo config
         public double mktConditionBuyExtraMarkDownPct;

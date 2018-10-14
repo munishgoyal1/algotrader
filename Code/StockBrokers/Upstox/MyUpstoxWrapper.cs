@@ -32,9 +32,6 @@ namespace StockTrader.Brokers.UpstoxBroker
 
         private Dictionary<string, HashSet<string>> mOrderIds = new Dictionary<string, HashSet<string>>();
 
-
-        //public Dictionary<string, UpstoxBuySellBase> stockAlgos = new Dictionary<string, UpstoxBuySellBase>();
-
         public MyUpstoxWrapper(string apiKey, string apiSecret, string redirectUrl)
         {
             upstox.Api_Key = apiKey;
@@ -60,19 +57,6 @@ namespace StockTrader.Brokers.UpstoxBroker
 
             return result ? BrokerErrorCode.Success : BrokerErrorCode.Unknown;
         }
-
-        //public event QuotesReceivedEventEventHandler QuotesReceivedEvent;
-
-        //public void QuoteReceived(object sender, QuotesReceivedEventArgs args)
-        //{
-        //    if (stockAlgos.Contains(args.TrdSym))//
-        //    {
-        //        var algo = stockAlgos[args.TrdSym];
-        //        Interlocked.Exchange(algo.Ltp, args.LTP);
-        //    }
-        //   // Console.WriteLine(string.Format("Sym {0}, LTP {1}, LTT {2}", args.TrdSym, args.LTP, args.LTT));
-
-        //}
 
         public BrokerErrorCode Login1()
         {
@@ -336,6 +320,8 @@ namespace StockTrader.Brokers.UpstoxBroker
                                     Trace(string.Format("{0} PlaceSimpleOrder Reconciliation failed OrderNotMatched. ErrCode={1}, OrderStatus={2}, OrderId={2}", stockCode, errorCode, orderStatus, orderId));
                                 }
                             }
+                            else
+                                Trace(string.Format("{0} PlaceSimpleOrder LatestOrderUpdateInfo is null . ErrCode={1}, OrderStatus={2}, OrderId={3}", stockCode, errorCode, orderStatus, orderId));
                         }
                         else
                         {
@@ -349,6 +335,8 @@ namespace StockTrader.Brokers.UpstoxBroker
         }
 
         public BrokerErrorCode ModifyEquityOrder(
+           ref OrderUpdateEventArgs latestOrderUpdatedInfo,
+           AutoResetEvent orderUpdatedEvent,
            string stockCode,
            string orderId,
            OrderPriceType orderPriceType,
@@ -381,11 +369,35 @@ namespace StockTrader.Brokers.UpstoxBroker
                 {
                     Trace(string.Format(genericErrorLogFormat, stockCode, GeneralUtils.GetCurrentMethod(), ex.Message, ex.StackTrace));
 
-                    Trace(string.Format("{0} Exception in ModifyOrder (Reconfirming Order status). OrderId={1}", stockCode, orderId));
+                    // wait for orderupdate event signal
+                    var orderUpdateWait = orderUpdatedEvent.WaitOne(20 * 1000);
 
-                    errorCode = GetOrderStatus(orderId, stockCode, out orderStatus);
+                    lock (lockSingleThreadedUpstoxCall)
+                    {
+                        if (orderUpdateWait)
+                        {
+                            if (latestOrderUpdatedInfo != null)
+                            {
+                                // match the order
+                                if (latestOrderUpdatedInfo.OrderId == orderId)
+                                {
+                                    orderStatus = ParseOrderStatus(latestOrderUpdatedInfo.Status);
 
-                    Trace(string.Format("{0} Reconciled the order. updated status: {1}, ModifySimpleOrder OrderId={2}", stockCode, errorCode, orderId));
+                                    Trace(string.Format("{0} ModifySimpleOrder Reconciliation completed. ErrCode={1}, OrderStatus={2}, OrderId={3}", stockCode, errorCode, orderStatus, orderId));
+                                }
+                                else
+                                {
+                                    Trace(string.Format("{0} ModifySimpleOrder Reconciliation failed OrderNotMatched. ErrCode={1}, OrderStatus={2}, OrderId={2}", stockCode, errorCode, orderStatus, orderId));
+                                }
+                            }
+                            else
+                                Trace(string.Format("{0} ModifySimpleOrder LatestOrderUpdateInfo is null . ErrCode={1}, OrderStatus={2}, OrderId={3}", stockCode, errorCode, orderStatus, orderId));
+                        }
+                        else
+                        {
+                            Trace(string.Format("{0} ModifySimpleOrder Reconciliation failed NoOrderUpdate. ErrCode={1}, OrderStatus={2}, OrderId={2}", stockCode, errorCode, orderStatus, orderId));
+                        }
+                    }
                 }
 
                 return errorCode;

@@ -32,7 +32,8 @@ namespace UpstoxTrader
     public class UpstoxBuySellBase
     {
         public MyUpstoxWrapper myUpstoxWrapper = null;
-        public AutoResetEvent orderUpdateReceived = new AutoResetEvent(false);
+        public MarketTrend mktTrend = null;
+        public AutoResetEvent orderUpdateReceivedEvent = new AutoResetEvent(false);
 
         // Config
         public EquityOrderType orderType;
@@ -105,6 +106,7 @@ namespace UpstoxTrader
         public UpstoxBuySellBase(UpstoxTradeParams tradeParams)
         {
             myUpstoxWrapper = tradeParams.upstox;
+            mktTrend = tradeParams.mktTrend;
             tradeParams.stats = pnlStats;
             stockCode = tradeParams.stockCode;
             baseOrderVal = tradeParams.baseOrderVal;
@@ -211,7 +213,6 @@ namespace UpstoxTrader
             return true;
         }
 
-
         // reads position file: qty avgprice holdingssellorderref
         // gets order and trade book
         // if holdings sell order is executed, then holding qty is updated to 0, and position file is updated with only today outstanding and empty sellorderref
@@ -259,6 +260,7 @@ namespace UpstoxTrader
 
             myUpstoxWrapper.Upstox.QuotesReceivedEvent += new UpstoxNet.Upstox.QuotesReceivedEventEventHandler(QuoteReceived);
             var substatus = myUpstoxWrapper.Upstox.SubscribeQuotes(exchStr, stockCode);
+            Trace(string.Format("SubscribeQuotes status={0}", substatus));
 
             var orders = new Dictionary<string, EquityOrderBookRecord>();
             var trades = new Dictionary<string, EquityTradeBookRecord>();
@@ -561,7 +563,7 @@ namespace UpstoxTrader
                 return BrokerErrorCode.InvalidLotSize;
             }
 
-            errCode = myUpstoxWrapper.PlaceEquityOrder(ref latestOrderUpdateInfo, orderUpdateReceived, exchange, stockCode, orderDirection, orderPriceType, quantity, orderType, price, out orderId, out orderStatus);
+            errCode = myUpstoxWrapper.PlaceEquityOrder(ref latestOrderUpdateInfo, orderUpdateReceivedEvent, exchange, stockCode, orderDirection, orderPriceType, quantity, orderType, price, out orderId, out orderStatus);
 
             Trace(string.Format(orderPlaceTraceFormat, stockCode, orderDirection, quantity, price, orderType, errCode, orderPriceType, orderId, orderStatus));
 
@@ -585,7 +587,7 @@ namespace UpstoxTrader
                 return BrokerErrorCode.OutsidePriceRange;
             }            
 
-            errCode = myUpstoxWrapper.ModifyEquityOrder(stockCode, orderId, orderPriceType, quantity, price, out orderStatus);
+            errCode = myUpstoxWrapper.ModifyEquityOrder(ref latestOrderUpdateInfo, orderUpdateReceivedEvent, stockCode, orderId, orderPriceType, quantity, price, out orderStatus);
 
             Trace(string.Format(orderModifyTraceFormat, stockCode, quantity, price, orderType, errCode, orderPriceType, orderId, orderStatus));
 
