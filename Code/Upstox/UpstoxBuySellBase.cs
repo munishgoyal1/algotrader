@@ -393,21 +393,21 @@ namespace UpstoxTrader
                 UpdatePositionFile();
             }
 
-            // For AverageTheBuyThenSell algo - place sell order for outstanding qty if not already present
-            if (algoType == AlgoType.AverageTheBuyThenSell)
+            // check if the outstanding sell order has matching qty or not
+            if (!string.IsNullOrEmpty(outstandingSellOrder.OrderId) && outstandingSellOrder.UnexecutedQty < todayOutstandingQty && todayOutstandingQty != int.MaxValue)
             {
-                // check if the outstanding sell order has matching qty or not
-                if (!string.IsNullOrEmpty(outstandingSellOrder.OrderId) && outstandingSellOrder.UnexecutedQty < todayOutstandingQty && todayOutstandingQty != int.MaxValue)
-                {
-                    // Cancel existing sell order 
-                    errCode = CancelEquityOrder("[Init Update Sell Qty]", ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
-                }
+                // Modify existing sell order qty and price
+                var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
+                errCode = ModifyEquityOrder(stockCode, outstandingSellOrder.OrderId, OrderPriceType.LIMIT, todayOutstandingQty, sellPrice, out upstoxOrderStatus);
+ 
+                // Cancel existing sell order
+                //errCode = CancelEquityOrder("[Init Update Sell Qty]", ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
+            }
 
-                if (string.IsNullOrEmpty(outstandingSellOrder.OrderId) && todayOutstandingQty > 0)
-                {
-                    var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
-                    errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out outstandingSellOrder.OrderId, out upstoxOrderStatus);
-                }
+            if (string.IsNullOrEmpty(outstandingSellOrder.OrderId) && todayOutstandingQty > 0)
+            {
+                var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
+                errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, orderType, sellPrice, out outstandingSellOrder.OrderId, out upstoxOrderStatus);
             }
 
             var sellTrades = trades.Values.Where(t => t.Direction == OrderDirection.SELL && t.EquityOrderType == orderType);
@@ -652,8 +652,6 @@ namespace UpstoxTrader
         {
             var eventType = "[Converted to DELIVERY]";
             string strategy = "[Converted to DELIVERY]";
-            var ordPriceType = OrderPriceType.LIMIT;
-            var equityOrderType = EquityOrderType.DELIVERY;
 
             if (!(todayOutstandingQty > 0 && !isOutstandingPositionConverted && orderType == EquityOrderType.MARGIN))
                 return;
@@ -688,7 +686,7 @@ namespace UpstoxTrader
                 if (!string.IsNullOrEmpty(outstandingSellOrder.OrderId))
                 {
                     Trace(strategy);
-                    // cancel existing sell order
+                    // cancel existing MARGIN sell order
                     errCode = CancelEquityOrder(eventType, ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
 
                     if (errCode == BrokerErrorCode.Success)
@@ -696,7 +694,7 @@ namespace UpstoxTrader
                         // place new sell order, update sell order ref
                         var isForMinProfitSqOff = MarketUtils.IsTimeAfter3XMin(10) ? true : false;
                         var sellPrice = GetSellPrice(todayOutstandingPrice, false, isForMinProfitSqOff);
-                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, ordPriceType, todayOutstandingQty, equityOrderType, sellPrice, out outstandingSellOrder.OrderId, out upstoxOrderStatus);
+                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, EquityOrderType.DELIVERY, sellPrice, out outstandingSellOrder.OrderId, out upstoxOrderStatus);
                     }
                 }
             }

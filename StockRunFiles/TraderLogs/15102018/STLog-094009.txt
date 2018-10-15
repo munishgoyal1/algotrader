@@ -1,0 +1,1886 @@
+10/15/2018 9:40:09 AM:: RELEASE MODE
+
+10/15/2018 9:40:20 AM:: 126130
+
+10/15/2018 9:40:25 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA SnapQuote status=Success. lowerCircuitLimit=531.55, upperCircuitLimit=649.65, ClosePrice=590.6, baseOrderQty=1
+
+10/15/2018 9:40:25 AM:: MarketTrend NIFTY18OCTFUT SubscribeQuotes status=True
+
+10/15/2018 9:40:25 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS SnapQuote status=Success. lowerCircuitLimit=165.4, upperCircuitLimit=202.1, ClosePrice=183.75, baseOrderQty=3
+
+10/15/2018 9:40:25 AM:: UpstoxAverageTheBuyThenSell ITC SnapQuote status=Success. lowerCircuitLimit=247.7, upperCircuitLimit=302.7, ClosePrice=275.2, baseOrderQty=1
+
+10/15/2018 9:40:25 AM:: UpstoxAverageTheBuyThenSell IGL SnapQuote status=Success. lowerCircuitLimit=217.55, upperCircuitLimit=265.85, ClosePrice=241.7, baseOrderQty=1
+
+10/15/2018 9:40:25 AM:: UpstoxAverageTheBuyThenSell RELIANCE SnapQuote status=Success. lowerCircuitLimit=1013.9, upperCircuitLimit=1239.2, ClosePrice=1126.55, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell INFY SnapQuote status=Success. lowerCircuitLimit=610.95, upperCircuitLimit=746.65, ClosePrice=678.8, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT SnapQuote status=Success. lowerCircuitLimit=255.6, upperCircuitLimit=312.3, ClosePrice=283.95, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER SnapQuote status=Success. lowerCircuitLimit=51.3, upperCircuitLimit=62.6, ClosePrice=56.95, baseOrderQty=2
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK SnapQuote status=Success. lowerCircuitLimit=1487.45, upperCircuitLimit=1817.95, ClosePrice=1652.7, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK SnapQuote status=Success. lowerCircuitLimit=66.4, upperCircuitLimit=81.1, ClosePrice=73.75, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell UJJIVAN SnapQuote status=Success. lowerCircuitLimit=228.2, upperCircuitLimit=278.9, ClosePrice=253.55, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell BIOCON SnapQuote status=Success. lowerCircuitLimit=545.8, upperCircuitLimit=667, ClosePrice=606.4, baseOrderQty=2
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN SnapQuote status=Success. lowerCircuitLimit=838.8, upperCircuitLimit=1025.1, ClosePrice=931.95, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT SnapQuote status=Success. lowerCircuitLimit=662.3, upperCircuitLimit=809.4, ClosePrice=735.85, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS SnapQuote status=Success. lowerCircuitLimit=290.85, upperCircuitLimit=355.45, ClosePrice=323.15, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT SnapQuote status=Success. lowerCircuitLimit=340.9, upperCircuitLimit=511.3, ClosePrice=426.1, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell HDFCBANK SnapQuote status=Success. lowerCircuitLimit=1783.7, upperCircuitLimit=2180, ClosePrice=1981.85, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE SnapQuote status=Success. lowerCircuitLimit=2058.65, upperCircuitLimit=2516.05, ClosePrice=2287.35, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell M&M SnapQuote status=Success. lowerCircuitLimit=691.65, upperCircuitLimit=845.35, ClosePrice=768.5, baseOrderQty=1
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell DLF SnapQuote status=Success. lowerCircuitLimit=141.9, upperCircuitLimit=173.4, ClosePrice=157.65, baseOrderQty=2
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell IDFCBANK SnapQuote status=Success. lowerCircuitLimit=32.85, upperCircuitLimit=40.15, ClosePrice=36.5, baseOrderQty=2
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA SubscribeQuotes status=True
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS SubscribeQuotes status=True
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell ITC SubscribeQuotes status=True
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell IGL SubscribeQuotes status=True
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell RELIANCE SubscribeQuotes status=True
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell INFY SubscribeQuotes status=True
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT SubscribeQuotes status=True
+
+10/15/2018 9:40:26 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell UJJIVAN SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell BIOCON SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell HDFCBANK SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell M&M SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell DLF SubscribeQuotes status=True
+
+10/15/2018 9:40:27 AM:: UpstoxAverageTheBuyThenSell IDFCBANK SubscribeQuotes status=True
+
+10/15/2018 9:40:30 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA 
+PriceStrategy~LTP Markdown,LTP=597.7, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=597.7, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctForAveraging=0.01, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.01, calculatedToBuyPrice=591.7, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=597.7, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.33,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.44;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 9:40:30 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181015000041470 put order req received 591.7 I  DAY  1 0  3351 1269 NA B 0 0
+
+10/15/2018 9:40:30 AM:: UpstoxAverageTheBuyThenSell RELIANCE 
+PriceStrategy~LTP Markdown,LTP=1135.5, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=1135.5, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.0025, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.0025, calculatedToBuyPrice=1132.7, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=1135.5, priceDiffPct=0, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.08,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.11;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 9:40:30 AM:: UpstoxAverageTheBuyThenSell INFY 
+PriceStrategy~LTP Markdown,LTP=689.35, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=689.35, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=685.9, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=689.35, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.17,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.22;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 9:40:30 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK 
+PriceStrategy~LTP Markdown,LTP=73.4, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=73.4, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=73, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=73.4, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.18,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.24;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=1, maxTotalOutstandingQtyAllowed=1;
+placeBuyNoLtpCompare~False
+
+10/15/2018 9:40:31 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN 
+PriceStrategy~LTP Markdown,LTP=957.1, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=957.1, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.01, calculatedToBuyPrice=947.5, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=957.1, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.33,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.43;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~False
+
+10/15/2018 9:40:31 AM:: MyUpstoxWrapper SUNPHARMA OrderId:181015000041470, UpstoxOrderStatus:open
+
+10/15/2018 9:40:31 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Place Order MARGIN]: Success SUNPHARMA BUY 1 @ 591.7 LIMIT. OrderId=181015000041470, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:31 AM:: MyUpstoxWrapper RELIANCE OrderId:181015000041479, UpstoxOrderStatus:open
+
+10/15/2018 9:40:31 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1132.7 LIMIT. OrderId=181015000041479, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:31 AM:: UpstoxAverageTheBuyThenSell HDFCBANK 
+PriceStrategy~LTP Markdown,LTP=1983.95, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=1983.95, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.001, markDownPctForAveraging=0.01, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.001, calculatedToBuyPrice=1982, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=1983.95, priceDiffPct=0, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.04;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 9:40:31 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE 
+PriceStrategy~LTP Markdown,LTP=2289.7, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=2289.7, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.01, calculatedToBuyPrice=2266.8, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=2289.7, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.33,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.43;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 9:40:31 AM:: MyUpstoxWrapper INFY OrderId:181015000041481, UpstoxOrderStatus:open
+
+10/15/2018 9:40:31 AM:: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY BUY 1 @ 685.9 LIMIT. OrderId=181015000041481, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:32 AM:: MyUpstoxWrapper FEDERALBNK OrderId:181015000041488, UpstoxOrderStatus:open
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK [Place Order MARGIN]: Success FEDERALBNK BUY 1 @ 73 LIMIT. OrderId=181015000041488, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS [DELIVERY Holding SquareOff] Will place order SELL TATAMOTORS 220 @ 207.5.
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS orderPrice 207.5 is outside circuit limits of lowerCircuitLimit 165.4 upperCircuitLimit 202.1, Not placing order
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS 
+PriceStrategy~LTP Markdown,LTP=183.4, lastBuyPrice=205.25, holdingOutstandingPrice=205.25, lastPriceToCompareWith=183.4, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=182.5, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=220, holdingOutstandingPrice=205.25, baseOrderQty=3, todayOutstandingMultiple=0, totalOutstandingMultiple=73, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=14.6;
+                    totalAvgHoldingPrice=205.25, priceToCompareForQty=205.25, priceDiffPct=0.11, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=3.69,
+                    priceDiffBucketNumberForQty=3, priceDiffBucketAgressionForQty=2, priceFactorCalcForQty=7.39;
+                    qtyCurve=107.885, calculatedOrderQty=150, maxTodayOutstandingQtyAllowed=150, maxTotalOutstandingQtyAllowed=600;
+placeBuyNoLtpCompare~False
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell ITC [DELIVERY Holding SquareOff] Will place order SELL ITC 12 @ 288.5.
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181015000041470 put order req received 591.7 I  DAY  1 0  3351 1269 NA B 1539576630292281 0
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell IGL [DELIVERY Holding SquareOff] Will place order SELL IGL 7 @ 253.3.
+
+10/15/2018 9:40:32 AM:: MyUpstoxWrapper IBULHSGFIN OrderId:181015000041492, UpstoxOrderStatus:open
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order MARGIN]: Success IBULHSGFIN BUY 1 @ 947.5 LIMIT. OrderId=181015000041492, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [DELIVERY Holding SquareOff] Will place order SELL BERGEPAINT 6 @ 293.3.
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER [DELIVERY Holding SquareOff] Will place order SELL PCJEWELLER 39 @ 66.
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER orderPrice 66 is outside circuit limits of lowerCircuitLimit 51.3 upperCircuitLimit 62.6, Not placing order
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [DELIVERY Holding SquareOff] Will place order SELL INDUSINDBK 5 @ 1732.7.
+
+10/15/2018 9:40:32 AM:: MyUpstoxWrapper HDFCBANK OrderId:181015000041505, UpstoxOrderStatus:open
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 1982 LIMIT. OrderId=181015000041505, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell UJJIVAN [DELIVERY Holding SquareOff] Will place order SELL UJJIVAN 12 @ 293.4.
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 293.4 is outside circuit limits of lowerCircuitLimit 228.2 upperCircuitLimit 278.9, Not placing order
+
+10/15/2018 9:40:32 AM:: MyUpstoxWrapper BAJFINANCE OrderId:181015000041508, UpstoxOrderStatus:open
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order MARGIN]: Success BAJFINANCE BUY 1 @ 2266.8 LIMIT. OrderId=181015000041508, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:32 AM:: UpstoxAverageTheBuyThenSell BIOCON [DELIVERY Holding SquareOff] Will place order SELL BIOCON 13 @ 643.8.
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [DELIVERY Holding SquareOff] Will place order SELL AMARAJABAT 1 @ 762.4.
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS [DELIVERY Holding SquareOff] Will place order SELL ADANIPORTS 9 @ 335.2.
+
+10/15/2018 9:40:33 AM:: MyUpstoxWrapper TATAMOTORS OrderId:181015000041513, UpstoxOrderStatus:put order req received
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS [Place Order MARGIN]: Success TATAMOTORS BUY 150 @ 182.5 LIMIT. OrderId=181015000041513, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [DELIVERY Holding SquareOff] Will place order SELL CAPLIPOINT 12 @ 444.1.
+
+10/15/2018 9:40:33 AM:: MyUpstoxWrapper ITC OrderId:181015000041518, UpstoxOrderStatus:put order req received
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC [Place Order DELIVERY]: Success ITC SELL 12 @ 288.5 LIMIT. OrderId=181015000041518, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC 
+PriceStrategy~LTP Markdown,LTP=278.9, lastBuyPrice=285.34, holdingOutstandingPrice=285.34, lastPriceToCompareWith=278.9, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=277.5, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=12, holdingOutstandingPrice=285.34, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=12, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=2.4;
+                    totalAvgHoldingPrice=285.34, priceToCompareForQty=285.34, priceDiffPct=0.03, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.92,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=1.19;
+                    qtyCurve=2.858, calculatedOrderQty=2, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~False
+
+10/15/2018 9:40:33 AM:: MyUpstoxWrapper IGL OrderId:181015000041519, UpstoxOrderStatus:put order req received
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IGL [Place Order DELIVERY]: Success IGL SELL 7 @ 253.3 LIMIT. OrderId=181015000041519, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell M&M [DELIVERY Holding SquareOff] Will place order SELL M&M 3 @ 933.2.
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell M&M orderPrice 933.2 is outside circuit limits of lowerCircuitLimit 691.65 upperCircuitLimit 845.35, Not placing order
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell M&M 
+PriceStrategy~LTP Markdown,LTP=750.35, lastBuyPrice=929, holdingOutstandingPrice=929, lastPriceToCompareWith=750.35, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=746.6, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=3, holdingOutstandingPrice=929, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=3, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.6;
+                    totalAvgHoldingPrice=929, priceToCompareForQty=929, priceDiffPct=0.2, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=6.54,
+                    priceDiffBucketNumberForQty=6, priceDiffBucketAgressionForQty=2.7, priceFactorCalcForQty=17.67;
+                    qtyCurve=10.602, calculatedOrderQty=5, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell DLF [DELIVERY Holding SquareOff] Will place order SELL DLF 7 @ 180.5.
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell DLF orderPrice 180.5 is outside circuit limits of lowerCircuitLimit 141.9 upperCircuitLimit 173.4, Not placing order
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell DLF 
+PriceStrategy~LTP Markdown,LTP=155.25, lastBuyPrice=179, holdingOutstandingPrice=179, lastPriceToCompareWith=155.25, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.015, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.015, calculatedToBuyPrice=152.9, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=7, holdingOutstandingPrice=179, baseOrderQty=2, todayOutstandingMultiple=0, totalOutstandingMultiple=3, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.6;
+                    totalAvgHoldingPrice=179, priceToCompareForQty=179, priceDiffPct=0.15, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=4.86,
+                    priceDiffBucketNumberForQty=4, priceDiffBucketAgressionForQty=2.2, priceFactorCalcForQty=10.69;
+                    qtyCurve=6.416, calculatedOrderQty=10, maxTodayOutstandingQtyAllowed=10, maxTotalOutstandingQtyAllowed=40;
+placeBuyNoLtpCompare~True
+
+10/15/2018 9:40:33 AM:: MyUpstoxWrapper BERGEPAINT OrderId:181015000041522, UpstoxOrderStatus:put order req received
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order DELIVERY]: Success BERGEPAINT SELL 6 @ 293.3 LIMIT. OrderId=181015000041522, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT 
+PriceStrategy~LTP Markdown,LTP=280, lastBuyPrice=290.1, holdingOutstandingPrice=290.1, lastPriceToCompareWith=280, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=278.6, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=6, holdingOutstandingPrice=290.1, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=6, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=1.2;
+                    totalAvgHoldingPrice=290.1, priceToCompareForQty=290.1, priceDiffPct=0.04, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=1.32,
+                    priceDiffBucketNumberForQty=1, priceDiffBucketAgressionForQty=1.4, priceFactorCalcForQty=1.85;
+                    qtyCurve=2.22, calculatedOrderQty=2, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~False
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IDFCBANK [DELIVERY Holding SquareOff] Will place order SELL IDFCBANK 60 @ 39.4.
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181015000041470 validation pending 591.7 I  DAY  1 0  3351 1269 NA B 1539576630294261 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181015000041470 open pending 591.7 I  DAY  1 0  3351 1269 NA B 1539576630307775 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181015000041470 open 591.7 I 15-Oct-2018 09:40:30 DAY  1 0 1300000000862671 3351 1269 NA B 1539576630319866 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000041479 put order req received 1132.7 I  DAY  1 0  2885 1093 NA B 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000041479 put order req received 1132.7 I  DAY  1 0  2885 1093 NA B 1539576630689481 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000041479 validation pending 1132.7 I  DAY  1 0  2885 1093 NA B 1539576630691457 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000041479 open pending 1132.7 I  DAY  1 0  2885 1093 NA B 1539576630714193 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000041479 open 1132.7 I 15-Oct-2018 09:40:30 DAY  1 0 1200000000977636 2885 1093 NA B 1539576630722152 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000041481 put order req received 685.9 I  DAY  1 0  1594 628 NA B 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000041481 put order req received 685.9 I  DAY  1 0  1594 628 NA B 1539576630826734 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000041481 validation pending 685.9 I  DAY  1 0  1594 628 NA B 1539576630828375 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000041481 open pending 685.9 I  DAY  1 0  1594 628 NA B 1539576630840535 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000041481 open 685.9 I 15-Oct-2018 09:40:30 DAY  1 0 1100000001149091 1594 628 NA B 1539576630848731 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK [Order Updated] FEDERALBNK 181015000041488 put order req received 73 I  DAY  1 0  1023 399 NA B 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK [Order Updated] FEDERALBNK 181015000041488 put order req received 73 I  DAY  1 0  1023 399 NA B 1539576631136320 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK [Order Updated] FEDERALBNK 181015000041488 validation pending 73 I  DAY  1 0  1023 399 NA B 1539576631137904 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK [Order Updated] FEDERALBNK 181015000041488 open pending 73 I  DAY  1 0  1023 399 NA B 1539576631150157 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK [Order Updated] FEDERALBNK 181015000041488 open 73 I 15-Oct-2018 09:40:31 DAY  1 0 1100000001149267 1023 399 NA B 1539576631170123 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000041492 put order req received 947.5 I  DAY  1 0  30125 566 NA B 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000041492 put order req received 947.5 I  DAY  1 0  30125 566 NA B 1539576631426603 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000041492 validation pending 947.5 I  DAY  1 0  30125 566 NA B 1539576631428119 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000041492 open pending 947.5 I  DAY  1 0  30125 566 NA B 1539576631452177 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000041492 open 947.5 I 15-Oct-2018 09:40:31 DAY  1 0 1100000001149444 30125 566 NA B 1539576631460159 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000041505 put order req received 1982 I  DAY  1 0  1333 518 NA B 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000041505 put order req received 1982 I  DAY  1 0  1333 518 NA B 1539576631767165 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000041505 validation pending 1982 I  DAY  1 0  1333 518 NA B 1539576631771415 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000041505 open pending 1982 I  DAY  1 0  1333 518 NA B 1539576631785512 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000041505 open 1982 I 15-Oct-2018 09:40:31 DAY  1 0 1100000001149592 1333 518 NA B 1539576631795196 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000041508 put order req received 2266.8 I  DAY  1 0  317 142 NA B 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000041508 put order req received 2266.8 I  DAY  1 0  317 142 NA B 1539576631925484 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000041508 validation pending 2266.8 I  DAY  1 0  317 142 NA B 1539576631926577 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000041508 open pending 2266.8 I  DAY  1 0  317 142 NA B 1539576631940176 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000041508 open 2266.8 I 15-Oct-2018 09:40:31 DAY  1 0 1000000001206588 317 142 NA B 1539576631951864 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS [Order Updated] TATAMOTORS 181015000041513 put order req received 182.5 I  DAY  150 0  3456 1305 NA B 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS [Order Updated] TATAMOTORS 181015000041513 put order req received 182.5 I  DAY  150 0  3456 1305 NA B 1539576632287040 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS [Order Updated] TATAMOTORS 181015000041513 validation pending 182.5 I  DAY  150 0  3456 1305 NA B 1539576632288187 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS [Order Updated] TATAMOTORS 181015000041513 open pending 182.5 I  DAY  150 0  3456 1305 NA B 1539576632300926 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS [Order Updated] TATAMOTORS 181015000041513 open 182.5 I 15-Oct-2018 09:40:32 DAY  150 0 1300000000863247 3456 1305 NA B 1539576632309066 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041518 put order req received 288.5 D  DAY  12 0  1660 646 NA S 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041518 put order req received 288.5 D  DAY  12 0  1660 646 NA S 1539576632390907 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041518 validation pending 288.5 D  DAY  12 0  1660 646 NA S 1539576632392399 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181015000041519 put order req received 253.3 D  DAY  7 0  11262 595 NA S 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181015000041519 put order req received 253.3 D  DAY  7 0  11262 595 NA S 1539576632392181 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181015000041519 validation pending 253.3 D  DAY  7 0  11262 595 NA S 1539576632396221 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041518 open pending 288.5 D  DAY  12 0  1660 646 NA S 1539576632414591 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041518 open 288.5 D 15-Oct-2018 09:40:32 DAY  12 0 1100000001149879 1660 646 NA S 1539576632422790 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181015000041519 open pending 253.3 D  DAY  7 0  11262 595 NA S 1539576632426180 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181015000041519 open 253.3 D 15-Oct-2018 09:40:32 DAY  7 0 1100000001149886 11262 595 NA S 1539576632434129 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041522 put order req received 293.3 D  DAY  6 0  404 173 NA S 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041522 put order req received 293.3 D  DAY  6 0  404 173 NA S 1539576632611053 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041522 validation pending 293.3 D  DAY  6 0  404 173 NA S 1539576632612719 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041522 open pending 293.3 D  DAY  6 0  404 173 NA S 1539576632626428 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041522 open 293.3 D 15-Oct-2018 09:40:32 DAY  6 0 1000000001206842 404 173 NA S 1539576632634824 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181015000041525 put order req received 1732.7 D  DAY  5 0  5258 622 NA S 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181015000041525 put order req received 1732.7 D  DAY  5 0  5258 622 NA S 1539576632815443 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181015000041525 validation pending 1732.7 D  DAY  5 0  5258 622 NA S 1539576632816700 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181015000041525 open pending 1732.7 D  DAY  5 0  5258 622 NA S 1539576632829380 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181015000041525 open 1732.7 D 15-Oct-2018 09:40:32 DAY  5 0 1100000001150052 5258 622 NA S 1539576632837362 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BIOCON [Order Updated] BIOCON 181015000041533 put order req received 643.8 D  DAY  13 0  11373 192 NA S 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BIOCON [Order Updated] BIOCON 181015000041533 put order req received 643.8 D  DAY  13 0  11373 192 NA S 1539576633107130 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BIOCON [Order Updated] BIOCON 181015000041533 validation pending 643.8 D  DAY  13 0  11373 192 NA S 1539576633108514 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BIOCON [Order Updated] BIOCON 181015000041533 open pending 643.8 D  DAY  13 0  11373 192 NA S 1539576633132041 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BIOCON [Order Updated] BIOCON 181015000041533 open 643.8 D 15-Oct-2018 09:40:33 DAY  13 0 1000000001207060 11373 192 NA S 1539576633142963 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041536 put order req received 762.4 D  DAY  1 0  100 59 NA S 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041536 put order req received 762.4 D  DAY  1 0  100 59 NA S 1539576633225128 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041536 validation pending 762.4 D  DAY  1 0  100 59 NA S 1539576633226144 0
+
+10/15/2018 9:40:33 AM:: MyUpstoxWrapper INDUSINDBK OrderId:181015000041525, UpstoxOrderStatus:open
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Place Order DELIVERY]: Success INDUSINDBK SELL 5 @ 1732.7 LIMIT. OrderId=181015000041525, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041536 open pending 762.4 D  DAY  1 0  100 59 NA S 1539576633239188 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041536 open 762.4 D 15-Oct-2018 09:40:33 DAY  1 0 1000000001207138 100 59 NA S 1539576633247867 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS [Order Updated] ADANIPORTS 181015000041539 put order req received 335.2 D  DAY  9 0  15083 23 NA S 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS [Order Updated] ADANIPORTS 181015000041539 put order req received 335.2 D  DAY  9 0  15083 23 NA S 1539576633306554 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS [Order Updated] ADANIPORTS 181015000041539 validation pending 335.2 D  DAY  9 0  15083 23 NA S 1539576633309522 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS [Order Updated] ADANIPORTS 181015000041539 open pending 335.2 D  DAY  9 0  15083 23 NA S 1539576633333923 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS [Order Updated] ADANIPORTS 181015000041539 open 335.2 D 15-Oct-2018 09:40:33 DAY  9 0 1000000001207240 15083 23 NA S 1539576633345058 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181015000041541 put order req received 444.1 D  DAY  12 0  3906 229 NA S 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181015000041541 put order req received 444.1 D  DAY  12 0  3906 229 NA S 1539576633427046 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181015000041541 validation pending 444.1 D  DAY  12 0  3906 229 NA S 1539576633428036 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181015000041541 open pending 444.1 D  DAY  12 0  3906 229 NA S 1539576633441864 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181015000041541 open 444.1 D 15-Oct-2018 09:40:33 DAY  12 0 1000000001207288 3906 229 NA S 1539576633449874 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041544 put order req received 277.5 I  DAY  2 0  1660 646 NA B 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041544 put order req received 277.5 I  DAY  2 0  1660 646 NA B 1539576633528580 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000041545 put order req received 746.6 I  DAY  5 0  2031 797 NA B 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000041545 put order req received 746.6 I  DAY  5 0  2031 797 NA B 1539576633530079 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000041545 validation pending 746.6 I  DAY  5 0  2031 797 NA B 1539576633531167 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041544 validation pending 277.5 I  DAY  2 0  1660 646 NA B 1539576633530186 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041544 open pending 277.5 I  DAY  2 0  1660 646 NA B 1539576633543602 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000041545 open pending 746.6 I  DAY  5 0  2031 797 NA B 1539576633557222 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041544 open 277.5 I 15-Oct-2018 09:40:33 DAY  2 0 1100000001150397 1660 646 NA B 1539576633558903 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000041545 open 746.6 I 15-Oct-2018 09:40:33 DAY  5 0 1200000000979053 2031 797 NA B 1539576633580994 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181015000041549 put order req received 152.9 I  DAY  10 0  14732 332 NA B 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181015000041549 put order req received 152.9 I  DAY  10 0  14732 332 NA B 1539576633687386 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181015000041549 validation pending 152.9 I  DAY  10 0  14732 332 NA B 1539576633690474 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181015000041549 open pending 152.9 I  DAY  10 0  14732 332 NA B 1539576633704130 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181015000041549 open 152.9 I 15-Oct-2018 09:40:33 DAY  10 0 1000000001207394 14732 332 NA B 1539576633712819 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041553 put order req received 278.6 I  DAY  2 0  404 173 NA B 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041553 put order req received 278.6 I  DAY  2 0  404 173 NA B 1539576633817502 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IDFCBANK [Order Updated] IDFCBANK 181015000041554 put order req received 39.4 D  DAY  60 0  11184 587 NA S 0 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IDFCBANK [Order Updated] IDFCBANK 181015000041554 put order req received 39.4 D  DAY  60 0  11184 587 NA S 1539576633819135 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041553 validation pending 278.6 I  DAY  2 0  404 173 NA B 1539576633819724 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IDFCBANK [Order Updated] IDFCBANK 181015000041554 validation pending 39.4 D  DAY  60 0  11184 587 NA S 1539576633820991 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041553 open pending 278.6 I  DAY  2 0  404 173 NA B 1539576633832606 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041553 open 278.6 I 15-Oct-2018 09:40:33 DAY  2 0 1000000001207454 404 173 NA B 1539576633840658 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IDFCBANK [Order Updated] IDFCBANK 181015000041554 open pending 39.4 D  DAY  60 0  11184 587 NA S 1539576633844295 0
+
+10/15/2018 9:40:33 AM:: UpstoxAverageTheBuyThenSell IDFCBANK [Order Updated] IDFCBANK 181015000041554 open 39.4 D 15-Oct-2018 09:40:33 DAY  60 0 1100000001150505 11184 587 NA S 1539576633852096 0
+
+10/15/2018 9:40:34 AM:: MyUpstoxWrapper BIOCON OrderId:181015000041533, UpstoxOrderStatus:open
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell BIOCON [Place Order DELIVERY]: Success BIOCON SELL 13 @ 643.8 LIMIT. OrderId=181015000041533, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:34 AM:: MyUpstoxWrapper AMARAJABAT OrderId:181015000041536, UpstoxOrderStatus:open
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Place Order DELIVERY]: Success AMARAJABAT SELL 1 @ 762.4 LIMIT. OrderId=181015000041536, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT 
+PriceStrategy~LTP Markdown,LTP=739.7, lastBuyPrice=748.6, holdingOutstandingPrice=748.6, lastPriceToCompareWith=739.7, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.015, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.015, calculatedToBuyPrice=728.6, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=1, holdingOutstandingPrice=748.6, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.2;
+                    totalAvgHoldingPrice=748.6, priceToCompareForQty=748.6, priceDiffPct=0.03, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.89,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=1.16;
+                    qtyCurve=0.232, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~False
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041563 put order req received 728.6 I  DAY  1 0  100 59 NA B 0 0
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041563 put order req received 728.6 I  DAY  1 0  100 59 NA B 1539576634289737 0
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041563 validation pending 728.6 I  DAY  1 0  100 59 NA B 1539576634290838 0
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041563 open pending 728.6 I  DAY  1 0  100 59 NA B 1539576634303740 0
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041563 open 728.6 I 15-Oct-2018 09:40:34 DAY  1 0 1000000001207659 100 59 NA B 1539576634312023 0
+
+10/15/2018 9:40:34 AM:: MyUpstoxWrapper ADANIPORTS OrderId:181015000041539, UpstoxOrderStatus:open
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS [Place Order DELIVERY]: Success ADANIPORTS SELL 9 @ 335.2 LIMIT. OrderId=181015000041539, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:34 AM:: MyUpstoxWrapper CAPLIPOINT OrderId:181015000041541, UpstoxOrderStatus:open
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT SELL 12 @ 444.1 LIMIT. OrderId=181015000041541, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:34 AM:: MyUpstoxWrapper ITC OrderId:181015000041544, UpstoxOrderStatus:open
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC BUY 2 @ 277.5 LIMIT. OrderId=181015000041544, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:34 AM:: MyUpstoxWrapper M&M OrderId:181015000041545, UpstoxOrderStatus:open
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M BUY 5 @ 746.6 LIMIT. OrderId=181015000041545, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:34 AM:: MyUpstoxWrapper DLF OrderId:181015000041549, UpstoxOrderStatus:open
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF BUY 10 @ 152.9 LIMIT. OrderId=181015000041549, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:34 AM:: MyUpstoxWrapper IDFCBANK OrderId:181015000041554, UpstoxOrderStatus:open
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell IDFCBANK [Place Order DELIVERY]: Success IDFCBANK SELL 60 @ 39.4 LIMIT. OrderId=181015000041554, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:34 AM:: MyUpstoxWrapper BERGEPAINT OrderId:181015000041553, UpstoxOrderStatus:open
+
+10/15/2018 9:40:34 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Place Order MARGIN]: Success BERGEPAINT BUY 2 @ 278.6 LIMIT. OrderId=181015000041553, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:40:35 AM:: MyUpstoxWrapper AMARAJABAT OrderId:181015000041563, UpstoxOrderStatus:open
+
+10/15/2018 9:40:35 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Place Order MARGIN]: Success AMARAJABAT BUY 1 @ 728.6 LIMIT. OrderId=181015000041563, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:44:22 AM:: UpstoxAverageTheBuyThenSell INFY [Trade Execution] MARGIN Trade: INFY bought 1 @ 685.9. OrderId=181015000041481, TradeId=25460193, ExchExecutionTime=10/15/2018 9:40:30 AM, ExchTime=15-Oct-2018 09:40:30, Timestamp=0
+
+10/15/2018 9:44:22 AM:: UpstoxAverageTheBuyThenSell INFY [Trade Execution] Fully executed NewQty=1 TotalQty=1
+
+10/15/2018 9:44:23 AM:: MyUpstoxWrapper INFY OrderId:181015000045154, UpstoxOrderStatus:put order req received
+
+10/15/2018 9:44:23 AM:: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY SELL 1 @ 689.3 LIMIT. OrderId=181015000045154, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:44:23 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000041481 complete 685.9 I 15-Oct-2018 09:40:30 DAY  1 1 1100000001149091 1594 628 NA B 1539576862457252 685.9
+
+10/15/2018 9:44:23 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045154 put order req received 689.3 I  DAY  1 0  1594 628 NA S 0 0
+
+10/15/2018 9:44:23 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045154 put order req received 689.3 I  DAY  1 0  1594 628 NA S 1539576862550407 0
+
+10/15/2018 9:44:23 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045154 validation pending 689.3 I  DAY  1 0  1594 628 NA S 1539576862553711 0
+
+10/15/2018 9:44:23 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045154 open pending 689.3 I  DAY  1 0  1594 628 NA S 1539576862572132 0
+
+10/15/2018 9:44:23 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045154 open 689.3 I 15-Oct-2018 09:44:22 DAY  1 0 1100000001244871 1594 628 NA S 1539576862580554 0
+
+10/15/2018 9:44:23 AM:MTMThread: UpstoxAverageTheBuyThenSell INFY [Position Updated] INFY 686.35 685.8 685.9 0 1 0 -0.1 686.2 1 628
+
+10/15/2018 9:44:31 AM:: UpstoxAverageTheBuyThenSell INFY 
+PriceStrategy~LastBuyPrice Markdown,LTP=686.35, lastBuyPrice=685.9, holdingOutstandingPrice=0, lastPriceToCompareWith=685.9, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0.0025, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.0075, calculatedToBuyPrice=680.8, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=1, todayOutstandingPrice=685.9, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.2;
+                    totalAvgHoldingPrice=685.9, priceToCompareForQty=686.35, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.27,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.35;
+                    qtyCurve=0.07, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 9:44:31 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045295 put order req received 680.8 I  DAY  1 0  1594 628 NA B 0 0
+
+10/15/2018 9:44:31 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045295 put order req received 680.8 I  DAY  1 0  1594 628 NA B 1539576871981125 0
+
+10/15/2018 9:44:31 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045295 validation pending 680.8 I  DAY  1 0  1594 628 NA B 1539576871982409 0
+
+10/15/2018 9:44:31 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045295 open pending 680.8 I  DAY  1 0  1594 628 NA B 1539576871994585 0
+
+10/15/2018 9:44:31 AM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045295 open 680.8 I 15-Oct-2018 09:44:31 DAY  1 0 1100000001249234 1594 628 NA B 1539576872002739 0
+
+10/15/2018 9:44:32 AM:: MyUpstoxWrapper INFY OrderId:181015000045295, UpstoxOrderStatus:open
+
+10/15/2018 9:44:32 AM:: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY BUY 1 @ 680.8 LIMIT. OrderId=181015000045295, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:48:10 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1 to 1.2. Nifty changePct=-0.00508
+
+10/15/2018 9:48:26 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1.2 to 1. Nifty changePct=-0.00475
+
+10/15/2018 9:50:30 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Trade Execution] MARGIN Trade: HDFCBANK bought 1 @ 1982. OrderId=181015000041505, TradeId=25528670, ExchExecutionTime=10/15/2018 9:40:31 AM, ExchTime=15-Oct-2018 09:40:31, Timestamp=0
+
+10/15/2018 9:50:30 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Trade Execution] Fully executed NewQty=1 TotalQty=1
+
+10/15/2018 9:50:31 AM:: MyUpstoxWrapper HDFCBANK OrderId:181015000050466, UpstoxOrderStatus:put order req received
+
+10/15/2018 9:50:31 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK SELL 1 @ 1991.9 LIMIT. OrderId=181015000050466, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:50:31 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000041505 complete 1982 I 15-Oct-2018 09:40:31 DAY  1 1 1100000001149592 1333 518 NA B 1539577230794480 1982
+
+10/15/2018 9:50:31 AM:MTMThread: UpstoxAverageTheBuyThenSell HDFCBANK [Position Updated] HDFCBANK 1982.7 1982.2 1982 0 1 0 0.2 1982.15 1 518
+
+10/15/2018 9:50:32 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050466 put order req received 1991.9 I  DAY  1 0  1333 518 NA S 0 0
+
+10/15/2018 9:50:32 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050466 put order req received 1991.9 I  DAY  1 0  1333 518 NA S 1539577231018259 0
+
+10/15/2018 9:50:32 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050466 validation pending 1991.9 I  DAY  1 0  1333 518 NA S 1539577231020384 0
+
+10/15/2018 9:50:32 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050466 open pending 1991.9 I  DAY  1 0  1333 518 NA S 1539577231021616 0
+
+10/15/2018 9:50:32 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050466 open 1991.9 I 15-Oct-2018 09:50:31 DAY  1 0 1100000001410072 1333 518 NA S 1539577231038530 0
+
+10/15/2018 9:50:32 AM:: UpstoxAverageTheBuyThenSell HDFCBANK 
+PriceStrategy~LastBuyPrice Markdown,LTP=1982.15, lastBuyPrice=1982, holdingOutstandingPrice=0, lastPriceToCompareWith=1982, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1, markDownPctForBuy=0.001, markDownPctForAveraging=0.01, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0.005, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.006, calculatedToBuyPrice=1970.1, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=1, todayOutstandingPrice=1982, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.2;
+                    totalAvgHoldingPrice=1982, priceToCompareForQty=1982.15, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.2,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.26;
+                    qtyCurve=0.053, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 9:50:33 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050503 put order req received 1970.1 I  DAY  1 0  1333 518 NA B 0 0
+
+10/15/2018 9:50:33 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050503 put order req received 1970.1 I  DAY  1 0  1333 518 NA B 1539577233152911 0
+
+10/15/2018 9:50:33 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050503 validation pending 1970.1 I  DAY  1 0  1333 518 NA B 1539577233154164 0
+
+10/15/2018 9:50:33 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050503 open pending 1970.1 I  DAY  1 0  1333 518 NA B 1539577233164686 0
+
+10/15/2018 9:50:33 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050503 open 1970.1 I 15-Oct-2018 09:50:33 DAY  1 0 1100000001411451 1333 518 NA B 1539577233188524 0
+
+10/15/2018 9:50:34 AM:: MyUpstoxWrapper HDFCBANK OrderId:181015000050503, UpstoxOrderStatus:open
+
+10/15/2018 9:50:34 AM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 1970.1 LIMIT. OrderId=181015000050503, BrokerOrderStatus=ORDERED
+
+10/15/2018 9:57:26 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1 to 1.2. Nifty changePct=-0.00508
+
+10/15/2018 9:59:41 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1.2 to 1. Nifty changePct=-0.00476
+
+10/15/2018 10:00:26 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1 to 1.2. Nifty changePct=-0.00511
+
+10/15/2018 10:02:11 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1.2 to 1. Nifty changePct=-0.00493
+
+10/15/2018 10:34:26 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1 to 1.2. Nifty changePct=-0.00512
+
+10/15/2018 10:34:41 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1.2 to 1. Nifty changePct=-0.00499
+
+10/15/2018 10:35:11 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1 to 1.2. Nifty changePct=-0.00506
+
+10/15/2018 10:35:26 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1.2 to 1. Nifty changePct=-0.005
+
+10/15/2018 10:36:41 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1 to 1.2. Nifty changePct=-0.00606
+
+10/15/2018 10:39:11 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1.2 to 1. Nifty changePct=-0.00494
+
+10/15/2018 10:39:26 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1 to 1.2. Nifty changePct=-0.00505
+
+10/15/2018 10:40:11 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1.2 to 1. Nifty changePct=-0.00489
+
+10/15/2018 10:40:44 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Trade Execution] MARGIN Trade: IBULHSGFIN bought 1 @ 947.5. OrderId=181015000041492, TradeId=25989215, ExchExecutionTime=10/15/2018 9:40:31 AM, ExchTime=15-Oct-2018 09:40:31, Timestamp=0
+
+10/15/2018 10:40:44 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Trade Execution] Fully executed NewQty=1 TotalQty=1
+
+10/15/2018 10:40:45 AM:: MyUpstoxWrapper IBULHSGFIN OrderId:181015000086227, UpstoxOrderStatus:put order req received
+
+10/15/2018 10:40:45 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Place Order MARGIN]: Success IBULHSGFIN SELL 1 @ 957 LIMIT. OrderId=181015000086227, BrokerOrderStatus=ORDERED
+
+10/15/2018 10:40:45 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000041492 complete 947.5 I 15-Oct-2018 09:40:31 DAY  1 1 1100000001149444 30125 566 NA B 1539580244821775 947.5
+
+10/15/2018 10:40:45 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 put order req received 957 I  DAY  1 0  30125 566 NA S 0 0
+
+10/15/2018 10:40:45 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 put order req received 957 I  DAY  1 0  30125 566 NA S 1539580244886272 0
+
+10/15/2018 10:40:45 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 validation pending 957 I  DAY  1 0  30125 566 NA S 1539580244888732 0
+
+10/15/2018 10:40:45 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 open pending 957 I  DAY  1 0  30125 566 NA S 1539580244890447 0
+
+10/15/2018 10:40:45 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 open 957 I 15-Oct-2018 10:40:44 DAY  1 0 1100000002426134 30125 566 NA S 1539580244899007 0
+
+10/15/2018 10:40:45 AM:MTMThread: UpstoxAverageTheBuyThenSell IBULHSGFIN [Position Updated] IBULHSGFIN 948.05 948 947.5 0 1 0 0.5 948 1 566
+
+10/15/2018 10:40:56 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1 to 1.2. Nifty changePct=-0.00502
+
+10/15/2018 10:41:11 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1.2 to 1. Nifty changePct=-0.00486
+
+10/15/2018 10:42:10 AM:: UpstoxAverageTheBuyThenSell M&M [Trade Execution] MARGIN Trade: M&M bought 5 @ 746.6. OrderId=181015000041545, TradeId=50827217, ExchExecutionTime=10/15/2018 9:40:33 AM, ExchTime=15-Oct-2018 09:40:33, Timestamp=0
+
+10/15/2018 10:42:10 AM:: UpstoxAverageTheBuyThenSell M&M [Trade Execution] Fully executed NewQty=5 TotalQty=5
+
+10/15/2018 10:42:10 AM:: UpstoxAverageTheBuyThenSell M&M [Trading Limits Hit] TodayOutstandingQty reached the max. todayOutstandingQty: 5 maxTodayPositionValueMultiple: 5
+
+10/15/2018 10:42:11 AM:: MyUpstoxWrapper M&M OrderId:181015000086984, UpstoxOrderStatus:put order req received
+
+10/15/2018 10:42:11 AM:: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M SELL 5 @ 747.3 LIMIT. OrderId=181015000086984, BrokerOrderStatus=ORDERED
+
+10/15/2018 10:42:11 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000041545 complete 746.6 I 15-Oct-2018 09:40:33 DAY  5 5 1200000000979053 2031 797 NA B 1539580330790158 746.6
+
+10/15/2018 10:42:11 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000086984 put order req received 747.3 I  DAY  5 0  2031 797 NA S 0 0
+
+10/15/2018 10:42:11 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000086984 put order req received 747.3 I  DAY  5 0  2031 797 NA S 1539580330885859 0
+
+10/15/2018 10:42:11 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000086984 validation pending 747.3 I  DAY  5 0  2031 797 NA S 1539580330888602 0
+
+10/15/2018 10:42:11 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000086984 open pending 747.3 I  DAY  5 0  2031 797 NA S 1539580330889469 0
+
+10/15/2018 10:42:11 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000086984 open 747.3 I 15-Oct-2018 10:42:10 DAY  5 0 1200000002086141 2031 797 NA S 1539580330898125 0
+
+10/15/2018 10:42:11 AM:MTMThread: UpstoxAverageTheBuyThenSell M&M [Position Updated] M&M 747.1 746.95 746.6 0 5 0 1.75 747 5 797
+
+10/15/2018 10:43:11 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1 to 1.2. Nifty changePct=-0.00507
+
+10/15/2018 10:43:41 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1.2 to 1. Nifty changePct=-0.00473
+
+10/15/2018 10:44:23 AM:: UpstoxAverageTheBuyThenSell M&M [Trade Execution] MARGIN Trade: M&M sold 5 @ 747.3. OrderId=181015000086984, TradeId=50839093, ExchExecutionTime=10/15/2018 10:42:10 AM, ExchTime=15-Oct-2018 10:42:10, Timestamp=0
+
+10/15/2018 10:44:23 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000086984 complete 747.3 I 15-Oct-2018 10:42:10 DAY  5 5 1200000002086141 2031 797 NA S 1539580463145039 747.3
+
+10/15/2018 10:44:23 AM:MTMThread: UpstoxAverageTheBuyThenSell M&M [Position Updated] M&M 747 746.75 746.6 747.3 5 5 3.5 747 0 797
+
+10/15/2018 10:44:36 AM:: UpstoxAverageTheBuyThenSell M&M 
+PriceStrategy~LTP Markdown,LTP=746.9, lastBuyPrice=746.6, holdingOutstandingPrice=929, lastPriceToCompareWith=746.9, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=743.2, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=3, holdingOutstandingPrice=929, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=3, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.6;
+                    totalAvgHoldingPrice=929, priceToCompareForQty=929, priceDiffPct=0.2, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=6.67,
+                    priceDiffBucketNumberForQty=6, priceDiffBucketAgressionForQty=2.7, priceFactorCalcForQty=18;
+                    qtyCurve=10.8, calculatedOrderQty=5, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 10:44:36 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000088156 put order req received 743.2 I  DAY  5 0  2031 797 NA B 0 0
+
+10/15/2018 10:44:36 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000088156 put order req received 743.2 I  DAY  5 0  2031 797 NA B 1539580476339216 0
+
+10/15/2018 10:44:36 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000088156 validation pending 743.2 I  DAY  5 0  2031 797 NA B 1539580476340337 0
+
+10/15/2018 10:44:36 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000088156 open pending 743.2 I  DAY  5 0  2031 797 NA B 1539580476352827 0
+
+10/15/2018 10:44:36 AM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000088156 open 743.2 I 15-Oct-2018 10:44:36 DAY  5 0 1200000002116118 2031 797 NA B 1539580476361593 0
+
+10/15/2018 10:44:37 AM:: MyUpstoxWrapper M&M OrderId:181015000088156, UpstoxOrderStatus:open
+
+10/15/2018 10:44:37 AM:: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M BUY 5 @ 743.2 LIMIT. OrderId=181015000088156, BrokerOrderStatus=ORDERED
+
+10/15/2018 10:48:26 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1 to 1.2. Nifty changePct=-0.00521
+
+10/15/2018 11:07:35 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Trade Execution] MARGIN Trade: BAJFINANCE bought 1 @ 2266.8. OrderId=181015000041508, TradeId=1124894, ExchExecutionTime=10/15/2018 9:40:31 AM, ExchTime=15-Oct-2018 09:40:31, Timestamp=0
+
+10/15/2018 11:07:35 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Trade Execution] Fully executed NewQty=1 TotalQty=1
+
+10/15/2018 11:07:37 AM:: MyUpstoxWrapper BAJFINANCE OrderId:181015000099664, UpstoxOrderStatus:put order req received
+
+10/15/2018 11:07:37 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order MARGIN]: Success BAJFINANCE SELL 1 @ 2289.5 LIMIT. OrderId=181015000099664, BrokerOrderStatus=ORDERED
+
+10/15/2018 11:07:37 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000041508 complete 2266.8 I 15-Oct-2018 09:40:31 DAY  1 1 1000000001206588 317 142 NA B 1539581855892106 2266.8
+
+10/15/2018 11:07:37 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099664 validation pending 2289.5 I  DAY  1 0  317 142 NA S 1539581856058574 0
+
+10/15/2018 11:07:37 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099664 put order req received 2289.5 I  DAY  1 0  317 142 NA S 1539581856057268 0
+
+10/15/2018 11:07:37 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099664 put order req received 2289.5 I  DAY  1 0  317 142 NA S 0 0
+
+10/15/2018 11:07:37 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099664 open pending 2289.5 I  DAY  1 0  317 142 NA S 1539581856061056 0
+
+10/15/2018 11:07:37 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099664 open 2289.5 I 15-Oct-2018 11:07:36 DAY  1 0 1000000002948340 317 142 NA S 1539581856071213 0
+
+10/15/2018 11:07:37 AM:MTMThread: UpstoxAverageTheBuyThenSell BAJFINANCE [Position Updated] BAJFINANCE 2275.95 2275.5 2266.8 0 1 0 8.7 2275 1 142
+
+10/15/2018 11:07:40 AM:: UpstoxAverageTheBuyThenSell ITC [Trade Execution] MARGIN Trade: ITC bought 2 @ 277.5. OrderId=181015000041544, TradeId=26188353, ExchExecutionTime=10/15/2018 9:40:33 AM, ExchTime=15-Oct-2018 09:40:33, Timestamp=0
+
+10/15/2018 11:07:40 AM:: UpstoxAverageTheBuyThenSell ITC [Trade Execution] Fully executed NewQty=2 TotalQty=2
+
+10/15/2018 11:07:41 AM:: MyUpstoxWrapper ITC OrderId:181015000099743, UpstoxOrderStatus:put order req received
+
+10/15/2018 11:07:41 AM:: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC SELL 2 @ 279.6 LIMIT. OrderId=181015000099743, BrokerOrderStatus=ORDERED
+
+10/15/2018 11:07:41 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041544 complete 277.5 I 15-Oct-2018 09:40:33 DAY  2 2 1100000001150397 1660 646 NA B 1539581860670091 277.5
+
+10/15/2018 11:07:41 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000099743 put order req received 279.6 I  DAY  2 0  1660 646 NA S 0 0
+
+10/15/2018 11:07:41 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000099743 put order req received 279.6 I  DAY  2 0  1660 646 NA S 1539581860748816 0
+
+10/15/2018 11:07:41 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000099743 validation pending 279.6 I  DAY  2 0  1660 646 NA S 1539581860751110 0
+
+10/15/2018 11:07:41 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000099743 open pending 279.6 I  DAY  2 0  1660 646 NA S 1539581861806300 0
+
+10/15/2018 11:07:41 AM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000099743 open 279.6 I 15-Oct-2018 11:07:41 DAY  2 0 1100000002870202 1660 646 NA S 1539581861825675 0
+
+10/15/2018 11:07:41 AM:MTMThread: UpstoxAverageTheBuyThenSell ITC [Position Updated] ITC 277.6 277.5 277.5 0 2 0 0 277.6 2 646
+
+10/15/2018 11:07:48 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE 
+PriceStrategy~LastBuyPrice Markdown,LTP=2267.65, lastBuyPrice=2266.8, holdingOutstandingPrice=0, lastPriceToCompareWith=2266.8, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0.0025, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1.2,
+                    markDownPctCalculated=0.015, calculatedToBuyPrice=2232.8, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=1, todayOutstandingPrice=2266.8, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.2;
+                    totalAvgHoldingPrice=2266.8, priceToCompareForQty=2267.65, priceDiffPct=0.02, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.51,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.67;
+                    qtyCurve=0.133, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 11:07:48 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099880 put order req received 2232.8 I  DAY  1 0  317 142 NA B 0 0
+
+10/15/2018 11:07:48 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099880 put order req received 2232.8 I  DAY  1 0  317 142 NA B 1539581868881050 0
+
+10/15/2018 11:07:48 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099880 validation pending 2232.8 I  DAY  1 0  317 142 NA B 1539581868882034 0
+
+10/15/2018 11:07:48 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099880 open pending 2232.8 I  DAY  1 0  317 142 NA B 1539581868918969 0
+
+10/15/2018 11:07:48 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099880 open 2232.8 I 15-Oct-2018 11:07:48 DAY  1 0 1000000002955356 317 142 NA B 1539581868928457 0
+
+10/15/2018 11:07:49 AM:: MyUpstoxWrapper BAJFINANCE OrderId:181015000099880, UpstoxOrderStatus:open
+
+10/15/2018 11:07:49 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order MARGIN]: Success BAJFINANCE BUY 1 @ 2232.8 LIMIT. OrderId=181015000099880, BrokerOrderStatus=ORDERED
+
+10/15/2018 11:20:02 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE bought 1 @ 1132.7. OrderId=181015000041479, TradeId=51030439, ExchExecutionTime=10/15/2018 9:40:30 AM, ExchTime=15-Oct-2018 09:40:30, Timestamp=0
+
+10/15/2018 11:20:02 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] Fully executed NewQty=1 TotalQty=1
+
+10/15/2018 11:20:02 AM:: UpstoxAverageTheBuyThenSell RELIANCE 
+PriceStrategy~LastBuyPrice Markdown,LTP=1133.5, lastBuyPrice=1132.7, holdingOutstandingPrice=0, lastPriceToCompareWith=1132.7, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1, markDownPctForBuy=0.0025, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0.0025, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1.2,
+                    markDownPctCalculated=0.006, calculatedToBuyPrice=1125.9, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=1, todayOutstandingPrice=1132.7, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.2;
+                    totalAvgHoldingPrice=1132.7, priceToCompareForQty=1133.5, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.22,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.29;
+                    qtyCurve=0.058, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 11:20:03 AM:: MyUpstoxWrapper RELIANCE OrderId:181015000105512, UpstoxOrderStatus:put order req received
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE SELL 1 @ 1138.4 LIMIT. OrderId=181015000105512, BrokerOrderStatus=ORDERED
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000041479 complete 1132.7 I 15-Oct-2018 09:40:30 DAY  1 1 1200000000977636 2885 1093 NA B 1539582602441625 1132.7
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105512 put order req received 1138.4 I  DAY  1 0  2885 1093 NA S 0 0
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105512 put order req received 1138.4 I  DAY  1 0  2885 1093 NA S 1539582602720296 0
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105512 validation pending 1138.4 I  DAY  1 0  2885 1093 NA S 1539582602726610 0
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105512 open pending 1138.4 I  DAY  1 0  2885 1093 NA S 1539582602728891 0
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105512 open 1138.4 I 15-Oct-2018 11:20:02 DAY  1 0 1200000002553817 2885 1093 NA S 1539582602737334 0
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105515 put order req received 1125.9 I  DAY  1 0  2885 1093 NA B 0 0
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105515 put order req received 1125.9 I  DAY  1 0  2885 1093 NA B 1539582603060844 0
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105515 validation pending 1125.9 I  DAY  1 0  2885 1093 NA B 1539582603066292 0
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105515 open pending 1125.9 I  DAY  1 0  2885 1093 NA B 1539582603079452 0
+
+10/15/2018 11:20:03 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105515 open 1125.9 I 15-Oct-2018 11:20:03 DAY  1 0 1200000002553877 2885 1093 NA B 1539582603115635 0
+
+10/15/2018 11:20:04 AM:: MyUpstoxWrapper RELIANCE OrderId:181015000105515, UpstoxOrderStatus:open
+
+10/15/2018 11:20:04 AM:: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1125.9 LIMIT. OrderId=181015000105515, BrokerOrderStatus=ORDERED
+
+10/15/2018 11:20:04 AM:MTMThread: UpstoxAverageTheBuyThenSell RELIANCE [Position Updated] RELIANCE 1133.8 1133.5 1132.7 0 1 0 0.8 1133.5 1 1093
+
+10/15/2018 11:38:09 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Trade Execution] MARGIN Trade: BAJFINANCE sold 1 @ 2289.5. OrderId=181015000099664, TradeId=1299959, ExchExecutionTime=10/15/2018 11:07:36 AM, ExchTime=15-Oct-2018 11:07:36, Timestamp=0
+
+10/15/2018 11:38:10 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Sell Executed Fully]: BAJFINANCE BUY order cancel , OrderRef = 181015000099880: Success
+
+10/15/2018 11:38:10 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099664 complete 2289.5 I 15-Oct-2018 11:07:36 DAY  1 1 1000000002948340 317 142 NA S 1539583689664936 2289.5
+
+10/15/2018 11:38:10 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099880 cancel pending 2232.8 I 15-Oct-2018 11:07:48 DAY  1 0 1000000002955356 317 142 NA B 1539583690098586 0
+
+10/15/2018 11:38:10 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099880 cancelled 2232.8 I 15-Oct-2018 11:38:10 DAY  1 0 1000000002955356 317 142 NA B 1539583690106713 0
+
+10/15/2018 11:38:10 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000099880 cancelled 2232.8 I 15-Oct-2018 11:38:10 DAY  1 0 1000000002955356 317 142 NA B 1539583690106738 0
+
+10/15/2018 11:38:10 AM:MTMThread: UpstoxAverageTheBuyThenSell BAJFINANCE [Position Updated] BAJFINANCE 2286 2285.75 2266.8 2289.5 1 1 22.7 2286 0 142
+
+10/15/2018 11:38:11 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE 
+PriceStrategy~LTP Markdown,LTP=2291.5, lastBuyPrice=2266.8, holdingOutstandingPrice=0, lastPriceToCompareWith=2291.5, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1.2,
+                    markDownPctCalculated=0.012, calculatedToBuyPrice=2264, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=2291.5, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.4,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.52;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 11:38:12 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000113042 put order req received 2264 I  DAY  1 0  317 142 NA B 0 0
+
+10/15/2018 11:38:12 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000113042 put order req received 2264 I  DAY  1 0  317 142 NA B 1539583692134064 0
+
+10/15/2018 11:38:12 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000113042 validation pending 2264 I  DAY  1 0  317 142 NA B 1539583692135349 0
+
+10/15/2018 11:38:12 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000113042 open pending 2264 I  DAY  1 0  317 142 NA B 1539583692148088 0
+
+10/15/2018 11:38:12 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000113042 open 2264 I 15-Oct-2018 11:38:12 DAY  1 0 1000000003394142 317 142 NA B 1539583692156984 0
+
+10/15/2018 11:38:13 AM:: MyUpstoxWrapper BAJFINANCE OrderId:181015000113042, UpstoxOrderStatus:open
+
+10/15/2018 11:38:13 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order MARGIN]: Success BAJFINANCE BUY 1 @ 2264 LIMIT. OrderId=181015000113042, BrokerOrderStatus=ORDERED
+
+10/15/2018 12:05:01 PM:: UpstoxAverageTheBuyThenSell INFY [Trade Execution] MARGIN Trade: INFY sold 1 @ 689.3. OrderId=181015000045154, TradeId=26547066, ExchExecutionTime=10/15/2018 9:44:22 AM, ExchTime=15-Oct-2018 09:44:22, Timestamp=0
+
+10/15/2018 12:05:02 PM:: UpstoxAverageTheBuyThenSell INFY [Sell Executed Fully]: INFY BUY order cancel , OrderRef = 181015000045295: Success
+
+10/15/2018 12:05:02 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045154 complete 689.3 I 15-Oct-2018 09:44:22 DAY  1 1 1100000001244871 1594 628 NA S 1539585301942133 689.3
+
+10/15/2018 12:05:02 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045295 cancel pending 680.8 I 15-Oct-2018 09:44:31 DAY  1 0 1100000001249234 1594 628 NA B 1539585302141353 0
+
+10/15/2018 12:05:02 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045295 cancelled 680.8 I 15-Oct-2018 12:05:02 DAY  1 0 1100000001249234 1594 628 NA B 1539585302150003 0
+
+10/15/2018 12:05:02 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000045295 cancelled 680.8 I 15-Oct-2018 12:05:02 DAY  1 0 1100000001249234 1594 628 NA B 1539585302150041 0
+
+10/15/2018 12:05:02 PM:MTMThread: UpstoxAverageTheBuyThenSell INFY [Position Updated] INFY 689.15 689.05 685.9 689.3 1 1 3.4 689.15 0 628
+
+10/15/2018 12:05:10 PM:: UpstoxAverageTheBuyThenSell INFY 
+PriceStrategy~LTP Markdown,LTP=689.85, lastBuyPrice=685.9, holdingOutstandingPrice=0, lastPriceToCompareWith=689.85, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1.2,
+                    markDownPctCalculated=0.006, calculatedToBuyPrice=685.7, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=689.85, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.2,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.26;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 12:05:10 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000123794 put order req received 685.7 I  DAY  1 0  1594 628 NA B 0 0
+
+10/15/2018 12:05:10 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000123794 put order req received 685.7 I  DAY  1 0  1594 628 NA B 1539585311019850 0
+
+10/15/2018 12:05:10 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000123794 validation pending 685.7 I  DAY  1 0  1594 628 NA B 1539585311021352 0
+
+10/15/2018 12:05:10 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000123794 open pending 685.7 I  DAY  1 0  1594 628 NA B 1539585311034355 0
+
+10/15/2018 12:05:11 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000123794 open 685.7 I 15-Oct-2018 12:05:11 DAY  1 0 1100000003640571 1594 628 NA B 1539585311062362 0
+
+10/15/2018 12:05:12 PM:: MyUpstoxWrapper INFY OrderId:181015000123794, UpstoxOrderStatus:open
+
+10/15/2018 12:05:12 PM:: UpstoxAverageTheBuyThenSell INFY [Place Order MARGIN]: Success INFY BUY 1 @ 685.7 LIMIT. OrderId=181015000123794, BrokerOrderStatus=ORDERED
+
+10/15/2018 12:08:27 PM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1.2 to 1. Nifty changePct=-0.00432
+
+10/15/2018 12:13:34 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Trade Execution] MARGIN Trade: HDFCBANK sold 1 @ 1991.9. OrderId=181015000050466, TradeId=26598094, ExchExecutionTime=10/15/2018 9:50:31 AM, ExchTime=15-Oct-2018 09:50:31, Timestamp=0
+
+10/15/2018 12:13:34 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Sell Executed Fully]: HDFCBANK BUY order cancel , OrderRef = 181015000050503: Success
+
+10/15/2018 12:13:34 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050466 complete 1991.9 I 15-Oct-2018 09:50:31 DAY  1 1 1100000001410072 1333 518 NA S 1539585814334547 1991.9
+
+10/15/2018 12:13:34 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050503 cancel pending 1970.1 I 15-Oct-2018 09:50:33 DAY  1 0 1100000001411451 1333 518 NA B 1539585814468680 0
+
+10/15/2018 12:13:34 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050503 cancelled 1970.1 I 15-Oct-2018 12:13:34 DAY  1 0 1100000001411451 1333 518 NA B 1539585814490699 0
+
+10/15/2018 12:13:34 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000050503 cancelled 1970.1 I 15-Oct-2018 12:13:34 DAY  1 0 1100000001411451 1333 518 NA B 1539585814490731 0
+
+10/15/2018 12:13:34 PM:MTMThread: UpstoxAverageTheBuyThenSell HDFCBANK [Position Updated] HDFCBANK 1991.8 1991.5 1982 1991.9 1 1 9.9 1991.8 0 518
+
+10/15/2018 12:13:46 PM:: UpstoxAverageTheBuyThenSell HDFCBANK 
+PriceStrategy~LTP Markdown,LTP=1993.15, lastBuyPrice=1982, holdingOutstandingPrice=0, lastPriceToCompareWith=1993.15, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.001, markDownPctForAveraging=0.01, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.001, calculatedToBuyPrice=1991.2, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=1993.15, priceDiffPct=0, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.04;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 12:13:46 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000127748 put order req received 1991.2 I  DAY  1 0  1333 518 NA B 0 0
+
+10/15/2018 12:13:46 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000127748 put order req received 1991.2 I  DAY  1 0  1333 518 NA B 1539585826490693 0
+
+10/15/2018 12:13:46 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000127748 validation pending 1991.2 I  DAY  1 0  1333 518 NA B 1539585826492465 0
+
+10/15/2018 12:13:46 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000127748 open pending 1991.2 I  DAY  1 0  1333 518 NA B 1539585826504168 0
+
+10/15/2018 12:13:46 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000127748 open 1991.2 I 15-Oct-2018 12:13:46 DAY  1 0 1100000003750562 1333 518 NA B 1539585826512556 0
+
+10/15/2018 12:13:47 PM:: MyUpstoxWrapper HDFCBANK OrderId:181015000127748, UpstoxOrderStatus:open
+
+10/15/2018 12:13:47 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 1991.2 LIMIT. OrderId=181015000127748, BrokerOrderStatus=ORDERED
+
+10/15/2018 12:14:26 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Trade Execution] MARGIN Trade: HDFCBANK bought 1 @ 1991.2. OrderId=181015000127748, TradeId=26604398, ExchExecutionTime=10/15/2018 12:13:46 PM, ExchTime=15-Oct-2018 12:13:46, Timestamp=0
+
+10/15/2018 12:14:26 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Trade Execution] Fully executed NewQty=1 TotalQty=1
+
+10/15/2018 12:14:28 PM:: MyUpstoxWrapper HDFCBANK OrderId:181015000128172, UpstoxOrderStatus:put order req received
+
+10/15/2018 12:14:28 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK SELL 1 @ 2001.2 LIMIT. OrderId=181015000128172, BrokerOrderStatus=ORDERED
+
+10/15/2018 12:14:28 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000127748 complete 1991.2 I 15-Oct-2018 12:13:46 DAY  1 1 1100000003750562 1333 518 NA B 1539585866960808 1991.2
+
+10/15/2018 12:14:28 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128172 put order req received 2001.2 I  DAY  1 0  1333 518 NA S 0 0
+
+10/15/2018 12:14:28 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128172 put order req received 2001.2 I  DAY  1 0  1333 518 NA S 1539585867100268 0
+
+10/15/2018 12:14:28 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128172 validation pending 2001.2 I  DAY  1 0  1333 518 NA S 1539585867102991 0
+
+10/15/2018 12:14:28 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128172 open pending 2001.2 I  DAY  1 0  1333 518 NA S 1539585867103759 0
+
+10/15/2018 12:14:28 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128172 open 2001.2 I 15-Oct-2018 12:14:27 DAY  1 0 1100000003760685 1333 518 NA S 1539585867111976 0
+
+10/15/2018 12:14:28 PM:MTMThread: UpstoxAverageTheBuyThenSell HDFCBANK [Position Updated] HDFCBANK 1992.15 1992 1986.6 1991.9 2 1 10.55 1992 1 518
+
+10/15/2018 12:14:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK 
+PriceStrategy~LastBuyPrice Markdown,LTP=1991.05, lastBuyPrice=1991.2, holdingOutstandingPrice=0, lastPriceToCompareWith=1991.2, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1, markDownPctForBuy=0.001, markDownPctForAveraging=0.01, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0.005, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.006, calculatedToBuyPrice=1979.3, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=1, todayOutstandingPrice=1991.2, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.2;
+                    totalAvgHoldingPrice=1991.2, priceToCompareForQty=1991.2, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.2,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.26;
+                    qtyCurve=0.052, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 12:14:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128222 put order req received 1979.3 I  DAY  1 0  1333 518 NA B 0 0
+
+10/15/2018 12:14:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128222 put order req received 1979.3 I  DAY  1 0  1333 518 NA B 1539585872679706 0
+
+10/15/2018 12:14:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128222 validation pending 1979.3 I  DAY  1 0  1333 518 NA B 1539585872680690 0
+
+10/15/2018 12:14:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128222 open pending 1979.3 I  DAY  1 0  1333 518 NA B 1539585872693244 0
+
+10/15/2018 12:14:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128222 open 1979.3 I 15-Oct-2018 12:14:32 DAY  1 0 1100000003761660 1333 518 NA B 1539585872709804 0
+
+10/15/2018 12:14:33 PM:: MyUpstoxWrapper HDFCBANK OrderId:181015000128222, UpstoxOrderStatus:open
+
+10/15/2018 12:14:33 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 1979.3 LIMIT. OrderId=181015000128222, BrokerOrderStatus=ORDERED
+
+10/15/2018 12:22:53 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000099743 complete 279.6 I 15-Oct-2018 11:07:41 DAY  2 2 1100000002870202 1660 646 NA S 1539586373858157 279.6
+
+10/15/2018 12:22:53 PM:: UpstoxAverageTheBuyThenSell ITC [Trade Execution] MARGIN Trade: ITC sold 2 @ 279.6. OrderId=181015000099743, TradeId=26656200, ExchExecutionTime=10/15/2018 11:07:41 AM, ExchTime=15-Oct-2018 11:07:41, Timestamp=0
+
+10/15/2018 12:22:54 PM:MTMThread: UpstoxAverageTheBuyThenSell ITC [Position Updated] ITC 279.6 279.55 277.5 279.6 2 2 4.2 279.55 0 646
+
+10/15/2018 12:23:03 PM:: UpstoxAverageTheBuyThenSell ITC 
+PriceStrategy~LTP Markdown,LTP=279.5, lastBuyPrice=277.5, holdingOutstandingPrice=285.34, lastPriceToCompareWith=279.5, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=278.1, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=12, holdingOutstandingPrice=285.34, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=12, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=2.4;
+                    totalAvgHoldingPrice=285.34, priceToCompareForQty=285.34, priceDiffPct=0.03, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.85,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=1.1;
+                    qtyCurve=2.639, calculatedOrderQty=2, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~False
+
+10/15/2018 12:23:04 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000132429 put order req received 278.1 I  DAY  2 0  1660 646 NA B 0 0
+
+10/15/2018 12:23:04 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000132429 put order req received 278.1 I  DAY  2 0  1660 646 NA B 1539586384124667 0
+
+10/15/2018 12:23:04 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000132429 validation pending 278.1 I  DAY  2 0  1660 646 NA B 1539586384125866 0
+
+10/15/2018 12:23:04 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000132429 open pending 278.1 I  DAY  2 0  1660 646 NA B 1539586384139290 0
+
+10/15/2018 12:23:04 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000132429 open 278.1 I 15-Oct-2018 12:23:04 DAY  2 0 1100000003876051 1660 646 NA B 1539586384147593 0
+
+10/15/2018 12:23:05 PM:: MyUpstoxWrapper ITC OrderId:181015000132429, UpstoxOrderStatus:open
+
+10/15/2018 12:23:05 PM:: UpstoxAverageTheBuyThenSell ITC [Place Order MARGIN]: Success ITC BUY 2 @ 278.1 LIMIT. OrderId=181015000132429, BrokerOrderStatus=ORDERED
+
+10/15/2018 12:27:15 PM:: UpstoxAverageTheBuyThenSell M&M [Trade Execution] MARGIN Trade: M&M bought 5 @ 743.2. OrderId=181015000088156, TradeId=51395878, ExchExecutionTime=10/15/2018 10:44:36 AM, ExchTime=15-Oct-2018 10:44:36, Timestamp=0
+
+10/15/2018 12:27:15 PM:: UpstoxAverageTheBuyThenSell M&M [Trade Execution] Fully executed NewQty=5 TotalQty=5
+
+10/15/2018 12:27:15 PM:: UpstoxAverageTheBuyThenSell M&M [Trading Limits Hit] TodayOutstandingQty reached the max. todayOutstandingQty: 5 maxTodayPositionValueMultiple: 5
+
+10/15/2018 12:27:16 PM:: MyUpstoxWrapper M&M OrderId:181015000134348, UpstoxOrderStatus:put order req received
+
+10/15/2018 12:27:16 PM:: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M SELL 5 @ 743.9 LIMIT. OrderId=181015000134348, BrokerOrderStatus=ORDERED
+
+10/15/2018 12:27:16 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000088156 complete 743.2 I 15-Oct-2018 10:44:36 DAY  5 5 1200000002116118 2031 797 NA B 1539586635323654 743.2
+
+10/15/2018 12:27:16 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000134348 put order req received 743.9 I  DAY  5 0  2031 797 NA S 0 0
+
+10/15/2018 12:27:16 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000134348 put order req received 743.9 I  DAY  5 0  2031 797 NA S 1539586635552139 0
+
+10/15/2018 12:27:16 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000134348 validation pending 743.9 I  DAY  5 0  2031 797 NA S 1539586635553137 0
+
+10/15/2018 12:27:16 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000134348 open pending 743.9 I  DAY  5 0  2031 797 NA S 1539586635553960 0
+
+10/15/2018 12:27:16 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000134348 open 743.9 I 15-Oct-2018 12:27:15 DAY  5 0 1200000003326404 2031 797 NA S 1539586635562081 0
+
+10/15/2018 12:27:16 PM:MTMThread: UpstoxAverageTheBuyThenSell M&M [Position Updated] M&M 743 742.55 744.9 747.3 10 5 -2 743 5 797
+
+10/15/2018 12:36:35 PM:: UpstoxAverageTheBuyThenSell M&M [Trade Execution] MARGIN Trade: M&M sold 5 @ 743.9. OrderId=181015000134348, TradeId=51456493, ExchExecutionTime=10/15/2018 12:27:15 PM, ExchTime=15-Oct-2018 12:27:15, Timestamp=0
+
+10/15/2018 12:36:35 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000134348 complete 743.9 I 15-Oct-2018 12:27:15 DAY  5 5 1200000003326404 2031 797 NA S 1539587195812003 743.9
+
+10/15/2018 12:36:35 PM:MTMThread: UpstoxAverageTheBuyThenSell M&M [Position Updated] M&M 743.8 743.45 744.9 745.6 10 10 7 743.8 0 797
+
+10/15/2018 12:36:44 PM:: UpstoxAverageTheBuyThenSell M&M 
+PriceStrategy~LTP Markdown,LTP=743.85, lastBuyPrice=743.2, holdingOutstandingPrice=929, lastPriceToCompareWith=743.85, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=740.1, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=3, holdingOutstandingPrice=929, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=3, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.6;
+                    totalAvgHoldingPrice=929, priceToCompareForQty=929, priceDiffPct=0.2, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=6.78,
+                    priceDiffBucketNumberForQty=6, priceDiffBucketAgressionForQty=2.7, priceFactorCalcForQty=18.3;
+                    qtyCurve=10.98, calculatedOrderQty=5, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 12:36:44 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000139471 put order req received 740.1 I  DAY  5 0  2031 797 NA B 0 0
+
+10/15/2018 12:36:44 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000139471 put order req received 740.1 I  DAY  5 0  2031 797 NA B 1539587204645711 0
+
+10/15/2018 12:36:44 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000139471 validation pending 740.1 I  DAY  5 0  2031 797 NA B 1539587204647555 0
+
+10/15/2018 12:36:44 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000139471 open pending 740.1 I  DAY  5 0  2031 797 NA B 1539587204661845 0
+
+10/15/2018 12:36:44 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000139471 open 740.1 I 15-Oct-2018 12:36:44 DAY  5 0 1200000003459671 2031 797 NA B 1539587204689953 0
+
+10/15/2018 12:36:45 PM:: MyUpstoxWrapper M&M OrderId:181015000139471, UpstoxOrderStatus:open
+
+10/15/2018 12:36:45 PM:: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M BUY 5 @ 740.1 LIMIT. OrderId=181015000139471, BrokerOrderStatus=ORDERED
+
+10/15/2018 12:46:09 PM:: UpstoxAverageTheBuyThenSell M&M [Trade Execution] MARGIN Trade: M&M bought 5 @ 740.1. OrderId=181015000139471, TradeId=51514301, ExchExecutionTime=10/15/2018 12:36:44 PM, ExchTime=15-Oct-2018 12:36:44, Timestamp=0
+
+10/15/2018 12:46:09 PM:: UpstoxAverageTheBuyThenSell M&M [Trade Execution] Fully executed NewQty=5 TotalQty=5
+
+10/15/2018 12:46:09 PM:: UpstoxAverageTheBuyThenSell M&M [Trading Limits Hit] TodayOutstandingQty reached the max. todayOutstandingQty: 5 maxTodayPositionValueMultiple: 5
+
+10/15/2018 12:46:10 PM:: MyUpstoxWrapper M&M OrderId:181015000144577, UpstoxOrderStatus:put order req received
+
+10/15/2018 12:46:10 PM:: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M SELL 5 @ 740.8 LIMIT. OrderId=181015000144577, BrokerOrderStatus=ORDERED
+
+10/15/2018 12:46:10 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000139471 complete 740.1 I 15-Oct-2018 12:36:44 DAY  5 5 1200000003459671 2031 797 NA B 1539587769321640 740.1
+
+10/15/2018 12:46:10 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000144577 put order req received 740.8 I  DAY  5 0  2031 797 NA S 0 0
+
+10/15/2018 12:46:10 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000144577 put order req received 740.8 I  DAY  5 0  2031 797 NA S 1539587769423113 0
+
+10/15/2018 12:46:10 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000144577 validation pending 740.8 I  DAY  5 0  2031 797 NA S 1539587769424124 0
+
+10/15/2018 12:46:10 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000144577 open pending 740.8 I  DAY  5 0  2031 797 NA S 1539587769424951 0
+
+10/15/2018 12:46:10 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000144577 open 740.8 I 15-Oct-2018 12:46:09 DAY  5 0 1200000003590352 2031 797 NA S 1539587769435955 0
+
+10/15/2018 12:46:10 PM:MTMThread: UpstoxAverageTheBuyThenSell M&M [Position Updated] M&M 740.2 740.15 743.3 745.6 15 10 6.75 740.2 5 797
+
+10/15/2018 12:48:54 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE sold 1 @ 1138.4. OrderId=181015000105512, TradeId=51528769, ExchExecutionTime=10/15/2018 11:20:02 AM, ExchTime=15-Oct-2018 11:20:02, Timestamp=0
+
+10/15/2018 12:48:55 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Sell Executed Fully]: RELIANCE BUY order cancel , OrderRef = 181015000105515: Success
+
+10/15/2018 12:48:55 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105512 complete 1138.4 I 15-Oct-2018 11:20:02 DAY  1 1 1200000002553817 2885 1093 NA S 1539587934550150 1138.4
+
+10/15/2018 12:48:55 PM:MTMThread: UpstoxAverageTheBuyThenSell RELIANCE [Position Updated] RELIANCE 1138 1137.95 1132.7 1138.4 1 1 5.7 1137.9 0 1093
+
+10/15/2018 12:48:55 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105515 cancel pending 1125.9 I 15-Oct-2018 11:20:03 DAY  1 0 1200000002553877 2885 1093 NA B 1539587935085427 0
+
+10/15/2018 12:48:55 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105515 cancelled 1125.9 I 15-Oct-2018 12:48:55 DAY  1 0 1200000002553877 2885 1093 NA B 1539587935094613 0
+
+10/15/2018 12:48:55 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000105515 cancelled 1125.9 I 15-Oct-2018 12:48:55 DAY  1 0 1200000002553877 2885 1093 NA B 1539587935094649 0
+
+10/15/2018 12:48:56 PM:: UpstoxAverageTheBuyThenSell RELIANCE 
+PriceStrategy~LTP Markdown,LTP=1138.4, lastBuyPrice=1132.7, holdingOutstandingPrice=0, lastPriceToCompareWith=1138.4, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.0025, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.0025, calculatedToBuyPrice=1135.6, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=1138.4, priceDiffPct=0, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.08,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.11;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 12:48:56 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000145538 put order req received 1135.6 I  DAY  1 0  2885 1093 NA B 0 0
+
+10/15/2018 12:48:56 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000145538 put order req received 1135.6 I  DAY  1 0  2885 1093 NA B 1539587936807534 0
+
+10/15/2018 12:48:57 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000145538 validation pending 1135.6 I  DAY  1 0  2885 1093 NA B 1539587936809559 0
+
+10/15/2018 12:48:57 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000145538 open pending 1135.6 I  DAY  1 0  2885 1093 NA B 1539587936822602 0
+
+10/15/2018 12:48:57 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000145538 open 1135.6 I 15-Oct-2018 12:48:56 DAY  1 0 1200000003619456 2885 1093 NA B 1539587936831867 0
+
+10/15/2018 12:48:57 PM:: MyUpstoxWrapper RELIANCE OrderId:181015000145538, UpstoxOrderStatus:open
+
+10/15/2018 12:48:57 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1135.6 LIMIT. OrderId=181015000145538, BrokerOrderStatus=ORDERED
+
+10/15/2018 12:55:19 PM:: UpstoxAverageTheBuyThenSell M&M [Trade Execution] MARGIN Trade: M&M sold 5 @ 740.8. OrderId=181015000144577, TradeId=51562407, ExchExecutionTime=10/15/2018 12:46:09 PM, ExchTime=15-Oct-2018 12:46:09, Timestamp=0
+
+10/15/2018 12:55:19 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000144577 complete 740.8 I 15-Oct-2018 12:46:09 DAY  5 5 1200000003590352 2031 797 NA S 1539588319079835 740.8
+
+10/15/2018 12:55:19 PM:MTMThread: UpstoxAverageTheBuyThenSell M&M [Position Updated] M&M 740.8 740.75 743.3 744 15 15 10.5 740.75 0 797
+
+10/15/2018 12:55:31 PM:: UpstoxAverageTheBuyThenSell M&M 
+PriceStrategy~LTP Markdown,LTP=740.9, lastBuyPrice=740.1, holdingOutstandingPrice=929, lastPriceToCompareWith=740.9, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.005, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=737.2, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=3, holdingOutstandingPrice=929, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=3, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.6;
+                    totalAvgHoldingPrice=929, priceToCompareForQty=929, priceDiffPct=0.21, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=6.88,
+                    priceDiffBucketNumberForQty=6, priceDiffBucketAgressionForQty=2.7, priceFactorCalcForQty=18.58;
+                    qtyCurve=11.149, calculatedOrderQty=5, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 12:55:31 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000148052 put order req received 737.2 I  DAY  5 0  2031 797 NA B 0 0
+
+10/15/2018 12:55:31 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000148052 put order req received 737.2 I  DAY  5 0  2031 797 NA B 1539588331809310 0
+
+10/15/2018 12:55:31 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000148052 validation pending 737.2 I  DAY  5 0  2031 797 NA B 1539588331810561 0
+
+10/15/2018 12:55:31 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000148052 open pending 737.2 I  DAY  5 0  2031 797 NA B 1539588331823546 0
+
+10/15/2018 12:55:31 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000148052 open 737.2 I 15-Oct-2018 12:55:31 DAY  5 0 1200000003694029 2031 797 NA B 1539588331831990 0
+
+10/15/2018 12:55:32 PM:: MyUpstoxWrapper M&M OrderId:181015000148052, UpstoxOrderStatus:open
+
+10/15/2018 12:55:32 PM:: UpstoxAverageTheBuyThenSell M&M [Place Order MARGIN]: Success M&M BUY 5 @ 737.2 LIMIT. OrderId=181015000148052, BrokerOrderStatus=ORDERED
+
+10/15/2018 1:22:00 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Trade Execution] MARGIN Trade: HDFCBANK sold 1 @ 2001.2. OrderId=181015000128172, TradeId=27032021, ExchExecutionTime=10/15/2018 12:14:27 PM, ExchTime=15-Oct-2018 12:14:27, Timestamp=0
+
+10/15/2018 1:22:00 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Sell Executed Fully]: HDFCBANK BUY order cancel , OrderRef = 181015000128222: Success
+
+10/15/2018 1:22:00 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128172 complete 2001.2 I 15-Oct-2018 12:14:27 DAY  1 1 1100000003760685 1333 518 NA S 1539589920337968 2001.2
+
+10/15/2018 1:22:00 PM:MTMThread: UpstoxAverageTheBuyThenSell HDFCBANK [Position Updated] HDFCBANK 1999.8 1999.75 1986.6 1996.55 2 2 19.9 1999.8 0 518
+
+10/15/2018 1:22:00 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128222 cancel pending 1979.3 I 15-Oct-2018 12:14:32 DAY  1 0 1100000003761660 1333 518 NA B 1539589920486085 0
+
+10/15/2018 1:22:00 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128222 cancelled 1979.3 I 15-Oct-2018 13:22:00 DAY  1 0 1100000003761660 1333 518 NA B 1539589920496103 0
+
+10/15/2018 1:22:00 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000128222 cancelled 1979.3 I 15-Oct-2018 13:22:00 DAY  1 0 1100000003761660 1333 518 NA B 1539589920496135 0
+
+10/15/2018 1:22:04 PM:: UpstoxAverageTheBuyThenSell HDFCBANK 
+PriceStrategy~LTP Markdown,LTP=2001.3, lastBuyPrice=1991.2, holdingOutstandingPrice=0, lastPriceToCompareWith=2001.3, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.001, markDownPctForAveraging=0.01, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.001, calculatedToBuyPrice=1999.3, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=2001.3, priceDiffPct=0, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.04;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 1:22:05 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000159294 put order req received 1999.3 I  DAY  1 0  1333 518 NA B 0 0
+
+10/15/2018 1:22:05 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000159294 put order req received 1999.3 I  DAY  1 0  1333 518 NA B 1539589925194079 0
+
+10/15/2018 1:22:05 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000159294 validation pending 1999.3 I  DAY  1 0  1333 518 NA B 1539589925195264 0
+
+10/15/2018 1:22:05 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000159294 open pending 1999.3 I  DAY  1 0  1333 518 NA B 1539589925205123 0
+
+10/15/2018 1:22:05 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000159294 open 1999.3 I 15-Oct-2018 13:22:05 DAY  1 0 1100000004683028 1333 518 NA B 1539589925220296 0
+
+10/15/2018 1:22:06 PM:: MyUpstoxWrapper HDFCBANK OrderId:181015000159294, UpstoxOrderStatus:open
+
+10/15/2018 1:22:06 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 1999.3 LIMIT. OrderId=181015000159294, BrokerOrderStatus=ORDERED
+
+10/15/2018 1:46:49 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Trade Execution] MARGIN Trade: HDFCBANK bought 1 @ 1999.3. OrderId=181015000159294, TradeId=27217808, ExchExecutionTime=10/15/2018 1:22:05 PM, ExchTime=15-Oct-2018 13:22:05, Timestamp=0
+
+10/15/2018 1:46:49 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Trade Execution] Fully executed NewQty=1 TotalQty=1
+
+10/15/2018 1:46:50 PM:: MyUpstoxWrapper HDFCBANK OrderId:181015000171760, UpstoxOrderStatus:put order req received
+
+10/15/2018 1:46:50 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK SELL 1 @ 2009.3 LIMIT. OrderId=181015000171760, BrokerOrderStatus=ORDERED
+
+10/15/2018 1:46:50 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000159294 complete 1999.3 I 15-Oct-2018 13:22:05 DAY  1 1 1100000004683028 1333 518 NA B 1539591409747413 1999.3
+
+10/15/2018 1:46:50 PM:MTMThread: UpstoxAverageTheBuyThenSell HDFCBANK [Position Updated] HDFCBANK 2001.7 2001.05 1990.83 1996.55 3 2 20.35 2001.7 1 518
+
+10/15/2018 1:46:50 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171760 put order req received 2009.3 I  DAY  1 0  1333 518 NA S 0 0
+
+10/15/2018 1:46:50 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171760 put order req received 2009.3 I  DAY  1 0  1333 518 NA S 1539591409954903 0
+
+10/15/2018 1:46:50 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171760 validation pending 2009.3 I  DAY  1 0  1333 518 NA S 1539591409956119 0
+
+10/15/2018 1:46:50 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171760 open pending 2009.3 I  DAY  1 0  1333 518 NA S 1539591409957143 0
+
+10/15/2018 1:46:50 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171760 open 2009.3 I 15-Oct-2018 13:46:49 DAY  1 0 1100000005124506 1333 518 NA S 1539591409969098 0
+
+10/15/2018 1:46:51 PM:: UpstoxAverageTheBuyThenSell HDFCBANK 
+PriceStrategy~LastBuyPrice Markdown,LTP=1999.8, lastBuyPrice=1999.3, holdingOutstandingPrice=0, lastPriceToCompareWith=1999.3, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1, markDownPctForBuy=0.001, markDownPctForAveraging=0.01, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0.005, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.006, calculatedToBuyPrice=1987.3, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=1, todayOutstandingPrice=1999.3, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.2;
+                    totalAvgHoldingPrice=1999.3, priceToCompareForQty=1999.8, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.21,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.27;
+                    qtyCurve=0.054, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 1:46:51 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171781 put order req received 1987.3 I  DAY  1 0  1333 518 NA B 0 0
+
+10/15/2018 1:46:51 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171781 put order req received 1987.3 I  DAY  1 0  1333 518 NA B 1539591411505902 0
+
+10/15/2018 1:46:51 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171781 validation pending 1987.3 I  DAY  1 0  1333 518 NA B 1539591411507084 0
+
+10/15/2018 1:46:52 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171781 open pending 1987.3 I  DAY  1 0  1333 518 NA B 1539591412253067 0
+
+10/15/2018 1:46:52 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171781 open 1987.3 I 15-Oct-2018 13:46:52 DAY  1 0 1100000005125481 1333 518 NA B 1539591412262094 0
+
+10/15/2018 1:46:52 PM:: MyUpstoxWrapper HDFCBANK OrderId:181015000171781, UpstoxOrderStatus:open
+
+10/15/2018 1:46:52 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 1987.3 LIMIT. OrderId=181015000171781, BrokerOrderStatus=ORDERED
+
+10/15/2018 1:55:58 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE bought 1 @ 1135.6. OrderId=181015000145538, TradeId=51909227, ExchExecutionTime=10/15/2018 12:48:56 PM, ExchTime=15-Oct-2018 12:48:56, Timestamp=0
+
+10/15/2018 1:55:58 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] Fully executed NewQty=1 TotalQty=1
+
+10/15/2018 1:55:59 PM:: MyUpstoxWrapper RELIANCE OrderId:181015000177009, UpstoxOrderStatus:put order req received
+
+10/15/2018 1:55:59 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE SELL 1 @ 1141.3 LIMIT. OrderId=181015000177009, BrokerOrderStatus=ORDERED
+
+10/15/2018 1:55:59 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000145538 complete 1135.6 I 15-Oct-2018 12:48:56 DAY  1 1 1200000003619456 2885 1093 NA B 1539591958250846 1135.6
+
+10/15/2018 1:55:59 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177009 put order req received 1141.3 I  DAY  1 0  2885 1093 NA S 0 0
+
+10/15/2018 1:55:59 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177009 put order req received 1141.3 I  DAY  1 0  2885 1093 NA S 1539591958352118 0
+
+10/15/2018 1:55:59 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177009 validation pending 1141.3 I  DAY  1 0  2885 1093 NA S 1539591958353600 0
+
+10/15/2018 1:55:59 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177009 open pending 1141.3 I  DAY  1 0  2885 1093 NA S 1539591958354631 0
+
+10/15/2018 1:55:59 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177009 open 1141.3 I 15-Oct-2018 13:55:58 DAY  1 0 1200000004446676 2885 1093 NA S 1539591958363965 0
+
+10/15/2018 1:55:59 PM:MTMThread: UpstoxAverageTheBuyThenSell RELIANCE [Position Updated] RELIANCE 1136.65 1136.5 1134.15 1138.4 2 1 6.45 1136.5 1 1093
+
+10/15/2018 1:56:13 PM:: UpstoxAverageTheBuyThenSell RELIANCE 
+PriceStrategy~LastBuyPrice Markdown,LTP=1136.1, lastBuyPrice=1135.6, holdingOutstandingPrice=0, lastPriceToCompareWith=1135.6, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1, markDownPctForBuy=0.0025, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0.0025, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=1129.9, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=1, todayOutstandingPrice=1135.6, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.2;
+                    totalAvgHoldingPrice=1135.6, priceToCompareForQty=1136.1, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.18,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.24;
+                    qtyCurve=0.047, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 1:56:13 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177208 put order req received 1129.9 I  DAY  1 0  2885 1093 NA B 0 0
+
+10/15/2018 1:56:13 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177208 put order req received 1129.9 I  DAY  1 0  2885 1093 NA B 1539591973241872 0
+
+10/15/2018 1:56:13 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177208 validation pending 1129.9 I  DAY  1 0  2885 1093 NA B 1539591973243627 0
+
+10/15/2018 1:56:13 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177208 open pending 1129.9 I  DAY  1 0  2885 1093 NA B 1539591973256987 0
+
+10/15/2018 1:56:13 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177208 open 1129.9 I 15-Oct-2018 13:56:13 DAY  1 0 1200000004451596 2885 1093 NA B 1539591973270349 0
+
+10/15/2018 1:56:14 PM:: MyUpstoxWrapper RELIANCE OrderId:181015000177208, UpstoxOrderStatus:open
+
+10/15/2018 1:56:14 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1129.9 LIMIT. OrderId=181015000177208, BrokerOrderStatus=ORDERED
+
+10/15/2018 1:58:12 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Trade Execution] MARGIN Trade: HDFCBANK bought 1 @ 1987.3. OrderId=181015000171781, TradeId=27322112, ExchExecutionTime=10/15/2018 1:46:52 PM, ExchTime=15-Oct-2018 13:46:52, Timestamp=0
+
+10/15/2018 1:58:12 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Trade Execution] Fully executed NewQty=1 TotalQty=1
+
+10/15/2018 1:58:12 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Buy Executed]: HDFCBANK SELL order cancel , OrderRef = 181015000171760: Success
+
+10/15/2018 1:58:13 PM:: MyUpstoxWrapper HDFCBANK OrderId:181015000178589, UpstoxOrderStatus:put order req received
+
+10/15/2018 1:58:13 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK SELL 2 @ 2003.3 LIMIT. OrderId=181015000178589, BrokerOrderStatus=ORDERED
+
+10/15/2018 1:58:13 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171781 complete 1987.3 I 15-Oct-2018 13:46:52 DAY  1 1 1100000005125481 1333 518 NA B 1539592092253952 1987.3
+
+10/15/2018 1:58:13 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171760 cancel pending 2009.3 I 15-Oct-2018 13:46:49 DAY  1 0 1100000005124506 1333 518 NA S 1539592092606433 0
+
+10/15/2018 1:58:13 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171760 cancelled 2009.3 I 15-Oct-2018 13:58:12 DAY  1 0 1100000005124506 1333 518 NA S 1539592092618318 0
+
+10/15/2018 1:58:13 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000171760 cancelled 2009.3 I 15-Oct-2018 13:58:12 DAY  1 0 1100000005124506 1333 518 NA S 1539592092618345 0
+
+10/15/2018 1:58:13 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178589 put order req received 2003.3 I  DAY  2 0  1333 518 NA S 0 0
+
+10/15/2018 1:58:13 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178589 put order req received 2003.3 I  DAY  2 0  1333 518 NA S 1539592092693845 0
+
+10/15/2018 1:58:13 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178589 validation pending 2003.3 I  DAY  2 0  1333 518 NA S 1539592092696014 0
+
+10/15/2018 1:58:13 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178589 open pending 2003.3 I  DAY  2 0  1333 518 NA S 1539592092698056 0
+
+10/15/2018 1:58:13 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178589 open 2003.3 I 15-Oct-2018 13:58:12 DAY  2 0 1100000005364556 1333 518 NA S 1539592092707390 0
+
+10/15/2018 1:58:13 PM:MTMThread: UpstoxAverageTheBuyThenSell HDFCBANK [Position Updated] HDFCBANK 1988.7 1988.4 1989.95 1996.55 4 2 9.5 1988.7 2 518
+
+10/15/2018 1:58:14 PM:: UpstoxAverageTheBuyThenSell HDFCBANK 
+PriceStrategy~LastBuyPrice Markdown,LTP=1988.7, lastBuyPrice=1987.3, holdingOutstandingPrice=0, lastPriceToCompareWith=1987.3, todayOutstandingTradeCount=2, 
+                    todayOutstandingTradeBucketNumberForPrice=2, priceBucketAgressionForPrice=3, markDownPctForBuy=0.001, markDownPctForAveraging=0.01, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0.01, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.033, calculatedToBuyPrice=1921.7, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=2, todayOutstandingPrice=1993.3, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=2, totalOutstandingMultiple=2, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.4;
+                    totalAvgHoldingPrice=1993.3, priceToCompareForQty=1993.3, priceDiffPct=0.04, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=1.2,
+                    priceDiffBucketNumberForQty=1, priceDiffBucketAgressionForQty=1.4, priceFactorCalcForQty=1.68;
+                    qtyCurve=0.671, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 1:58:14 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178618 put order req received 1921.7 I  DAY  1 0  1333 518 NA B 0 0
+
+10/15/2018 1:58:14 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178618 put order req received 1921.7 I  DAY  1 0  1333 518 NA B 1539592094882003 0
+
+10/15/2018 1:58:14 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178618 validation pending 1921.7 I  DAY  1 0  1333 518 NA B 1539592094883492 0
+
+10/15/2018 1:58:14 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178618 open pending 1921.7 I  DAY  1 0  1333 518 NA B 1539592094896713 0
+
+10/15/2018 1:58:14 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178618 open 1921.7 I 15-Oct-2018 13:58:14 DAY  1 0 1100000005365370 1333 518 NA B 1539592094913321 0
+
+10/15/2018 1:58:15 PM:: MyUpstoxWrapper HDFCBANK OrderId:181015000178618, UpstoxOrderStatus:open
+
+10/15/2018 1:58:15 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 1921.7 LIMIT. OrderId=181015000178618, BrokerOrderStatus=ORDERED
+
+10/15/2018 2:03:51 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE sold 1 @ 1141.3. OrderId=181015000177009, TradeId=51959368, ExchExecutionTime=10/15/2018 1:55:58 PM, ExchTime=15-Oct-2018 13:55:58, Timestamp=0
+
+10/15/2018 2:03:51 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Sell Executed Fully]: RELIANCE BUY order cancel , OrderRef = 181015000177208: Success
+
+10/15/2018 2:03:51 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177009 complete 1141.3 I 15-Oct-2018 13:55:58 DAY  1 1 1200000004446676 2885 1093 NA S 1539592431540062 1141.3
+
+10/15/2018 2:03:51 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177208 cancel pending 1129.9 I 15-Oct-2018 13:56:13 DAY  1 0 1200000004451596 2885 1093 NA B 1539592431656435 0
+
+10/15/2018 2:03:51 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177208 cancelled 1129.9 I 15-Oct-2018 14:03:51 DAY  1 0 1200000004451596 2885 1093 NA B 1539592431664554 0
+
+10/15/2018 2:03:51 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000177208 cancelled 1129.9 I 15-Oct-2018 14:03:51 DAY  1 0 1200000004451596 2885 1093 NA B 1539592431664577 0
+
+10/15/2018 2:03:51 PM:MTMThread: UpstoxAverageTheBuyThenSell RELIANCE [Position Updated] RELIANCE 1140 1139.85 1134.15 1139.85 2 2 11.4 1140 0 1093
+
+10/15/2018 2:04:04 PM:: UpstoxAverageTheBuyThenSell RELIANCE 
+PriceStrategy~LTP Markdown,LTP=1139.95, lastBuyPrice=1135.6, holdingOutstandingPrice=0, lastPriceToCompareWith=1139.95, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.0025, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.0025, calculatedToBuyPrice=1137.1, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=1139.95, priceDiffPct=0, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.08,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.11;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 2:04:04 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000181662 put order req received 1137.1 I  DAY  1 0  2885 1093 NA B 0 0
+
+10/15/2018 2:04:05 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000181662 validation pending 1137.1 I  DAY  1 0  2885 1093 NA B 1539592445046373 0
+
+10/15/2018 2:04:05 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000181662 put order req received 1137.1 I  DAY  1 0  2885 1093 NA B 1539592445044601 0
+
+10/15/2018 2:04:05 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000181662 open pending 1137.1 I  DAY  1 0  2885 1093 NA B 1539592445060120 0
+
+10/15/2018 2:04:05 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000181662 open 1137.1 I 15-Oct-2018 14:04:05 DAY  1 0 1200000004563258 2885 1093 NA B 1539592445071102 0
+
+10/15/2018 2:04:06 PM:: MyUpstoxWrapper RELIANCE OrderId:181015000181662, UpstoxOrderStatus:open
+
+10/15/2018 2:04:06 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1137.1 LIMIT. OrderId=181015000181662, BrokerOrderStatus=ORDERED
+
+10/15/2018 2:17:34 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE bought 1 @ 1137.1. OrderId=181015000181662, TradeId=52034965, ExchExecutionTime=10/15/2018 2:04:05 PM, ExchTime=15-Oct-2018 14:04:05, Timestamp=0
+
+10/15/2018 2:17:34 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] Fully executed NewQty=1 TotalQty=1
+
+10/15/2018 2:17:35 PM:: MyUpstoxWrapper RELIANCE OrderId:181015000187325, UpstoxOrderStatus:put order req received
+
+10/15/2018 2:17:35 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE SELL 1 @ 1142.8 LIMIT. OrderId=181015000187325, BrokerOrderStatus=ORDERED
+
+10/15/2018 2:17:35 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000181662 complete 1137.1 I 15-Oct-2018 14:04:05 DAY  1 1 1200000004563258 2885 1093 NA B 1539593254197386 1137.1
+
+10/15/2018 2:17:35 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187325 put order req received 1142.8 I  DAY  1 0  2885 1093 NA S 0 0
+
+10/15/2018 2:17:35 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187325 put order req received 1142.8 I  DAY  1 0  2885 1093 NA S 1539593254491525 0
+
+10/15/2018 2:17:35 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187325 validation pending 1142.8 I  DAY  1 0  2885 1093 NA S 1539593254492633 0
+
+10/15/2018 2:17:35 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187325 open pending 1142.8 I  DAY  1 0  2885 1093 NA S 1539593254493773 0
+
+10/15/2018 2:17:35 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187325 open 1142.8 I 15-Oct-2018 14:17:34 DAY  1 0 1200000004725690 2885 1093 NA S 1539593254502621 0
+
+10/15/2018 2:17:35 PM:MTMThread: UpstoxAverageTheBuyThenSell RELIANCE [Position Updated] RELIANCE 1137.15 1137 1135.13 1139.85 3 2 11 1137.15 1 1093
+
+10/15/2018 2:17:36 PM:: UpstoxAverageTheBuyThenSell RELIANCE 
+PriceStrategy~LastBuyPrice Markdown,LTP=1137.15, lastBuyPrice=1137.1, holdingOutstandingPrice=0, lastPriceToCompareWith=1137.1, todayOutstandingTradeCount=1, 
+                    todayOutstandingTradeBucketNumberForPrice=1, priceBucketAgressionForPrice=1, markDownPctForBuy=0.0025, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0.0025, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.005, calculatedToBuyPrice=1131.4, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=1, todayOutstandingPrice=1137.1, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=1, totalOutstandingMultiple=1, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.2;
+                    totalAvgHoldingPrice=1137.1, priceToCompareForQty=1137.15, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.17,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.22;
+                    qtyCurve=0.044, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 2:17:36 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187342 put order req received 1131.4 I  DAY  1 0  2885 1093 NA B 0 0
+
+10/15/2018 2:17:36 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187342 put order req received 1131.4 I  DAY  1 0  2885 1093 NA B 1539593256260960 0
+
+10/15/2018 2:17:36 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187342 validation pending 1131.4 I  DAY  1 0  2885 1093 NA B 1539593256262452 0
+
+10/15/2018 2:17:36 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187342 open pending 1131.4 I  DAY  1 0  2885 1093 NA B 1539593256276670 0
+
+10/15/2018 2:17:36 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187342 open 1131.4 I 15-Oct-2018 14:17:36 DAY  1 0 1200000004726186 2885 1093 NA B 1539593256286536 0
+
+10/15/2018 2:17:37 PM:: MyUpstoxWrapper RELIANCE OrderId:181015000187342, UpstoxOrderStatus:open
+
+10/15/2018 2:17:37 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1131.4 LIMIT. OrderId=181015000187342, BrokerOrderStatus=ORDERED
+
+10/15/2018 2:35:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Trade Execution] MARGIN Trade: HDFCBANK sold 2 @ 2003.3. OrderId=181015000178589, TradeId=27600040, ExchExecutionTime=10/15/2018 1:58:12 PM, ExchTime=15-Oct-2018 13:58:12, Timestamp=0
+
+10/15/2018 2:35:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Sell Executed Fully]: HDFCBANK BUY order cancel , OrderRef = 181015000178618: Success
+
+10/15/2018 2:35:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178589 complete 2003.3 I 15-Oct-2018 13:58:12 DAY  2 2 1100000005364556 1333 518 NA S 1539594332562559 2003.3
+
+10/15/2018 2:35:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178618 cancel pending 1921.7 I 15-Oct-2018 13:58:14 DAY  1 0 1100000005365370 1333 518 NA B 1539594332698539 0
+
+10/15/2018 2:35:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178618 cancelled 1921.7 I 15-Oct-2018 14:35:32 DAY  1 0 1100000005365370 1333 518 NA B 1539594332706741 0
+
+10/15/2018 2:35:32 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000178618 cancelled 1921.7 I 15-Oct-2018 14:35:32 DAY  1 0 1100000005365370 1333 518 NA B 1539594332706775 0
+
+10/15/2018 2:35:33 PM:MTMThread: UpstoxAverageTheBuyThenSell HDFCBANK [Position Updated] HDFCBANK 2002.7 2002.3 1989.95 1999.93 4 4 39.9 2002.9 0 518
+
+10/15/2018 2:35:41 PM:: UpstoxAverageTheBuyThenSell HDFCBANK 
+PriceStrategy~LTP Markdown,LTP=2003.75, lastBuyPrice=1987.3, holdingOutstandingPrice=0, lastPriceToCompareWith=2003.75, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.001, markDownPctForAveraging=0.01, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.001, calculatedToBuyPrice=2001.7, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=2003.75, priceDiffPct=0, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.03,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.04;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 2:35:41 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000194799 put order req received 2001.7 I  DAY  1 0  1333 518 NA B 0 0
+
+10/15/2018 2:35:41 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000194799 put order req received 2001.7 I  DAY  1 0  1333 518 NA B 1539594341365363 0
+
+10/15/2018 2:35:41 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000194799 validation pending 2001.7 I  DAY  1 0  1333 518 NA B 1539594341366497 0
+
+10/15/2018 2:35:41 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000194799 open pending 2001.7 I  DAY  1 0  1333 518 NA B 1539594341379542 0
+
+10/15/2018 2:35:41 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000194799 open 2001.7 I 15-Oct-2018 14:35:41 DAY  1 0 1100000005965310 1333 518 NA B 1539594341391954 0
+
+10/15/2018 2:35:42 PM:: MyUpstoxWrapper HDFCBANK OrderId:181015000194799, UpstoxOrderStatus:open
+
+10/15/2018 2:35:42 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Place Order MARGIN]: Success HDFCBANK BUY 1 @ 2001.7 LIMIT. OrderId=181015000194799, BrokerOrderStatus=ORDERED
+
+10/15/2018 2:54:03 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Trade Execution] MARGIN Trade: RELIANCE sold 1 @ 1142.8. OrderId=181015000187325, TradeId=52257038, ExchExecutionTime=10/15/2018 2:17:34 PM, ExchTime=15-Oct-2018 14:17:34, Timestamp=0
+
+10/15/2018 2:54:03 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Sell Executed Fully]: RELIANCE BUY order cancel , OrderRef = 181015000187342: Success
+
+10/15/2018 2:54:03 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187325 complete 1142.8 I 15-Oct-2018 14:17:34 DAY  1 1 1200000004725690 2885 1093 NA S 1539595443752402 1142.8
+
+10/15/2018 2:54:03 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187342 cancel pending 1131.4 I 15-Oct-2018 14:17:36 DAY  1 0 1200000004726186 2885 1093 NA B 1539595443972803 0
+
+10/15/2018 2:54:03 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187342 cancelled 1131.4 I 15-Oct-2018 14:54:03 DAY  1 0 1200000004726186 2885 1093 NA B 1539595443981797 0
+
+10/15/2018 2:54:04 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000187342 cancelled 1131.4 I 15-Oct-2018 14:54:03 DAY  1 0 1200000004726186 2885 1093 NA B 1539595443981838 0
+
+10/15/2018 2:54:04 PM:MTMThread: UpstoxAverageTheBuyThenSell RELIANCE [Position Updated] RELIANCE 1142.4 1142.15 1135.13 1140.83 3 3 17.1 1142.15 0 1093
+
+10/15/2018 2:54:14 PM:: UpstoxAverageTheBuyThenSell RELIANCE 
+PriceStrategy~LTP Markdown,LTP=1142.3, lastBuyPrice=1137.1, holdingOutstandingPrice=0, lastPriceToCompareWith=1142.3, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.0025, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=2,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.0025, calculatedToBuyPrice=1139.4, priceBucketsForPrice=1:1:3:4:6:2;
+QtyStrategy~todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=1142.3, priceDiffPct=0, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.08,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.11;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=20;
+placeBuyNoLtpCompare~True
+
+10/15/2018 2:54:15 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000204987 put order req received 1139.4 I  DAY  1 0  2885 1093 NA B 0 0
+
+10/15/2018 2:54:15 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000204987 put order req received 1139.4 I  DAY  1 0  2885 1093 NA B 1539595455032695 0
+
+10/15/2018 2:54:15 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000204987 validation pending 1139.4 I  DAY  1 0  2885 1093 NA B 1539595455033983 0
+
+10/15/2018 2:54:15 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000204987 open pending 1139.4 I  DAY  1 0  2885 1093 NA B 1539595455047490 0
+
+10/15/2018 2:54:15 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000204987 open 1139.4 I 15-Oct-2018 14:54:15 DAY  1 0 1200000005192865 2885 1093 NA B 1539595455059583 0
+
+10/15/2018 2:54:16 PM:: MyUpstoxWrapper RELIANCE OrderId:181015000204987, UpstoxOrderStatus:open
+
+10/15/2018 2:54:16 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Place Order MARGIN]: Success RELIANCE BUY 1 @ 1139.4 LIMIT. OrderId=181015000204987, BrokerOrderStatus=ORDERED
+
+10/15/2018 3:00:01 PM:: UpstoxAverageTheBuyThenSell RELIANCE [EOD]: RELIANCE BUY order cancel , OrderRef = 181015000204987: Success
+
+10/15/2018 3:00:01 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000204987 cancel pending 1139.4 I 15-Oct-2018 14:54:15 DAY  1 0 1200000005192865 2885 1093 NA B 1539595801225823 0
+
+10/15/2018 3:00:01 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000204987 cancelled 1139.4 I 15-Oct-2018 15:00:01 DAY  1 0 1200000005192865 2885 1093 NA B 1539595801234239 0
+
+10/15/2018 3:00:01 PM:: UpstoxAverageTheBuyThenSell RELIANCE [Order Updated] RELIANCE 181015000204987 cancelled 1139.4 I 15-Oct-2018 15:00:01 DAY  1 0 1200000005192865 2885 1093 NA B 1539595801234271 0
+
+10/15/2018 3:00:02 PM:: UpstoxAverageTheBuyThenSell SUNPHARMA [EOD]: SUNPHARMA BUY order cancel , OrderRef = 181015000041470: Success
+
+10/15/2018 3:00:02 PM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181015000041470 cancel pending 591.7 I 15-Oct-2018 09:40:30 DAY  1 0 1300000000862671 3351 1269 NA B 1539595802674398 0
+
+10/15/2018 3:00:02 PM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181015000041470 cancelled 591.7 I 15-Oct-2018 15:00:02 DAY  1 0 1300000000862671 3351 1269 NA B 1539595802695085 0
+
+10/15/2018 3:00:02 PM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181015000041470 cancelled 591.7 I 15-Oct-2018 15:00:02 DAY  1 0 1300000000862671 3351 1269 NA B 1539595802695124 0
+
+10/15/2018 3:00:03 PM:: UpstoxAverageTheBuyThenSell FEDERALBNK [EOD]: FEDERALBNK BUY order cancel , OrderRef = 181015000041488: Success
+
+10/15/2018 3:00:03 PM:: UpstoxAverageTheBuyThenSell FEDERALBNK [Order Updated] FEDERALBNK 181015000041488 cancel pending 73 I 15-Oct-2018 09:40:31 DAY  1 0 1100000001149267 1023 399 NA B 1539595803401115 0
+
+10/15/2018 3:00:03 PM:: UpstoxAverageTheBuyThenSell FEDERALBNK [Order Updated] FEDERALBNK 181015000041488 cancelled 73 I 15-Oct-2018 15:00:03 DAY  1 0 1100000001149267 1023 399 NA B 1539595803410070 0
+
+10/15/2018 3:00:03 PM:: UpstoxAverageTheBuyThenSell FEDERALBNK [Order Updated] FEDERALBNK 181015000041488 cancelled 73 I 15-Oct-2018 15:00:03 DAY  1 0 1100000001149267 1023 399 NA B 1539595803410102 0
+
+10/15/2018 3:00:03 PM:: UpstoxAverageTheBuyThenSell M&M [EOD]: M&M BUY order cancel , OrderRef = 181015000148052: Success
+
+10/15/2018 3:00:03 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000148052 cancel pending 737.2 I 15-Oct-2018 12:55:31 DAY  5 0 1200000003694029 2031 797 NA B 1539595803615243 0
+
+10/15/2018 3:00:03 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000148052 cancelled 737.2 I 15-Oct-2018 15:00:03 DAY  5 0 1200000003694029 2031 797 NA B 1539595803623712 0
+
+10/15/2018 3:00:03 PM:: UpstoxAverageTheBuyThenSell M&M [Order Updated] M&M 181015000148052 cancelled 737.2 I 15-Oct-2018 15:00:03 DAY  5 0 1200000003694029 2031 797 NA B 1539595803623763 0
+
+10/15/2018 3:00:04 PM:: UpstoxAverageTheBuyThenSell TATAMOTORS [EOD]: TATAMOTORS BUY order cancel , OrderRef = 181015000041513: Success
+
+10/15/2018 3:00:04 PM:: UpstoxAverageTheBuyThenSell TATAMOTORS [Order Updated] TATAMOTORS 181015000041513 cancel pending 182.5 I 15-Oct-2018 09:40:32 DAY  150 0 1300000000863247 3456 1305 NA B 1539595804679913 0
+
+10/15/2018 3:00:04 PM:: UpstoxAverageTheBuyThenSell TATAMOTORS [Order Updated] TATAMOTORS 181015000041513 cancelled 182.5 I 15-Oct-2018 15:00:04 DAY  150 0 1300000000863247 3456 1305 NA B 1539595804695404 0
+
+10/15/2018 3:00:04 PM:: UpstoxAverageTheBuyThenSell TATAMOTORS [Order Updated] TATAMOTORS 181015000041513 cancelled 182.5 I 15-Oct-2018 15:00:04 DAY  150 0 1300000000863247 3456 1305 NA B 1539595804695447 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell BERGEPAINT [EOD]: BERGEPAINT BUY order cancel , OrderRef = 181015000041553: Success
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041553 cancel pending 278.6 I 15-Oct-2018 09:40:33 DAY  2 0 1000000001207454 404 173 NA B 1539595806289005 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041553 cancelled 278.6 I 15-Oct-2018 15:00:06 DAY  2 0 1000000001207454 404 173 NA B 1539595806306368 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041553 cancelled 278.6 I 15-Oct-2018 15:00:06 DAY  2 0 1000000001207454 404 173 NA B 1539595806306395 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell DLF [EOD]: DLF BUY order cancel , OrderRef = 181015000041549: Success
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181015000041549 cancel pending 152.9 I 15-Oct-2018 09:40:33 DAY  10 0 1000000001207394 14732 332 NA B 1539595806310859 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181015000041549 cancelled 152.9 I 15-Oct-2018 15:00:06 DAY  10 0 1000000001207394 14732 332 NA B 1539595806319176 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181015000041549 cancelled 152.9 I 15-Oct-2018 15:00:06 DAY  10 0 1000000001207394 14732 332 NA B 1539595806319214 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell ITC [EOD]: ITC BUY order cancel , OrderRef = 181015000132429: Success
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000132429 cancel pending 278.1 I 15-Oct-2018 12:23:04 DAY  2 0 1100000003876051 1660 646 NA B 1539595806429416 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000132429 cancelled 278.1 I 15-Oct-2018 15:00:06 DAY  2 0 1100000003876051 1660 646 NA B 1539595806441088 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000132429 cancelled 278.1 I 15-Oct-2018 15:00:06 DAY  2 0 1100000003876051 1660 646 NA B 1539595806441117 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell AMARAJABAT [EOD]: AMARAJABAT BUY order cancel , OrderRef = 181015000041563: Success
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041563 cancel pending 728.6 I 15-Oct-2018 09:40:34 DAY  1 0 1000000001207659 100 59 NA B 1539595806907575 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041563 cancelled 728.6 I 15-Oct-2018 15:00:06 DAY  1 0 1000000001207659 100 59 NA B 1539595806916218 0
+
+10/15/2018 3:00:06 PM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041563 cancelled 728.6 I 15-Oct-2018 15:00:06 DAY  1 0 1000000001207659 100 59 NA B 1539595806916249 0
+
+10/15/2018 3:00:09 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [EOD]: MinProfit Squareoff using limit sell order
+
+10/15/2018 3:00:09 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 modify validation pending 957 I 15-Oct-2018 10:40:44 DAY  1 0 1100000002426134 30125 566 NA S 1539595809580403 0
+
+10/15/2018 3:00:09 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 modify pending 957 I 15-Oct-2018 10:40:44 DAY  1 0 1100000002426134 30125 566 NA S 1539595809581467 0
+
+10/15/2018 3:00:09 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 modified 957 I 15-Oct-2018 15:00:09 DAY  1 0 1100000002426134 30125 566 NA S 1539595809592821 0
+
+10/15/2018 3:00:09 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 open 950.8 I 15-Oct-2018 15:00:09 DAY  1 0 1100000002426134 30125 566 NA S 1539595809592862 0
+
+10/15/2018 3:00:10 PM:: MyUpstoxWrapper IBULHSGFIN OrderId:181015000086227, UpstoxOrderStatus:open
+
+10/15/2018 3:00:10 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Modify Order MARGIN]: Success IBULHSGFIN 1 @ 950.8 LIMIT. OrderId=181015000086227, BrokerOrderStatus=ORDERED
+
+10/15/2018 3:00:12 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [EOD]: HDFCBANK BUY order cancel , OrderRef = 181015000194799: Success
+
+10/15/2018 3:00:12 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000194799 cancel pending 2001.7 I 15-Oct-2018 14:35:41 DAY  1 0 1100000005965310 1333 518 NA B 1539595812687787 0
+
+10/15/2018 3:00:12 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000194799 cancelled 2001.7 I 15-Oct-2018 15:00:12 DAY  1 0 1100000005965310 1333 518 NA B 1539595812747988 0
+
+10/15/2018 3:00:12 PM:: UpstoxAverageTheBuyThenSell HDFCBANK [Order Updated] HDFCBANK 181015000194799 cancelled 2001.7 I 15-Oct-2018 15:00:12 DAY  1 0 1100000005965310 1333 518 NA B 1539595812748008 0
+
+10/15/2018 3:00:12 PM:: UpstoxAverageTheBuyThenSell INFY [EOD]: INFY BUY order cancel , OrderRef = 181015000123794: Success
+
+10/15/2018 3:00:13 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000123794 cancel pending 685.7 I 15-Oct-2018 12:05:11 DAY  1 0 1100000003640571 1594 628 NA B 1539595812953478 0
+
+10/15/2018 3:00:13 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000123794 cancelled 685.7 I 15-Oct-2018 15:00:12 DAY  1 0 1100000003640571 1594 628 NA B 1539595812961919 0
+
+10/15/2018 3:00:13 PM:: UpstoxAverageTheBuyThenSell INFY [Order Updated] INFY 181015000123794 cancelled 685.7 I 15-Oct-2018 15:00:12 DAY  1 0 1100000003640571 1594 628 NA B 1539595812961949 0
+
+10/15/2018 3:00:14 PM:: UpstoxAverageTheBuyThenSell BAJFINANCE [EOD]: BAJFINANCE BUY order cancel , OrderRef = 181015000113042: Success
+
+10/15/2018 3:00:14 PM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000113042 cancel pending 2264 I 15-Oct-2018 11:38:12 DAY  1 0 1000000003394142 317 142 NA B 1539595814283837 0
+
+10/15/2018 3:00:14 PM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000113042 cancelled 2264 I 15-Oct-2018 15:00:14 DAY  1 0 1000000003394142 317 142 NA B 1539595814300026 0
+
+10/15/2018 3:00:14 PM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181015000113042 cancelled 2264 I 15-Oct-2018 15:00:14 DAY  1 0 1000000003394142 317 142 NA B 1539595814299973 0
+
+10/15/2018 3:15:04 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [In Broker SquareOff Mode]: IBULHSGFIN SELL order cancel , OrderRef = 181015000086227: Success
+
+10/15/2018 3:15:04 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 cancel pending 950.8 I 15-Oct-2018 15:00:09 DAY  1 0 1100000002426134 30125 566 NA S 1539596704919543 0
+
+10/15/2018 3:15:04 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 cancelled 950.8 I 15-Oct-2018 15:15:04 DAY  1 0 1100000002426134 30125 566 NA S 1539596704928656 0
+
+10/15/2018 3:15:04 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000086227 cancelled 950.8 I 15-Oct-2018 15:15:04 DAY  1 0 1100000002426134 30125 566 NA S 1539596704928698 0
+
+10/15/2018 3:15:57 PM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Trade Execution] DELIVERY Trade: AMARAJABAT sold 1 @ 762.4. OrderId=181015000041536, TradeId=2710884, ExchExecutionTime=10/15/2018 9:40:33 AM, ExchTime=15-Oct-2018 09:40:33, Timestamp=0
+
+10/15/2018 3:15:57 PM:: UpstoxAverageTheBuyThenSell AMARAJABAT [Order Updated] AMARAJABAT 181015000041536 complete 762.4 D 15-Oct-2018 09:40:33 DAY  1 1 1000000001207138 100 59 NA S 1539596757485461 762.4
+
+10/15/2018 3:15:57 PM:MTMThread: UpstoxAverageTheBuyThenSell AMARAJABAT [Position Updated] AMARAJABAT 761.8 761.25 0 762.4 0 1 0.6 762.2 -1 59
+
+10/15/2018 3:16:35 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000216348 put order req received 0 I  DAY  1 0  30125 566 NA S 1539596793805716 0
+
+10/15/2018 3:16:38 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000216348 validation pending 0 I  DAY  1 0  30125 566 NA S 1539596798779040 0
+
+10/15/2018 3:16:38 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000216348 open pending 0 I  DAY  1 0  30125 566 NA S 1539596798781114 0
+
+10/15/2018 3:16:42 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000216348 open 0 I 15-Oct-2018 15:16:42 DAY  1 0 1100000006761029 30125 566 NA S 1539596802071065 0
+
+10/15/2018 3:16:42 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Trade Execution] MARGIN Trade: IBULHSGFIN sold 1 @ 947.55. OrderId=181015000216348, TradeId=28018015, ExchExecutionTime=10/15/2018 3:16:42 PM, ExchTime=15-Oct-2018 15:16:42, Timestamp=0
+
+10/15/2018 3:16:42 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181015000216348 complete 0 I 15-Oct-2018 15:16:42 DAY  1 1 1100000006761029 30125 566 NA S 1539596802072056 947.55
+
+10/15/2018 3:16:42 PM:MTMThread: UpstoxAverageTheBuyThenSell IBULHSGFIN [Position Updated] IBULHSGFIN 948 947.55 947.5 947.55 1 1 0.05 947.55 0 566
+
+10/15/2018 3:29:05 PM:: UpstoxAverageTheBuyThenSell INDUSINDBK [EOD Cancel HoldingOrder] StartingQty:5 UnexecutedQty:5 OrderExecutionStatus:ORDERED : INDUSINDBK SELL order cancel , OrderRef = 181015000041525: Success
+
+10/15/2018 3:29:05 PM:: UpstoxAverageTheBuyThenSell IGL [EOD Cancel HoldingOrder] StartingQty:7 UnexecutedQty:7 OrderExecutionStatus:ORDERED : IGL SELL order cancel , OrderRef = 181015000041519: Success
+
+10/15/2018 3:29:05 PM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181015000041525 cancel pending 1732.7 D 15-Oct-2018 09:40:32 DAY  5 0 1100000001150052 5258 622 NA S 1539597545516862 0
+
+10/15/2018 3:29:05 PM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181015000041525 cancelled 1732.7 D 15-Oct-2018 15:29:05 DAY  5 0 1100000001150052 5258 622 NA S 1539597545526668 0
+
+10/15/2018 3:29:05 PM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181015000041525 cancelled 1732.7 D 15-Oct-2018 15:29:05 DAY  5 0 1100000001150052 5258 622 NA S 1539597545526696 0
+
+10/15/2018 3:29:05 PM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181015000041519 cancel pending 253.3 D 15-Oct-2018 09:40:32 DAY  7 0 1100000001149886 11262 595 NA S 1539597545528746 0
+
+10/15/2018 3:29:05 PM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181015000041519 cancelled 253.3 D 15-Oct-2018 15:29:05 DAY  7 0 1100000001149886 11262 595 NA S 1539597545539398 0
+
+10/15/2018 3:29:05 PM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181015000041519 cancelled 253.3 D 15-Oct-2018 15:29:05 DAY  7 0 1100000001149886 11262 595 NA S 1539597545539436 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181015000041541 cancel pending 444.1 D 15-Oct-2018 09:40:33 DAY  12 0 1000000001207288 3906 229 NA S 1539597546175171 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181015000041541 cancelled 444.1 D 15-Oct-2018 15:29:06 DAY  12 0 1000000001207288 3906 229 NA S 1539597546185196 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181015000041541 cancelled 444.1 D 15-Oct-2018 15:29:06 DAY  12 0 1000000001207288 3906 229 NA S 1539597546185241 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell BIOCON [EOD Cancel HoldingOrder] StartingQty:13 UnexecutedQty:13 OrderExecutionStatus:ORDERED : BIOCON SELL order cancel , OrderRef = 181015000041533: Success
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell BIOCON [Order Updated] BIOCON 181015000041533 cancel pending 643.8 D 15-Oct-2018 09:40:33 DAY  13 0 1000000001207060 11373 192 NA S 1539597546200669 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell BIOCON [Order Updated] BIOCON 181015000041533 cancelled 643.8 D 15-Oct-2018 15:29:06 DAY  13 0 1000000001207060 11373 192 NA S 1539597546213223 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [EOD Cancel HoldingOrder] StartingQty:12 UnexecutedQty:12 OrderExecutionStatus:ORDERED : CAPLIPOINT SELL order cancel , OrderRef = 181015000041541: Success
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell BIOCON [Order Updated] BIOCON 181015000041533 cancelled 643.8 D 15-Oct-2018 15:29:06 DAY  13 0 1000000001207060 11373 192 NA S 1539597546213262 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell ADANIPORTS [EOD Cancel HoldingOrder] StartingQty:9 UnexecutedQty:9 OrderExecutionStatus:ORDERED : ADANIPORTS SELL order cancel , OrderRef = 181015000041539: Success
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell IDFCBANK [EOD Cancel HoldingOrder] StartingQty:60 UnexecutedQty:60 OrderExecutionStatus:ORDERED : IDFCBANK SELL order cancel , OrderRef = 181015000041554: Success
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell ADANIPORTS [Order Updated] ADANIPORTS 181015000041539 cancel pending 335.2 D 15-Oct-2018 09:40:33 DAY  9 0 1000000001207240 15083 23 NA S 1539597546360258 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell IDFCBANK [Order Updated] IDFCBANK 181015000041554 cancel pending 39.4 D 15-Oct-2018 09:40:33 DAY  60 0 1100000001150505 11184 587 NA S 1539597546360395 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell BERGEPAINT [EOD Cancel HoldingOrder] StartingQty:6 UnexecutedQty:6 OrderExecutionStatus:ORDERED : BERGEPAINT SELL order cancel , OrderRef = 181015000041522: Success
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell ADANIPORTS [Order Updated] ADANIPORTS 181015000041539 cancelled 335.2 D 15-Oct-2018 15:29:06 DAY  9 0 1000000001207240 15083 23 NA S 1539597546369437 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell IDFCBANK [Order Updated] IDFCBANK 181015000041554 cancelled 39.4 D 15-Oct-2018 15:29:06 DAY  60 0 1100000001150505 11184 587 NA S 1539597546370550 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell ADANIPORTS [Order Updated] ADANIPORTS 181015000041539 cancelled 335.2 D 15-Oct-2018 15:29:06 DAY  9 0 1000000001207240 15083 23 NA S 1539597546369463 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell IDFCBANK [Order Updated] IDFCBANK 181015000041554 cancelled 39.4 D 15-Oct-2018 15:29:06 DAY  60 0 1100000001150505 11184 587 NA S 1539597546370570 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041522 cancel pending 293.3 D 15-Oct-2018 09:40:32 DAY  6 0 1000000001206842 404 173 NA S 1539597546580882 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041522 cancelled 293.3 D 15-Oct-2018 15:29:06 DAY  6 0 1000000001206842 404 173 NA S 1539597546593193 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell BERGEPAINT [Order Updated] BERGEPAINT 181015000041522 cancelled 293.3 D 15-Oct-2018 15:29:06 DAY  6 0 1000000001206842 404 173 NA S 1539597546593220 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell ITC [EOD Cancel HoldingOrder] StartingQty:12 UnexecutedQty:12 OrderExecutionStatus:ORDERED : ITC SELL order cancel , OrderRef = 181015000041518: Success
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041518 cancel pending 288.5 D 15-Oct-2018 09:40:32 DAY  12 0 1100000001149879 1660 646 NA S 1539597546714704 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041518 cancelled 288.5 D 15-Oct-2018 15:29:06 DAY  12 0 1100000001149879 1660 646 NA S 1539597546723263 0
+
+10/15/2018 3:29:06 PM:: UpstoxAverageTheBuyThenSell ITC [Order Updated] ITC 181015000041518 cancelled 288.5 D 15-Oct-2018 15:29:06 DAY  12 0 1100000001149879 1660 646 NA S 1539597546723287 0
+
+10/15/2018 3:31:01 PM:: UpstoxAverageTheBuyThenSell RELIANCE EOD PositionFile updated as 0 0
+
+10/15/2018 3:31:02 PM:: UpstoxAverageTheBuyThenSell SUNPHARMA EOD PositionFile updated as 0 0
+
+10/15/2018 3:31:03 PM:: UpstoxAverageTheBuyThenSell FEDERALBNK EOD PositionFile updated as 0 0
+
+10/15/2018 3:31:03 PM:: UpstoxAverageTheBuyThenSell M&M EOD PositionFile updated as 3 929
+
+10/15/2018 3:31:04 PM:: UpstoxAverageTheBuyThenSell UJJIVAN EOD PositionFile updated as 12 288.1
+
+10/15/2018 3:31:04 PM:: UpstoxAverageTheBuyThenSell TATAMOTORS EOD PositionFile updated as 220 205.25
+
+10/15/2018 3:31:05 PM:: UpstoxAverageTheBuyThenSell PCJEWELLER EOD PositionFile updated as 39 65.31
+
+10/15/2018 3:31:05 PM:: UpstoxAverageTheBuyThenSell INDUSINDBK EOD PositionFile updated as 5 1709.62
+
+10/15/2018 3:31:05 PM:: UpstoxAverageTheBuyThenSell IGL EOD PositionFile updated as 7 248.66
+
+10/15/2018 3:31:05 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN EOD PositionFile updated as 0 0
+
+10/15/2018 3:31:06 PM:: UpstoxAverageTheBuyThenSell BIOCON EOD PositionFile updated as 13 635.22
+
+10/15/2018 3:31:06 PM:: UpstoxAverageTheBuyThenSell CAPLIPOINT EOD PositionFile updated as 12 438.22
+
+10/15/2018 3:31:06 PM:: UpstoxAverageTheBuyThenSell ADANIPORTS EOD PositionFile updated as 9 330.71
+
+10/15/2018 3:31:06 PM:: UpstoxAverageTheBuyThenSell IDFCBANK EOD PositionFile updated as 60 38.99
+
+10/15/2018 3:31:06 PM:: UpstoxAverageTheBuyThenSell DLF EOD PositionFile updated as 7 179
+
+10/15/2018 3:31:06 PM:: UpstoxAverageTheBuyThenSell BERGEPAINT EOD PositionFile updated as 6 290.1
+
+10/15/2018 3:31:06 PM:: UpstoxAverageTheBuyThenSell ITC EOD PositionFile updated as 12 285.34
+
+10/15/2018 3:31:06 PM:: UpstoxAverageTheBuyThenSell AMARAJABAT EOD PositionFile updated as 0 0
+
+10/15/2018 3:31:13 PM:: UpstoxAverageTheBuyThenSell INFY EOD PositionFile updated as 0 0
+
+10/15/2018 3:31:13 PM:: UpstoxAverageTheBuyThenSell HDFCBANK EOD PositionFile updated as 0 0
+
+10/15/2018 3:31:14 PM:: UpstoxAverageTheBuyThenSell BAJFINANCE EOD PositionFile updated as 0 0
+
+10/15/2018 3:31:14 PM:: Update PnL files
+
+10/15/2018 3:31:16 PM:: All stock threads completed. Emailing today's log file
+
+10/15/2018 3:31:18 PM:: Exiting..
+

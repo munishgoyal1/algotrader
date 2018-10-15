@@ -1,0 +1,77 @@
+10/15/2018 9:24:11 AM:: RELEASE MODE
+
+10/15/2018 9:24:27 AM:: 126130
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell HDFCBANK SnapQuote status=Success. lowerCircuitLimit=1783.7, upperCircuitLimit=2180, ClosePrice=1981.85, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN SnapQuote status=Success. lowerCircuitLimit=838.8, upperCircuitLimit=1025.1, ClosePrice=931.95, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell ITC SnapQuote status=Success. lowerCircuitLimit=247.7, upperCircuitLimit=302.7, ClosePrice=275.2, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: MyUpstoxWrapper  NIFTY GetSnapQuoteError:Trade Symbol is null or invalid
+Stacktrace:   at A..(String , String , Boolean )
+   at UpstoxNet.Upstox.GetSnapQuote(String Exch, String TrdSym, Boolean RaiseQuoteEvent)
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetSnapQuote(String exchange, String stockCode, EquitySymbolQuote& quote)
+
+10/15/2018 9:24:32 AM:: MyUpstoxWrapper  Retrying 1 out of 3
+
+10/15/2018 9:24:32 AM:: MyUpstoxWrapper  NIFTY GetSnapQuoteError:Trade Symbol is null or invalid
+Stacktrace:   at A..(String , String , Boolean )
+   at UpstoxNet.Upstox.GetSnapQuote(String Exch, String TrdSym, Boolean RaiseQuoteEvent)
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetSnapQuote(String exchange, String stockCode, EquitySymbolQuote& quote)
+
+10/15/2018 9:24:32 AM:: MyUpstoxWrapper  Retrying 2 out of 3
+
+10/15/2018 9:24:32 AM:: MyUpstoxWrapper  NIFTY GetSnapQuoteError:Trade Symbol is null or invalid
+Stacktrace:   at A..(String , String , Boolean )
+   at UpstoxNet.Upstox.GetSnapQuote(String Exch, String TrdSym, Boolean RaiseQuoteEvent)
+   at StockTrader.Brokers.UpstoxBroker.MyUpstoxWrapper.GetSnapQuote(String exchange, String stockCode, EquitySymbolQuote& quote)
+
+10/15/2018 9:24:32 AM:: MyUpstoxWrapper  Retrying 3 out of 3
+
+10/15/2018 9:24:32 AM:: MarketTrend NIFTY NIFTY Error: Trade Symbol is null or invalid 
+Stacktrace:   at A.
+.(String , String )
+   at UpstoxNet.Upstox.SubscribeQuotes(String Exch, String TrdSym)
+   at UpstoxTrader.MarketTrend.StartCapturingMarketTrend()
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT SnapQuote status=Success. lowerCircuitLimit=340.9, upperCircuitLimit=511.3, ClosePrice=426.1, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell RELIANCE SnapQuote status=Success. lowerCircuitLimit=1013.9, upperCircuitLimit=1239.2, ClosePrice=1126.55, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA SnapQuote status=Success. lowerCircuitLimit=531.55, upperCircuitLimit=649.65, ClosePrice=590.6, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT SnapQuote status=Success. lowerCircuitLimit=255.6, upperCircuitLimit=312.3, ClosePrice=283.95, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell INFY SnapQuote status=Success. lowerCircuitLimit=610.95, upperCircuitLimit=746.65, ClosePrice=678.8, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS SnapQuote status=Success. lowerCircuitLimit=165.4, upperCircuitLimit=202.1, ClosePrice=183.75, baseOrderQty=3
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT SnapQuote status=Success. lowerCircuitLimit=662.3, upperCircuitLimit=809.4, ClosePrice=735.85, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell DLF SnapQuote status=Success. lowerCircuitLimit=141.9, upperCircuitLimit=173.4, ClosePrice=157.65, baseOrderQty=2
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell M&M SnapQuote status=Success. lowerCircuitLimit=691.65, upperCircuitLimit=845.35, ClosePrice=768.5, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER SnapQuote status=Success. lowerCircuitLimit=51.3, upperCircuitLimit=62.6, ClosePrice=56.95, baseOrderQty=2
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK SnapQuote status=Success. lowerCircuitLimit=1487.45, upperCircuitLimit=1817.95, ClosePrice=1652.7, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell BIOCON SnapQuote status=Success. lowerCircuitLimit=545.8, upperCircuitLimit=667, ClosePrice=606.4, baseOrderQty=2
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell UJJIVAN SnapQuote status=Success. lowerCircuitLimit=228.2, upperCircuitLimit=278.9, ClosePrice=253.55, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell IGL SnapQuote status=Success. lowerCircuitLimit=217.55, upperCircuitLimit=265.85, ClosePrice=241.7, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK SnapQuote status=Success. lowerCircuitLimit=66.4, upperCircuitLimit=81.1, ClosePrice=73.75, baseOrderQty=1
+
+10/15/2018 9:24:32 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS SnapQuote status=Success. lowerCircuitLimit=290.85, upperCircuitLimit=355.45, ClosePrice=323.15, baseOrderQty=1
+
+10/15/2018 9:24:33 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE SnapQuote status=Success. lowerCircuitLimit=2058.65, upperCircuitLimit=2516.05, ClosePrice=2287.35, baseOrderQty=1
+
+10/15/2018 9:24:55 AM:: UpstoxAverageTheBuyThenSell IDFCBANK SnapQuote status=Success. lowerCircuitLimit=32.85, upperCircuitLimit=40.15, ClosePrice=36.5, baseOrderQty=2
+
+10/15/2018 9:24:55 AM:: UpstoxAverageTheBuyThenSell HDFCBANK SubscribeQuotes status=True
+
+10/15/2018 9:24:55 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN SubscribeQuotes status=True
+

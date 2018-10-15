@@ -1,0 +1,23 @@
+10/15/2018 9:17:48 AM:: RELEASE MODE
+
+10/15/2018 9:18:00 AM:: 126130
+
+10/15/2018 9:18:06 AM:: MarketTrend NIFTY NIFTY Error: Object reference not set to an instance of an object. 
+Stacktrace:   at UpstoxTrader.MarketTrend.StartCapturingMarketTrend()
+
+10/15/2018 9:18:06 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA SnapQuote status=Success. lowerCircuitLimit=531.55, upperCircuitLimit=649.65, ClosePrice=590.6, baseOrderQty=1
+
+10/15/2018 9:18:06 AM:: UpstoxAverageTheBuyThenSell ITC SnapQuote status=Success. lowerCircuitLimit=247.7, upperCircuitLimit=302.7, ClosePrice=275.2, baseOrderQty=1
+
+10/15/2018 9:18:06 AM:: UpstoxAverageTheBuyThenSell IGL SnapQuote status=Success. lowerCircuitLimit=217.55, upperCircuitLimit=265.85, ClosePrice=241.7, baseOrderQty=1
+
+10/15/2018 9:18:06 AM:: UpstoxAverageTheBuyThenSell UJJIVAN SnapQuote status=Success. lowerCircuitLimit=228.2, upperCircuitLimit=278.9, ClosePrice=253.55, baseOrderQty=1
+
+10/15/2018 9:18:16 AM:: UpstoxAverageTheBuyThenSell RELIANCE SnapQuote status=Success. lowerCircuitLimit=1013.9, upperCircuitLimit=1239.2, ClosePrice=1126.55, baseOrderQty=1
+
+10/15/2018 9:18:16 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT SnapQuote status=Success. lowerCircuitLimit=255.6, upperCircuitLimit=312.3, ClosePrice=283.95, baseOrderQty=1
+
+10/15/2018 9:18:16 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER SnapQuote status=Success. lowerCircuitLimit=51.3, upperCircuitLimit=62.6, ClosePrice=56.95, baseOrderQty=2
+
+10/15/2018 9:18:16 AM:: UpstoxAverageTheBuyThenSell IDFCBANK SnapQuote status=Success. lowerCircuitLimit=32.85, upperCircuitLimit=40.15, ClosePrice=36.5, baseOrderQty=2
+

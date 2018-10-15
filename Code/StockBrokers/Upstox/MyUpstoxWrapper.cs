@@ -71,11 +71,11 @@ namespace StockTrader.Brokers.UpstoxBroker
 
             //public string GetOrderExchId(string OrderId)
 
-            var ohlcquote = upstox.GetSnapOHLC("NSE_EQ", "CAPLIPOINT");
+            //var ohlcquote = upstox.GetSnapOHLC("NSE_EQ", "CAPLIPOINT");
 
-            ohlcquote = upstox.GetSnapOHLC("NSE_EQ", "PCJEWELLER");
-            var snapquote = upstox.GetSnapQuote("NSE_EQ", "PCJEWELLER");
-            snapquote = upstox.GetSnapQuote("NSE_EQ", "CAPLIPOINT");
+           // ohlcquote = upstox.GetSnapOHLC("NSE_INDEX", "NIFTY_100");
+            var snapquote = upstox.GetSnapQuote("NSE_FO", "NIFTY18OCTFUT");
+            snapquote = upstox.GetSnapQuote("NSE_INDEX", "NIFTY_50");
             EquitySymbolQuote quote;
 
             var wrapped = GetSnapQuote("NSE_EQ", "CAPLIPOINT", out quote);

@@ -87,8 +87,19 @@ namespace UpstoxTrader
             var threads = new List<Thread>(stocksConfig.Count);
 
             var mktTrendConfig = new UpstoxMarketTrendParams();
-            mktTrendConfig.stockCode = "NIFTY";
-            mktTrendConfig.exchange = Exchange.NSE;
+
+
+            var monthNow = DateTime.Now.Month + (DateTime.Now.Day > 20 ? 1 : 0);
+            var yearNow = DateTime.Now.Year + (monthNow > 12 ? 1 : 0);
+            if (monthNow > 12)
+                monthNow = 1;
+
+            var months = new[] { "DUMMY", "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
+
+            var niftyFutCode = string.Format("NIFTY{0}{1}FUT", (yearNow - 2000), months[monthNow]);
+
+            mktTrendConfig.stockCode = niftyFutCode;
+            mktTrendConfig.exchangeStr = "NSE_FO";
             mktTrendConfig.upstox = upstoxBroker;
             var mktTrend = new MarketTrend(mktTrendConfig);
             var mktThread = new Thread(mktTrend.StartCapturingMarketTrend);
@@ -537,7 +548,7 @@ namespace UpstoxTrader
     {
         public MyUpstoxWrapper upstox;
         public string stockCode;
-        public Exchange exchange;
+        public string exchangeStr;
     }
 
     public class UpstoxTradeParams

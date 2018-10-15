@@ -22,8 +22,9 @@ namespace UpstoxTrader
 
         public MarketTrend(UpstoxMarketTrendParams @params)
         {
+            myUpstoxWrapper = @params.upstox;
             stockCode = @params.stockCode;
-            exchStr = @params.exchange == Exchange.NSE ? "NSE_EQ" : "BSE_EQ";
+            exchStr = @params.exchangeStr;
         }
 
         public void StartCapturingMarketTrend()
@@ -50,11 +51,21 @@ namespace UpstoxTrader
                     if(quote != null)
                     {
                         var changePct = (quote.LTP - quote.Close) / quote.Close;
+
+                        var prevmktTrendFactorForBuyMarkdown = mktTrendFactorForBuyMarkdown;
+
                         if (changePct < -0.005)
                             mktTrendFactorForBuyMarkdown = 1.2;
                         else if (changePct < -0.01)
                             mktTrendFactorForBuyMarkdown = 1.5;
+                        else if (changePct < -0.015)
+                            mktTrendFactorForBuyMarkdown = 2;
                         else mktTrendFactorForBuyMarkdown = 1;
+
+                        if (prevmktTrendFactorForBuyMarkdown != mktTrendFactorForBuyMarkdown)
+                        {
+                            Trace(string.Format("MarketTrendForBuyMarkdown changed from {0} to {1}. Nifty changePct={2}", prevmktTrendFactorForBuyMarkdown, mktTrendFactorForBuyMarkdown, Math.Round(changePct, 5)));
+                        }
                     }
                 }
                 catch (Exception ex)
