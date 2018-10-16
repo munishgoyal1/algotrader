@@ -51,9 +51,9 @@ namespace UpstoxTrader
 
 #if DEBUG
             Trace("DEBUG MODE");
-            List<UpstoxTradeParams> stocksConfig1 = ReadTradingConfigFile();
+            //List<UpstoxTradeParams> stocksConfig1 = ReadTradingConfigFile();
 
-            errCode = upstoxBroker.Login1();
+            //errCode = upstoxBroker.Login1();
 #else
             Trace("RELEASE MODE"); errCode = upstoxBroker.Login();
 #endif
@@ -79,7 +79,7 @@ namespace UpstoxTrader
             MarketUtils.WaitUntilMarketOpen();
 #endif
 
-            Thread.Sleep(5000);// Let the rates etc update on server
+            //Thread.Sleep(5000);// Let the rates etc update on server
 
             // Read the config file
             List<UpstoxTradeParams> stocksConfig = ReadTradingConfigFile();
