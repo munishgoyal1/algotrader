@@ -245,7 +245,7 @@ namespace UpstoxTrader
                 upperCircuitLimit = quote.UpperCircuitPrice;
                 if (quote.ClosePrice > 0)
                 {
-                    baseOrderQty = (int)Math.Round(baseOrderVal / quote.ClosePrice);
+                    baseOrderQty = (int)Math.Floor(baseOrderVal / quote.ClosePrice);
                     maxTotalOutstandingQtyAllowed = baseOrderQty * maxTotalPositionValueMultiple;
                     maxTodayOutstandingQtyAllowed = baseOrderQty * maxTodayPositionValueMultiple;
                 }
@@ -649,6 +649,58 @@ namespace UpstoxTrader
         }
 
         public void HandleConversionAnytime()
+        {
+            var eventType = "[Converted to DELIVERY]";
+            string strategy = "[Converted to DELIVERY]";
+
+            if (!(todayOutstandingQty > 0 && !isOutstandingPositionConverted && orderType == EquityOrderType.MARGIN))
+                return;
+
+            // Assuming the position and the sqoff order are same qty (i.e. in sync as of now)
+            // for already DELIVERY type sq off order, no need to do anything. Either this logic has already run or the stock was started in DELIVERY mode from starting itself
+            List<EquityPositionRecord> positions;
+            errCode = myUpstoxWrapper.GetPositions(stockCode, out positions);
+
+            if (errCode == BrokerErrorCode.Success)
+            {
+                var position = positions.Where(p => p.Exchange == exchStr && p.EquityOrderType == EquityOrderType.DELIVERY && p.BuyQuantity > 0).FirstOrDefault();
+
+                // check if position is converted to delivery, then cancel sq off order and place sell delivery order
+                // match correct converted position.
+                if (position != null)
+                {
+                    strategy = string.Format("{0}: Detected position conversion. Convert SELL order to DELIVERY", eventType);
+                    isOutstandingPositionConverted = true;
+                }
+            }
+
+            if (isOutstandingPositionConverted && !string.IsNullOrEmpty(outstandingBuyOrder.OrderId))
+            {
+                // cancel existing buy order
+                errCode = CancelEquityOrder(eventType, ref outstandingBuyOrder.OrderId, orderType, OrderDirection.BUY);
+            }
+
+            if (isOutstandingPositionConverted)
+            {
+                // bought qty needs square off. there is outstanding sell order, revise the price to try square off 
+                if (!string.IsNullOrEmpty(outstandingSellOrder.OrderId))
+                {
+                    Trace(strategy);
+                    // cancel existing MARGIN sell order
+                    errCode = CancelEquityOrder(eventType, ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
+
+                    if (errCode == BrokerErrorCode.Success)
+                    {
+                        // place new sell order, update sell order ref
+                        var isForMinProfitSqOff = MarketUtils.IsTimeAfter3XMin(10) ? true : false;
+                        var sellPrice = GetSellPrice(todayOutstandingPrice, false, isForMinProfitSqOff);
+                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, EquityOrderType.DELIVERY, sellPrice, out outstandingSellOrder.OrderId, out upstoxOrderStatus);
+                    }
+                }
+            }
+        }
+
+        public void HandleConversionAnytimeNew()
         {
             var eventType = "[Converted to DELIVERY]";
             string strategy = "[Converted to DELIVERY]";

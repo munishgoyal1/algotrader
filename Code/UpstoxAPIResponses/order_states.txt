@@ -12,3 +12,8 @@ open pending
 open
 
 complete
+
+rejected
+
+
+10/16/2018 3:02:59 PM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [Order Updated] IBULHSGFIN 181016000213326 rejected 963.7 D  DAY RMS:Rule: Check holdings ,No Holdings Present  for entity account-126130 across exchange across segment across product  2 0  30125 583 NA S 1539682379303421 0
