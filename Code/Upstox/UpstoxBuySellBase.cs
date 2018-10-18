@@ -47,7 +47,7 @@ namespace UpstoxTrader
         public DateTime endTime;
         public string stockCode = null;
         public double baseOrderVal = 0;
-        public int baseOrderQty = 0;
+        public double baseOrderQty = 0;
         public int maxTotalPositionValueMultiple = 0;
         public int maxTodayPositionValueMultiple = 0;
         public int maxTotalOutstandingQtyAllowed = 0;
@@ -246,9 +246,9 @@ namespace UpstoxTrader
                 upperCircuitLimit = quote.UpperCircuitPrice;
                 if (quote.ClosePrice > 0)
                 {
-                    baseOrderQty = (int)Math.Floor(baseOrderVal / quote.ClosePrice);
-                    maxTotalOutstandingQtyAllowed = baseOrderQty * maxTotalPositionValueMultiple;
-                    maxTodayOutstandingQtyAllowed = baseOrderQty * maxTodayPositionValueMultiple;
+                    baseOrderQty = baseOrderVal / quote.ClosePrice;
+                    maxTotalOutstandingQtyAllowed = (int)Math.Floor(baseOrderQty * maxTotalPositionValueMultiple);
+                    maxTodayOutstandingQtyAllowed = (int)Math.Floor(baseOrderQty * maxTodayPositionValueMultiple);
                 }
             }
 
@@ -422,6 +422,17 @@ namespace UpstoxTrader
                 else
                     todayOutstandingTradeCount = buyTrades.Count();
             }
+
+
+            // Print the state built
+            Trace(string.Format(@"InitState: holdingOutstandingQty={0}, holdingOutstandingPrice={1}, holdingSellOrderOrderId={2},
+                todayOutstandingQty={3}, todayOutstandingPrice={4}, todayOutstandingTradeCount={5}, 
+                outstandingSellOrder.OrderId={6}, outstandingSellOrder.StartingQty={7}, outstandingSellOrder.UnexecutedQty={8}, outstandingSellOrder.Status={9},
+                outstandingBuyOrder.OrderId={10}, outstandingBuyOrder.StartingQty={11}, outstandingBuyOrder.UnexecutedQty={12}, outstandingBuyOrder.Status={13},
+                currentBuyOrdQty={14}, currentBuyOrdExecutedQty={15}, lastBuyPrice={16}, isFirstBuyOrderStillToBePlaced={17},
+                isEODMinProfitSquareOffLimitOrderUpdated={18}, isEODMinLossSquareOffMarketOrderUpdated={19}, isOutstandingPositionConverted={20}, Ltp={21}",
+                holdingOutstandingQty, holdingOutstandingPrice, holdingSellOrder.OrderId, todayOutstandingQty, todayOutstandingPrice,
+                todayOutstandingTradeCount, outstandingSellOrder.OrderId, outstandingSellOrder.StartingQty, ))
         }
 
         protected void ProcessHoldingSellOrderExecution(int tradedQty)

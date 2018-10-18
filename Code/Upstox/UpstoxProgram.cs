@@ -333,7 +333,7 @@ namespace UpstoxTrader
 
                     var summaryToday = string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15}", DateTime.Today.ToString("dd-MM-yyyy"),
                         todaymtm, todayrealized, todayunrealized, todayinflow, todayholdingcost, maxAmountCommittedToday, todaybrokerage, pctPnLToday,
-                        todayBuyTrades, todaySellTrades, orderQty, todayBuyQty, todaySellQty, todayIntradayValue, todayDeliveryValue);
+                        todayBuyTrades, todaySellTrades, Math.Round(orderQty,2), todayBuyQty, todaySellQty, todayIntradayValue, todayDeliveryValue);
 
                     var finalPnLLines = readPnLLines.ToList();
                     finalPnLLines.Add(summaryToday);
@@ -541,7 +541,7 @@ namespace UpstoxTrader
         public int prevHoldingQty = 0;
         public double prevHoldingPrice = 0;
         public double maxBuyValueToday = 0;
-        public int baseOrderQty;
+        public double baseOrderQty;
     }
 
     public class UpstoxMarketTrendParams

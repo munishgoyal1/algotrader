@@ -26,7 +26,7 @@ namespace UpstoxTrader
 
             var errCode = BrokerErrorCode.Unknown;
             double ltp = GetLTP();
-            var calculatedOrderQty = baseOrderQty;
+            int calculatedOrderQty = 0;
 
             double lastPriceToCompareWith = ltp;
             string priceStrategy = "LTP Markdown";
@@ -95,7 +95,7 @@ namespace UpstoxTrader
 
             var qtyCurve = qtyFactorCalcForQty * priceFactorCalcForQty;
 
-            calculatedOrderQty = (int)(baseOrderQty * Math.Max(1, qtyCurve));
+            calculatedOrderQty = (int)Math.Floor(baseOrderQty * Math.Max(1, qtyCurve));
 
             calculatedOrderQty = Math.Min(calculatedOrderQty, maxTodayOutstandingQtyAllowed - todayOutstandingQty);
             calculatedOrderQty = Math.Min(calculatedOrderQty, maxTotalOutstandingQtyAllowed - totalOutstandingQty);
@@ -106,7 +106,7 @@ namespace UpstoxTrader
                     totalAvgHoldingPrice={9}, priceToCompareForQty={10}, priceDiffPct={11}, priceBucketWidthInPctForQty={12}, priceDiffMultiple={13},
                     priceDiffBucketNumberForQty={14}, priceDiffBucketAgressionForQty={15}, priceFactorCalcForQty={16};
                     qtyCurve={17}, calculatedOrderQty={18}, maxTodayOutstandingQtyAllowed={19}, maxTotalOutstandingQtyAllowed={20};",
-                todayOutstandingQty, Math.Round(todayOutstandingPrice, 2), holdingOutstandingQty, Math.Round(holdingOutstandingPrice, 2), baseOrderQty, todayOutstandingMultiple, totalOutstandingMultiple,
+                todayOutstandingQty, Math.Round(todayOutstandingPrice, 2), holdingOutstandingQty, Math.Round(holdingOutstandingPrice, 2), baseOrderQty, Math.Round(todayOutstandingMultiple,2), Math.Round(totalOutstandingMultiple,2),
                 qtyAgressionFactor, qtyFactorCalcForQty,
                 Math.Round(totalAvgHoldingPrice, 2), Math.Round(priceToCompareForQty, 2), Math.Round(priceDiffPct, 2), priceBucketWidthInPctForQty, Math.Round(priceDiffMultiple, 2),
                 priceDiffBucketNumberForQty, priceDiffBucketAgressionForQty, Math.Round(priceFactorCalcForQty, 2),
