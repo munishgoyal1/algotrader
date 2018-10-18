@@ -83,5 +83,10 @@ use order update event handler, and synchronize it with retry placeorder.
 try to squareoff same day if overall day profit is made ?
 
 14. Modify order status came as not modified because previous place order itself was still in validation pending. So wait for order status to update to open  and then place modification.
+15. Init state print
+16. Confirm again why not IBUL and BAJ orders clicked for 3rd avg.
+17.  handle partial Convert Position
+18. make percentages config * 100.
+
 
 
