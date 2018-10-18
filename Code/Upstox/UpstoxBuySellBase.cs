@@ -34,6 +34,7 @@ namespace UpstoxTrader
         public MyUpstoxWrapper myUpstoxWrapper = null;
         public MarketTrend mktTrend = null;
         public AutoResetEvent orderUpdateReceivedEvent = new AutoResetEvent(false);
+        public object lockRunEitherPlaceBuyOrTradeUpdated = new object();
 
         // Config
         public EquityOrderType orderType;
@@ -399,7 +400,7 @@ namespace UpstoxTrader
                 // Modify existing sell order qty and price
                 var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
                 errCode = ModifyEquityOrder(stockCode, outstandingSellOrder.OrderId, OrderPriceType.LIMIT, todayOutstandingQty, sellPrice, out upstoxOrderStatus);
- 
+
                 // Cancel existing sell order
                 //errCode = CancelEquityOrder("[Init Update Sell Qty]", ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
             }
@@ -494,11 +495,9 @@ namespace UpstoxTrader
             return Math.Round(factor * price, 1);
         }
 
-        public BrokerErrorCode GetLTP(out double ltp)
+        public double GetLTP()
         {
-            BrokerErrorCode errCode = BrokerErrorCode.Success;
-            ltp = Ltp;
-            return errCode;
+            return Ltp;
         }
 
         public BrokerErrorCode GetLTPOnDemand(out double ltp)
@@ -585,7 +584,7 @@ namespace UpstoxTrader
             {
                 Trace(string.Format("orderPrice {0} is outside circuit limits of lowerCircuitLimit {1} upperCircuitLimit {2}, Not modifying order", price, lowerCircuitLimit, upperCircuitLimit));
                 return BrokerErrorCode.OutsidePriceRange;
-            }            
+            }
 
             errCode = myUpstoxWrapper.ModifyEquityOrder(ref latestOrderUpdateInfo, orderUpdateReceivedEvent, stockCode, orderId, orderPriceType, quantity, price, out orderStatus);
 
@@ -793,11 +792,7 @@ namespace UpstoxTrader
                 // 3.05 - 3.10 pm time. market order type if must sqoff at EOD and given pct loss is within acceptable range and outstanding price is not a good price to keep holding
                 if (MarketUtils.IsMinutesAfter3Between(5, 10) && !isEODMinLossSquareOffMarketOrderUpdated)
                 {
-                    double ltp;
-                    var errCode = GetLTP(out ltp);
-
-                    if (errCode != BrokerErrorCode.Success)
-                        return;
+                    double ltp  = GetLTP();                  
 
                     var diff = Math.Round((ltp - todayOutstandingPrice) / ltp, 5);
 
@@ -973,7 +968,27 @@ namespace UpstoxTrader
 
         public void MainLoopPause()
         {
-            Thread.Sleep(1000 * 15);
+            var sleepMsec = 1000 * 15;
+
+            if (IsBuyOrderEligible())
+                sleepMsec = 1000 * 5;
+
+            Thread.Sleep(sleepMsec);
+        }
+
+        public bool IsBuyOrderEligible()
+        {
+            // start and end timings. If we already converted then dont place fresh buy orders
+            if (!IsOrderTimeWithinRange() || isOutstandingPositionConverted)
+                return false;
+
+            // place buy order if eligible: if there is no pending buy order and if totaloutstanding qty is less than maxoutstanding
+            if (string.IsNullOrEmpty(outstandingBuyOrder.OrderId)
+              && (todayOutstandingQty + holdingOutstandingQty) < maxTotalOutstandingQtyAllowed
+              && todayOutstandingQty < maxTodayOutstandingQtyAllowed)
+                return true;
+
+            return false;
         }
     }
 }
