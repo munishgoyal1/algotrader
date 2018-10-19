@@ -432,15 +432,15 @@ namespace UpstoxTrader
                 switch (split[0].Trim())
                 {
                     case "@mktConditionBuyExtraMarkDownPct":
-                        mktConditionBuyExtraMarkDown = double.Parse(split[1]);
+                        mktConditionBuyExtraMarkDown = double.Parse(split[1])/100;
                         break;
 
                     case "@markDownPctForAveragingTightening":
-                        markDownPctForAveragingTightening = double.Parse(split[1]);
+                        markDownPctForAveragingTightening = double.Parse(split[1])/100;
                         break;
 
                     case "@priceBucketWidthInPctForQty":
-                        priceBucketWidthInPctForQty = double.Parse(split[1]);
+                        priceBucketWidthInPctForQty = double.Parse(split[1])/100;
                         break;
 
                     case "@qtyAgressionFactor":
@@ -456,7 +456,7 @@ namespace UpstoxTrader
                         break;
 
                     case "@deliveryBrokerage":
-                        deliveryBrokerage = double.Parse(split[1]);
+                        deliveryBrokerage = double.Parse(split[1])/100;
                         break;
 
                     case "@commonStock":
@@ -466,8 +466,8 @@ namespace UpstoxTrader
                         ctp.baseOrderVal = double.Parse(common[++Index]);
                         ctp.maxTotalPositionValueMultiple = int.Parse(common[++Index]);
                         ctp.maxTodayPositionValueMultiple = int.Parse(common[++Index]);
-                        ctp.markDownPctForBuy = double.Parse(common[++Index]);
-                        ctp.markDownPctForAveraging = double.Parse(common[++Index]);
+                        ctp.markDownPctForBuy = double.Parse(common[++Index])/100;
+                        ctp.markDownPctForAveraging = double.Parse(common[++Index])/100;
                         ctp.sellMarkup = double.Parse(common[++Index]);
                         ctp.placeBuyNoLtpCompare = bool.Parse(common[++Index]);
                         ctp.startTime = GeneralUtils.GetTodayDateTime(common[++Index]);
@@ -492,8 +492,8 @@ namespace UpstoxTrader
                     baseOrderVal = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.baseOrderVal : double.Parse(stock[Index])) : ctp.baseOrderVal,
                     maxTotalPositionValueMultiple = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.maxTotalPositionValueMultiple : int.Parse(stock[Index])) : ctp.maxTotalPositionValueMultiple,
                     maxTodayPositionValueMultiple = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.maxTodayPositionValueMultiple : int.Parse(stock[Index])) : ctp.maxTodayPositionValueMultiple,
-                    markDownPctForBuy = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.markDownPctForBuy : double.Parse(stock[Index])) : ctp.markDownPctForBuy,//7
-                    markDownPctForAveraging = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.markDownPctForAveraging : double.Parse(stock[Index])) : ctp.markDownPctForAveraging,//6
+                    markDownPctForBuy = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.markDownPctForBuy : double.Parse(stock[Index]))/100 : ctp.markDownPctForBuy,//7
+                    markDownPctForAveraging = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.markDownPctForAveraging : double.Parse(stock[Index]))/100 : ctp.markDownPctForAveraging,//6
                     sellMarkup = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.sellMarkup : double.Parse(stock[Index])) : ctp.sellMarkup,//8
                     placeBuyNoLtpCompare = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.placeBuyNoLtpCompare : bool.Parse(stock[Index])) : ctp.placeBuyNoLtpCompare,//12
                     startTime = stock.Length > ++Index ? (string.IsNullOrEmpty(stock[Index]) ? ctp.startTime : GeneralUtils.GetTodayDateTime(stock[Index])) : ctp.startTime,//15

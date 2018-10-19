@@ -425,14 +425,18 @@ namespace UpstoxTrader
 
 
             // Print the state built
-            Trace(string.Format(@"InitState: holdingOutstandingQty={0}, holdingOutstandingPrice={1}, holdingSellOrderOrderId={2},
+            Trace(string.Format(@"InitState: holdingOutstandingQty={0}, holdingOutstandingPrice={1}, Ltp={2},
                 todayOutstandingQty={3}, todayOutstandingPrice={4}, todayOutstandingTradeCount={5}, 
                 outstandingSellOrder.OrderId={6}, outstandingSellOrder.StartingQty={7}, outstandingSellOrder.UnexecutedQty={8}, outstandingSellOrder.Status={9},
                 outstandingBuyOrder.OrderId={10}, outstandingBuyOrder.StartingQty={11}, outstandingBuyOrder.UnexecutedQty={12}, outstandingBuyOrder.Status={13},
                 currentBuyOrdQty={14}, currentBuyOrdExecutedQty={15}, lastBuyPrice={16}, isFirstBuyOrderStillToBePlaced={17},
-                isEODMinProfitSquareOffLimitOrderUpdated={18}, isEODMinLossSquareOffMarketOrderUpdated={19}, isOutstandingPositionConverted={20}, Ltp={21}",
-                holdingOutstandingQty, holdingOutstandingPrice, holdingSellOrder.OrderId, todayOutstandingQty, todayOutstandingPrice,
-                todayOutstandingTradeCount, outstandingSellOrder.OrderId, outstandingSellOrder.StartingQty, ))
+                isEODMinProfitSquareOffLimitOrderUpdated={18}, isEODMinLossSquareOffMarketOrderUpdated={19}, isOutstandingPositionConverted={20},
+                holdingSellOrder.OrderId={21}, holdingSellOrder.StartingQty={22}, holdingSellOrder.UnexecutedQty={23}, holdingSellOrder.Status={24}",
+                holdingOutstandingQty, holdingOutstandingPrice, Ltp, todayOutstandingQty, todayOutstandingPrice,
+                todayOutstandingTradeCount, outstandingSellOrder.OrderId, outstandingSellOrder.StartingQty, outstandingSellOrder.UnexecutedQty, outstandingSellOrder.Status,
+                outstandingBuyOrder.OrderId, outstandingBuyOrder.StartingQty, outstandingBuyOrder.UnexecutedQty, outstandingBuyOrder.Status,
+                currentBuyOrdQty, currentBuyOrdExecutedQty, lastBuyPrice, isFirstBuyOrderStillToBePlaced, isEODMinProfitSquareOffLimitOrderUpdated, isEODMinLossSquareOffMarketOrderUpdated,
+                isOutstandingPositionConverted, holdingSellOrder.OrderId, holdingSellOrder.StartingQty, holdingSellOrder.UnexecutedQty, holdingSellOrder.Status));
         }
 
         protected void ProcessHoldingSellOrderExecution(int tradedQty)
