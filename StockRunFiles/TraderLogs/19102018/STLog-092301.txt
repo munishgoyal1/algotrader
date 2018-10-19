@@ -1,0 +1,468 @@
+10/19/2018 9:23:01 AM:: RELEASE MODE
+
+10/19/2018 9:23:14 AM:: 126130
+
+10/19/2018 9:23:14 AM:: MarketTrend NIFTY18OCTFUT SubscribeQuotes status=True
+
+10/19/2018 9:23:14 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA SnapQuote status=Success. lowerCircuitLimit=534.15, upperCircuitLimit=652.75, ClosePrice=593.45, baseOrderQty=4.21265481506445
+
+10/19/2018 9:23:14 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN SnapQuote status=Success. lowerCircuitLimit=709.8, upperCircuitLimit=867.5, ClosePrice=788.65, baseOrderQty=3.16997400621315
+
+10/19/2018 9:23:14 AM:: UpstoxAverageTheBuyThenSell M&M SnapQuote status=Success. lowerCircuitLimit=683.5, upperCircuitLimit=835.3, ClosePrice=759.4, baseOrderQty=3.29207268896497
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS SnapQuote status=Success. lowerCircuitLimit=162, upperCircuitLimit=197.9, ClosePrice=179.95, baseOrderQty=13.8927479855515
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT SnapQuote status=Success. lowerCircuitLimit=341.2, upperCircuitLimit=511.7, ClosePrice=426.45, baseOrderQty=5.86235197561262
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT SnapQuote status=Success. lowerCircuitLimit=263.45, upperCircuitLimit=321.95, ClosePrice=292.7, baseOrderQty=8.54116843184148
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell INFY SnapQuote status=Success. lowerCircuitLimit=634.85, upperCircuitLimit=775.85, ClosePrice=705.35, baseOrderQty=3.54433968951584
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell NTPC SnapQuote status=Success. lowerCircuitLimit=146.65, upperCircuitLimit=179.15, ClosePrice=162.9, baseOrderQty=15.3468385512584
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell RELIANCE SnapQuote status=Success. lowerCircuitLimit=1036.2, upperCircuitLimit=1266.4, ClosePrice=1151.3, baseOrderQty=2.17145835142882
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell DLF SnapQuote status=Success. lowerCircuitLimit=129.95, upperCircuitLimit=158.75, ClosePrice=144.35, baseOrderQty=17.3190162798753
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT SnapQuote status=Success. lowerCircuitLimit=671.05, upperCircuitLimit=820.15, ClosePrice=745.6, baseOrderQty=3.35300429184549
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell BIOCON SnapQuote status=Success. lowerCircuitLimit=572.9, upperCircuitLimit=700.2, ClosePrice=636.55, baseOrderQty=1.57096850208153
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell ITC SnapQuote status=Success. lowerCircuitLimit=257.85, upperCircuitLimit=315.05, ClosePrice=286.45, baseOrderQty=8.72752661895619
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell COALINDIA SnapQuote status=Success. lowerCircuitLimit=251.95, upperCircuitLimit=307.85, ClosePrice=279.9, baseOrderQty=8.93176134333691
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell IGL SnapQuote status=Success. lowerCircuitLimit=218.05, upperCircuitLimit=266.45, ClosePrice=242.25, baseOrderQty=1.23839009287926
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell ULTRACEMCO SnapQuote status=Success. lowerCircuitLimit=3350.7, upperCircuitLimit=4095.3, ClosePrice=3723, baseOrderQty=0.67150147730325
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER SnapQuote status=Success. lowerCircuitLimit=50.8, upperCircuitLimit=62, ClosePrice=56.4, baseOrderQty=1.77304964539007
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell TCS SnapQuote status=Success. lowerCircuitLimit=1736.5, upperCircuitLimit=2122.3, ClosePrice=1929.4, baseOrderQty=1.29573960816834
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell PIDILITIND SnapQuote status=Success. lowerCircuitLimit=865.95, upperCircuitLimit=1058.35, ClosePrice=962.15, baseOrderQty=2.59834745102115
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK SnapQuote status=Success. lowerCircuitLimit=70.65, upperCircuitLimit=86.35, ClosePrice=78.5, baseOrderQty=1.27388535031847
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell UJJIVAN SnapQuote status=Success. lowerCircuitLimit=208.8, upperCircuitLimit=255.1, ClosePrice=231.95, baseOrderQty=1.29338219443846
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS SnapQuote status=Success. lowerCircuitLimit=282.55, upperCircuitLimit=345.25, ClosePrice=313.9, baseOrderQty=1.27429117553361
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK SnapQuote status=Success. lowerCircuitLimit=1443.55, upperCircuitLimit=1764.25, ClosePrice=1603.9, baseOrderQty=1.24696053369911
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell HDFCBANK SnapQuote status=Success. lowerCircuitLimit=1777.15, upperCircuitLimit=2172.05, ClosePrice=1974.6, baseOrderQty=1.26607920591512
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell IDFCBANK SnapQuote status=Success. lowerCircuitLimit=31.6, upperCircuitLimit=38.6, ClosePrice=35.1, baseOrderQty=1.70940170940171
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE SnapQuote status=Success. lowerCircuitLimit=1935.45, upperCircuitLimit=2365.55, ClosePrice=2150.5, baseOrderQty=1.16252034410602
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA SubscribeQuotes status=True
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN SubscribeQuotes status=True
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell M&M SubscribeQuotes status=True
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS SubscribeQuotes status=True
+
+10/19/2018 9:23:15 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell INFY SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell NTPC SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell RELIANCE SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell DLF SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell BIOCON SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell ITC SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell COALINDIA SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell IGL SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell ULTRACEMCO SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell TCS SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell PIDILITIND SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell UJJIVAN SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell HDFCBANK SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell IDFCBANK SubscribeQuotes status=True
+
+10/19/2018 9:23:16 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE SubscribeQuotes status=True
+
+10/19/2018 9:23:19 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=602.35,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:19 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA PriceStrategy:LTP Markdown,LTP=602.35, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=602.35, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctForAveraging=0.01, markDownPctForAveragingTightening=0.02,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.01, calculatedToBuyPrice=596.3, priceBucketsForPrice=1:1.4:2.7:4:6:2;
+QtyStrategy:todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=4.21265481506445, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=602.35, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.33,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.44;
+                    qtyCurve=0, calculatedOrderQty=4, maxTodayOutstandingQtyAllowed=21, maxTotalOutstandingQtyAllowed=84;placeBuyNoLtpCompare:False
+
+10/19/2018 9:23:19 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181019000020232 put order req received 596.3 I  DAY  4 0  3351 1311 NA B 0 0
+
+10/19/2018 9:23:20 AM:: UpstoxAverageTheBuyThenSell BERGEPAINT InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=293.3,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:20 AM:: UpstoxAverageTheBuyThenSell INFY InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=680.25,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:20 AM:: UpstoxAverageTheBuyThenSell NTPC InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=163.95,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:20 AM:: UpstoxAverageTheBuyThenSell RELIANCE InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=1092.2,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:20 AM:: UpstoxAverageTheBuyThenSell AMARAJABAT InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=747.8,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:20 AM:: UpstoxAverageTheBuyThenSell BIOCON InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=646.65,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:20 AM:: UpstoxAverageTheBuyThenSell ITC InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=287.05,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:20 AM:: UpstoxAverageTheBuyThenSell COALINDIA InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=277.7,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:20 AM:: MyUpstoxWrapper SUNPHARMA OrderId:181019000020232, UpstoxOrderStatus:open
+
+10/19/2018 9:23:20 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Place Order MARGIN]: Success SUNPHARMA BUY 4 @ 596.3 LIMIT. OrderId=181019000020232, BrokerOrderStatus=ORDERED
+
+10/19/2018 9:23:20 AM:: UpstoxAverageTheBuyThenSell ULTRACEMCO InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=3615.9,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:20 AM:: UpstoxAverageTheBuyThenSell TCS InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=1879.7,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell PIDILITIND InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=966.1,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell FEDERALBNK InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=79.15,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell ADANIPORTS InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=317.95,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE InitState: holdingOutstandingQty=0, holdingOutstandingPrice=0, Ltp=2177.65,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=0, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=0, holdingSellOrder.UnexecutedQty=0, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181019000020232 put order req received 596.3 I  DAY  4 0  3351 1311 NA B 1539921199586087 0
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE PriceStrategy:LTP Markdown,LTP=2177.65, lastBuyPrice=0, holdingOutstandingPrice=0, lastPriceToCompareWith=2177.65, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.01, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=0.02,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.01, calculatedToBuyPrice=2155.9, priceBucketsForPrice=1:1.4:2.7:4:6:2;
+QtyStrategy:todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=0, holdingOutstandingPrice=0, baseOrderQty=1.16252034410602, todayOutstandingMultiple=0, totalOutstandingMultiple=0, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0;
+                    totalAvgHoldingPrice=0, priceToCompareForQty=2177.65, priceDiffPct=0.01, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=0.33,
+                    priceDiffBucketNumberForQty=0, priceDiffBucketAgressionForQty=1.3, priceFactorCalcForQty=0.43;
+                    qtyCurve=0, calculatedOrderQty=1, maxTodayOutstandingQtyAllowed=5, maxTotalOutstandingQtyAllowed=23;placeBuyNoLtpCompare:False
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN [DELIVERY Holding SquareOff] Will place order SELL IBULHSGFIN 1 @ 967.
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN orderPrice 967 is outside circuit limits of lowerCircuitLimit 709.8 upperCircuitLimit 867.5, Not placing order
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell IBULHSGFIN InitState: holdingOutstandingQty=1, holdingOutstandingPrice=954.15, Ltp=743.55,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=954.15, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=1, holdingSellOrder.UnexecutedQty=1, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell M&M [DELIVERY Holding SquareOff] Will place order SELL M&M 3 @ 933.2.
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell M&M orderPrice 933.2 is outside circuit limits of lowerCircuitLimit 683.5 upperCircuitLimit 835.3, Not placing order
+
+10/19/2018 9:23:21 AM:: UpstoxAverageTheBuyThenSell M&M InitState: holdingOutstandingQty=3, holdingOutstandingPrice=929, Ltp=749.9,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=929, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=3, holdingSellOrder.UnexecutedQty=3, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS [DELIVERY Holding SquareOff] Will place order SELL TATAMOTORS 220 @ 207.5.
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS orderPrice 207.5 is outside circuit limits of lowerCircuitLimit 162 upperCircuitLimit 197.9, Not placing order
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell TATAMOTORS InitState: holdingOutstandingQty=220, holdingOutstandingPrice=205.25, Ltp=179.2,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=205.25, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=220, holdingSellOrder.UnexecutedQty=220, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [DELIVERY Holding SquareOff] Will place order SELL CAPLIPOINT 12 @ 444.1.
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell DLF [DELIVERY Holding SquareOff] Will place order SELL DLF 7 @ 180.5.
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell DLF orderPrice 180.5 is outside circuit limits of lowerCircuitLimit 129.95 upperCircuitLimit 158.75, Not placing order
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell DLF InitState: holdingOutstandingQty=7, holdingOutstandingPrice=179, Ltp=149.15,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=179, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=7, holdingSellOrder.UnexecutedQty=7, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell DLF PriceStrategy:LTP Markdown,LTP=149.15, lastBuyPrice=179, holdingOutstandingPrice=179, lastPriceToCompareWith=149.15, todayOutstandingTradeCount=0, 
+                    todayOutstandingTradeBucketNumberForPrice=0, priceBucketAgressionForPrice=1, markDownPctForBuy=0.015, markDownPctForAveraging=0.005, markDownPctForAveragingTightening=0.02,
+                    averagingExtraMarkDownPctCalculated=0, mktConditionBuyExtraMarkDownPct=0, mktTrendFactorForBuyMarkdown=1,
+                    markDownPctCalculated=0.015, calculatedToBuyPrice=146.9, priceBucketsForPrice=1:1.4:2.7:4:6:2;
+QtyStrategy:todayOutstandingQty=0, todayOutstandingPrice=0, holdingOutstandingQty=7, holdingOutstandingPrice=179, baseOrderQty=17.3190162798753, todayOutstandingMultiple=0, totalOutstandingMultiple=0.4, 
+                    qtyAgressionFactor=0.2, qtyFactorCalcForQty=0.080836;
+                    totalAvgHoldingPrice=179, priceToCompareForQty=179, priceDiffPct=0.18, priceBucketWidthInPctForQty=0.03, priceDiffMultiple=5.98,
+                    priceDiffBucketNumberForQty=5, priceDiffBucketAgressionForQty=2.4, priceFactorCalcForQty=14.35;
+                    qtyCurve=1.16, calculatedOrderQty=20, maxTodayOutstandingQtyAllowed=86, maxTotalOutstandingQtyAllowed=346;placeBuyNoLtpCompare:False
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell IGL [DELIVERY Holding SquareOff] Will place order SELL IGL 7 @ 253.3.
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER [DELIVERY Holding SquareOff] Will place order SELL PCJEWELLER 39 @ 66.
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER orderPrice 66 is outside circuit limits of lowerCircuitLimit 50.8 upperCircuitLimit 62, Not placing order
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell PCJEWELLER InitState: holdingOutstandingQty=39, holdingOutstandingPrice=65.31, Ltp=59.25,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=65.31, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=39, holdingSellOrder.UnexecutedQty=39, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell UJJIVAN [DELIVERY Holding SquareOff] Will place order SELL UJJIVAN 12 @ 293.4.
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell UJJIVAN orderPrice 293.4 is outside circuit limits of lowerCircuitLimit 208.8 upperCircuitLimit 255.1, Not placing order
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell UJJIVAN InitState: holdingOutstandingQty=12, holdingOutstandingPrice=288.1, Ltp=234,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=288.1, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=12, holdingSellOrder.UnexecutedQty=12, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [DELIVERY Holding SquareOff] Will place order SELL INDUSINDBK 5 @ 1732.7.
+
+10/19/2018 9:23:22 AM:: MyUpstoxWrapper BAJFINANCE OrderId:181019000020279, UpstoxOrderStatus:put order req received
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Place Order MARGIN]: Success BAJFINANCE BUY 1 @ 2155.9 LIMIT. OrderId=181019000020279, BrokerOrderStatus=ORDERED
+
+10/19/2018 9:23:22 AM:: UpstoxAverageTheBuyThenSell HDFCBANK InitState: holdingOutstandingQty=2, holdingOutstandingPrice=1995.8, Ltp=1960.5,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=1995.8, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=2, holdingSellOrder.UnexecutedQty=2, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:23 AM:: MyUpstoxWrapper CAPLIPOINT OrderId:181019000020291, UpstoxOrderStatus:put order req received
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Place Order DELIVERY]: Success CAPLIPOINT SELL 12 @ 444.1 LIMIT. OrderId=181019000020291, BrokerOrderStatus=ORDERED
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT InitState: holdingOutstandingQty=12, holdingOutstandingPrice=438.22, Ltp=415,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=438.22, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=181019000020291, holdingSellOrder.StartingQty=12, holdingSellOrder.UnexecutedQty=12, holdingSellOrder.Status=ORDERED
+
+10/19/2018 9:23:23 AM:: MyUpstoxWrapper DLF OrderId:181019000020292, UpstoxOrderStatus:put order req received
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell DLF [Place Order MARGIN]: Success DLF BUY 20 @ 146.9 LIMIT. OrderId=181019000020292, BrokerOrderStatus=ORDERED
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell IDFCBANK [DELIVERY Holding SquareOff] Will place order SELL IDFCBANK 60 @ 39.4.
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell IDFCBANK orderPrice 39.4 is outside circuit limits of lowerCircuitLimit 31.6 upperCircuitLimit 38.6, Not placing order
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell IDFCBANK InitState: holdingOutstandingQty=60, holdingOutstandingPrice=38.99, Ltp=35.25,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=38.99, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=, holdingSellOrder.StartingQty=60, holdingSellOrder.UnexecutedQty=60, holdingSellOrder.Status=NOTFOUND
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181019000020232 validation pending 596.3 I  DAY  4 0  3351 1311 NA B 1539921199587964 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181019000020232 open pending 596.3 I  DAY  4 0  3351 1311 NA B 1539921199606164 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell SUNPHARMA [Order Updated] SUNPHARMA 181019000020232 open 596.3 I 19-Oct-2018 09:23:19 DAY  4 0 1300000000457876 3351 1311 NA B 1539921200642720 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181019000020279 put order req received 2155.9 I  DAY  1 0  317 147 NA B 0 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181019000020279 put order req received 2155.9 I  DAY  1 0  317 147 NA B 1539921201838651 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181019000020279 validation pending 2155.9 I  DAY  1 0  317 147 NA B 1539921201840550 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181019000020279 open pending 2155.9 I  DAY  1 0  317 147 NA B 1539921201865173 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell BAJFINANCE [Order Updated] BAJFINANCE 181019000020279 open 2155.9 I 19-Oct-2018 09:23:21 DAY  1 0 1000000000633862 317 147 NA B 1539921202366837 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181019000020291 put order req received 444.1 D  DAY  12 0  3906 237 NA S 0 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181019000020291 put order req received 444.1 D  DAY  12 0  3906 237 NA S 1539921202382533 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181019000020291 validation pending 444.1 D  DAY  12 0  3906 237 NA S 1539921202383922 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181019000020291 open pending 444.1 D  DAY  12 0  3906 237 NA S 1539921202399598 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell CAPLIPOINT [Order Updated] CAPLIPOINT 181019000020291 open 444.1 D 19-Oct-2018 09:23:22 DAY  12 0 1000000000634567 3906 237 NA S 1539921202408282 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181019000020292 put order req received 146.9 I  DAY  20 0  14732 344 NA B 0 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181019000020292 put order req received 146.9 I  DAY  20 0  14732 344 NA B 1539921202459034 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181019000020292 validation pending 146.9 I  DAY  20 0  14732 344 NA B 1539921202462400 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181019000020292 open pending 146.9 I  DAY  20 0  14732 344 NA B 1539921202477144 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181019000020295 put order req received 253.3 D  DAY  7 0  11262 613 NA S 0 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181019000020295 put order req received 253.3 D  DAY  7 0  11262 613 NA S 1539921202545376 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181019000020295 validation pending 253.3 D  DAY  7 0  11262 613 NA S 1539921202547867 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181019000020295 open pending 253.3 D  DAY  7 0  11262 613 NA S 1539921202563606 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell IGL [Order Updated] IGL 181019000020295 open 253.3 D 19-Oct-2018 09:23:22 DAY  7 0 1100000000735314 11262 613 NA S 1539921202573591 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181019000020305 put order req received 1732.7 D  DAY  5 0  5258 641 NA S 0 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181019000020305 put order req received 1732.7 D  DAY  5 0  5258 641 NA S 1539921202877411 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181019000020305 validation pending 1732.7 D  DAY  5 0  5258 641 NA S 1539921202881181 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181019000020305 open pending 1732.7 D  DAY  5 0  5258 641 NA S 1539921202927323 0
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell DLF [Order Updated] DLF 181019000020292 open 146.9 I 19-Oct-2018 09:23:22 DAY  20 0 1000000000634681 14732 344 NA B 1539921203478911 0
+
+10/19/2018 9:23:23 AM:: MyUpstoxWrapper IGL OrderId:181019000020295, UpstoxOrderStatus:open
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell IGL [Place Order DELIVERY]: Success IGL SELL 7 @ 253.3 LIMIT. OrderId=181019000020295, BrokerOrderStatus=ORDERED
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell IGL InitState: holdingOutstandingQty=7, holdingOutstandingPrice=248.66, Ltp=244.4,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=248.66, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=181019000020295, holdingSellOrder.StartingQty=7, holdingSellOrder.UnexecutedQty=7, holdingSellOrder.Status=ORDERED
+
+10/19/2018 9:23:23 AM:: MyUpstoxWrapper INDUSINDBK OrderId:181019000020305, UpstoxOrderStatus:open pending
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Place Order DELIVERY]: Success INDUSINDBK SELL 5 @ 1732.7 LIMIT. OrderId=181019000020305, BrokerOrderStatus=ORDERED
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK InitState: holdingOutstandingQty=5, holdingOutstandingPrice=1709.62, Ltp=1600.15,
+                todayOutstandingQty=0, todayOutstandingPrice=0, todayOutstandingTradeCount=0, 
+                outstandingSellOrder.OrderId=, outstandingSellOrder.StartingQty=0, outstandingSellOrder.UnexecutedQty=0, outstandingSellOrder.Status=QUEUED,
+                outstandingBuyOrder.OrderId=, outstandingBuyOrder.StartingQty=0, outstandingBuyOrder.UnexecutedQty=0, outstandingBuyOrder.Status=QUEUED,
+                currentBuyOrdQty=0, currentBuyOrdExecutedQty=0, lastBuyPrice=1709.62, isFirstBuyOrderStillToBePlaced=True,
+                isEODMinProfitSquareOffLimitOrderUpdated=False, isEODMinLossSquareOffMarketOrderUpdated=False, isOutstandingPositionConverted=False,
+                holdingSellOrder.OrderId=181019000020305, holdingSellOrder.StartingQty=5, holdingSellOrder.UnexecutedQty=5, holdingSellOrder.Status=ORDERED
+
+10/19/2018 9:23:23 AM:: UpstoxAverageTheBuyThenSell INDUSINDBK [Order Updated] INDUSINDBK 181019000020305 open 1732.7 D 19-Oct-2018 09:23:22 DAY  5 0 1100000000735525 5258 641 NA S 1539921203977128 0
+
+10/19/2018 9:23:29 AM:: MarketTrend NIFTY18OCTFUT MarketTrendForBuyMarkdown changed from 1 to 1.2. Nifty changePct=-0.00938
+

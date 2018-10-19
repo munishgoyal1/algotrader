@@ -15,6 +15,7 @@ namespace UpstoxTrader
     // if there is error in processing any trade then that trade will not be processed until the program is restarted
     public class UpstoxAverageTheBuyThenSell : UpstoxBuySellBase
     {
+        bool printedStrategyOnceEvery30Min = false;
         public UpstoxAverageTheBuyThenSell(UpstoxTradeParams tradeParams) : base(tradeParams)
         {
         }
@@ -112,6 +113,9 @@ namespace UpstoxTrader
                 priceDiffBucketNumberForQty, priceDiffBucketAgressionForQty, Math.Round(priceFactorCalcForQty, 2),
                 Math.Round(qtyCurve, 3), calculatedOrderQty, maxTodayOutstandingQtyAllowed, maxTotalOutstandingQtyAllowed);
 
+            if (DateTime.Now.Minute % 30 != 0 && printedStrategyOnceEvery30Min)
+                printedStrategyOnceEvery30Min = false;
+
             lock (lockRunEitherPlaceBuyOrTradeUpdated)
             {
                 if (todayOutstandingQty == 0 || (placeBuyNoLtpCompare || (ltp <= calculatedToBuyPrice)))
@@ -124,9 +128,14 @@ namespace UpstoxTrader
                     {
                         currentBuyOrdQty = calculatedOrderQty;
                         currentBuyOrdExecutedQty = 0;
-                        UpdatePnLStats();
+                        UpdatePnLStats();                       
                     }
                 }
+                else if(DateTime.Now.Minute % 30 == 0 && !printedStrategyOnceEvery30Min)
+                {
+                    Trace(string.Format("LogStrategiesNotPlacedOrder: PriceStrategy:{0}\nQtyStrategy:{1}placeBuyNoLtpCompare:{2}", priceStrategy, qtyStrategy, placeBuyNoLtpCompare));
+                    printedStrategyOnceEvery30Min = true;
+                }               
             }
         }
 
@@ -150,7 +159,7 @@ namespace UpstoxTrader
                 try
                 {
                     PlaceBuyOrderIfEligible();
-                    HandleConversionAnytime();
+                    HandleConversionAnytimeNew();
 
                     if (MarketUtils.IsTimeAfter3XMin(0))
                         NearEODSquareOffAndCancelBuyOrder();
@@ -246,7 +255,7 @@ namespace UpstoxTrader
                         if (!string.IsNullOrEmpty(outstandingSellOrder.OrderId))
                         {
                             // modify existing sell order if it exists
-                            errCode = ModifyEquityOrder(stockCode, outstandingSellOrder.OrderId, OrderPriceType.LIMIT, todayOutstandingQty, sellPrice, out upstoxOrderStatus);
+                            errCode = ModifyEquityOrder("NewBuy modify squareoff", stockCode, outstandingSellOrder.OrderId, OrderPriceType.LIMIT, todayOutstandingQty, sellPrice, out upstoxOrderStatus);
 
                             // cancel existing sell order if it exists
                             //errCode = CancelEquityOrder("[Buy Executed]", ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);

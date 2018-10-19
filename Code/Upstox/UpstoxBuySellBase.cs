@@ -91,7 +91,7 @@ namespace UpstoxTrader
         public OrderUpdateEventArgs latestOrderUpdateInfo;
 
         public const string orderPlaceTraceFormat = "[Place Order {4}]: {5} {0} {1} {2} @ {3} {6}. OrderId={7}, BrokerOrderStatus={8}";
-        public const string orderModifyTraceFormat = "[Modify Order {3}]: {4} {0} {1} @ {2} {5}. OrderId={6}, BrokerOrderStatus={7}";
+        public const string orderModifyTraceFormat = "[Modify Order {8}]: {4} {0} {1} @ {2} {5} {3}. OrderId={6}, BrokerOrderStatus={7}";
         public const string orderCancelTraceFormat = "{0}: {1} {2} {3}: {4}";
         public const string tradeTraceFormat = "[Trade Execution] {4} Trade: {0} {1} {2} @ {3}. OrderId={5}, TradeId={6}, ExchExecutionTime={7}, ExchTime={8}, Timestamp={9}";
         public const string deliveryTraceFormat = "Conversion to delivery: {0} {1} qty of {2}";
@@ -399,7 +399,7 @@ namespace UpstoxTrader
             {
                 // Modify existing sell order qty and price
                 var sellPrice = GetSellPrice(todayOutstandingPrice, false, false);
-                errCode = ModifyEquityOrder(stockCode, outstandingSellOrder.OrderId, OrderPriceType.LIMIT, todayOutstandingQty, sellPrice, out upstoxOrderStatus);
+                errCode = ModifyEquityOrder("Init Intraday Sell Order", stockCode, outstandingSellOrder.OrderId, OrderPriceType.LIMIT, todayOutstandingQty, sellPrice, out upstoxOrderStatus);
 
                 // Cancel existing sell order
                 //errCode = CancelEquityOrder("[Init Update Sell Qty]", ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
@@ -585,6 +585,7 @@ namespace UpstoxTrader
         }
 
         public BrokerErrorCode ModifyEquityOrder(
+            string source,
      string stockCode,
            string orderId,
            OrderPriceType orderPriceType,
@@ -603,7 +604,7 @@ namespace UpstoxTrader
 
             errCode = myUpstoxWrapper.ModifyEquityOrder(ref latestOrderUpdateInfo, orderUpdateReceivedEvent, stockCode, orderId, orderPriceType, quantity, price, out orderStatus);
 
-            Trace(string.Format(orderModifyTraceFormat, stockCode, quantity, price, orderType, errCode, orderPriceType, orderId, orderStatus));
+            Trace(string.Format(orderModifyTraceFormat, stockCode, quantity, price, orderType, errCode, orderPriceType, orderId, orderStatus, source));
 
             return errCode;
         }
@@ -726,6 +727,8 @@ namespace UpstoxTrader
             // for already DELIVERY type sq off order, no need to do anything. Either this logic has already run or the stock was started in DELIVERY mode from starting itself
             List<EquityPositionRecord> positions;
             errCode = myUpstoxWrapper.GetPositions(stockCode, out positions);
+            int qtyConverted = 0;
+            int qtyPending = 0;
 
             if (errCode == BrokerErrorCode.Success)
             {
@@ -737,6 +740,8 @@ namespace UpstoxTrader
                 {
                     strategy = string.Format("{0}: Detected position conversion. Convert SELL order to DELIVERY", eventType);
                     isOutstandingPositionConverted = true;
+                    qtyConverted = position.BuyQuantity;
+                    qtyPending = todayOutstandingQty - qtyConverted;
                 }
             }
 
@@ -753,14 +758,17 @@ namespace UpstoxTrader
                 {
                     Trace(strategy);
                     // cancel existing MARGIN sell order
-                    errCode = CancelEquityOrder(eventType, ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
+                    if (qtyPending > 0)
+                        errCode = ModifyEquityOrder(eventType, stockCode, outstandingSellOrder.OrderId, OrderPriceType.LIMIT, qtyPending, 0, out upstoxOrderStatus);
+                    else
+                        errCode = CancelEquityOrder(eventType, ref outstandingSellOrder.OrderId, orderType, OrderDirection.SELL);
 
                     if (errCode == BrokerErrorCode.Success)
                     {
                         // place new sell order, update sell order ref
                         var isForMinProfitSqOff = MarketUtils.IsTimeAfter3XMin(10) ? true : false;
                         var sellPrice = GetSellPrice(todayOutstandingPrice, false, isForMinProfitSqOff);
-                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, todayOutstandingQty, EquityOrderType.DELIVERY, sellPrice, out outstandingSellOrder.OrderId, out upstoxOrderStatus);
+                        errCode = PlaceEquityOrder(exchStr, stockCode, OrderDirection.SELL, OrderPriceType.LIMIT, qtyConverted, EquityOrderType.DELIVERY, sellPrice, out outstandingSellOrder.OrderId, out upstoxOrderStatus);
                     }
                 }
             }
@@ -807,7 +815,7 @@ namespace UpstoxTrader
                 // 3.05 - 3.10 pm time. market order type if must sqoff at EOD and given pct loss is within acceptable range and outstanding price is not a good price to keep holding
                 if (MarketUtils.IsMinutesAfter3Between(5, 10) && !isEODMinLossSquareOffMarketOrderUpdated)
                 {
-                    double ltp  = GetLTP();                  
+                    double ltp = GetLTP();
 
                     var diff = Math.Round((ltp - todayOutstandingPrice) / ltp, 5);
 
@@ -848,7 +856,7 @@ namespace UpstoxTrader
 
                     // modify order instead of cancel and place new
                     var sellPrice = GetSellPrice(todayOutstandingPrice, false, true);
-                    errCode = ModifyEquityOrder(stockCode, outstandingSellOrder.OrderId, ordPriceType, todayOutstandingQty, sellPrice, out upstoxOrderStatus);
+                    errCode = ModifyEquityOrder("EOD Squareoff", stockCode, outstandingSellOrder.OrderId, ordPriceType, todayOutstandingQty, sellPrice, out upstoxOrderStatus);
                 }
             }
         }

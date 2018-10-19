@@ -436,7 +436,7 @@ namespace UpstoxTrader
                         break;
 
                     case "@markDownPctForAveragingTightening":
-                        markDownPctForAveragingTightening = double.Parse(split[1])/100;
+                        markDownPctForAveragingTightening = double.Parse(split[1]);
                         break;
 
                     case "@priceBucketWidthInPctForQty":
